@@ -432,7 +432,7 @@ Bestem omkretsen til trekanten.
 
 ::::{answer}
 $$
-6 \sqrt{3}
+6 \sqrt[4]{3}
 $$
 ::::
 
