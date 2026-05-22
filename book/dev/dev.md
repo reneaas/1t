@@ -3,6 +3,13 @@
 
 :::{plot}
 width: 70%
+function: 
+:::
+
+
+
+:::{plot}
+width: 70%
 axis: off
 axis: equal
 let: l = 2
