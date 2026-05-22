@@ -1,6 +1,5 @@
 # Dev
 
-
 :::{plot}
 width: 70%
 function: 
