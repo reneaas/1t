@@ -1083,7 +1083,7 @@ text: 0, 7000, "$(0, 7000)$", top-right
 text: 9, 500, "$(9, 500)$", top-right
 text: 0, 9000, "$(0, 9000)$", top-right
 text: 9, 2500, "$(9, 2500)$", top-right
-line-segment: (0, 2000), (35, 2000), dashed, black
+line-segment: (0, 2000), (35, 2000), dashed, gray
 :::
 
 :::{plot}
@@ -1104,7 +1104,7 @@ point: (0, 9000)
 point: (9, 2500)
 text: 0, 9000, "$(0, 9000)$", top-right
 text: 9, 2500, "$(9, 2500)$", top-right
-line-segment: (0, 2000), (35, 2000), dashed, black
+line-segment: (0, 2000), (35, 2000), dashed, gray
 :::
 
 ::::
