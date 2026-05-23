@@ -1484,7 +1484,7 @@ Lag et program som beregner og skriver ut hvor mange kuler han vil trenge, og hv
 
 
 ::::{answer}
-$41650$ kuler og $2500$ pinner
+$41~650$ kuler og $2~500$ pinner
 ::::
 
 
@@ -1538,7 +1538,7 @@ sum_pinner = 2500
 sum_kuler = 41650
 :::
 
-Altså trenger Kristian $41650$ kuler og $2500$ pinner for å lage de 50 første figurene i serien.
+Altså trenger Kristian $41~650$ kuler og $2~500$ pinner for å lage de 50 første figurene i serien.
 
 ::::
 

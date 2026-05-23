@@ -189,7 +189,7 @@ width: 100%
 align: right
 axis: off
 axis: equal
-triangle: sss=(2 * sqrt(3), 2, 4), angle-labels=(A=numeric), angles=(A, B), side-labels=(BC=exact), angle-radius=25
+triangle: sss=(2 * sqrt(3), 2, 4), angle-labels=(A=numeric), angles=(A, B), side-labels=(BC=exact)
 fontsize: 30
 :::
 
@@ -234,7 +234,7 @@ width: 100%
 align: right
 axis: off
 axis: equal
-triangle: sss=(4, 5, 3), angles=(A, B, C), side-labels=(BC=exact, AB=exact), angle-radius=30
+triangle: sss=(4, 5, 3), angles=(A, B, C), side-labels=(BC=exact, AB=exact)
 fontsize: 30
 :::
 
@@ -263,7 +263,7 @@ width: 100%
 align: right
 axis: off
 axis: equal
-triangle: svs=(3, 90, 2), angles=(A, B, C), side-labels=(BC=exact, CA=exact), angle-radius=25
+triangle: svs=(3, 90, 2), angles=(A, B, C), side-labels=(BC=exact, CA=exact)
 fontsize: 30
 :::
 
@@ -294,7 +294,7 @@ width: 100%
 align: right
 axis: off
 axis: equal
-triangle: sss=(6 * cos(pi/3), 6 * sin(pi/3), 6), angles=(A, B, C), side-labels=(BC=exact, AB=exact), angle-radius=30, label-offset=20
+triangle: sss=(6 * cos(pi/3), 6 * sin(pi/3), 6), angles=(A, B, C), side-labels=(BC=exact, AB=exact)
 fontsize: 30
 :::
 
@@ -336,7 +336,7 @@ width: 100%
 align: right
 axis: off
 axis: equal
-triangle: sss=(4, 4, 4), angles=(A, B), side-labels=(AB=exact), angle-radius=30, angle-labels=(A=numeric, B=numeric)
+triangle: sss=(4, 4, 4), angles=(A, B), side-labels=(AB=exact), angle-labels=(A=numeric, B=numeric)
 fontsize: 30
 vline: 2, 0, 2*sqrt(3), dashed, gray
 let: ds = 0.3
@@ -371,7 +371,7 @@ width: 100%
 align: right
 axis: off
 axis: equal
-triangle: sss=(4, 4, 4), angles=(A, B), angle-radius=30, angle-labels=(A=numeric, B=numeric)
+triangle: sss=(4, 4, 4), angles=(A, B), angle-labels=(A=numeric, B=numeric)
 fontsize: 30
 vline: 2, 0, 2*sqrt(3), dashed, gray
 let: ds = 0.3
@@ -406,7 +406,7 @@ width: 100%
 align: right
 axis: off
 axis: equal
-triangle: sss=(4, 4, 4), angles=(A, B), angle-radius=30, side-text=(AB="$g$"), angle-labels=(A=numeric, B=numeric)
+triangle: sss=(4, 4, 4), angles=(A, B), side-text=(AB="$g$"), angle-labels=(A=numeric, B=numeric)
 fontsize: 30
 vline: 2, 0, 2*sqrt(3), dashed, gray
 let: ds = 0.3
@@ -461,7 +461,7 @@ axis: off
 axis: equal
 let: r = 4
 circle: (0, 0), r, red
-triangle: points=((0, 0), (r, 0), (r * cos(120 * pi/180), r * sin(120 * pi/180))), angles=(A), angle-radius=30, angle-labels=(A=numeric), angle-radius=25, angle-text-offset=14
+triangle: points=((0, 0), (r, 0), (r * cos(120 * pi/180), r * sin(120 * pi/180))), angles=(A), angle-radius=30, angle-labels=(A=numeric)
 fontsize: 30
 nocache:
 :::
@@ -579,7 +579,7 @@ align: right
 axis: off
 axis: equal
 triangle: sss=(4, 2*sqrt(3), 2), angles=(B, C), angle-labels=(B=numeric), angle-radius=20, angle-label-offset=20, side-labels=(BC=exact)
-triangle: sss=(2, sqrt(3), 1), angles=(C), corner-labels=none, angle-radius=20, side-labels=(CA=exact)
+triangle: sss=(2, sqrt(3), 1), angles=(C), corner-labels=none, side-labels=(CA=exact)
 text: cos(pi/3), sin(pi/3), "$E$", top-left
 text: 2, 0, "$D$", bottom-center
 :::
@@ -674,8 +674,8 @@ let: Cx = 3
 let: Cy = 3 * sqrt(3)
 let: Mx = (Ax + Bx + Cx) / 3
 let: My = (Ay + By + Cy) / 3
-triangle: points=((Ax, Ay), (Mx, My), (Cx, Cy)), angles=(A, C), angle-radius=40, corner-labels=none, angle-labels=(A=numeric, C=numeric), angle-text-offset=20
-triangle: points=((Mx, My), (Bx, By), (Cx, Cy)), angles=(B, C), angle-radius=40, corner-labels=none, angle-labels=(B=numeric, C=numeric), angle-text-offset=20
+triangle: points=((Ax, Ay), (Mx, My), (Cx, Cy)), angles=(A, C), corner-labels=none, angle-labels=(A=numeric, C=numeric)
+triangle: points=((Mx, My), (Bx, By), (Cx, Cy)), angles=(B, C), corner-labels=none, angle-labels=(B=numeric, C=numeric)
 text: Ax, Ay, "$A$", bottom-left
 text: Bx, By, "$B$", bottom-right
 text: Cx, Cy, "$C$", top-center
