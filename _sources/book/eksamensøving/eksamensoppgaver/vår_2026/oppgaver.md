@@ -878,6 +878,25 @@ $$
 Hvor mange gram $\mathrm{CO}_2$ slipper bilen ut per kilometer dersom fru Hansen kjører med en fart på $50$ km/h?
 
 
+::::{answer}
+$176.5$ gram $\mathrm{CO}_2$ per kilometer.
+::::
+
+
+::::{solution}
+Vi regner ut $U(50)$ med CAS:
+
+:::{figure} ./figurer/del_2/1/a/sol.png
+---
+class: no-click, adaptive-figure
+width: 80%
+---
+:::
+
+Altså slipper bilen ut $176.5$ gram $\mathrm{CO}_2$ per kilometer dersom fru Hansen kjører med en fart på $50$ km/h.
+
+::::
+
 :::::::::::::
 
 
@@ -885,6 +904,43 @@ Hvor mange gram $\mathrm{CO}_2$ slipper bilen ut per kilometer dersom fru Hansen
 Hvilken fart gir minst utslipp av $\mathrm{CO}_2$ per kilometer?
 
 Hvor mange grafem $\mathrm{CO}_2$ slipper bilen ut per kilometer ved denne farten?
+
+
+::::{answer}
+Bilen slipper ut minst $\mathrm{CO}_2$ per kilometer når den kjører med en fart på omtrent $71$ km/h. Da slipper bilen ut omtrent $163.4$ gram $\mathrm{CO}_2$ per kilometer.
+::::
+
+
+::::{solution}
+:::{plot}
+width: 100%
+align: right
+function: 5400 / x + 0.0074 * x**2 + 50, (30, 110), U
+xmin: 0
+xmax: 120
+xstep: 10
+ymin: 0
+ymax: 250
+ystep: 50
+:::
+
+
+Grafen til $U$ er vist i figuren til høyre.
+
+
+Vi løser $U'(x) = 0$ for å finne koordinatene koordinatene til bunnpunktet
+
+:::{figure} ./figurer/del_2/1/b/sol.png
+---
+class: no-click, adaptive-figure
+width: 80%
+---
+:::
+
+Altså har grafen et bunnpunkt når $x \approx 71~\mathrm{km/h}$. Da slipper bilen ut omtrent $163.4$ gram $\mathrm{CO}_2$ per kilometer ved denne farten.
+
+
+::::
 
 :::::::::::::
 
@@ -896,6 +952,26 @@ Fru hansen kjører med en fart på $90$ km/h i 20 minutter.
 Hvor mange gram $\mathrm{CO}_2$ slipper bilen ut i løpet av disse 20 minuttene?
 
 
+::::{answer}
+Ca. $5098$ gram $\mathrm{CO}_2$
+::::
+
+::::{solution}
+Bilen slipper da ut $U(90)$ gram $\mathrm{CO}_2$ per kilometer. Bilen vil ha kjørt en strekning på $90 \cdot \dfrac{20}{60}$ kilometer i løpet av disse 20 minuttene. Vi regner ut med CAS:
+
+
+:::{figure} ./figurer/del_2/1/c/sol.png
+---
+class: no-click, adaptive-figure
+width: 80%
+---
+:::
+
+Altså slipper bilen ut ca. $5098$ gram $\mathrm{CO}_2$ i løpet av disse 20 minuttene.
+
+
+
+::::
 :::::::::::::
 
 
@@ -957,6 +1033,35 @@ Gitt figuren ovenfor.
 Bruk trigonometri til å bestemme lengden av sidekanten $AB$.
 
 
+::::{answer}
+$$
+AB = \dfrac{\sqrt{2} + \sqrt{6}}{2}
+$$
+::::
+
+::::{solution}
+Vi bruker cosinussetningen med
+
+$$
+AB^2 = AC^2 + BC^2 - 2\cdot AC \cdot BC \cdot \cos 105\degree
+$$
+
+Vi regner ut med CAS:
+
+:::{figure} ./figurer/del_2/2/a/sol.png
+---
+class: no-click, adaptive-figure
+width: 80%
+---
+:::
+
+Altså er sidekanten $AB$ gitt ved
+
+$$
+AB = \dfrac{\sqrt{2} + \sqrt{6}}{2}
+$$
+::::
+
 :::::::::::::
 
 
@@ -964,6 +1069,63 @@ Bruk trigonometri til å bestemme lengden av sidekanten $AB$.
 Bruk trigonometri til å bestemme arealet av trekanten $ABD$
 
 
+::::{answer}
+$$
+T_{ABD} = \dfrac{5 \sqrt{3} + 9}{12}
+$$
+::::
+
+::::{solution}
+
+Vi har at 
+
+$$
+\angle ACD + 45\degree + 60\degree = 180\degree \liff \angle ACD = 75\degree.
+$$
+
+Arealet av trekant $ACD$ er gitt ved
+
+$$
+T_{ACD} = \dfrac{1}{2} AC \cdot CD \cdot \sin 75\degree
+$$
+
+Vi bruker sinussetningen for å finne $CD$:
+
+:::{figure} ./figurer/del_2/2/b/CD.png
+---
+class: no-click, adaptive-figure
+width: 60%
+---
+:::
+
+Arealet av trekant $ABC$ kan vi finne ved å bruke arealsetningen med utgangspunkt i vinkel $BCA$:
+
+$$
+T_{ABC} = \dfrac{1}{2} AC \cdot BC \cdot \sin 105\degree
+$$
+
+Arealet av hele trekanten er da
+
+$$
+T_{ABD} = T_{ACD} + T_{ABC}
+$$
+
+Vi regner ut med CAS:
+
+:::{figure} ./figurer/del_2/2/b/areal.png
+---
+class: no-click, adaptive-figure
+width: 70%
+---
+:::
+
+Altså er arealet av trekant $ABD$ gitt ved 
+
+$$
+T_{ABD} = \dfrac{5 \sqrt{3} + 9}{12}
+$$
+
+::::
 :::::::::::::
 
 :::::::::::::::
@@ -1018,6 +1180,44 @@ La $x$ være antall år etter $2013$.
 Lag en modell $f$ som viser utviklingen av vipebestanden ut fra Tors antakelser.
 
 Forklar hva modellen forteller om utviklingen.
+
+
+::::{answer}
+$$
+f(x) = -\dfrac{6500}{9}x + 9000.
+$$
+
+Antall vipepar synker med 722 par hvert år ifølge modellen.
+
+::::
+
+::::{solution}
+Tor vil lage en modell på formen
+
+$$
+f(x) = ax + b
+$$
+
+Vi bestemmer $a$ og $b$ med CAS med å kreve at $f(0) = 9000$ og $f(9) = 2500$:
+
+
+:::{figure} ./figurer/del_2/3/a/sol.png
+---
+class: no-click, adaptive-figure
+width: 80%
+---
+:::
+
+Altså blir modellen til Tor gitt ved
+
+$$
+f(x) = -\dfrac{6500}{9}x + 9000.
+$$
+
+Modellen forteller oss at bestanden synker med omtrent 722 par hvert år.
+
+
+::::
 :::::::::::::
 
 
@@ -1025,6 +1225,43 @@ Forklar hva modellen forteller om utviklingen.
 Lag en modell $g$ som viser utviklingen av vipebestanden ut fra Egils antakelser.
 
 Forklar hva modellen forteller om utviklingen.
+
+
+::::{answer}
+$$
+g(x) = 9000 \cdot 0.87^x
+$$
+
+Vipebestanden avtar med ca. $13~\%$ ifølge modellen.
+::::
+
+::::{solution}
+Egil vil lage en modell på formen
+
+$$
+g(x) = a\cdot b^x
+$$
+
+Her også krever vi at $g(0) = 9000$ og at $g(9) = 2500$. Vi bestemmer $a$ og $b$ med CAS:
+
+
+:::{figure} ./figurer/del_2/3/b/sol.png
+---
+class: no-click, adaptive-figure
+width: 80%
+---
+:::
+
+Altså er modellen til Egil gitt ved
+
+$$
+g(x) = 9000 \cdot 0.87^x
+$$
+
+Vekstfaktoren til den eksponentielle modellen er ca. $0.87$. Det forteller oss at bestanden av viper synker med omtrent $13~\%$ hvert år ifølge modellen.
+
+
+::::
 :::::::::::::
 
 
@@ -1115,6 +1352,50 @@ line-segment: (0, 2000), (35, 2000), dashed, gray
 Gjør rede for hvilke antakelser Egil har lagt til grunn for modellen $q$.
 
 Bestem $p(x)$ og $q(x)$.
+
+
+::::{answer}
+$$
+p(x) = 7000 \cdot 0.75^x \qog q(x) = 7000 \cdot 0.75^x + 2000
+$$
+::::
+
+::::{solution}
+Egil antar at modellen $q$ kan skrives som
+
+$$
+q(x) = a \cdot b^x + c
+$$
+
+der $q(x)$ vil ha en horisontal asymptote $y = c$ når $x$ blir stor fordi vipebestanden skal stabilisere seg i fremtiden.
+
+Sammenhengen mellom $p(x)$ og $q(x)$ vil være
+
+$$
+q(x) = p(x) + c
+$$
+
+siden $p$ bare er en alminnelig eksponentiell modell som går gjennom punktene $(0, 7000)$ og $(9, 500)$. Den horisontale asymptoten til $q$ forteller oss at Egil antar at vipebestanden stabiliserer seg på $2000$ par. Derfor er $c = 2000$. Vi lager modellen $p$ ved å bestemme $a$ og $b$ med CAS:
+
+:::{figure} ./figurer/del_2/3/c/sol.png
+---
+class: no-click, adaptive-figure
+width: 80%
+---
+:::
+
+Altså er modellen $p$ gitt ved
+
+$$
+p(x) = 7000 \cdot 0.75^x
+$$
+
+Modellen $q$ er da gitt ved
+
+$$
+q(x) = 7000 \cdot 0.75^x + 2000
+$$
+::::
 :::::::::::::
 
 
@@ -1201,6 +1482,65 @@ Tenk deg at Kristian skal lage de 50 første figurene i denne serien.
 
 Lag et program som beregner og skriver ut hvor mange kuler han vil trenge, og hvor mange pinner han vil trenge.
 
+
+::::{answer}
+$41650$ kuler og $2500$ pinner
+::::
+
+
+::::{solution}
+La $P_n$ være antall pinner i figur $n$ og la $K_n$ være antall kuler i figur $n$. Fra figurene kan vi lage oss en tabell for å oppdage et mønster:
+
+
+:::{table}
+labels: $n$, $P_n$, $K_n$
+$1$, $1$, $1 \cdot 0$
+$2$, $3$, $2 \cdot 1$
+$3$, $5$, $3 \cdot 2$
+$4$, $7$, $4 \cdot 3$
+$\vdots$, $\vdots$, $\vdots$
+$n$, $2n - 1$, $n \cdot (n - 1)$
+:::
+
+
+Altså er 
+
+$$
+P_n = 2n - 1 \qog K_n = n \cdot (n - 1).
+$$
+
+Vi lager nå et program som regner ut summen av $P_n$ og $K_n$ for de $50$ første figurene:
+
+
+:::{code-block} python
+---
+linenos:
+---
+sum_pinner = 0
+sum_kuler = 0
+
+for n in range(1, 51):
+    P = 2 * n - 1
+    sum_pinner = sum_pinner + P
+    
+    K = n * (n - 1)
+    sum_kuler = sum_kuler + K
+    
+
+print(f"{sum_pinner = }")
+print(f"{sum_kuler = }")
+:::
+
+som gir utskriften
+
+:::{code-block} console
+sum_pinner = 2500
+sum_kuler = 41650
+:::
+
+Altså trenger Kristian $41650$ kuler og $2500$ pinner for å lage de 50 første figurene i serien.
+
+::::
 
 
 :::::::::::::::
