@@ -24,5 +24,23 @@ class: no-click, adaptive-figure
 
 ::::
 
+
+::::{grid-item-card}
+---
+link: 2026/oppgaver
+link-type: doc
+---
+**Vår 2026**
+
+^^^
+:::{figure} ./figurer/2026.svg
+---
+width: 100%
+class: no-click, adaptive-figure
+---
+:::
+
+::::
+
 :::::
 

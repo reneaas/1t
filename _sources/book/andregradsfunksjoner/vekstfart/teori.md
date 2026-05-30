@@ -316,24 +316,6 @@ annotate: (2.5, -1), (1, 0), "Symmetrilinja til $f$", -0.3
 ::::
 
 
-:::{plot}
-function: 2*(x - 1), f' 
-fontsize: 26
-xmin: -2
-ymax: 4
-ymin: -4
-ticks: off
-lw: 3
-point: (1, 0)
-hline: 2*(1.5 - 1), 1.5, 2.5, dashed, gray
-vline: 2.5, 2*(1.5 - 1), 2*(2.5 - 1), dashed, gray
-text: (1.5 + 2.5) / 2, 2*(1.5 - 1), "$1$", bottom-center
-text: 2.5, (2*(1.5 - 1) + 2*(2.5 - 1)) / 2, "$2a$", center-right
-annotate: (3.5, -1), (1, 0), "$x = -\frac{b}{2a}$", -0.3
-nocache:
-:::
-
-
 
 
 ::::::::::::::{admonition} Bevis

@@ -1,4 +1,0 @@
-# Oppgaver: Modellering
-
-:::{tableofcontents}
-:::

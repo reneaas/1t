@@ -1,9 +1,9 @@
-# CAS (Geogebra)
+# CAS-funksjoner
 
 
 :::::::::::::::{admonition} Oversikt over CAS-funksjoner
 ---
-class: summary, dropdown
+class: summary
 ---
 
 
@@ -71,15 +71,5 @@ Polynomdivisjon
 :::::::::::::::
 
 
-<!-- :::{cas} 800 800
-::: -->
-
-
-:::{ggb} 800 800
----
-material_id: mexebm4g   
-toolbar: "true"
----
-:::
 
 

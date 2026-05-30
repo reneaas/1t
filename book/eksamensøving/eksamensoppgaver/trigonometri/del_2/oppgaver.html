@@ -490,6 +490,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../../eksamensressurser/python.html">Python</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://www.geogebra.org/classic">Geogebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../eksamensressurser/cas.html">CAS-funksjoner</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jeopardy</span></p>
 <ul class="nav bd-sidenav">
@@ -652,9 +653,9 @@
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-235ef99a" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-235ef99a" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-235ef99a" class="ggb-window"></div>
+<button id="button-ggb-cas-f38f5d80" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-f38f5d80" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-f38f5d80" class="ggb-window"></div>
 </div>
 
 <style>
@@ -705,12 +706,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-235ef99a';
+    const storageKey = 'ggb-cas-state-ggb-cas-f38f5d80';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-235ef99a").width(),
-            h = $("#ggb-cas-235ef99a").height();
+      const w = $("#ggb-cas-f38f5d80").width(),
+            h = $("#ggb-cas-f38f5d80").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -781,7 +782,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-235ef99a").dialog({
+    const $dlg = $("#dialog-ggb-cas-f38f5d80").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -791,7 +792,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-235ef99a",
+            appName: "classic", id: "ggb-cas-f38f5d80",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -803,7 +804,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-235ef99a");
+          }, true).inject("ggb-cas-f38f5d80");
         } else {
           applySize();
         }
@@ -824,12 +825,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-235ef99a").empty();
+            $("#ggb-cas-f38f5d80").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-235ef99a",
+              appName: "classic", id: "ggb-cas-f38f5d80",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -839,7 +840,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-235ef99a");
+            }, true).inject("ggb-cas-f38f5d80");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -891,7 +892,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-235ef99a')) {
+          if (!e.target.closest('#ggb-cas-f38f5d80')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -919,7 +920,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-235ef99a');
+      const ggbContainer = document.getElementById('ggb-cas-f38f5d80');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -965,10 +966,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-235ef99a").button()
+    $("#button-ggb-cas-f38f5d80").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-235ef99a").dialog("open");
+        $("#dialog-ggb-cas-f38f5d80").dialog("open");
       });
   });
 })();
@@ -994,7 +995,7 @@ AC = 2 \and BC = 2 \sqrt{21}
 <figure class="align-default" id="id1">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../../../_images/hjelpefigur4.svg"><img alt="../../../../../_images/hjelpefigur4.svg" class="no-click adaptive-figure" src="../../../../../_images/hjelpefigur4.svg" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 13 </span><span class="caption-text">viser en skisse av trekanten der vi har satt <span class="math notranslate nohighlight">\(x = AC\)</span> og <span class="math notranslate nohighlight">\(y = BC\)</span>.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">viser en skisse av trekanten der vi har satt <span class="math notranslate nohighlight">\(x = AC\)</span> og <span class="math notranslate nohighlight">\(y = BC\)</span>.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Siden arealet er <span class="math notranslate nohighlight">\(T = 4\sqrt{3}\)</span>, kan vi sette opp en likningen for <span class="math notranslate nohighlight">\(x\)</span> med utgangspunkt i arealsetningen for trekanten:</p>
@@ -1057,8 +1058,8 @@ x &amp;= 2
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_6859c1115510_66f94c_figure_1">
-  <g id="cpl_6859c1115510_66f94c_patch_1">
+ <g id="cpl_6859c1115510_abaf87_figure_1">
+  <g id="cpl_6859c1115510_abaf87_patch_1">
    <path d="M 0 432 
 L 432 432 
 L 432 0 
@@ -1067,131 +1068,131 @@ L 0 432
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_6859c1115510_66f94c_axes_1">
-   <g id="cpl_6859c1115510_66f94c_line2d_1">
+  <g id="cpl_6859c1115510_abaf87_axes_1">
+   <g id="cpl_6859c1115510_abaf87_line2d_1">
     <path d="M 323.702068 216 
 L 269.851034 122.727273 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_2">
+   <g id="cpl_6859c1115510_abaf87_line2d_2">
     <path d="M 269.851034 122.727273 
 L 162.148966 122.727273 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_3">
+   <g id="cpl_6859c1115510_abaf87_line2d_3">
     <path d="M 162.148966 122.727273 
 L 108.297932 216 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_4">
+   <g id="cpl_6859c1115510_abaf87_line2d_4">
     <path d="M 108.297932 216 
 L 162.148966 309.272727 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_5">
+   <g id="cpl_6859c1115510_abaf87_line2d_5">
     <path d="M 162.148966 309.272727 
 L 269.851034 309.272727 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_6">
+   <g id="cpl_6859c1115510_abaf87_line2d_6">
     <path d="M 269.851034 309.272727 
 L 323.702068 216 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_7">
+   <g id="cpl_6859c1115510_abaf87_line2d_7">
     <path d="M 216 216 
 L 323.702068 216 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_8">
+   <g id="cpl_6859c1115510_abaf87_line2d_8">
     <path d="M 216 216 
 L 269.851034 122.727273 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_9">
+   <g id="cpl_6859c1115510_abaf87_line2d_9">
     <path d="M 216 216 
 L 162.148966 122.727273 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_10">
+   <g id="cpl_6859c1115510_abaf87_line2d_10">
     <path d="M 216 216 
 L 108.297932 216 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_11">
+   <g id="cpl_6859c1115510_abaf87_line2d_11">
     <path d="M 216 216 
 L 162.148966 309.272727 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_12">
+   <g id="cpl_6859c1115510_abaf87_line2d_12">
     <path d="M 216 216 
 L 269.851034 309.272727 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_13">
+   <g id="cpl_6859c1115510_abaf87_line2d_13">
     <path d="M 323.702068 216 
 L 377.553103 122.727273 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_14">
+   <g id="cpl_6859c1115510_abaf87_line2d_14">
     <path d="M 269.851034 122.727273 
 L 216 29.454545 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_15">
+   <g id="cpl_6859c1115510_abaf87_line2d_15">
     <path d="M 162.148966 122.727273 
 L 54.446897 122.727273 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_16">
+   <g id="cpl_6859c1115510_abaf87_line2d_16">
     <path d="M 108.297932 216 
 L 54.446897 309.272727 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_17">
+   <g id="cpl_6859c1115510_abaf87_line2d_17">
     <path d="M 162.148966 309.272727 
 L 216 402.545455 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_18">
+   <g id="cpl_6859c1115510_abaf87_line2d_18">
     <path d="M 269.851034 309.272727 
 L 377.553103 309.272727 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_19">
+   <g id="cpl_6859c1115510_abaf87_line2d_19">
     <path d="M 377.553103 122.727273 
 L 269.851034 122.727273 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_20">
+   <g id="cpl_6859c1115510_abaf87_line2d_20">
     <path d="M 216 29.454545 
 L 162.148966 122.727273 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_21">
+   <g id="cpl_6859c1115510_abaf87_line2d_21">
     <path d="M 54.446897 122.727273 
 L 108.297932 216 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_22">
+   <g id="cpl_6859c1115510_abaf87_line2d_22">
     <path d="M 54.446897 309.272727 
 L 162.148966 309.272727 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_23">
+   <g id="cpl_6859c1115510_abaf87_line2d_23">
     <path d="M 216 402.545455 
 L 269.851034 309.272727 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_6859c1115510_66f94c_line2d_24">
+   <g id="cpl_6859c1115510_abaf87_line2d_24">
     <path d="M 377.553103 309.272727 
 L 323.702068 216 
-" clip-path="url(#cpl_6859c1115510_66f94c_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_6859c1115510_abaf87_pc4e757e149)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_6859c1115510_66f94c_pc4e757e149">
+  <clipPath id="cpl_6859c1115510_abaf87_pc4e757e149">
    <rect x="10.8" y="10.8" width="410.4" height="410.4"/>
   </clipPath>
  </defs>
@@ -1201,9 +1202,9 @@ L 323.702068 216
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-f73fef04" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-f73fef04" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-f73fef04" class="ggb-window"></div>
+<button id="button-ggb-cas-c23fab83" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-c23fab83" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-c23fab83" class="ggb-window"></div>
 </div>
 
 <style>
@@ -1254,12 +1255,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-f73fef04';
+    const storageKey = 'ggb-cas-state-ggb-cas-c23fab83';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-f73fef04").width(),
-            h = $("#ggb-cas-f73fef04").height();
+      const w = $("#ggb-cas-c23fab83").width(),
+            h = $("#ggb-cas-c23fab83").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -1330,7 +1331,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-f73fef04").dialog({
+    const $dlg = $("#dialog-ggb-cas-c23fab83").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -1340,7 +1341,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-f73fef04",
+            appName: "classic", id: "ggb-cas-c23fab83",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -1352,7 +1353,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-f73fef04");
+          }, true).inject("ggb-cas-c23fab83");
         } else {
           applySize();
         }
@@ -1373,12 +1374,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-f73fef04").empty();
+            $("#ggb-cas-c23fab83").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-f73fef04",
+              appName: "classic", id: "ggb-cas-c23fab83",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -1388,7 +1389,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-f73fef04");
+            }, true).inject("ggb-cas-c23fab83");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -1440,7 +1441,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-f73fef04')) {
+          if (!e.target.closest('#ggb-cas-c23fab83')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -1468,7 +1469,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-f73fef04');
+      const ggbContainer = document.getElementById('ggb-cas-c23fab83');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -1514,10 +1515,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-f73fef04").button()
+    $("#button-ggb-cas-c23fab83").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-f73fef04").dialog("open");
+        $("#dialog-ggb-cas-c23fab83").dialog("open");
       });
   });
 })();
@@ -1553,9 +1554,9 @@ T_\mathrm{stjerne} = 12 \cdot T_\triangle = 12 \cdot 4\sqrt{3} = 48\sqrt{3}.
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-7901db7c" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-7901db7c" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-7901db7c" class="ggb-window"></div>
+<button id="button-ggb-cas-52d5d9bd" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-52d5d9bd" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-52d5d9bd" class="ggb-window"></div>
 </div>
 
 <style>
@@ -1606,12 +1607,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-7901db7c';
+    const storageKey = 'ggb-cas-state-ggb-cas-52d5d9bd';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-7901db7c").width(),
-            h = $("#ggb-cas-7901db7c").height();
+      const w = $("#ggb-cas-52d5d9bd").width(),
+            h = $("#ggb-cas-52d5d9bd").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -1682,7 +1683,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-7901db7c").dialog({
+    const $dlg = $("#dialog-ggb-cas-52d5d9bd").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -1692,7 +1693,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-7901db7c",
+            appName: "classic", id: "ggb-cas-52d5d9bd",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -1704,7 +1705,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-7901db7c");
+          }, true).inject("ggb-cas-52d5d9bd");
         } else {
           applySize();
         }
@@ -1725,12 +1726,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-7901db7c").empty();
+            $("#ggb-cas-52d5d9bd").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-7901db7c",
+              appName: "classic", id: "ggb-cas-52d5d9bd",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -1740,7 +1741,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-7901db7c");
+            }, true).inject("ggb-cas-52d5d9bd");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -1792,7 +1793,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-7901db7c')) {
+          if (!e.target.closest('#ggb-cas-52d5d9bd')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -1820,7 +1821,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-7901db7c');
+      const ggbContainer = document.getElementById('ggb-cas-52d5d9bd');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -1866,10 +1867,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-7901db7c").button()
+    $("#button-ggb-cas-52d5d9bd").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-7901db7c").dialog("open");
+        $("#dialog-ggb-cas-52d5d9bd").dialog("open");
       });
   });
 })();
@@ -1905,14 +1906,14 @@ T_{\triangle ABC} = \dfrac{1}{2} \cdot AB \cdot BC \cdot \sin \angle B.
 <figure class="align-default" id="id2">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../../../_images/a_del1.png"><img alt="../../../../../_images/a_del1.png" class="no-click adaptive-figure" src="../../../../../_images/a_del1.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 14 </span><span class="caption-text">her har vi satt <span class="math notranslate nohighlight">\(x = \cos \angle B\)</span> i første likning.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">her har vi satt <span class="math notranslate nohighlight">\(x = \cos \angle B\)</span> i første likning.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Vi gjør tilsvarende utregning for <span class="math notranslate nohighlight">\(\triangle ACD\)</span> der vi må bestemme <span class="math notranslate nohighlight">\(\cos \angle D\)</span> med cosinussetningen etterfulgt av å bruke Pytagoras’ identitet for å bestemme <span class="math notranslate nohighlight">\(\sin \angle D\)</span> som vi så plugger inn i arealsetningen:</p>
 <figure class="align-default" id="id3">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../../../_images/a_del2.png"><img alt="../../../../../_images/a_del2.png" class="no-click adaptive-figure" src="../../../../../_images/a_del2.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 15 </span><span class="caption-text">her har vi satt <span class="math notranslate nohighlight">\(x = \cos \angle D\)</span> i første likning.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">her har vi satt <span class="math notranslate nohighlight">\(x = \cos \angle D\)</span> i første likning.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Til slutt summerer vi de to arealene som gir:</p>
@@ -1988,9 +1989,9 @@ Husk å gjøre rede for hvilke trigonometriske sammenhenger du bruker.</p>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-3e2359b3" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-3e2359b3" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-3e2359b3" class="ggb-window"></div>
+<button id="button-ggb-cas-dd1004d8" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-dd1004d8" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-dd1004d8" class="ggb-window"></div>
 </div>
 
 <style>
@@ -2041,12 +2042,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-3e2359b3';
+    const storageKey = 'ggb-cas-state-ggb-cas-dd1004d8';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-3e2359b3").width(),
-            h = $("#ggb-cas-3e2359b3").height();
+      const w = $("#ggb-cas-dd1004d8").width(),
+            h = $("#ggb-cas-dd1004d8").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -2117,7 +2118,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-3e2359b3").dialog({
+    const $dlg = $("#dialog-ggb-cas-dd1004d8").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -2127,7 +2128,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-3e2359b3",
+            appName: "classic", id: "ggb-cas-dd1004d8",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -2139,7 +2140,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-3e2359b3");
+          }, true).inject("ggb-cas-dd1004d8");
         } else {
           applySize();
         }
@@ -2160,12 +2161,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-3e2359b3").empty();
+            $("#ggb-cas-dd1004d8").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-3e2359b3",
+              appName: "classic", id: "ggb-cas-dd1004d8",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -2175,7 +2176,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-3e2359b3");
+            }, true).inject("ggb-cas-dd1004d8");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -2227,7 +2228,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-3e2359b3')) {
+          if (!e.target.closest('#ggb-cas-dd1004d8')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -2255,7 +2256,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-3e2359b3');
+      const ggbContainer = document.getElementById('ggb-cas-dd1004d8');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -2301,10 +2302,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-3e2359b3").button()
+    $("#button-ggb-cas-dd1004d8").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-3e2359b3").dialog("open");
+        $("#dialog-ggb-cas-dd1004d8").dialog("open");
       });
   });
 })();
@@ -2323,7 +2324,7 @@ T_{\square ABCD} \approx 50.78.
 <figure class="align-default" id="id4">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../../../_images/hjelpefigur5.svg"><img alt="../../../../../_images/hjelpefigur5.svg" class="no-click adaptive-figure" src="../../../../../_images/hjelpefigur5.svg" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 16 </span><span class="caption-text">viser firkanten der diagonalen <span class="math notranslate nohighlight">\(x = AC\)</span> er tegnet inn.</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 17 </span><span class="caption-text">viser firkanten der diagonalen <span class="math notranslate nohighlight">\(x = AC\)</span> er tegnet inn.</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Så bruker vi cosinussetningen for å bestemme lengden av diagonalen:</p>
@@ -2370,7 +2371,7 @@ T_{\square ABCD} \approx 50.78.
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../../../_images/figur58.svg"><img alt="../../../../../_images/figur58.svg" class="no-click adaptive-figure" src="../../../../../_images/figur58.svg" style="width: 80%;" /></a>
 </figure>
 <p>En sirkel har sentrum i <span class="math notranslate nohighlight">\(S\)</span>. <span class="math notranslate nohighlight">\(AB\)</span> er diameter og <span class="math notranslate nohighlight">\(C\)</span> er ligger på 
-<span class="popup-wrapper" id="popup-role-ffee07ba">
+<span class="popup-wrapper" id="popup-role-57266a26">
   <span class="popup-trigger">sirkelperiferien.</span>
   <span class="popup-bubble" style="display:none;">Begrepet "sirkelperiferi" er en annen måte å si "sirkelbuen" eller "på kanten av sirkelskiven". Generelt betyr ordet "[...]periferi" noe sånn som "på kanten av [...]"</span>
 </span>
@@ -2380,9 +2381,9 @@ T_{\square ABCD} \approx 50.78.
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-47f727d9" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-47f727d9" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-47f727d9" class="ggb-window"></div>
+<button id="button-ggb-cas-5383f4a0" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-5383f4a0" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-5383f4a0" class="ggb-window"></div>
 </div>
 
 <style>
@@ -2433,12 +2434,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-47f727d9';
+    const storageKey = 'ggb-cas-state-ggb-cas-5383f4a0';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-47f727d9").width(),
-            h = $("#ggb-cas-47f727d9").height();
+      const w = $("#ggb-cas-5383f4a0").width(),
+            h = $("#ggb-cas-5383f4a0").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -2509,7 +2510,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-47f727d9").dialog({
+    const $dlg = $("#dialog-ggb-cas-5383f4a0").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -2519,7 +2520,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-47f727d9",
+            appName: "classic", id: "ggb-cas-5383f4a0",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -2531,7 +2532,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-47f727d9");
+          }, true).inject("ggb-cas-5383f4a0");
         } else {
           applySize();
         }
@@ -2552,12 +2553,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-47f727d9").empty();
+            $("#ggb-cas-5383f4a0").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-47f727d9",
+              appName: "classic", id: "ggb-cas-5383f4a0",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -2567,7 +2568,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-47f727d9");
+            }, true).inject("ggb-cas-5383f4a0");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -2619,7 +2620,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-47f727d9')) {
+          if (!e.target.closest('#ggb-cas-5383f4a0')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -2647,7 +2648,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-47f727d9');
+      const ggbContainer = document.getElementById('ggb-cas-5383f4a0');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -2693,10 +2694,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-47f727d9").button()
+    $("#button-ggb-cas-5383f4a0").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-47f727d9").dialog("open");
+        $("#dialog-ggb-cas-5383f4a0").dialog("open");
       });
   });
 })();
@@ -2774,9 +2775,9 @@ T_{\triangle ABC} = 2 \cdot T_{\triangle SBC} = 2 \cdot 3\sqrt{2} = 6\sqrt{2}.
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-29b66b96" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-29b66b96" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-29b66b96" class="ggb-window"></div>
+<button id="button-ggb-cas-32262f8b" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-32262f8b" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-32262f8b" class="ggb-window"></div>
 </div>
 
 <style>
@@ -2827,12 +2828,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-29b66b96';
+    const storageKey = 'ggb-cas-state-ggb-cas-32262f8b';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-29b66b96").width(),
-            h = $("#ggb-cas-29b66b96").height();
+      const w = $("#ggb-cas-32262f8b").width(),
+            h = $("#ggb-cas-32262f8b").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -2903,7 +2904,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-29b66b96").dialog({
+    const $dlg = $("#dialog-ggb-cas-32262f8b").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -2913,7 +2914,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-29b66b96",
+            appName: "classic", id: "ggb-cas-32262f8b",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -2925,7 +2926,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-29b66b96");
+          }, true).inject("ggb-cas-32262f8b");
         } else {
           applySize();
         }
@@ -2946,12 +2947,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-29b66b96").empty();
+            $("#ggb-cas-32262f8b").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-29b66b96",
+              appName: "classic", id: "ggb-cas-32262f8b",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -2961,7 +2962,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-29b66b96");
+            }, true).inject("ggb-cas-32262f8b");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -3013,7 +3014,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-29b66b96')) {
+          if (!e.target.closest('#ggb-cas-32262f8b')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -3041,7 +3042,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-29b66b96');
+      const ggbContainer = document.getElementById('ggb-cas-32262f8b');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -3087,10 +3088,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-29b66b96").button()
+    $("#button-ggb-cas-32262f8b").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-29b66b96").dialog("open");
+        $("#dialog-ggb-cas-32262f8b").dialog("open");
       });
   });
 })();
@@ -3176,9 +3177,9 @@ Husk å gjøre rede for hvilke trigonometriske sammenhenger du bruker.</p>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-ea8b491e" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-ea8b491e" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-ea8b491e" class="ggb-window"></div>
+<button id="button-ggb-cas-69da18cb" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-69da18cb" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-69da18cb" class="ggb-window"></div>
 </div>
 
 <style>
@@ -3229,12 +3230,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-ea8b491e';
+    const storageKey = 'ggb-cas-state-ggb-cas-69da18cb';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-ea8b491e").width(),
-            h = $("#ggb-cas-ea8b491e").height();
+      const w = $("#ggb-cas-69da18cb").width(),
+            h = $("#ggb-cas-69da18cb").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -3305,7 +3306,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-ea8b491e").dialog({
+    const $dlg = $("#dialog-ggb-cas-69da18cb").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -3315,7 +3316,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-ea8b491e",
+            appName: "classic", id: "ggb-cas-69da18cb",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -3327,7 +3328,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-ea8b491e");
+          }, true).inject("ggb-cas-69da18cb");
         } else {
           applySize();
         }
@@ -3348,12 +3349,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-ea8b491e").empty();
+            $("#ggb-cas-69da18cb").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-ea8b491e",
+              appName: "classic", id: "ggb-cas-69da18cb",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -3363,7 +3364,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-ea8b491e");
+            }, true).inject("ggb-cas-69da18cb");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -3415,7 +3416,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-ea8b491e')) {
+          if (!e.target.closest('#ggb-cas-69da18cb')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -3443,7 +3444,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-ea8b491e');
+      const ggbContainer = document.getElementById('ggb-cas-69da18cb');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -3489,10 +3490,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-ea8b491e").button()
+    $("#button-ggb-cas-69da18cb").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-ea8b491e").dialog("open");
+        $("#dialog-ggb-cas-69da18cb").dialog("open");
       });
   });
 })();
@@ -3550,9 +3551,9 @@ T_{ABCD} \approx 38.57.
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-eda013b8" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-eda013b8" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-eda013b8" class="ggb-window"></div>
+<button id="button-ggb-cas-fe4276ef" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-fe4276ef" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-fe4276ef" class="ggb-window"></div>
 </div>
 
 <style>
@@ -3603,12 +3604,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-eda013b8';
+    const storageKey = 'ggb-cas-state-ggb-cas-fe4276ef';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-eda013b8").width(),
-            h = $("#ggb-cas-eda013b8").height();
+      const w = $("#ggb-cas-fe4276ef").width(),
+            h = $("#ggb-cas-fe4276ef").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -3679,7 +3680,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-eda013b8").dialog({
+    const $dlg = $("#dialog-ggb-cas-fe4276ef").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -3689,7 +3690,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-eda013b8",
+            appName: "classic", id: "ggb-cas-fe4276ef",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -3701,7 +3702,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-eda013b8");
+          }, true).inject("ggb-cas-fe4276ef");
         } else {
           applySize();
         }
@@ -3722,12 +3723,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-eda013b8").empty();
+            $("#ggb-cas-fe4276ef").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-eda013b8",
+              appName: "classic", id: "ggb-cas-fe4276ef",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -3737,7 +3738,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-eda013b8");
+            }, true).inject("ggb-cas-fe4276ef");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -3789,7 +3790,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-eda013b8')) {
+          if (!e.target.closest('#ggb-cas-fe4276ef')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -3817,7 +3818,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-eda013b8');
+      const ggbContainer = document.getElementById('ggb-cas-fe4276ef');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -3863,10 +3864,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-eda013b8").button()
+    $("#button-ggb-cas-fe4276ef").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-eda013b8").dialog("open");
+        $("#dialog-ggb-cas-fe4276ef").dialog("open");
       });
   });
 })();
@@ -3982,9 +3983,9 @@ a = -\sqrt{2} + \sqrt{6} = \sqrt{6} - \sqrt{2}
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-0f41985d" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-0f41985d" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-0f41985d" class="ggb-window"></div>
+<button id="button-ggb-cas-1da7de5d" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-1da7de5d" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-1da7de5d" class="ggb-window"></div>
 </div>
 
 <style>
@@ -4035,12 +4036,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-0f41985d';
+    const storageKey = 'ggb-cas-state-ggb-cas-1da7de5d';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-0f41985d").width(),
-            h = $("#ggb-cas-0f41985d").height();
+      const w = $("#ggb-cas-1da7de5d").width(),
+            h = $("#ggb-cas-1da7de5d").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -4111,7 +4112,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-0f41985d").dialog({
+    const $dlg = $("#dialog-ggb-cas-1da7de5d").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -4121,7 +4122,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-0f41985d",
+            appName: "classic", id: "ggb-cas-1da7de5d",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -4133,7 +4134,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-0f41985d");
+          }, true).inject("ggb-cas-1da7de5d");
         } else {
           applySize();
         }
@@ -4154,12 +4155,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-0f41985d").empty();
+            $("#ggb-cas-1da7de5d").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-0f41985d",
+              appName: "classic", id: "ggb-cas-1da7de5d",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -4169,7 +4170,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-0f41985d");
+            }, true).inject("ggb-cas-1da7de5d");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -4221,7 +4222,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-0f41985d')) {
+          if (!e.target.closest('#ggb-cas-1da7de5d')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -4249,7 +4250,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-0f41985d');
+      const ggbContainer = document.getElementById('ggb-cas-1da7de5d');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -4295,10 +4296,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-0f41985d").button()
+    $("#button-ggb-cas-1da7de5d").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-0f41985d").dialog("open");
+        $("#dialog-ggb-cas-1da7de5d").dialog("open");
       });
   });
 })();
@@ -4380,8 +4381,8 @@ r = 2\sqrt{2}
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_592f8dbf4356_74b89e_figure_1">
-  <g id="cpl_592f8dbf4356_74b89e_patch_1">
+ <g id="cpl_592f8dbf4356_d899c0_figure_1">
+  <g id="cpl_592f8dbf4356_d899c0_patch_1">
    <path d="M 0 432 
 L 432 432 
 L 432 0 
@@ -4390,24 +4391,24 @@ L 0 432
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_592f8dbf4356_74b89e_axes_1">
-   <g id="cpl_592f8dbf4356_74b89e_patch_2">
+  <g id="cpl_592f8dbf4356_d899c0_axes_1">
+   <g id="cpl_592f8dbf4356_d899c0_patch_2">
     <path d="M 43.965017 129.982508 
 L 388.034983 129.982508 
 L 216 30.658065 
 L 43.965017 129.982508 
 z
-" clip-path="url(#cpl_592f8dbf4356_74b89e_pc7303ab1a4)" style="fill: none; opacity: 0"/>
+" clip-path="url(#cpl_592f8dbf4356_d899c0_pc7303ab1a4)" style="fill: none; opacity: 0"/>
    </g>
-   <g id="cpl_592f8dbf4356_74b89e_patch_3">
+   <g id="cpl_592f8dbf4356_d899c0_patch_3">
     <path d="M 43.965017 129.982508 
 L 315.324444 401.341935 
 L 388.034983 129.982508 
 L 43.965017 129.982508 
 z
-" clip-path="url(#cpl_592f8dbf4356_74b89e_pc7303ab1a4)" style="fill: none; opacity: 0"/>
+" clip-path="url(#cpl_592f8dbf4356_d899c0_pc7303ab1a4)" style="fill: none; opacity: 0"/>
    </g>
-   <g id="cpl_592f8dbf4356_74b89e_line2d_1">
+   <g id="cpl_592f8dbf4356_d899c0_line2d_1">
     <path d="M 353.627987 129.982508 
 L 353.739014 127.220647 
 L 354.071378 124.476609 
@@ -4417,9 +4418,9 @@ L 356.367995 116.527277
 L 357.550236 114.028775 
 L 358.23765 112.77901 
 L 358.23765 112.77901 
-" clip-path="url(#cpl_592f8dbf4356_74b89e_pc7303ab1a4)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_592f8dbf4356_d899c0_pc7303ab1a4)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_592f8dbf4356_74b89e_line2d_2">
+   <g id="cpl_592f8dbf4356_d899c0_line2d_2">
     <path d="M 245.797333 47.861563 
 L 244.330247 50.183394 
 L 242.682646 52.380813 
@@ -4449,9 +4450,9 @@ L 188.03431 50.702057
 L 186.524695 48.40765 
 L 186.202667 47.861563 
 L 186.202667 47.861563 
-" clip-path="url(#cpl_592f8dbf4356_74b89e_pc7303ab1a4)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_592f8dbf4356_d899c0_pc7303ab1a4)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_592f8dbf4356_74b89e_line2d_3">
+   <g id="cpl_592f8dbf4356_d899c0_line2d_3">
     <path d="M 78.372013 129.982508 
 L 78.260279 132.753147 
 L 77.9258 135.50579 
@@ -4464,23 +4465,23 @@ L 71.461673 150.665239
 L 69.706893 152.812253 
 L 68.294437 154.311929 
 L 68.294437 154.311929 
-" clip-path="url(#cpl_592f8dbf4356_74b89e_pc7303ab1a4)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_592f8dbf4356_d899c0_pc7303ab1a4)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_592f8dbf4356_74b89e_line2d_4">
+   <g id="cpl_592f8dbf4356_d899c0_line2d_4">
     <path d="M 43.965017 129.982508 
 L 388.034983 129.982508 
 L 216 30.658065 
 L 43.965017 129.982508 
-" clip-path="url(#cpl_592f8dbf4356_74b89e_pc7303ab1a4)" style="fill: none; stroke: #000000; stroke-width: 1.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_592f8dbf4356_d899c0_pc7303ab1a4)" style="fill: none; stroke: #000000; stroke-width: 1.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_592f8dbf4356_74b89e_line2d_5">
+   <g id="cpl_592f8dbf4356_d899c0_line2d_5">
     <path d="M 43.965017 129.982508 
 L 315.324444 401.341935 
 L 388.034983 129.982508 
 L 43.965017 129.982508 
-" clip-path="url(#cpl_592f8dbf4356_74b89e_pc7303ab1a4)" style="fill: none; stroke: #000000; stroke-width: 1.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_592f8dbf4356_d899c0_pc7303ab1a4)" style="fill: none; stroke: #000000; stroke-width: 1.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_592f8dbf4356_74b89e_text_1">
+   <g id="cpl_592f8dbf4356_d899c0_text_1">
     <!-- $30^\circ$ -->
     <g transform="translate(323.5939 121.353677) scale(0.2 -0.2)">
      <defs>
@@ -4552,7 +4553,7 @@ z
      <use xlink:href="#CMSY10-e" transform="translate(91.380954 36.153639) scale(0.697382)"/>
     </g>
    </g>
-   <g id="cpl_592f8dbf4356_74b89e_text_2">
+   <g id="cpl_592f8dbf4356_d899c0_text_2">
     <!-- $120^\circ$ -->
     <g transform="translate(198.80594 83.655256) scale(0.2 -0.2)">
      <defs>
@@ -4603,7 +4604,7 @@ z
      <use xlink:href="#CMSY10-e" transform="translate(137.071431 36.153639) scale(0.697382)"/>
     </g>
    </g>
-   <g id="cpl_592f8dbf4356_74b89e_text_3">
+   <g id="cpl_592f8dbf4356_d899c0_text_3">
     <!-- $45^\circ$ -->
     <g transform="translate(83.156076 154.307203) scale(0.2 -0.2)">
      <defs>
@@ -4667,7 +4668,7 @@ z
      <use xlink:href="#CMSY10-e" transform="translate(91.380954 36.153639) scale(0.697382)"/>
     </g>
    </g>
-   <g id="cpl_592f8dbf4356_74b89e_text_4">
+   <g id="cpl_592f8dbf4356_d899c0_text_4">
     <!-- $A$ -->
     <g transform="translate(24.55538 134.96319) scale(0.2 -0.2)">
      <defs>
@@ -4709,7 +4710,7 @@ z
      <use xlink:href="#CMMI12-41" transform="scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_592f8dbf4356_74b89e_text_5">
+   <g id="cpl_592f8dbf4356_d899c0_text_5">
     <!-- $C$ -->
     <g transform="translate(392.819046 134.96319) scale(0.2 -0.2)">
      <defs>
@@ -4739,7 +4740,7 @@ z
      <use xlink:href="#CMMI12-43" transform="scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_592f8dbf4356_74b89e_text_6">
+   <g id="cpl_592f8dbf4356_d899c0_text_6">
     <!-- $D$ -->
     <g transform="translate(207.900582 22.029233) scale(0.2 -0.2)">
      <defs>
@@ -4774,7 +4775,7 @@ z
      <use xlink:href="#CMMI12-44" transform="scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_592f8dbf4356_74b89e_text_7">
+   <g id="cpl_592f8dbf4356_d899c0_text_7">
     <!-- $B$ -->
     <g transform="translate(307.913643 419.93213) scale(0.2 -0.2)">
      <defs>
@@ -4817,7 +4818,7 @@ z
      <use xlink:href="#CMMI12-42" transform="scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_592f8dbf4356_74b89e_text_8">
+   <g id="cpl_592f8dbf4356_d899c0_text_8">
     <!-- $\sqrt{3}$ -->
     <g transform="translate(306.801555 60.222456) scale(0.2 -0.2)">
      <defs>
@@ -4852,7 +4853,7 @@ z
 "/>
     </g>
    </g>
-   <g id="cpl_592f8dbf4356_74b89e_text_9">
+   <g id="cpl_592f8dbf4356_d899c0_text_9">
     <!-- $\sqrt{6}$ -->
     <g transform="translate(356.463777 286.465051) scale(0.2 -0.2)">
      <defs>
@@ -4894,7 +4895,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_592f8dbf4356_74b89e_pc7303ab1a4">
+  <clipPath id="cpl_592f8dbf4356_d899c0_pc7303ab1a4">
    <rect x="10.8" y="17.270239" width="410.4" height="397.459521"/>
   </clipPath>
  </defs>
@@ -4904,9 +4905,9 @@ z
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-d8a533ba" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-d8a533ba" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-d8a533ba" class="ggb-window"></div>
+<button id="button-ggb-cas-ba11fbcc" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-ba11fbcc" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-ba11fbcc" class="ggb-window"></div>
 </div>
 
 <style>
@@ -4957,12 +4958,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-d8a533ba';
+    const storageKey = 'ggb-cas-state-ggb-cas-ba11fbcc';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-d8a533ba").width(),
-            h = $("#ggb-cas-d8a533ba").height();
+      const w = $("#ggb-cas-ba11fbcc").width(),
+            h = $("#ggb-cas-ba11fbcc").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -5033,7 +5034,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-d8a533ba").dialog({
+    const $dlg = $("#dialog-ggb-cas-ba11fbcc").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -5043,7 +5044,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-d8a533ba",
+            appName: "classic", id: "ggb-cas-ba11fbcc",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -5055,7 +5056,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-d8a533ba");
+          }, true).inject("ggb-cas-ba11fbcc");
         } else {
           applySize();
         }
@@ -5076,12 +5077,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-d8a533ba").empty();
+            $("#ggb-cas-ba11fbcc").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-d8a533ba",
+              appName: "classic", id: "ggb-cas-ba11fbcc",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -5091,7 +5092,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-d8a533ba");
+            }, true).inject("ggb-cas-ba11fbcc");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -5143,7 +5144,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-d8a533ba')) {
+          if (!e.target.closest('#ggb-cas-ba11fbcc')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -5171,7 +5172,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-d8a533ba');
+      const ggbContainer = document.getElementById('ggb-cas-ba11fbcc');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -5217,10 +5218,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-d8a533ba").button()
+    $("#button-ggb-cas-ba11fbcc").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-d8a533ba").dialog("open");
+        $("#dialog-ggb-cas-ba11fbcc").dialog("open");
       });
   });
 })();
@@ -5236,7 +5237,7 @@ a</label><div class="sd-tab-content docutils">
 <p class="admonition-title">Løsning</p>
 <p>La <span class="math notranslate nohighlight">\(x = AC\)</span>. Vi bruker sinussetningen for å bestemme sidelengden med CAS:</p>
 <figure class="align-default">
-<a class="no-click adaptive-figure reference internal image-reference" href="../../../../../_images/a19.png"><img alt="../../../../../_images/a19.png" class="no-click adaptive-figure" src="../../../../../_images/a19.png" style="width: 60%;" /></a>
+<a class="no-click adaptive-figure reference internal image-reference" href="../../../../../_images/a22.png"><img alt="../../../../../_images/a22.png" class="no-click adaptive-figure" src="../../../../../_images/a22.png" style="width: 60%;" /></a>
 </figure>
 <p>Altså er <span class="math notranslate nohighlight">\(AC = 3\)</span>.</p>
 </div>
@@ -5309,9 +5310,9 @@ T_{\square ABCD} = \dfrac{3}{4}\left(2\sqrt{3} + 3\right)
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-134b803a" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-134b803a" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-134b803a" class="ggb-window"></div>
+<button id="button-ggb-cas-05d39026" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-05d39026" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-05d39026" class="ggb-window"></div>
 </div>
 
 <style>
@@ -5362,12 +5363,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-134b803a';
+    const storageKey = 'ggb-cas-state-ggb-cas-05d39026';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-134b803a").width(),
-            h = $("#ggb-cas-134b803a").height();
+      const w = $("#ggb-cas-05d39026").width(),
+            h = $("#ggb-cas-05d39026").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -5438,7 +5439,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-134b803a").dialog({
+    const $dlg = $("#dialog-ggb-cas-05d39026").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -5448,7 +5449,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-134b803a",
+            appName: "classic", id: "ggb-cas-05d39026",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -5460,7 +5461,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-134b803a");
+          }, true).inject("ggb-cas-05d39026");
         } else {
           applySize();
         }
@@ -5481,12 +5482,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-134b803a").empty();
+            $("#ggb-cas-05d39026").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-134b803a",
+              appName: "classic", id: "ggb-cas-05d39026",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -5496,7 +5497,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-134b803a");
+            }, true).inject("ggb-cas-05d39026");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -5548,7 +5549,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-134b803a')) {
+          if (!e.target.closest('#ggb-cas-05d39026')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -5576,7 +5577,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-134b803a');
+      const ggbContainer = document.getElementById('ggb-cas-05d39026');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -5622,10 +5623,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-134b803a").button()
+    $("#button-ggb-cas-05d39026").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-134b803a").dialog("open");
+        $("#dialog-ggb-cas-05d39026").dialog("open");
       });
   });
 })();
@@ -5655,8 +5656,8 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_9bdffb9c9fb1_f37913_figure_1">
-  <g id="cpl_9bdffb9c9fb1_f37913_patch_1">
+ <g id="cpl_9bdffb9c9fb1_3a8b99_figure_1">
+  <g id="cpl_9bdffb9c9fb1_3a8b99_patch_1">
    <path d="M 0 432 
 L 432 432 
 L 432 0 
@@ -5665,10 +5666,10 @@ L 0 432
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_9bdffb9c9fb1_f37913_axes_1">
-   <g id="cpl_9bdffb9c9fb1_f37913_FillBetweenPolyCollection_1">
+  <g id="cpl_9bdffb9c9fb1_3a8b99_axes_1">
+   <g id="cpl_9bdffb9c9fb1_3a8b99_FillBetweenPolyCollection_1">
     <defs>
-     <path id="cpl_9bdffb9c9fb1_f37913_mff8a864a7d" d="M 28.243211 -216 
+     <path id="cpl_9bdffb9c9fb1_3a8b99_mff8a864a7d" d="M 28.243211 -216 
 L 28.243211 -216 
 L 28.260402 -216.009925 
 L 28.277593 -216.01985 
@@ -38441,13 +38442,13 @@ L 28.243211 -216
 z
 "/>
     </defs>
-    <g clip-path="url(#cpl_9bdffb9c9fb1_f37913_p8714c4d664)">
-     <use xlink:href="#cpl_9bdffb9c9fb1_f37913_mff8a864a7d" x="0" y="432" style="fill: #0072b2; fill-opacity: 0.2"/>
+    <g clip-path="url(#cpl_9bdffb9c9fb1_3a8b99_p8714c4d664)">
+     <use xlink:href="#cpl_9bdffb9c9fb1_3a8b99_mff8a864a7d" x="0" y="432" style="fill: #0072b2; fill-opacity: 0.2"/>
     </g>
    </g>
-   <g id="cpl_9bdffb9c9fb1_f37913_FillBetweenPolyCollection_2">
+   <g id="cpl_9bdffb9c9fb1_3a8b99_FillBetweenPolyCollection_2">
     <defs>
-     <path id="cpl_9bdffb9c9fb1_f37913_m6ea7f2d251" d="M 309.878394 -378.602149 
+     <path id="cpl_9bdffb9c9fb1_3a8b99_m6ea7f2d251" d="M 309.878394 -378.602149 
 L 309.878394 -378.602149 
 L 309.884125 -378.59884 
 L 309.889855 -378.595531 
@@ -71220,11 +71221,11 @@ L 309.878394 -216
 z
 "/>
     </defs>
-    <g clip-path="url(#cpl_9bdffb9c9fb1_f37913_p8714c4d664)">
-     <use xlink:href="#cpl_9bdffb9c9fb1_f37913_m6ea7f2d251" x="0" y="432" style="fill: #0072b2; fill-opacity: 0.2"/>
+    <g clip-path="url(#cpl_9bdffb9c9fb1_3a8b99_p8714c4d664)">
+     <use xlink:href="#cpl_9bdffb9c9fb1_3a8b99_m6ea7f2d251" x="0" y="432" style="fill: #0072b2; fill-opacity: 0.2"/>
     </g>
    </g>
-   <g id="cpl_9bdffb9c9fb1_f37913_patch_2">
+   <g id="cpl_9bdffb9c9fb1_3a8b99_patch_2">
     <path d="M 216 403.756789 
 C 265.793682 403.756789 313.554648 383.973549 348.764098 348.764098 
 C 383.973549 313.554648 403.756789 265.793682 403.756789 216 
@@ -71236,9 +71237,9 @@ C 28.243211 265.793682 48.026451 313.554648 83.235902 348.764098
 C 118.445352 383.973549 166.206318 403.756789 216 403.756789 
 L 216 403.756789 
 z
-" clip-path="url(#cpl_9bdffb9c9fb1_f37913_p8714c4d664)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linejoin: miter"/>
+" clip-path="url(#cpl_9bdffb9c9fb1_3a8b99_p8714c4d664)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linejoin: miter"/>
    </g>
-   <g id="cpl_9bdffb9c9fb1_f37913_line2d_1">
+   <g id="cpl_9bdffb9c9fb1_3a8b99_line2d_1">
     <path d="M 75.182409 216 
 L 75.072054 212.783208 
 L 74.741508 209.581542 
@@ -71249,9 +71250,9 @@ L 71.263849 197.224671
 L 69.876014 194.320563 
 L 68.893749 192.530401 
 L 68.893749 192.530401 
-" clip-path="url(#cpl_9bdffb9c9fb1_f37913_p8714c4d664)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_9bdffb9c9fb1_3a8b99_p8714c4d664)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_9bdffb9c9fb1_f37913_line2d_2">
+   <g id="cpl_9bdffb9c9fb1_3a8b99_line2d_2">
     <path d="M 253.551358 216 
 L 253.440744 213.119863 
 L 253.109553 210.256694 
@@ -71268,26 +71269,26 @@ L 238.710865 186.094799
 L 236.350279 184.440998 
 L 234.775679 183.47957 
 L 234.775679 183.47957 
-" clip-path="url(#cpl_9bdffb9c9fb1_f37913_p8714c4d664)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_9bdffb9c9fb1_3a8b99_p8714c4d664)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_9bdffb9c9fb1_f37913_line2d_3">
+   <g id="cpl_9bdffb9c9fb1_3a8b99_line2d_3">
     <path d="M 28.243211 216 
 L 309.878394 53.397851 
-" clip-path="url(#cpl_9bdffb9c9fb1_f37913_p8714c4d664)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_9bdffb9c9fb1_3a8b99_p8714c4d664)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_9bdffb9c9fb1_f37913_line2d_4">
+   <g id="cpl_9bdffb9c9fb1_3a8b99_line2d_4">
     <path d="M 28.243211 216 
 L 403.756789 216 
-" clip-path="url(#cpl_9bdffb9c9fb1_f37913_p8714c4d664)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_9bdffb9c9fb1_3a8b99_p8714c4d664)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_9bdffb9c9fb1_f37913_line2d_5">
+   <g id="cpl_9bdffb9c9fb1_3a8b99_line2d_5">
     <path d="M 216 216 
 L 309.878394 53.397851 
-" clip-path="url(#cpl_9bdffb9c9fb1_f37913_p8714c4d664)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_9bdffb9c9fb1_3a8b99_p8714c4d664)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_9bdffb9c9fb1_f37913_line2d_6">
+   <g id="cpl_9bdffb9c9fb1_3a8b99_line2d_6">
     <defs>
-     <path id="cpl_9bdffb9c9fb1_f37913_m47588d016e" d="M 0 5 
+     <path id="cpl_9bdffb9c9fb1_3a8b99_m47588d016e" d="M 0 5 
 C 1.326016 5 2.597899 4.473168 3.535534 3.535534 
 C 4.473168 2.597899 5 1.326016 5 0 
 C 5 -1.326016 4.473168 -2.597899 3.535534 -3.535534 
@@ -71299,11 +71300,11 @@ C -2.597899 4.473168 -1.326016 5 0 5
 z
 " style="stroke: #000000; stroke-opacity: 0.8"/>
     </defs>
-    <g clip-path="url(#cpl_9bdffb9c9fb1_f37913_p8714c4d664)">
-     <use xlink:href="#cpl_9bdffb9c9fb1_f37913_m47588d016e" x="216" y="216" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+    <g clip-path="url(#cpl_9bdffb9c9fb1_3a8b99_p8714c4d664)">
+     <use xlink:href="#cpl_9bdffb9c9fb1_3a8b99_m47588d016e" x="216" y="216" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_9bdffb9c9fb1_f37913_text_1">
+   <g id="cpl_9bdffb9c9fb1_3a8b99_text_1">
     <!-- $30^\circ$ -->
     <g transform="translate(81.378383 204.805673) scale(0.26 -0.26)">
      <defs>
@@ -71375,7 +71376,7 @@ z
      <use xlink:href="#CMSY10-e" transform="translate(91.380954 36.153639) scale(0.697382)"/>
     </g>
    </g>
-   <g id="cpl_9bdffb9c9fb1_f37913_text_2">
+   <g id="cpl_9bdffb9c9fb1_3a8b99_text_2">
     <!-- $S$ -->
     <g transform="translate(208.200718 240.144102) scale(0.26 -0.26)">
      <defs>
@@ -71421,7 +71422,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_9bdffb9c9fb1_f37913_p8714c4d664">
+  <clipPath id="cpl_9bdffb9c9fb1_3a8b99_p8714c4d664">
    <rect x="10.8" y="10.8" width="410.4" height="410.4"/>
   </clipPath>
  </defs>
@@ -71497,7 +71498,7 @@ u \approx 56.82\degree
 \]</div>
 <p>ved å bruke CAS:</p>
 <figure class="align-default">
-<a class="no-click adaptive-figure reference internal image-reference" href="../../../../../_images/a20.png"><img alt="../../../../../_images/a20.png" class="no-click adaptive-figure" src="../../../../../_images/a20.png" style="width: 80%;" /></a>
+<a class="no-click adaptive-figure reference internal image-reference" href="../../../../../_images/a23.png"><img alt="../../../../../_images/a23.png" class="no-click adaptive-figure" src="../../../../../_images/a23.png" style="width: 80%;" /></a>
 </figure>
 <p>Altså er <span class="math notranslate nohighlight">\(u \approx 56.82\degree\)</span> dersom <span class="math notranslate nohighlight">\(v = 39\degree\)</span>.</p>
 </div>
@@ -71522,7 +71523,7 @@ v \approx 48.75\degree
 \]</div>
 <p>Vi løser likningen med CAS:</p>
 <figure class="align-default">
-<a class="no-click adaptive-figure reference internal image-reference" href="../../../../../_images/b24.png"><img alt="../../../../../_images/b24.png" class="no-click adaptive-figure" src="../../../../../_images/b24.png" style="width: 80%;" /></a>
+<a class="no-click adaptive-figure reference internal image-reference" href="../../../../../_images/b28.png"><img alt="../../../../../_images/b28.png" class="no-click adaptive-figure" src="../../../../../_images/b28.png" style="width: 80%;" /></a>
 </figure>
 <p>Som betyr at vinkelen <span class="math notranslate nohighlight">\(v\)</span> nærmer seg <span class="math notranslate nohighlight">\(v \approx 48.75\degree\)</span> når <span class="math notranslate nohighlight">\(u\)</span> nærmer seg <span class="math notranslate nohighlight">\(90\degree\)</span>. Det betyr at retningen på lysstrålen endrer seg når den omtrent går parallelt med vannoverflaten med en vinkel på <span class="math notranslate nohighlight">\(48.75\degree\)</span> med linja <span class="math notranslate nohighlight">\(m\)</span>.</p>
 </div>
@@ -71567,8 +71568,8 @@ c</label><div class="sd-tab-content docutils">
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_e5140da99e35_e86e96_figure_1">
-  <g id="cpl_e5140da99e35_e86e96_patch_1">
+ <g id="cpl_e5140da99e35_fed786_figure_1">
+  <g id="cpl_e5140da99e35_fed786_patch_1">
    <path d="M 0 432 
 L 432 432 
 L 432 0 
@@ -71577,8 +71578,8 @@ L 0 432
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_e5140da99e35_e86e96_axes_1">
-   <g id="cpl_e5140da99e35_e86e96_patch_2">
+  <g id="cpl_e5140da99e35_fed786_axes_1">
+   <g id="cpl_e5140da99e35_fed786_patch_2">
     <path d="M 213.60562 406.651909 
 C 262.500783 406.651909 309.399909 387.225654 343.97401 352.651553 
 C 378.548112 318.077452 397.974366 271.178326 397.974366 222.283163 
@@ -71590,9 +71591,9 @@ C 29.236875 271.178326 48.663129 318.077452 83.23723 352.651553
 C 117.811331 387.225654 164.710457 406.651909 213.60562 406.651909 
 L 213.60562 406.651909 
 z
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke-dasharray: 2.5,4.125; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5; stroke-linejoin: miter"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke-dasharray: 2.5,4.125; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5; stroke-linejoin: miter"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_1">
+   <g id="cpl_e5140da99e35_fed786_line2d_1">
     <path d="M 229.60454 255.505263 
 L 232.147466 254.15593 
 L 234.57738 252.612334 
@@ -71607,9 +71608,9 @@ L 248.355021 234.618174
 L 249.211387 231.869755 
 L 249.554867 230.488344 
 L 249.554867 230.488344 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_2">
+   <g id="cpl_e5140da99e35_fed786_line2d_2">
     <path d="M 309.254665 319.807061 
 L 311.246771 320.148119 
 L 313.264239 320.269078 
@@ -71633,131 +71634,131 @@ L 331.031273 296.583869
 L 330.350583 294.680853 
 L 329.968306 293.832978 
 L 329.968306 293.832978 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke: #000000; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_3">
+   <g id="cpl_e5140da99e35_fed786_line2d_3">
     <path d="M 213.60562 37.914417 
 L 158.247639 107.33113 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_4">
+   <g id="cpl_e5140da99e35_fed786_line2d_4">
     <path d="M 69.46033 107.33113 
 L 89.217365 193.892355 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_5">
+   <g id="cpl_e5140da99e35_fed786_line2d_5">
     <path d="M 33.859384 263.309068 
 L 113.853985 301.832438 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_6">
+   <g id="cpl_e5140da99e35_fed786_line2d_6">
     <path d="M 133.611019 388.393663 
 L 213.60562 349.870294 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_7">
+   <g id="cpl_e5140da99e35_fed786_line2d_7">
     <path d="M 293.600221 388.393663 
 L 313.357256 301.832438 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_8">
+   <g id="cpl_e5140da99e35_fed786_line2d_8">
     <path d="M 393.351856 263.309068 
 L 337.993875 193.892355 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_9">
+   <g id="cpl_e5140da99e35_fed786_line2d_9">
     <path d="M 357.75091 107.33113 
 L 268.963602 107.33113 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_10">
+   <g id="cpl_e5140da99e35_fed786_line2d_10">
     <path d="M 69.46033 107.33113 
 L 158.247639 107.33113 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_11">
+   <g id="cpl_e5140da99e35_fed786_line2d_11">
     <path d="M 33.859384 263.309068 
 L 89.217365 193.892355 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_12">
+   <g id="cpl_e5140da99e35_fed786_line2d_12">
     <path d="M 133.611019 388.393663 
 L 113.853985 301.832438 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_13">
+   <g id="cpl_e5140da99e35_fed786_line2d_13">
     <path d="M 293.600221 388.393663 
 L 213.60562 349.870294 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_14">
+   <g id="cpl_e5140da99e35_fed786_line2d_14">
     <path d="M 393.351856 263.309068 
 L 313.357256 301.832438 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_15">
+   <g id="cpl_e5140da99e35_fed786_line2d_15">
     <path d="M 357.75091 107.33113 
 L 337.993875 193.892355 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_16">
+   <g id="cpl_e5140da99e35_fed786_line2d_16">
     <path d="M 213.60562 37.914417 
 L 268.963602 107.33113 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_17">
+   <g id="cpl_e5140da99e35_fed786_line2d_17">
     <path d="M 158.247639 107.33113 
 L 89.217365 193.892355 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_18">
+   <g id="cpl_e5140da99e35_fed786_line2d_18">
     <path d="M 89.217365 193.892355 
 L 113.853985 301.832438 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_19">
+   <g id="cpl_e5140da99e35_fed786_line2d_19">
     <path d="M 113.853985 301.832438 
 L 213.60562 349.870294 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_20">
+   <g id="cpl_e5140da99e35_fed786_line2d_20">
     <path d="M 213.60562 349.870294 
 L 313.357256 301.832438 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_21">
+   <g id="cpl_e5140da99e35_fed786_line2d_21">
     <path d="M 313.357256 301.832438 
 L 337.993875 193.892355 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_22">
+   <g id="cpl_e5140da99e35_fed786_line2d_22">
     <path d="M 337.993875 193.892355 
 L 268.963602 107.33113 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_23">
+   <g id="cpl_e5140da99e35_fed786_line2d_23">
     <path d="M 268.963602 107.33113 
 L 158.247639 107.33113 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #808080; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_24">
+   <g id="cpl_e5140da99e35_fed786_line2d_24">
     <path d="M 213.60562 222.283163 
 L 293.600221 388.393663 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke-dasharray: 16,4,2.5,4; stroke-dashoffset: 0; stroke: #000000; stroke-width: 2.5"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke-dasharray: 16,4,2.5,4; stroke-dashoffset: 0; stroke: #000000; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_25">
+   <g id="cpl_e5140da99e35_fed786_line2d_25">
     <path d="M 213.60562 222.283163 
 L 393.351856 263.309068 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke-dasharray: 16,4,2.5,4; stroke-dashoffset: 0; stroke: #000000; stroke-width: 2.5"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke-dasharray: 16,4,2.5,4; stroke-dashoffset: 0; stroke: #000000; stroke-width: 2.5"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_26">
+   <g id="cpl_e5140da99e35_fed786_line2d_26">
     <path d="M 293.600221 388.393663 
 L 393.351856 263.309068 
-" clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)" style="fill: none; stroke: #dc5e8b; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_27">
+   <g id="cpl_e5140da99e35_fed786_line2d_27">
     <defs>
-     <path id="cpl_e5140da99e35_e86e96_ma4cc8481b3" d="M 0 5 
+     <path id="cpl_e5140da99e35_fed786_ma4cc8481b3" d="M 0 5 
 C 1.326016 5 2.597899 4.473168 3.535534 3.535534 
 C 4.473168 2.597899 5 1.326016 5 0 
 C 5 -1.326016 4.473168 -2.597899 3.535534 -3.535534 
@@ -71769,41 +71770,41 @@ C -2.597899 4.473168 -1.326016 5 0 5
 z
 " style="stroke: #000000; stroke-opacity: 0.8"/>
     </defs>
-    <g clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)">
-     <use xlink:href="#cpl_e5140da99e35_e86e96_ma4cc8481b3" x="213.60562" y="37.914417" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+    <g clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)">
+     <use xlink:href="#cpl_e5140da99e35_fed786_ma4cc8481b3" x="213.60562" y="37.914417" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_28">
-    <g clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)">
-     <use xlink:href="#cpl_e5140da99e35_e86e96_ma4cc8481b3" x="69.46033" y="107.33113" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+   <g id="cpl_e5140da99e35_fed786_line2d_28">
+    <g clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)">
+     <use xlink:href="#cpl_e5140da99e35_fed786_ma4cc8481b3" x="69.46033" y="107.33113" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_29">
-    <g clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)">
-     <use xlink:href="#cpl_e5140da99e35_e86e96_ma4cc8481b3" x="33.859384" y="263.309068" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+   <g id="cpl_e5140da99e35_fed786_line2d_29">
+    <g clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)">
+     <use xlink:href="#cpl_e5140da99e35_fed786_ma4cc8481b3" x="33.859384" y="263.309068" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_30">
-    <g clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)">
-     <use xlink:href="#cpl_e5140da99e35_e86e96_ma4cc8481b3" x="133.611019" y="388.393663" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+   <g id="cpl_e5140da99e35_fed786_line2d_30">
+    <g clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)">
+     <use xlink:href="#cpl_e5140da99e35_fed786_ma4cc8481b3" x="133.611019" y="388.393663" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_31">
-    <g clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)">
-     <use xlink:href="#cpl_e5140da99e35_e86e96_ma4cc8481b3" x="293.600221" y="388.393663" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+   <g id="cpl_e5140da99e35_fed786_line2d_31">
+    <g clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)">
+     <use xlink:href="#cpl_e5140da99e35_fed786_ma4cc8481b3" x="293.600221" y="388.393663" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_32">
-    <g clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)">
-     <use xlink:href="#cpl_e5140da99e35_e86e96_ma4cc8481b3" x="393.351856" y="263.309068" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+   <g id="cpl_e5140da99e35_fed786_line2d_32">
+    <g clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)">
+     <use xlink:href="#cpl_e5140da99e35_fed786_ma4cc8481b3" x="393.351856" y="263.309068" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_line2d_33">
-    <g clip-path="url(#cpl_e5140da99e35_e86e96_p8435dc5f52)">
-     <use xlink:href="#cpl_e5140da99e35_e86e96_ma4cc8481b3" x="357.75091" y="107.33113" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
+   <g id="cpl_e5140da99e35_fed786_line2d_33">
+    <g clip-path="url(#cpl_e5140da99e35_fed786_p8435dc5f52)">
+     <use xlink:href="#cpl_e5140da99e35_fed786_ma4cc8481b3" x="357.75091" y="107.33113" style="fill-opacity: 0.8; stroke: #000000; stroke-opacity: 0.8"/>
     </g>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_patch_3">
+   <g id="cpl_e5140da99e35_fed786_patch_3">
     <path d="M 400.439779 352.047164 
 Q 380.234954 327.671204 347.707045 326.043962 
 " style="fill: none; opacity: 0.7; stroke: #000000; stroke-width: 2; stroke-linecap: round"/>
@@ -71812,8 +71813,8 @@ L 347.707045 326.043962
 L 355.896908 322.448666 
 " style="fill: none; opacity: 0.7; stroke: #000000; stroke-width: 2; stroke-linecap: round"/>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_text_1">
-    <g id="cpl_e5140da99e35_e86e96_patch_4">
+   <g id="cpl_e5140da99e35_fed786_text_1">
+    <g id="cpl_e5140da99e35_fed786_patch_4">
      <path d="M 407.192803 386.634475 
 L 416.382813 386.634475 
 Q 424.382813 386.634475 424.382813 378.634475 
@@ -71856,7 +71857,7 @@ z
      <use xlink:href="#CMMI12-73" transform="scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_text_2">
+   <g id="cpl_e5140da99e35_fed786_text_2">
     <!-- $u$ -->
     <g transform="translate(244.120806 260.785816) scale(0.2 -0.2)">
      <defs>
@@ -71895,7 +71896,7 @@ z
      <use xlink:href="#CMMI12-75" transform="scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_text_3">
+   <g id="cpl_e5140da99e35_fed786_text_3">
     <!-- $v$ -->
     <g transform="translate(327.633146 327.384685) scale(0.2 -0.2)">
      <defs>
@@ -71925,7 +71926,7 @@ z
      <use xlink:href="#CMMI12-76" transform="scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_text_4">
+   <g id="cpl_e5140da99e35_fed786_text_4">
     <!-- $D$ -->
     <g transform="translate(205.506202 23.145096) scale(0.2 -0.2)">
      <defs>
@@ -71960,7 +71961,7 @@ z
      <use xlink:href="#CMMI12-44" transform="scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_text_5">
+   <g id="cpl_e5140da99e35_fed786_text_5">
     <!-- $E$ -->
     <g transform="translate(53.331962 92.561809) scale(0.2 -0.2)">
      <defs>
@@ -72015,7 +72016,7 @@ z
      <use xlink:href="#CMMI12-45" transform="scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_text_6">
+   <g id="cpl_e5140da99e35_fed786_text_6">
     <!-- $F$ -->
     <g transform="translate(19.543615 288.039752) scale(0.2 -0.2)">
      <defs>
@@ -72065,7 +72066,7 @@ z
      <use xlink:href="#CMMI12-46" transform="scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_text_7">
+   <g id="cpl_e5140da99e35_fed786_text_7">
     <!-- $G$ -->
     <g transform="translate(116.535519 413.124347) scale(0.2 -0.2)">
      <defs>
@@ -72109,7 +72110,7 @@ z
      <use xlink:href="#CMMI12-47" transform="scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_text_8">
+   <g id="cpl_e5140da99e35_fed786_text_8">
     <!-- $A$ -->
     <g transform="translate(295.286349 413.124347) scale(0.2 -0.2)">
      <defs>
@@ -72151,7 +72152,7 @@ z
      <use xlink:href="#CMMI12-41" transform="scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_text_9">
+   <g id="cpl_e5140da99e35_fed786_text_9">
     <!-- $B$ -->
     <g transform="translate(404.256422 278.821315) scale(0.2 -0.2)">
      <defs>
@@ -72194,7 +72195,7 @@ z
      <use xlink:href="#CMMI12-42" transform="scale(0.996264)"/>
     </g>
    </g>
-   <g id="cpl_e5140da99e35_e86e96_text_10">
+   <g id="cpl_e5140da99e35_fed786_text_10">
     <!-- $C$ -->
     <g transform="translate(359.437038 101.780247) scale(0.2 -0.2)">
      <defs>
@@ -72227,7 +72228,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_e5140da99e35_e86e96_p8435dc5f52">
+  <clipPath id="cpl_e5140da99e35_fed786_p8435dc5f52">
    <rect x="10.8" y="23.366326" width="405.61124" height="397.833674"/>
   </clipPath>
  </defs>

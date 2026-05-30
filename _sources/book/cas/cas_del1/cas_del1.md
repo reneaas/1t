@@ -98,11 +98,12 @@ $$
 
 
 
-:::::::::::::::{underveisoppgave} Underveisoppgave 1
+:::::::::::::::{exercise} Underveisoppgave 1
 > I denne oppgaven skal du bruke CAS-vinduet til å løse likninger. Klikk på det, så popper det opp et CAS-vindu kan flytte rundt og endre størrelse på. 
 
-:::{cas-popup} 400 500
+:::{cas-popup}
 :::
+
 
 
 ::::::::::::::{tab-set}
@@ -205,14 +206,14 @@ $$
 
 ### Numerisk løsning
 
-I tilfeller hvor vi regner på noe praktisk kan det være naturlig å bruke numerisk løsning med <img src="/_static/icons/ggb/mode_nsolve.svg" class="inline-image"/>. I disse tilfellene vil det gjerne være beregninger der vi er ute at et omtrentlig tallsvar som vi kunne målt i praksis. Andre ganger finnes det ikke en eksakt løsning i det hele tatt, men det går likevel an å finne en numerisk løsning.
+I tilfeller hvor vi regner på noe praktisk kan det være naturlig å bruke numerisk løsning med {ggb-icon}`mode_nsolve`. I disse tilfellene vil det gjerne være beregninger der vi er ute at et omtrentlig tallsvar som vi kunne målt i praksis. Andre ganger finnes det ikke en eksakt løsning i det hele tatt, men det går likevel an å finne en numerisk løsning.
 
 
 :::::::::::::::{explore} Utforsk 2
 ---
 class: tabs-parts
 ---
-Nedenfor vises et CAS-vindu som løser en likning **eksakt** med <img src="/_static/icons/ggb/mode_solve.svg" class="inline-image"/> og **numerisk** med <img src="/_static/icons/ggb/mode_nsolve.svg" class="inline-image"/>. 
+Nedenfor vises et CAS-vindu som løser en likning **eksakt** med {ggb-icon}`mode_solve` og **numerisk** med {ggb-icon}`mode_nsolve`. 
 
 
 ::::::::::::::{tab-set}
@@ -263,7 +264,7 @@ toolbar: "true"
 ---
 
 
-:::::::::::::::{underveisoppgave} Underveisoppgave 2
+:::::::::::::::{exercise} Underveisoppgave 2
 > Bruk CAS-vinduet til å løse likningene nedenfor. Løs de både eksakt med {ggb-icon}`mode_solve` og numerisk med {ggb-icon}`mode_nsolve`.
 
 :::{cas-popup} 400 500
@@ -394,7 +395,7 @@ $$
 ---
 
 
-:::::::::::::::{underveisoppgave} Underveisoppgave 3
+:::::::::::::::{exercise} Underveisoppgave 3
 Bruk CAS-vinduet til å løse ulikheten nedenfor. 
 
 :::{cas-popup} 400 500
@@ -546,7 +547,7 @@ $$
 ---
 
 
-:::::::::::::::{underveisoppgave} Underveisoppgave 4
+:::::::::::::::{exercise} Underveisoppgave 4
 Bruk CAS-vinduet til å bestemme en eksakt og numerisk løsning av ulikhetene nedenfor.
 
 :::{cas-popup} 400 500
@@ -720,7 +721,8 @@ $$
 
 
 
-:::::::::::::::{underveisoppgave} Underveisoppgave 5
+
+:::::::::::::::{exercise} Underveisoppgave 5
 
 Bruk CAS til å løse likningssystemene nedenfor. Løs de både eksakt med {ggb-icon}`mode_solve` og numerisk med {ggb-icon}`mode_nsolve`.
 
