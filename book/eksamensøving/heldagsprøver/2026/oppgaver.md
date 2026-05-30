@@ -779,8 +779,9 @@ $$
 
 :::::::::::::::{exercise} Oppgave 1
 ---
-aids: 
+aids: true
 ---
+
 En mynt blir sluppet fra ulike høyder. Farten mynten hadde rett før den traff bakken for ulike høyder er vist i tabellen nedenfor.
 
 

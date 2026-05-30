@@ -595,7 +595,7 @@ som betyr at arealet av grønnsakhagen er omtrent $A = 245.5 \, \mathrm{m}^2$ de
 Lag en oversikt som viser hvordan arealet av grønnsakhagen endrer seg dersom hun velger andre lengder på katetene. Av oversikten skal Else kunne se omtrent hvor lange katetene må være for at arealet av grønnsakhagen skal bli størst mulig.
 
 
-:::::{solutino} 
+:::::{solution} 
 Vi bruker en grafisk framstilling av arealet $A(x)$ for å se hvordan arealet endrer seg med lengden på katetene. Vi kan bruke Geogebra-vinduet til å lage grafen til $A$ siden vi allerede har definert $A(x)$ i CAS.
 
 :::{figure} ./figurer/oppgave_7/b.png

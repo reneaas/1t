@@ -1003,9 +1003,10 @@ Hvilken av grafene nedenfor kan være grafen til $f$?
 Husk å argumentere for svaret ditt.
 
 
-:::{clickable-figure} ./figurer/oppgave_13/merged_figure.svg
+:::{figure} ./figurer/oppgave_13/merged_figure.svg
 ---
 width: 100%
+class: no-click, adaptive-figure
 ---
 :::
 
