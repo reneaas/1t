@@ -6,7 +6,7 @@
 
 
 
-:::::::::::::::{exercise} Oppgave 1 (2 poeng)
+:::::::::::::::{exercise-2} Oppgave 1 (2 poeng)
 Løs ulikheten
 
 $$
@@ -14,14 +14,13 @@ x^2 + 7x + 6 \leq 0.
 $$
 
 
-::::{answer}
+:::::{answer-2}
 $$
 x \in [-6, -1].
 $$
-::::
 
 
-::::{solution}
+::::{solution-2}
 Vi starter med å nullpunktsfaktorisere uttrykket. Vi finner nullpunktene med $abc$-formelen:
 
 $$
@@ -44,14 +43,14 @@ width: 80%
 function: (x + 1) * (x + 6), (x + 1)(x + 6)
 :::
 
-Her kan vi se at $(x + 1)(x + 6) \lgeq 0$ når 
+Her kan vi se at $(x + 1)(x + 6) \leq 0$ når 
 
 $$
 x \in [-6, -1].
 $$
-
-
 ::::
+:::::
+
 
 
 :::::::::::::::
@@ -60,7 +59,7 @@ $$
 ---
 
 
-:::::::::::::::{exercise} Oppgave 2 (4 poeng)
+:::::::::::::::{exercise-2} Oppgave 2 (4 poeng)
 Gitt likningssystemet
 
 $$
@@ -76,13 +75,13 @@ Løs likningsystemet ved regning.
 
 
 
-::::{answer}
+:::::{answer-2}
 $$
 x = 2 \and y = 0 \or x = -3 \and y = -5.
 $$
-::::
 
-::::{solution}
+
+::::{solution-2}
 Vi skriver om likningen 2 til
 
 $$
@@ -123,10 +122,10 @@ Altså er løsningen av likningssystemet
 $$
 x = 2 \and y = 0 \or x = -3 \and y = -5.
 $$
-
-
-
 ::::
+
+
+:::::
 
 :::::::::::::
 
@@ -136,13 +135,13 @@ Løs likningssystemet grafisk.
 
 
 
-::::{answer}
+:::::{answer-2}
 $$
 (x, y) = (2, 0) \or (x, y) = (-3, -5).
 $$
-::::
 
-::::{solution}
+
+::::{solution-2}
 Vi kan tolke likning 1 som funksjonsuttrykket til
 
 $$
@@ -172,9 +171,10 @@ Vi ser at grafene skjærer hverandre i punktene $(2, 0)$ og $(-3, 5)$. Det betyr
 $$
 (x, y) = (2, 0) \or (x, y) = (-3, -5).
 $$
-
-
 ::::
+
+
+:::::
 
 :::::::::::::
 
@@ -187,7 +187,7 @@ $$
 
 
 
-:::::::::::::::{exercise} Oppgave 3 (3 poeng)
+:::::::::::::::{exercise-2} Oppgave 3 (3 poeng)
 Løs likningen
 
 $$
@@ -195,14 +195,13 @@ $$
 $$
 
 
-::::{answer}
+:::::{answer-2}
 $$
 x = 2 \or x = \frac{1}{2} \or x = -4.
 $$
-::::
 
 
-::::{solution}
+::::{solution-2}
 Eventuelle heltallige nullpunkter vil være en faktor i konstantleddet. Det betyr at kandidatene våre er 
 
 $$
@@ -245,6 +244,9 @@ $$
 ::::
 
 
+:::::
+
+
 :::::::::::::::
 
 
@@ -255,7 +257,7 @@ $$
 
 
 
-:::::::::::::::{exercise} Oppgave 4 (2 poeng)
+:::::::::::::::{exercise-2} Oppgave 4 (2 poeng)
 Gitt likningen
 
 $$
@@ -265,13 +267,13 @@ $$
 Bestem $a$, $b$ og $c$ slik at likningen blir en identitet.
 
 
-::::{answer}
+:::::{answer-2}
 $$
 a = 1 \and b = 4 \and c = 16
 $$
-::::
 
-::::{solution}
+
+::::{solution-2}
 Uttrykket på venstre side er skrevet på nullpunktsform og er et fullstendig kvadrat, mens uttrykket på høyre side er skrevet på standardform.
 
 Den ledende koeffisienten må være lik i begge uttrykk som betyr at $a = 1$.
@@ -306,8 +308,10 @@ $$
 a = 1 \and b = 4 \and c = 16
 $$
 
-
 ::::
+
+
+:::::
 
 :::::::::::::::
 
@@ -317,7 +321,7 @@ $$
 
 
 
-:::::::::::::::{exercise} Oppgave 5 (2 poeng)
+:::::::::::::::{exercise-2} Oppgave 5 (2 poeng)
 Susanne arbeid med tallfølgen
 
 $$
@@ -343,11 +347,12 @@ $$
 Bestem tall nummer $8$ i tallfølgen.
 
 
-::::{answer}
-$57$.
-::::
+:::::{answer-2}
+$$
+57
+$$
 
-::::{solution}
+::::{solution-2}
 Vi bare bruker samme strategi som hun Susanne har regnet med. Vi fortsetter der hun slapp (fra tall nummer $5$):
 
 $$
@@ -367,6 +372,10 @@ Altså er tall nummer $8$ i tallfølgen $57$.
 ::::
 
 
+:::::
+
+
+
 :::::::::::::
 
 
@@ -375,14 +384,13 @@ Altså er tall nummer $8$ i tallfølgen $57$.
 Sett opp en formel som Susanne kan bruke til å finne tall nummber $n$ i tallfølgen.
 
 
-::::{answer}
+:::::{answer-2}
 $$
 a_n = (n - 1) \cdot n + 1
 $$
-::::
 
 
-::::{solution}
+::::{solution-2}
 Vi lar $a_n$ være tall nummer $n$ i tallfølgen. Vi kan generalisere utregningene som vist i tabellen nedenfor.
 
 
@@ -400,10 +408,10 @@ Altså finner vi at
 $$
 a_n = (n - 1) \cdot n + 1.
 $$
-
-
-
 ::::
+
+:::::
+
 
 :::::::::::::
 
@@ -417,7 +425,7 @@ $$
 
 
 
-:::::::::::::::{exercise} Oppgave 6 (1 poeng)
+:::::::::::::::{exercise-2} Oppgave 6 (1 poeng)
 Om en trekant $ABC$ får du vite at 
 
 * vinkel $B$ er $90\degree$
@@ -426,7 +434,7 @@ Om en trekant $ABC$ får du vite at
 Lag en figur og forklar hvordan denne trekanten kan se ut.
 
 
-::::{answer}
+:::::{answer-2}
 :::{plot}
 width: 40%
 fontsize: 32
@@ -444,32 +452,21 @@ text: 0.5, 0, "$1$", bottom-center
 text: 1, 0.5, "$1$", center-right
 text: 0.3, 0.1, "$45^\circ$", center-center
 text: 0.9, 0.7, "$45^\circ$", center-center
-:::
-::::
-
-::::{solution}
-Siden $\angle B = 90\degree$ så vet vi at trekant $ABC$ er rettvinklet. Siden $\tan A = 1$, må katetene være like lange og de andre vinklene er $45\degree$. En mulig trekant er derfor
-
-:::{plot}
-width: 40%
-fontsize: 32
-axis: off
-axis: equal
-line-segment: (0, 0), (1, 0), solid, black
-line-segment: (1, 0), (1, 1), solid, black
-line-segment: (0, 0), (1, 1), solid, black
-let: ds = 0.1
-line-segment: (1 - ds, 0), (1 - ds, ds), solid, gray
-line-segment: (1 - ds, ds), (1, ds), solid, gray
-angle-arc: (0, 0), 0.2, 0, 45
-angle-arc: (1, 1), 0.2, 90 + 180 - 45, 90 + 180
-text: 0.5, 0, "$1$", bottom-center
-text: 1, 0.5, "$1$", center-right
-text: 0.3, 0.1, "$45^\circ$", center-center
-text: 0.9, 0.7, "$45^\circ$", center-center
+text: 0, 0, "$A$", bottom-left
+text: 1, 0, "$B$", bottom-right
+text: 1, 1, "$C$", top-right
+text: 0.5, 0.5, "$\sqrt{2}$", top-left
 :::
 
-::::
+
+::::{solution-2}
+Siden $\angle B = 90\degree$ så vet vi at trekant $ABC$ er rettvinklet. Siden $\tan A = 1$, må katetene være like lange og de andre vinklene er $45\degree$. Da kan vi sette katetene $AB$ og $BC$ lik $1$ for eksempel. Da vil $AC = \sqrt{2}$.
+
+
+
+
+:::::
+
 :::::::::::::::
 
 
@@ -478,7 +475,7 @@ text: 0.9, 0.7, "$45^\circ$", center-center
 
 
 
-:::::::::::::::{exercise} Oppgave 7 (5 poeng)
+:::::::::::::::{exercise-2} Oppgave 7 (5 poeng)
 :::{plot}
 width: 40%
 axis: off
@@ -510,7 +507,7 @@ fontsize: 32
 Bruk trekanten ovenfor til å vise at $\sin 30\degree = \dfrac{1}{2}$ og at $\cos 30\degree = \dfrac{\sqrt{3}}{2}$.
 
 
-::::{solution}
+::::{solution-2}
 Trekanten er i utgangspunktet en likesidet trekant der alle sidelengder er $4$. Når den er delt i $2$, så får vi to rettvinklede trekanter som har hypotenus $4$ og en katet som er $2$. Den gjenstående kateten får vi fra Pytagoras' setning:
 
 $$
@@ -547,17 +544,44 @@ $$
 :::::::::::::
 
 
+Gitt en ny trekant som vist i figuren nedenfor.
+
+:::{plot}
+width: 60%
+axis: off
+axis: equal
+fontsize: 32
+let: Ax = 0
+let: Ay = 0
+let: Bx = -4
+let: By = 0
+let: Cx = -10 * sqrt(3) * cos(pi/6) 
+let: Cy = 10 * sqrt(3) * sin(pi/6)
+line-segment: (Ax, Ay), (Bx, By), solid, black
+line-segment: (Ax, Ay), (Cx, Cy), solid, black
+line-segment: (Bx, By), (Cx, Cy), solid, black
+angle-arc: (Ax, Ay), 1.8, 150, 180
+let: r = 3.1
+let: u1 = pi - pi/6 
+let: u2 = pi
+text: 0.5 * r * (cos(u1) + cos(u2)), 0.5 * r * (sin(u1) + sin(u2)), "$30^\circ$", center-center
+text: 0.5 * (Ax + Bx), 0.5 * (Ay + By) - 0.2, "$4$", bottom-center
+text: 0.5 * (Ax + Cx), 0.5 * (Ay + Cy), "$10\sqrt{3}$", top-right
+fontsize: 26
+:::
+
+
 :::::::::::::{part} b
-Bestem arealet av trekanten nedenfor.
+Bestem arealet av den nye trekanten.
 
 
-::::{answer}
+:::::{answer-2}
 $$
 10 \sqrt{3}
 $$
-::::
 
-::::{solution}
+
+::::{solution-2}
 Arealsetningen gir oss at arealet er
 
 $$
@@ -570,22 +594,23 @@ T &= \dfrac{1}{2} \cdot 4 \cdot 10\sqrt{3} \cdot \sin 30\degree \\
 \end{align*}
 $$
 ::::
+:::::
+
 
 
 :::::::::::::
 
 
 :::::::::::::{part} c
-Bestem omkretsen av trekanten nedenfor.
+Bestem omkretsen av den nye trekanten.
 
 
-::::{answer}
+:::::{answer-2}
 $$
 18 + 10\sqrt{3}
 $$
-::::
 
-::::{solution}
+::::{solution-2}
 Vi bruker cosinussetningen. Vi lar $x$ være den motstående siden til hjørnet med vinkel lik $30\degree$. Da får vi
 
 $$
@@ -617,32 +642,12 @@ $$
 $$
 ::::
 
+
+:::::
+
+
 :::::::::::::
 
-
-:::{plot}
-width: 60%
-axis: off
-axis: equal
-fontsize: 32
-let: Ax = 0
-let: Ay = 0
-let: Bx = -4
-let: By = 0
-let: Cx = -10 * sqrt(3) * cos(pi/6) 
-let: Cy = 10 * sqrt(3) * sin(pi/6)
-line-segment: (Ax, Ay), (Bx, By), solid, black
-line-segment: (Ax, Ay), (Cx, Cy), solid, black
-line-segment: (Bx, By), (Cx, Cy), solid, black
-angle-arc: (Ax, Ay), 1.8, 150, 180
-let: r = 3.1
-let: u1 = pi - pi/6 
-let: u2 = pi
-text: 0.5 * r * (cos(u1) + cos(u2)), 0.5 * r * (sin(u1) + sin(u2)), "$30^\circ$", center-center
-text: 0.5 * (Ax + Bx), 0.5 * (Ay + By) - 0.2, "$4$", bottom-center
-text: 0.5 * (Ax + Cx), 0.5 * (Ay + Cy), "$10\sqrt{3}$", top-right
-fontsize: 26
-:::
 
 
 
@@ -654,7 +659,7 @@ fontsize: 26
 
 
 
-:::::::::::::::{exercise} Oppgave 8 (4 poeng)
+:::::::::::::::{exercise-2} Oppgave 8 (4 poeng)
 
 En rasjonal funksjon $f$ har
 
@@ -668,13 +673,13 @@ Bestem et mulig funksjonsuttrykk $f(x)$.
 Husk å argumentere for at svaret ditt er riktig.
 
 
-::::{answer}
+:::::{answer-2}
 $$
 f(x) = \dfrac{x^2 + 1}{x^2 - 1}
 $$
-::::
 
-::::{solution}
+
+::::{solution-2}
 En rasjonal funksjon $f$ kan skrives som en brøk
 
 $$
@@ -701,6 +706,11 @@ $$
 ::::
 
 
+:::::
+
+
+
+
 :::::::::::::
 
 
@@ -714,13 +724,13 @@ Bestem et mulig funksjonsuttrykk $g(x)$.
 Husk å argumentere for at svaret ditt er riktig.
 
 
-::::{answer}
+:::::{answer-2}
 $$
 g(x) = \dfrac{2x - 1}{x}
 $$
-::::
 
-::::{solution}
+
+::::{solution-2}
 Vi har at $g(x)$ kan skrives på formen
 
 $$
@@ -743,6 +753,11 @@ $$
 
 Når $|x|$ blir stor, så vil $g(x)$ nærme seg $2$ som gir en horisontal asymptote $y = 2$.
 ::::
+
+
+:::::
+
+
 :::::::::::::
 
 
@@ -754,7 +769,7 @@ Når $|x|$ blir stor, så vil $g(x)$ nærme seg $2$ som gir en horisontal asympt
 
 
 
-:::::::::::::::{exercise} Oppgave 9 (3 poeng)
+:::::::::::::::{exercise-2} Oppgave 9 (3 poeng)
 
 :::{plot}
 fontsize: 32
@@ -794,7 +809,7 @@ Til høyre ser du grafen til en andregradsfunksjon $f$
 Forklar at $f'(4) = 5$
 
 
-::::{solution}
+::::{solution-2}
 $f'(4)$ gir stigningstallet til en tangent gjennom punktet $(4, f(4))$ på grafen til $f$. Her kan vi se at dette stigningstallet er
 
 $$
@@ -812,13 +827,13 @@ Ergo må $f'(4) = 5$.
 Bestem $f'(x)$.
 
 
-::::{answer}
+:::::{answer-2}
 $$
 f'(x) = x + 1
 $$
-::::
 
-::::{solution}
+
+::::{solution-2}
 Den deriverte kan skrives på formen
 
 $$
@@ -844,6 +859,10 @@ f'(x) = x + 1
 $$
 ::::
 
+:::::
+
+
+
 :::::::::::::
 
 :::::::::::::::
@@ -855,7 +874,7 @@ $$
 ## Del 2 - 2 timer - Med hjelpemidler
 
 
-:::::::::::::::{exercise} Oppgave 1 (5 poeng)
+:::::::::::::::{exercise-2} Oppgave 1 (5 poeng)
 ---
 aids: true
 ---
@@ -878,12 +897,11 @@ $$
 Hvor mange gram $\mathrm{CO}_2$ slipper bilen ut per kilometer dersom fru Hansen kjører med en fart på $50$ km/h?
 
 
-::::{answer}
+:::::{answer-2}
 $176.5$ gram $\mathrm{CO}_2$ per kilometer.
-::::
 
 
-::::{solution}
+::::{solution-2}
 Vi regner ut $U(50)$ med CAS:
 
 :::{figure} ./figurer/del_2/1/a/sol.png
@@ -894,8 +912,10 @@ width: 80%
 :::
 
 Altså slipper bilen ut $176.5$ gram $\mathrm{CO}_2$ per kilometer dersom fru Hansen kjører med en fart på $50$ km/h.
-
 ::::
+:::::
+
+
 
 :::::::::::::
 
@@ -906,12 +926,12 @@ Hvilken fart gir minst utslipp av $\mathrm{CO}_2$ per kilometer?
 Hvor mange grafem $\mathrm{CO}_2$ slipper bilen ut per kilometer ved denne farten?
 
 
-::::{answer}
+:::::{answer-2}
 Bilen slipper ut minst $\mathrm{CO}_2$ per kilometer når den kjører med en fart på omtrent $71$ km/h. Da slipper bilen ut omtrent $163.4$ gram $\mathrm{CO}_2$ per kilometer.
-::::
 
 
-::::{solution}
+
+::::{solution-2}
 :::{plot}
 width: 100%
 align: right
@@ -938,9 +958,11 @@ width: 80%
 :::
 
 Altså har grafen et bunnpunkt når $x \approx 71~\mathrm{km/h}$. Da slipper bilen ut omtrent $163.4$ gram $\mathrm{CO}_2$ per kilometer ved denne farten.
-
-
 ::::
+
+
+:::::
+
 
 :::::::::::::
 
@@ -952,11 +974,11 @@ Fru hansen kjører med en fart på $90$ km/h i 20 minutter.
 Hvor mange gram $\mathrm{CO}_2$ slipper bilen ut i løpet av disse 20 minuttene?
 
 
-::::{answer}
+:::::{answer-2}
 Ca. $5098$ gram $\mathrm{CO}_2$
-::::
 
-::::{solution}
+
+::::{solution-2}
 Bilen slipper da ut $U(90)$ gram $\mathrm{CO}_2$ per kilometer. Bilen vil ha kjørt en strekning på $90 \cdot \dfrac{20}{60}$ kilometer i løpet av disse 20 minuttene. Vi regner ut med CAS:
 
 
@@ -968,10 +990,10 @@ width: 80%
 :::
 
 Altså slipper bilen ut ca. $5098$ gram $\mathrm{CO}_2$ i løpet av disse 20 minuttene.
-
-
-
 ::::
+
+
+:::::
 :::::::::::::
 
 
@@ -984,7 +1006,7 @@ Altså slipper bilen ut ca. $5098$ gram $\mathrm{CO}_2$ i løpet av disse 20 min
 
 
 
-:::::::::::::::{exercise} Oppgave 2 (5 poeng)
+:::::::::::::::{exercise-2} Oppgave 2 (5 poeng)
 ---
 aids: true
 ---
@@ -1033,13 +1055,13 @@ Gitt figuren ovenfor.
 Bruk trigonometri til å bestemme lengden av sidekanten $AB$.
 
 
-::::{answer}
+:::::{answer-2}
 $$
 AB = \dfrac{\sqrt{2} + \sqrt{6}}{2}
 $$
-::::
 
-::::{solution}
+
+::::{solution-2}
 Vi bruker cosinussetningen med
 
 $$
@@ -1062,6 +1084,10 @@ AB = \dfrac{\sqrt{2} + \sqrt{6}}{2}
 $$
 ::::
 
+
+:::::
+
+
 :::::::::::::
 
 
@@ -1069,14 +1095,13 @@ $$
 Bruk trigonometri til å bestemme arealet av trekanten $ABD$
 
 
-::::{answer}
+:::::{answer-2}
 $$
 T_{ABD} = \dfrac{5 \sqrt{3} + 9}{12}
 $$
-::::
 
-::::{solution}
 
+::::{solution-2}
 Vi har at 
 
 $$
@@ -1126,6 +1151,11 @@ T_{ABD} = \dfrac{5 \sqrt{3} + 9}{12}
 $$
 
 ::::
+
+
+:::::
+
+
 :::::::::::::
 
 :::::::::::::::
@@ -1136,7 +1166,7 @@ $$
 
 
 
-:::::::::::::::{exercise} Oppgave 3 (6 poeng)
+:::::::::::::::{exercise-2} Oppgave 3 (6 poeng)
 ---
 aids: true
 ---
@@ -1182,16 +1212,15 @@ Lag en modell $f$ som viser utviklingen av vipebestanden ut fra Tors antakelser.
 Forklar hva modellen forteller om utviklingen.
 
 
-::::{answer}
+:::::{answer-2}
 $$
 f(x) = -\dfrac{6500}{9}x + 9000.
 $$
 
 Antall vipepar synker med 722 par hvert år ifølge modellen.
 
-::::
 
-::::{solution}
+::::{solution-2}
 Tor vil lage en modell på formen
 
 $$
@@ -1215,9 +1244,11 @@ f(x) = -\dfrac{6500}{9}x + 9000.
 $$
 
 Modellen forteller oss at bestanden synker med omtrent 722 par hvert år.
-
-
 ::::
+
+
+:::::
+
 :::::::::::::
 
 
@@ -1227,15 +1258,15 @@ Lag en modell $g$ som viser utviklingen av vipebestanden ut fra Egils antakelser
 Forklar hva modellen forteller om utviklingen.
 
 
-::::{answer}
+:::::{answer-2}
 $$
 g(x) = 9000 \cdot 0.87^x
 $$
 
 Vipebestanden avtar med ca. $13~\%$ ifølge modellen.
-::::
 
-::::{solution}
+
+::::{solution-2}
 Egil vil lage en modell på formen
 
 $$
@@ -1259,9 +1290,13 @@ g(x) = 9000 \cdot 0.87^x
 $$
 
 Vekstfaktoren til den eksponentielle modellen er ca. $0.87$. Det forteller oss at bestanden av viper synker med omtrent $13~\%$ hvert år ifølge modellen.
-
-
 ::::
+
+
+:::::
+
+
+
 :::::::::::::
 
 
@@ -1354,13 +1389,13 @@ Gjør rede for hvilke antakelser Egil har lagt til grunn for modellen $q$.
 Bestem $p(x)$ og $q(x)$.
 
 
-::::{answer}
+:::::{answer-2}
 $$
 p(x) = 7000 \cdot 0.75^x \qog q(x) = 7000 \cdot 0.75^x + 2000
 $$
-::::
 
-::::{solution}
+
+::::{solution-2}
 Egil antar at modellen $q$ kan skrives som
 
 $$
@@ -1396,6 +1431,11 @@ $$
 q(x) = 7000 \cdot 0.75^x + 2000
 $$
 ::::
+
+
+:::::
+
+
 :::::::::::::
 
 
@@ -1410,7 +1450,7 @@ $$
 
 
 
-:::::::::::::::{exercise} Oppgave 4 (3 poeng)
+:::::::::::::::{exercise-2} Oppgave 4 (3 poeng)
 ---
 aids: true
 ---
@@ -1483,12 +1523,11 @@ Tenk deg at Kristian skal lage de 50 første figurene i denne serien.
 Lag et program som beregner og skriver ut hvor mange kuler han vil trenge, og hvor mange pinner han vil trenge.
 
 
-::::{answer}
+:::::{answer-2}
 $41~650$ kuler og $2~500$ pinner
-::::
 
 
-::::{solution}
+::::{solution-2}
 La $P_n$ være antall pinner i figur $n$ og la $K_n$ være antall kuler i figur $n$. Fra figurene kan vi lage oss en tabell for å oppdage et mønster:
 
 
@@ -1539,8 +1578,11 @@ sum_kuler = 41650
 :::
 
 Altså trenger Kristian $41~650$ kuler og $2~500$ pinner for å lage de 50 første figurene i serien.
-
 ::::
+
+:::::
+
+
 
 
 :::::::::::::::

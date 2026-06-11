@@ -28,13 +28,15 @@ viser hvordan de ulike tallmengdene henger sammen. Diagrammet illustrerer at $\m
 
 ::::{summary} De spesielle tallmengdene
 
-| Symbol | Navn | Eksempler | Beskrivelse | 
-| :---: | --- | --- |--- |
-| $\mathbb{N}$ | De **naturlige** tallene. | $1, 2, 3, 8 $| Alle de positive heltallene. |
-| $\mathbb{Z}$ | **Heltallene** | $-3, -2, -1, 0, 1, 2$| Alle hele tall - inkludert $0$ og alle negative hele tall. |
-| $\mathbb{Q}$ | De **rasjonale** tallene | $-\dfrac{1}{2}, \dfrac{1}{3}, \dfrac{7}{4}, 2$| Alle tall som kan skrives som en brøk der teller og nevner er heltall. |
-| $\mathbb{R}$ | De **reelle** tallene | $\pi, \sqrt{2}, \dfrac{10}{2}$ | Alle tallene på tallinja. | 
-| $\emptyset$ | Den **tomme** mengden | - | Mengden uten noen elementer. |
+
+:::{table}
+labels: Symbol, Navn, Eksempler, Beskrivelse
+$\mathbb{N}$, De **naturlige** tallene., $1, 2, 3, 8$, Alle de positive heltallene.
+$\mathbb{Z}$, **Heltallene**, $-3, -2, -1, 0, 1, 2$, Alle hele tall - inkludert $0$ og alle negative hele tall.
+$\mathbb{Q}$, De **rasjonale** tallene, $-\dfrac{1}{2}, \dfrac{1}{3}, \dfrac{7}{4}, 2$, Alle tall som kan skrives som en brøk der teller og nevner er heltall.
+$\mathbb{R}$, De **reelle** tallene, $\pi, \sqrt{2}, \dfrac{10}{2}$, Alle tallene på tallinja.
+$\emptyset$, Den **tomme** mengden, -, Mengden uten noen elementer.
+:::
 
 
 ::::
