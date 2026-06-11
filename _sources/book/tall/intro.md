@@ -68,21 +68,6 @@ link-type: doc
 
 ::::{grid-item-card}
 ---
-link: setningslogikk/teori
-link-type: doc
----
-**Matematisk logikk og symboler** 
-
-^^^
-
-\begin{align*}
-    x = -2 \implies |x| = 2
-\end{align*}
-::::
-
-
-::::{grid-item-card}
----
 link: formler/teori
 link-type: doc
 ---

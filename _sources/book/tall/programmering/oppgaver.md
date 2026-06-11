@@ -1,10 +1,8 @@
 # Oppgaver: Programmering av tallfølger
 
 
-:::::::::::::::{exercise} Oppgave 1
----
-level: 1
----
+:::::::::::::::{exercise-2} Oppgave 1
+
 Ta quizen! 
 
 :::{quiz}
@@ -49,29 +47,23 @@ Q: Hvilke tall skrives ut av programmet nedenfor? <pre><code class="python">for 
 - $0, 101, 10$
 - $0, 10, 100$
 :::
+
 :::::::::::::::
 
 
-
 ---
 
 
 
-:::::::::::::::{exercise} Oppgave 2
----
-level: 1
----
+:::::::::::::::{exercise-2} Oppgave 2
+
 Nedenfor vises noen programkoder som skriver ut noen tall. Les programmene og prøv å forutsi hvilke tall de skriver ut. 
 
 Skriv inn gjetningen din og sjekk svaret ditt for hvert av programmene.
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
 
+:::::::::::::{part} a
 :::{interactive-code}
 ---
 predict:
@@ -79,27 +71,31 @@ predict:
 for n in range(3):
     print(n)
 
+
+
 :::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
 
+:::::::::::::{part} b
 :::{interactive-code}
 ---
 predict:
 ---
 for n in range(-4, 1):
     print(n)
-    
-:::
 
+
+
+:::
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
 
+:::::::::::::{part} c
 :::{interactive-code}
 ---
 predict:
@@ -107,13 +103,16 @@ predict:
 for n in range(-10, 11, 4):
     print(n)
 
+
+
 :::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
 
+:::::::::::::{part} d
 :::{interactive-code}
 ---
 predict:
@@ -123,28 +122,20 @@ for n in range(10, 1, -2):
     
 :::
 
+
 :::::::::::::
-
-::::::::::::::
-
 
 :::::::::::::::
 
 
 
+
 ---
 
 
+:::::::::::::::{exercise-2} Oppgave 3
 
-:::::::::::::::{exercise} Oppgave 3
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Fyll ut programmet nedenfor slik at det skriver ut alle tallfølgen
 
 $$
@@ -159,7 +150,7 @@ for n in range(????): # FYLL INN: bytt ut ????
 :::
 
 
-::::{answer}
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -167,13 +158,15 @@ linenos:
 for n in range(1, 9):
     print(n)
 :::
-::::
+:::::
+
 
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} b
+
+:::::::::::::{part} b
 Fyll ut programmet nedenfor slik at det skriver ut tallfølgen 
 
 $$
@@ -188,7 +181,7 @@ for n in range(????): # FYLL INN: bytt ut ????
 :::
 
 
-::::{answer}
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -196,13 +189,13 @@ linenos:
 for n in range(2, 10, 2):
     print(n)
 :::
-::::
-
+:::::
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} c
+
+:::::::::::::{part} c
 Fyll ut programmet nedenfor slik at det skriver ut tallfølgen 
 
 $$
@@ -218,7 +211,7 @@ for n in range(????): # FYLL INN: bytt ut ????
 :::
 
 
-::::{answer}
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -226,13 +219,11 @@ linenos:
 for n in range(1, 14, 4):
     print(n)
 :::
-::::
-
+:::::
 :::::::::::::
 
 
-
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Fyll ut programmet nedenfor slik at det skriver ut tallfølgen
 
 $$
@@ -247,7 +238,8 @@ for n in range(????): # FYLL INN: bytt ut ????
 :::
 
 
-::::{answer}
+
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -255,29 +247,20 @@ linenos:
 for n in range(-5, 6, 2):
     print(n)
 :::
-::::
-
+:::::
 :::::::::::::
-
-::::::::::::::
 
 :::::::::::::::
 
 
 
+
 ---
 
 
+:::::::::::::::{exercise-2} Oppgave 4
 
-:::::::::::::::{exercise} Oppgave 4
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Fyll ut programmet nedenfor slik at det skriver ut tallfølgen
 
 $$
@@ -292,17 +275,21 @@ for n in range(????): # FYLL INN: bytt ut ????
 :::
 
 
-:::::{answer}
+:::::{answer-2}
 :::{code-block} python
+---
+linenos:
+---
 for n in range(10, 1, -4):
     print(n)
 :::
 :::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+
+
+:::::::::::::{part} b
 Fyll ut programmet nedenfor slik at det skriver ut tallfølgen
 
 $$
@@ -317,17 +304,22 @@ for n in range(????): # FYLL INN: bytt ut ????
 :::
 
 
-:::::{answer}
+:::::{answer-2}
 :::{code-block} python
+---
+linenos:
+---
 for n in range(100, -1, -10):
     print(n)
 :::
 :::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+
+
+
+:::::::::::::{part} c
 Fyll ut programmet nedenfor slik at det skriver ut tallfølgen
 
 $$
@@ -342,17 +334,23 @@ for n in range(????): # FYLL INN: bytt ut ????
 :::
 
 
-:::::{answer}
+
+:::::{answer-2}
 :::{code-block} python
+---
+linenos:
+---
 for n in range(5, -6, -2):
     print(n)
 :::
 :::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+
+
+
+:::::::::::::{part} d
 Fyll ut programmet nedenfor slik at det skriver ut tallfølgen
 
 $$
@@ -367,33 +365,29 @@ for n in range(????): # FYLL INN: bytt ut ????
 :::
 
 
-:::::{answer}
+
+:::::{answer-2}
 :::{code-block} python
+---
+linenos:
+---
 for n in range(-2, -15, -3):
     print(n)
 :::
 :::::
-
 :::::::::::::
-
-::::::::::::::
 
 :::::::::::::::
 
 
 
+
 ---
 
 
-:::::::::::::::{exercise} Oppgave 5
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::::{exercise-2} Oppgave 5
+
+:::::::::::::{part} a
 Fyll ut programmet nedenfor slik at det skriver ut alle partallene til og med $20$. 
 
 
@@ -405,7 +399,7 @@ for n in range(????): # FYLL INN: bytt ut ???? med riktige tall
 :::
 
 
-::::{answer}
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -413,12 +407,13 @@ linenos:
 for n in range(2, 21, 2):
     print(n)
 :::
-::::
-
+:::::
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+
+
+:::::::::::::{part} b
 Fyll ut programmet nedenfor slik at det skriver ut alle oddetallene til og med $21$. 
 
 
@@ -430,7 +425,7 @@ for n in range(????): # FYLL INN: bytt ut ???? med riktige tall
 :::
 
 
-::::{answer}
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -438,12 +433,14 @@ linenos:
 for n in range(1, 22, 2):
     print(n)
 :::
-::::
-
+:::::
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+
+
+
+:::::::::::::{part} c
 Lag et program som skriver ut de $20$ **første** partallene.
 
 
@@ -457,18 +454,20 @@ Lag et program som skriver ut de $20$ **første** partallene.
 
 
 
-:::::{answer}
+:::::{answer-2}
 :::{code-block} python
 for n in range(1, 21):
     partall = 2 * n
     print(partall)
 :::
 :::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+
+
+
+:::::::::::::{part} d
 Lag et program som skriver ut de $20$ **første** oddetallene.
 
 
@@ -481,17 +480,17 @@ Lag et program som skriver ut de $20$ **første** oddetallene.
 :::
 
 
-:::::{answer}
+:::::{answer-2}
 :::{code-block} python
+---
+linenos:
+---
 for n in range(1, 21):
     oddetall = 2 * n - 1
     print(oddetall)
 :::
 :::::
-
 :::::::::::::
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -500,10 +499,9 @@ for n in range(1, 21):
 ---
 
 
-:::::::::::::::{exercise} Oppgave 6
----
-level: 2
----
+
+:::::::::::::::{exercise-2} Oppgave 6
+
 Alma og Synne snakker om en annen strategi for å skrive ut partall og oddetall. 
 
 :::{dialogue}
@@ -520,11 +518,7 @@ Synne: Det er vel bare å sjekke om det er delelig med $2$? Jeg har lest at det 
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Fyll ut programmet nedenfor slik at det skriver ut alle partallene til og med $20$ ved hjelp av en `if`{l=python}-setning.
 
 :::{interactive-code}
@@ -534,10 +528,24 @@ for n in range(????): # FYLL INN: bytt ut ???? med riktige tall
 
 :::
 
+
+:::::{answer-2}
+:::{code-block} python
+---
+linenos:
+---
+for n in range(1, 21, 1):
+    if n % 2 == 0: # Sjekk om n er et partall
+        print(n)
+
+
+:::
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
 Alma og Synne fortsetter samtalen.
 
 :::{dialogue}
@@ -552,9 +560,9 @@ Synne: Da har jeg lest at vi kan bruke en `if`{l=python}-`else`{l=python}-setnin
 :::
 
 
-<br>
 
-Bruk strategien til Alma og Synne i programmet nedenfor.
+:::::::::::::{part} b
+Bruk strategien til Alma og Synne i programmet nedenfor til å skrive ut alle oddetallene under $20$.
 
 :::{interactive-code}
 for n in range(????): # FYLL INN: bytt ut ???? med riktige tall
@@ -565,20 +573,36 @@ for n in range(????): # FYLL INN: bytt ut ???? med riktige tall
 
 :::
 
+
+
+:::::{answer-2}
+:::{code-block} python
+---
+linenos:
+---
+for n in range(1, 21, 1):
+    if n % 2 == 0: # Sjekk om n er et partall
+        pass # Gjør ingenting
+    else:
+        print(n) # Skriver ut oddetallet.
+
+
+:::
+:::::
+
+
 :::::::::::::
-
-::::::::::::::
-
 
 :::::::::::::::
 
 
+
 ---
 
-:::::::::::::::{exercise} Oppgave 7
----
-level: 2
----
+
+
+:::::::::::::::{exercise-2} Oppgave 7
+
 Alma og Synne snakker om hvordan man kan avgjøre om et tall $p \in \mathbb{N}$ er et primtall med et program.
 
 
@@ -596,19 +620,23 @@ Synne: Vi kan bruke en løkke som går gjennom alle tallene $n \in \{2, 3, \ldot
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bruk strategien til Alma og Synne i programmet nedenfor. Sjekk at tallene $11$, $51$ og $729$ er primtall.
 
+
+:::{interactive-code}
+# Din kode her
+
+
+
+:::
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+
 Alma og Synne er ikke helt fornøyde.
 
 :::{dialogue}
@@ -626,29 +654,31 @@ Alma: Det er enkelt! Vi kan bruke `int(n ** 0.5)`{l=python}
 :::
 
 
-<br>
 
-Endre på programmet ditt og prøv ut strategien de snakker om.
+:::::::::::::{part} b
+Endre på programmet ditt fra oppgave **a** og bruk strategien de snakker om.
 
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} c
-Argumenter for at det største tallet man trenger å sjekke for å avgjøre om et tall $p$ er et primtall, er $\sqrt{p}$.
-
-:::::::::::::
-
-
-::::::::::::::
 
 :::{interactive-code}
 # Din kode her
+# NOTE: Kopier gjerne koden din fra forrige oppgave
 
 
 
 :::
 
+
+:::::::::::::
+
+
+
+
+:::::::::::::{part} c
+Argumenter for at det største tallet man trenger å sjekke for å avgjøre om et tall $p$ er et primtall, er $\sqrt{p}$.
+
+
+
+:::::::::::::
 
 :::::::::::::::
 
@@ -657,30 +687,24 @@ Argumenter for at det største tallet man trenger å sjekke for å avgjøre om e
 ---
 
 
-:::{margin} Startverdien til `s`{l=python}
-Vi setter startverdien til `s`{l=python} til `0`{l=python} fordi å plusse på `0`{l=python} ikke endrer verdien til en sum. 
-:::
+:::::::::::::::{exercise-2} Oppgave 8
 
-:::::::::::::::{exercise} Oppgave 8
----
-level: 2
----
-> I denne oppgaven skal du lære hvordan man summerer tall med et program.
+> I denne oppgaven skal du lære hvordan man summerer tall med et program. 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-I programmet nedenfor summeres noen tall med en variabel `s`{l=python} i en løkke. Linja `s = s + n`{l=python} legger til verdien av `n`{l=python} til summen `s`{l=python}.
+Når man skriver `s = s + n`{l=python}, så legger man til $n$ i variabelen $s$. 
 
-Les programmet og forutsi hvilken verdi som skrives ut av programmet.
+
+:::::::::::::{part} a
+I programmet nedenfor summeres noen tall.
+
+Avgjør hvilket tall programmet skriver ut og kjør programmet for å sjekke svaret ditt.
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+
+:::::::::::::{part} b
 Endre på programmet slik at det regner ut summen
 
 $$
@@ -688,7 +712,7 @@ S = 1 + 2 + 3 + \ldots + 99 + 100
 $$
 
 
-::::{answer}
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -700,19 +724,23 @@ for n in range(1, 101):
 
 print(s)
 :::
-::::
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+
+:::::::::::::{part} c
 Endre på programmet slik at det regner ut summen
 
 $$
 S = 1 + 3 + 5 + \ldots + 97 + 99
 $$
 
-::::{answer}
+
+
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -724,12 +752,12 @@ for n in range(1, 101, 2):
 
 print(s)
 :::
-::::
-
+:::::
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+
+:::::::::::::{part} d
 Endre på programmet slik at det regner ut summen
 
 $$
@@ -737,7 +765,7 @@ S = 2 + 4 + 6 + \ldots + 98 + 100
 $$
 
 
-::::{answer}
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -749,11 +777,13 @@ for n in range(2, 101, 2):
 
 print(s)
 :::
-::::
+:::::
+
 
 :::::::::::::
 
-::::::::::::::
+
+
 
 :::{interactive-code}
 ---
@@ -774,11 +804,8 @@ print(s)
 ---
 
 
-:::::::::::::::{exercise} Oppgave 9
----
-level: 2
----
 
+:::::::::::::::{exercise-2} Oppgave 9
 En sum er gitt ved 
 
 $$
@@ -786,85 +813,79 @@ S = 1 + \dfrac{1}{2} + \dfrac{1}{4} + \dfrac{1}{8} + \dfrac{1}{16} + \ldots
 $$
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Lag et program som skriver ut de første 5 leddene i summen.
 
 
-
-
-::::{answer}
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
 ---
-for i in range(1, 6, 1):
-    a = 1 / 2**(n + 1)
+for n in range(5):
+    a = 1 / 2**n
     print(a)
 
 :::
-::::
-
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
-Lag et program som regner ut summen av de 5 første leddene i summen
+
+:::::::::::::{part} b
+Lag et program som regner ut summen av de 5 første leddene.
 
 
-
-::::{answer}
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
 ---
 s = 0
-for i in range(1, 6, 1):
-    a = 1 / 2**(n + 1)
+for n in range(5):
+    a = 1 / 2**n
     s = s + a
-
-print(s)
     
+print(s)
 :::
-::::
-
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+
+:::::::::::::{part} c
 Bruk programmet ditt til å bestemme hvilken verdi summen nærmer seg når vi bruker veldig mange ledd.
 
 
 
-::::{answer}
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
 ---
 s = 0
-for i in range(1, 10001, 1):
-    a = 1 / 2**(n + 1)
+for n in range(10_000):
+    a = 1 / 2**n
     s = s + a
-
-print(s)
     
+print(s)
 :::
-::::
+
+Kjører vi programmet får vi $2.0$ som betyr at summen nærmer seg $2$ når vi bruker veldig mange ledd.
+:::::
 
 
 :::::::::::::
 
 
-::::::::::::::
 
 
 :::{interactive-code}
-# Din kode her
+# Din kode her 
+
 
 
 
@@ -880,11 +901,8 @@ print(s)
 
 
 
-:::::::::::::::{exercise} Oppgave 10
----
-level: 3
----
 
+:::::::::::::::{exercise-2} Oppgave 10
 Alma og Synne jobber med summen 
 
 $$
@@ -905,33 +923,29 @@ Synne: Det tror jeg vil funke!
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Ta utgangspunkt i ideen til Alma og Synne, og lag et program som skriver ut de 5 første leddene i summen.
 
+:::::::::::::{part} a
+Ta utgangspunkt i ideen til Alma og Synne, og lag et program som skriver ut de 5 første leddene i summen.
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Lag et program som regner ut summen av de 5 første leddene.
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+
+:::::::::::::{part} c
 Bruk programmet ditt til å bestemme hvilken verdi programmet nærmer seg når vi bruker veldig mange ledd. 
 
 
 :::::::::::::
 
 
-::::::::::::::
 
 
 :::{interactive-code}
@@ -943,7 +957,6 @@ Bruk programmet ditt til å bestemme hvilken verdi programmet nærmer seg når v
 :::
 
 
-
 :::::::::::::::
 
 
@@ -952,11 +965,8 @@ Bruk programmet ditt til å bestemme hvilken verdi programmet nærmer seg når v
 
 
 
-:::::::::::::::{exercise} Oppgave 11
----
-level: 3
----
 
+:::::::::::::::{exercise-2} Oppgave 11
 Nedenfor ser du tre figurer. Figurene er satt sammen av små kvadrater.
 
 Tenk deg at du skal fortsette å lage figurer etter samme mønster. Vi lar $K_n$ være antall små kvadrater i figur $n$.
@@ -969,59 +979,59 @@ class: no-click, adaptive-figure
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem en formel for $K_n$.
 
 
-::::{answer}
+:::::{answer-2}
 $$
 K_n = 9 + 8(n - 1) = 8n + 1 \qder n \in \mathbb{N}
 $$
-::::
-
+:::::
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+
+:::::::::::::{part} b
 Lag et program som regner ut og skriver ut hvor mange små kvadrater det er i hver av de $10$ første figurene.
 
-:::::::::::::
-
-
-:::::::::::::{tab-item} c
-Du starter med å lage figur $1$, så figur $2$, deretter figur $3$, og så videre.
-
-Lag et program som finner ut hvor mange kvadrater du må bruke for å lage de 10 000 første figurene.
-
-:::::::::::::
-
-::::::::::::::
-
 :::{interactive-code}
-# Din kode her 
+# Din kode her
 
 
 
 
 :::
+:::::::::::::
 
+
+
+:::::::::::::{part} c
+Du starter med å lage figur $1$, så figur $2$, deretter figur $3$, og så videre.
+
+Lag et program som finner ut hvor mange kvadrater du må bruke for å lage de 10 000 første figurene.
+
+
+:::{interactive-code}
+# Din kode her
+
+
+
+
+:::
+:::::::::::::
 
 
 :::::::::::::::
 
 
+
 ---
 
 
-:::::::::::::::{exercise} Oppgave 12
----
-level: 3
----
 
+:::::::::::::::{exercise-2} Oppgave 12
 Nedenfor ser du tre figurer. Figurene er satt sammen av små kvadrater.
 
 Tenk deg at du skal fortsette å lage figurer etter samme mønster. Vi lar $K_n$ være antall små kvadrater i figur $n$. 
@@ -1035,40 +1045,25 @@ class: no-click, adaptive-figure
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem en formel for $K_n$. 
 
 
-::::{answer}
+:::::{answer-2}
 $$
 K(n) = (n + 1)^2 = n^2 + 2n + 1
 $$
-::::
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+
+:::::::::::::{part} b
 Lag et program som beregner og skriver ut hvor mange små kvadrater det er i hver av de $20$ første figurene.
 
-:::::::::::::
-
-
-
-:::::::::::::{tab-item} c
-Tenk deg at du har 1 000 000 små kvadrater. Du starter med å lage figur $1$, så figur $2$, deretter figur $3$, og så videre. 
-
-Lag et program som finner ut
-1. Hvor mange figurer du kan lage
-2. Hvor mange små kvadrater du har igjen
-
-:::::::::::::
-
-::::::::::::::
 
 
 :::{interactive-code}
@@ -1080,6 +1075,29 @@ Lag et program som finner ut
 :::
 
 
+:::::::::::::
+
+
+
+:::::::::::::{part} c
+Tenk deg at du har 1 000 000 små kvadrater. Du starter med å lage figur $1$, så figur $2$, deretter figur $3$, og så videre. 
+
+Lag et program som finner ut
+1. Hvor mange figurer du kan lage
+2. Hvor mange små kvadrater du har igjen
+
+
+:::{interactive-code}
+# Din kode her
+
+
+
+
+
+:::
+:::::::::::::
+
+
 :::::::::::::::
 
 
@@ -1087,11 +1105,7 @@ Lag et program som finner ut
 
 
 
-
-:::::::::::::::{exercise} Oppgave 13
----
-level: 3
----
+:::::::::::::::{exercise-2} Oppgave 13
 > I denne oppgaven skal du jobbe med summer av oddetall og partall. 
 
 Vi lar $S_n$ være summen av de $n$ første oddetallene slik at 
@@ -1107,11 +1121,8 @@ Vi lar $S_n$ være summen av de $n$ første oddetallene slik at
 \end{align*}
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Lag et program som skriver ut de $20$ første oddetallene. Bruk formelen for oddetallene gitt ved 
 
 $$
@@ -1119,7 +1130,18 @@ O_n = 2n - 1 \qder n \in \mathbb{N}
 $$
 
 
-::::{answer}
+
+
+:::{interactive-code}
+# Din kode her
+
+
+
+
+:::
+
+
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -1129,15 +1151,29 @@ for n in range(1, 21):
 
     print(oddetall)
 :::
-::::
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+
+
+:::::::::::::{part} b
 Lag et program som skriver ut $S_1, S_2, S_3, \ldots, S_{20}$.
 
-::::{answer}
+
+
+:::{interactive-code}
+# Din kode her
+
+
+
+
+:::
+
+
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -1149,17 +1185,31 @@ for n in range(1, 21):
 
     print(s)
 :::
-::::
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+
+
+:::::::::::::{part} c
 La $P_n$ være summen av de $n$ første partallene. 
 
-Lag et program som skriver ut $P_1, P_2, P_3, \ldots, P_{20}$. 
+Lag et program som skriver ut $P_1, P_2, P_3, \ldots, P_{20}$.
 
 
-::::{answer}
+
+:::{interactive-code}
+# Din kode her
+
+
+
+
+:::
+
+
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -1171,20 +1221,11 @@ for n in range(1, 21):
     
     print(p)
 :::
-::::
-
+:::::
 
 :::::::::::::
 
-::::::::::::::
 
-
-:::{interactive-code}
-# TODO: skriv din kode her
-
-
-
-:::
 
 
 :::::::::::::::
@@ -1195,12 +1236,8 @@ for n in range(1, 21):
 
 
 
-
-:::::::::::::::{exercise} Oppgave 14
----
-level: 3
----
-Anna og Nicolai jobber med å lage et program som regner ut $n$-fakultet definert med formelen:
+:::::::::::::::{exercise-2} Oppgave 14
+Anna og Nicolai jobber med å lage et program som regner ut $n$-fakultet, som vi skriver som $n!$, definert med formelen:
 
 $$
 n! = 1 \cdot 2 \cdot 3 \cdot \ldots \cdot (n - 1) \cdot n
@@ -1225,15 +1262,25 @@ Anna: Men hvis `s`{l=python} er `0`{l=python} i starten, så blir jo svaret allt
 Nicolai: Ja, men vi startet med `0`{l=python} fordi å plusse på `0`{l=python} endrer ikke summen. Hvilket tall er det som ikke endrer verdien til et produkt?
 :::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+
+:::::::::::::{part} a
 Ta utgangspunkt i dialogen mellom Anna og Nicolai og lag et program som regner ut $5!$. 
 
 
-::::{answer}
+
+:::{interactive-code}
+# Din kode her
+
+
+
+
+:::
+
+
+
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -1244,19 +1291,34 @@ for n in range(1, 6):
     
 print(s)
 :::
-::::
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+
+
+:::::::::::::{part} b
 Antall måter å stokke en kortstokk på er $52!$
 
 Bruk programmet ditt til å regne ut $52!$. 
 
 Kan du forklare hvorfor det sannsynligvis stemmer at når man stokker en kortstokk, så er det nesten umulig å få samme rekkefølge som en annen gang?
 
-::::{answer}
+
+
+:::{interactive-code}
+# Din kode her
+
+
+
+
+
+:::
+
+
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -1273,29 +1335,23 @@ som gir utskriften
 :::{code-block} console
 80658175170943878571660636856403766975289505440883277824000000000000
 :::
-::::
+:::::
+
+
 
 :::::::::::::
 
-::::::::::::::
-
-:::{interactive-code}
-# Din kode her
-
-
-
-:::
 
 :::::::::::::::
 
 
+
+
 ---
 
 
-:::::::::::::::{exercise} Oppgave 15
----
-level: 3
----
+
+:::::::::::::::{exercise-2} Oppgave 15
 Nedenfor vises et kvadrat med sidelengder $3$. 
 
 Kvadratet er fylt med mindre fargelagte kvadrater som blir mindre og mindre. 
@@ -1308,15 +1364,24 @@ class: no-click, adaptive-figure
 ---
 :::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Lag et program som skriver ut arealet til de $10$ største fargelagte kvadratene i figuren. 
 
 
-::::{answer}
+:::::::::::::{part} a
+Lag et program som skriver ut arealet til de $10$ største fargelagte kvadratene i figuren.
+
+
+
+:::{interactive-code}
+# Din kode her
+
+
+
+
+:::
+
+
+
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -1327,16 +1392,27 @@ for n in range(1, 11):
 
     print(s**2)
 :::
-::::
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+
+:::::::::::::{part} b
 Lag et program som skriver regner ut summen av arealene til de $100$ største fargelagte kvadratene i figuren.
 
 
-::::{answer}
+:::{interactive-code}
+# Din kode her
+
+
+
+
+:::
+
+
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -1350,36 +1426,21 @@ for n in range(1, 101):
 
 print(areal)
 :::
-::::
+:::::
+
 
 :::::::::::::
 
-::::::::::::::
-
-
-:::{interactive-code}
-# Din kode her
-
-
-
-
-:::
 
 :::::::::::::::
 
 
 
-
-
 ---
 
 
 
-
-:::::::::::::::{exercise} Oppgave 16
----
-level: 3
----
+:::::::::::::::{exercise-2} Oppgave 16
 Nedenfor vises en figur som er satt sammen av uendelige mange linjestykker.
 
 
@@ -1394,15 +1455,22 @@ class: no-click, adaptive-figure
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Lag et program som skriver ut lengden til de $10$ første linjestykkene i figuren.
 
 
-::::{answer}
+:::{interactive-code}
+# Din kode her
+
+
+
+
+:::
+
+
+
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -1413,16 +1481,30 @@ for n in range(1, 11):
     
     l = 0.9 * l
 :::
-::::
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+
+
+:::::::::::::{part} b
 Lag et program som regner ut summen av lengdene til de $100$ første linjestykkene i figuren. 
 
 
-::::{answer}
+
+:::{interactive-code}
+# Din kode her
+
+
+
+
+:::
+
+
+
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -1435,15 +1517,16 @@ for n in range(1, 101):
     
 print(s)
 :::
-::::
+:::::
+
 
 :::::::::::::
 
-:::::::::::::{tab-item} c
+
+
+:::::::::::::{part} c
 Lag et program som finner hvor mange linjestykker du må sette sammen for at figuren skal være minst $9$ meter.
 
-:::::::::::::
-::::::::::::::
 
 
 :::{interactive-code}
@@ -1455,16 +1538,21 @@ Lag et program som finner hvor mange linjestykker du må sette sammen for at fig
 :::
 
 
+:::::::::::::
+
+
+
+
+
 :::::::::::::::
 
 
+
 ---
 
 
-:::::::::::::::{exercise} Oppgave 17
----
-level: 3
----
+
+:::::::::::::::{exercise-2} Oppgave 17
 Nedenfor vises tre figurer som følger et bestemt mønster. 
 
 La $K_n$ være antall små kvadrater i figur $n$. 
@@ -1478,55 +1566,34 @@ width: 100%
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem en formel for $K_n$.
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Lag et program som skriver ut $K_1$, $K_2$, $K_3$, $\ldots$, $K_{20}$.
-
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Lag et program som regner ut hvor mange små kvadrater du må bruke for å lage de 20 første figurene.
 
 
 :::::::::::::
 
 
-
-::::::::::::::
-
-
-:::{interactive-code}
-# Din kode her
-
-
-
-:::
-
-
 :::::::::::::::
 
 
+
 ---
 
 
-
-
-:::::::::::::::{exercise} Oppgave 18
----
-level: 3
----
+:::::::::::::::{exercise-2} Oppgave 18
 Å regne ut $\pi$ med så mange desimaler som mulig har vært et mål for matematikere i over tusen år. En måte å komme fram til verdien til $\pi$ på er med summen
 
 $$
@@ -1537,11 +1604,8 @@ $$
 Jo flere ledd man bruker, jo nærmere kommer man verdien til $\pi$.
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Lag et program som skriver ut de $5$ første leddene i summen.
 
 Du bør få disse verdiene i utskriften:
@@ -1554,7 +1618,8 @@ Du bør få disse verdiene i utskriften:
 0.4444444444444444
 :::
 
-::::{answer}
+
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -1568,18 +1633,18 @@ for n in range(1, 6):
         ledd = 4 / (2 * n - 1) 
     print(ledd)
 :::
-::::
-
-
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+
+:::::::::::::{part} b
 Lag et program som summerer de $5$ første leddene i tallfølgen.
 
 
-::::{answer}
+
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -1596,56 +1661,50 @@ for n in range(1, 6):
 
 print(pi)
 :::
-::::
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+
+:::::::::::::{part} c
+:::{sidebar}
+$\pi = 3.14159~26535~89793 \ldots$
+:::
 
 Bestem en god tilnærming til $\pi$ med programmet ditt fra **b**.
 
-:::{sidebar}
-$\pi = 3.141592653589793 \ldots$
-:::
-
 Hvor mange ledd trenger du for å få $\pi$ med $5$ riktige desimaler? 
-
-
 :::::::::::::
 
-::::::::::::::
 
-::::{interactive-code}
+
+:::{interactive-code}
 # Din kode her
 
 
 
-::::
 
+:::
 
 :::::::::::::::
 
 
+
 ---
 
 
 
-:::::::::::::::{exercise} Oppgave 19
----
-level: 4
----
+:::::::::::::::{exercise-2} Oppgave 19
 Summen av en annen tallfølge nærmer seg også $\pi$, men mye raskere enn den forrige. Summen er
 
 $$
 \pi = 3 + \dfrac{4}{2 \cdot 3 \cdot 4} - \dfrac{4}{4 \cdot 5 \cdot 6} + \dfrac{4}{6 \cdot 7 \cdot 8} - \dfrac{4}{8 \cdot 9 \cdot 10} + \ldots
 $$
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 Lag et program som skriver ut de $5$ første leddene i summen.
 
 Du bør få utskriften:
@@ -1659,7 +1718,7 @@ Du bør få utskriften:
 :::
 
 
-::::{answer}
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -1676,16 +1735,18 @@ for i in range(1, 5):
         
     print(ledd)
 :::
-::::
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+
+:::::::::::::{part} b
 Lag et program som regner ut en tilnærming til $\pi$ ved å bruke de 10 000 først leddene i summen.
 
 
-::::{answer}
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -1710,15 +1771,12 @@ som gir utskriften
 :::{code-block} console
 3.1415926535900383
 :::
-::::
-
+:::::
 :::::::::::::
-
-::::::::::::::
 
 
 :::{interactive-code}
-# Din kode her 
+# Din kode her
 
 
 
@@ -1728,15 +1786,12 @@ som gir utskriften
 :::::::::::::::
 
 
+
 ---
 
 
 
-
-:::::::::::::::{exercise} Oppgave 20
----
-level: 4
----
+:::::::::::::::{exercise-2} Oppgave 20
 En rask måte å komme fram til sifrene til $\pi$ er ved ta utgangspunkt i **kjedebrøken** nedenfor:
 
 $$
@@ -1745,39 +1800,29 @@ $$
 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Regn ut en tilnærming til $\pi$ ved å bruke $3$ ledd i kjedebrøken:
 
 $$
 \pi \approx \dfrac{4}{1 + \dfrac{1^2}{3 + \dfrac{2^2}{5}}}
 $$
 
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Lag en algoritme du kan bruke til å skrive et program som regner ut verdien til $\pi$ ved å bruke $n$ ledd i kjedebrøken.
 
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Lag et program med utgangspunkt i algoritmen din fra **b** og regn ut en tilnærming til $\pi$. 
 
 
-:::{interactive-code}
-# Din kode her
-
-
-
-:::
-
-
-::::{answer}
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -1792,13 +1837,18 @@ pi = 4 / nevner
 
 print(pi)
 :::
-
-::::
-
+:::::
 :::::::::::::
 
-::::::::::::::
 
+
+:::{interactive-code}
+# Din kode her
+
+
+
+
+:::
 
 :::::::::::::::
 
