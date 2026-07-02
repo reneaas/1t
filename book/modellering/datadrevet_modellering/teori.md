@@ -391,11 +391,6 @@ Vi tar et praktisk eksempel.
 
 
 :::::::::::::::{example} Eksempel 2
-:::{cas-popup}
----
-layout: sidebar
----
-:::
 
 
 :::{plot}
@@ -458,7 +453,7 @@ som viser sammenhengen mellom snorlengden $x$ i meter og perioden $T(x)$ i sekun
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 
 :::{ggb-popup}
@@ -526,7 +521,7 @@ Anslå et gyldighetsområdet for modellen.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Hvis vi tegner grafen til funksjonen, så vil vi se at grafen til $T$ vil synke mot $-\infty$ når $x$ blir stor og vokse mot $+\infty$ når $x$ blir stor og negativ. 
 
@@ -624,7 +619,7 @@ Hvor mye endret temperaturen seg i gjennomsnitt de første 10 minuttene?
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi regner ut den gjennomsnittlige vekstfarten til temperaturen $T$ på intervallet $[0, 10]$ ved å bruke formelen for gjennomsnittlig vekstfart:
 
@@ -701,7 +696,7 @@ Bestem den momentane vekstfarten til temperaturen etter 10 minutter. Gi en prakt
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi regner ut $T'(10)$ med CAS, og så sammenligner vi det med $T(11) - T(10)$ for å se om det gir omtrent samme svar.
 

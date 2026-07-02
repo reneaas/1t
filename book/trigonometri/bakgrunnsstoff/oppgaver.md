@@ -5,14 +5,9 @@
 
 
 :::::::::::::::{exercise} Oppgave 1
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 :::{plot}
 width: 100%
 align: right
@@ -30,26 +25,21 @@ Bestem $\angle C$.
 :::
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 \angle C = 36.39 \degree.
 $$
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
-
+:::::::::::::{part} b
 :::{plot}
 width: 100%
 align: right
 axis: off
 axis: equal
-triangle: svs=(3, 90, 3), angle-labels=(C=numeric) 
+triangle: svs=(3, 90, 3), angle-labels=(C=numeric), angle-radius=80 
 fontsize: 30
 :::
 
@@ -63,20 +53,15 @@ Bestem $\angle B$.
 :::
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 \angle B = 45 \degree.
 $$
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-
+:::::::::::::{part} c
 :::{plot}
 width: 100%
 align: right
@@ -93,18 +78,13 @@ Bestem $\angle C$.
 :::{clear}
 :::
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 \angle C = 35 \degree.
 $$
 ::::
-
 :::::::::::::
 
-::::::::::::::
 
 
 :::::::::::::::
@@ -122,20 +102,14 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 2
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 :::{plot}
 width: 100%
 align: right
 axis: off
 axis: equal
-triangle: sss=(3, 2*sqrt(3), sqrt(3)), angle-labels=(B=numeric), angles=(A, B), side-labels=(AB=exact, BC=exact) 
+triangle: sss=(3, 2*sqrt(3), sqrt(3)), angle-labels=(B=numeric), angles=(A, B), side-labels=(AB=exact, BC=exact), angle-radius=60, label-offset=28
 fontsize: 30
 :::
 
@@ -156,13 +130,13 @@ $$
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 :::{plot}
 width: 100%
 align: right
 axis: off
 axis: equal
-triangle: sss=(5, 10, 5*sqrt(3)), angle-labels=(B=numeric), angles=(A, B), side-labels=(AB=exact, BC=exact), angle-radius=40
+triangle: sss=(5, 10, 5*sqrt(3)), angle-labels=(B=numeric), angles=(A, B), side-labels=(AB=exact, BC=exact), angle-radius=60
 fontsize: 34
 :::
 
@@ -179,17 +153,16 @@ $$
 AC = 5 \sqrt{3}.
 $$
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 :::{plot}
 width: 100%
 align: right
 axis: off
 axis: equal
-triangle: sss=(2 * sqrt(3), 2, 4), angle-labels=(A=numeric), angles=(A, B), side-labels=(BC=exact)
+triangle: sss=(2 * sqrt(3), 2, 4), angle-labels=(A=numeric), angles=(A, B), side-labels=(BC=exact), angle-radius=80, label-offset=28
 fontsize: 30
 :::
 
@@ -209,12 +182,7 @@ $$
 AB = 2 \sqrt{3} \and AC = 4.
 $$
 ::::
-
-
 :::::::::::::
-
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -224,17 +192,14 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 3
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 :::{plot}
 width: 100%
 align: right
 axis: off
 axis: equal
-triangle: sss=(4, 5, 3), angles=(A, B, C), side-labels=(BC=exact, AB=exact)
+triangle: sss=(4, 5, 3), angles=(A), side-labels=(BC=exact, AB=exact), angle-radius=60
 fontsize: 30
 :::
 
@@ -257,13 +222,13 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 :::{plot}
 width: 100%
 align: right
 axis: off
 axis: equal
-triangle: svs=(3, 90, 2), angles=(A, B, C), side-labels=(BC=exact, CA=exact)
+triangle: svs=(3, 90, 2), angles=(A), side-labels=(BC=exact, CA=exact), angle-radius=60
 fontsize: 30
 :::
 
@@ -288,13 +253,13 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 :::{plot}
 width: 100%
 align: right
 axis: off
 axis: equal
-triangle: sss=(6 * cos(pi/3), 6 * sin(pi/3), 6), angles=(A, B, C), side-labels=(BC=exact, AB=exact)
+triangle: sss=(6 * cos(pi/3), 6 * sin(pi/3), 6), angles=(A, B, C), side-labels=(BC=exact, AB=exact), angle-radius=60, label-offset=35
 fontsize: 30
 :::
 
@@ -316,8 +281,6 @@ $$
 
 :::::::::::::
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -326,11 +289,8 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 4
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 :::{plot}
 width: 100%
 align: right
@@ -365,7 +325,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 :::{plot}
 width: 100%
 align: right
@@ -399,7 +359,8 @@ $$
 
 
 
-:::::::::::::{tab-item} c
+
+:::::::::::::{part} c
 
 :::{plot}
 width: 100%
@@ -421,7 +382,7 @@ $$
 T = \dfrac{1}{2} \cdot g \cdot h.
 $$
 
-Trekanten til høyre er en likesidet trekant som har arealet $T = 3$. 
+Trekanten til høyre er en likesidet trekant som har arealet $T = 4 \cdot \sqrt{3}$. 
 
 Bestem omkretsen til trekanten.
 
@@ -432,14 +393,11 @@ Bestem omkretsen til trekanten.
 
 ::::{answer}
 $$
-6 \sqrt[4]{3}
+12
 $$
 ::::
 
 :::::::::::::
-
-
-::::::::::::::
 
 
 
@@ -462,6 +420,12 @@ axis: equal
 let: r = 4
 circle: (0, 0), r, red
 triangle: points=((0, 0), (r, 0), (r * cos(120 * pi/180), r * sin(120 * pi/180))), angles=(A), angle-radius=30, angle-labels=(A=numeric)
+line-segment: (r * cos(120 * pi/180), r * sin(120 * pi/180)), (r * cos(120 * pi/180), 0), dashed, gray
+line-segment: (r * cos(120 * pi/180), 0), (0, 0), dashed, gray
+let: ds = 0.5
+line-segment: (r * cos(120 * pi/180) + ds, 0), (r * cos(120 * pi/180) + ds, ds), solid, gray
+line-segment: (r * cos(120 * pi/180) + ds, ds), (r * cos(120 * pi/180), ds), solid, gray
+text: r*cos(120 * pi/180), 0.5 * r * sin(120 * pi/180), "$h$", center-left
 fontsize: 30
 nocache:
 :::
@@ -471,12 +435,9 @@ nocache:
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Bestem høyden $h$ til trekanten relativ til grunnlinja $AB$.
+
+:::::::::::::{part} a
+Bestem høyden $h$ til trekanten.
 
 
 ::::{answer}
@@ -487,7 +448,7 @@ $$
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem arealet av trekanten.
 
 ::::{answer}
@@ -500,7 +461,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem $BC$.
 
 ::::{answer}
@@ -509,7 +470,6 @@ BC = 4 \sqrt{3}.
 $$
 ::::
 :::::::::::::
-::::::::::::::
 
 
 :::::::::::::::
@@ -578,8 +538,8 @@ width: 100%
 align: right
 axis: off
 axis: equal
-triangle: sss=(4, 2*sqrt(3), 2), angles=(B, C), angle-labels=(B=numeric), angle-radius=20, angle-label-offset=20, side-labels=(BC=exact)
-triangle: sss=(2, sqrt(3), 1), angles=(C), corner-labels=none, side-labels=(CA=exact)
+triangle: sss=(4, 2*sqrt(3), 2), angles=(B, C), angle-labels=(B=numeric), angle-radius=60, label-offset=26, side-labels=(BC=exact)
+triangle: sss=(2, sqrt(3), 1), angles=(C), corner-labels=none, side-labels=(CA=exact), angle-radius=60
 text: cos(pi/3), sin(pi/3), "$E$", top-left
 text: 2, 0, "$D$", bottom-center
 :::
@@ -621,16 +581,13 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 8
-I figuren nedenfor vises en trekant.
-
-Bestem $x$, $y$ og $z$.
-
 :::{plot}
-width: 60%
+width: 100%
 fontsize: 30
+align: right
 axis: off
 axis: equal
-triangle: sss=(10, 5*sqrt(3), 5), angles=(B, C), angle-labels=(B=numeric), angle-radius=50, angle-text-offset=20, side-text=(BC="$y$", CA="$x$"), label-offset=20
+triangle: sss=(10, 5*sqrt(3), 5), angles=(B, C), angle-labels=(B=numeric), angle-radius=60, label-offset=30, side-text=(BC="$y$", CA="$x$"), label-offset=20
 vline: 5 * cos(pi/3), 0, 5 * sin(pi/3), dashed, gray
 let: ds = 0.7
 line-segment: (5 * cos(pi/3) + ds, 0), (5 * cos(pi/3) + ds, ds), solid, gray
@@ -640,6 +597,10 @@ bar: (0, -1), 10, h
 text: 5, -1, "$10$", bottom-center
 text: 5 * cos(pi/3), 0.5 * 5 * sin(pi/3), "$z$", center-right
 :::
+
+I figuren til høyre vises en trekant.
+
+Bestem $x$, $y$ og $z$.
 
 
 ::::{answer}
@@ -674,8 +635,8 @@ let: Cx = 3
 let: Cy = 3 * sqrt(3)
 let: Mx = (Ax + Bx + Cx) / 3
 let: My = (Ay + By + Cy) / 3
-triangle: points=((Ax, Ay), (Mx, My), (Cx, Cy)), angles=(A, C), corner-labels=none, angle-labels=(A=numeric, C=numeric)
-triangle: points=((Mx, My), (Bx, By), (Cx, Cy)), angles=(B, C), corner-labels=none, angle-labels=(B=numeric, C=numeric)
+triangle: points=((Ax, Ay), (Mx, My), (Cx, Cy)), angles=(A, C), corner-labels=none, angle-labels=(A=numeric, C=numeric), angle-radius=60, label-offset=30
+triangle: points=((Mx, My), (Bx, By), (Cx, Cy)), angles=(B, C), corner-labels=none, angle-labels=(B=numeric, C=numeric), angle-radius=60, label-offset=30
 text: Ax, Ay, "$A$", bottom-left
 text: Bx, By, "$B$", bottom-right
 text: Cx, Cy, "$C$", top-center

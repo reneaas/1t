@@ -1,16 +1,16 @@
 # Ekstremalpunktsform
 
-:::{goals} Læringsmål
+:::{goals} Vis læringsmål
 * Kunne bestemme $f(x)$ på ekstremalpunktsform og kunne bruke denne til å bestemme grafiske egenskaper ved funksjonen.
 * Kunne veksle mellom ekstremalpunktsform og standardform.
 * Kunne bestemme ekstremalpunktsformen fra graf.
 :::
 
 
-Standardformen til en andregradsfunksjon ga oss informasjon om funksjonens form, hvor den den skjærer $y$-aksen. Vi kunne også bestemme symmetrilinja til grafen ved litt regning. 
+Standardformen til en andregradsfunksjon ga oss informasjon om grafens form og hvor den skjærer $y$-aksen. Vi kunne også bestemme symmetrilinja til grafen ved litt regning. 
 
 
-Nå skal vi se på en annen representasjon som vi kaller for **ekstremalpunktsform**. **Ekstremalpunkt** er en fellesbetegnelse på toppunkt og bunnpunkt. Denne representasjonen gir oss informasjon om funksjonens topp- eller bunnpunkt, symmetrilinje og grafens form. 
+Nå skal vi se på en annen nyttig representasjon som vi kaller for **ekstremalpunktsform**. **Ekstremalpunkt** er en fellesbetegnelse på toppunkt og bunnpunkt. Denne representasjonen gir oss informasjon om funksjonens topp- eller bunnpunkt, symmetrilinje og grafens form. 
 
 
 
@@ -25,7 +25,7 @@ x_0 = -\frac{b}{2a}
 $$
 :::
 
-:::::::::::::::{summary} Ekstremalpunktsform
+:::::::::::::::{summary-2} Ekstremalpunktsform
 Ekstremalpunktsformen til en andregradsfunksjon $f$ er gitt ved
 
 :::{figure} ./figurer/teori/algebraisk_uttrykk.svg
@@ -43,7 +43,7 @@ class: no-click, adaptive-figure
 
 
 :::{plot}
-width: 80%
+width: 60%
 function: (x - 2)**2 + 1, f
 xmin: -2
 xmax: 6
@@ -62,7 +62,7 @@ annotate: (-1.5, -1), (2, 3), "Symmetrilinje $x = x_0$", -0.3
 
 La oss se på et eksempel der vi ser på den grafiske sammenhengen med det algebraiske uttrykket for ekstremalpunktsformen.
 
-:::::::::::::::{example} Eksempel 1
+:::::::::::::::{example-2} Eksempel 1
 Nedenfor vises fire eksempler på grafene til andregradsfunksjoner og deres ekstremalpunktsform.
 
 
@@ -160,7 +160,7 @@ fontsize: 26
 ---
 
 
-:::::::::::::::{explore} Utforsk 1
+:::::::::::::::{explore-2} Utforsk 1
 Nedenfor vises et interaktivt vindu der en andregradsfunksjon $f$ er skrevet på ekstremalpunktsform 
 
 $$
@@ -197,7 +197,7 @@ Når vi har en graf, kan vi bestemme ekstremalpunktsformen når vi kjenner til e
 La oss se på et eksempel:
 
 
-:::::::::::::::{example} Eksempel 2
+:::::::::::::::{example-2} Eksempel 2
 Grafen til en andregradsfunksjon $f$ er vist nedenfor.
 
 Bestem $f(x)$ på ekstremalpunktsform.
@@ -213,9 +213,9 @@ ymin: -10
 
 
 
-::::{solution}
+::::{solution-2}
 ---
-dropdown: 0 
+open:
 ---
 Vi ser fra grafen at ekstremalpunktet er $(1, -8)$. Det betyr at vi kan skrive $f(x)$ på ekstremalpunktsform som
 
@@ -239,7 +239,7 @@ $$
 ---
 
 
-:::::::::::::::{exercise} Underveisoppgave 1
+:::::::::::::::{exercise-2} Underveisoppgave 1
 Grafen til en andregradsfunksjon $f$ er vist nedenfor.
 
 Bestem $f(x)$ på ekstremalpunktsform.
@@ -252,14 +252,12 @@ function: -(x + 1)**2 + 4, f
 
 
 
-::::{answer}
+:::::{answer-2}
 $$
 f(x) = -(x + 1)^2 + 4.
 $$
-::::
 
-
-::::{solution}
+::::{solution-2}
 Vi ser at grafen til $f$ har et ekstremalpunkt i $(-1, 4)$ som betyr at vi kan skrive $f(x)$ på ekstremalpunktsform som
 
 $$
@@ -271,8 +269,10 @@ Flytter vi oss én enhet til høyre langs $x$-aksen fra ekstremalpunktet, ser vi
 $$
 f(x) = -(x + 1)^2 + 4.
 $$
-
 ::::
+
+
+:::::
 
 :::::::::::::::
 
@@ -291,7 +291,7 @@ class: no-click, adaptive-figure
 
 La oss se på et eksempel:
 
-:::::::::::::::{example} Eksempel 3
+:::::::::::::::{example-2} Eksempel 3
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -301,9 +301,9 @@ $$
 Bestem $f(x)$ på ekstremalpunktsform.
 
 
-::::{solution}
+::::{solution-2}
 ---
-dropdown: 0
+open:
 ---
 Ekstremalpunktsformen til $f(x)$ er gitt ved
 
@@ -344,7 +344,7 @@ $$
 ---
 
 
-:::::::::::::::{exercise} Underveisoppgave 2
+:::::::::::::::{exercise-2} Underveisoppgave 2
 En andregradsfunksjon $f$ er gitt ved
 
 
@@ -355,13 +355,13 @@ $$
 Bestem $f(x)$ på ekstremalpunktsform.
 
 
-::::{answer}
+:::::{answer-2}
 $$
 f(x) = 2(x - 2)^2 - 2.
 $$
-::::
 
-::::{solution}
+
+::::{solution-2}
 Koeffisientene til $f(x)$ er
 
 $$
@@ -387,6 +387,10 @@ f(x) = a(x - x_0)^2 + y_0 = 2(x - 2)^2 - 2.
 $$
 ::::
 
+
+:::::
+
+
 :::::::::::::::
 
 
@@ -403,7 +407,7 @@ $$
 $$
 :::
 
-:::::::::::::::{example} Eksempel 4
+:::::::::::::::{example-2} Eksempel 4
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -412,9 +416,9 @@ $$
 
 Bestem $f(x)$ på standardform.
 
-::::{solution}
+::::{solution-2}
 ---
-dropdown: 0
+open:
 ---
 Vi ganger ut parentesen før vi samler leddene:
 
@@ -435,7 +439,7 @@ f(x) &= -3(x - 1)^2 + 2 \\
 
 ---
 
-:::::::::::::::{exercise} Underveisoppgave 3
+:::::::::::::::{exercise-2} Underveisoppgave 3
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -444,13 +448,13 @@ $$
 
 Bestem $f(x)$ på standardform.
 
-::::{answer}
+:::::{answer-2}
 $$
 f(x) = 2x^2 + 12x + 13.
 $$
-::::
 
-::::{solution}
+
+::::{solution-2}
 Vi ganger ut parentesen og samler leddene:
 
 \begin{align*}
@@ -462,8 +466,11 @@ f(x) &= 2(x + 3)^2 - 5 \\
 \\
 &= 2x^2 + 12x + 13.
 \end{align*}
-
 ::::
+
+
+:::::
+
 
 
 

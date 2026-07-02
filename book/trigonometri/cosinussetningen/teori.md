@@ -1,10 +1,7 @@
 # Cosinussetningen
 
 
-:::{admonition} Læringsmål
----
-class: tip
----
+:::{goals} Læringsmål
 * Kunne bruke cosinussetningen til å regne ut ukjente sider, eller ukjente cosinusverdier
 * Kunne kombinere cosinussetningen, sinussetningen og arealsetningen til å bestemme omkrets og areal av sammensatte figurer.
 :::
@@ -43,13 +40,8 @@ $$
 
 
 
-:::{clear}
-:::
 
-::::{admonition} Forklaring av formelen
----
-class: theory, dropdown
----
+::::{proof}
 :::{plot}
 axis: off
 axis: equal
@@ -159,12 +151,9 @@ Trekanten $\triangle ABC$ er vist i figuren til høyre.
 Bestem $BC$.
 
 
-:::{clear}
-:::
-
 ::::{solution}
 ---
-dropdown: 0 
+open:
 ---
 Vi lar $x = BC$. Cosinussetningen gir oss da at
 
@@ -202,13 +191,12 @@ Vi kan ikke forenkle kvadratroten noe mer enn dette, så da er $BC = \sqrt{21}$.
 
 
 :::::::::::::::{example} Eksempel 2
-Nedenfor vises en firkant $\square ABCD$. 
-
 :::{plot}
+align: right
 fontsize: 25
 axis: off
 axis: equal
-width: 50%
+width: 100%
 let: Ax = 0
 let: Ay = 0
 let: Bx = 8
@@ -234,12 +222,14 @@ text: 0.5 * (Bx + Cx), 0.5 * (By + Cy) + 0.1, "$12$", bottom-right
 text: 0.5 * (Cx + Dx), 0.5 * (Cy + Dy) + 0.1, "$8\sqrt{3}$", top-left
 :::
 
+Gitt firkanten $\square ABCD$ til høyre.
+
 Bestem $AD$.
 
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 
 Vi tegner en hjelpelinje for linjestykket $BD$.
@@ -249,7 +239,8 @@ Vi tegner en hjelpelinje for linjestykket $BD$.
 fontsize: 25
 axis: off
 axis: equal
-width: 50%
+width: 40%
+align: center
 let: Ax = 0
 let: Ay = 0
 let: Bx = 8
@@ -273,7 +264,7 @@ text: Dx, Dy, "$D$", top-left
 text: 0.5 * (Ax + Bx), 0.5 * (Ay + By) - 0.1, "$8$", bottom-center
 text: 0.5 * (Bx + Cx), 0.5 * (By + Cy) + 0.1, "$12$", bottom-right
 text: 0.5 * (Cx + Dx), 0.5 * (Cy + Dy) + 0.1, "$8\sqrt{3}$", top-left
-line-segment: (Bx, By), (Dx, Dy), dashed, gray
+line-segment: (Bx, By), (Dx, Dy), dashed, red
 :::
 
 For å bestemme $AD$ kan vi følge disse stegene:

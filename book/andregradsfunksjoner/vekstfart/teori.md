@@ -79,7 +79,7 @@ width: 80%
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Fra grafen til $f$ ser vi at $f(1) = -4$ og $f(3) = 0$. Den gjennomsnittlige vekstfarten i intervallet $[1, 3]$ er da gitt ved
 
@@ -109,12 +109,10 @@ width: 80%
 :::
 
 
-::::{answer}
+:::::{answer}
 $$
 \dfrac{f(1) - f(-2)}{1 - (-2)} = -1
 $$
-::::
-
 
 ::::{solution}
 Vi ser fra grafen til $f$ at $f(-2) = 3$ og $f(1) = 0$. Den gjennomsnittlige vekstfarten i intervallet $[-2, 1]$ er da gitt ved
@@ -125,6 +123,8 @@ $$
 
 
 ::::
+
+:::::
 
 
 :::::::::::::::
@@ -223,11 +223,10 @@ $$
 
 Bruk Geogebra-vinduet til å bestemme den momentane vekstfarten til $f$ i punktet $(1, f(1))$. 
 
-::::{answer}
+:::::{answer}
 $$
 f'(1) = 2
 $$
-::::
 
 ::::{solution}
 Vi skriver inn funksjonsuttrykket, lager punktet og bruker `Tangent(punkt, funksjon)` for å finne likningen til tangenten. Se figuren nedenfor:
@@ -251,8 +250,9 @@ $$
 f'(1) = 2
 $$
 
-
 ::::
+
+:::::
 
 :::::::::::::::
 
@@ -318,10 +318,8 @@ annotate: (2.5, -1), (1, 0), "Symmetrilinja til $f$", -0.3
 
 
 
-::::::::::::::{admonition} Bevis
----
-class: dropdown, theory
----
+::::::::::::::{proof}
+
 La $f$ være en andregradsfunksjon og la $T$ være en tangent til grafen til $f$ i et vilkårlig punkt $(x_0, f(x_0))$. Vi kan uttrykke de to funksjonene som
 
 $$
@@ -413,7 +411,7 @@ Bestem $f'(x)$.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Den deriverte er gitt ved 
 
@@ -529,9 +527,8 @@ cols: 2
 
 
 
-::::{answer}
+:::::{answer}
 Graf A.
-::::
 
 ::::{solution}
 Grafen til $f$ har symmetrilinje i $x = 2$. Det betyr at $f'$ må skjære $x$-aksen i $x = 2$ som både bare graf A og B gjør. Dermed kan vi utelukke graf C og D. Til venstre for symmetrilinja synker grafen til $f$ så her må 
@@ -548,6 +545,8 @@ $$
 
 Dette stemmer for graf A, men ikke for graf B. Dermed er det graf A som viser grafen til $f'$.
 ::::
+
+:::::
 
 
 :::::::::::::::
@@ -583,7 +582,7 @@ Bestem symmetrilinja til grafen til $f$.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi bestemmer $f'(x)$ først. Vi ser at $a = 1$ og $b = -8$, så vi får
 
@@ -627,11 +626,10 @@ $$
 
 Sjekk at svaret ditt stemmer overens ved å bruke formelen for symmetrilinja til en andregradsfunksjon.
 
-::::{answer}
+:::::{answer}
 $$
 x = 1
 $$
-::::
 
 ::::{solution}
 Vi har at $a = -2$ og $b = 4$, så vi får
@@ -654,6 +652,8 @@ $$
 
 Det stemmer!
 ::::
+
+:::::
 
 
 :::::::::::::::
@@ -695,7 +695,7 @@ Bestem likningen til tangenten til grafen til $f$ i punktet $(2, f(2))$.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Likningen til tangenten er gitt ved 
 
@@ -744,11 +744,10 @@ $$
 Bestem likningen til tangenten til grafen til $f$ i punktet $(1, f(1))$.
 
 
-::::{answer}
+:::::{answer}
 $$
 y = x + 3
 $$
-::::
 
 ::::{solution}
 Likningen til tangenten er gitt ved
@@ -782,6 +781,8 @@ y = 1\cdot(x - 1) + 4 = x - 1 + 4 = x + 3.
 $$
 ::::
 
+:::::
+
 :::::::::::::::
 
 
@@ -791,6 +792,12 @@ $$
 Vi kan bruke opplysninger om grafen til $f$ og grafen til $f'$ til å bestemme funksjonsuttrykkene $f(x)$ og $f'(x)$. La oss se på et eksempel: 
 
 :::::::::::::::{example} Eksempel 7
+:::{cas-popup}
+---
+layout: sidebar
+---
+:::
+
 I figuren nedenfor vises grafen til en andregradsfunksjon $f$. Grafen har en tangent i punktet $(3, f(3))$ med likningen $y = -4x + 13$.
 
 Bestem $f(x)$ og $f'(x)$.
@@ -812,14 +819,8 @@ xmin: -3
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
-
-:::{cas-popup}
----
-layout: sidebar
----
-:::
 
 Her bruker vi CAS til å sette opp et likningssystem for å bestemme $f(x)$ og $f'(x)$. Bruk CAS-vinduet til å utføre utregningene som vises nedenfor! 
 
@@ -920,11 +921,10 @@ ymax: 8
 :::
 
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = -x^2 - 2x + 3 \qog f'(x) = -2x - 2.
 $$
-::::
 
 ::::{solution}
 Vi starter med tangenten som går gjennom punktet $(-2, f(-2))$. Siden stigningstallet er $2$, så betyr det at den deriverte er lik denne verdien i $x = -2$. Altså er $f'(-2) = 2$.
@@ -969,8 +969,9 @@ $$
 f(x) = -x^2 - 2x + 3 \qog f'(x) = -2x - 2.
 $$
 
-
 ::::
+
+:::::
 
 
 

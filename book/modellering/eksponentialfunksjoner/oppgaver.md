@@ -255,19 +255,15 @@ $$
 
 :::::::::::::::{exercise} Oppgave 2
 Bestem vekstfaktoren til de prosentvise endringene nedenfor.
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 $16\%$ økning.
 
 
-::::{answer}
+:::::{answer}
 $$
 V = 1.16
 $$
-::::
 
 ::::{solution}
 $$
@@ -275,20 +271,20 @@ V = 100\% + 16\% = 116\% = 1.16
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 $16\%$ nedgang.
 
 
-::::{answer}
+:::::{answer}
 $$
 V = 0.84
 $$
-::::
-
 
 ::::{solution}
 $$
@@ -296,18 +292,20 @@ V = 100\% - 16\% = 84\% = 0.84
 $$
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 $3.5\%$ økning.
 
-::::{answer}
+:::::{answer}
 $$
 V = 1.035
 $$
-::::
 
 ::::{solution}
 $$
@@ -315,17 +313,20 @@ V = 100\% + 3.5\% = 103.5\% = 1.035
 $$
 ::::
 
+:::::
+
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 $3.5\%$ nedgang.
 
-::::{answer}
+:::::{answer}
 $$
 V = 0.965
 $$
-::::
 
 ::::{solution}
 $$
@@ -333,11 +334,11 @@ V = 100\% - 3.5\% = 96.5\% = 0.965
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -365,18 +366,13 @@ Hvis $p > 0$ er det en prosentvis økning, og hvis $p < 0$ er det en prosentvis 
 
 Bestem den prosentvise endringen til vekstfaktorene nedenfor.
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 $$
 V = 1.06
 $$
 
-::::{answer}
+:::::{answer}
 $6\%$ økning.
-::::
 
 ::::{solution}
 $$
@@ -386,18 +382,19 @@ $$
 Altså $6\%$ økning.
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 $$
 V = 0.96
 $$
 
 
-::::{answer}
+:::::{answer}
 $4\%$ nedgang.
-::::
 
 ::::{solution}
 $$
@@ -407,18 +404,19 @@ $$
 Altså $4\%$ nedgang.
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 $$
 V = 1.025
 $$
 
 
-::::{answer}
+:::::{answer}
 $2.5\%$ økning.
-::::
 
 ::::{solution}
 $$
@@ -428,18 +426,20 @@ $$
 Altså $2.5\%$ økning.
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 $$
 V = 0.68
 $$
 
 
-::::{answer}
+:::::{answer}
 $32\%$ nedgang.
-::::
+
 
 ::::{solution}
 $$
@@ -448,11 +448,9 @@ $$
 
 Altså $32\%$ nedgang.
 ::::
+:::::
 
 :::::::::::::
-
-
-::::::::::::::
 
 :::::::::::::::
 
@@ -724,20 +722,16 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 5
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 En vare koster $300$ kr og øker med $6\%$.
 
 Bestem et uttrykk for hvor mye varen koster etter økningen.
 
-::::{answer}
+:::::{answer}
 $$
 300 \cdot 1.06
 $$
-::::
 
 ::::{solution}
 Den gamle verdien er $G = 300$. Vekstfaktoren er 
@@ -753,21 +747,21 @@ N = G \cdot V = 300 \cdot 1.06
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En jakke koster $4000$ kr og blir satt ned med $30\%$. 
 
 Bestem et uttrykk for prisen til jakken etter at den ble satt ned.
 
 
-::::{answer}
+:::::{answer}
 $$
 4000 \cdot 0.7
 $$
-::::
-
 
 ::::{solution}
 Den gamle prisen er $G = 4000$. Vekstfaktoren for endringen er
@@ -783,20 +777,22 @@ N = G \cdot V = 4000 \cdot 0.7
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Synne sin lønn i 2025 er $500~000$ kr. Da hadde lønnen hennes økt med $5\%$ fra 2024 til 2025.
 
 Bestem et uttrykk for lønnen til Synne i 2024.
 
 
-::::{answer}
+:::::{answer}
 $$
 \dfrac{500~000}{1.05}
 $$
-::::
 
 ::::{solution}
 Den nye verdien er $N = 500~000$. Vekstfaktoren for endringen er
@@ -812,20 +808,21 @@ N = G \cdot V \liff G = \dfrac{N}{V} = \dfrac{500~000}{1.05}
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En sykkel koster $5000$ kr etter at den ble satt ned med $20\%$.
 
 Bestem et uttrykk for prisen på sykkelen før at den ble satt ned.
 
-::::{answer}
+:::::{answer}
 $$
 \dfrac{5000}{0.8}
 $$
-::::
 
 ::::{solution}
 Den nye prisen er $N = 5000$.  
@@ -841,11 +838,10 @@ $$
 N = G \cdot V \liff G = \dfrac{N}{V} = \dfrac{5000}{0.8}
 $$
 ::::
+
+:::::
 :::::::::::::
 
-
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -1401,10 +1397,8 @@ $$
 
 
 
-::::{answer}
+:::::{answer}
 Uttrykk 1 og uttrykk 4.
-::::
-
 
 ::::{solution}
 Vekstfaktoren er gitt ved
@@ -1429,6 +1423,8 @@ $$
 
 Altså er uttrykk 1 og uttrykk 4 riktige.
 ::::
+
+:::::
 
 
 :::::::::::::::
@@ -1625,11 +1621,8 @@ Synne: Nettopp, og da vil vi enklere kunne regne ut en mer realistisk sparesitua
 
 <br>
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Hvilke **to** programmer nedenfor kan brukes til å regne ut hvor mye Alma og Synne har sammen etter 5 år hvis de bare setter inn 5000 kr **én gang** i starten?
 
 :::::{grid} 1 1 2 2
@@ -1705,7 +1698,7 @@ Program 1 og program 2.
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Alma og Synne skal i stedet sette inn $5000$ kr på starten av hvert år. Det riktige programmet som vil gjøre dette er plassert i tilfeldig rekkefølge nedenfor.
 
 1. Sett sammen programmet i riktig rekkefølge
@@ -1733,9 +1726,6 @@ print(s)
 
 
 :::::::::::::
-
-
-::::::::::::::
 
 
 
@@ -2260,16 +2250,10 @@ repeat: n=0..49; line-segment: (x(n), y(n)), (x(n+1), y(n)), blue
 repeat: n=0..49; line-segment: (x(n+1), y(n)), (x(n+1), y(n+1)), blue
 text: -1, 0.5 * L, "100 cm", center-left
 text: 0.5 * k * L, L, "90 cm", top-center
-nocache:
 :::
 
 
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem et uttrykk for den samlede lengden til de fire første linjestykkene.
 
 
@@ -2283,7 +2267,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Lag et program som beregner den samlede lengden av de 10 000 første linjestykkene. 
 
 
@@ -2312,9 +2296,6 @@ print(s)
 
 
 :::::::::::::
-
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -2350,13 +2331,7 @@ axis: equal
 
 
 
-
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem et uttrykk for summen av arealene til de fire første kvadratene.
 
 
@@ -2370,7 +2345,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Lag et program som beregner summen av arealene til de 10 000 første kvadratene.
 
 
@@ -2403,7 +2378,6 @@ print(s)
 :::::::::::::
 
 
-::::::::::::::
 
 :::::::::::::::
 
@@ -2414,13 +2388,9 @@ print(s)
 
 
 :::::::::::::::{exercise} Oppgave 14
-Nedenfor vises et kvadrat med sidelengder $3$.
-
-Kvadratet er fylt med mindre kvadrater. Noen av kvadratene er fargelagte.
-
-
 :::{plot}
-width: 50%
+width: 100%
+align: right
 let: L = 3
 let: r = 1/2
 def: s(n) = L*(1 - r**n)
@@ -2431,16 +2401,15 @@ repeat: n=1..10; fill-polygon: (s(n-1), s(n-1)), (s(n), s(n-1)), (s(n), s(n)), (
 axis: off
 axis: equal
 lw: 1
-nocache: 
 :::
 
+Nedenfor vises et kvadrat med sidelengder $3$.
+
+Kvadratet er fylt med mindre kvadrater. Noen av kvadratene er fargelagte.
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem et uttrykk for summen av arealene til de fire største fargelagte kvadratene.
 
 ::::{answer}
@@ -2452,7 +2421,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Lag et program som beregner summen av arealene til de 10 000 største fargelagte kvadratene.
 
 
@@ -2483,9 +2452,6 @@ print(f"{s = }")
 :::::::::::::
 
 
-::::::::::::::
-
-
 :::::::::::::::
 
 
@@ -2509,15 +2475,9 @@ polygon: (-0.5 * L, 0), (0.5 * L, 0), (0, h)
 repeat: n=1..10; polygon: (0, s(n-1)), (r * L / 2**n, s(n)), (-r * L / 2**n, s(n)), blue, 0.3
 axis: off
 axis: equal
-nocache:
 :::
 
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem et uttrykk for summen av arealene til de fire største fargelagte trekantene.
 
 
@@ -2531,7 +2491,7 @@ $$
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Lag et program som beregner summen av arealene til de 10 000 største fargelagte trekantene.
 
 
@@ -2573,7 +2533,6 @@ Altså er arealet av de 10 000 største fargelagte trekantene omtrent lik 12.
 :::::::::::::
 
 
-::::::::::::::
 
 
 
@@ -2614,14 +2573,7 @@ Inni den ytre trekanten er det innskrevet en mindre likesidet trekant. Inni denn
 Slik fortsetter det i det uendelige.
 
 
-:::{clear}
-:::
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem et uttrykk for summen av omkretsene til de fire største trekantene.
 
 
@@ -2634,7 +2586,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Lag et program som regner ut summen av omkretsene til de 10 000 største trekantene.
 
 
@@ -2677,8 +2629,6 @@ som betyr at summen av omkretsene til de 10 000 største trekantene er omtrent l
 
 
 :::::::::::::
-
-::::::::::::::
 
 
 
@@ -2736,11 +2686,8 @@ text: 6, 5, "{N:0.f} rektangler", bbox
 :::
 ::::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem et uttrykk for arealet som Anna kan bruke til å regne ut arealet med $5$ rektangler.
 
 
@@ -2754,7 +2701,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem et uttrykk for arealet som Anna kan bruke til å regne ut arealet med $10$ rektangler.
 
 
@@ -2768,7 +2715,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Lag et program som finner arealet av det fargelagte området ved å bruke 10 000 rektangler.
 
 
@@ -2803,12 +2750,6 @@ print(areal)
 :::::::::::::
 
 
-::::::::::::::
-
-
-
-
-
 
 :::::::::::::::
 
@@ -2822,11 +2763,7 @@ print(areal)
 En pasient tar regelmessig et medikament som inneholder 1000 mg virkestoff per tablett. Kroppen bryter ned virkestoffet slik at det minker med $20\%$ per time.
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem et uttrykk som gir mengden virkestoff i kroppen til pasienten dersom en tablett tas hver time.
 
 ::::{answer}
@@ -2838,7 +2775,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem et uttrykk som gir mengden virkestoff i kroppen til pasienten dersom en tablett tas hver 4. time.
 
 
@@ -2853,7 +2790,7 @@ $$
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Lag et program som bestemmer mengden virkestoff pasienten har i kroppen dersom en tablett tas hver 4.time over lang tid.
 
 
@@ -2865,9 +2802,6 @@ Lag et program som bestemmer mengden virkestoff pasienten har i kroppen dersom e
 
 
 :::::::::::::
-
-
-::::::::::::::
 
 
 

@@ -1,23 +1,15 @@
 # Sinus, cosinus og tangens
 
-:::::{admonition} Læringsmål 
----
-class: tip
----
+:::::{goals} Læringsmål 
 * Kunne bestemme $\sin v$, $\cos v$ og $\tan v$ for en vinkel $v$ i en rettvinklet trekant.
 * Kjenne til sammenhengen mellom $\tan v$, og $\sin v$ og $\cos v$.
 :::::
 
 **Trigonometri** er en del av geometrien som handler om trekanter. Her skal vi se på tre trigonometriske størrelser som er sentrale i trigonometri: **sinus**, **cosinus** og **tangens**. Disse størrelsene er forholdstall som er avhengig av en bestemt vinkel $v$ i en rettvinklet trekant.
 
-## Motstående og hosliggende kateter
+Når vi jobber med rettvinklede trekanter, kommer vi til å få bruk for å referere til katetene i trekanten i forhold til vinkelen vi ser på.
 
-Når vi jobber med rettvinklede trekanter, kommer vi til å få bruk for å kategorisere sidene i trekanten. 
-
-:::::::::::::::{admonition} Motstående og hosliggende kateter
----
-class: summary
----
+:::::::::::::::{summary} Motstående og hosliggende kateter
 
 I en rettvinklet trekant, vil katetene i trekanten ha to navn:
 * Den **motstående** kateten er kateten som står på motsatt side av vinkelen.
@@ -43,8 +35,7 @@ let: Bx = s * cos(v)
 let: By = 0
 let: Cx = s * cos(v)
 let: Cy = s * sin(v)
-triangle: points=((Ax, Ay), (Bx, By), (Cx, Cy)), angles=(A, B), angle-radius=30
-nocache:
+triangle: points=((Ax, Ay), (Bx, By), (Cx, Cy)), angles=(A, B), angle-radius=60
 fontsize: 26
 text: 0.5 * (Ax + Bx), 0, "Hosliggende katet", bottom-center
 text: Bx, 0.5 * (By + Cy), "Motstående\\ \,katet", center-right
@@ -64,9 +55,7 @@ let: Bx = s * cos(v)
 let: By = 0
 let: Cx = s * cos(v)
 let: Cy = s * sin(v)
-triangle: points=((Ax, Ay), (Bx, By), (Cx, Cy)), angles=(B, C), angle-radius=30
-nocache:
-fontsize: 30
+triangle: points=((Ax, Ay), (Bx, By), (Cx, Cy)), angles=(B, C), angle-radius=60
 fontsize: 26
 text: 0.5 * (Ax + Bx), 0, "Motstående katet", bottom-center
 text: Bx, 0.5 * (By + Cy), "Hosliggende\\ \,katet", center-right
@@ -84,7 +73,7 @@ text: 0.5 * (Ax + Cx), 0.5 * (Ay + Cy), "Hypotenus", top-left
 :::{plot}
 width: 100%
 align: right
-triangle: sss=(3, 4, 5), angles=(A, B, C), angle-radius=30, side-labels=(AB=exact, BC=exact, CA=exact)
+triangle: sss=(3, 4, 5), angles=(A, B, C), angle-radius=30, side-labels=(AB=exact, BC=exact, CA=exact), angle-radius=60
 axis: off
 axis: equal
 fontsize: 30
@@ -97,12 +86,8 @@ En trekant $\triangle ABC$ er vist til høyre.
 :::{clear}
 :::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
 
+:::::::::::::{part} a
 * Hvilken sidelengde er motstående katet til vinkel $A$?
 * Hvilken sidelengde er hosliggende katet til vinkel $A$?
 
@@ -112,7 +97,8 @@ class: tabs-parts
 ::::
 :::::::::::::
 
-:::::::::::::{tab-item} b
+
+:::::::::::::{part} b
 * Hvilken sidelengde er motstående katet til vinkel $A$?
 * Hvilken sidelengde er hosliggende katet til vinkel $A$?
 
@@ -120,10 +106,8 @@ class: tabs-parts
 * $AB$ er motstående katet til vinkel $C$.
 * $BC$ er hosliggende katet til vinkel $C$.
 ::::
-
 :::::::::::::
 
-::::::::::::::
 
 
 :::::::::::::::
@@ -148,7 +132,7 @@ let: Bx = s * cos(v)
 let: By = 0
 let: Cx = s * cos(v)
 let: Cy = s * sin(v)
-triangle: points=((Ax, Ay), (Bx, By), (Cx, Cy)), angles=(A, B), angle-radius=45, angle-text=(A="$v$")
+triangle: points=((Ax, Ay), (Bx, By), (Cx, Cy)), angles=(A, B), angle-radius=45, angle-text=(A="$v$"), angle-radius=80
 nocache:
 fontsize: 26
 let: ds = 0.3
@@ -184,7 +168,7 @@ $$
 :::{plot}
 width: 100%
 align: right
-triangle: sss=(3, 4, 5), angles=(A, B, C), angle-radius=30, side-labels=(AB=exact, BC=exact, CA=exact)
+triangle: sss=(3, 4, 5), angles=(A, B, C), angle-radius=30, side-labels=(AB=exact, BC=exact, CA=exact), angle-radius=60
 axis: off
 axis: equal
 fontsize: 30
@@ -203,7 +187,7 @@ En trekant $\triangle ABC$ er vist til høyre.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 For vinkel $A$, vil $AB = 3$ være hosliggende katet og $BC = 4$ være motstående katet, og $AC = 5$ er hypotenusen. Det betyr at 
 
@@ -231,7 +215,7 @@ $$
 :::{plot}
 width: 100%
 align: right
-triangle: sss=(sqrt(3), 1, 2), angles=(A, B, C), angle-radius=50, angle-labels=(A=numeric, C=numeric), side-labels=(AB=exact, BC=exact, CA=exact)
+triangle: sss=(sqrt(3), 1, 2), angles=(A, B, C), angle-radius=60, angle-labels=(A=numeric, C=numeric), side-labels=(AB=exact, BC=exact, CA=exact)
 axis: off
 axis: equal
 fontsize: 30
@@ -244,11 +228,8 @@ En trekant $\triangle ABC$ er vist til høyre.
 :::{clear}
 :::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem $\sin A$.
 
 
@@ -257,11 +238,10 @@ $$
 \sin A = \dfrac{1}{2}.
 $$
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem $\cos A$.
 
 
@@ -272,30 +252,17 @@ $$
 ::::
 :::::::::::::
 
-
-:::::::::::::{tab-item} c
-Bestem $\sin C$.
+:::::::::::::{part} c
+Bestem $\sin C$ og $\cos C$.
 
 ::::{answer}
 $$
-\sin C = \dfrac{\sqrt{3}}{2}.
+\sin C = \dfrac{\sqrt{3}}{2} \qog \cos C = \dfrac{1}{2}.
 $$
 ::::
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
-Bestem $\cos C$.
-
-::::{answer}
-$$
-\cos C = \dfrac{1}{2}.
-$$
-::::
-:::::::::::::
-
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -328,7 +295,7 @@ let: Bx = s * cos(v)
 let: By = 0
 let: Cx = s * cos(v)
 let: Cy = s * sin(v)
-triangle: points=((Ax, Ay), (Bx, By), (Cx, Cy)), angles=(A, B), angle-radius=45, angle-text=(A="$v$")
+triangle: points=((Ax, Ay), (Bx, By), (Cx, Cy)), angles=(A, B), angle-radius=45, angle-text=(A="$v$"), angle-radius=80
 fontsize: 26
 let: ds = 0.3
 text: 0.5 * (Ax + Bx), -ds, "Hosliggende katet", bottom-center
@@ -375,7 +342,7 @@ Bestem $\tan 30 \degree$.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi kan bruke definisjonen av tangens til å finne at
 
@@ -419,51 +386,5 @@ $$
 ::::
 
 :::::::::::::::
-
-
-
----
-
-
-## Kjente vinkler for $\sin v$ og $\cos v$
-For en bestemt vinkel $v$, vil $\sin v$, $\cos v$ og $\tan v$ ha samme verdi uansett hvor stor eller liten en trekant er. Verdiene er bare avhengig av forholdstallet mellom katetene, og hypotenusen. Derfor er det naturlig å tenke på de tre trigonometriske størrelsene som funksjoner av vinkelen $v$. 
-
-Vi skal her se på noen eksakte verdier for $\sin v$ og $\cos v$ for noen utvalgte vinkler som vil bli nyttig i mange problemstillinger. 
-
-
-
-:::::::::::::::{example} Eksempel 3
-:::{plot}
-width: 100%
-align: right
-triangle: sss=(sqrt(3), 1, 2), angles=(A, B, C), angle-radius=50, angle-labels=(A=numeric, C=numeric), side-labels=(AB=exact, BC=exact, CA=exact)
-axis: off
-axis: equal
-fontsize: 30
-nocache:
-:::
-
-En trekant $\triangle ABC$ er vist til høyre.
-
-
-Bestem eksakte verdier for $\sin 30 \degree$ og $\cos 30 \degree$.
-
-
-
-:::{clear}
-:::
-
-
-::::{answer}
-$$
-\sin 30 \degree = \dfrac{1}{2} \qog \cos 30 \degree = \dfrac{\sqrt{3}}{2}.
-$$
-::::
-
-
-
-:::::::::::::::
-
-
 
 

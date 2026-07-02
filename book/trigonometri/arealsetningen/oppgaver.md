@@ -2,11 +2,8 @@
 
 
 :::::::::::::::{exercise} Oppgave 1
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 :::{plot}
 width: 100%
 align: right
@@ -21,28 +18,31 @@ fontsize: 30
 Bestem arealet av trekanten.
 
 
-:::{clear}
-:::
 
-
-::::{answer}
+:::::{answer}
 $$
-T = \dfrac{3}{2}.
+T = \dfrac{3}{2}
 $$
-::::
-
 
 ::::{solution}
 $$
-T = \dfrac{1}{2} \cdot 3 \cdot 2 \cdot \sin(30\degree) = \dfrac{1}{3} \cdot 3 \cdot 2 \cdot \dfrac{1}{2} = \dfrac{3}{2}.
+\begin{align*}
+T &= \dfrac{1}{2} \cdot 3 \cdot 2 \cdot \sin(30\degree) \\
+\\
+&= \dfrac{1}{3} \cdot 3 \cdot 2 \cdot \dfrac{1}{2} \\
+\\
+&= \dfrac{3}{2}
+\end{align*}
 $$
 ::::
+:::::
+
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 :::{plot}
 width: 100%
 align: right
@@ -56,27 +56,31 @@ Bestem arealet av trekanten.
 
 
 
-:::{clear}
-:::
-
-
-::::{answer}
+:::::{answer}
 $$
-T = \dfrac{5\sqrt{2}}{2}.
+T = \dfrac{5\sqrt{2}}{2}
 $$
-::::
 
 ::::{solution}
 $$
-T = \dfrac{1}{2} \cdot 2 \cdot 5 \cdot \sin(45\degree) = \dfrac{1}{2} \cdot 2 \cdot 5 \cdot \dfrac{\sqrt{2}}{2} = \dfrac{5\sqrt{2}}{2}.
+\begin{align*}
+T &= \dfrac{1}{2} \cdot 2 \cdot 5 \cdot \sin(45\degree) \\
+\\
+&= \dfrac{1}{2} \cdot 2 \cdot 5 \cdot \dfrac{\sqrt{2}}{2} \\
+\\
+&= \dfrac{5\sqrt{2}}{2}
+\end{align*}
 $$
 ::::
+
+:::::
+
 
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 :::{plot}
 width: 100%
 align: right
@@ -89,29 +93,29 @@ fontsize: 30
 Bestem arealet av trekanten.
 
 
-
-:::{clear}
-:::
-
-::::{answer}
+:::::{answer}
 $$
-T = \dfrac{15\sqrt{3}}{4}.
+T = \dfrac{15\sqrt{3}}{4}
 $$
-::::
-
-
 
 ::::{solution}
 $$
-T = \dfrac{1}{2} \cdot 5 \cdot 3 \cdot \sin (60\degree) = \dfrac{1}{2} \cdot 5 \cdot 3 \cdot \dfrac{\sqrt{3}}{2} = \dfrac{15\sqrt{3}}{4}.
+\begin{align*}
+T &= \dfrac{1}{2} \cdot 5 \cdot 3 \cdot \sin (60\degree) \\
+\\
+&= \dfrac{1}{2} \cdot 5 \cdot 3 \cdot \dfrac{\sqrt{3}}{2} \\
+\\
+&= \dfrac{15\sqrt{3}}{4}
+\end{align*}
 $$
 ::::
+
+:::::
+
 
 
 :::::::::::::
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -127,30 +131,28 @@ aids: true
 ---
 
 :::{plot}
-width: 100%
-align: right
+width: 40%
 axis: equal
 axis: off
 triangle: svs=(2, 53, 3), angles=all, color=blue, angle-color=red, angle-radius=70, side-labels=(AB=numeric, CA=numeric, BC=numeric), angle-labels=(A=numeric, B=numeric, C=numeric), label-offset=24, angle-offset=40
 fontsize: 30
 :::
 
+
+
+I figuren ovenfor vises en trekant $\triangle ABC$.
+
+
+
+:::::::::::::{part} a
+
 :::{cas-popup}
+---
+layout: sidebar
+---
 :::
 
 
-I figuren til høyre vises en trekant $\triangle ABC$.
-
-
-:::{clear}
-:::
-
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
 Bestem arealet av trekanten ut ifra hjørne $A$.
 
 
@@ -167,7 +169,15 @@ width: 60%
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
+
+:::{cas-popup}
+---
+layout: sidebar
+---
+:::
+
+
 Bestem arealet av trekanten ut ifra hjørne $B$.
 
 
@@ -184,7 +194,15 @@ width: 60%
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
+
+:::{cas-popup}
+---
+layout: sidebar
+---
+:::
+
+
 Bestem arealet av trekanten ut ifra hjørne $C$.
 
 ::::{solution}
@@ -198,8 +216,6 @@ width: 60%
 
 :::::::::::::
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -209,22 +225,17 @@ width: 60%
 
 
 :::::::::::::::{exercise} Oppgave 3
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 I en trekant $\triangle ABC$ er $AB = 8$, $AC = 6$ og $\angle A = 30\degree$.
 
 Bestem arealet av trekanten.
 
 
-::::{answer}
+:::::{answer}
 $$
 12
 $$
-::::
-
 
 ::::{solution}
 $$
@@ -232,24 +243,25 @@ T = \dfrac{1}{2}\cdot AB \cdot AC \cdot \sin(\angle A) = \dfrac{1}{2} \cdot 8 \c
 $$
 ::::
 
+:::::
+
+
 
 
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 I en trekant $\triangle ABC$ er $AB = 5$, $BC = 7$ og $\angle B = 45\degree$.
 
 Bestem arealet av trekanten.
 
 
-::::{answer}
+:::::{answer}
 $$
 \dfrac{35\sqrt{2}}{4}
 $$
-::::
-
 
 ::::{solution}
 $$
@@ -264,23 +276,22 @@ T &= \dfrac{1}{2} \cdot AB \cdot BC \cdot \sin(\angle B) \\
 \end{align*}
 $$
 ::::
+:::::
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 I en trekant $\triangle ABC$ er $BC = 10$ og $AC = 8$ og $\angle C = 120\degree$.
 
 Bestem arealet av trekanten.
 
 
-::::{answer}
+:::::{answer}
 $$
 20 \sqrt{3}
 $$
-::::
-
 
 ::::{solution}
 $$
@@ -296,12 +307,12 @@ T &= \dfrac{1}{2} \cdot BC \cdot AC \cdot \sin(\angle C) \\
 $$
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
-
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -309,112 +320,75 @@ $$
 ---
 
 
-
 :::::::::::::::{exercise} Oppgave 4
 
-:::{plot}
-axis: equal
-align: right
-axis: off
-width: 100%
-let: Ax = 0
-let: Ay = 0
-let: v = 150 * pi / 180
-let: Bx = 6
-let: By = 0
-let: Cx = Bx
-let: Cy = 6 * sin(v)
-let: Dx = 6 * cos(v)
-let: Dy = 6 * sin(v)
-polygon: (Ax, Ay), (Bx, By), (Cx, Cy), (Dx, Dy), blue, 0
-text: Ax, Ay, "$A$", bottom-left
-text: Bx, By, "$B$", bottom-right
-text: Cx, Cy, "$C$", top-right
-text: Dx, Dy, "$D$", top-left
-line-segment: (Bx, By), (Dx, Dy), dashed, gray
-let: ds = 0.5
-line-segment: (Cx - ds, Cy), (Cx - ds, Cy - ds), solid, gray
-line-segment: (Cx - ds, Cy - ds), (Cx, Cy - ds), solid, gray
-angle-arc: (Ax, Ay), 0.5, 0, 150
-text: 1.2 * cos(pi / 6), 1.2 * sin(pi / 6), "$150^\circ$", center-center
-text: 0.5 * (Ax + Bx), 0, "$6$", bottom-center
-text: 0.5 * (Ax + Dx), 0.5 * (Ay + Dy), "$6$", bottom-left
-line-segment: (Bx - ds, By), (Bx - ds, By + ds), solid, gray
-line-segment: (Bx - ds, By + ds), (Bx, By + ds), solid, gray
-fontsize: 30
-:::
+Gitt en trekant $ABC$ der $AB = 3 \sqrt{2}$, $AC = 8$ og $\angle A = 45\degree$.
 
 
-I figuren til høyre vises en firkant $ABCD$.
+:::::::::::::{part} a
+Bestem arealet av trekanten. 
 
 
-Bestem arealet av firkanten.
-
-
-
-:::{clear}
-:::
-
-::::{answer}
+:::::{answer}
 $$
-T = 18 + \dfrac{9 \sqrt{3}}{2}
+T_{\triangle ABC} = 12.
 $$
-::::
-
 
 ::::{solution}
-Vi regner ut arealet av $\triangle ABD$ først:
+Arealet av trekanten er
 
 $$
 \begin{align*}
-T_{\triangle ABD} &= \dfrac{1}{2} \cdot 6 \cdot 6 \cdot \sin 150\degree \\
+T_{\triangle ABC} &= \dfrac{1}{2} \cdot AB \cdot AC \cdot \sin(\angle A) \\
 \\
-&= \dfrac{1}{2} \cdot 6 \cdot 6 \cdot \dfrac{1}{2} \\
+&= \dfrac{1}{2} \cdot 3 \sqrt{2} \cdot 8 \cdot \sin(45\degree) \\
 \\
-&= 9.
-\end{align*}
-$$
-
-Sidelengden $BC$ vil være det samme som høyden i $\triangle ABD$. Derfor har vi at
-
-$$
-BC = 6 \cdot \sin(150\degree) = 3.
-$$
-
-Sidelengden $CD$ vil være
-
-$$
-CD = 6 + 6 \cdot \cos(180\degree - 150\degree) = 6 + 6 \cdot \cos(30\degree) = 6 + 6 \cdot \dfrac{\sqrt{3}}{2} = 6 + 3\sqrt{3}.
-$$
-
-Arealet av $\triangle BCD$ vil være
-
-$$
-\begin{align*}
-T_{\triangle BCD} &= \dfrac{1}{2} \cdot BC \cdot CD \\
+&= \dfrac{1}{2} \cdot 3 \sqrt{2} \cdot 8 \cdot \dfrac{\sqrt{2}}{2} \\
 \\
-&= \dfrac{1}{2} \cdot 3 \cdot (6 + 3\sqrt{3}) \\
-\\
-&= \dfrac{18 + 9 \sqrt{3}}{2}
-\end{align*}
-$$
-
-Det samlede arealet av firkanten er da
-
-
-$$
-\begin{align*}
-T_{ABCD} &= T_{\triangle ABD} + T_{\triangle BCD} \\
-\\
-&= 9 + \dfrac{18 + 9 \sqrt{3}}{2} \\
-\\
-&= 9 + 9 + \dfrac{9 \sqrt{3}}{2} \\
-\\
-&= 18 + \dfrac{9 \sqrt{3}}{2}.
+&= 12.
 \end{align*}
 $$
 ::::
+:::::
 
+
+:::::::::::::
+
+Gitt en trekant $PQR$ der $PQ = 3 \sqrt{2}$, $PR = 8$ og $\angle P = 140\degree$.
+
+
+:::::::::::::{part} b
+---
+open:
+---
+Avgjør hvilke av trekantene $ABC$ og $PQR$ som har størst areal.
+
+:::::{answer}
+Trekant $ABC$ har størst areal.
+
+::::{solution}
+Arealet av trekant $PQR$ vil være gitt ved
+
+$$
+T_{\triangle PQR} = \dfrac{1}{2} PQ \cdot PR \cdot \sin \angle P
+$$
+
+Siden $PQ = AB$ og $PR = AC$, så kan vi skrive arealet av trekant $PQR$ som
+
+$$
+T_{\triangle PQR} = \dfrac{1}{2} \cdot AB \cdot AC \cdot \sin \angle P
+$$
+
+Det som bestemme hvilken trekant som har størst areal, vil være sinusverdien. Vi har at
+
+$$
+\sin 140\degree = \sin (180\degree - 140\degree) = \sin 40\degree < \sin 45\degree.
+$$
+
+Altså må trekant $ABC$ ha størst areal.
+::::
+:::::
+:::::::::::::
 
 
 :::::::::::::::
@@ -449,8 +423,11 @@ let: Cx = Bx + 15 * cos(pi/3)
 let: Cy = By + 15 * sin(pi/3)
 let: Dx = 0
 let: Dy = 10
-polygon: (Ax, Ay), (Bx, By), (Cx, Cy), (Dx, Dy), blue, 0
-angle-arc: (Bx, By), 2, 180, 60
+line-segment: (Ax, Ay), (Bx, By), solid, blue
+line-segment: (Bx, By), (Cx, Cy), solid, blue
+line-segment: (Cx, Cy), (Dx, Dy), solid, blue
+line-segment: (Dx, Dy), (Ax, Ay), solid, blue
+angle-arc: (Bx, By), 2, 180, 60, red
 text: Ax, Ay, "$A$", bottom-left
 text: Bx, By, "$B$", bottom-right
 text: Cx, Cy, "$C$", top-right
@@ -462,8 +439,8 @@ text: 0.5 * (Ax + Bx), 0.5 * (Ay + By), "$10$ m", bottom-center
 text: 0.5 * (Bx + Cx), 0.5 * (By + Cy), "$15$ m", bottom-right
 text: 0, 0.5 * (Ay + Dy), "$10$ m", center-left
 let: ds = 1.5
-line-segment: (Ax + ds, Ay), (Ax + ds, Ay + ds), solid, gray
-line-segment: (Ax + ds, Ay + ds), (Ax, Ay + ds), solid, gray
+line-segment: (Ax + ds, Ay), (Ax + ds, Ay + ds), solid, red
+line-segment: (Ax + ds, Ay + ds), (Ax, Ay + ds), solid, red
 :::
 
 
@@ -472,14 +449,11 @@ I figuren til høyre vises en skisse av en boligtomt.
 
 Bestem arealet av tomten.
 
-:::{clear}
-:::
 
-::::{answer}
+:::::{answer}
 $$
 \dfrac{175 + 75\sqrt{3}}{2}~\mathrm{m^2}
 $$
-::::
 
 
 ::::{solution}
@@ -548,6 +522,8 @@ der arealet er i $\mathrm{m^2}$ siden alle lengdene i figuren er i meter.
 
 ::::
 
+:::::
+
 
 
 :::::::::::::::
@@ -598,20 +574,14 @@ text: 1.5 * r * cos(pi/3), 1.5 * r * sin(pi/3), "$120^\circ$", center-center
 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem arealet av $\triangle SAB$.
 
 
-::::{answer}
+:::::{answer}
 $$
 T_{\triangle SAB} = \sqrt{3}
 $$
-::::
-
 
 ::::{solution}
 Siden radius i sirkelen er $2$, så vet vi at 
@@ -633,21 +603,21 @@ T_{\triangle SAB} &= \dfrac{1}{2} \cdot SA \cdot SB \cdot \sin(120\degree) \\
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem arealet av $\triangle CAB$. 
 
 
-::::{answer}
+:::::{answer}
 $$
 T_{\triangle CAB} = 2\sqrt{3}
 $$
-
-::::
-
 
 ::::{solution}
 Trekant $\triangle CAB$ er samme høyde som $\triangle SAB$, men dobbelt så stor grunnlinje siden $CA = 2 \cdot SA$. Derfor vil arealet av trekanten være
@@ -657,11 +627,11 @@ T_{\triangle CAB} = 2 \cdot T_{\triangle SAB} = 2 \cdot \sqrt{3} = 2\sqrt{3}.
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
-
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -677,7 +647,7 @@ I figuren nedenfor vises en firkant $ABCD$. I firkanten er $\angle C = 150\degre
 :::{plot}
 nocache:
 width: 60%
-figsize: (5, 5)
+figsize: (5, 2)
 axis: off
 axis: equal
 let: a = 5
@@ -689,38 +659,35 @@ let: Dx = 0
 let: Dy = a
 let: Bx = Cx + sqrt(3) * a * cos(-pi/6)
 let: By = Cy + sqrt(3) * a * sin(-pi/6)
-polygon: (Ax, Ay), (Bx, By), (Cx, Cy), (Dx, Dy), blue, 0
+line-segment: (Ax, Ay), (Bx, By), solid, blue
+line-segment: (Bx, By), (Cx, Cy), solid, blue
+line-segment: (Cx, Cy), (Dx, Dy), solid, blue
+line-segment: (Dx, Dy), (Ax, Ay), solid, blue
 text: Ax, Ay, "$A$", bottom-left
 text: Bx, By, "$B$", bottom-right
 text: Cx, Cy, "$C$", top-right
 text: Dx, Dy, "$D$", top-left
 line-segment: (Ax, Ay), (Cx, Cy), dashed, gray
 let: ds = 1
-line-segment: (Dx + ds, Dy), (Dx + ds, Dy - ds), solid, gray
-line-segment: (Dx + ds, Dy - ds), (Dx, Dy - ds), solid, gray
+line-segment: (Dx + ds, Dy), (Dx + ds, Dy - ds), solid, red
+line-segment: (Dx + ds, Dy - ds), (Dx, Dy - ds), solid, red
 text: -0.2, 0.5 * (Ay + Dy), "$a$", center-left
 text: 0.5 * (Ax + Cx), 0.5 * (Ay + Cy), "$2a$", top-left
 text: 0.5 * (Bx + Cx), 0.5 * (By + Cy), "$\sqrt{3} a$", top-right
 let: r = 1.2
-angle-arc: (Cx, Cy), r, 180, 180 + 150
+angle-arc: (Cx, Cy), r, 180, 180 + 150, red
 text: Cx, Cy - 1.8 * r, "$150^\circ$", center-center
 :::
 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem en eksakt verdi for $CD$.
 
-::::{answer}
+:::::{answer}
 $$
 CD = \sqrt{3} \cdot a
 $$
-::::
-
 
 ::::{solution}
 Vi bruker Pytagoras' setning på trekant $\triangle ACD$:
@@ -746,19 +713,20 @@ CD = \sqrt{3} \cdot a.
 $$
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem en eksakt verdi for arealet av firkanten.
 
-::::{answer}
+:::::{answer}
 $$
 \dfrac{\sqrt{3} + 3}{2} \cdot a^2
 $$
-::::
-
 
 ::::{solution}
 Vi kan regne ut arealet av $\triangle ACD$ direkte siden vi kan tenke på $AD$ som grunnlinje og $CD$ som høyde:
@@ -810,11 +778,13 @@ T_{ABCD} &= T_{\triangle ACD} + T_{\triangle ABC} \\
 $$
 ::::
 
+:::::
+
+
+
 
 :::::::::::::
 
-
-::::::::::::::
 
 
 
@@ -837,7 +807,7 @@ let: N = 6
 repeat: n=0..N-1; line-segment: (6 * cos(2 * n * pi / N), 6 * sin(2 * n * pi / N)), (6 * cos(2 * (n + 1) * pi / N), 6 * sin(2 * (n + 1) * pi / N)), solid, blue
 repeat: n=0..N-1; line-segment: (0, 0), (6 * cos(2 * n * pi / N), 6 * sin(2 * n * pi / N)), dashed, gray
 let: r = 1.2
-angle-arc: (0, 0), r, 0, 360 / N
+angle-arc: (0, 0), r, 0, 360 / N, red
 text: 1.5 * r * cos(pi / 6), 1.5 * r * sin(pi / 6), "$v$", center-center
 fontsize: 30
 :::
@@ -850,20 +820,15 @@ I figuren til høyre vises en sirkel med radius $2$. En sekskant der alle sidene
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem vinkelen $v$.
 
 
-::::{answer}
+:::::{answer}
 $$
 v = 60 \degree.
 $$
-::::
-
 
 ::::{solution}
 Vinkelen $v$ er én av de 6 like store sentralvinklene i sirkelen. De seks vinklene må samme summeres til $360\degree$ siden dette er antall grader i en sirkel. Dermed har vi:
@@ -873,20 +838,21 @@ $$
 $$
 ::::
 
+:::::
+
+
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem en eksakt verdi for arealet til sekskanten.
 
-::::{answer}
+:::::{answer}
 $$
 T = 6 \sqrt{3}.
 $$
-::::
-
 
 ::::{solution}
 Arealet av én trekant $T_1$ i sekskanten kan vi finne ved arealsetningen. Vi vet at sidelengdene som spenner ut vinkelen $v$ er like radius i sirkelen som er lik $2$. Dermed får vi:
@@ -902,11 +868,11 @@ T = 6 \cdot T_1 = 6 \cdot \sqrt{3} = 6\sqrt{3}.
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
-
-
-::::::::::::::
 
 :::::::::::::::
 
@@ -927,7 +893,7 @@ let: N = 12
 repeat: n=0..N-1; line-segment: (6 * cos(2 * n * pi / N), 6 * sin(2 * n * pi / N)), (6 * cos(2 * (n + 1) * pi / N), 6 * sin(2 * (n + 1) * pi / N)), solid, blue
 repeat: n=0..N-1; line-segment: (0, 0), (6 * cos(2 * n * pi / N), 6 * sin(2 * n * pi / N)), dashed, gray
 let: r = 2
-angle-arc: (0, 0), r, 0, 360 / N
+angle-arc: (0, 0), r, 0, 360 / N, red
 text: 1.5 * r * cos(pi / 12), 1.5 * r * sin(pi / 12), "$v$", center-center
 fontsize: 30
 :::
@@ -941,19 +907,15 @@ Arealet av 12-kanten er $120$.
 :::{clear}
 :::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem vinkelen $v$.
 
 
-::::{answer}
+:::::{answer}
 $$
 v = 30 \degree.
 $$
-::::
 
 
 ::::{solution}
@@ -964,21 +926,21 @@ $$
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem en eksakt verdi for diameteren til sirkelen.
 
 
-::::{answer}
+:::::{answer}
 $$
 4 \cdot \sqrt{10}
 $$
-::::
-
 
 ::::{solution}
 Vi vet at arealet av $12$-kanten er $120$. Da vil én av de tolv trekantene har arealet
@@ -1006,10 +968,10 @@ d = 2r = 4 \cdot \sqrt{10}.
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
-
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -1041,20 +1003,15 @@ En regulær $N$-kant innskrevet i en sirkel med radius $1$ er vist i figuren til
 :::{clear}
 :::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem en funksjon $T(N)$ for arealet til en slik $N$-kant.
 
 
-::::{answer}
+:::::{answer}
 $$
 T(N) = \dfrac{N}{2} \cdot \sin \left( \dfrac{360\degree}{N} \right).
 $$
-::::
-
 
 ::::{solution}
 Sentralvinkelen $v$ utgjør én av $N$ like stor vinkler i sirkelen som tilsammen må summeres til $360\degree$. Dermed har vi at
@@ -1076,11 +1033,14 @@ T(N) = N \cdot T_1 = N \cdot \dfrac{1}{2} \cdot \sin \left( \dfrac{360\degree}{N
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 :::{cas-popup}
 ---
 layout: sidebar
@@ -1092,12 +1052,10 @@ Arkimedes levde ca. 250 år før vår tidsregning. Han beregnet arealet av innsk
 Bestem arealet Arkimedes fant. 
 
 
-::::{answer}
+:::::{answer}
 $$
 T(108) \approx 3.13982
 $$
-::::
-
 
 ::::{solution}
 :::{figure} ./figurer/oppgaver/oppgave_10/sol.png
@@ -1110,11 +1068,11 @@ width: 60%
 som gir oss en grei tilnærming til $\pi$.
 ::::
 
+:::::
+
+
 
 :::::::::::::
-
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -1122,84 +1080,4 @@ som gir oss en grei tilnærming til $\pi$.
 
 
 
----
-
-
-
-
-:::::::::::::::{exercise} Oppgave 11
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Gitt en trekant $ABC$ der $AB = 3 \sqrt{2}$, $AC = 8$ og $\angle A = 45\degree$.
-
-Bestem arealet av trekanten.
-
-
-::::{answer}
-$$
-T_{\triangle ABC} = 12.
-$$
-::::
-
-
-::::{solution}
-Arealet av trekanten er
-
-$$
-\begin{align*}
-T_{\triangle ABC} &= \dfrac{1}{2} \cdot AB \cdot AC \cdot \sin(\angle A) \\
-\\
-&= \dfrac{1}{2} \cdot 3 \sqrt{2} \cdot 8 \cdot \sin(45\degree) \\
-\\
-&= \dfrac{1}{2} \cdot 3 \sqrt{2} \cdot 8 \cdot \dfrac{\sqrt{2}}{2} \\
-\\
-&= 12.
-\end{align*}
-$$
-::::
-
-:::::::::::::
-
-
-
-:::::::::::::{tab-item} b
-Gitt en trekant PQR der $PQ = 3 \sqrt{2}$, $PR = 8$ og $\angle P = 140\degree$.
-
-Avgjør hvilke av trekantene $ABC$ og $PQR$ som har størst areal.
-
-
-::::{answer}
-Trekant $ABC$ har størst areal.
-::::
-
-::::{solution}
-Arealet av trekant $PQR$ vil være gitt ved
-
-$$
-T_{\triangle PQR} = \dfrac{1}{2} PQ \cdot PR \cdot \sin \angle P
-$$
-
-Siden $PQ = AB$ og $PR = AC$, så kan vi skrive arealet av trekant $PQR$ som
-
-$$
-T_{\triangle PQR} = \dfrac{1}{2} \cdot AB \cdot AC \cdot \sin \angle P
-$$
-
-Det som bestemme hvilken trekant som har størst areal, vil være sinusverdien. Vi har at
-
-$$
-\sin 140\degree = \sin (180\degree - 140\degree) = \sin 40\degree < \sin 45\degree.
-$$
-
-Altså må trekant $ABC$ ha størst areal.
-::::
-
-:::::::::::::
-
-
-::::::::::::::
-:::::::::::::::
 

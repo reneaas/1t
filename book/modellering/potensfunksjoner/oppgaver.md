@@ -2,11 +2,8 @@
 
 
 :::::::::::::::{exercise} Oppgave 1
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 I figuren nedenfor vises grafene til potensfunksjonene
 
 $$
@@ -17,7 +14,6 @@ Koble sammen riktig funksjon med riktig graf.
 
 
 :::{plot}
-nocache:
 width: 70%
 function: x**2, (0, 6), A, blue
 function: x**-1, (0, 6), B, red
@@ -28,10 +24,7 @@ ymin: 0
 
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 * Graf A tilhører $f$.
 * Graf B tilhører $h$.
 * Graf C tilhører $g$.
@@ -41,7 +34,7 @@ class: answer, dropdown
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 I figuren nedenfor vises grafene til potensfunksjonene
 
 $$
@@ -51,8 +44,7 @@ $$
 Koble sammen riktig funksjon med riktig graf.
 
 
-:::{plot}
-nocache: 
+:::{plot} 
 width: 70%
 function: 4 * x**-2, (0, 5), A, blue
 function: x**-1, (0, 5), B, red
@@ -63,10 +55,7 @@ xmax: 5
 :::
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 * Graf A tilhører $h$.
 * Graf B tilhører $f$.
 * Graf C tilhører $g$.
@@ -75,7 +64,7 @@ class: answer, dropdown
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 I figuren nedenfor vises grafene til tre funksjoner gitt ved
 
 $$
@@ -96,10 +85,7 @@ xmax: 5
 :::
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 * Graf A tilhører $h$.
 * Graf B tilhører $f$.
 * Graf C tilhører $g$.
@@ -107,7 +93,6 @@ class: answer, dropdown
 
 :::::::::::::
 
-::::::::::::::
 
 
 :::::::::::::::
@@ -118,11 +103,8 @@ class: answer, dropdown
 
 
 :::::::::::::::{exercise} Oppgave 2
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 En kule med radius $r$ har et overflatearealet $A \propto r^2$.
 
 Hvor mange ganger større blir overflatearealet radius dobles?
@@ -133,7 +115,7 @@ $4$ ganger større.
 ::::
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En kule med radius $r$ har et volum $V \propto r^3$.
 
 Hvor mange ganger større blir volumet dersom radius dobles?
@@ -145,7 +127,7 @@ $8$ ganger større.
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Forholdet mellom volumet og overflatearealet til en kule er $\dfrac{V}{A}$. 
 
 Hvor mange ganger større blir dette forholdet dersom radius firedobles?
@@ -155,8 +137,6 @@ $4$ ganger større.
 ::::
 :::::::::::::
 
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -168,11 +148,8 @@ $4$ ganger større.
 
 
 :::::::::::::::{exercise} Oppgave 3
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Den elektriske kraften $F$ mellom to elektriske ladninger oppfyller $F \propto r^{-2}$ der $r$ er avstanden mellom de to elektriske ladningene. 
 
 Hvor mange ganger svakere blir kraften dersom avstanden mellom ladningene blir tre ganger så stor?
@@ -183,7 +160,7 @@ $\dfrac{1}{9}$ svakere.
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Tyngdekraften $G$ mellom to planeter er $G \propto r^{-2}$ der $r$ er avstanden mellom de to planetene.
 
 Hvor mange ganger sterkere blir tyngdekraften dersom avstanden mellom de to planetene halveres? 
@@ -195,7 +172,7 @@ $4$ ganger sterkere.
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bevegelsesenergien $E$ til en stein med fart $v$ tilfredsstiller $E \propto v^2$.
 
 
@@ -208,9 +185,6 @@ $16$ ganger så stor.
 
 :::::::::::::
 
-
-::::::::::::::
-
 :::::::::::::::
 
 
@@ -221,7 +195,6 @@ $16$ ganger så stor.
 :::::::::::::::{exercise} Oppgave 4
 
 :::{plot}
-nocache:
 figsize: (3, 3)
 width: 60%
 axis: off
@@ -267,11 +240,7 @@ Saturn, 9.58, 29.46
 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Lag en modell på formen
 
 $$
@@ -304,7 +273,7 @@ $$
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Hva er perioden til jorda, ifølge modellen din? 
 
 
@@ -325,7 +294,7 @@ Altså er $P(1) \approx 1$ år som stemmer overens med det vi vet om jorden.
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Neptun er den planeten som ligger lengst unna solen med en avstand på ca. $30.1 \, \mathrm{AU}$. 
 
 Hvor lang tid bruker Neptun på én runde rundt solen, ifølge modellen din? 
@@ -349,7 +318,7 @@ Altså bruker Neptun ca. 167 år på én runde rundt solen, ifølge modellen vå
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Pluto er en dvergplanet som bruker hele 247.94 år på én runde rundt solen.
 
 Hvor langt unna solen er Pluto, ifølge modellen din? 
@@ -357,7 +326,7 @@ Hvor langt unna solen er Pluto, ifølge modellen din?
 :::::::::::::
 
 
-:::::::::::::{tab-item} e
+:::::::::::::{part} e
 Johannes Kepler var en astronom som levde rundt år 1600. Han oppdaget en lov som vi i dag kaller for Keplers 3.lov:
 
 > For perioden $P$ og avstanden $x$ til en planet, så er $P^2$ proporsjonal med $x^3$. Det betyr at det finnes en konstant $k$ slik at $P^2 = k \cdot x^3$.
@@ -369,7 +338,6 @@ Undersøk om modellen din stemmer med Keplers 3.lov.
 
 
 
-::::::::::::::
 :::::::::::::::
 
 
@@ -388,7 +356,6 @@ layout: sidebar
 
 
 :::{plot}
-nocache: 
 figsize: (3, 3)
 align: left
 axis: off
@@ -437,11 +404,7 @@ labels: Snorlengde (meter), Periode (sekunder)
 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Lag en modell $T$ på formen
 
 $$
@@ -453,7 +416,7 @@ der $T(x)$ er perioden i sekunder for en pendel med en snorlengde på $x$ meter.
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Hva er perioden til en pendel med en snorlengde på $1.5$ meter, ifølge modellen din?
 
 
@@ -461,7 +424,7 @@ Hva er perioden til en pendel med en snorlengde på $1.5$ meter, ifølge modelle
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 
 
 På Universitetet i Oslo, er en såkalt **Foucaults pendel** bygget for å demonstrere at jorden roterer. Pendelen sin periode er omtrent på $7.5$ sekunder. Pendelen er ca. $20$ cm over bakken på sitt laveste.
@@ -479,7 +442,7 @@ align: right
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Fra fysikken, er perioden $T$ til en pendel med snorlengde $L$ omtrentlig gitt ved formelen
 
 $$
@@ -492,8 +455,6 @@ Undersøk om modellen din samsvarer med denne formelen.
 
 :::::::::::::
 
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -556,11 +517,8 @@ labels:  Høyde (meter), Tid (sekunder)
 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Lag en modell $T$ på formen
 
 $$
@@ -573,14 +531,14 @@ der $T(x)$ er tiden i sekunder det tar for en kule å treffe bakken når den sli
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Hvor lang tid tar det før en kule treffer bakken dersom den slippes fra $10$ meter, ifølge modellen?
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En kule ble sluppet fra en bro og traff bakken etter $3$ sekunder.
 
 Hvor høy var broen?
@@ -589,7 +547,7 @@ Hvor høy var broen?
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En modell fra fysikken forutsier at tiden $t$ det tar for en kule å treffe bakken når den slippes fra en høyde $h$ er gitt ved formelen
 
 $$
@@ -600,7 +558,7 @@ der $g = 9.82 \, \mathrm{m/s^2}$ (meter per sekund per sekund) er tyngdeakselera
 
 Undersøk om modellen din samsvarer med denne formelen.
 
-::::::::::::::
+:::::::::::::
 
 
 :::::::::::::::

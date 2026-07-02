@@ -1,10 +1,7 @@
 # Trekantgeometri
 
 
-:::{admonition} Læringsmål
----
-class: tip
----
+:::{goals} Læringsmål
 * Kunne bruke egenskapene til likesidete, likebeinte og rettvinklete trekanter til å bestemme ukjente sider og vinkler. 
 * Kunne bruke Pytagoras' setning til å finne ukjente sider i en rettvinklet trekant.
 * Kunne bruke formlikhet til å beregne ukjente sidelengder i trekanter.
@@ -14,70 +11,87 @@ class: tip
 En trekant er en geometrisk figur som består av tre hjørner og tre sidekanter. Her skal vi repetere noen viktige egenskaper ved trekanter som vi kommer til å få bruk for når vi skal jobbe med trigonometri. Trigonometri er en del av matematikken som gir en ny måte å bruke sammenhenger mellom vinkler og sider i trekanter på. 
 
 
-## Vinkler
 
-En **vinkel** er mål på hvor mange grader det er i en vinkelbue mellom to rette linjer.
 
-:::::::::::::::{admonition} Vinkler
+:::::::::::::::{summary} Vinkler
+En **vinkel** er mål på hvor mange grader det er i en vinkelbue mellom to rette linjer. 
+
+En vinkel kan deles inn i tre typer: Spiss, rett og stump.
+
+
+::::{multi-plot2}
 ---
-class: summary
+rows: 1
+cols: 3
 ---
-En vinkel $v$ kan deles inn i tre typer:
-
-Spiss vinkel
-: Vinkelen $v$ er en **spiss vinkel** dersom $v \in \langle 0, 90 \degree \rangle$.
-
-Rett vinkel
-: Vinkelen $v$ er en **rett vinkel** dersom $v = 90 \degree$.
-
-Stump vinkel
-: Vinkelen $v$ er en **stump vinkel** dersom $v \in \langle 90\degree, 180 \degree \rangle$.
-
-:::::::::::::::
-
-
-
-## Spesielle trekanter
-
-Vi skal starte med å se på to spesielle trekanter
-* **Likesidet trekant**: En trekant der alle sidene er like lange.
-* **Likebeint trekant**: En trekant der to av sidene er like lange.
-
-:::::::::::::::{admonition} Spesielle trekanter
----
-class: summary
----
-To spesielle trekanter er
-
-Likesidet trekant
-: Alle sidene og vinklene i trekanten er like store. Hver vinkel er $60 \degree$.
-
-Likebeint trekant
-: To av sidene i trekanten er like store. De to vinklene som hører til de like sidene er også like store.
-
-:::{figure} ./figurer/teori/spesielle_trekanter/merged_figure.svg
----
+:::{plot}
 width: 100%
-class: no-click, adaptive-figure
----
+figsize: (3, 3)
+let: s = 1
+let: r = 0.2
+let: angle = pi/3
+line-segment: (0, 0), (s, 0), black, solid
+line-segment: (0, 0), (s*cos(angle), s*sin(angle)), black, solid
+angle-arc: (0, 0), r, 0, angle * 180/pi, blue, solid
+xmin: -0.5
+xmax: 1.5
+ymin: -0.5
+ymax: 1.5
+ticks: off
+axis: off
+text: 0.5, 1.2, "Spiss vinkel", center-center, bbox
+text: 0.5, -0.3, "$v \in \langle 0^\circ, 90^\circ \rangle$", center-center, bbox
 :::
 
+
+:::{plot}
+width: 100%
+figsize: (3, 3)
+let: s = 1
+let: r = 0.2
+let: angle = pi/2
+line-segment: (0, 0), (s, 0), black, solid
+line-segment: (0, 0), (s*cos(angle), s*sin(angle)), black, solid
+xmin: -0.5
+xmax: 1.5
+ymin: -0.5
+ymax: 1.5
+ticks: off
+axis: off
+text: 0.5, 1.2, "Rett vinkel", center-center, bbox
+text: 0.5, -0.3, "$v = 90^\circ$", center-center, bbox
+let: ds = 0.2
+line-segment: (ds, 0), (ds, ds), blue, solid
+line-segment: (0, ds), (ds, ds), blue, solid
+:::
+
+
+:::{plot}
+width: 100%
+figsize: (3, 3)
+let: s = 1
+let: r = 0.2
+let: angle = pi - pi/3
+line-segment: (0, 0), (s, 0), black, solid
+line-segment: (0, 0), (s*cos(angle), s*sin(angle)), black, solid
+angle-arc: (0, 0), r, 0, angle * 180/pi, blue, solid
+xmin: -0.5
+xmax: 1.5
+ymin: -0.5
+ymax: 1.5
+ticks: off
+axis: off
+text: 0.5, 1.2, "Stump vinkel", center-center, bbox
+text: 0.5, -0.3, "$v \in \langle 90^\circ, 180^\circ \rangle$", center-center, bbox
+:::
+
+::::
+
 :::::::::::::::
 
 
 
-## Vinkler
-
-En **vinkel** er et mål på hvor mange grader en vinkelbue spenner ut mellom to linjer. 
-
-
-
-Først skal vi se på noen spesielle sammenhenger mellom vinkler. 
-
-:::::::::::::::{admonition} Toppvinkler og samsvarende vinkler
----
-class: summary
----
+:::::::::::::::{summary} Toppvinkler og samsvarende vinkler
 
 Toppvinkler
 : Like vinkler på hver sin side av en linje som skjærer en annen linje. 
@@ -89,7 +103,7 @@ Se figuren nedenfor.
 
 :::{figure} ./figurer/teori/vinkler/figur.svg
 ---
-width: 80%
+width: 60%
 class: no-click, adaptive-figure
 ---
 :::
@@ -97,14 +111,10 @@ class: no-click, adaptive-figure
 :::::::::::::::
 
 
-
-:::::::::::::::{admonition} Utforsk 1
----
-class: explore
----
+:::::::::::::::{exercise} Underveisoppgave 1
 Nedenfor vises en figur der en trekant er tegnet inn sammen med noen vinkler. 
 
-Kan du bruke figuren til å bestemme vinkelsummen i en trekant?
+Bruk figuren til å vise at vinkelsummen i en trekant er $180 \degree$.
 
 :::{figure} ./figurer/utforsk/utforsk_1/figur_løsning.svg
 ---
@@ -113,10 +123,7 @@ class: no-click, adaptive-figure
 ---
 :::
 
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Vinklene $x$, $y$ og $z$ spenner ut en halvsirkel som betyr at $x + y + z = 180 \degree$.
 
 Fra figuren kan også observere at:
@@ -131,33 +138,99 @@ Men siden $x + y + z = 180 \degree$, så betyr dette også at $a + b + c = 180 \
 
 :::::::::::::::
 
+
+
+## Spesielle trekanter
+
+Vi skal starte med å se på to spesielle trekanter
+* **Likesidet trekant**: En trekant der alle sidene er like lange.
+* **Likebeint trekant**: En trekant der to av sidene er like lange.
+
+:::::::::::::::{summary} Likesidete trekanter
+:::{plot}
+align: right
+axis: equal
+axis: off
+xmin: -1.5
+xmax: 1.5
+ymin: -0.5
+ymax: 1.5
+width: 100%
+let: s = 1
+figsize: (3, 3)
+triangle: sss=(s, s, s), corner-labels=none, angle-text=(A="$60^\circ$", B="$60^\circ$", C="$60^\circ$"), angle-radius=100
+:::
+
+I en **likesidet** trekant er
+
+* Alle sidelengdene like store
+* Alle vinklene like store. Disse er $60\degree$ hver.
+
+
+:::::::::::::::
+
+
+
+
+:::::::::::::::{summary-2} Likebeinte trekanter
+:::{plot}
+align: right
+axis: equal
+axis: off
+width: 100%
+let: s = 1
+figsize: (3, 3)
+triangle: sss=(2*s * cos(35 * pi/180), s, s), angles=(A, B), corner-labels=none, angle-text=(A="$v$", B="$v$"), angle-radius=60
+:::
+
+I en **likebeint** trekant er
+
+* To av sidelengdene like store
+* To av vinklene like store
+
+
+:::::::::::::::
+
+
+
+:::::::::::::::{summary} $30\degree$-$60\degree$-$90\degree$ trekanter
+
+:::{plot}
+width: 100%
+align: right
+axis: off
+axis: equal
+triangle: sss=(cos(pi/6), sin(pi/6), 1), corner-labels=none, angle-text=(A="$30^\circ$", C="$60^\circ$"), angle-radius=80, side-text=(CA="$2x$", AB="$\sqrt{3} \cdot x$", BC="$x$")
+fontsize: 32
+:::
+
+
+I en rettvinklet trekant med vinklene $30\degree$, $60\degree$ og $90\degree$ med hypotenus lik $2x$ er
+
+* den korteste kateten lik $x$
+* den lengste kateten lik $\sqrt{3} \cdot x$
+
+:::::::::::::::
+
+
  
-## Pytagoras' setning
+## Rettvinklede trekanter
 En **rettvinklet** trekant er en trekant der én av vinklene er $90 \degree$.
 Pytagoras' setning er en setning som forteller oss hvordan sidene i en rettvinklet trekant henger sammen. 
 
-:::::::::::::::{admonition} Pytagoras' setning
----
-class: summary
----
-For en rettvinklet trekant gjelder
+:::::::::::::::{summary} Pytagoras' setning
 
-$$
-(\mathrm{hypotenus})^2 = (\mathrm{katet}_1)^2 + (\mathrm{katet}_2)^2
-$$
 
-Se figuren til venstre nedenfor.
-
-:::{figure} ./figurer/teori/pytagoras_setning/merged_figure.svg
----
+:::{plot}
 width: 100%
-class: no-click, adaptive-figure
----
+align: right
+axis: off
+axis: equal
+triangle: sss=(sin(pi/3), 1, cos(pi/3)), angles=(A), angle-radius=65, side-text=(AB="$c$", BC="$a$", CA="$b$"),
+fontsize: 32
 :::
 
-Typisk navnsettes sidene i en rettvinklet trekant slik at den motstående siden til hjørne $A$ kalles for $a$, den motstående siden til hjørne $B$ kalles for $b$ og den motstående siden til $C$ kalles for $c$. Se figuren til høyre ovenfor. 
-
-Da kan vi skrive ned Pytagoras' setning ved
+For en rettvinklet trekant med hypotenus $a$, og kateter $b$ og $c$ har vi at
 
 $$
 a^2 = b^2 + c^2
@@ -168,23 +241,20 @@ $$
 ---
 
 
-:::::::::::::::{admonition} Underveisoppgave 1
----
-class: check
----
-Bestem $x$ i trekanten nedenfor.
+:::::::::::::::{exercise} Underveisoppgave 2
 
-:::{figure} ./figurer/underveisoppgaver/oppgave_1/figur.svg
----
-width: 80%
-class: no-click, adaptive-figure
----
+:::{plot}
+width: 100%
+axis: off
+axis: equal
+align: right
+triangle: sss=(8, 10, 6), corner-labels=none, angles=(A), side-labels=(AB=exact, BC=exact), side-text=(CA="$x$")
+fontsize: 32
 :::
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+Bestem sidelengden $x$ i trekanten til høyre.
+
+::::{answer}
 $$
 x = 6.
 $$
@@ -203,10 +273,7 @@ To trekanter er formlike dersom vi kan forminske, forstørre, rotere eller speil
 I praksis kan vi ikke gjøre dette når vi skal undersøke om to trekanter er formlike. Heldigvis kan vi undersøke om to trekanter er formlike ved å sjekke om de oppfyller ett av tre kriterier.
 
 
-:::::::::::::::{admonition} Formlike trekanter
----
-class: summary
----
+:::::::::::::::{summary} Formlike trekanter
 En trekant $\triangle ABC$ og en trekant $\triangle DEF$ er **formlike** dersom én av følgende betingelser er oppfylt:
 
 **SSS** (side-side-side): 
@@ -245,7 +312,7 @@ viser to formlike trekanter $\triangle ABC$ og $\triangle DEF$. Her er $\angle A
 ---
 
 
-:::::::::::::::{admonition} Underveisoppgave 2
+:::::::::::::::{exercise} Underveisoppgave 3
 ---
 class: check
 ---
@@ -259,18 +326,11 @@ class: no-click, adaptive-figure
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Forklar at $\triangle ABC \sim \triangle DEF$.
 
 
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution} 
 Vi kan starte med å undersøke om VVV-kriteriet er oppfylt. I trekant $\triangle ABC$ er vinklene 
 
 $$
@@ -289,18 +349,15 @@ $$
 \triangle ABC \sim \triangle DEF.
 $$
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+
+:::::::::::::{part} b
 Bestem de ukjente sidelengdene i trekanten $\triangle DEF$.
 
 
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Vi vet nå at $\triangle ABC \sim \triangle DEF$. Dermed er forholdet mellom to tilsvarende sider en konstant. De tilsvarende sidene i trekanten er $AB$ og $DE$, sidene $BC$ og $EF$, og sidene $AC$ og $DF$. Vi kan dermed skrive
 
 $$
@@ -319,12 +376,10 @@ $$
 DE = 2\cdot AB = 2 \cdot 1 = 2 \and EF = 2\cdot BC = 2 \cdot 2 = 4. 
 $$
 ::::
-
 :::::::::::::
 
 
 
-::::::::::::::
 
 
 

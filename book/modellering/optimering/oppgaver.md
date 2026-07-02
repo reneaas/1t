@@ -11,11 +11,9 @@ Alma og Synne skal slå opp telt ved en elvebredde. De skal sette opp et tau run
 
 De har $40$ meter med tau og vil sette opp tauet slik at det danner et rektangel der den éne siden er langs elvebredden. Se figuren nedenfor.
 
-> Vannet er trygt slik at det ikke er noen alligatorer i elven, så det er ikke nødvendig å ha tau på den siden av teltet som vender mot elven!
-
 
 :::{plot}
-width: 70%
+width: 50%
 axis: off
 figsize: (5, 2)
 hline: 0, -10, 10, solid, blue
@@ -31,11 +29,8 @@ axis: equal
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 
 :::{ggb-popup}
 ---
@@ -107,7 +102,7 @@ width: 60%
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 :::{ggb-popup}
 ---
@@ -121,10 +116,10 @@ Synne vil lage en grafisk framstilling som viser arealet av området for ulike l
 Lag en grafisk framstilling for Synne og bruk den til å bestemme hvilken lengde på sidekantene som gir størst mulig areal.
 
 
-::::{answer}
+:::::{answer}
 
 :::{plot}
-width: 80%
+width: 60%
 let: a = -1/2
 let: b = 20
 let: x0 = -b / (2*a)
@@ -140,10 +135,6 @@ text: x0, A(x0), "$({x0}, {A(x0)})$", top-center
 xlabel: $x / \mathrm{m}$
 ylabel: $A(x) / \mathrm{m^2}$, -40
 :::
-
-::::
-
-
 
 ::::{solution}
 Vi vet fra oppgave **a** at
@@ -167,7 +158,7 @@ $$
 Vi lager en grafisk framstilling og bruker {ggb-icon}`mode_extremum` til å finne koordinatene til ekstremalpunktet til grafen. 
 
 :::{plot}
-width: 80%
+width: 60%
 let: a = -1/2
 let: b = 20
 let: x0 = -b / (2*a)
@@ -187,10 +178,13 @@ ylabel: $A(x) / \mathrm{m^2}$, -40
 ::::
 
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 
 :::{cas-popup}
 ---
@@ -217,10 +211,6 @@ $$
 
 
 :::::::::::::
-
-
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -262,15 +252,9 @@ $$
 
 Et rektangel har hjørnene $(0, 0)$, $(t, 0)$, $(t, f(t))$ og $(0, f(t))$. Se figuren til høyre.
 
-:::{clear}
-:::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 
 :::{ggb-popup}
 ---
@@ -325,7 +309,7 @@ width: 60%
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 :::{ggb-popup}
 ---
@@ -365,7 +349,7 @@ Størst mulig areal er $4096$ når $t = 1$.
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 
 :::{cas-popup}
 ---
@@ -387,9 +371,6 @@ $$
 ::::
 :::::::::::::
 
-
-
-::::::::::::::
 
 :::::::::::::::
 
@@ -605,12 +586,13 @@ En trekant har hjørner i punktene $(1, 0)$, $(4, 0)$ og $(1, f(1))$. Se figuren
 
 
 :::{plot}
-width: 70%
+width: 50%
+fontsize: 24
 function: -x**3 + 4*x**2, (0, 4), f
-xmin: -1
+xmin: 0
 xmax: 5
 ymax: 10
-ymin: -1
+ymin: 0
 yticks: off
 grid: off
 polygon: (1, 0), (4, 0), (1, 3), blue, 0.2
@@ -621,11 +603,7 @@ text: 1, 3, "$(1, f(1))$", top-left
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 
 :::{cas-popup}
 ---
@@ -633,13 +611,8 @@ layout: sidebar
 ---
 :::
 
-
-
 Bestem arealet av trekanten.
 
-
-:::{clear}
-:::
 
 ::::{answer}
 $$
@@ -651,7 +624,7 @@ $$
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 :::{cas-popup}
 ---
@@ -666,9 +639,6 @@ En trekant har hjørner i $(k, 0)$, $(4, 0)$, og $(k, f(k))$ der $k \in [0, 4]$.
 Bestem det største mulige arealet en slik trekant kan ha.
 
 
-:::{clear}
-:::
-
 ::::{answer}
 $$
 A_\mathrm{størst} = 8
@@ -676,9 +646,6 @@ $$
 ::::
 :::::::::::::
 
-
-
-::::::::::::::
 
 
 
@@ -725,14 +692,8 @@ $$
 Et rektangel har hjørnene $(0, 0)$, $(r, 0)$, $(r, f(r))$ og $(0, f(r))$.
 
 
-:::{clear}
-:::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 
 :::{ggb-popup}
 ---
@@ -747,9 +708,6 @@ Lag en systematisk oversikt over arealet for verdier av $r \in \{0, 1, 2, \ldots
 
 Bruk oversikten til å anslå hvilken verdi av $r$ som gir størst mulig areal.
 
-
-:::{clear}
-:::
 
 ::::{answer}
 Fra oversikten nedenfor kan vi anslå at en verdi $r \in [4, 5]$ gir størst mulig areal.
@@ -779,7 +737,7 @@ width: 60%
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 :::{ggb-popup}
 ---
@@ -817,7 +775,7 @@ Arealet blir størst når $r \approx 4.47$ og det største arealet er omtrent $0
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 :::{cas-popup}
 ---
 layout: sidebar
@@ -828,8 +786,7 @@ layout: sidebar
 Bestem en eksakt verdi for det største arealet rektangelet kan ha.
 
 
-:::{clear}
-:::
+
 
 ::::{answer}
 $$
@@ -840,7 +797,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Lag et program som finner det største mulige arealet et slikt rektangel kan ha.
 
 
@@ -873,10 +830,6 @@ print(A(x))
 
 
 :::::::::::::
-
-
-
-::::::::::::::
 
 
 
@@ -941,13 +894,7 @@ fontsize: 22
 
 
 
-
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 
 :::{ggb-popup}
 ---
@@ -1004,7 +951,7 @@ width: 70%
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 :::{ggb-popup}
 ---
@@ -1049,7 +996,7 @@ Reiseveien er kortest når $x \approx 3$ km. Altså bør båten gå i land i $B(
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 
 :::{cas-popup}
 ---
@@ -1074,7 +1021,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Lag et program som finner koordinatene til punktet $B$ som gir kortest reisevei.
 
 
@@ -1122,9 +1069,6 @@ som gir utskriften $(3.0, 0)$.
 :::::::::::::
 
 
-::::::::::::::
-
-
 :::::::::::::::
 
 
@@ -1158,7 +1102,7 @@ $$
 En trekant $\triangle ABC$ er dannet ved at $A$ er i origo, $B$ er er punkt på $x$-aksen og $C$ er et punkt på grafen til $f$ med samme $x$-koordinat som $B$.
 
 :::{plot}
-width: 60%
+width: 50%
 function: -2 * x**3 + 16 * x**2, (0, 8), f
 xmin: -1
 xmax: 9
@@ -1197,17 +1141,10 @@ $$
 
 
 ::::::::::::::::{exercise} Oppgave 9
----
-aids: true
----
-
-Anna skal reise fra en holme som ligger $8$ km fra strandkanten. $12$ km fra det punktet på stranden som ligger nærmest holmen, ligger det en hytte. 
-Anna kan ro med en fart på $2$ km/t og gå med en fart på $6$ km/t. Anna kan gå i land i hvilket som helst punkt $\ell$ på veien.
-
-Se figuren nedenfor. 
-
 :::{plot}
-width: 70%
+width: 100%
+fontsize: 26
+align: right
 axis: off
 xmin: -1
 xmax: 13
@@ -1222,7 +1159,7 @@ vline: 0, 0, 8, dashed, gray
 hline: 0, 4, 12, solid, red
 text: 0, 8, "Holme", top-center
 text: 12, 0, "Hytte", top-center
-text: 4, 0, "$\ell$", top-right
+text: 4, 0, "$P$", top-right
 bar: (-0.5, 0), 8, vertical
 text: -0.5, 4, "8 km", center-left
 bar: (0, -0.5), 4, horizontal
@@ -1233,26 +1170,29 @@ text: 2, 4, "I vann", top-right
 text: 8, -0.2, "På land", bottom-center
 :::
 
+Anna skal reise fra en holme som ligger $8$ km fra strandkanten. 
 
-:::::::::::::::{tab-set}
+$12$ km fra det punktet på stranden som ligger nærmest holmen, ligger det en hytte. 
+
+Anna kan ro med en fart på $2$ km/t og gå med en fart på $6$ km/t. Anna kan gå i land i hvilket som helst punkt $P$ på veien.
+
+
+::::::::::::::{part} a
+
+:::{cas-popup}
 ---
-class: tabs-parts
+layout: sidebar
 ---
-::::::::::::::{tab-item} a
+:::
+
+
 Bestem hvor lang tid Anna bruker til hytta dersom hun ror i land $6$ km fra det punktet på stranden som ligger nærmest holmen.
 
 
-:::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $6$ timer.
-:::::
 
-:::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Vi bruker Pytagoras' setning til å regne ut hvor langt Anna må ro for å komme i land $6$ km fra det punktet på stranden som ligger nærmest holmen. Da får vi at:
 
 $$
@@ -1279,28 +1219,22 @@ $$
 
 Altså bruker Anna $6$ timer. 
 
+::::
+
 :::::
 
 ::::::::::::::
 
 
-::::::::::::::{tab-item} b
+::::::::::::::{part} b
 Lag en modell $T$ som viser mange timer $T(x)$ Anna bruker på å reise til hytta dersom hun ror i land $x$ km fra det punktet på stranden som ligger nærmest holmen. 
 
-:::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 T(x) = \dfrac{\sqrt{x^2 + 8^2}}{2} + \dfrac{12 - x}{6}
 $$
-:::::
 
-
-:::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Hvis Anna ror i land $x$ km fra det punktet på stranden som ligger nærmest holmen, må hun ro en avstand på
 
 $$
@@ -1331,27 +1265,30 @@ $$
 T(x) = T_\mathrm{robåt}(x) + T_\mathrm{gåtur}(x) = \frac{\sqrt{x^2 + 8^2}}{2} + \frac{12 - x}{6}.
 $$
 
+::::
+
 :::::
+
 
 ::::::::::::::
 
 
-::::::::::::::{tab-item} c
+::::::::::::::{part} c
+:::{cas-popup}
+---
+layout: sidebar
+---
+:::
+
+
 Bestem hvor Anna må gå i land for at hun skal bruke minst mulig tid på å reise til hytta. <br>
 Hva er den kortest tiden Anna kan bruke?
 
 
-:::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 Anna må gå i land ca. 2.83 km fra det punktet på stranden som ligger nærmest holmen for å få kortest mulig reisetid. Den korteste tiden Anna kan bruke på reisen er da ca. 5.77 timer.
-:::::
 
-:::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 For å avgjøre hvor Anna må gå i land for å få kortest mulig reisetid, finner vi 
 1. Ekstremalpunktet til $T$ ved å løse $T'(x) = 0$.
 2. Regner ut $T(x)$ i ekstremalpunktet.
@@ -1367,11 +1304,13 @@ width: 80%
 
 Dermed vil Anna måtte gå i land ca. 2.83 km fra det punktet på stranden som ligger nærmest holmen for å få kortest mulig reisetid. Den korteste tiden Anna kan bruke på reisen er da ca. 5.77 timer.
 
+::::
+
 :::::
 
 ::::::::::::::
 
-:::::::::::::::
+
 
 
 ::::::::::::::::
@@ -1381,9 +1320,6 @@ Dermed vil Anna måtte gå i land ca. 2.83 km fra det punktet på stranden som l
 
 
 :::::::::::::::{exercise} Oppgave 10
----
-aids: true
----
 
 :::{cas-popup}
 ---
@@ -1425,14 +1361,11 @@ der $r$ er radius i bunnen av kjeglen og $h$ er høyden til kjeglen.
 
 Bestem en eksakt verdi for det største mulige volumet en slik kjegle kan ha.
 
-:::{clear}
-:::
 
-::::{answer}
+:::::{answer}
 $$
 V_\mathrm{størst} = 54\sqrt{3} \cdot \pi
 $$
-::::
 
 ::::{solution}
 Vi har at 
@@ -1474,6 +1407,10 @@ $$
 
 ::::
 
+:::::
+
+
+
 
 
 :::::::::::::::
@@ -1493,20 +1430,10 @@ layout: sidebar
 ---
 :::
 
-En funksjon $f$ er gitt ved
-
-$$
-f(x) = -x^2 + 6x \qfor x \in [0, 6]
-$$
-
-Nedenfor vises grafen til $f$ sammen med et rektangel $ABCD$.
-
-I rektangelet er $A(a, 0)$ og $D(a, f(a))$ der $a \in \langle 0, 3\rangle$. Punktet $C$ ligger på grafen til $f$.
-
-Bestem en eksakt verdi for $a$ som gjør at arealet av rektangelet $ABCD$ er størst mulig.
-
 :::{plot}
-width: 70%
+width: 100%
+align: right
+fontsize: 24
 function: 6*x - x**2, (0, 6), f
 polygon: (1, 0), (1, f(1)), (5, f(5)), (5, 0), blue, 0.2
 xmin: -1
@@ -1524,14 +1451,26 @@ text: 5, f(5), "$C$", top-right
 text: 5, 0, "$B$", bottom-right
 :::
 
+En funksjon $f$ er gitt ved
+
+$$
+f(x) = -x^2 + 6x \qfor x \in [0, 6]
+$$
 
 
-::::{answer}
+
+Til høyre vises grafen til $f$ sammen med et rektangel $ABCD$.
+
+I rektangelet er $A(a, 0)$ og $D(a, f(a))$ der $a \in \langle 0, 3\rangle$. Punktet $C$ ligger på grafen til $f$.
+
+Bestem en eksakt verdi for $a$ som gjør at arealet av rektangelet $ABCD$ er størst mulig.
+
+
+
+:::::{answer}
 $$
 a = 3 - \sqrt{3}
 $$
-::::
-
 
 ::::{solution}
 Funksjonen $f$ gir oss høyden til rektangelet. Koordinatene til $A$ er gitt ved $(a, 0)$ som betyr at høyden til rektangelet må være $f(a)$. Men vi må også avgjøre hva koordinatene til punktet $B$ er så vi vet hvor lang grunnlinja til rektangelet er. Men punktet $C$ må ha samme høyde $f(a)$ som betyr at $x$-koordinaten til både $B$ og $C$ kan bestemmes ved å løse likningen
@@ -1578,6 +1517,9 @@ $$
 
 ::::
 
+:::::
+
+
 :::::::::::::::
 
 
@@ -1597,12 +1539,10 @@ layout: sidebar
 ---
 :::
 
-
-En takrenne skal lages i form av et åpent trapes ved å brette to sidekanter fra et flatt rektangel slik at alle sidelengder i takrenna er $10$ cm og takrennen har en høyde på $x$ cm. Se figuren nedenfor.
-
-
 :::{plot}
-width: 70%
+width: 100%
+align: right
+fontsize: 26
 axis: off
 xmin: -8.5
 xmax: 18.5
@@ -1623,22 +1563,19 @@ figsize: (6, 4)
 :::
 
 
+En takrenne skal lages i form av et åpent trapes ved å brette to sidekanter fra et flatt rektangel slik at alle sidelengder i takrenna er $10$ cm og takrennen har en høyde på $x$ cm. 
 
-:::::::::::::::{tab-set}
----
-class: tabs-parts
----
-::::::::::::::{tab-item} a
+
+
+::::::::::::::{part} a
 Bestem tverrsnittsarealet $T$ av takrenna dersom høyden av takrenna er $6$ cm.
 
 
 
-::::{answer}
+:::::{answer}
 $$
 T = 108~\mathrm{cm^2}. 
 $$
-::::
-
 
 ::::{solution}
 Takrenna består av to trekanter med grunnlinje 
@@ -1656,22 +1593,23 @@ $$
 Altså er tverrsnittsarealet $T$ av takrenna når høyden av takrenna er $6$ cm gitt ved $108~\mathrm{cm^2}$.
 ::::
 
+:::::
+
+
 
 
 ::::::::::::::
 
 
-::::::::::::::{tab-item} b
+::::::::::::::{part} b
 Lag en modell $T$ som gir tverrsnittsarealet $T(x)$ i $\mathrm{cm}^2$ når takrenna er $x$ cm høy.
 
 
 
-::::{answer}
+:::::{answer}
 $$
 T(x) = 10x + x\sqrt{100 - x^2}
 $$
-::::
-
 
 ::::{solution}
 Når takrenna er $x$ cm høy, så vil grunnlinja til de to trekantene være
@@ -1687,19 +1625,20 @@ T(x) = \underbrace{10 \cdot x}_{\mathrm{rektangel}} + \underbrace{2 \cdot \frac{
 $$
 ::::
 
+:::::
+
 
 
 ::::::::::::::
 
 
-::::::::::::::{tab-item} c
-Bestem hvilken høyde som lar mest mulig vann strømme gjennom takrenna til enhver tid.
+::::::::::::::{part} c
+Bestem hvilken høyde som gir størst mulig tverrsnittsareal av takrenna.
 
-::::{answer}
+:::::{answer}
 $$
 x = 5\sqrt{3} \, \mathrm{cm} \approx 8.66 \, \mathrm{cm}
 $$
-::::
 
 ::::{solution}
 For å avgjøre hvilken høyde vi burde bruke for å få mest, må vi finne ekstremalpunktet til $T$ ved å løse $T'(x) = 0$. Vi bruker CAS til å utføre selve regningen:
@@ -1717,11 +1656,11 @@ $$
 x = 5 \sqrt{3} \approx 8.66
 $$
 
-gir det største mulige tverrsnittsarealet. Altså må høyden være ca. $8.66~\mathrm{cm}$ for at mest mulig vann skal kunne strømme gjennom takrenna til enhver tid.
+gir det største mulige tverrsnittsarealet. Altså må høyden være ca. $8.66~\mathrm{cm}$ for å få størst mulig tverrsnittsareal av takrenna.
 ::::
-::::::::::::::
 
-:::::::::::::::
+:::::
+::::::::::::::
 
 
 ::::::::::::::::
@@ -1736,13 +1675,10 @@ gir det største mulige tverrsnittsarealet. Altså må høyden være ca. $8.66~\
 
 
 ::::::::::::::::{exercise} Oppgave 13
----
-aids: true
----
 
 
 :::{plot}
-width: 80%
+width: 60%
 axis: off, equal
 xmin: -0.5
 xmax: 10.5
@@ -1775,27 +1711,17 @@ Else skal gjerde inn tre områder for å lage en grønnsakshage. Det største om
 Else skal sette opp gjerde langs alle linjestykkene vist i figuren ovenfor. <br>
 Hun har til sammen 100 m gjerde som hun vil bruke.
 
-:::::::::::::::{tab-set}
----
-class: tabs-parts
----
-::::::::::::::{tab-item} a
+
+::::::::::::::{part} a
 Hvor stor blir arealet av grønnsakhagen dersom hun velger at katetene i trekantene skal være $8$ meter?
 
 
-:::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 A = 245.5 \, \mathrm{m}^2
 $$
-:::::
 
-:::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Først må vi bestemme hvor lange linjestykkene $y$ i figuren er. Vi vet at $x = 8$ meter. Til sammen summerer linjestykkene til $L = 100$ meter. Vi kan skrive den samlede lengden av linjestykkene som
 
 $$
@@ -1847,18 +1773,18 @@ class: no-click, adaptive-figure
 som betyr at arealet av grønnsakhagen er omtrent $A = 245.5 \, \mathrm{m}^2$ dersom katetene i trekantene er $8$ meter lange.
 
 
+::::
+
 :::::
 
 ::::::::::::::
 
-::::::::::::::{tab-item} b
+::::::::::::::{part} b
 Lag en oversikt som viser hvordan arealet av grønnsakhagen endrer seg dersom hun velger andre lengder på katetene. Av oversikten skal Else kunne se omtrent hvor lange katetene må være for at arealet av grønnsakhagen skal bli størst mulig.
 
 
-:::::{admonition} Løsning
----
-class: solution, dropdown
----
+:::::{answer}
+
 Vi bruker en grafisk framstilling av arealet $A(x)$ for å se hvordan arealet endrer seg med lengden på katetene. Vi kan bruke Geogebra-vinduet til å lage grafen til $A$ siden vi allerede har definert $A(x)$ i CAS.
 
 :::{figure} ./figurer/oppgave_7/b.png
@@ -1876,49 +1802,37 @@ Fra den grafiske framstillingen kan vi se at arealet er størst når katetene i 
 ::::::::::::::
 
 
-::::::::::::::{tab-item} c
+::::::::::::::{part} c
 Lag en modell $A$ som Else kan bruke for å regne ut arealet $A(x)$ av grønnsakhagen for ulike verdier av $x$.
 
 
-:::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 A(x) = 50x - (1 + \sqrt{2})x^2.
 $$
-:::::
 
-:::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Vi har allerede laget denne modellen i oppgave **a** som er gitt ved 
 
 $$
 A(x) = 50x - (1 + \sqrt{2})x^2.
 $$
+::::
+
 :::::
 
 ::::::::::::::
 
 
-::::::::::::::{tab-item} d
+::::::::::::::{part} d
 Bruk modellen til å finne den lengden av katetene som vil gi det største arealet.
 
-:::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 x = (25\sqrt{2} - 25) \, \mathrm{m} \approx 10.36 \, \mathrm{m}.
 $$
-:::::
 
-:::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 For å bestemme den kateten som gir størst mulig areal, bruker vi CAS og løser $A'(x) = 0$ for å bestemme $x$-koordinaten til toppunktet til $A$:
 
 :::{figure} ./figurer/oppgave_7/d.png
@@ -1936,29 +1850,23 @@ $$
 
 Men *vet* vi at dette er et toppunkt? Ja, for den ledende koeffisienten til $A(x)$ er negativ, så vi *legger'n død* – og vi hadde strengt tatt grafen som viste det i oppgave **b** også.
 
+::::
+
 :::::
 
 ::::::::::::::
 
 
-::::::::::::::{tab-item} e
+::::::::::::::{part} e
 Bestem modellens gyldighetsområde.
 
 
-:::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 0 < x < \dfrac{50}{\sqrt{2} + 2}
 $$
-:::::
 
-
-:::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Modellen er gyldig så lenge $A(x) > 0$ og $y > 0$. Vi løser den første ulikheten i CAS:
 
 
@@ -1996,12 +1904,12 @@ $$
 0 < x < \dfrac{50}{\sqrt{2} + 2}
 $$
 
+::::
+
 :::::
 
 
 ::::::::::::::
-
-:::::::::::::::
 
 ::::::::::::::::
 
@@ -2059,11 +1967,8 @@ Isabel lurer på hvor stor radius hun bør velge og hvor høye boksene må være
 Isabel ser at når hun har gitt volum og radius, kan hun regne ut høyden ved å bruke formelen $V = \pi \cdot r^2 \cdot h$
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 
 :::{ggb-popup}
 ---
@@ -2116,7 +2021,7 @@ class: no-click, adaptive-figure
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 :::{ggb-popup}
 ---
@@ -2172,7 +2077,7 @@ ylabel: $O(r) / \mathrm{cm}^2$, -50
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 
 
 :::{cas-popup}
@@ -2216,8 +2121,6 @@ som gir en overflate på ca. $258 \, \mathrm{cm}^2$.
 :::::
 
 :::::::::::::
-
-::::::::::::::
 
 
 
@@ -2280,11 +2183,8 @@ En kjegle skal ha volumet $12\pi \, \mathrm{cm}^3$ og minst mulig overflate.
 :::{clear}
 :::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Lag en oversikt som vist nedenfor. Gjør beregninger og fyll inn verdiene som mangler.
 
 
@@ -2301,7 +2201,7 @@ labels: Radius $r$ (cm), Høyde $h$ (cm), Overflate $A$ (cm$^2$), Volum $V$ (cm$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Sett opp et funksjonsuttrykk som viser sammenhengen mellom overflatearealet og radius.
 
 Lag en grafisk framstilling av funksjonen.
@@ -2309,14 +2209,11 @@ Lag en grafisk framstilling av funksjonen.
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Hva må radius være for at overflaten skal bli minst mulig?
 
 Hvor stort er overflatearealet da?
 :::::::::::::
-
-
-::::::::::::::
 
 
 
@@ -2350,7 +2247,7 @@ Et linjestykke $\ell$ går fra punktet $P$ til et punkt på grafen.
 Bestem koordinatene til punktet på grafen som gjør at $\ell$ blir kortest mulig. Bestem et eksakt uttrykk for lengden av $\ell$ i dette tilfellet.
 
 :::{plot}
-width: 70%
+width: 60%
 function: x**2, f
 point: (5, 3)
 text: 5, 3, "$P(6, 3)$", top-right
@@ -2367,11 +2264,9 @@ ticks: off
 polygon: (2.5, 3), (2.8, 3), (2.8, 3.4), (2.5, 3.4)
 :::
 
-::::{answer}
+:::::{answer}
 * Koordinatene til punktet på grafen er $(2, 4)$
 * Lengden til linjestykket er da $\sqrt{17}$
-::::
-
 
 ::::{solution}
 Avstanden fra punktet $P(6, 3)$ til et punkt på grafen $(x, f(x))$ kan vi uttrykke ved hjelp av Pytagoras' setning:
@@ -2393,6 +2288,8 @@ width: 60%
 Vi ser at $d'(x) = 0$ når $x = 2$. Vi ser også at $d''(2) > 0$ som betyr at $d$ er konveks {polyicon}`smile` i nabolaget til punktet. Dermed gir $x = 2$ et bunnpunkt. Derfor vil linjestykket $\ell$ bli kortest mulig når det går fra $P(6, 3)$ til punktet $(2, f(2)) = (2, 4)$ på grafen. Vi ser også at $d(2) = \sqrt{17}$ som er lengden av linjestykket i dette tilfellet.
 
 ::::
+
+:::::
 
 
 :::::::::::::::
@@ -2453,12 +2350,10 @@ polygon: (0, sin(-pi/4)), (-0.15, sin(-pi/4)), (-0.15, sin(-pi/4) + 0.15), (0, s
 ::::
 
 
-::::{answer}
+:::::{answer}
 $$
 \dfrac{3\sqrt{3}}{4}
 $$
-::::
-
 
 ::::{solution}
 :::{plot}
@@ -2530,6 +2425,8 @@ $$
 
 ::::
 
+:::::
+
 
 :::::::::::::::
 
@@ -2582,7 +2479,7 @@ line-segment: (0, 1), (cos(pi + pi/6), sin(pi + pi/6))
 ellipse: (0, 0), 1, 0.2, gray, dashed
 ellipse: (0, sin(-pi/6)), cos(-pi/6), 0.2, red, dashed
 line-segment: (0, sin(-pi/6)), (cos(-pi/6), sin(-pi/6)), black, solid
-text: 0.5 * cos(-pi/6), sin(-pi/6) - 0.1, "$\ell$", center-center
+text: 0.5 * cos(-pi/6), sin(-pi/6) - 0.1, "$r$", center-center
 bar: (1.1, -0.5), 1.5, vertical
 text: 1.05, 0.25, "$h$", center-right
 fontsize: 30
@@ -2600,7 +2497,7 @@ line-segment: (0, sin(-pi/6)), (cos(-pi/6), sin(-pi/6)), black, solid
 line-segment: (0, sin(-pi/6)), (-cos(-pi/6), sin(-pi/6)), black, dotted
 line-segment: (0, 0), (cos(-pi/6), sin(-pi/6)), solid, black
 line-segment: (0, 0), (0, sin(-pi/6)), solid, black
-text: 0.5 * cos(-pi/6), sin(-pi/6) - 0.1, "$\ell$", center-center
+text: 0.5 * cos(-pi/6), sin(-pi/6) - 0.1, "$r$", center-center
 bar: (1.1, -0.5), 1.5, vertical
 text: 1.05, 0.25, "$h$", center-right
 fontsize: 30
@@ -2617,11 +2514,10 @@ text: 0 + 0.1, 0.4, "$1$", center-left
 Bestem det største volumet en slik kjegle kan ha. 
 
 
-::::{answer}
+:::::{answer}
 $$
 V_\text{størst} = \dfrac{32}{81}\pi
 $$
-::::
 
 ::::{solution}
 
@@ -2640,19 +2536,19 @@ $$
 Høyden $h$ er gitt ved 
 
 $$
-h = 1 + \ell
+h = 1 + s
 $$
 
 Fra figuren kan vi bruke Pytagoras' setning på den rettvinkla trekanten til å skrive opp sammenhengen:
 
 $$
-r^2 + \ell^2 = 1^2
+r^2 + s^2 = 1^2
 $$
 
 Fra dette finner vi at 
 
 $$
-\ell = \sqrt{1 - r^2}
+s = \sqrt{1 - r^2}
 $$
 
 Det betyr at høyden er 
@@ -2692,6 +2588,10 @@ $$
 
 
 ::::
+
+:::::
+
+
 :::::::::::::::
 
 
@@ -2775,109 +2675,14 @@ $$
 
 
 
-----
+---
+
+
+
 
 
 
 :::::::::::::::{exercise} Oppgave 20
----
-aids: true
----
-
-En halvsirkel er gitt ved
-
-$$
-x^2 + y^2 = 4 \qder y \geq 0.
-$$
-
-Et rektangel har hjørnene $(-a, 0)$, $(a, 0)$, $(a, f(a))$ og $(-a, f(-a))$ der $f$ er funksjonen som beskriver halvsirkelen. 
-
-Se figuren nedenfor.
-
-
-:::{plot}
-width: 70%
-ticks: off 
-xmin: -2.5
-xmax: 2.5
-ymin: -0.1
-ymax: 2.5
-function: sqrt(4 - x**2), (-2, 2), f
-polygon: (-1.5, 0), (1.5, 0), (1.5, f(1.5)), (-1.5, f(-1.5)), blue, 0.2
-point: (-1.5, 0)
-point: (1.5, 0)
-point: (1.5, f(1.5))
-point: (-1.5, f(-1.5))
-axis: equal
-text: -1.5, 0, "$(-a, 0)$", bottom-center
-text: 1.5, 0, "$(a, 0)$", bottom-center
-text: 1.5, f(1.5), "$(a, f(a))$", top-right
-text: -1.5, f(-1.5), "$(-a, f(-a))$", top-left
-:::
-
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-:::{ggb-popup}
----
-layout: sidebar
-perspective: S
----
-:::
-
-Lag en systematisk oversikt over arealet av rektangelet for ulike verdier av $a \in [0, 2]$ og finn et estimat på hvilken verdi av $a$ som gir størst mulig areal.
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
-:::{ggb-popup}
----
-layout: sidebar
----
-:::
-
-Lag en grafisk framstilling som viser sammenhengen mellom arealet $A(a)$ av rektangelet og $a$.
-
-Bestem det største mulige arealet rektangelet kan ha.
-
-:::::::::::::
-
-
-
-:::::::::::::{tab-item} c
-:::{cas-popup}
----
-layout: sidebar
----
-:::
-
-Bestem en eksakt verdi for det største arealet rektangelet kan ha.
-:::::::::::::
-
-
-::::::::::::::
-
-
-
-
-
-:::::::::::::::
-
-
-
-
----
-
-
-
-:::::::::::::::{exercise} Oppgave 21
----
-aids: true
----
 
 En trekant $\triangle PQM$ der $a \in \langle 0, 4\rangle$ er innskrevet i et større trekant $\triangle OBA$. Se figuren nedenfor.
 
@@ -2910,11 +2715,7 @@ axis: equal
 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Vis at arealet $T$ av den fargelangte trekanten er gitt ved 
 
 $$
@@ -2923,14 +2724,31 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem det største arealet trekanten kan ha.
+
+
+:::::{answer}
+Det største arealet trekanten kan ha er $T_\text{maks} = \dfrac{9}{2}$.
+
+::::{solution}
+Vi kan løse $T'(a) = 0$ for å finne den verdien av $a$ som gir størst mulig areal. Vi deriverer først:
+
+$$
+T'(a) = -a + 3
+$$
+
+For at $T'(a) = 0$ må $a = 3$. Det største arealet blir derfor
+
+$$
+T(3) = -\dfrac{1}{2} \cdot 3^2  + \cdot 3 = -\dfrac{9}{2} + 9 = \dfrac{9}{2}
+$$
+::::
+:::::
 
 
 :::::::::::::
 
-
-::::::::::::::
 
 :::::::::::::::
 

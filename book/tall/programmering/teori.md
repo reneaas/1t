@@ -1,9 +1,6 @@
 # Programmering av tallfølger
 
-:::::{admonition} Læringsmål
----
-class: tip
----
+:::::{goals} Læringsmål
 * Kunne lage programmer som lager tallene i en tallfølge.
 * Kunne lage programmer som finner summen av tall i en tallfølge.
 :::::
@@ -19,10 +16,8 @@ Senere skal vi lære om en annen type løkke som kalles for en `while`{l=python}
 
 En løkke er et verktøy i programmering som lar oss gjenta én eller flere linjer med kode flere ganger – vi kaller dette for en **kodeblokk**. Dette er nyttig når vi ønsker å lage tallfølger. Vi skal her fokusere på en type løkke som kalles `for`{l=python}-løkke. En `for`{l=python}-løkke lar oss gjenta en kodeblokk for hvert element i en liste eller en tallmengde.  
 
-### `for`{l=python}-løkker med avstand $1$
-
-:::::::::::::::{summary} `for`{l=python}-løkker
-En `for`{l=python}-løkke som skal skrive ut tall fra og med `start`{l=python} og til `slutt`{l=python} kan skrives slik:
+:::::::::::::::{summary-2} `for`{l=python}-løkker med avstand $1$
+En `for`{l=python}-løkke som skal skrive ut hele tall fra og med `start`{l=python} og til `slutt`{l=python} kan skrives slik:
 
 :::{code-block} python
 ---
@@ -41,14 +36,11 @@ Nedenfor i Utforsk 1 kan du utforske nærmere hvordan en slik `for`{l=python}-l�
 I Utforsk 1 vil du se at koden som gjentas i `for`{l=python}-løkka er `print(n)`{l=python}. Denne kodelinjen skriver ut verdien av `n`{l=python} for hver runde i løkka.
 :::
 
-:::::::::::::::{explore} Utforsk 1
-Nedenfor vises noen programmer som bruker `for`-løkker til å skrive ut noen tall. 
+:::::::::::::::{explore-2} Utforsk 1
+Nedenfor vises noen programmer som bruker `for`{l=python}-løkker til å skrive ut noen tall. 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Les programmet nedenfor og prøv å forutsi hvilke tall programmet skriver ut.
 
 Skriv inn gjetningen din nedenfor og sjekk svaret ditt!
@@ -60,11 +52,14 @@ predict:
 ---
 for n in range(1, 6):
     print(n)        # skriver ut verdien av n
+
+
+
 :::
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Les programmet nedenfor og prøv å forutsi hvilke tall programmet skriver ut.
 
 Skriv inn gjetningen din nedenfor og sjekk svaret ditt!
@@ -76,11 +71,15 @@ predict:
 ---
 for n in range(2, 11):
     print(n)
+
+
+
 :::
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+
+:::::::::::::{part} c
 Les programmet nedenfor og prøv å forutsi hvilke tall programmet skriver ut.
 
 Skriv inn gjetningen din nedenfor og sjekk svaret ditt!
@@ -92,10 +91,12 @@ predict:
 ---
 for n in range(-5, 6):
     print(n)
+
+
+
 :::
 :::::::::::::
 
-::::::::::::::
 
 
 
@@ -103,7 +104,7 @@ for n in range(-5, 6):
 
 ---
 
-:::::::::::::::{exercise} Underveisoppgave 1
+:::::::::::::::{exercise-2} Underveisoppgave 1
 Ta quizen! 
 
 :::{quiz}
@@ -139,12 +140,10 @@ Q: Hvilke tall skrives ut av programmet nedenfor? <pre><code class="python">for 
 
 ---
 
-### `for`{l=python}-løkker med en fast `avstand`{l=python}
-
 Vi kan også bruke `for`{l=python}-løkker til å lage tallfølger der ikke alle tall bare er det forrige tallet pluss $1$. For eksempel kan vi lage `for`{l=python}-løkker som skriver ut partall, eller oddetall, eller tallfølger der det er fast avstand mellom hvert tall. 
 
-:::::::::::::::{summary} `for`{l=python}-løkker 2
-En `for`{l=python}-løkke som skriver ut tall fra og med `start`{l=python} og til `slutt`{l=python} med en fast `avstand`{l=python} mellom hvert tall kan skrives slik:
+:::::::::::::::{summary-2} `for`{l=python}-løkker med en fast `avstand`{l=python}
+En `for`{l=python}-løkke som skriver ut hele tall fra og med `start`{l=python} og til `slutt`{l=python} med en fast `avstand`{l=python} mellom hvert tall kan skrives slik:
 
 :::{code-block} python
 ---
@@ -161,14 +160,12 @@ Det siste tallet som skrives ut må være mindre enn `stopp`{l=python}.
 
 Nedenfor i Utforsk 2 kan du utforske nærmere hvordan en slik `for`{l=python}-løkke fungerer.
 
-:::::::::::::::{explore} Utforsk 2
+:::::::::::::::{explore-2} Utforsk 2
 Nedenfor vises noen programmer som bruker `for`{l=python}-løkker til å skrive ut noen tall.
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 Les programmet nedenfor og prøv å forutsi hvilke tall programmet skriver ut.
 
 Skriv inn gjetningen din nedenfor og sjekk svaret ditt!
@@ -180,10 +177,15 @@ predict:
 ---
 for n in range(2, 6, 2):
     print(n)
+
+
+
 :::
 :::::::::::::
 
-:::::::::::::{tab-item} b
+
+
+:::::::::::::{part} b
 Les programmet nedenfor og prøv å forutsi hvilke tall programmet skriver ut.
 
 Skriv inn gjetningen din nedenfor og sjekk svaret ditt!
@@ -195,10 +197,15 @@ predict:
 ---
 for n in range(-5, 7, 3):
     print(n)
+
+
+
 :::
 :::::::::::::
 
-:::::::::::::{tab-item} c
+
+
+:::::::::::::{part} c
 Les programmet nedenfor og prøv å forutsi hvilke tall programmet skriver ut.
 
 Skriv inn gjetningen din nedenfor og sjekk svaret ditt!
@@ -210,15 +217,19 @@ predict:
 ---
 for n in range(0, 100, 20):
     print(n)
+
+
+
 :::
 :::::::::::::
-::::::::::::::
+
+
 
 :::::::::::::::
 
 ---
 
-:::::::::::::::{exercise} Underveisoppgave 2
+:::::::::::::::{exercise-2} Underveisoppgave 2
 :::{quiz}
 Q: Hvilken tallfølge skrives ut av programmet? <pre><code class="python">for x in range(1, 5, 1):\n    print(x)</code></pre>
 + $1, 2, 3, 4$
@@ -256,22 +267,22 @@ Q: Hvilken tallfølge skrives ut av programmet? <pre><code class="python">for x 
 ---
 
 
-:::::::::::::::{exercise} Underveisoppgave 3
+:::::::::::::::{exercise-2} Underveisoppgave 3
 Nedenfor finner du interaktive kodevinduer du kan skrive kode i og kjøre direkte.
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Lag et program som skriver ut partallene fra og med $2$ til og med $20$.
 
 :::{interactive-code}
 for n in range(????): # FYLL INN: bytt ut ???? med riktig tall
     print(n)
+
+
+
 :::
 
-:::::{answer}
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -280,20 +291,22 @@ for n in range(2, 22, 2):
     print(n)
 :::
 :::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Lag et program som skriver ut oddetallene fra og med $1$ til og med $19$.
 
 :::{interactive-code}
 for n in range(????): # FYLL INN: bytt ut ???? med riktig tall
     print(n)
+
+
+
 :::
 
 
-:::::{answer}
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -302,20 +315,23 @@ for n in range(1, 20, 2):
     print(n)
 :::
 :::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+
+:::::::::::::{part} c
 Lag et program som skriver ut tallfølgen $10, 20, 30, 40, 50$.
 
 :::{interactive-code}
 for n in range(????): # FYLL INN: bytt ut ???? med riktig tall
     print(n)
+
+
+
 :::
 
 
-:::::{answer}
+:::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -324,10 +340,9 @@ for n in range(10, 60, 10):
     print(n)
 :::
 :::::
-
 :::::::::::::
 
-::::::::::::::
+
 :::::::::::::::
 
 
@@ -336,35 +351,16 @@ for n in range(10, 60, 10):
 Når vi skriver et program, så ønsker vi ofte å regne med formler. 
 
 
-:::::::::::::::{explore} Utforsk 3 
-Nedenfor vises et program som bruker en formel for å regne ut og skrive ut noen tall i en tallfølge.
+:::::::::::::::{explore-2} Utforsk 3 
+Nedenfor vises et program som bruker en formel for å regne ut og skrive ut noen tall i en tallfølge. 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 Les programmet og forutsi hvilke tall programmet skriver ut.
 
 Skriv inn svaret ditt nedenfor sjekk. 
-
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
-Endre på programmet slik at det skriver ut verdiene til tallfølgen 
-
-$$
-a_n = n^2 \qfor n \in \set{1, 2, \ldots, 10}
-$$
-
-> For å opphøye et tall i Python, bruker vi `**`{l=python}. For eksempel er $2^3$ skrevet som `2 ** 3`{l=python} i Python.
-
-
-:::::::::::::
-::::::::::::::
 
 
 :::{interactive-code}
@@ -377,6 +373,47 @@ for n in range(1, 5):
     print(a)
 :::
 
+:::::::::::::
+
+
+:::::::::::::{part} b
+Les programmet og forutsi hvilke tall programmet skriver ut.
+
+Skriv inn svaret ditt nedenfor sjekk. 
+
+:::{interactive-code}
+---
+predict:
+---
+for n in range(1, 4):
+    a = n**3
+    
+    print(a)
+:::
+
+
+:::::::::::::
+
+
+:::::::::::::{part} c
+Les programmet og forutsi hvilke tall programmet skriver ut.
+
+Skriv inn svaret ditt nedenfor sjekk. 
+
+:::{interactive-code}
+---
+predict:
+---
+for n in range(1, 4):
+    a = 2**n + 1
+    
+    print(a)
+:::
+:::::::::::::
+
+
+::::::::::::::
+
 
 
 
@@ -385,13 +422,11 @@ for n in range(1, 5):
 
 ---
 
-:::::::::::::::{exercise} Underveisoppgave 4
+:::::::::::::::{exercise-2} Underveisoppgave 4
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 Fyll ut programmet nedenfor slik at det skriver ut verdiene til tallfølgen gitt ved 
 
 $$
@@ -407,7 +442,7 @@ for n in range(????): # FYLL INN
 :::
 
 
-::::{answer}
+::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -418,11 +453,11 @@ for n in range(1, 6):
     print(a)
 :::
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+
+:::::::::::::{part} b
 Fyll ut programmet nedenfor slik at det skriver ut verdiene til tallfølgen gitt ved 
 
 $$
@@ -437,7 +472,7 @@ for n in range(????): # FYLL INN
 
 :::
 
-::::{answer}
+::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -448,11 +483,11 @@ for n in range(1, 10, 2):
     print(b)
 :::
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+
+:::::::::::::{part} c
 Fyll ut programmet nedenfor slik at det skriver ut verdiene til tallfølgen gitt ved 
 
 $$
@@ -468,7 +503,7 @@ for n in range(????): # FYLL INN
 :::
 
 
-::::{answer}
+::::{answer-2}
 :::{code-block} python
 ---
 linenos:
@@ -480,7 +515,8 @@ for n in range(-2, 3):
 :::
 ::::
 :::::::::::::
-::::::::::::::
+
+
 
 
 
@@ -496,37 +532,13 @@ I mange tilfeller er vi interessert i å summere tallene i en tallfølge.
 Når vi skriver `s = s + n`{l=python}, så betyr det at vi legger til verdien til `n`{l=python} til verdien til `s`{l=python} og lagrer resultatet i `s`{l=python}. 
 :::
 
-:::::::::::::::{explore} Utforsk 4
-Nedenfor vises et program som summerer noen tall. 
+:::::::::::::::{explore-2} Utforsk 4
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Les programmet nedenfor og forutsi hva som skrives ut. 
 
 Skriv inn svaret ditt nedenfor og sjekk.
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
-Endre på programmet slik at det summerer alle naturlig tall fra $1$ til og med $100$. 
-
-Hva blir summen? 
-:::::::::::::
-
-
-:::::::::::::{tab-item} 
-Endre på programmet slik at det finner summen av de $10$ første kvadrattallene
-
-$$
-S = 1^2 + 2^2 + 3^2 + \ldots + 10^2
-$$
-:::::::::::::
-
-::::::::::::::
 
 :::{interactive-code}
 ---
@@ -538,6 +550,28 @@ for n in range(1, 6):
 
 print(s)
 :::
+
+:::::::::::::
+
+
+:::::::::::::{part} b
+Les programmet nedenfor og forutsi hva som skrives ut. 
+
+Skriv inn svaret ditt nedenfor og sjekk.
+
+:::{interactive-code}
+---
+predict:
+---
+s = 0
+for n in range(1, 6):
+    s = s + n**2
+
+print(s)
+:::
+:::::::::::::
+
+
 
 :::::::::::::::
 

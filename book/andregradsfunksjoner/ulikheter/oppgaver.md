@@ -3,15 +3,19 @@
 
 
 :::::::::::::::{exercise} Oppgave 1
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Nedenfor vises grafen til en andregradsfunksjon $f$. 
+
+
+:::::::::::::{part} a
+:::{plot}
+width: 320px
+align: right
+fontsize: 26
+function: (x + 3) * (x - 1), f
+:::
+
+
+
+Til høyre vises grafen til en andregradsfunksjon $f$. 
 
 Løs ulikheten 
 
@@ -19,19 +23,11 @@ $$
 f(x) \leq 0.
 $$
 
-:::{figure} ./figurer/oppgaver/oppgave_1/a.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
-:::
 
-::::{answer}
+:::::{answer}
 $$
 x \in [-3, 1].
 $$
-::::
-
 
 ::::{solution}
 Grafen til $f$ skjærer $x$-aksen i $(-3, 0)$ og $(1, 0)$. Grafen ligger under $x$-aksen mellom disse to punktene som betyr at $f(x) \leq 0$ når 
@@ -41,113 +37,84 @@ x \in [-3, 1].
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
-Nedenfor vises grafen til en andregradsfunksjon $f$. 
+:::::::::::::{part} b
+:::{plot}
+width: 320px
+align: right
+fontsize: 26
+function: -1/2 * (x + 1) * (x - 3), g
+:::
+
+Til høyre vises grafen til en andregradsfunksjon $g$. 
 
 Løs ulikheten 
 
 $$
-f(x) < 0.
+g(x) < 0.
 $$
 
-:::{figure} ./figurer/oppgaver/oppgave_1/b.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
-:::
 
+:::::{answer}
+$$
+x \in \langle \gets, -1 \rangle \cup \langle 3, \to \rangle.
+$$
 
-::::{answer}
+::::{solution}
+Grafen til $g$ skjærer $x$-aksen i $(-1, 0)$ og $(3, 0)$. På nedsiden av $(-1, 0)$ og på oversiden av $(3, 0)$ ligger grafen til $g$ under $x$-aksen som betyr at $g(x) < 0$ når
+
 $$
 x \in \langle \gets, -1 \rangle \cup \langle 3, \to \rangle.
 $$
 ::::
 
+:::::
 
-::::{solution}
-Grafen til $f$ skjærer $x$-aksen i $(-1, 0)$ og $(3, 0)$. På nedsiden av $(-1, 0)$ og på oversiden av $(3, 0)$ ligger grafen til $f$ under $x$-aksen som betyr at $f(x) < 0$ når
-
-$$
-x \in \langle \gets, -1 \rangle \cup \langle 3, \to \rangle.
-$$
-::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-Nedenfor vises grafen til en andregradsfunksjon $f$. 
+:::::::::::::{part} c
+:::{plot}
+width: 320px
+align: right
+fontsize: 26
+function: -1/3 * (x + 5) * (x - 1), h
+xmin: -7
+xmax: 5
+:::
+
+Til høyre vises grafen til en andregradsfunksjon $h$. 
 
 Løs ulikheten 
 
 $$
-f(x) > 0.
+h(x) > 0.
 $$
 
-:::{figure} ./figurer/oppgaver/oppgave_1/c.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
-:::
 
-
-::::{answer}
+:::::{answer}
 $$
 x \in \langle -5, 1 \rangle.
 $$
-::::
 
 ::::{solution}
-Grafen til $f$ skjærer $x$-aksen i $(-5, 0)$ og $(1, 0)$. Mellom disse to punktene ligger grafen til $f$ over $x$-aksen som betyr at $f(x) > 0$ når
+Grafen til $h$ skjærer $x$-aksen i $(-5, 0)$ og $(1, 0)$. Mellom disse to punktene ligger grafen til $h$ over $x$-aksen som betyr at $h(x) > 0$ når
 
 $$
 x \in \langle -5, 1 \rangle.
 $$
 ::::
 
-:::::::::::::
-
-
-:::::::::::::{tab-item} d
-Nedenfor vises grafen til en andregradsfunksjon $f$. 
-
-Løs ulikheten 
-
-$$
-f(x) \geq 0.
-$$
-
-:::{figure} ./figurer/oppgaver/oppgave_1/d.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
-:::
-
-::::{answer}
-$$
-x \in \langle\gets, -2] \cup [2, \to \rangle.
-$$
-::::
-
-::::{solution}
-Grafen til $f$ skjærer $x$-aksen i $(-2, 0)$ og $(2, 0)$. På nedsiden av $(-2, 0)$ og på oversiden av $(2, 0)$ ligger grafen til $f$ over $x$-aksen som betyr at $f(x) \geq 0$ når
-
-$$
-x \in \langle\gets, -2] \cup [2, \to \rangle.
-$$
-::::
+:::::
 
 :::::::::::::
 
-
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -155,43 +122,42 @@ $$
 ---
 
 
+
 :::::::::::::::{exercise} Oppgave 2
----
-level: 1
----
+
 Ta quizen!
 
 
 :::{quiz} 
-Q: Hvilken av fortegnslinjene hører til grafen? ![{width: 70%}](./figurer/oppgaver/oppgave_2/spm_1/graf.svg)
+Q: Hvilken av fortegnslinjene hører til grafen? ![{width: 60%}](./figurer/oppgaver/oppgave_2/spm_1/graf.svg)
 + ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_1/A.svg)
 - ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_1/B.svg)
 - ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_1/C.svg)
 - ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_1/D.svg)
 
 
-Q: Hvilken av fortegnslinjene hører til grafen? ![{width: 70%}](./figurer/oppgaver/oppgave_2/spm_2/graf.svg)
+Q: Hvilken av fortegnslinjene hører til grafen? ![{width: 60%}](./figurer/oppgaver/oppgave_2/spm_2/graf.svg)
 + ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_2/A.svg)
 - ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_2/B.svg)
 - ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_2/C.svg)
 - ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_2/D.svg)
 
 
-Q: Hvilken av fortegnslinjene hører til grafen? ![{width: 70%}](./figurer/oppgaver/oppgave_2/spm_3/graf.svg)
+Q: Hvilken av fortegnslinjene hører til grafen? ![{width: 60%}](./figurer/oppgaver/oppgave_2/spm_3/graf.svg)
 + ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_3/A.svg)
 - ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_3/B.svg)
 - ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_3/C.svg)
 - ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_3/D.svg)
 
 
-Q: Hvilken av fortegnslinjene hører til grafen? ![{width: 70%}](./figurer/oppgaver/oppgave_2/spm_4/graf.svg)
+Q: Hvilken av fortegnslinjene hører til grafen? ![{width: 60%}](./figurer/oppgaver/oppgave_2/spm_4/graf.svg)
 + ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_4/A.svg)
 - ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_4/B.svg)
 - ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_4/C.svg)
 - ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_4/D.svg)
 
 
-Q: Hvilken av fortegnslinjene hører til grafen? ![{width: 70%}](./figurer/oppgaver/oppgave_2/spm_5/graf.svg)
+Q: Hvilken av fortegnslinjene hører til grafen? ![{width: 60%}](./figurer/oppgaver/oppgave_2/spm_5/graf.svg)
 + ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_5/A.svg)
 - ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_5/B.svg)
 - ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_5/C.svg)
@@ -207,14 +173,8 @@ Q: Hvilken av fortegnslinjene hører til grafen? ![{width: 70%}](./figurer/oppga
 ---
 
 :::::::::::::::{exercise} Oppgave 3
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 En andregradsfunksjon $f$ har fortegnslinja:
 
 :::{figure} ./figurer/oppgaver/oppgave_3/a/fortegnslinje.svg
@@ -242,7 +202,7 @@ Graf C.
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En andregradsfunksjon $g$ har fortegnslinja:
 
 :::{figure} ./figurer/oppgaver/oppgave_3/b/fortegnslinje.svg
@@ -270,7 +230,7 @@ Graf A.
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En andregradsfunksjon $h$ har fortegnslinja:
 
 :::{figure} ./figurer/oppgaver/oppgave_3/c/fortegnslinje.svg
@@ -298,8 +258,6 @@ Graf D.
 :::::::::::::
 
 
-::::::::::::::
-
 :::::::::::::::
 
 
@@ -308,14 +266,8 @@ Graf D.
 
 
 :::::::::::::::{exercise} Oppgave 4
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Nedenfor vises fortegnslinja til en andregradsfunksjon $f$.
 
 Løs ulikheten 
@@ -342,7 +294,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Nedenfor vises fortegnslinja til en andregradsfunksjon $g$.
 
 Løs ulikheten 
@@ -369,7 +321,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Nedenfor vises fortegnslinja til en andregradsfunksjon $h$.
 
 Løs ulikheten 
@@ -396,7 +348,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Nedenfor vises fortegnslinja til en andregradsfunksjon $p$.
 
 Løs ulikheten 
@@ -423,8 +375,6 @@ $$
 :::::::::::::
 
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -433,14 +383,9 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 5
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 Løs ulikheten
 
 $$
@@ -448,12 +393,10 @@ $$
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in [-2, 4]
 $$
-::::
-
 
 ::::{solution}
 Vi tegner fortegnslinja til $f(x) = (x + 2)(x - 4)$. Vi tegner først en fortegnslinje for hver faktor, deretter ganger vi fortegnene sammen for å få fortegnslinja til $f(x)$: 
@@ -475,10 +418,13 @@ $$
 
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Løs ulikheten
 
 $$
@@ -486,12 +432,10 @@ $$
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in \langle \gets, -4] \cup [1, \to \rangle
 $$
-::::
-
 
 ::::{solution}
 Vi starter med å tegne fortegnslinja til $f(x) = (x - 1)(x + 4)$. Vi tegner først en fortegnslinje for hver faktor, deretter ganger vi fortegnene sammen for å få fortegnslinja til $f(x)$:
@@ -514,11 +458,13 @@ $$
 
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Løs ulikheten ved hjelp av å tegne fortegnslinje.
 
 $$
@@ -526,12 +472,10 @@ $$
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in \langle \gets, 0 \rangle \cup \langle 3, \to \rangle
 $$
-::::
-
 
 ::::{solution}
 Vi starter med å tegne fortegnslinja til $f(x) = -2x(x - 3)$. Vi tegner først en fortegnslinje for hver faktor, deretter ganger vi fortegnene sammen for å få fortegnslinja til $f(x)$:
@@ -551,11 +495,13 @@ $$
 
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Løs ulikheten ved å bruke en fortegnslinje:
 
 $$
@@ -563,12 +509,10 @@ $$
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in \langle -1, 1 \rangle
 $$
-::::
-
 
 ::::{solution}
 Vi starter med å tegne fortegnslinja til $f(x) = -3(x + 1)(x - 1)$. Vi tegner først en fortegnslinje for hver faktor, deretter ganger vi fortegnene sammen for å få fortegnslinja til $f(x)$:
@@ -589,10 +533,11 @@ $$
 
 ::::
 
+:::::
+
 
 :::::::::::::
 
-::::::::::::::
 
 :::::::::::::::
 
@@ -601,14 +546,9 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 6
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 Løs ulikheten
 
 $$
@@ -616,12 +556,10 @@ $$
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in \langle \gets, 1] \cup [3, \to \rangle.
 $$
-::::
-
 
 ::::{solution}
 Vi starter med å nullpunktsfaktorisere andregradsuttrykket. Vi finner nullpunktene med $abc$-formelen:
@@ -660,11 +598,14 @@ $$
 
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Løs ulikheten
 
 $$
@@ -672,12 +613,10 @@ x^2 + 4x - 5 \geq 0
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in \langle \gets, -5] \cup [1, \to \rangle.
 $$
-::::
-
 
 ::::{solution}
 Vi starter med å nullpunktsfaktorisere andregradsuttrykket. Vi finner nullpunktene med $abc$-formelen:
@@ -714,10 +653,13 @@ x \in \langle \gets, -5] \cup [1, \to \rangle.
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Løs ulikheten
 
 $$
@@ -725,12 +667,10 @@ x^2 + 6x + 5 > -4
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in \langle \gets, -3 \rangle \cup \langle -3, \to \rangle.
 $$
-::::
-
 
 ::::{solution}
 Vi starter med å samle alle ledd på én side av ulikheten slik at vi får $0$ på høyre side:
@@ -769,11 +709,12 @@ $$
 
 
 ::::
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Løs ulikheten
 
 $$
@@ -781,11 +722,10 @@ $$
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in \real
 $$
-::::
 
 ::::{solution}
 Vi starter med å samle alle ledd på én side av ulikheten slik at vi får $0$ på høyre side:
@@ -801,10 +741,10 @@ x \in \real
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -828,11 +768,7 @@ width: 100%
 ::::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 
 :::{cas-popup}
 ---
@@ -848,11 +784,10 @@ x^2 - 3x + 2 < 0
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in \langle 1, 2 \rangle.
 $$
-::::
 
 ::::{solution}
 :::{figure} ./figurer/oppgaver/oppgave_7/a.png
@@ -869,11 +804,13 @@ x \in \langle 1, 2 \rangle.
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 :::{cas-popup}
 ---
@@ -889,11 +826,10 @@ $$
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in \langle \gets, 1 \rangle \cup \langle 1, \to \rangle.
 $$
-::::
 
 
 ::::{solution}
@@ -913,11 +849,13 @@ $$
 
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 
 :::{cas-popup}
 ---
@@ -932,11 +870,10 @@ $$
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in [-1, 6]
 $$
-::::
 
 ::::{solution}
 :::{figure} ./figurer/oppgaver/oppgave_7/c.png
@@ -956,10 +893,12 @@ $$
 
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 
 
 :::{cas-popup}
@@ -978,12 +917,10 @@ x^2 - 2x + 5 \leq -x^2 + 3x + 3
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in \left[ \dfrac{1}{2}, 2\right]
 $$
-::::
-
 
 ::::{solution}
 :::{figure} ./figurer/oppgaver/oppgave_7/d.png
@@ -1002,11 +939,11 @@ $$
 
 ::::
 
+:::::
+
 
 :::::::::::::
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -1015,9 +952,7 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 8
----
-level: 2
----
+
 Nedenfor vises grafen til en andregradsfunksjon $f$ og en lineær funksjon $g$.
 
 :::{figure} ./figurer/oppgaver/oppgave_8/figur.svg
@@ -1028,11 +963,8 @@ width: 80%
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Løs ulikheten 
 
 $$
@@ -1040,11 +972,10 @@ f(x) < 0
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in \langle \gets, -3\rangle \cup \langle 1, \to \rangle
 $$
-::::
 
 ::::{solution}
 Vi ser at grafen til $f$ skjærer $x$-aksen i $(-3, 0)$ og $(1, 0)$. Grafen ligger under $x$-aksen på nedsiden av $(-2, 0)$ og på oversiden av $(3, 0)$. Dermed er løsningen
@@ -1054,10 +985,12 @@ x \in \langle \gets, -3\rangle \cup \langle 1, \to \rangle
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Løs ulikheten 
 
 $$
@@ -1065,12 +998,10 @@ f(x) > 3
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in \langle -2, 0 \rangle.
 $$
-::::
-
 
 ::::{solution}
 Grafen til $f$ skjærer linja $y = 3$ i $(-2, 3)$ og $(0, 3)$. Mellom disse to punktene, så ligger grafen til $f$ over linja $y = 3$. Dermed er løsningen 
@@ -1080,10 +1011,12 @@ x \in \langle -2, 0 \rangle.
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Løs ulikheten 
 
 $$
@@ -1091,11 +1024,10 @@ f(x) \geq g(x)
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in [-4, 0]
 $$
-::::
 
 ::::{solution}
 Grafene til $f$ og $g$ skjærer hverandre i punktene $(-4, -5)$ og $(0, 3)$. Mellom disse to punktene, så ligger grafen til $f$ på oversiden av grafen til $g$. Dermed er løsningen av ulikheten 
@@ -1105,10 +1037,9 @@ x \in [-4, 0]
 $$
 ::::
 
+:::::
+
 :::::::::::::
-
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -1119,9 +1050,7 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 9
----
-level: 3
----
+
 Nedenfor vises grafen til en andregradsfunksjon $f$.
 
 :::{figure} ./figurer/oppgaver/oppgave_9/figur.svg
@@ -1131,17 +1060,15 @@ width: 80%
 ---
 :::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem $f(x)$.
 
 
-::::{answer}
+:::::{answer}
+$$
 f(x) = -2(x + 3)(x - 4).
-::::
+$$
 
 ::::{solution}
 Vi ser at grafen skjærer $x$-aksen i $(-3, 0)$ og $(4, 0)$ som vi kan bruke til å bestemme $f(x)$ på nullpunktsform: 
@@ -1164,11 +1091,13 @@ $$
 
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Løs ulikheten 
 
 $$
@@ -1176,12 +1105,10 @@ f(x) \leq 0
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in \langle \gets, -3] \cup [4, \to \rangle.
 $$
-::::
-
 
 ::::{solution}
 Vi ser at grafen ligger under $x$-aksen på nedsiden av $(-3, 0)$ og på oversiden av $(4, 0)$. Dermed er løsningen
@@ -1192,10 +1119,12 @@ $$
 
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Løs ulikheten
 
 $$
@@ -1203,11 +1132,11 @@ f(x) > 12.
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 (x + 2)(x - 3) < 0 \liff x \in \langle -2, 3 \rangle.
 $$
-::::
+
 
 ::::{solution}
 Her får vi ikke lest av fra grafen, så vi tyr til algebraisk løsning. Vi skal løse ulikheten 
@@ -1270,9 +1199,12 @@ $$
 
 ::::
 
-:::::::::::::
 
-::::::::::::::
+:::::
+
+
+
+:::::::::::::
 
 
 :::::::::::::::
@@ -1282,9 +1214,7 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 10
----
-level: 3
----
+
 I figuren nedenfor vises grafen til en andregradsfunksjon $f$.
 
 
@@ -1296,19 +1226,15 @@ width: 80%
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem $f(x)$.
 
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = x(x - 4) = x^2 - 4x.
 $$
-::::
 
 ::::{solution}
 Grafen til $f$ har et bunnpunkt i $(2, -4)$ og et nullpunkt $(0, 0)$ Fordi symmetrilinja er i $x = 2$, så vil det andre nullpunktet ligge samme avstand fra symmetrilinja langs $x$-aksen som betyr at det andre nullpunktet er i $(4, 0)$. Da kan vi skrive $f(x)$ på nullpunktsform:
@@ -1330,10 +1256,12 @@ f(x) = x(x - 4) = x^2 - 4x.
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 Løs ulikheten 
 
@@ -1342,12 +1270,10 @@ f(x) \leq 0
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in [0, 4].
 $$
-::::
-
 
 ::::{solution}
 Fra grafen til $f$ kan vi se at grafen ligger under $x$-aksen mellom nullpunktene. Dermed er $f(x) \leq 0$ når 
@@ -1357,10 +1283,12 @@ x \in [0, 4].
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 
 Løs ulikheten 
 
@@ -1369,12 +1297,10 @@ f(x) > 5
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in \langle \gets, -1 \rangle \cup \langle 5, \to \rangle.
 $$
-::::
-
 
 ::::{solution}
 Vi skal løse ulikheten 
@@ -1414,10 +1340,10 @@ $$
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -1427,14 +1353,8 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 11
----
-level: 3
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 En ulikhet har løsningen 
 
 $$
@@ -1444,11 +1364,10 @@ $$
 Lag en ulikhet som har denne løsningen.
 
 
-::::{answer}
+:::::{answer}
 $$
 (x + 2)(x - 1) < 0
 $$
-::::
 
 ::::{solution}
 Vi kan velge en andregradsfunksjon $f$ som har nullpunkter i $x = -2$ og $x = 1$, og som er konveks (slik at den smiler $\smile$). Da vet vi at grafen ligger under $x$-aksen mellom nullpunktene. Derfor er en mulig ulikhet denne:
@@ -1458,11 +1377,13 @@ $$
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En ulikhet har løsningen 
 
 $$
@@ -1471,12 +1392,10 @@ $$
 
 Lag en ulikhet som har denne løsningen.
 
-::::{answer}
+:::::{answer}
 $$
 (x + 2)^2 > 0.
 $$
-::::
-
 
 ::::{solution}
 Vi kan velge en andregradsfunksjon $f$ som har ett nullpunkt i $x = -2$, og som er konveks (slik at den smiler $\smile$). Da vet vi at grafen alltid ligger over $x$-aksen bortsett fra i $x = -2$. Da er en mulig ulikhet denne:
@@ -1487,10 +1406,13 @@ $$
 
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En ulikhet har løsningen 
 
 $$
@@ -1500,11 +1422,10 @@ $$
 Lag en ulikhet som har denne løsningen.
 
 
-::::{answer}
+:::::{answer}
 $$
 (x + 4)(x - 4) \leq 0.
 $$
-::::
 
 ::::{solution}
 Vi kan velge en andregradsfunksjon $f$ som har nullpunkter i $x = -4$ og $x = 4$, og som er konveks (slik at den smiler $\smile$). Da vet vi at grafen ligger under $x$-aksen mellom nullpunktene slik at følgende ulikhet vil ha den oppgitte løsningen:
@@ -1514,11 +1435,13 @@ $$
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En ulikhet har løsningen 
 
 $$
@@ -1528,12 +1451,10 @@ $$
 Lag en ulikhet som har denne løsningen.
 
 
-::::{answer}
+:::::{answer}
 $$
 -\left(x + \dfrac{1}{2}\right)(x - 4) < 0.
 $$
-::::
-
 
 ::::{solution}
 Vi kan velge en andregradsfunksjon $f$ som har nullpunkter i $x = -\dfrac{1}{2}$ og $x = 4$, og som er konkav (surt fjes $\frown$). Da vet vi at grafen til $f$ ligger under $x$-aksen på nedsiden og oversiden av nullpunktene. Dermed vil følgende ulikhet ha den oppgitte løsningen:
@@ -1543,11 +1464,11 @@ $$
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -1555,9 +1476,7 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 12
----
-level: 3
----
+
 Anna jobber med funksjonen 
 
 $$
@@ -1589,9 +1508,7 @@ Ulikheten har ingen løsning, som er grunnen til at utskriften gir $\{\}$. Siden
 
 
 :::::::::::::::{exercise} Oppgave 13
----
-level: 3
----
+
 En andregradsfunksjon $f$ er gitt ved 
 
 $$
@@ -1599,19 +1516,14 @@ f(x) = rx^2 - 2x + r \qder r \in \real
 $$
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem $r$ slik at $f$ bare har ett nullpunkt.
 
 
-::::{answer}
+:::::{answer}
 $$
 r = -1 \or r = 1.
 $$
-::::
 
 ::::{solution}
 Vi bruker $abc$-formelen for å avgjøre hvilke verdier for $r$ som gir ett nullpunkts:
@@ -1635,20 +1547,20 @@ $$
 
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem $r$ slik at $f$ ikke har noen nullpunkter.
 
 
-::::{answer}
+:::::{answer}
 $$
 r \in \langle -1, 1 \rangle.
 $$
-::::
-
 
 ::::{solution}
 
@@ -1658,7 +1570,7 @@ $$
 4 - 4r^2 < 0 \liff 4r^2 - 4 > 0 \liff r^2 - 1 > 0 \liff (r - 1)(r + 1) > 0.
 $$
 
-Dette er et andregradsuttrykk som er konveks (den smiler $\smile$) og som har nullpunkter i $r = -1$ og $r = 1$. Grafen vil være negativt mellom nullpunktene, så derfor vil ikke $f$ ha noen nullpunkter dersom 
+Dette er et andregradsuttrykk som er konveks – den smiler {polyicon}`smile` – og som har nullpunkter i $r = -1$ og $r = 1$. Grafen vil være negativt mellom nullpunktene, så derfor vil ikke $f$ ha noen nullpunkter dersom 
 
 $$
 r \in \langle -1, 1 \rangle.
@@ -1666,10 +1578,10 @@ $$
 
 ::::
 
+:::::
+
 :::::::::::::
 
-
-::::::::::::::
 
 :::::::::::::::
 

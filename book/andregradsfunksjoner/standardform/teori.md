@@ -17,7 +17,7 @@ Ekstremalpunkt er en fellesbetegnelse på toppunkter (høyeste punkt på grafen)
 
 
 
-:::::::::::::::{summary} Standardform
+:::::::::::::::{summary-2} Standardform
 
 En andregradsfunksjon $f$ kan representeres algebraisk på standardform ved:
 
@@ -56,7 +56,7 @@ Når vi har grafen til $f$, kan vi bestemme $f(x)$ ved å lese av verdiene til k
 
 La oss se på et eksempel:
 
-:::::::::::::::{example} Eksempel 1
+:::::::::::::::{example-2} Eksempel 1
 Grafen til en andregradsfunksjon $f$ er vist i figuren nedenfor.
 
 Bestem $f(x)$. 
@@ -72,9 +72,9 @@ ymax: 6
 ystep: 1
 :::
 
-::::{solution}
+::::{solution-2}
 ---
-dropdown: 0
+open:
 ---
 Standardformen til $f(x)$ er gitt ved 
 
@@ -116,7 +116,7 @@ Funksjonsuttrykket $f(x)$:
 
 ---
 
-:::::::::::::::{exercise} Underveisoppgave 1
+:::::::::::::::{exercise-2} Underveisoppgave 1
 Grafen til en andregradsfunksjon $f$ er vist i figuren nedenfor.
 
 Bestem $f(x)$.
@@ -132,13 +132,13 @@ width: 70%
 :::
 
 
-::::{answer}
+:::::{answer-2}
 $$
 f(x) = -x^2 + 4x + 1.
 $$
-::::
 
-::::{solution}
+
+::::{solution-2}
 Vi skriver $f(x)$ på standardform:
 
 $$
@@ -173,8 +173,11 @@ Funksjonsuttrykket $f(x)$:
     $$
     f(x) = -x^2 + 4x + 1.
     $$
-
 ::::
+
+
+:::::
+
 
 
 :::::::::::::::
@@ -187,7 +190,7 @@ Funksjonsuttrykket $f(x)$:
 La oss se på et eksempel der vi regner ut de ulike egenskapene og sammenlikner med grafen.
 
 
-:::::::::::::::{example} Eksempel 2
+:::::::::::::::{example-2} Eksempel 2
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -203,9 +206,9 @@ Bestem følgende egenskaper til grafen til $f$:
 Lag en skisse av grafen til $f$.
 
 
-::::{solution}
+::::{solution-2}
 ---
-dropdown: 0
+open:
 ---
 Koeffisientene til $f(x)$ er $a = 2$ og $b = -4$ og $c = 1$. 
 
@@ -241,7 +244,7 @@ width: 80%
 
 ---
 
-:::::::::::::::{exercise} Underveisoppgave 2
+:::::::::::::::{exercise-2} Underveisoppgave 2
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -257,7 +260,7 @@ Bestem følgende egenskaper til grafen til $f$:
 Lag en skisse av grafen til $f$.
 
 
-::::{solution}
+::::{solution-2}
 Koeffisientene til $f(x)$ er $a = -1$, $b = 4$ og $c = 3$.
 
 Grafens form
@@ -306,7 +309,7 @@ Det er ikke alltid like lett å lese av verdien til $a$, spesielt hvis vi ikke k
 
 
 
-:::::::::::::::{summary} Grafisk betydning av $a$ (ledende koeffisient)
+:::::::::::::::{summary-2} Grafisk betydning av $a$ (ledende koeffisient)
 Når vi øker $x$ med $d$ enheter fra symmetrilinja, så endrer $y$-verdien seg med $d^2 \cdot a$ enheter. 
 
 Se figuren nedenfor.
@@ -328,7 +331,7 @@ Det er ikke alltid vi kan lese av verdien til $a$ direkte. Det gjør at vi helle
 La oss se på et eksempel:
 
 
-:::::::::::::::{example} Eksempel 3
+:::::::::::::::{example-2} Eksempel 3
 I figuren nedenfor vises grafen til en andregradsfunksjon $f$.
 
 Bestem $f(x)$.
@@ -341,9 +344,9 @@ width: 70%
 :::
 
 
-::::{solution}
+::::{solution-2}
 ---
-dropdown: 0
+open:
 ---
 Vi skriver $f(x)$ på standardform:
 
@@ -391,7 +394,7 @@ Funksjonsuttrykket $f(x)$
 ---
 
 
-:::::::::::::::{exercise} Underveisoppgave 3
+:::::::::::::::{exercise-2} Underveisoppgave 3
 Grafen til en andregradsfunksjon $f$ er vist i figuren nedenfor.
 
 Bestem $f(x)$.
@@ -405,14 +408,13 @@ width: 70%
 :::
 
 
-::::{answer}
+:::::{answer-2}
 $$
 f(x) = \dfrac{3}{2}x^2 - 6x + 2
 $$
-::::
 
 
-::::{solution}
+::::{solution-2}
 Vi skriver $f(x)$ på standardform:
 
 Koeffisient $a$
@@ -449,6 +451,11 @@ Funksjonsuttrykk $f(x)$
     $$
 ::::
 
+:::::
+
+
+
+
 
 :::::::::::::::
 
@@ -459,7 +466,7 @@ Funksjonsuttrykk $f(x)$
 ## Bestemme $f(x)$ med CAS
 En annen måte å finne $f(x)$ på er å sette opp et likningssystem for koeffisientene $a$, $b$ og $c$ som vi løser med CAS. Dette er spesielt nyttig i situasjoner hvor vi verken kan lese av symmetrilinje eller skjæring med $y$-aksen. Det skal du se nærmere på i Utforsk 1. 
 
-:::::::::::::::{explore} Utforsk 1
+:::::::::::::::{explore-2} Utforsk 1
 Nedenfor vises grafen til en andregradsfunksjon $f$. Grafen går gjennom punktene $(-3, 0)$, $(2, 0)$ og $(0, 12)$.
 
 :::{figure} ./figurer/utforsk/utforsk_1/figur.svg
@@ -480,11 +487,8 @@ width: 80%
 ---
 :::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 
 :::{cas-popup}
 ---
@@ -497,15 +501,16 @@ Bruk CAS til å bestemme koeffisientene til $f(x) = ax^2 + bx + c$ slik som det 
 
 Hva blir $f(x)$? 
 
-::::{answer}
+::::{answer-2}
 $$
 f(x) = -2x^2 - 2x + 12
 $$
 ::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 :::{cas-popup}
 ---
@@ -518,11 +523,11 @@ Grafen til en andregradsfunksjon $g$ går gjennom punktene $(0, 4)$, $(1, 3)$ og
 Bestem $g(x)$ med CAS.
 
 
-::::{answer}
+::::{answer-2}
 :::{figure} ./figurer/utforsk/utforsk_1/b.png
 ---
 class: no-click, adaptive-figure
-width: 80%
+width: 60%
 ---
 :::
 
@@ -535,7 +540,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 :::{cas-popup}
 ---
 layout: sidebar
@@ -546,7 +551,7 @@ Grafen til en andregradsfunksjon $h$ går gjennom punktene $(0, 1)$, $(1, 0)$ og
 
 Bestem $h(x)$ med CAS.
 
-::::{answer}
+::::{answer-2}
 :::{figure} ./figurer/utforsk/utforsk_1/c.png
 ---
 class: no-click, adaptive-figure
@@ -561,7 +566,7 @@ $$
 :::::::::::::
 
 
-::::::::::::::
+
 
 :::::::::::::::
 

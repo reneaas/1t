@@ -2,235 +2,196 @@
 
 
 :::::::::::::::{exercise} Oppgave 1
----
-level: 1
----
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Figuren nedenfor viser grafen til $f(x) = x + 3$.
-
-Bruk figuren til å løse ulikheten 
-
-$$
-x + 3 < 0.
-$$
-
-:::{figure} ./figurer/oppgaver/oppgave_1/a.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
+:::{plot}
+width: 100%
+align: right
+fontsize: 26
+function: x + 3, f
 :::
 
 
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
-Figuren nedenfor viser grafen til $f(x) = -2x + 4$. 
-
-Bruk figuren til å løse ulikheten
+Figuren til høyre viser grafen til 
 
 $$
--2x + 4 \leq 0.
+f(x) = x + 3
 $$
 
-
-:::{figure} ./figurer/oppgaver/oppgave_1/b.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
+:::{clear}
 :::
 
-:::::::::::::
-
-
-:::::::::::::{tab-item} c
-Figuren nedenfor  viser grafen til $f(x) = \dfrac{1}{2}x - 1$. 
-
-Bruk figuren til å løse ulikheten
+:::::::::::::{part} a
+Bruk grafen til å løse ulikheten 
 
 $$
-\frac{1}{2}x - 1 > 0.
+f(x) \gt 0
 $$
 
-:::{figure} ./figurer/oppgaver/oppgave_1/c.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
-:::
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} d
-Figuren nedenfor viser grafen til $f(x) = 3x - 6$. 
-
-Bruk figuren til å løse ulikheten
-
+:::::{answer}
 $$
-3x - 6 \geq 0.
+x \gt -3
 $$
-
-:::{figure} ./figurer/oppgaver/oppgave_1/d.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
-:::
+:::::
 
 :::::::::::::
 
 
 
-::::::::::::::
+:::::::::::::{part} b
+Bruk grafen til å løse ulikheten
+
+$$
+f(x) \leq 3
+$$
+
+:::::{answer}
+$$
+x \leq 0
+$$
+:::::
+:::::::::::::
+
+
+
+:::::::::::::{part} c
+Bruk grafen til å løse ulikheten
+
+$$
+f(x) \geq 5
+$$
+
+:::::{answer}
+$$
+x \geq 2
+$$
+:::::
+:::::::::::::
+
+
 
 :::::::::::::::
 
 
----
 
 
 :::::::::::::::{exercise} Oppgave 2
----
-level: 1
----
 
-
-Bruk graftegner i Geogebra til å løse ulikhetene nedenfor.
-
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-
-
-:::{ggb-popup}
----
-layout: sidebar
----
+:::{plot}
+width: 100%
+align: right
+fontsize: 26
+function: -2*x + 4, g
 :::
 
 
+Figuren til høyre viser grafen til
 
 $$
-2x + 6 \leq -x + 3
+g(x) = -2x + 4
 $$
-:::::::::::::
 
 
-:::::::::::::{tab-item} b
-:::{ggb-popup}
----
-layout: sidebar
----
+:::{clear}
 :::
 
+:::::::::::::{part} a
+bruk grafen til å løse ulikheten 
 
 $$
--2x + 3 > 1
-$$
-:::::::::::::
-
-
-:::::::::::::{tab-item} c
-:::{ggb-popup}
----
-layout: sidebar
----
-:::
-
-
-$$
-\dfrac{3}{2}x + 1 < x + 2
-$$
-:::::::::::::
-
-
-
-:::::::::::::{tab-item} d
-
-$$
-2x + 5 \geq -3x + 2
+g(x) \geq 0
 $$
 
+:::::{answer}
+$$
+x \leq 2
+$$
+:::::
 
 :::::::::::::
 
 
+:::::::::::::{part} b
+Bruk grafen til å løse ulikheten
 
-::::::::::::::
+$$
+g(x) \lt -2
+$$
 
+:::::{answer}
+$$
+x \gt 3
+$$
+:::::
+
+:::::::::::::
+
+
+:::::::::::::{part} c
+Bruk grafen til å løse ulikheten
+
+$$
+g(x) \leq 2
+$$
+
+
+:::::{answer}
+$$
+x \geq 1
+$$
+:::::
+
+
+:::::::::::::
 
 :::::::::::::::
 
 
+
 ---
+
 
 
 :::::::::::::::{exercise} Oppgave 3
----
-level: 1
----
+Løs ulikhetene algebraisk.
 
 
-Løs ulikhetene algebraisk. 
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 $$
-2x + 5 < -2
+2x + 5 \lt -2
 $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 $$
-3x + 2 > -2x + 7
+3x + 2 \gt -2x + 7
 $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+
+:::::::::::::{part} c
 $$
 \dfrac{1}{5}x + 3 \leq -2x + 3
 $$
-
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 $$
 -2x + \dfrac{1}{2} \geq 5x + 3
 $$
-
-
 :::::::::::::
 
-
-::::::::::::::
 :::::::::::::::
 
 
+
 ---
+
 
 
 :::::::::::::::{exercise} Oppgave 4
----
-level: 1
----
+Løs ulikhetene med CAS.
 
 ::::{hints} Hvordan løser jeg en ulikhet med CAS?
 Nedenfor ser du en gif som løser ulikheten
@@ -254,13 +215,8 @@ $$
 
 ::::
 
-Bruk CAS til å løse ulikhetene.
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 :::{cas-popup}
 ---
 layout: sidebar
@@ -268,14 +224,21 @@ layout: sidebar
 :::
 
 $$
--2x + 3 > 2x + 6
+-2x + 3 \gt 2x + 6
 $$
+
+
+:::::{answer}
+$$
+x \lt -\dfrac{3}{4}
+$$
+:::::
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 :::{cas-popup}
 ---
@@ -289,11 +252,17 @@ $$
 $$
 
 
+:::::{answer}
+$$
+x \geq \dfrac{9}{8}
+$$
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-
+:::::::::::::{part} c
 :::{cas-popup}
 ---
 layout: sidebar
@@ -306,11 +275,17 @@ $$
 $$
 
 
+:::::{answer}
+$$
+x \geq \dfrac{4}{5}
+$$
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
-
+:::::::::::::{part} d
 :::{cas-popup}
 ---
 layout: sidebar
@@ -318,141 +293,106 @@ layout: sidebar
 :::
 
 $$
--7x + 3 < 3x + 7
+-7x + 3 \lt 3x + 7
 $$
 
 
+
+:::::{answer}
+$$
+x \gt -\dfrac{2}{5}
+$$
+:::::
+
 :::::::::::::
-
-
-
-::::::::::::::
 
 :::::::::::::::
 
 
+
 ---
+
 
 
 :::::::::::::::{exercise} Oppgave 5
----
-level: 2
----
+Nedenfor grafen til fire lineære funksjoner.
 
-I figuren nedenfor vises grafene til to lineære funksjoner $f$ og $g$.
-
-:::{figure} ./figurer/oppgaver/oppgave_5/figur.svg
+::::{multi-plot2}
 ---
-class: no-click, adaptive-figure
-width: 70%
+rows: 2
+cols: 2
+fontsize: 24
 ---
+:::{plot}
+width: 100%
+function: x + 3
+text: 5, 5, "A", center-center, bbox
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Løs ulikheten 
-
-$$
-f(x) < 0
-$$
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
-Løs ulikheten
-
-$$
-g(x) \geq 3
-$$
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} c
-Løs ulikheten 
-
-$$
-f(x) \leq g(x)
-$$
-
-
-:::::::::::::
-
-
-::::::::::::::
-
-:::::::::::::::
-
-
----
-
-
-:::::::::::::::{exercise} Oppgave 6
----
-level: 2
----
-
-:::{cas-popup}
----
-layout: sidebar
----
+:::{plot}
+width: 100%
+function: -x + 3
+text: 5, 5, "B", center-center, bbox
 :::
 
-To lineære funksjoner $f$ og $g$ er gitt ved
+:::{plot}
+width: 100%
+function: -x + 1
+text: 5, 5, "C", center-center, bbox
+:::
+
+
+:::{plot}
+width: 100%
+function: x - 1
+text: 5, 5, "D", center-center, bbox
+:::
+
+::::
+
+
+:::::::::::::{part} a
+Avgjør hvilken funksjon som tilfredsstiller at
 
 $$
-f(x) = -\dfrac{1}{2}x + 3 \qog g(x) = 2(x - 1) + 3
+f(x) \geq 0 \liff x \geq 1
 $$
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::{answer}
+Funksjon D.
+:::::
+:::::::::::::
 
 
-Løs ulikheten
+:::::::::::::{part} b
+Avgjør hvilken funksjon som tilfredsstiller at
 
 $$
-f(x) > 0
+f(x) \gt 3 \liff x \lt 0
 $$
+
+
+:::::{answer}
+Funksjon A.
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
 
-
-
-Løs ulikheten
-
+:::::::::::::{part} c
+Avgjør hvilken funksjon som tilfredsstiller at
 
 $$
-g(x) < -2
+f(x) \lt 2 \liff x \lt 3
 $$
 
+:::::{answer}
+Funksjon D.
+:::::
 :::::::::::::
-
-
-:::::::::::::{tab-item} c
-
-
-
-Løs ulikheten
-
-$$
-f(x) \geq g(x)
-$$
-
-:::::::::::::
-
-
-::::::::::::::
 
 
 :::::::::::::::

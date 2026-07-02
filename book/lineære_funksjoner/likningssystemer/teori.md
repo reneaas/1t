@@ -54,71 +54,61 @@ til formen $y = ax + b$ ved å løse likningen for $y$. Men dette fungerer bare 
 Til nå har vi tenkt på lineære funksjoner som linjer på formen $y = ax + b$ der $y = f(x)$. Vi har også sett at vi kan skrive disse på {popup}`nullpunktsform<$y = a(x - x_1)$>` og {popup}`ettpunktsform<$y = a(x - x_0) + y_0$>`. Men linjer i planet trenger ikke alltid være lineære funksjoner. Mer generelt kan vi dele linjer inn i tre kategorier:
 1. **Skrå linjer**: Linjer som kan skrives på de tre formene vi har sett på tidligere.
 2. **Horisontale linjer**: Linjer som er på formen $y = \text{konstant}$, for eksempel $y = 3$.
-3. **Loddrette linjer**: Linjer som er på formen $x = \text{konstant}$, for eksempel $x = -2$.
+3. **Vertikale linjer**: Linjer som er på formen $x = \text{konstant}$, for eksempel $x = -2$.
 
 :::::::::::::::{example} Eksempel 1
-Nedenfor ser du et eksempel på hver av de tre typene linjer i planet
+Nedenfor ser du et eksempel på hver av de tre typene linjer i planet. 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} Skrå linje
-:::{figure} ./figurer/eksempler/eksempel_1/skrå_linje.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-viser en skrå linje som svarer til en linje med likningen $y = -\dfrac{4}{3}x + \dfrac{2}{3}$. Men vi kan også gange denne likningen med $3$ for å kunne skrive den som $4x + 3y = 2$. 
+* Den blå linja er en vertikal linje med likningen $x = -2$
+* Den røde linja er en horisontal linje med likningen $y = 3$
+* Den grønne linja er en skrå linje med likningen $4x + 3y = 2$
+
+
+:::{plot}
+width: 70%
+line-segment: (-2, -6), (-2, 6), blue
+line-segment: (-6, 3), (6, 3), red
+curve: t, -4/3 * t + 2/3, (-6, 6), teal
+text: -2, -4.5, "$x = -2$", center-center, bbox
+text: 4, 3, "$y = 3$", center-center, bbox
+text: 2.5, -2.5, "$4x + 3y = 2$", center-center, bbox
 :::
-:::::::::::::
-
-:::::::::::::{tab-item} Horisontal linje
-:::{figure} ./figurer/eksempler/eksempel_1/horisontal_linje.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-viser en horisontal linje $y = 3$. Her har vi ikke noe $x$-ledd som betyr at linja har samme $y$-verdi uansett hvilken verdi $x$ har. Vi kan også skrive denne linja som $0x + 1y = 3$, men det gjør vi sjeldent.
-:::
-:::::::::::::
-
-:::::::::::::{tab-item} Vertikal linje
-:::{figure} ./figurer/eksempler/eksempel_1/vertikal_linje.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-viser en vertikal linje $x = -2$. Her har vi ikke noe $y$-ledd som betyr at linja har samme $x$-verdi uansett hvilken verdi $y$ har. Vi kan også skrive denne linja som $1x + 0y = -2$, men det gjør vi typisk ikke.
-:::
-:::::::::::::
 
 
-::::::::::::::
 
 :::::::::::::::
 
+
+
+Når vi løser et likningssystem grafisk, tegner vi grafene til de to likningene og leser av skjæringspunktet $(x, y)$. Dette vil være verdiene for $x$ og $y$ som oppfyller begge likningene i systemet samtidig. La oss se på et eksempel:
+
+
+
 :::::::::::::::{example} Eksempel 2
-Nedenfor ser du grafene til to linjer som er gitt ved likningssystemet
+:::{plot}
+width: 380px
+align: right
+curve: t, -1/3 * (t + 1), (-6, 6), blue
+curve: t, 1/2 * (3 * t- 8), (-6, 6), red
+text: 3.5, 2, "$-3x + 2y = -8$", center-center, bbox
+text: -4, 1, "$x + 3y = -1$", center-center, bbox
+fontsize: 26
+:::
+
+Til høyre ser du grafene til to linjer som er gitt ved likningssystemet
 
 \begin{align*}
     x + 3y &= -1 \\
     -3x + 2y &= -8
 \end{align*}
 
-:::{figure} ./figurer/eksempler/eksempel_2/figur.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
 
 
 Bruk figuren til å løse likningssystemet.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Løsningen av likningssystemet er koordinatene til skjæringspunktet mellom de to linjene. Fra figuren ser vi at skjæringspunktet er $(2, -1)$. Vi kan derfor uttrykke løsningen som 
 
@@ -173,6 +163,14 @@ $$
 ---
 
 :::::::::::::::{exercise} Underveisoppgave 1
+
+:::{ggb-popup}
+---
+layout: sidebar
+---
+:::
+
+
 Bruk graftegneren i Geogebra til å løse likningssystemet
 
 \begin{align*}
@@ -181,15 +179,12 @@ Bruk graftegneren i Geogebra til å løse likningssystemet
 \end{align*}
 
 
-:::{ggb}
-:::
 
-
-::::{answer}
+:::::{answer}
 $$
 x = 4 \and y = 3
 $$
-::::
+
 
 ::::{solution}
 Vi skriver inn likningene og bruker skjæring mellom to objekt {ggb-icon}`mode_intersect`. Se figuren nedenfor:
@@ -209,6 +204,8 @@ x = 4 \and y = 3
 $$
 
 ::::
+
+:::::
 
 :::::::::::::::
 
@@ -237,7 +234,7 @@ x + 2y &= -1
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi starter med å nummerere likningene for å enklere kunne beskrive hva som foregår i utregningene:
 
@@ -320,7 +317,7 @@ x - y &= 7
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 La oss starte med å nummerere likningene:
 
@@ -361,7 +358,7 @@ $$
 ---
 
 :::::::::::::::{exercise} Underveisoppgave 3
-Løs likningssystemet nedenfor med Addisjonsmetoden
+Løs likningssystemet nedenfor med *addisjonsmetoden*
 
 \begin{align*}
 x - 2y &= 8 \\
@@ -395,13 +392,7 @@ class: no-click, adaptive-figure
 
 
 
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-
+:::::::::::::{part} a
 :::{cas-popup}
 ---
 layout: sidebar
@@ -411,13 +402,10 @@ layout: sidebar
 
 
 Bruk CAS-vinduet til å løse det samme likningssystemet slik det er vist i gif-en ovenfor.
-
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
-
+:::::::::::::{part} b
 :::{cas-popup}
 ---
 layout: sidebar
@@ -435,10 +423,17 @@ $$
 \end{align*}
 $$
 
+
+:::::{answer-2}
+$$
+x = \dfrac{3}{2} \and y = 1
+$$
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 :::{cas-popup}
 ---
 layout: sidebar
@@ -452,12 +447,23 @@ Bruk CAS-vinduet til å løse likningssystemet gitt ved
 3x + 2y &= 8 \\
 2x - 4y &= -2
 \end{align*}
+
+
+:::::{answer-2}
+$$
+x = \dfrac{7}{4} \and y = \dfrac{11}{8}
+$$
+:::::
+
+
 :::::::::::::
 
 
-::::::::::::::
 
 :::::::::::::::
+
+
+
 
 ## Løsning med programmering
 
@@ -467,39 +473,6 @@ I forbindelse med likningssystemer betyr det at vi systematisk prøver ut mange 
 
 
 :::::::::::::::{explore} Utforsk 2
-Nedenfor vises et program som lager mange forskjellige punkter $(x, y)$ i et grid og skriver ut verdiene til punktene. 
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Hvilken av figurene nedenfor tror du viser alle punktene som programmet skriver ut? 
-
-Kjør programmet til slutt og sjekk svaret ditt.
-
-> Klikk gjerne på figuren for å se nærmere!
-
-:::{clickable-figure} ./figurer/utforsk/utforsk_2/a/merged_figure.svg
----
-width: 100%
----
-:::
-
-:::{interactive-code}
----
-predict:
----
-for x in range(0, 2):
-    for y in range(0, 3):
-        print((x, y))
-
-
-:::
-
-:::::::::::::
-
-:::::::::::::{tab-item} b
 
 :::{cas-popup}
 ---
@@ -508,46 +481,40 @@ layout: sidebar
 :::
 
 
-Nedenfor vises et program som løser et likningssystem ved å prøve ut mange punkter $(x, y)$. 
+Nedenfor vises noen programmer som løser likningssystemer ved å bruke ut mange punkter $(x, y)$.
 
-Bruk CAS-vinduet til å bestemme hva som skrives ut av programmet, og sjekk deretter svaret ditt ved å kjøre programmet.
+Finn hvilket likningssystem programmet løser og forutsi hva programmet skriver ut ved å løse det med CAS.
 
 
+:::::::::::::{part} a
 :::{interactive-code}
 ---
 predict:
 ---
-for x in range(-5, 6):
-    for y in range(-5, 6):
+for x in range(-100, 101):
+    for y in range(-100, 101):
         if 2*x + 4*y == 12 and 3*x - y == -10:
             print((x, y))
 
 
 :::
-
 :::::::::::::
 
-:::::::::::::{tab-item} c
-Fyll ut programmet nedenfor slik at det løser likningssystemet
 
-\begin{align*}
-x + y &= -1 \\
-x - y &= 3
-\end{align*}
-
+:::::::::::::{part} b
 :::{interactive-code}
-# TODO: bytt ut ????
-
-for x in range(-10, 11):
-    for y in range(-10, 11):
-        if ????:
+---
+predict:
+---
+for x in range(-100, 101):
+    for y in range(-100, 101):
+        if 3*x + y == 2 and -x + 5*y == -22:
             print((x, y))
+
+
 :::
-
-
-
 :::::::::::::
-::::::::::::::
+
 
 
 :::::::::::::::

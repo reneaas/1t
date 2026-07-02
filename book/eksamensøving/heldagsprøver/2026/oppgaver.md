@@ -1,18 +1,13 @@
-# Vår 2026
+# Heldagsprøve Vår 2026
 
 
 
-## Del 1
-
-> 3 timer uten hjelpemidler
+## Del 1 – 3 timer – Uten hjelpemidler
 
 
 :::::::::::::::{exercise} Oppgave 1
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -21,10 +16,8 @@ $$
 
 Bestem i hvilke punkter grafen til $f$ skjærer $x$-aksen.
 
-::::{answer}
+:::::{answer}
 $(-3, 0)$ og $(4, 0)$.
-::::
-
 
 ::::{solution}
 Grafen til $f$ skjærer $x$-aksen i de punktene der $f(x) = 0$. Vi løser denne likningen med $abc$-formelen:
@@ -42,10 +35,15 @@ $$
 Altså skjærer grafen til $f$ gjennom $x$-aksen i $(-3, 0)$ og $(4, 0)$.
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
+---
+open:
+---
 En andregradsfunksjon $g$ er gitt ved
 
 $$
@@ -55,9 +53,8 @@ $$
 Bestem koordinatene til bunnpunktet til grafen til $g$.
 
 
-::::{answer}
+:::::{answer}
 $(-2, -27)$.
-::::
 
 ::::{solution}
 Symmetrilinja (som gir $x$-koordinaten til bunnpunktet) vil ligge midt mellom nullpunktene. Vi kan lese av at nullpunktene er $x = -5$ og $x = 1$. Symmetrilinja er gitt ved gjennomsnittet av de to nullpunktene:
@@ -74,12 +71,16 @@ $$
 
 Altså er koordinatene til bunnpunktet $(-2, -27)$.
 ::::
+:::::
 
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
+---
+open:
+---
 Bestem $a$, $b$ og $c$ slik at likningen nedenfor er en identitet.
 
 $$
@@ -89,11 +90,10 @@ $$
 
 
 
-::::{answer}
+:::::{answer}
 $$
 a = -2 \and b = -2 \and c = 12.
 $$
-::::
 
 ::::{solution}
 Uttrykket på høyre side er gitt ved andregradsuttrykket på ekstremalpunktsform der $a$ er den ledende koeffisienten, $b$ er symmetrilinja og $c$ er $y$-koordinaten til ekstremalpunktet. 
@@ -120,6 +120,8 @@ $$
 a = -2 \and b = -2 \and c = 12.
 $$
 ::::
+
+:::::
 
 :::::::::::::
 
@@ -152,7 +154,7 @@ ymax: 10
 
 
 
-::::{answer}
+:::::{answer}
 > Det er flere korrekte svar. Nedenfor vises de tre mulighetene.
 
 Nullpunktsform:
@@ -163,7 +165,6 @@ Ekstremalpunktsform:
 
 Standardform:
 : $f(x) = -2x^2 - 4x + 6$.
-::::
 
 
 ::::{solution}
@@ -186,6 +187,7 @@ $$
 
 
 **Ekstremalpunktsform**
+
 Vi har fortsatt at den ledenede koeffisienten er $a = -2$. Vi kan lese av at ekstremalpunktet er $(-1, 8)$ som betyr at
 
 $$
@@ -194,6 +196,7 @@ $$
 
 
 **Standardform**
+
 På standardform vil $f(x)$ være gitt ved
 
 $$
@@ -231,6 +234,8 @@ f(x) = -2x^2 - 4x + 6.
 $$
 
 ::::
+:::::
+
 
 
 :::::::::::::::
@@ -248,20 +253,15 @@ $$
 f(x) = x^3 + 5x^2 + 8x + 4
 $$
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem nullpunktene til $f$.
 
 
-::::{answer}
+:::::{answer}
 $$
 x = -2 \qog x = -1.
 $$
-::::
-
 
 ::::{solution}
 Alle mulige heltallige nullpunkter vil kunne dele kontantleddet til $f(x)$. Det betyr at kandidatene for heltallige nullpunkter er
@@ -294,6 +294,7 @@ $$
 
 
 ::::
+:::::
 
 
 
@@ -301,18 +302,16 @@ $$
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Løs ulikheten $f(x) < 0$.
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in \langle \gets, -1 \rangle \setminus \{-2\}.
 $$
 
 > En alternativ måte å uttrykke løsningen på kan være $x \in \langle \gets, -2\rangle \cup \langle -2, -1 \rangle$.
-
-::::
 
 ::::{solution}
 For å løse ulikheten $f(x) < 0$ tegner vi et fortegnsskjema:
@@ -333,10 +332,12 @@ $$
 
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-::::::::::::::
 :::::::::::::::
 
 
@@ -367,7 +368,7 @@ Påstand 3
 
 
 
-::::{answer}
+:::::{answer}
 Påstand 1
 : Feil.
 
@@ -376,8 +377,6 @@ Påstand 2
 
 Påstand 3
 : Feil.
-::::
-
 
 ::::{solution}
 For å vurdere de tre påstandene starter vi først med å nullpunktsfaktorisere telleren og nevneren, og deretter forkorte brøken så mye som mulig. 
@@ -412,6 +411,9 @@ Påstand 3
 : Grafen til $f$ har ingen nullpunkter siden den forkortede brøken gir oss en konstant i telleren ikke kan være lik null. Dermed er påstand 3 feil.
 ::::
 
+:::::
+
+
 
 
 
@@ -442,34 +444,31 @@ print((x, f(x)))
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Hva er det Anna prøver å finne ut med programmet sitt?
 
 
-::::{answer}
+:::::{answer}
 Programmet finner toppunktet til grafen til $f$.
-::::
 
 ::::{solution}
 Programmet starter med $x = -3$ og øker verdien til $x$ med $1$ så lenge $f(x) < f(x + 1)$. Det betyr at programmet stadig sjekker om den neste funksjonsverdien er større enn den forrige. Med én gang dette ikke er sant, så stopper `while`{l=python}-løkka og skriver ut $(x, f(x))$ for den siste verdien av $x$. Det betyr at programmet finner toppunktet til grafen til $f$.
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem verdiene som skrives ut av programmet når det kjøres.
 
 
-::::{answer}
+:::::{answer}
 $$
 (-1, 3)
 $$
-::::
 
 ::::{solution}
 Siden programmet finner toppunktet til grafen til $f$, kan vi avgjøre verdiene programmet skriver ut ved å løse $f'(x) = 0$. 
@@ -507,10 +506,10 @@ $$
 Ergo skriver programmet ut $(-1, 3)$.
 ::::
 
+:::::
+
+
 :::::::::::::
-
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -583,10 +582,8 @@ $$
 :::::
 
 
-::::{answer}
+:::::{answer}
 Alternativ B og F.
-::::
-
 
 ::::{solution}
 Siden sparekontoen har en rente på $3~\%$ per år, betyr at vekstfaktoren $V$ til den prosentvise veksten er
@@ -608,6 +605,9 @@ Ergo er alternativ B og alternativ F riktige uttrykk for regnestykket.
 
 ::::
 
+:::::
+
+
 
 :::::::::::::::
 
@@ -618,11 +618,9 @@ Ergo er alternativ B og alternativ F riktige uttrykk for regnestykket.
 
 
 :::::::::::::::{exercise} Oppgave 7
-Grafen til den deriverte $f'$ til en funksjon $f$ er vist i figuren nedenfor.
-
-
 :::{plot}
-width: 50%
+width: 100%
+align: right
 yticks: off
 grid: off
 ymax: 10
@@ -631,6 +629,9 @@ xmax: 5
 function: (x + 2) * (x - 1) * (x - 3), f'
 fontsize: 26
 :::
+
+Grafen til den deriverte $f'$ til en funksjon $f$ er vist i figuren til høyre.
+
 
 
 Hvilken figur nedenfor viser grafen til $f$?
@@ -686,10 +687,8 @@ fontsize: 26
 ::::
 
 
-::::{answer}
+:::::{answer}
 Alternativ C.
-::::
-
 
 ::::{solution}
 Grafen til $f'$ skjærer $x$-aksen i 
@@ -705,6 +704,8 @@ Fra grafen til $f'(x)$ kan vi se at $f'(x) < 0$ når $x < -2$ som betyr at grafe
 Ergo er det riktige svaret alternativ C.
 ::::
 
+:::::
+
 :::::::::::::::
 
 
@@ -717,7 +718,7 @@ Ergo er det riktige svaret alternativ C.
 Grafen til en rasjonal funksjon $f$ er vist i figuren nedenfor.
 
 :::{plot}
-width: 70%
+width: 60%
 function: 2 * (x + 2) * (x - 2) / ((x + 1) * (x - 1)), f
 vline: -1, dashed, red
 vline: 1, dashed, red
@@ -734,12 +735,10 @@ Husk å forklare hvordan du har tenkt.
 
 
 
-::::{answer}
+:::::{answer}
 $$
-f(x) = \dfrac{2(x + 2)(x - 2)}{(x + 1)(x - 1)}.
+f(x) = \dfrac{2(x + 2)(x - 2)}{(x + 1)(x - 1)}
 $$
-::::
-
 
 ::::{solution}
 Vi kan skrive $f(x)$ som
@@ -758,9 +757,11 @@ Grafen til $f$ har en horisontal asymptote $y = 2$ som betyr at både $P(x)$ og 
 For å sikre at grafen til $f$ får riktig horisontal asymptote, må vi velge at $a = 2$. Dermed har vi at
 
 $$
-f(x) = \dfrac{2(x + 2)(x - 2)}{(x + 1)(x - 1)}.
+f(x) = \dfrac{2(x + 2)(x - 2)}{(x + 1)(x - 1)}
 $$
 ::::
+
+:::::
 
 
 
@@ -772,9 +773,7 @@ $$
 
 
 
-## Del 2
-
-> 2 timer med hjelpemidler
+## Del 2 - 2 timer - Med hjelpemidler
 
 
 :::::::::::::::{exercise} Oppgave 1
@@ -788,6 +787,7 @@ En mynt blir sluppet fra ulike høyder. Farten mynten hadde rett før den traff 
 :::{table}
 ---
 transpose:
+width: 80%
 ---
 labels: Høyde (meter), Fart (meter per sekund)
 $0.5$, $3.1$
@@ -811,20 +811,16 @@ der mynten blir sluppet $x$ meter over bakken og har farten $F(x)$ målt i meter
 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bruk opplysningene i tabellen ovenfor til å bestemme $a$ og $b$.
 
 
 
-::::{answer}
+:::::{answer}
 $$
 a = 4.3974 \and b = 0.507
 $$
-::::
 
 ::::{solution}
 Vi legger inn opplysningene i et regneark som følger:
@@ -855,23 +851,24 @@ $$
 
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Den største farten en mynt kan oppnå på grunn av luftmotstand er $20$ meter per sekund.
 
 Gjør beregninger og anslå gyldighetsområdet til modellen.
 
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in [0, 19.84]
 $$
-::::
 
 ::::{solution}
 Vi bruker verdiene for $a$ og $b$ vi fant i forrige deloppgave og lager oss en potensfunksjon
@@ -900,10 +897,9 @@ som er et anslag på gyldighetsområdet til modellen ut ifra opplysningen om den
 
 
 ::::
+
+:::::
 :::::::::::::
-
-
-::::::::::::::
 
 
 
@@ -917,9 +913,7 @@ som er et anslag på gyldighetsområdet til modellen ut ifra opplysningen om den
 
 
 :::::::::::::::{exercise} Oppgave 2
----
-aids: true
----
+
 Funksjonen $f$ er gitt ved
 
 $$
@@ -933,7 +927,7 @@ Se figuren nedenfor.
 
 :::{plot}
 fontsize: 26
-width: 60%
+width: 50%
 ticks: off
 function: -x**3 + 6 * x**2, (0, 6), f
 xmin: -0.5
@@ -952,19 +946,14 @@ polygon: (0, 0), (k, 0), (k, f(k)), (0, f(k)), blue, 0.2
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem arealet dersom $k = 2$.
 
 
-::::{answer}
+:::::{answer}
 $$
 32
 $$
-::::
 
 ::::{solution}
 Arealet av rektangelet er gitt ved 
@@ -974,19 +963,20 @@ A = 2 \cdot f(2) = 2 \cdot (-2^3 + 6 \cdot 2^2) = 32.
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem den verdien for $k$ som gir størst mulig areal av rektangelet.
 
 
 
-::::{answer}
+:::::{answer}
 $$
 k = \dfrac{9}{2}.
 $$
-::::
 
 ::::{solution}
 Vi setter opp en funksjon for arealet av rektangelet:
@@ -1013,12 +1003,9 @@ $$
 
 ::::
 
+:::::
+
 :::::::::::::
-
-::::::::::::::
-
-
-
 
 :::::::::::::::
 
@@ -1029,9 +1016,6 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 3
----
-aids: true
----
 
 Nedenfor vises de fire første figurene i en figurfølge. Arealet av den første figuren er $1$.
 
@@ -1154,15 +1138,15 @@ La $T_n$ være antall blå trekanter i figur $n$ og $A_n$ være arealet av én b
 Vi lar $F_n$ være arealet av alle de fargelagte trekantene i figur $n$.
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Lag en oversikt som vist nedenfor. Fyll ut tabellen.
+
+:::::::::::::{part} a
+Lag en oversikt som vist nedenfor. Skriv av tabellen og fyll ut.
 
 
 :::{table}
+---
+width: 80%
+---
 labels: $n$, $T_n$, $A_n$, $F_n$
 $1$, $1$, $1$, $1 \cdot 1$
 $2$, , , 
@@ -1174,6 +1158,9 @@ $4$, , ,
 
 ::::{answer}
 :::{table}
+---
+width: 80%
+---
 labels: $n$, $T_n$, $A_n$, $F_n$
 $1$, $1$, $1$, $1 \cdot 1$
 $2$, $3$, $\dfrac{1}{4}$, $3 \cdot \dfrac{1}{4}$
@@ -1187,16 +1174,14 @@ $4$, $3^3$, $\dfrac{1}{4^3}$, $3^3 \cdot \dfrac{1}{4^3}$
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem et uttrykk for $F_n$.
 
 
-::::{answer}
+:::::{answer}
 $$
 T_n = 3^{n - 1} \cdot \dfrac{1}{4^{n - 1}} = \left(\dfrac{3}{4}\right)^{n - 1} \qfor n = 1, 2, 3, \dots
 $$
-::::
-
 
 ::::{solution}
 Fra tabellen kan vi generalisere til at
@@ -1214,11 +1199,14 @@ $$
 
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Figurfølgen består av $100$ slike figurer som følger mønsteret ovenfor.
 
 Lag et program som beregner det samlede arealet til alle de blå fargelagte trekantene.
@@ -1261,7 +1249,6 @@ som gir utskriften
 :::::::::::::
 
 
-::::::::::::::
 
 
 :::::::::::::::
@@ -1273,9 +1260,7 @@ som gir utskriften
 
 
 :::::::::::::::{exercise} Oppgave 4
----
-aids: true
----
+
 
 En skoleklasse skal på tur og overnatter på hotell.
 
@@ -1284,10 +1269,8 @@ Hotellet tilbyr rom med 2 senger eller 4 senger. Klassen får plass på 18 rom. 
 Hvor mange rom var det med $2$ senger og hvor mange rom var det med $4$ senger?
 
 
-::::{answer}
+:::::{answer}
 $12$ rom med $2$ senger og $6$ rom med $4$ senger.
-::::
-
 
 ::::{solution}
 La $x$ være antall rom med $2$ senger og la $y$ være antall rom med $4$ senger. Da har vi at
@@ -1320,6 +1303,9 @@ Det betyr at det var $12$ rom med $2$ senger og $6$ rom med $4$ senger.
 
 ::::
 
+:::::
+
+
 :::::::::::::::
 
 
@@ -1328,9 +1314,6 @@ Det betyr at det var $12$ rom med $2$ senger og $6$ rom med $4$ senger.
 
 
 :::::::::::::::{exercise} Oppgave 5
----
-aids: true
----
 
 :::{plot}
 figsize: (6, 3)
@@ -1359,12 +1342,10 @@ Bestem det største mulige arealet figuren kan ha.
 
 
 
-::::{answer}
+:::::{answer}
 $$
 A_\mathrm{størst} = 125
 $$
-::::
-
 
 ::::{solution}
 Omkretsen til figuren tilfredsstiller likningen
@@ -1413,6 +1394,8 @@ $$
 
 
 ::::
+
+:::::
 
 
 :::::::::::::::

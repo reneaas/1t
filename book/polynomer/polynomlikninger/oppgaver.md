@@ -9,20 +9,14 @@ $$
 f(x) = x^3 + 4x^2 + x - 6
 $$
 
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Skriv ned alle *mulige* heltallsrøtter til $f$. 
+:::::::::::::{part} a
+Skriv ned alle *mulige* heltallsrøtter til $f(x)$. 
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in \{\pm 1, \pm 2, \pm 3, \pm 6\}. 
 $$
-::::
 
 ::::{solution}
 De mulige heltallsrøttene til $f$ er tall som deler konstantleddet $-6$. Alle hele tall som deler $-6$ er gitt ved 
@@ -30,71 +24,89 @@ De mulige heltallsrøttene til $f$ er tall som deler konstantleddet $-6$. Alle h
 $$
 x \in \{\pm 1, \pm 2, \pm 3, \pm 6\}. 
 $$
+::::
+
+:::::
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Ta utgangspunkt i listen fra **a** og finn én rot til $f(x)$. 
 
 Bruk polynomdivisjon til å faktorisere $f(x)$. 
 
-:::{answer}
+:::::{answer}
 Én mulighet er $x = 1$, som gir
 
 $$
 x^3 + 4x^2 + x - 6 = (x - 1)(x^2 + 5x + 6)
 $$
 
-:::
-
 ::::{solution}
-En av røttene til $f(x)$ er $x = 1$. Det kan vi se enten med et Horner-skjema eller vanlig polynomdivisjon:
 
 ````{tab} Horner-skjema
+Vi bruker Horner-skjema med de mulige heltallsrøttene til vi får en rest lik $0$. Vi starter med $x = 1$:
 
-:::{figure} ./koder/oppgaver/oppgave_1/b.svg
+:::{horner}
 ---
+p: x^3 + 4x^2 + x - 6
+x: 1
 width: 50%
-class: no-click, adaptive-figure
 ---
 :::
+
+Resten er lik $0$ som betyr at $x = 1$ er en rot. Kvotienten er $(x^2 + 5x + 6)$ som betyr at
+
+$$
+x^3 + 4x^2 + x - 6 = (x - 1)(x^2 + 5x + 6)
+$$
+
 
 ````
 
 ````{tab} Vanlig polynomdivisjon
 
-:::{figure} ./koder/oppgaver/oppgave_1/b_polydiv.svg
+Vi tester ut $f(x)$ for de mulige heltallsrøttene til vi finner at $f(x) = 0$. Vi har da at
+
+$$
+f(1) = 1^3 + 4 \cdot 1^2 + 1 - 6 = 0
+$$
+
+Altså er $x = 1$ en rot i polynomet. Vi utfører polynomdivisjonen med $f(x) : (x - 1)$ for å faktorisere $f(x)$:
+
+:::{polydiv}
 ---
-width: 90%
-class: no-click, adaptive-figure
+p: x^3 + 4x^2 + x - 6
+q: x - 1
+width: 70%
 ---
 :::
 
+Altså finner vi at
+
+$$
+x^3 + 4x^2 + x - 6 = (x - 1)(x^2 + 5x + 6)
+$$
+
 ````
-
-Dette betyr at 
-
-$$
-(x^3 + 4x^2 + x - 6) = (x - 1)(x^2 + 5x + 6)
-$$
 
 ::::
 
+:::::
+
 :::::::::::::
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Finn resten av nullpunktene til $f$. 
 
 Hvis nullpunktene er heltallige, sjekk at de også er en del av listen fra **a**.
 
 
-:::{answer}
+:::::{answer}
 $$
-x = 1 \or x = -2 \or x = -3
+x = -3 \or x = -2 \or x = 1
 $$
-:::
 
-
-:::{solution}
+::::{solution}
 Vi bruker $abc$-formelen med andregradspolynomet for å finne de resterende røttene til $f$:
 
 $$
@@ -116,16 +128,15 @@ $$
 Samtidig fant vi tidligere at $x = 1$ også var en rot, så dermed har vi 
 
 $$
-x = 1 \or x = -2 \or x = -3
+x = -3 \or x = -2 \or x = 1
 $$
-:::
+::::
+
+:::::
+
 
 :::::::::::::
 
-
-
-
-::::::::::::::
 
 
 
@@ -134,7 +145,338 @@ $$
 
 ---
 
+
+
 :::::::::::::::{exercise} Oppgave 2
+:::::::::::::{part} a
+Løs likningen
+
+$$
+x^3 + x^2 - 4x - 4 = 0
+$$
+
+
+:::::{answer}
+
+$$
+x = -2 \or x = -1 \or x = 2.
+$$
+
+
+::::{solution}
+Konstantleddet er $-4$. Heltallene som tilfredsstiller likningen må dele konstantleddet som betyr at vi har kandidatene:
+
+$$
+x = \pm 1, \pm 2, \pm 4
+$$
+
+Vi bruker er Horner-skjema for å prøve oss fram til vi får $0$ i rest:
+
+:::{horner}
+---
+p: x^3 + x^2 - 4x - 4
+x: 1
+width: 50%
+---
+:::
+
+Resten er lik $-6$ som betyr at $x = 1$ ikke er en løsning. Vi prøver videre med $x = -1$:
+
+:::{horner}
+---
+p: x^3 + x^2 - 4x - 4
+x: -1
+width: 50%
+---
+:::
+
+Nå ble resten lik $0$ som betyr at $x = -1$ er en rot i polynomet. Kvotienten i polynomdivisjonen er $(x^2 - 4)$ som betyr at
+
+$$
+x^3 + x^2 - 4x - 4 = (x + 1)(x^2 - 4).
+$$
+
+Andregradspolynomet kan vi faktorisere med konjugatsetningen:
+
+$$
+x^2 - 4 = (x - 2)(x + 2).
+$$
+
+Altså har vi at 
+
+$$
+x^3 + x^2 - 4x - 4 = (x + 1)(x - 2)(x + 2) = 0
+$$
+
+Løsningene av likningen er derfor 
+
+$$
+x = -2 \or x = -1 \or x = 2.
+$$
+
+
+
+
+::::
+:::::
+
+
+:::::::::::::
+
+
+
+:::::::::::::{part} b
+Løs likningen
+
+$$
+x^3 + 4x^2 - 3x - 18 = 0
+$$
+
+
+:::::{answer}
+$$
+x = -3 \or x = 2
+$$
+
+::::{solution}
+Konstantleddet i tredjegradspolynomet er $-18$. Heltallene som kan løse likningene må dele $-18$ som gir oss kandidatene
+
+$$
+x = \pm 1, \pm 2, \pm 3, \pm 6, \pm 9, \pm 18
+$$
+
+Vi bruker et Horner-skjema for å prøve oss fram til vi får $0$ i rest. Vi starter med $x = 1$:
+
+
+:::{horner}
+---
+p: x^3 + 4x^2 - 3x - 18
+x: 1
+width: 50% 
+---
+:::
+
+Resten ble ikke lik $0$, så $x = 1$ er ikke en løsning. Vi prøver oss fram med $x = -1$:
+
+
+:::{horner}
+---
+p: x^3 + 4x^2 - 3x - 18
+x: -1
+width: 50% 
+---
+:::
+
+Resten ble ikke lik $0$, så $x = -1$ er ikke en løsning. Vi prøver oss fram med $x = 2$:
+
+
+:::{horner}
+---
+p: x^3 + 4x^2 - 3x - 18
+x: 2
+width: 50% 
+---
+:::
+
+Nå ble resten lik $0$ som betyr at $x = 2$ er en løsning. Kvotienten i polynomdivisjonen er $(x^2 + 6x + 9)$ som betyr at
+
+
+$$
+x^3 + 4x^2 - 3x - 18 = (x - 2)(x^2 + 6x + 9)
+$$
+
+Vi kan faktorisere andregradspolynomet med 1.kvadratsetning:
+
+$$
+x^2 + 6x + 9 = (x + 3)^2
+$$
+
+Altså har vi at
+
+$$
+x^3 + 4x^2 - 3x - 18 = (x - 2)(x + 3)^2 = 0
+$$
+
+som betyr at løsningene til likningen er
+
+$$
+x = -3 \or x = 2
+$$
+
+
+::::
+:::::
+
+
+:::::::::::::
+
+
+:::::::::::::{part} c
+Løs likningen
+
+$$
+x^3 + 3x^2 + 3x + 1 = 0
+$$
+
+
+:::::{answer}
+$$
+x = -1
+$$
+
+::::{solution}
+Konstantleddet til polynomet er $+1$. Heltallene som kan tilfredsstille likningen må dele konstantleddet som betyr at de eneste to heltallene som er mulige er
+
+$$
+x = \pm 1
+$$
+
+Vi bruker et Horner-skjema og prøver oss fram til vi får $0$ i rest. Vi starter med $x = 1$: 
+
+
+:::{horner}
+---
+p: x^3 + 3x^2 + 3x + 1
+x: 1
+width: 30% 
+---
+:::
+
+Vi fikk ikke $0$ i rest, så $x = 1$ er ikke en løsning. Vi prøver oss fram med $x = -1$:
+
+:::{horner}
+---
+p: x^3 + 3x^2 + 3x + 1
+x: -1
+width: 50% 
+---
+:::
+
+Nå ble resten lik $0$ som betyr at $x = -1$ er en løsning. Kvotienten i polynomdivisjonen er $(x^2 + 2x + 1)$ som betyr at
+
+$$
+x^3 + 3x^2 + 3x + 1 = (x + 1)(x^2 + 2x + 1)
+$$
+
+Vi kan bruke 1.kvadratsetning for å faktorisere andregradspolynomet:
+
+$$
+x^2 + 2x + 1 = (x + 1)^2
+$$
+
+Altså har vi at
+
+$$
+x^3 + 3x^2 + 3x + 1 = (x + 1)^3 = 0
+$$
+
+Det betyr at den eneste løsningen til likningen er
+
+$$
+x = -1
+$$
+
+
+::::
+:::::
+
+
+:::::::::::::
+
+
+
+:::::::::::::{part} d
+Løs likningen
+
+$$
+x^3 + 3x^2 - 4x - 12 = 0
+$$
+
+
+:::::{answer}
+$$
+x = -3 \or x = -2 \or x = 2
+$$
+
+::::{solution}
+Konstantleddet til polynomet er $-12$. Heltallene som løser likningen må dele konstantleddet som gir oss disse kandidatene:
+
+$$
+x = \pm 1, \pm 2, \pm 3, \pm 4, \pm 6, \pm 12
+$$
+
+Vi bruker et Horner-skjema til å prøve oss fram til vi får $0$ i rest. Vi starter med $x = 1$:
+
+:::{horner}
+---
+p: x^3 + 3x^2 - 4x - 12
+x: 1
+width: 50%
+---
+:::
+
+Vi fikk ikke $0$ i rest, så $x = 1$ er ikke en løsning. Vi prøver oss fram med $x = -1$:
+
+:::{horner}
+---
+p: x^3 + 3x^2 - 4x - 12
+x: -1
+width: 50%
+---
+:::
+
+Fortsatt ikke $0$ i rest, så $x = -1$ er ikke en løsning. Vi prøver oss fram med $x = 2$:
+
+
+:::{horner}
+---
+p: x^3 + 3x^2 - 4x - 12
+x: 2
+width: 50%
+---
+:::
+
+Nå fikk vi $0$ i rest som betyr at $x = 2$ er en løsning. Kvotienten i divisjonen kan vi lese av til å være $(x^2 + 5x + 6)$ som betyr at
+
+$$
+x^3 + 3x^2 - 4x - 12 = (x - 1) (x^2 + 5x + 6)
+$$
+
+Vi bruker $abc$-formelen til å finne røttene til andregradspolynomet:
+
+$$
+x = \dfrac{-5 \pm \sqrt{5^2 - 4 \cdot 1 \cdot 6}}{2 \cdot 1} = \dfrac{-5 \pm \sqrt{25 - 24}}{2} = \dfrac{-5 \pm 1}{2}
+$$
+
+som gir
+
+$$
+x = -2 \or x = -3
+$$
+
+Altså er løsningene av likningen
+
+$$
+x = -3 \or x = -2 \or x = 2
+$$
+
+
+
+
+::::
+:::::
+
+
+:::::::::::::
+
+
+:::::::::::::::
+
+
+---
+
+
+:::::::::::::::{exercise} Oppgave 3
 En tredjegradsfunksjon $f$ er gitt ved 
 
 $$
@@ -142,33 +484,27 @@ f(x) = x^3 - 3x^2 - 4x + 12.
 $$
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Bestem alle røttene til $f(x)$ og faktoriser $f(x)$ i lineære faktorer.
+:::::::::::::{part} a
+Finn nullpunktene til $f$.
 
 ::::{answer}
 $$
-x = 2 \or x = -2 \or x = 3
+x = -2 \or x = 2 \or x = 3
 $$
 ::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Tegn et fortegnsskjema for $f(x)$. 
 
 
 ::::{answer}
 
-:::{figure} ./figurer/oppgaver/oppgave_2/b.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
+:::{signchart-2}
+width: 70%
+function: x**3 - 3*x**2 - 4*x + 12, f(x) 
 :::
 
 ::::
@@ -176,18 +512,28 @@ class: no-click, adaptive-figure
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Lag en **skisse** av grafen til $f$. Marker nullpunktene. 
 
 
 ::::{answer}
 
-:::{figure} ./figurer/oppgaver/oppgave_2/c.svg
----
-width: 80%
-class: no-click, adaptive-figure
----
+
+:::{plot}
+width: 70%
+function: x**3 - 3*x**2 - 4*x + 12, f
+ticks: off
+point: (-2, 0)
+text: -2, 0, "$(-2, 0)$", bottom-right
+point: (2, 0)
+text: 2, 0, "$(2, 0)$", bottom-left
+point: (3, 0)
+text: 3, 0, "$(3, 0)$", bottom-right
+xmin: -3
+xmax: 4
+ymax: 18
 :::
+
 
 ::::
 
@@ -195,7 +541,7 @@ class: no-click, adaptive-figure
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Løs ulikheten $f(x) \geq 0$. 
 
 
@@ -207,8 +553,6 @@ $$
 ::::
 
 :::::::::::::
-
-::::::::::::::
 
 
 
@@ -225,34 +569,112 @@ f(x) = -2x^3 + 14x^2 - 14x - 30.
 $$
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem alle røttene til $f(x)$. 
 
 
-::::{answer}
+:::::{answer}
 $$
 x = -1 \or x = 3 \or x = 5. 
 $$
+
+
+::::{solution}
+Konstantleddet til $f(x)$ er $-30$. De mulige heltallige røttene til $f(x)$ må dele konstantleddet som gir mulighetene:
+
+$$
+x = \pm 1, \pm 2, \pm 3, \pm 5, \pm 6, \pm 10, \pm 15, \pm 30
+$$
+
+Vi bruker et Horner-skjema og prøver oss fram til vi får $0$ i rest:
+
+:::{horner}
+---
+p: -2x^3 + 14x^2 - 14x - 30
+x: 1
+width: 50% 
+---
+:::
+
+Vi får ikke $0$ i rest, så vi får videre til neste mulighet; vi prøver $x = -1$:
+
+
+:::{horner}
+---
+p: -2x^3 + 14x^2 - 14x - 30
+x: -1
+width: 50% 
+---
+:::
+
+Nå fikk vi $0$ i rest som betyr at $x = -1$ er en rot i $f(x)$. Kvotienten kan vi lese av til å være $(-2x^2 + 16x - 30)$ som betyr at
+
+$$
+f(x) = (x + 1)(-2x^2 + 16x - 30) = -2(x + 1)(x^2 - 8x + 15)
+$$
+
+Vi bruker nå $abc$-formelen på andregradspolynomet for å finne de resterende røttene:
+
+$$
+x = \dfrac{8 \pm \sqrt{(-8)^2 - 4 \cdot 1 \cdot 15}}{2 \cdot 1} = \dfrac{8 \pm \sqrt{64 - 60}}{2} = \dfrac{8 \pm 2}{2}
+$$
+
+som gir
+
+$$
+x = 3 \or x = 5
+$$
+
+Altså er røttene til $f(x)$ gitt ved
+
+$$
+x = -1 \or x = 3 \or x = 5
+$$
+
 ::::
+
+
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Løs ulikheten $f(x) \leq 0$. 
 
-::::{answer}
+:::::{answer}
 $$
--1 \leq x \and x \leq 3 \or 5 \leq x. 
+x \in [-1, 3] \cup [5\to\rangle
 $$
+
+::::{solution}
+Fra oppgave **a** fant vi at vi kan nullpunktsfaktorisere $f(x)$ som
+
+$$
+f(x) = -2(x + 1)(x - 3)(x - 5)
+$$
+
+Vi tegner et fortegnsskjema for å løse ulikheten $f(x) \leq 0$:
+
+
+:::{signchart-2}
+width: 70%
+function: -2 * (x + 1) * (x - 3) * (x - 5), f(x)
+:::
+
+Fra fortegnslinja til $f(x)$ kan vi lese av at $f(x) \leq 0$ når
+
+$$
+x \in [-1, 3] \cup [5\to\rangle
+$$
+
+
 ::::
+
+:::::
 :::::::::::::
 
-::::::::::::::
 
 :::::::::::::::
 
@@ -262,42 +684,101 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 4 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
 
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Løs tredjegradslikningen 
 
 $$
 x^3 - x^2 - 2x + 2 = 0. 
 $$
 
-::::{answer}
+:::::{answer}
 $$
-x = 1 \or x = -\sqrt{2} \or x = \sqrt{2}
+x = -\sqrt{2} \or x = 1 \or x = \sqrt{2}
 $$
+
+::::{solution}
+Konstantleddet til polynomet er $+2$. De mulige heltallene som løser likningen må dele konstantleddet som gir oss kandidatene
+
+$$
+x = \pm 1, \pm 2
+$$
+
+Vi prøver oss fram med et Horner-skjema til vi får $0$ i rest. Vi starter med $x = 1$:
+
+
+:::{horner}
+---
+p: x^3 - x^2 - 2x + 2
+x: 1
+width: 50% 
+---
+:::
+
+Vi får $0$ i rest. Fra Horner-skjemaet kan vi lese av at kvotienten i divisjonen er $(x^2 - 2)$. Det betyr at vi kan skrive
+
+$$
+x^3 - x^2 - 2x + 2 = (x - 1)(x^2 - 2)
+$$
+
+Vi kan faktorisere andregradspolynomet ved å finne de resterende røttene:
+
+$$
+x^2 - 2 = 0 \liff x^2 = 2 \liff x = \pm \sqrt{2}
+$$
+
+Altså er løsningene til likningen
+
+$$
+x = -\sqrt{2} \or x = 1 \or x = \sqrt{2}
+$$
+
+
 ::::
+
+:::::
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Løs ulikheten 
 
 $$
 x^3 - x^2 - 2x + 2 > 0. 
 $$
 
-::::{answer}
+:::::{answer}
 $$
-x \in \langle -\sqrt{2}, 1 \rangle \cup \langle \sqrt{2}, \to \rangle
+x \in \left\langle -\sqrt{2}, 1 \right\rangle \cup \left\langle \sqrt{2}, \to \right\rangle
 $$
+
+::::{solution}
+Gitt det faktoriserte uttrykket fra oppgave **a**, er ulikheten vår ekvivalent med
+
+$$
+\left(x+\sqrt{2}\right)(x - 1)\left(x - \sqrt{2}\right) > 0
+$$
+
+Vi tegner et fortegnsskjema for uttrykket og kaller det for $f(x)$:
+
+:::{signchart-2}
+width: 70%
+function: (x + sqrt(2)) * (x - 1) * (x - sqrt(2)), f(x)
+:::
+
+Fra fortegnslinja til $f(x)$ kan vi lese av at $f(x) > 0$ når
+
+$$
+x \in \left\langle -\sqrt{2}, 1 \right\rangle \cup \left\langle \sqrt{2}, \to \right\rangle
+$$
+
 ::::
+:::::
 
 :::::::::::::
 
-::::::::::::::
+
 
 :::::::::::::::
 
@@ -313,50 +794,100 @@ x^3 - 3x - 2 = (x + 1)(ax^2 + bx + c).
 $$
 
 
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem $a$, $b$ og $c$ slik at likningen er en **identitet**.
 
 
-::::{answer}
-Én mulighet er 
-
-$$
-x^3 - 3x - 2 = (x + 1)(x^2 - x - 2). 
-$$
-
-som gir
+:::::{answer}
 
 $$
 a = 1 \and b = -1 \and c = -2.
 $$
 
 
+::::{solution}
+Vi utfører polynomdivisjon med $(x + 1)$ med et Horner-skjema. Da bruker vi at $x = -1$:
+
+:::{horner}
+---
+p: x^3 - 3x - 2
+x: -1
+width: 50% 
+---
 :::
+
+Fra Horner-skjemaet kan vi umiddelbart hente ut at 
+
+$$
+a = 1 \and b = -1 \and c = -2
+$$
+
+
+::::
+
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Løs ulikheten 
 
 $$
 x^3 - 3x - 2 < 0. 
 $$
 
-::::{answer}
+:::::{answer}
 $$
 x \in \langle \gets, 2\rangle \setminus \{-1\}. 
 $$
+
+::::{solution}
+Vi vet allerede at 
+
+$$
+x^3 - 3x - 2 = (x + 1)(x^2 - x - 2)
+$$
+
+Vi bruker $abc$-formelen for å faktorisere andregradspolynomet i lineære faktorer:
+
+$$
+x = \dfrac{1 \pm \sqrt{(-1)^2 - 4 \cdot 1 \cdot (-2)}}{2 \cdot 1} = \dfrac{1 \pm \sqrt{9}}{2} = \dfrac{1 \pm 3}{2}
+$$
+
+som gir
+
+$$
+x = -1 \or x = 2
+$$
+
+Altså er 
+
+$$
+x^3 - 3x - 2 = (x + 1) (x + 1) (x - 2) = (x + 1)^2 (x - 2)
+$$
+
+Så tegner vi et fortegnsskjema for uttrykket og kaller uttrykket for $f(x)$:
+
+:::{signchart-2}
+width: 70%
+function: x**3 - 3*x - 2, f(x)
 :::
 
-:::::::::::::
+Vi kan se at $f(x) \lt 0$ når 
 
-::::::::::::::
+$$
+x \in \langle \gets, 2\rangle \setminus \{-1\}
+$$
+
+der vi har ekskludert $x = -1$ siden $f(-1) = 0$.
+
+
+::::
+
+:::::
+
+:::::::::::::
 
 
 :::::::::::::::
@@ -379,11 +910,10 @@ I hvilke punkter skjærer grafen til funksjonen $x$-aksen?
 
 
 
-::::{answer}
+:::::{answer}
 $$
 x = -3 \or x = -1 \or x = 2.
 $$
-::::
 
 ::::{solution}
 De mulige heltallige røttene til $f(x)$ er 
@@ -438,6 +968,8 @@ x = -3 \or x = -1 \or x = 2.
 $$
 ::::
 
+:::::
+
 :::::::::::::::
 
 
@@ -452,11 +984,7 @@ f(x) = 2x^3 + x^2 - 18x - 9
 $$
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Vis at divisjonen $f(x) : (x - 3)$ går opp.
 
 
@@ -475,7 +1003,7 @@ width: 70%
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Gjør beregninger og vurder hvilken av grafene nedenfor som kan være grafen til $f$.
 
 
@@ -526,8 +1054,6 @@ Graf B.
 :::::::::::::
 
 
-::::::::::::::
-
 
 :::::::::::::::
 
@@ -547,12 +1073,10 @@ $$
 Bestem $a$ og $b$ slik at likningen blir en identitet.
 
 
-::::{answer}
+:::::{answer}
 $$
 a = 2 \and b = 6 \or a = -6 \and b = -2
 $$
-::::
-
 
 ::::{solution}
 Vi utfører polynomdivisjonen 
@@ -607,6 +1131,8 @@ for at likningen skal bli en identitet.
 
 ::::
 
+:::::
+
 
 :::::::::::::::
 
@@ -618,173 +1144,84 @@ for at likningen skal bli en identitet.
 ---
 
 
-
-
-
 :::::::::::::::{exercise} Oppgave 9
-En fjerdegradslikning er gitt ved 
+En funksjon $f$ er gitt ved
 
 $$
-x^4 + 3x^3 - 15x^2 - 19x + 30 = 0.
+f(x) = x^3 + 4x^2 - 3x - 18
 $$
 
+Avgjør hvilken av grafene nedenfor som viser grafen til $f$.
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Lag en liste over alle *mulige* heltallige løsninger til likningen. 
 
-::::{admonition} Fasit
+::::{multi-plot2}
 ---
-class: dropdown, answer
+rows: 2
+cols: 2
+ticks: off
+ymax: 20
+ymin: -20
+fontsize: 30
 ---
-$$
-x \in \{\pm 1, \pm 2, \pm 3, \pm 5, \pm 6, \pm 10, \pm 15, \pm 30\}.
-$$
+:::{plot}
+function: (x - 2)**2 * (x + 3)
+text: 5, 15, "A", center-center, bbox
+:::
+
+:::{plot}
+function: (x - 2) * (x + 3)**2
+text: 5, 15, "B", center-center, bbox
+:::
+
+:::{plot}
+function: -(x - 2)**2 * (x + 3)
+text: 5, 15, "C", center-center, bbox
+:::
+
+:::{plot}
+function: x**3 + 6 * x**2 - 18
+text: 5, 15, "D", center-center, bbox
+:::
+
+
+
 ::::
 
-:::::::::::::
 
-:::::::::::::{tab-item} b
-Finn én løsning til likningen og faktoriser fjerdegradspolynomet i én lineær faktor og et tredjegradspolynom. 
+::::{answer}
+Graf B.
+::::
 
-::::{admonition} Fasit
+:::::::::::::::
+
+
 ---
-class: dropdown, answer
----
-$x = 1$ løser likningen. Fjerdegradspolynomet kan da skrives som 
+
+
+
+
+
+:::::::::::::::{exercise} Oppgave 10
+Bestem én mulighet for $a$, $b$, $c$ og $d$ slik at likningen nedenfor blir en identitet.
 
 $$
-(x^4 + 3x^3 - 15x^2 - 19x + 30) = (x - 1)(x^3 + 4x^2 - 11x - 30).
+x^4 + 3x^3 - 15x^2 - 19x + 30 = (x - a)(x - b)(x - c)(x - d)
 $$
+
+
+::::{hint}
+Her må du bruke polynomdivisjon to ganger. Først for å omgjøre fjerdegradspolynomet til et produkt av en lineær faktor og et tredjegradspolynom. Deretter gjentar du med tredjegradspolynomet som vanlig.
 ::::
 
 
-:::::{admonition} Løsning
----
-class: dropdown, solution
----
-$x = 1$ er en løsning til likningen så vi kan se fra et Horner-skjema eller vanlig polynomdivisjon:
 
-````{tab} Horner-skjema
-
-:::{figure} ./koder/oppgaver/oppgave_6/b.svg
----
-width: 70%
-class: no-click, adaptive-figure
----
-:::
-
-````
-
-````{tab} Vanlig polynomdivisjon
-
-:::{figure} ./koder/oppgaver/oppgave_6/b_polydiv.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
-:::
-
-````
-
-som gir $0$ i rest og 
-
+:::::{answer}
 $$
-\dfrac{x^4 + 3x^3 - 15x^2 - 19x + 30}{x - 1} = x^3 + 4x^2 - 11x - 30.
-$$
-
-Dermed er 
-
-$$
-(x^4 + 3x^3 - 15x^2 - 19x + 30) = (x - 1)(x^3 + 4x^2 - 11x - 30).
-$$
-
-:::::
-
-
-
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} c
-Finn én rot i tredjegradspolynomet og faktoriser polynomet i én lineær faktor og et andregradspolynom. 
-
-::::{admonition} Fasit
----
-class: dropdown, answer
----
-$x = -2$ er en rot i tredjegradspolynomet $(x^3 + 4x^2 - 11x - 30)$. Polynomet kan da skrives som
-
-$$
-(x^3 + 4x^2 - 11x - 30) = (x + 2)(x^2 + 2x - 15).
-$$
-::::
-
-:::::{admonition} Løsning
----
-class: dropdown, solution
----
-$x = -2$ løser likningen. Vi kan se dette fra et Horner-skjema eller vanlig polynomdivisjon:
-
-````{tab} Horner-skjema
-
-:::{figure} ./koder/oppgaver/oppgave_6/c.svg
----
-width: 70%
-class: no-click, adaptive-figure
----
-:::
-
-````
-
-````{tab} Vanlig polynomdivisjon
-
-:::{figure} ./koder/oppgaver/oppgave_6/c_polydiv.svg
----
-width: 90%
-class: no-click, adaptive-figure
----
-:::
-
-````
-
-som gir $0$ i rest. Dermed er 
-
-$$
-\dfrac{x^3 + 4x^2 - 11x - 30}{x + 2} = x^2 + 2x - 15.
-$$
-
-Altså kan vi skrive
-
-$$
-x^3 + 4x^2 - 11x - 30 = (x + 2)(x^2 + 2x - 15).
+x = -5 \or x = -2 \or x = 1 \or x = 3
 $$
 :::::
 
 
-:::::::::::::
-
-
-:::::::::::::{tab-item} d
-Bestem alle løsningene til likningen.
-
-
-::::{admonition} Fasit
----
-class: dropdown, answer
----
-$$
-x = 1 \or x = -2 \or x = 3 \or x = -5
-$$
-::::
-
-:::::::::::::
-
-::::::::::::::
 
 
 

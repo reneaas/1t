@@ -13,7 +13,7 @@
 Et algebraisk uttrykk består av variabler, koeffisienter, faktorer og ledd. Nedenfor ser du to eksempler på algebraiske uttrykk der vi har markert hvilke deler som hører til de ulike begrepene.
 
 
-:::::::::::::::{example} Eksempel 1
+:::::::::::::::{example-2} Eksempel 1
 :::::{grid}
 ::::{grid-item}
 :::{figure} ./figurer/teori/algebraisk_uttrykk_1.svg
@@ -38,7 +38,7 @@ class: no-click, adaptive-figure
 
 ---
 
-:::::{exercise} Underveisoppgave 1
+:::::{exercise-2} Underveisoppgave 1
 Bestem hvilke deler av uttrykket nedenfor som er **ledd**, **variabler**, **faktorer** og **koeffisienter**. 
 
 
@@ -47,7 +47,7 @@ $$
 $$
 
 
-::::{solution}
+::::{solution-2}
 Ledd
 : $3x^2$ og $4xy$
 
@@ -71,16 +71,16 @@ Koeffisienter
 ## Legge sammen algebraiske uttrykk
 Ofte må vi legge sammen eller trekke algebraiske uttrykk fra hverandre. Da legger vi sammen koeffisientene til like variabler. La oss se på et eksempel:
 
-:::::{example} Eksempel 2
+:::::::::::::::{example-2} Eksempel 2
 Skriv uttrykket nedenfor så enkelt som mulig
 
 $$
 3x + 4y - 5x + y
 $$
 
-::::{admonition} Løsning
+::::{solution-2}
 ---
-class: solution
+open:
 ---
 Vi legger sammen ledd som inneholder samme variabel:
 
@@ -89,38 +89,42 @@ $$
 $$
 ::::
 
-:::::
+:::::::::::::::
 
 ---
 
-:::::{exercise} Underveisoppgave 2
+:::::::::::::::{exercise-2} Underveisoppgave 2
 Skriv uttrykket nedenfor så enkelt som mulig
 
 $$
 6x - 3y + 2x + 5y 
 $$
 
-::::{answer}
+:::::{answer-2}
 $$
 8x + 2y
 $$
-::::
 
-::::{solution}
+
+::::{solution-2}
 Vi legger sammen ledd som inneholder samme variabel:
 
 $$
 6x - 3y + 2x + 5y = (6x + 2x) + (-3y + 5y) = 8x + 2y
 $$
 ::::
+
 :::::
+
+
+:::::::::::::::
 
 
 ---
 
+:::::::::::::::{summary-2} Åpne parentser
 Når vi åpner opp en parentes, gjelder følgende regneregler:
 
-:::::::::::::::{summary} Åpne parentser
 \begin{align*}
 a + (b + c) &= a + b + c \\
 \\
@@ -129,16 +133,16 @@ a - (b - c) &= a - b + c \\
 :::::::::::::::
 
 
-:::::::::::::::{example} Eksempel 3
+:::::::::::::::{example-2} Eksempel 3
 Trekk sammen uttrykket nedenfor.
 
 $$
 x + (2x - 3) - (4 - x)
 $$
 
-::::{solution}
+::::{solution-2}
 ---
-dropdown: 0
+open:
 ---
 \begin{align*}
 x + (2x - 3) - (4 - x) &= x + 2x - 3 - 4 + x \\
@@ -151,24 +155,21 @@ x + (2x - 3) - (4 - x) &= x + 2x - 3 - 4 + x \\
 
 :::::::::::::::
 
-## 1.Distributiv lov
+
+## Utvide og faktorisere algebraiske uttrykk
+
+
+:::::::::::::::{summary-2} 1.Distributiv lov
 Den 1.distributive loven lar oss utvide og faktorisere algebraiske uttrykk med en felles faktor. 
 
-
-:::::::::::::::{summary} 1.Distributiv lov
 For tall $a$, $b$ og $c$ gjelder
 
 $$
 a(b + c) = ab + ac
 $$
 
-:::::::::::::::
 
-
----
-
-:::::::::::::::{theory} Begrunnelse for 1.distributiv lov
-
+:::::{proof}
 Nedenfor vises et rektangel.
 
 :::{figure} ./figurer/bevis/bevis_1/figur_annotert.svg
@@ -195,6 +196,7 @@ De to arealene må være like, og da får vi 1.distributiv lov:
 $$
 a(b + c) = ab + ac
 $$
+:::::
 
 :::::::::::::::
 
@@ -202,7 +204,7 @@ $$
 
 Vi kan bruke 1.distributiv lov både til å utvide og faktorisere algebraiske uttrykk. La oss se på et eksempel der vi bruker den til å utvide et uttrykk:
 
-:::::::::::::::{example} Eksempel 4
+:::::::::::::::{example-2} Eksempel 4
 
 Utvid uttrykket nedenfor:
 
@@ -210,9 +212,9 @@ $$
 2x(3x + 4)
 $$
 
-::::{solution}
+::::{solution-2}
 ---
-dropdown: 0
+open:
 ---
 Vi bruker 1.distributiv lov:
 
@@ -225,7 +227,7 @@ $$
 
 ---
 
-:::::::::::::::{exercise} Underveisoppgave 4
+:::::::::::::::{exercise-2} Underveisoppgave 4
 
 Utvid uttrykket nedenfor. 
 
@@ -233,20 +235,22 @@ $$
 3x(2x - 5)
 $$
 
-::::{answer}
+:::::{answer-2}
 $$
 6x^2 - 15x
 $$
-::::
 
 
-::::{solution}
+::::{solution-2}
 Vi bruker 1.distributiv lov:
 
 $$
 3x(2x - 5) = 3x\cdot 2x - 3x\cdot 5 = 6x^2 - 15x
 $$
 ::::
+
+:::::
+
 
 :::::::::::::::
 
@@ -256,16 +260,16 @@ $$
 La oss se på et eksempel der vi bruker 1.distributiv lov til å faktorisere et uttrykk:
 
 
-:::::::::::::::{example} Eksempel 5
+:::::::::::::::{example-2} Eksempel 5
 Faktoriser uttrykket nedenfor.
 
 $$
 3x^2 + 6x
 $$
 
-::::{solution}
+::::{solution-2}
 ---
-dropdown: 0
+open:
 ---
 Vi bruker 1.distributiv lov baklengs:
 
@@ -279,7 +283,7 @@ $$
 ---
 
 
-:::::::::::::::{exercise} Underveisoppgave 5
+:::::::::::::::{exercise-2} Underveisoppgave 5
 
 Faktoriser uttrykket nedenfor.
 
@@ -288,19 +292,21 @@ $$
 $$
 
 
-::::{answer}
+:::::{answer-2}
 $$
 4x(x - 2)
 $$
-::::
 
-::::{solution}
+
+::::{solution-2}
 Vi bruker 1.distributiv lov baklengs:
 
 $$
 4x^2 - 8x = \textcolor{red}{4x}\cdot \textcolor{RoyalBlue}{x} - \textcolor{red}{4x}\cdot \textcolor{RoyalBlue}{2} = \textcolor{red}{4x}(\textcolor{RoyalBlue}{x} - \textcolor{RoyalBlue}{2})
 $$
 ::::
+
+:::::
 
 :::::::::::::::
 
@@ -316,21 +322,16 @@ En identitet er en likning som er sann uansett hvilke verdier vi setter inn for 
 
 Kvadratsetningene er tre viktige **identiteter** som lar oss gange sammen og faktorisere to spesielle algebraiske uttrykk som dukker opp når vi senere skal jobbe med andregradsfunksjoner. 
 
-### 1.Kvadratsetning
 
-:::::::::::::::{summary} 1.Kvadratsetning
+:::::::::::::::{summary-2} 1.Kvadratsetning
 For to tall $a$ og $b$ gjelder
 
 $$
 (a + b)^2 = a^2 + 2ab + b^2
 $$
 
-:::::::::::::::
 
-
----
-
-::::::::::::::{theory} Begrunnelse for 1.kvadratsetning
+::::{proof}
 Nedenfor vises en figur av et kvadrat. Kvadratet er delt opp i mindre rektangler. 
 
 :::{figure} ./figurer/bevis/bevis_2/figur_annotert.svg
@@ -359,14 +360,19 @@ $$
 $$
 
 som er 1.kvadratsetning.
+::::
 
-::::::::::::::
+:::::::::::::::
+
+
 
 ---
 
+
+
 Vi kan bruke 1.kvadratsetning både til å utvide og faktorisere algebraiske uttrykk. La oss se på et eksempel der vi utvider et uttrykk med 1.kvadratsetning:
 
-:::::::::::::::{example} Eksempel 6
+:::::::::::::::{example-2} Eksempel 6
 
 Utvid uttrykket nedenfor med 1.kvadratsetning
 
@@ -374,9 +380,9 @@ $$
 (2x + 3)^2
 $$
 
-::::{solution}
+::::{solution-2}
 ---
-dropdown: 0
+open:
 ---
 Vi bruker 1.kvadratsetning:
 
@@ -393,7 +399,7 @@ $$
 
 ---
 
-:::::::::::::::{exercise} Underveisoppgave 6
+:::::::::::::::{exercise-2} Underveisoppgave 6
 
 Bruk 1.kvadratsetning til å utvide uttrykket 
 nedenfor.
@@ -403,19 +409,23 @@ $$
 $$
 
 
-::::{answer}
+:::::{answer-2}
 $$
 9x^2 + 6x + 1
 $$
-::::
 
-::::{solution}
+
+::::{solution-2}
 Vi bruker 1.kvadratsetning:
 
 $$
 (3x + 1)^2 = (3x)^2 + 2\cdot (3x)\cdot 1 + 1^2 = 9x^2 + 6x + 1
 $$
 ::::
+
+
+:::::
+
 
 
 :::::::::::::::
@@ -425,16 +435,16 @@ $$
 
 La oss se på et eksempel der vi bruker 1.kvadratsetning til å faktorisere et uttrykk:
 
-:::::::::::::::{example} Eksempel 7
+:::::::::::::::{example-2} Eksempel 7
 Bruk 1.kvadratsetning til å faktorisere uttrykket nedenfor
 
 $$
 x^2 + 6x + 9
 $$
 
-::::{solution}
+::::{solution-2}
 ---
-dropdown: 0
+open:
 ---
 Vi bruker 1.kvadratsetning baklengs:
 
@@ -449,7 +459,7 @@ $$
 ---
 
 
-:::::::::::::::{exercise} Underveisoppgave 7
+:::::::::::::::{exercise-2} Underveisoppgave 7
 Bruk 1.kvadratsetning til å faktorisere uttrykket nedenfor.
 
 $$
@@ -457,14 +467,13 @@ x^2 + 4x + 4
 $$
 
 
-::::{answer}
+:::::{answer-2}
 $$
 (x + 2)^2
 $$
-::::
 
 
-::::{solution}
+::::{solution-2}
 Vi bruker 1.kvadratsetning baklengs:
 
 $$
@@ -472,23 +481,23 @@ x^2 + 4x + 4 = \textcolor{red}{x}^2 + 2 \cdot \textcolor{red}{x} \cdot \textcolo
 $$
 ::::
 
+
+:::::
+
+
+
 :::::::::::::::
 
 
-### 2.Kvadratsetning
-
-:::::::::::::::{summary} 2.Kvadratsetning
+:::::::::::::::{summary-2} 2.Kvadratsetning
 For to tall $a$ og $b$ gjelder
 
 $$
 (a - b)^2 = a^2 - 2ab + b^2
 $$
-:::::::::::::::
-
----
 
 
-:::::::::::::::{theory} Begrunnelse for 2.kvadratsetning
+::::{proof}
 I figuren nedenfor vises et kvadrat. Kvadratet er delt opp i mindre rektangler. 
 
 
@@ -522,15 +531,19 @@ $$
 (a - b)^2 = a^2 - 2ab + b^2
 $$
 
+::::
+
 
 :::::::::::::::
 
 
 ---
 
+
+
 Vi kan bruke 2.kvadratsetning både til å utvide og faktorisere algebraiske uttrykk. La oss se på et eksempel der vi utvider et uttrykk med 2.kvadratsetning:
 
-:::::::::::::::{example} Eksempel 8
+:::::::::::::::{example-2} Eksempel 8
 
 Utvid uttrykket nedenfor med 2.kvadratsetning
 
@@ -538,9 +551,9 @@ $$
 (2x - 4)^2 
 $$
 
-::::{solution}
+::::{solution-2}
 ---
-dropdown: 0
+open:
 ---
 Vi bruker 2.kvadratsetning:
 
@@ -556,20 +569,20 @@ $$
 ---
 
 
-:::::::::::::::{exercise} Underveisoppgave 8
+:::::::::::::::{exercise-2} Underveisoppgave 8
 Bruk 2.kvadratsetning til å utvide uttrykket nedenfor.
 
 $$
 (4x - 3)^2
 $$
 
-::::{answer}
+:::::{answer-2}
 $$
 16x^2 - 24x + 9
 $$
-::::
+:::::
 
-::::{solution}
+::::{solution-2}
 Vi bruker 2.kvadratsetning:
 
 $$
@@ -586,16 +599,16 @@ $$
 
 La oss nå se på et eksempel der vi bruker 2.kvadratsetning til å faktorisere et uttrykk:
 
-:::::::::::::::{example} Eksempel 9
+:::::::::::::::{example-2} Eksempel 9
 Faktoriser uttrykket nedenfor med 2.kvadratsetning
 
 $$
 x^2 - 10x + 25
 $$
 
-::::{solution}
+::::{solution-2}
 ---
-dropdown: 0
+open:
 ---
 Vi bruker 2.kvadratsetning baklengs:
 
@@ -608,20 +621,19 @@ $$
 
 ---
 
-:::::::::::::::{exercise} Underveisoppgave 9
+:::::::::::::::{exercise-2} Underveisoppgave 9
 Bruk 2.kvadratsetning til å faktorisere uttrykket nedenfor.
 
 $$
 x^2 - 8x + 16
 $$
 
-::::{answer}
+:::::{answer-2}
 $$
 (x - 4)^2
 $$
-::::
 
-::::{solution}
+::::{solution-2}
 Vi bruker 2.kvadratsetning baklengs:
 
 $$
@@ -630,28 +642,26 @@ $$
 
 ::::
 
+:::::
+
+
 
 :::::::::::::::
 
 
 
 
-### Konjugatsetningen
 Den siste kvadratsetningen uttrykker ikke arealet av et kvadrat, men heller arealet av ett kvadrat minus arealet av et annet kvadrat. Vi kaller den for **konjugatsetningen**.
 
-:::::::::::::::{summary} Konjugatsetningen
+:::::::::::::::{summary-2} Konjugatsetningen
 For to tall $a$ og $b$ gjelder
 
 $$
 a^2 - b^2 = (a + b)(a - b)
 $$
 
-:::::::::::::::
 
-
----
-
-:::::::::::::::{theory} Begrunnelse for konjugatsetningen
+:::::{proof}
 I figuren nedenfor vises et kvadrat. Kvadratet er delt opp i mindre rektangler.
 
 
@@ -690,6 +700,8 @@ $$
 a^2 - b^2 = (a + b)(a - b)
 $$
 
+:::::
+
 
 :::::::::::::::
 
@@ -700,7 +712,7 @@ $$
 Vi kan bruke konjugatsetningen både til å utvide og faktorisere algebraiske uttrykk. La oss se på et eksempel der vi utvider et uttrykk:
 
 
-:::::::::::::::{example} Eksempel 10
+:::::::::::::::{example-2} Eksempel 10
 Bruk konjugatsetningen til å utvide uttrykket nedenfor.
 
 $$
@@ -708,9 +720,9 @@ $$
 $$
 
 
-::::{solution}
+::::{solution-2}
 ---
-dropdown: 0
+open:
 ---
 $$
 (\textcolor{red}{x} + \textcolor{RoyalBlue}{2})(\textcolor{red}{x} - \textcolor{RoyalBlue}{2}) = \textcolor{red}{x}^2 - \textcolor{RoyalBlue}{2}^2 = x^2 - 4
@@ -721,24 +733,27 @@ $$
 
 ---
 
-:::::::::::::::{exercise} Underveisoppgave 10
+:::::::::::::::{exercise-2} Underveisoppgave 10
 Bruk konjugatsetningen til å utvide uttrykket nedenfor.
 
 $$
 (x + 5)(x - 5)
 $$
 
-::::{answer}
+:::::{answer-2}
 $$
 x^2 - 25
 $$
-::::
 
-::::{solution}
+
+::::{solution-2}
 $$
 (\textcolor{red}{x} + \textcolor{RoyalBlue}{5})(\textcolor{red}{x} - \textcolor{RoyalBlue}{5}) = \textcolor{red}{x}^2 - \textcolor{RoyalBlue}{5}^2 = x^2 - 25
 $$
 ::::
+
+:::::
+
 
 
 
@@ -749,16 +764,16 @@ $$
 
 Så kan vi bruke konjugatsetningen til å faktorisere et uttrykk:
 
-:::::::::::::::{example} Eksempel 11
+:::::::::::::::{example-2} Eksempel 11
 Bruk konjugatsetningen til å faktorisere uttrykket nedenfor.
 
 $$
 x^2 - 9
 $$
 
-::::{solution}
+::::{solution-2}
 ---
-dropdown: 0
+open:
 ---
 $$
 x^2 - 9 = \textcolor{red}{x}^2 - \textcolor{RoyalBlue}{3}^2 = (\textcolor{red}{x} + \textcolor{RoyalBlue}{3})(\textcolor{red}{x} - \textcolor{RoyalBlue}{3})
@@ -768,43 +783,43 @@ $$
 
 ---
 
-:::::::::::::::{exercise} Underveisoppgave 11
+:::::::::::::::{exercise-2} Underveisoppgave 11
 Bruk konjugatsetningen til å faktorisere uttrykket nedenfor.
 
 $$
 x^2 - 1
 $$
 
-::::{answer}
+:::::{answer-2}
 $$
 (x + 1)(x - 1)
 $$
-::::
 
-::::{solution}
+::::{solution-2}
 $$
 x^2 - 1 = \textcolor{red}{x}^2 - \textcolor{RoyalBlue}{1}^2 = (\textcolor{red}{x} + \textcolor{RoyalBlue}{1})(\textcolor{red}{x} - \textcolor{RoyalBlue}{1})
 $$
 ::::
+
+:::::
+
 :::::::::::::::
 
 
-## 2.Distributiv lov
+## Den 2.distributive loven
 
-Den 2.distributive loven er ikke så enkel å bruke til å faktorisere, men den lar oss utvide algebraiske uttrykk der vi ganger sammen to parenteser. 
 
-:::::::::::::::{summary} 2.Distributiv lov
+Vi skal nå se på den siste viktige algebraiske loven vi trenger; den 2.distributive loven. Den er ikke så enkel å bruke til å faktorisere uttrykk, men den gir oss en enkel oppskrift på hvordan vi ganger sammen to parenteser.
+
+:::::::::::::::{summary-2} 2.Distributiv lov
 For tall $a$, $b$, $c$ og $d$ gjelder
 
 $$
 (a + b)(c + d) = ac + ad + bc + bd
 $$
-:::::::::::::::
 
 
----
-
-:::::::::::::::{theory} Begrunnelse for 2.distributiv lov
+:::::{proof}
 Nedenfor vises et rektangel. Rektangelet er delt opp i mindre rektangler.
 
 Bruk arealberegninger til å bestemme arealet av figuren på to forskjellige måter og vis at 2.distributiv lov stemmer.
@@ -840,24 +855,29 @@ De to arealene må være like, og da får vi 2.distributiv lov:
 $$
 (a + b)(c + d) = ac + ad + bc + bd
 $$
+:::::
+
 
 :::::::::::::::
 
 
+
 ---
+
+
 
 La oss se på et eksempel der vi bruker 2.distributiv lov til å utvide et uttrykk:
 
-:::::::::::::::{example} Eksempel 12
+:::::::::::::::{example-2} Eksempel 12
 Utvid uttrykket nedenfor med 2.distributiv lov
 
 $$
 (2x + 3)(x - 4)
 $$
 
-::::{solution}
+::::{solution-2}
 ---
-dropdown: 0
+open:
 ---
 Vi bruker 2.distributiv lov:
 
@@ -874,7 +894,7 @@ Vi bruker 2.distributiv lov:
 
 ---
 
-:::::::::::::::{exercise} Underveisoppgave 12
+:::::::::::::::{exercise-2} Underveisoppgave 12
 Utvid uttrykket nedenfor.
 
 $$
@@ -882,14 +902,13 @@ $$
 $$
 
 
-::::{answer}
+:::::{answer-2}
 $$
 3x^2 + 17x + 10
 $$
-::::
 
 
-::::{solution}
+::::{solution-2}
 \begin{align*}
 (3x + 2)(x + 5) &= 3x\cdot x + 3x\cdot 5 + 2\cdot x + 2\cdot 5 \\
 \\
@@ -898,6 +917,9 @@ $$
 & = 3x^2 + 17x + 10
 \end{align*}
 ::::
+
+:::::
+
 
 :::::::::::::::
 

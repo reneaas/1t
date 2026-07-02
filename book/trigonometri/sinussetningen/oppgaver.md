@@ -2,43 +2,40 @@
 
 
 :::::::::::::::{exercise} Oppgave 1
----
-level: 1
----
+
 En trekant $\triangle ABC$ er vist i figuren nedenfor. 
 
-:::{figure} ./figurer/oppgaver/oppgave_1/figur.svg
+:::{plot}
+figsize: (5, 2.5)
+width: 50%
+axis: off
+axis: equal
+triangle: svs=(2, 40, 1), angles=(A, B), angle-radius=60, side-labels=(CA=exact), side-text=(AB="$c$", BC="$a$"), angle-labels=(A=numeric, B=numeric), angle-offset=40
+fontsize: 28
+:::
+
+
+
+
+:::::::::::::{part} a
+:::{cas-popup}
 ---
-width: 80%
-class: no-click, adaptive-figure
+layout: sidebar
 ---
 :::
 
 
-:::{cas-popup} 350 500
-:::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
 Bestem $a$. 
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
+
 $$
 a \approx 1.39
 $$
-::::
 
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 :::{figure} ./figurer/oppgaver/oppgave_1/a/sol.png
 ---
 width: 70%
@@ -47,26 +44,27 @@ class: no-click, adaptive-figure
 :::
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
+:::{cas-popup}
+---
+layout: sidebar
+---
+:::
+
+
 Bestem $c$. 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 c = 2
 $$
-::::
-
-
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 :::{figure} ./figurer/oppgaver/oppgave_1/b/sol.png
 ---
 width: 70%
@@ -74,11 +72,11 @@ class: no-click, adaptive-figure
 ---
 :::
 ::::
+:::::
+
 
 :::::::::::::
 
-
-::::::::::::::
 
 
 
@@ -90,38 +88,35 @@ class: no-click, adaptive-figure
 
 
 :::::::::::::::{exercise} Oppgave 2
+
+:::{cas-popup}
 ---
-level: 1
+layout: sidebar
 ---
+:::
+
+
 I figuren nedenfor vises en trekant $\triangle ABC$. 
 
 
-:::{figure} ./figurer/oppgaver/oppgave_2/figur.svg
----
-width: 80%
-class: no-click, adaptive-figure
----
+:::{plot}
+figsize: (5, 3)
+axis: off
+axis: equal
+width: 60%
+triangle: sss=(2, 2.29, 3), angles=(C), side-labels=(CA=numeric, AB=numeric), angle-radius=100, label-offset=60, angle-labels=(C=numeric), angle-offset=80
 :::
 
-:::{cas-popup} 350 500
-:::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem $\angle B$. 
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 \angle B \approx 88.39\degree
 $$
-::::
+
 
 ::::{solution}
 :::{figure} ./figurer/oppgaver/oppgave_2/a/sol.png
@@ -137,22 +132,20 @@ $$
 \angle B \approx 88.39\degree.
 $$
 ::::
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem $BC$. 
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer} 
 $$
 BC \approx 2.29
 $$
-::::
+
 
 
 ::::{solution}
@@ -169,23 +162,20 @@ $$
 BC \approx 2.29
 $$
 ::::
+:::::
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem arealet av $\triangle ABC$. 
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer} 
 $$
 T \approx 2.29
 $$
-::::
 
 ::::{solution}
 :::{figure} ./figurer/oppgaver/oppgave_2/b/sol.png
@@ -201,10 +191,10 @@ $$
 T = \approx 2.29
 $$
 ::::
+:::::
 
 :::::::::::::
 
-::::::::::::::
 
 
 :::::::::::::::
@@ -221,22 +211,16 @@ I $\triangle ABC$ er $\angle A = 45 \degree$, $BC = 6$ og $AC = 8$.
 :::{cas-popup} 350 500
 :::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem hvilke mulige vinkler $\angle B$ kan ha.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 \angle B \approx 70.53 \degree \or \angle B \approx 109.47 \degree
 $$
-::::
+
 
 ::::{solution}
 Vinkelen $\angle B$ kan enten være spiss eller stump. Vi bruker sinussetningen for å bestemme hvilke mulige verdier $\angle B$ kan ha:
@@ -255,21 +239,18 @@ $$
 $$
 
 ::::
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem hvilke to lengder $AB$ kan ha.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 AB \approx 3.66 \or AB \approx 7.66
 $$
-::::
 
 
 ::::{solution}
@@ -304,11 +285,10 @@ $$
 $$
 
 ::::
+:::::
 
 
 :::::::::::::
-
-::::::::::::::
 
 
 
@@ -322,33 +302,59 @@ $$
 ---
 level: 2
 ---
-I figuren nedenfor vises $\square ABCD$. 
 
-:::{figure} ./figurer/oppgaver/oppgave_4/figur.svg
----
-width: 80%
-class: no-click, adaptive-figure
----
+
+:::{plot}
+align: right
+fontsize: 26
+width: 100%
+axis: off
+axis: equal 
+let: Ax = 0
+let: Ay = 0
+let: Bx = 2*sqrt(5)
+let: By = 0
+let: Dx = 3*sqrt(10) * cos(pi/4)
+let: Dy = 3*sqrt(10) * sin(pi/4)
+let: Cx = Dx + 3 * cos((45 + 180 + 26.57+45) * pi/180)
+let: Cy = Dy + 3 * sin((45 + 180 + 26.57+45) * pi/180)
+line-segment: (Ax, Ay), (Bx, By), solid, blue
+line-segment: (Bx, By), (Dx, Dy), dashed, gray
+line-segment: (Bx, By), (Cx, Cy), solid, blue
+line-segment: (Dx, Dy), (Cx, Cy), solid, blue
+line-segment: (Ax, Ay), (Dx, Dy), solid, blue
+let: r = 0.8
+angle-arc: (Ax, Ay), r, 0, 45, red 
+text: Ax + 1.2 * r * cos(22.5 * pi/180), Ay + 1.2 * r * sin(22.5 * pi/180) + 0.15, "$45^\circ$", center-right
+angle-arc: (Dx, Dy), r, 45 + 180 + 26.57, 45 + 180 + 26.57 + 45, red
+text: Dx + 1.2 * r * cos((45 + 180 + 26.57 + 22.5) * pi/180), Dy + 1.2 * r * sin((45 + 180 + 26.57 + 22.5) * pi/180) - 0.15, "$45^\circ$", center-center
+text: Ax, Ay, "$A$", bottom-left
+text: Bx, By, "$B$", bottom-center
+text: Cx, Cy, "$C$", center-right
+text: Dx, Dy, "$D$", top-center
+text: 0.5 * (Ax + Bx), 0.5 * (Ay + By) - 0.15, "$2\sqrt{5}$", bottom-center
+text: 0.5 * (Bx + Dx), 0.5 * (By + Dy), "$5 \sqrt{2}$", top-left
+text: 0.5 * (Cx + Dx), 0.5 * (Cy + Dy) + 0.15, "$3$", top-right
 :::
+
+Gitt firkanten $ABCD$.
 
 :::{cas-popup} 350 500
 :::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::{clear}
+:::
+
+
+:::::::::::::{part} a
 Bestem $\angle BDA$. 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 \angle BDA \approx 26.57\degree. 
 $$
-::::
+
 
 
 ::::{solution}
@@ -368,28 +374,26 @@ $$
 $$
 
 ::::
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem arealet $T$ av $\square ABCD$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 T_{ABCD} \approx 22.5
 $$
-::::
+
 
 ::::{solution}
 Vi bruker arealsetningen på de trekantene $\triangle ABD$ og $\triangle BCD$ for å bestemme arealet $T$ av $\square ABCD$:
 
 :::{figure} ./figurer/oppgaver/oppgave_4/b/sol.png
 ---
-width: 70%
+width: 60%
 class: no-click, adaptive-figure
 ---
 :::
@@ -401,11 +405,9 @@ T_{ABCD} \approx 22.5
 $$
 
 ::::
+:::::
 
 :::::::::::::
-
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -415,38 +417,70 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 5
----
-level: 2
----
+
 I figuren nedenfor vises $\square ABCD$. 
 
-:::{figure} ./figurer/oppgaver/oppgave_5/figur.svg
----
+:::{plot}
+fontsize: 18
+figsize: (6, 3)
+axis: equal
+axis: off
 width: 80%
-class: no-click, adaptive-figure
+let: u_rot = 20
+let: a = 5
+let: Ax = 0
+let: Ay = 0
+let: Bx = (sqrt(3) + 1) / 2 * a * cos(u_rot * pi/180)
+let: By = (sqrt(3) + 1) / 2 * a * sin(u_rot * pi/180)
+let: Cx = Bx + 1/2 * a * cos(u_rot * pi/180 + 180 * pi / 180 - 90 * pi/ 180)
+let: Cy = By + 1/2 * a * sin(u_rot * pi/180 + 180 * pi / 180 - 90 * pi/ 180)
+let: Dx = Bx + a * cos(u_rot * pi/180 + 180 * pi / 180 - 30 * pi/180)
+let: Dy = By + a * sin(u_rot * pi/180 + 180 * pi / 180 - 30 * pi/180)
+line-segment: (Ax, Ay), (Bx, By), solid, blue
+line-segment: (Bx, By), (Cx, Cy), solid, blue
+line-segment: (Cx, Cy), (Dx, Dy), solid, blue
+line-segment: (Dx, Dy), (Ax, Ay), solid, blue
+text: Ax, Ay, "$A$", bottom-left
+text: Bx, By, "$B$", bottom-right
+text: Cx, Cy, "$C$", top-right
+text: Dx, Dy, "$D$", top-left
+line-segment: (Bx, By), (Dx, Dy), dashed, gray
+let: r = 1
+angle-arc: (Bx, By), r, u_rot + 180, u_rot + 180 - 30, red
+text: Bx + 1.3 * r * cos((u_rot + 180 - 15) * pi/180), By + 1.3 * r * sin((u_rot + 180 - 15) * pi/180), "$30^\circ$", center-left
+let: ds = 0.6
+let: CD = sqrt((Dx - Cx)**2 + (Dy - Cy)**2)
+let: BC = sqrt((Cx - Bx)**2 + (Cy - By)**2)
+let: ux = ds * (Dx - Cx) / CD
+let: uy = ds * (Dy - Cy) / CD
+let: vx = ds * (Bx - Cx) / BC 
+let: vy = ds * (By - Cy) / BC 
+line-segment: (Cx + ux, Cy + uy), (Cx + ux + vx, Cy + uy + vy), solid, red
+line-segment: (Cx + vx, Cy + vy), (Cx + ux + vx, Cy + uy + vy), solid, red
+angle-arc: (Dx, Dy), r, u_rot, u_rot - 30, red
+angle-arc: (Dx, Dy), 0.8*r, u_rot - 30, u_rot - 30 - 105, red
+text: Dx + 0.4, Dy - 0.9*r, "$105^\circ$", bottom-center
+text: Dx + 1.2 * r, Dy + 0.1, "$30^\circ$", center-right
+text: 0.5 * (Bx + Dx), 0.5 * (By + Dy), "$a$", top-right
+:::
+
+
+
+
+:::::::::::::{part} a
+:::{cas-popup}
+---
+layout: sidebar
 ---
 :::
 
 
-:::{cas-popup} 350 500
-:::
-
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
 Bestem en eksakt verdi for $CD$ uttrykt ved $a$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 CD = \dfrac{\sqrt{3}}{2} a
 $$
-::::
 
 
 ::::{solution}
@@ -465,24 +499,28 @@ $$
 CD = \dfrac{\sqrt{3}}{2} a.
 $$
 ::::
+:::::
 
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
+:::{cas-popup}
+---
+layout: sidebar
+---
+:::
+
+
 Bestem en eksakt verdi for arealet $T$ av $\square ABCD$ uttrykt ved $a$.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 T = \dfrac{1}{8}a^2 \left(2\sqrt{3} + 1\right)
 $$
-::::
 
 
 ::::{solution} 
@@ -492,6 +530,7 @@ Vi bruker arealsetningen til å bestemme arealet av de to trekantene. Vi trenger
 :::{figure} ./figurer/oppgaver/oppgave_5/b/sol.png
 ---
 width: 70%
+class: adaptive-figure
 ---
 :::
 
@@ -502,10 +541,10 @@ T_{ABCD} = \dfrac{1}{8}a^2 \left(2\sqrt{3} + 1\right).
 $$
 
 ::::
+:::::
 
 :::::::::::::
 
-::::::::::::::
 
 
 
@@ -520,33 +559,58 @@ level: 2
 ---
 I figuren nedenfor vises $\square ABCD$. 
 
-:::{figure} ./figurer/oppgaver/oppgave_6/figur.svg
+
+:::{plot}
+fontsize: 18
+figsize: (6, 3)
+axis: equal
+axis: off
+width: 70%
+let: Ax = 0
+let: Ay = 0
+let: Bx = 8
+let: By = 0
+let: Dx = 4 * cos(60 * pi/180)
+let: Dy = 4 * sin(60 * pi/180)
+let: Cx = Bx + 12 * cos(60 * pi/180)
+let: Cy = By + 12 * sin(60 * pi/180)
+line-segment: (Ax, Ay), (Bx, By), solid, blue
+line-segment: (Bx, By), (Cx, Cy), solid, blue
+line-segment: (Cx, Cy), (Dx, Dy), solid, blue
+line-segment: (Dx, Dy), (Ax, Ay), solid, blue
+line-segment: (Bx, By), (Dx, Dy), dashed, gray
+text: Ax, Ay, "$A$", bottom-left
+text: Bx, By, "$B$", bottom-center
+text: Cx, Cy, "$C$", top-right
+text: Dx, Dy, "$D$", top-left
+angle-arc: (Ax, Ay), 1.5, 0, 60, red
+text: Ax + 1.8 * cos(30 * pi/180), Ay + 1.8 * sin(30 * pi/180) - 0.4, "$60^\circ$", top-right
+angle-arc: (Cx, Cy), 2, 60 + 180, 60 + 180 - 30, red
+text: Cx + 2.3 * cos((60 + 180 - 15) * pi/180), Cy + 2.3 * sin((60 + 180 - 15) * pi/180) - 0.25, "$30^\circ$", bottom-left
+text: 0.5 * (Ax + Bx), 0.5 * (Ay + By) - 0.15, "$8$", bottom-center
+text: 0.5 * (Bx + Dx), 0.5 * (By + Dy) + 0.15, "$4 \sqrt{3}$", top-right
+text: 0.5 * (Bx + Cx), 0.5 * (By + Cy) + 0.15, "$12$", bottom-right
+text: 0.5 * (Cx + Dx), 0.5 * (Cy + Dy) + 0.15, "$8\sqrt{3}$", top-left
+:::
+
+
+:::::::::::::{part} a
+:::{cas-popup}
 ---
-width: 80%
-class: no-click, adaptive-figure
+layout: sidebar
 ---
 :::
 
 
-:::{cas-popup} 350 500
-:::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
 Bestem en eksakt verdi for omkretsen $\mathcal{O}$ til $\square ABCD$.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 \mathcal{O} = 8\sqrt{3} + 24
 $$
-::::
+
 
 
 ::::{solution}
@@ -565,21 +629,26 @@ $$
 \mathcal{O} = 8\sqrt{3} + 24
 $$
 ::::
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
+:::{cas-popup}
+---
+layout: sidebar
+---
+:::
+
+
+
 Bestem en eksakt verdi for arealet $T_{ABCD}$ til $\square ABCD$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 T_{ABCD} = 32\sqrt{3}
 $$
-::::
 
 
 ::::{solution}
@@ -599,10 +668,9 @@ T_{ABCD} = 32\sqrt{3}
 $$
 
 ::::
+:::::
 
 :::::::::::::
-
-::::::::::::::
 
 
 
@@ -614,38 +682,59 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 7
----
-level: 2
----
+
 I figuren nedenfor vises $\square ABCD$.
 
-:::{figure} ./figurer/oppgaver/oppgave_7/figur.svg
+
+:::{plot}
+fontsize: 18
+figsize: (6, 3)
+axis: off
+axis: equal
+width: 70%
+let: Ax = 0
+let: Ay = 0
+let: Bx = 8
+let: By = 0
+let: Dx = 5 * cos(60 * pi/180)
+let: Dy = 5 * sin(60 * pi/180)
+let: Cx = Bx + 6 * cos((180 - 38.2 - 34.77) * pi/180)
+let: Cy = By + 6 * sin((180 - 38.2 - 34.77) * pi/180)
+line-segment: (Ax, Ay), (Bx, By), solid, blue
+line-segment: (Bx, By), (Cx, Cy), solid, blue
+line-segment: (Cx, Cy), (Dx, Dy), solid, blue
+line-segment: (Dx, Dy), (Ax, Ay), solid, blue
+line-segment: (Bx, By), (Dx, Dy), dashed, gray
+text: Ax, Ay, "$A$", bottom-left
+text: Bx, By, "$B$", bottom-right
+text: Cx, Cy, "$C$", top-right
+text: Dx, Dy, "$D$", top-left
+angle-arc: (Ax, Ay), 1.2, 0, 60, red
+text: Ax + 1.4 * cos(30 * pi/180) - 0.1, Ay + 1.4 * sin(30 * pi/180) - 0.1, "$60^\circ$", top-right
+angle-arc: (Bx, By), 1.2, 180, 180 - 38.2, red
+text: Bx + 1.2 * cos((180 - 38.2/2) * pi/180) + 0.1, By + 1.2 * sin((180 - 38.2/2) * pi/180) - 0.3, "$38.2^\circ$", top-left
+angle-arc: (Bx, By), 1.6, 180 - 38.2, 180 - 38.2 - 34.77, red
+text: Bx + 1.6 * cos((180 - 38.2 - 34.77/2) * pi/180) + 0.3, By + 1.6 * sin((180 - 38.2 - 34.77/2) * pi/180) + 0.3, "$34.77^\circ$", top-left
+angle-arc: (Cx, Cy), 0.8, 180 - 38.2 - 34.77 + 180, 180 - 38.2 - 34.77 + 180 - 86.42, red
+text: Cx + 0.8 * cos((180 - 38.2 - 34.77 + 180 - 86.42/2) * pi/180) + 0.2, Cy + 0.8 * sin((180 - 38.2 - 34.77 + 180 - 86.42/2) * pi/180) - 0.2, "$86.42^\circ$", bottom-left
+text: 0.5 * (Ax + Dx), 0.5 * (Ay + Dy) + 0.15, "$5$", top-left
+text: 0.5 * (Bx + Cx), 0.5 * (By + Cy) + 0.15, "$6$", top-right
+:::
+
+:::::::::::::{part} a
+:::{cas-popup}
 ---
-width: 80%
-class: no-click, adaptive-figure
+layout: sidebar
 ---
 :::
 
 
-:::{cas-popup} 350 500
-:::
-
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
 Bestem lengden av diagonalen $BD$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 BD = 7.
 $$
-::::
 
 
 ::::{solution}
@@ -665,21 +754,26 @@ BD = 7
 $$
 
 ::::
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
+:::{cas-popup}
+---
+layout: sidebar
+---
+:::
+
+
 Bestem arealet $T$ av $\square ABCD$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 T \approx 29.3
 $$
-::::
+
 
 
 ::::{solution}
@@ -699,10 +793,10 @@ T \approx 29.3
 $$
 
 ::::
+:::::
 
 :::::::::::::
 
-::::::::::::::
 
 
 :::::::::::::::

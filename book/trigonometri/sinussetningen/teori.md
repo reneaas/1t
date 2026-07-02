@@ -1,10 +1,7 @@
 # Sinussetningen
 
 
-:::{admonition} Læringsmål
----
-class: tip
----
+:::{goals} Læringsmål
 * Kunne begrunne sinussetningen ut ifra arealsetningen.
 * Kunne bruke sinussetningen ti lå finne ukjente sinusverdier eller ukjente sider i en trekant.
 :::
@@ -12,6 +9,9 @@ class: tip
 Sinussetningen gir oss en direkte sammenheng mellom sinus til en vinkel og lengden av den motstående siden i en trekant. Dette lar oss bestemme både ukjente sider og ukjente sinusverdier i en hvilken som helst trekant. Og det som er så greit, er at det bare er en konsekvens av arealsetningen.
 
 
+
+
+:::::::::::::::{summary} Sinussetningen
 :::{plot}
 width: 100%
 ticks: off
@@ -21,6 +21,15 @@ align: right
 triangle: svs=(3, 45, 4), angles=all, color=blue, angle-color=red, angle-radius=80, corner-labels=(A="$A$", B="$B$", C="$C$"), lw=3, side-text=(AB="$c$", CA="$b$", BC="$a$"), label-offset=24
 fontsize: 32
 :::
+
+For alle trekanter $ABC$, så gjelder 
+
+$$
+\boxed{\dfrac{\sin A}{a} = \dfrac{\sin B}{b} = \dfrac{\sin C}{c}}
+$$
+
+
+:::::{proof}
 
 Når vi jobbet med arealsetningen, fant vi at vi kunne skrive opp arealet ut ifra alle tre hjørnene i trekanten. 
 
@@ -59,25 +68,7 @@ $$
 $$
 
 Vi ser at sinus til en vinkel delt på lengden av den motstående siden er den samme for alle tre hjørner. Dette kalles for **sinussetningen**.
-
-
-
-:::::::::::::::{summary} Sinussetningen
-:::{plot}
-width: 100%
-ticks: off
-axis: off
-axis: equal 
-align: right
-triangle: svs=(3, 45, 4), angles=all, color=blue, angle-color=red, angle-radius=80, corner-labels=(A="$A$", B="$B$", C="$C$"), lw=3, side-text=(AB="$c$", CA="$b$", BC="$a$"), label-offset=24
-fontsize: 32
-:::
-
-For alle trekanter $ABC$, så gjelder 
-
-$$
-\boxed{\dfrac{\sin A}{a} = \dfrac{\sin B}{b} = \dfrac{\sin C}{c}}
-$$
+:::::
 
 :::::::::::::::
 
@@ -104,12 +95,9 @@ Gitt trekanten $\triangle ABC$.
 Bestem $BC$.
 
 
-:::{clear}
-:::
-
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi kjenner til vinkelene i hjørne $A$ og hjørne $C$. Den motstående siden til vinkel $A$ er $BC$, og den motstående siden til vinkel $C$ er $AB$. Med sinussetningen kan vi da sette opp likningen
 

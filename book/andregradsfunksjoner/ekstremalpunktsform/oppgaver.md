@@ -2,14 +2,8 @@
 
 
 :::::::::::::::{exercise} Oppgave 1
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -19,19 +13,19 @@ $$
 Bestem grafens ekstremalpunkt og avgjør om det er et toppunkt eller bunnpunkt.
 
 
-::::{answer}
+:::::{answer}
 Bunnpunkt i $(1, 3)$. 
-::::
-
 
 ::::{solution}
 Grafen har et ekstremalpunktet i $(1, 3)$. Siden den ledende koeffisienten $a = 1> 0$, så grafen konveks {poly-icon}`smile` og ekstremalpunktet er derfor et bunnpunkt.
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En andregradsfunksjon $g$ er gitt ved
 
 $$
@@ -41,19 +35,21 @@ $$
 Bestem grafens ekstremalpunkt og avgjør om det er et toppunkt eller bunnpunkt.
 
 
-::::{answer}
+:::::{answer}
 Toppunkt i $(-1, 5)$.
-::::
 
 ::::{solution}
 Grafen har et ekstremalpunkt i $(-1, 5)$. Siden den ledende koeffisienten $a = -2 < 0$, så grafen er konkav {poly-icon}`frown` og ekstremalpunktet er derfor et toppunkt.
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En andregradsfunksjon $h$ er gitt ved
 
 $$
@@ -63,18 +59,19 @@ $$
 Bestem grafens ekstremalpunkt og avgjør om det er et toppunkt eller bunnpunkt.
 
 
-::::{answer}
+:::::{answer}
 Toppunkt i $(2, -4)$.
-::::
 
 ::::{solution}
 Grafen har et ekstremalpunkt i $(2, -4)$. Siden den ledende koeffisienten $a = -3 < 0$, så grafen er konkav {poly-icon}`frown` og ekstremalpunktet er derfor et toppunkt.
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En andregradsfunksjon $d$ er gitt ved
 
 $$
@@ -84,17 +81,17 @@ $$
 Bestem grafens ekstremalpunkt og avgjør om det er et toppunkt eller bunnpunkt.
 
 
-::::{answer}
+:::::{answer}
 Bunnpunkt i $(-3, 2)$.
-::::
 
 ::::{solution}
 Grafen har et ekstremalpunkt i $(-3, 2)$. Siden den ledende koeffisienten $a = 4 > 0$, så grafen er konveks {poly-icon}`smile` og ekstremalpunktet er derfor et bunnpunkt.
 ::::
 
+:::::
+
 :::::::::::::
 
-::::::::::::::
 :::::::::::::::
 
 
@@ -102,41 +99,43 @@ Grafen har et ekstremalpunkt i $(-3, 2)$. Siden den ledende koeffisienten $a = 4
 
 
 :::::::::::::::{exercise} Oppgave 2
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Grafen til en andregradsfunksjon $f$ er vist i figuren nedenfor.
 
-Bestem $f(x)$ på ekstremalpunktsform.
-
+:::::::::::::{part} a
 :::{plot}
-width: 70%
+width: 100%
+align: right
+fontsize: 26
 function: -(x + 1)**2 + 4, f
 :::
 
+Grafen til en andregradsfunksjon $f$ er vist i figuren til høyre.
 
-::::{answer}
+Bestem $f(x)$ på ekstremalpunktsform.
+
+
+:::::{answer}
 $$
 f(x) = -(x + 1)^2 + 4.
 $$
-::::
+:::::
 
 
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} b
-Grafen til en andregradsfunksjon $g$ er vist i figuren nedenfor.
+:::::::::::::{part} b
+:::{plot}
+width: 100%
+align: right
+fontsize: 26
+function: 2 * (x - 2)**2 + 1, g
+:::
+
+Grafen til en andregradsfunksjon $g$ er vist i figuren til høyre.
 
 Bestem $g(x)$ på ekstremalpunktsform.
 
-:::{plot}
-width: 70%
-function: 2 * (x - 2)**2 + 1, g
-:::
 
 ::::{answer}
 $$
@@ -149,17 +148,18 @@ $$
 
 
 
-:::::::::::::{tab-item} c
-Grafen til en andregradsfunksjon $h$ er vist i figuren nedenfor.
+:::::::::::::{part} c
+:::{plot}
+width: 100%
+align: right
+fontsize: 26
+function: -2*(x - 2)**2 - 1, h
+:::
+
+Grafen til en andregradsfunksjon $h$ er vist i figuren til høyre.
 
 
 Bestem $h(x)$ på ekstremalpunktsform.
-
-
-:::{plot}
-width: 70%
-function: -2*(x - 2)**2 - 1, h
-:::
 
 
 ::::{answer}
@@ -172,15 +172,17 @@ $$
 
 
 
-:::::::::::::{tab-item} d
-Grafen til en andregradsfunksjon $p$ er vist i figuren nedenfor.
-
-Bestem $p(x)$ på ekstremalpunktsform.
-
+:::::::::::::{part} d
 :::{plot}
-width: 70%
+width: 100%
+align: right
+fontsize: 26
 function: (x + 2)**2 - 3, p
 :::
+
+Grafen til en andregradsfunksjon $p$ er vist i figuren til høyre.
+
+Bestem $p(x)$ på ekstremalpunktsform.
 
 
 ::::{answer}
@@ -191,9 +193,6 @@ $$
 
 :::::::::::::
 
-
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -201,9 +200,7 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 3
----
-level: 1
----
+
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -211,21 +208,15 @@ f(x) = x^2 - 4x + 3.
 $$
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Bestem symmetrilinja $x_0$ til grafen til $f$.
+:::::::::::::{part} a
+Finn symmetrilinja til grafen til $f$.
 
 
-::::{answer}
+:::::{answer}
 
 $$
 x_0 = 2
 $$
-
-::::
 
 ::::{solution}
 Symmetrilinja til grafen til $f$ er gitt ved 
@@ -242,16 +233,18 @@ $$
 
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem koordinatene til ekstremalpunktet til $f$ og avgjør om det er et toppunkt eller bunnpunkt.
 
 
-::::{answer}
+:::::{answer}
 Bunnpunkt i $(2, -1)$. 
-::::
 
 ::::{solution}
 Vi vet allerede $x$-koordinaten til ekstremalpunktet siden dette er det samme som symmetrilinja $x_0 = 2$. For å finne $y$-koordinaten setter vi $x = 2$ inn i $f(x)$:
@@ -263,10 +256,12 @@ $$
 Dermed er ekstremalpunktet $(2, -1)$. Dette er et bunnpunkt siden $a > 0$ og grafen er derfor konveks {poly-icon}`smile`.
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem $f(x)$ på ekstremalpunktsform
 
 $$
@@ -274,13 +269,11 @@ f(x) = a(x - x_0)^2 + y_0
 $$
 
 
-::::{answer}
+:::::{answer}
 
 $$
 f(x) = (x - 2)^2 - 1
 $$
-
-::::
 
 ::::{solution}
 Vi vet at $x_0 = 2$ og $y_0 = -1$. Vi vet også at $a = 1$, som betyr at 
@@ -291,9 +284,9 @@ $$
 
 ::::
 
-:::::::::::::
+:::::
 
-::::::::::::::
+:::::::::::::
 
 
 :::::::::::::::
@@ -303,26 +296,20 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 4
----
-level: 1
----
+
 En andregradsfunksjon $f$ er gitt ved
 
 $$
 f(x) = 2(x - 1)^2 - 4
 $$
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem ekstremalpunktet til $f$ og avgjør om det er et toppunkt eller bunnpunkt.
 
 
-::::{answer}
+:::::{answer}
 Bunnpunkt i $(1, -4)$. 
-::::
 
 ::::{solution}
 Vi kan lese av at ekstremalpunktet er $(1, -4)$ ved å sammenligne uttrykkene:
@@ -343,32 +330,31 @@ Dette er et bunnpunkt siden $a = 2 > 0$ og grafen er derfor konveks {poly-icon}`
 
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem symmetrilinja til grafen til $f$.
 
-::::{answer}
-
+:::::{answer}
 $$
 x_0 = 1
 $$
-
-::::
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem hvor grafen til $f$ skjærer $y$-aksen.
 
-::::{answer}
+:::::{answer}
 $$
 (0, -2)
 $$
-::::
 
 ::::{solution}
 For å avgjøre hvor grafen til $f$ skjærer $y$-aksen, setter vi $x = 0$ i $f(x)$:
@@ -380,10 +366,12 @@ $$
 Dermed skjærer grafen til $f$ $y$-aksen i punktet $(0, -2)$.
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Lag en skisse av grafen til $f$ der du markerer
 
 * Ekstremalpunktet
@@ -403,22 +391,14 @@ width: 90%
 :::::::::::::
 
 
-::::::::::::::
-
 :::::::::::::::
 
 
 ---
 
 :::::::::::::::{exercise} Oppgave 5
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -428,12 +408,10 @@ $$
 Bestem $f(x)$ på ekstremalpunktsform.
 
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = 3(x - 2)^2 - 3.
 $$
-::::
-
 
 ::::{solution}
 Vi bestemmer symmetrilinja $x_0$ til grafen først. Vi har at $a = 3$ og $b = -12$, som gir oss
@@ -455,10 +433,13 @@ f(x) = a(x - x_0)^2 + y_0 = 3(x - 2)^2 - 3.
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En andregradsfunksjon $g$ er gitt ved
 
 $$
@@ -468,11 +449,10 @@ $$
 Bestem $g(x)$ på ekstremalpunktsform.
 
 
-::::{answer}
+:::::{answer}
 $$
 g(x) = -2(x - 2)^2 + 2.
 $$
-::::
 
 ::::{solution}
 Vi bestemmer symmetrilinja $x_0$ til grafen først. Vi har at $a = -2$ og $b = 8$, som gir oss
@@ -494,10 +474,12 @@ g(x) = a(x - x_0)^2 + y_0 = -2(x - 2)^2 + 2.
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En andregradsfunksjon $h$ er gitt ved
 
 $$
@@ -507,11 +489,10 @@ $$
 Bestem $h(x)$ på ekstremalpunktsform.
 
 
-::::{answer}
+:::::{answer}
 $$
 h(x) = -(x - 2)^2 - 1.
 $$
-::::
 
 ::::{solution}
 Vi bestemmer symmetrilinja $x_0$ til grafen først. Vi har at $a = -1$ og $b = 4$, som gir oss
@@ -533,10 +514,12 @@ h(x) = a(x - x_0)^2 + y_0 = -(x - 2)^2 - 1.
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En andregradsfunksjon $p$ er gitt ved
 
 $$
@@ -546,11 +529,10 @@ $$
 Bestem $p(x)$ på ekstremalpunktsform.
 
 
-::::{answer}
+:::::{answer}
 $$
 p(x) = \dfrac{1}{2}(x - 3)^2 - \dfrac{5}{2}.
 $$
-::::
 
 ::::{solution}
 Vi bestemmer symmetrilinja $x_0$ til grafen først. Vi har at $a = \dfrac{1}{2}$ og $b = -3$, som gir oss
@@ -580,9 +562,10 @@ p(x) = a(x - x_0)^2 + y_0 = \dfrac{1}{2}(x - 3)^2 - \dfrac{5}{2}.
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
-::::::::::::::
 :::::::::::::::
 
 
@@ -591,14 +574,8 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 6
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -607,11 +584,10 @@ $$
 
 Bestem $f(x)$ på standardform.
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = 2x^2 - 4x + 5.
 $$
-::::
 
 ::::{solution}
 Vi ganger ut parentesen og samler leddene:
@@ -628,10 +604,13 @@ f(x) &= 2(x - 1)^2 + 3 \\
 
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En andregradsfunksjon $g$ er gitt ved
 
 $$
@@ -640,12 +619,10 @@ $$
 
 Bestem $g(x)$ på standardform.
 
-::::{answer}
+:::::{answer}
 $$
 g(x) = -3x^2 - 12x - 7.
 $$
-::::
-
 
 ::::{solution}
 Vi ganger ut parentesen og samler leddene:
@@ -661,10 +638,13 @@ g(x) &= -3(x + 2)^2 + 5 \\
 \end{align*}
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En andregradsfunksjon $h$ er gitt ved
 
 $$
@@ -673,12 +653,10 @@ $$
 
 Bestem $h(x)$ på standardform.
 
-::::{answer}
+:::::{answer}
 $$
 h(x) = -4x^2 + 24x - 37.
 $$
-::::
-
 
 ::::{solution}
 Vi ganger ut parentesen og samler leddene:
@@ -695,10 +673,13 @@ h(x) &= -4(x - 3)^2 - 1 \\
 
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En andregradsfunksjon $p$ er gitt ved
 
 $$
@@ -708,13 +689,10 @@ $$
 Bestem $p(x)$ på standardform.
 
 
-::::{answer}
+:::::{answer}
 $$
 p(x) = 5x^2 + 40x + 82.
 $$
-::::
-
-
 ::::{solution}
 Vi ganger ut parentesen og samler leddene:
 
@@ -728,7 +706,10 @@ p(x) &= 5(x + 4)^2 + 2 \\
 &= 5x^2 + 40x + 82.
 \end{align*}
 
-::::::::::::::
+::::
+:::::
+
+:::::::::::::
 :::::::::::::::
 
 
@@ -746,33 +727,28 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 7
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Grafen til en andregradsfunksjon $f$ er vist i figuren nedenfor.
-
-Bestem $f(x)$ på ekstremalpunktsform.
 
 
+:::::::::::::{part} a
 :::{plot}
-width: 70%
+width: 100%
+align: right
+fontsize: 26
 function: 3/2 * (x - 2)**2 - 9, f
 ymin: -11
 :::
 
+Grafen til en andregradsfunksjon $f$ er vist i figuren til høyre.
+
+Bestem $f(x)$ på ekstremalpunktsform.
 
 
-::::{answer}
+
+
+:::::{answer}
 $$
 f(x) = \dfrac{3}{2}(x - 2)^2 - 9.
 $$
-::::
-
 
 ::::{solution}
 Vi ser at grafen har et ekstremalpunkt i $(2, -9)$ som betyr at 
@@ -794,30 +770,34 @@ f(x) = \dfrac{3}{2}(x - 2)^2 - 9.
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} b
-Grafen til en andregradsfunksjon $g$ er vist i figuren nedenfor.
-
-Bestem $g(x)$ på ekstremalpunktsform.
-
-
+:::::::::::::{part} b
 :::{plot}
-width: 70%
+width: 100%
+align: right
+fontsize: 26
 function: -0.5 * (x + 3)**2 + 2, g
 xmin: -8
 xmax: 4
 :::
 
+Grafen til en andregradsfunksjon $g$ er vist i figuren til høyre.
 
-::::{answer}
+Bestem $g(x)$ på ekstremalpunktsform.
+
+
+
+
+:::::{answer}
 $$
 g(x) = -\dfrac{1}{2}(x + 3)^2 + 2.
 $$
-::::
-
 
 ::::{solution}
 Vi ser at grafen til $g$ har et ekstremalpunkt i $(-3, 2)$ som betyr at 
@@ -845,29 +825,34 @@ g(x) = -2(x + 3)^2 + 2.
 $$
 ::::
 
+:::::
+
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-Grafen til en andregradsfunksjon $h$ er vist i figuren nedenfor.
-
-Bestem $h(x)$ på ekstremalpunktsform.
-
-
+:::::::::::::{part} c
 :::{plot}
-width: 70%
+width: 100%
+align: right
+fontsize: 26
 function: 5/2*(x + 3)**2 + 0, h
 ymin: -2
 ymax: 12
 :::
 
+Grafen til en andregradsfunksjon $h$ er vist i figuren til høyre.
+
+Bestem $h(x)$ på ekstremalpunktsform.
 
 
-::::{answer}
+
+
+:::::{answer}
 $$
 h(x) = \dfrac{5}{2}(x + 3)^2.
 $$
-::::
 
 ::::{solution}
 Vi ser at grafen til $h$ har et ekstremalpunkt i $(-3, 0)$ som betyr at 
@@ -889,28 +874,32 @@ h(x) = \dfrac{5}{2}(x + 3)^2.
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} d
-Grafen til en andregradsfunksjon $p$ er vist i figuren nedenfor.
+:::::::::::::{part} d
+:::{plot}
+width: 100%
+align: right
+fontsize: 26
+function: -2/3*(x - 2)**2 + 4, p
+:::
+
+Grafen til en andregradsfunksjon $p$ er vist i figuren til høyre.
 
 Bestem $p(x)$ på ekstremalpunktsform.
 
 
 
-:::{plot}
-width: 70%
-function: -2/3*(x - 2)**2 + 4, p
-:::
 
-
-::::{answer}
+:::::{answer}
 $$
 p(x) = -\dfrac{2}{3}(x - 2)^2 + 4.
 $$
-::::
 
 ::::{solution}
 Vi ser at grafen til $p$ har et ekstremalpunkt i $(2, 4)$ som betyr at 
@@ -932,10 +921,9 @@ p(x) = -\dfrac{2}{3}(x - 2)^2 + 4.
 $$
 ::::
 
+:::::
+
 :::::::::::::
-
-
-::::::::::::::
 
 :::::::::::::::
 
@@ -944,14 +932,9 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 8
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -971,19 +954,20 @@ ticks: off
 :::
 
 
-::::{answer}
+:::::{answer}
 Graf C.
-::::
 
 ::::{solution}
 Grafen til $f$ har et ekstremalpunkt i $(-1, -2)$ og symmetrilinje i $x = -1$. Videre er grafen konveks siden $a = 1 > 0$. Dermed må grafen ha et bunnpunkt i $(-1, -2)$. Dette passer bare med graf C som derfor må være grafen til $f$.
 ::::
+:::::
+
 
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En andregradsfunksjon $g$ er gitt ved
 
 $$
@@ -1003,18 +987,19 @@ ticks: off
 :::
 
 
-::::{answer}
+:::::{answer}
 Graf B. 
-::::
 
 ::::{solution}
 Grafen til $g$ har et ekstremalpunkt i $(-2, 1)$ og er konveks siden $a = 1 > 0$. Dermed må grafen ha et bunnpunkt i $(-2, 1)$. Dette passer bare med graf A som derfor må være grafen til $g$. Dette passer bare med graf B siden dette er den eneste grafen som er konveks og har et bunnpunkt med negativ $x$-koordinat og positiv $y$-koordinat.
 ::::
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En andregradsfunksjon $h$ er gitt ved
 
 $$
@@ -1036,18 +1021,19 @@ ticks: off
 :::
 
 
-::::{answer}
+:::::{answer}
 Graf C.
-::::
 
 ::::{solution}
 Grafen til $h$ har et ekstremalpunkt i $(2, 4)$ og er konveks siden $a = 2 > 0$. Dermed må grafen ha et bunnpunkt i $(2, 4)$. Graf C er den eneste grafen som er konveks og har positiv $x$-koordinat og positiv $y$-koordinat i bunnpunktet sitt, så derfor er graf C grafen til $h$.
 ::::
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En andregradsfunksjon $p$ er gitt ved
 
 $$
@@ -1070,33 +1056,27 @@ xmax: 8
 :::
 
 
-::::{answer}
+:::::{answer}
 Graf D.
-::::
-
 
 ::::{solution}
 Grafen til $p$ har et ekstremalpunkt i $(3, 1)$ og er konkav siden $a = -3 < 0$. Dermed må grafen ha et toppunkt i $(3, 1)$. Graf D er den eneste grafen som har et toppunkt der begge koordinatene er positive. Derfor er graf D grafen til $p$.
 ::::
+:::::
+
 
 :::::::::::::
 
 
-::::::::::::::
 :::::::::::::::
 
 
 ---
 
 :::::::::::::::{exercise} Oppgave 9
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -1113,7 +1093,7 @@ Lag en skisse av grafen til $f$ der du markerer:
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En andregradsfunksjon $g$ er gitt ved
 
 $$
@@ -1129,7 +1109,7 @@ Lag en skisse av grafen til $g$ der du markerer:
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En andregradsfunksjon $h$ er gitt ved
 
 $$
@@ -1144,7 +1124,7 @@ Lag en skisse av grafen til $g$ der du markerer:
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En andregradsfunksjon $p$ er gitt ved
 
 $$
@@ -1170,15 +1150,9 @@ Det spiller ingen rolle om du velger å bestemme funksjonsuttrykkene på standar
 :::
 
 :::::::::::::::{exercise} Oppgave 10
----
-level: 3
----
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Om en andregradsfunksjon $f$ får du vite at
 
 * Grafen har et toppunkt i $(2, 3)$.
@@ -1187,11 +1161,10 @@ Om en andregradsfunksjon $f$ får du vite at
 Bestem $f(x)$. 
 
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = -\dfrac{1}{2}(x - 2)^2 + 3.
 $$
-::::
 
 ::::{solution}
 Siden vi kjenner til toppunktet på grafen, velger vi ekstremalpunktsform:
@@ -1225,10 +1198,13 @@ f(x) = -\dfrac{1}{2}(x - 2)^2 + 3.
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Om en andregradsfunksjon $g$ får du vite at
 
 * Grafen har et bunnpunkt i $(1, -3)$.
@@ -1237,11 +1213,10 @@ Om en andregradsfunksjon $g$ får du vite at
 Bestem $g(x)$. 
 
 
-::::{answer}
+:::::{answer}
 $$
 g(x) = \dfrac{1}{3}(x - 1)^2 - 3.
 $$
-::::
 
 
 ::::{solution}
@@ -1275,12 +1250,15 @@ $$
 g(x) = \dfrac{1}{3}(x - 1)^2 - 3.
 $$
 ::::
+:::::
+
+
 
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Om en andregradsfunksjon $h$ får du vite at
 
 * Grafens symmetrilinje er $x = -1$.
@@ -1290,12 +1268,10 @@ Om en andregradsfunksjon $h$ får du vite at
 Bestem $h(x)$.
 
 
-::::{answer}
+:::::{answer}
 $$
 h(x) = -\dfrac{2}{3}x^2 - \dfrac{4}{3}x + 2.
 $$
-::::
-
 
 ::::{solution}
 Vi velger standardform her siden vi bare kjenner til symmetrilinja (og ikke $y$-koordinaten til ekstremalpunktet) og hvor grafen skjærer $y$-aksen:
@@ -1344,10 +1320,15 @@ $$
 
 ::::
 
+:::::
+
+
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Om en andregradsfunksjon $p$ får du vite at
 
 * Grafen har et ekstremalpunkt i $(0, 3)$.
@@ -1360,7 +1341,6 @@ Bestem $p(x)$.
 $$
 p(x) = -\dfrac{1}{3}x^2 + 3.
 $$
-::::
 
 ::::{solution}
 Vi velger ekstremalpunktsform siden vi kjenner til ekstremalpunktet:
@@ -1394,10 +1374,10 @@ p(x) = -\dfrac{1}{3}x^2 + 3.
 $$
 
 ::::
+:::::
 
 :::::::::::::
 
-::::::::::::::
 
 :::::::::::::::
 
@@ -1408,28 +1388,23 @@ En identitet er en likning som er sann for alle verdier av $x$.
 
 :::
 
-:::::::::::::::{exercise} Oppgave 11
----
-level: 3
----
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::::{exercise} Oppgave 11
+
+
+:::::::::::::{part} a
 Bestem $s$ og $r$ slik at likningen nedenfor er en identitet
 
 $$
 (x - s)^2 + r = x^2 - 4x + 3
 $$
 
-::::{answer}
+:::::{answer}
 $$
 s = 2 \and r = -1.
 $$
-::::
-
 
 ::::{solution}
 Vi har at uttrykket på høyre side er på standardform med koeffisientene 
@@ -1457,22 +1432,23 @@ s = 2 \and r = -1.
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem $a$, $b$ og $c$ slik at likningen nedenfor er en identitet
 
 $$
 ax^2 + bx +c = -2(x + 1)^2 + 5
 $$
 
-::::{answer}
+:::::{answer}
 $$
 a = -2 \and b= -4 \and c = 3.
 $$
-::::
-
 
 ::::{solution}
 Vi ganger ut høyresiden og sammenligner leddene for å bestemme $a$, $b$ og $c$:
@@ -1487,17 +1463,23 @@ $$
 a = -2 \and b= -4 \and c = 3.
 $$
 ::::
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem $k$, $s$ og $r$ slik at likningen nedenfor er en identitet
 
 $$
 -x^2 + 8x + 12 = k(x - s)^2 + r
 $$
 
+:::::{answer}
+$$
+k = -1 \and s = 4 \and r = 28.
+$$
 
 ::::{solution}
 Vi ser at venstresiden er på standardform med koeffisientene
@@ -1532,18 +1514,26 @@ $$
 
 ::::
 
+:::::
+
+
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Bestem $a$, $b$ og $c$ slik at likningen nedenfor er en identitet
 
 $$
 \dfrac{1}{2}(x - 4)^2 + 3 = ax^2 + bx + c
 $$
 
+
+:::::{answer}
+$$
+a = \dfrac{1}{2} \and b = -4 \and c = 11.
+$$
 
 ::::{solution}
 Vi ganger ut venstresiden og sammenligner leddene for å bestemme $a$, $b$ og $c$:
@@ -1561,9 +1551,10 @@ a = \dfrac{1}{2} \and b = -4 \and c = 11.
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
-::::::::::::::
 
 :::::::::::::::
 
@@ -1577,18 +1568,12 @@ I denne oppgaven kan du selv velge om du vil bestemme $f(x)$ på standardform el
 
 
 :::::::::::::::{exercise} Oppgave 12
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-I figuren nedenfor vises grafen til en andregradsfunksjon $f$. 
 
-Bestem $f(x)$.
-
-
+:::::::::::::{part} a
 :::{plot}
-width: 70%
+width: 100%
+align: right
+fontsize: 26
 function: -(x + 1)**2 + 9, f
 ymax: 11
 point: (0, 8)
@@ -1600,12 +1585,17 @@ text: -4, 0, "$(-4, 0)$", top-left
 text: 2, 0, "$(2, 0)$", top-right
 :::
 
+I figuren til høyre vises grafen til en andregradsfunksjon $f$. 
 
-::::{answer}
+Bestem $f(x)$.
+
+
+
+:::::{answer}
 $$
 f(x) = -(x + 1)^2 + 9.
 $$
-::::
+:::::
 
 
 
@@ -1613,14 +1603,12 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
-I figuren nedenfor vises grafen til en andregradsfunksjon $g$.
-
-Bestem $g(x)$.
-
+:::::::::::::{part} b
 
 :::{plot}
-width: 70%
+width: 100%
+align: right
+fontsize: 26
 function: 0.5 * (x - 1)**2 - 2, g
 ticks: off
 point: (1, -2)
@@ -1629,24 +1617,26 @@ text: 1, -2, "$(1, -2)$", bottom-center
 text: 3, 0, "$(3, 0)$", bottom-right
 :::
 
-::::{answer}
+I figuren til høyre vises grafen til en andregradsfunksjon $g$.
+
+Bestem $g(x)$.
+
+:::::{answer}
 $$
 g(x) = \dfrac{1}{2}(x - 1)^2 - 2.
 $$
-::::
+:::::
 
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-I figuren nedenfor vises grafen til en andregradsfunksjon $h$. 
-
-Bestem $h(x)$.
-
+:::::::::::::{part} c
 :::{plot}
-width: 70%
+width: 100%
+align: right
+fontsize: 26
 function: -3/4 * (x + 2)**2 + 8, h
 ticks: off
 ymax: 10
@@ -1656,22 +1646,26 @@ text: -2, 8, "$(-2, 8)$", top-center
 text: 0, 5, "$(0, 5)$", top-right
 :::
 
-::::{answer}
+I figuren til høyre vises grafen til en andregradsfunksjon $h$. 
+
+Bestem $h(x)$.
+
+
+:::::{answer}
 $$
 h(x) = -\dfrac{3}{4}(x + 2)^2 + 8
 $$
-::::
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
-I figuren nedenfor vises grafen til en andregradsfunksjon $p$.
-
-Bestem $p(x)$.
+:::::::::::::{part} d
 
 :::{plot}
-width: 70%
+width: 100%
+align: right
+fontsize: 26
 function: x**2 - 4*x - 1, p
 ticks: off
 point: (-1, 4)
@@ -1683,17 +1677,20 @@ text: 0, -1, "$(0, -1)$", bottom-left
 :::
 
 
-::::{answer}
+I figuren til høyre vises grafen til en andregradsfunksjon $p$.
+
+Bestem $p(x)$.
+
+
+:::::{answer}
 $$
 p(x) = (x - 2)^2 - 5 = x^2 - 4x - 1.
 $$
-::::
+:::::
 
 :::::::::::::
 
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -1705,10 +1702,8 @@ Gang ut høyre side og sammenlign leddene med $x^2$, $x$ og konstantleddene på 
 :::
 
 :::::::::::::::{exercise} Oppgave 13
----
-level: 4
----
-> I denne oppgaven skal du vise at $x_0 = -\dfrac{b}{2a}$ er symmetrilinja til grafen til en andregradsfunksjon.
+
+I denne oppgaven skal du vise at $x_0 = -\dfrac{b}{2a}$ er symmetrilinja til grafen til en andregradsfunksjon.
 
 
 Bruk algebra til å bestemme $x_0$ og $y_0$ slik at likningen nedenfor er en identitet.
@@ -1718,11 +1713,10 @@ ax^2 + bx + c = a(x - x_0)^2 + y_0
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x_0 = -\dfrac{b}{2a} \and y_0 = c - \dfrac{b^2}{4a}
 $$
-::::
 
 ::::{solution}
 Vi ganger ut høyresiden 
@@ -1757,6 +1751,8 @@ $$
 
 som er $y$-koordinaten til ekstremalpunktet.
 ::::
+
+:::::
 
 
 :::::::::::::::

@@ -1,14 +1,8 @@
 # Oppgaver: Nullpunktsform
 
 :::::::::::::::{exercise} Oppgave 1
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -18,16 +12,16 @@ $$
 Bestem nullpunktene til $f$.
 
 
-::::{answer}
+:::::{answer}
 $$
 x = -1 \or x = 2
 $$
-::::
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En andregradsfunksjon $g$ er gitt ved
 
 $$
@@ -37,16 +31,16 @@ $$
 Bestem nullpunktene til $g$.
 
 
-::::{answer}
+:::::{answer}
 $$
 x = 1
 $$
-::::
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En andregradsfunksjon $h$ er gitt ved
 
 $$
@@ -55,16 +49,16 @@ $$
 
 Bestem nullpunktene til $h$.
 
-::::{answer}
+:::::{answer}
 $$
 x = \dfrac{1}{2} \or x = -4
 $$
-::::
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En andregradsfunksjon $p$ er gitt ved
 
 $$
@@ -74,16 +68,14 @@ $$
 Bestem nullpunktene til $p$.
 
 
-::::{answer}
+:::::{answer}
 $$
 x = -2
 $$
-::::
+:::::
 
 :::::::::::::
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -101,14 +93,9 @@ $$
 :::
 
 :::::::::::::::{exercise} Oppgave 2
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -118,12 +105,10 @@ $$
 Bestem $f(x)$ på nullpunktsform.
 
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = x(x - 4)
 $$
-::::
-
 
 ::::{solution}
 Vi bruker konjugatsetningen for å skrive om $f(x)$ til nullpunktsform:
@@ -137,13 +122,15 @@ f(x) &= (x - 2)^2 - 2^2 \\
 \\
 &= x(x - 4)
 \end{align*}
-
 ::::
+
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En andregradsfunksjon $g$ er gitt ved
 
 $$
@@ -153,12 +140,10 @@ $$
 Bestem $g(x)$ på nullpunktsform.
 
 
-::::{answer}
+:::::{answer}
 $$
 g(x) = -x(x + 6)
 $$
-::::
-
 
 ::::{solution}
 Vi bruker konjugatsetningen for å skrive om $g(x)$ til nullpunktsform:
@@ -176,10 +161,12 @@ g(x) &= -(x + 3)^2 + 3^2 \\
 \end{align*}
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En andregradsfunksjon $h$ er gitt ved
 
 $$
@@ -189,12 +176,10 @@ $$
 Bestem $h(x)$ på nullpunktsform.
 
 
-::::{answer}
+:::::{answer}
 $$
 h(x) = (x - 5)(x - 7)
 $$
-::::
-
 
 ::::{solution}
 Vi bruker konjugatsetningen for å skrive om $h(x)$ til nullpunktsform:
@@ -208,11 +193,13 @@ h(x) &= (x - 6)^2 - 1^2 \\
 \end{align*}
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En andregradsfunksjon $p$ er gitt ved
 
 $$
@@ -222,11 +209,10 @@ $$
 Bestem $p(x)$ på nullpunktsform.
 
 
-::::{answer}
+:::::{answer}
 $$
 p(x) = -(x - 7)(x + 1)
 $$
-::::
 
 
 ::::{solution}
@@ -244,6 +230,7 @@ p(x) &= -(x - 3)^2 + 4^2 \\
 &= -(x + 1)(x - 7)
 \end{align*}
 ::::
+:::::
 :::::::::::::
 
 
@@ -266,14 +253,9 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 3
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -283,12 +265,10 @@ $$
 Bestem $f(x)$ på ekstremalpunktsform. 
 
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = 2(x + 1)^2 - 8.
 $$
-::::
-
 
 ::::{solution}
 Fra $f(x)$ kan vi se at nullpunktene er $x_1 = 1$ og $x_2 = -3$. Symmetrilinja er da gitt ved 
@@ -310,9 +290,11 @@ f(x) = 2(x + 1)^2 - 8.
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En andregradsfunksjon $g$ er gitt ved
 
 $$
@@ -323,11 +305,10 @@ Bestem $g(x)$ på ekstremalpunktsform.
 
 
 
-::::{answer}
+:::::{answer}
 $$
 g(x) = -3(x - 1)^2 + 27.
 $$
-::::
 
 ::::{solution}
 Fra $g(x)$ kan vi se at nullpunktene er $x_1 = -2$ og $x_2 = 4$. Symmetrilinja er da gitt ved
@@ -349,12 +330,14 @@ g(x) = -3(x - 1)^2 + 27.
 $$
 ::::
 
+:::::
+
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En andregradsfunksjon $h$ er gitt ved
 
 $$
@@ -365,11 +348,10 @@ Bestem $h(x)$ på ekstremalpunktsform.
 
 
 
-::::{answer}
+:::::{answer}
 $$
 h(x) = \frac{1}{2}(x + 2)^2 - \frac{9}{2}.
 $$
-::::
 
 ::::{solution}
 Fra $h(x)$ kan vi se at nullpunktene er $x_1 = -5$ og $x_2 = 1$. Symmetrilinja er da gitt ved
@@ -391,11 +373,13 @@ h(x) = \frac{1}{2}(x + 2)^2 - \frac{9}{2}.
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En andregradsfunksjon $p$ er gitt ved
 
 $$
@@ -405,12 +389,10 @@ $$
 Bestem $p(x)$ på ekstremalpunktsform.
 
 
-::::{answer}
+:::::{answer}
 $$
 p(x) = -\frac{1}{3}(x + 1)^2 + 3.
 $$
-::::
-
 
 ::::{solution}
 Fra $p(x)$ kan vi se at nullpunktene er $x_1 = 2$ og $x_2 = -4$. Symmetrilinja er da gitt ved
@@ -432,10 +414,11 @@ p(x) = -\frac{1}{3}(x + 1)^2 + 3.
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
-::::::::::::::
 :::::::::::::::
 
 
@@ -444,14 +427,9 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 4
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -461,11 +439,10 @@ $$
 Bestem $f(x)$ på standardform.
 
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = x^2 + 2x - 3.
 $$
-::::
 
 ::::{solution}
 Vi ganger ut parentesene og samler leddene: 
@@ -479,10 +456,12 @@ f(x) &= (x - 1)(x + 3) \\
 \end{align*}
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En andregradsfunksjon $g$ er gitt ved
 
 $$
@@ -492,12 +471,10 @@ $$
 Bestem $g(x)$ på standardform.
 
 
-::::{answer}
+:::::{answer}
 $$
 g(x) = -2x^2 + 4x + 16.
 $$
-::::
-
 
 ::::{solution}
 Vi ganger ut parentesene og samler leddene:
@@ -514,10 +491,12 @@ g(x) &= -2(x + 2)(x - 4) \\
 
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En andregradsfunksjon $h$ er gitt ved
 
 $$
@@ -527,12 +506,10 @@ $$
 
 Bestem $h(x)$ på standardform.
 
-::::{answer}
+:::::{answer}
 $$
 h(x) = -3x^2 - 24x - 48.
 $$
-::::
-
 
 ::::{solution}
 Vi ganger ut parentesene og samler leddene:
@@ -546,11 +523,13 @@ h(x) &= -3(x + 4)^2 \\
 \end{align*}
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En andregradsfunksjon $p$ er gitt ved
 
 $$
@@ -560,11 +539,10 @@ $$
 Bestem $p(x)$ på standardform.
 
 
-::::{answer}
+:::::{answer}
 $$
 p(x) = 2x^2 + 10x + 12.
 $$
-::::
 
 ::::{solution}
 Vi ganger ut parentesene og samler leddene:
@@ -580,10 +558,10 @@ p(x) &= 2(x + 2)(x + 3) \\
 \end{align*}
 ::::
 
+:::::
+
 :::::::::::::
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -599,14 +577,8 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 5
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -616,12 +588,10 @@ $$
 Bestem $f(x)$ på nullpunktsform.
 
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = (x + 2)(x + 4).
 $$
-::::
-
 
 ::::{solution}
 Vi ser at koeffisientene til $f(x)$ er 
@@ -656,9 +626,11 @@ $$
 
 ::::
 
+:::::
+
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En andregradsfunksjon $g$ er gitt ved
 
 
@@ -670,11 +642,10 @@ Bestem $g(x)$ på nullpunktsform.
 
 
 
-::::{answer}
+:::::{answer}
 $$
 g(x) = -(x + 1)(x - 5).
 $$
-::::
 
 ::::{solution}
 Vi ser at koeffisientene til $g(x)$ er
@@ -710,10 +681,12 @@ $$
 
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En andregradsfunksjon $h$ er gitt ved
 
 $$
@@ -723,13 +696,10 @@ $$
 Bestem $h(x)$ på nullpunktsform.
 
 
-::::{answer}
+:::::{answer}
 $$
 h(x) = (x - 3)(x + 2).
 $$
-::::
-
-
 
 ::::{solution}
 Vi ser at koeffisientene til $h(x)$ er
@@ -763,11 +733,14 @@ h(x) = \left(x - \frac{1}{2}\right)^2 - \left(\frac{5}{2}\right)^2 = \left(x - \
 $$
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En andregradsfunksjon $p$ er gitt ved
 
 $$
@@ -777,12 +750,10 @@ $$
 Bestem $p(x)$ på nullpunktsform.
 
 
-::::{answer}
+:::::{answer}
 $$
 p(x) = 2(x - 1)(x + 5).
 $$
-::::
-
 
 ::::{solution}
 Vi ser at koeffisientene til $p(x)$ er
@@ -822,9 +793,10 @@ p(x) = 2\left((x + 2)^2 - 3^2\right) = 2\left((x + 2 - 3)(x + 2 + 3)\right) = 2(
 $$
 ::::
 
-:::::::::::::
+:::::
 
-::::::::::::::
+
+:::::::::::::
 :::::::::::::::
 
 
@@ -835,32 +807,26 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 6
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Grafen til en andregradsfunksjon $f$ er vist i figuren nedenfor.
 
-Bestem $f(x)$ på nullpunktsform.
+:::::::::::::{part} a
 
-:::{figure} ./figurer/oppgaver/oppgave_6/a.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
+:::{plot}
+width: 320px
+align: right
+fontsize: 28
+function: (x + 2) * (x - 1), f
 :::
 
 
-::::{answer}
+Grafen til en andregradsfunksjon $f$ er vist i figuren til høyre.
+
+Bestem $f(x)$ på nullpunktsform.
+
+
+:::::{answer}
 $$
 f(x) = (x + 2)(x - 1).
 $$
-::::
-
 
 ::::{solution}
 Vi ser at grafen til $f$ har nullpunkter $(-2, 0)$ og $(1, 0)$. Det betyr at 
@@ -888,28 +854,30 @@ f(x) = 1\cdot(x + 2)(x - 1) = (x + 2)(x - 1).
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
-Grafen til en andregradsfunksjon $g$ er vist i figuren nedenfor.
+:::::::::::::{part} b
+:::{plot}
+width: 320px
+align: right
+fontsize: 28
+function: 3 * (x + 1)**2, g
+:::
+
+Grafen til en andregradsfunksjon $g$ er vist i figuren til høyre.
 
 Bestem $g(x)$ på nullpunktsform.
 
-:::{figure} ./figurer/oppgaver/oppgave_6/b.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
 
 
-::::{answer}
+
+:::::{answer}
 $$
 g(x) = 3(x + 1)^2
 $$
-::::
-
 
 ::::{solution}
 Grafen til $g$ har bare ett nullpunkt i $(-1, 0)$. Det betyr at vi kan skrive $g(x)$ på nullpunktsform som
@@ -937,28 +905,32 @@ g(x) = 3(x + 1)^2
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-Grafen til en andregradsfunksjon $h$ er vist i figuren nedenfor.
+:::::::::::::{part} c
 
-Bestem $h(x)$ på nullpunktsform.
-
-:::{figure} ./figurer/oppgaver/oppgave_6/c.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
+:::{plot}
+width: 320px
+align: right
+fontsize: 28
+function: -1/2 * (x + 2) * (x - 3), h
 :::
 
 
-::::{answer}
+Grafen til en andregradsfunksjon $h$ er vist i figuren til høyre.
+
+Bestem $h(x)$ på nullpunktsform.
+
+
+
+:::::{answer}
 $$
 h(x) = -\frac{1}{2}(x + 2)(x - 3).
 $$
-::::
-
 
 ::::{solution}
 Grafen til $h$ har nullpunkter i $(-2, 0)$ og $(3, 0)$. Det betyr at vi kan skrive $h(x)$ på nullpunktsform som
@@ -986,27 +958,30 @@ h(x) = -\frac{1}{2}(x + 2)(x - 3).
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
-Grafen til en andregradsfunksjon $p$ er vist i figuren nedenfor.
+:::::::::::::{part} d
+
+:::{plot}
+width: 320px
+align: right
+fontsize: 28
+function: -2 * (x - 3)**2, p
+:::
+
+Grafen til en andregradsfunksjon $p$ er vist i figuren til høyre.
 
 Bestem $p(x)$ på nullpunktsform.
 
-:::{figure} ./figurer/oppgaver/oppgave_6/d.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
 
 
-::::{answer}
+:::::{answer}
 $$
 p(x) = -2(x - 3)^2
 $$
-::::
 
 ::::{solution}
 Grafen til $p$ har bare ett nullpunkt i $(3, 0)$. Det betyr at vi kan skrive $p(x)$ på nullpunktsform som
@@ -1029,10 +1004,11 @@ $$
 
 ::::
 
+:::::
+
+
 :::::::::::::
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -1040,14 +1016,9 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 7
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -1057,12 +1028,10 @@ $$
 Bestem nullpunktene til $f$.
 
 
-::::{answer}
+:::::{answer}
 $$
 x = -1 \or x = 5.
 $$
-::::
-
 
 ::::{solution}
 Vi ser at koeffisientene til $f(x)$ er
@@ -1102,12 +1071,14 @@ x = -1 \or x = 5.
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En andregradsfunksjon $g$ er gitt ved
 
 $$
@@ -1117,11 +1088,10 @@ $$
 Bestem i hvilke punkter grafen til $g$ skjærer $x$-aksen.
 
 
-::::{answer}
+:::::{answer}
 $$
 x = 6 \qog x = -1.
 $$
-::::
 
 ::::{solution}
 Vi ser at koeffisientene til $g(x)$ er
@@ -1162,10 +1132,12 @@ $$
 
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En andregradsfunksjon $h$ er gitt ved
 
 $$
@@ -1175,11 +1147,10 @@ $$
 Bestem nullpunktene til $h$.
 
 
-::::{answer}
+:::::{answer}
 $$
 x = 2 \or x = -7.
 $$
-::::
 
 ::::{solution}
 Vi ser at koeffisientene til $h(x)$ er
@@ -1219,10 +1190,12 @@ x = 2 \or x = -7.
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En andregradsfunksjon $p$ er gitt ved
 
 $$
@@ -1232,12 +1205,10 @@ $$
 Bestem i hvilke punkter grafen til $p$ skjærer $x$-aksen.
 
 
-::::{answer}
+:::::{answer}
 $$
 x = -2 \qog x = -4.
 $$
-::::
-
 
 ::::{solution}
 Vi ser at koeffisientene til $p(x)$ er
@@ -1277,10 +1248,11 @@ x = -2 \qog x = -4.
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -1291,32 +1263,27 @@ Her må du selv velge hvilken representasjon du vil bruke for å bestemme funksj
 :::
 
 :::::::::::::::{exercise} Oppgave 8
----
-level: 3
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Grafen til en andregradsfunksjon $f$ er vist i figuren nedenfor.
 
-Bestem $f(x)$. 
 
-:::{figure} ./figurer/oppgaver/oppgave_8/a.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
+:::::::::::::{part} a
+:::{plot}
+width: 320px
+align: right
+fontsize: 28
+function: (x + 1) * (x - 3), f
 :::
 
 
-::::{answer}
+Grafen til en andregradsfunksjon $f$ er vist i figuren til høyre.
+
+Bestem $f(x)$. 
+
+
+
+:::::{answer}
 $$
 f(x) = (x + 1)(x - 3).
 $$
-::::
-
 
 ::::{solution}
 Grafen til $f$ har nullpunkter i $(-1, 0)$ og $(3, 0)$. Det betyr at vi kan skrive $f(x)$ på nullpunktsform som
@@ -1345,29 +1312,31 @@ $$
 
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
-Grafen til en andregradsfunksjon $g$ er vist i figuren nedenfor.
+:::::::::::::{part} b
+:::{plot}
+width: 320px
+align: right
+fontsize: 28
+function: 2 * (x - 1)**2 + 2, g
+:::
+
+Grafen til en andregradsfunksjon $g$ er vist i figuren til høyre.
 
 Bestem $g(x)$.
 
-:::{figure} ./figurer/oppgaver/oppgave_8/b.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
 
 
-::::{answer}
+
+:::::{answer}
 $$
 g(x) = 2(x - 1)^2 + 2.
 $$
-::::
-
 
 ::::{solution}
 Grafen til $g$ har et bunnpunkt i $(1, 2)$ som betyr at vi kan skrive $g(x)$ på ekstremalpunktsform som
@@ -1395,28 +1364,34 @@ g(x) = 2(x - 1)^2 + 2.
 $$
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-Grafen til en andregradsfunksjon $h$ er vist i figuren nedenfor.
+:::::::::::::{part} c
+:::{plot}
+width: 320px
+align: right
+fontsize: 28
+function: -2*x**2 + 18, h
+ymax: 20
+ymin: -4
+ystep: 2
+:::
+
+Grafen til en andregradsfunksjon $h$ er vist i figuren til høyre.
 
 Bestem $h(x)$.
 
-:::{figure} ./figurer/oppgaver/oppgave_8/c.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
 
-::::{answer}
+
+:::::{answer}
 $$
 h(x) = -2x^2 + 18.
 $$
-::::
-
 
 ::::{solution}
 Grafen til $h$ har et toppunkt i $(0, 18)$ som betyr at vi kan skrive $h(x)$ på ekstremalpunktsform som
@@ -1444,29 +1419,33 @@ h(x) = -2x^2 + 18.
 $$
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
-Grafen til en andregradsfunksjon $p$ er vist i figuren nedenfor.
+:::::::::::::{part} d
+:::{plot}
+width: 320px
+align: right
+fontsize: 28
+function: -(x - 1)**2 + 9, p
+ymax: 11
+ymin: -3
+:::
+
+Grafen til en andregradsfunksjon $p$ er vist i figuren til høyre.
 
 Bestem $p(x)$.
 
-:::{figure} ./figurer/oppgaver/oppgave_8/d.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
 
 
-
-::::{answer}
+:::::{answer}
 $$
 p(x) = -(x + 2)(x - 4).
 $$
-::::
 
 ::::{solution}
 Grafen til $p$ har nullpunkter i $(-2, 0)$ og $(4, 0)$. Det betyr at vi kan skrive $p(x)$ på nullpunktsform som
@@ -1494,12 +1473,13 @@ p(x) = -1(x + 2)(x - 4) = -(x + 2)(x - 4).
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
 
-::::::::::::::
 :::::::::::::::
 
 
@@ -1514,14 +1494,8 @@ Husk at hvis leddene har samme fortegn, så har ikke funksjonen nullpunkter side
 
 
 :::::::::::::::{exercise} Oppgave 9 
----
-level: 3
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -1532,9 +1506,8 @@ Avgjør om $f$ har nullpunkter. Hvis ja, bestem nullpunktene.
 
 
 
-::::{answer}
+:::::{answer}
 Nullpunktene er $x = 1$ og $x = 7$.
-::::
 
 ::::{solution}
 Leddene har motsatt fortegn som betyr at vi kan bruke konjugatsetningen:
@@ -1544,10 +1517,14 @@ f(x) = (x - 4)^2 - 3^2 = (x - 4 - 3)(x - 4 + 3) = (x - 7)(x - 1).
 $$
 
 Nullpunktene er dermed $x = 1$ og $x = 7$.
+::::
+
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En andregradsfunksjon $g$ er gitt ved
 
 $$
@@ -1557,11 +1534,10 @@ $$
 Avgjør om $g$ har nullpunkter. Hvis ja, bestem nullpunktene.
 
 
-::::{answer}
+:::::{answer}
 $$
 x = -3 \qog x = 1.
 $$
-::::
 
 ::::{solution}
 Leddene har motsatt fortegn som betyr at vi kan bruke konjugatsetningen:
@@ -1577,9 +1553,11 @@ x = -3 \qog x = 1.
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En andregradsfunksjon $h$ er gitt ved
 
 $$
@@ -1589,19 +1567,20 @@ $$
 Avgjør om $h$ har nullpunkter. Hvis ja, bestem nullpunktene.
 
 
-::::{answer}
+:::::{answer}
 Ingen nullpunkter.
-::::
-
 
 ::::{solution}
 Leddene har samme fortegn som betyr at vi ikke kan bruke konjugatsetningen til å faktorisere $h(x)$ til nullpunktsform. Dermed har ikke $h$ noen nullpunkter.
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En andregradsfunksjon $p$ er gitt ved
 
 $$
@@ -1609,17 +1588,22 @@ p(x) = -\frac{1}{2}(x - 4)^2
 $$
 
 
-::::{answer}
+Avgjør om $p$ har nullpunkter. Hvis ja, bestem nullpunktene.
+
+
+:::::{answer}
 $$
 x = 4
 $$
-::::
 
 ::::{solution}
 Vi har at $p(x)$ er skrevet på nullpunktsform (og ekstremalpunktsform, med $y_0 = 0$). Dermed har $p$ bare ett nullpunkts i $x = 4$.
 ::::
 
-::::::::::::::
+:::::
+
+:::::::::::::
+
 :::::::::::::::
 
 
@@ -1629,11 +1613,8 @@ Vi har at $p(x)$ er skrevet på nullpunktsform (og ekstremalpunktsform, med $y_0
 
 
 :::::::::::::::{exercise} Oppgave 10
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -1642,17 +1623,45 @@ $$
 
 Bestem hvilken graf nedenfor som viser grafen til $f$.
 
-:::{figure} ./figurer/oppgaver/oppgave_10/a/merged_figure.svg
+::::{multi-plot2}
 ---
-class: no-click, adaptive-figure
+rows: 2
+cols: 2
+fontsize: 28
+---
+:::{plot}
 width: 100%
----
+function: (x + 2) * (x - 1)
+ticks: off
+text: 5, 5, "A", center-center, bbox
 :::
 
+:::{plot}
+width: 100%
+function: (x - 2) * (x + 1)
+ticks: off
+text: 5, 5, "B", center-center, bbox
+:::
 
-::::{answer}
-Graf B.
+:::{plot}
+width: 100%
+function: -(x - 2) * (x + 1)
+ticks: off
+text: 5, 5, "C", center-center, bbox
+:::
+
+:::{plot}
+width: 100%
+function: -(x + 2) * (x - 1)
+ticks: off
+text: 5, 5, "D", center-center, bbox
+:::
+
 ::::
+
+
+:::::{answer}
+Graf B.
 
 ::::{solution}
 Vi ser fra $f(x)$ at nullpunktene er gitt ved 
@@ -1667,29 +1676,59 @@ Vi ser også at $a = 1 > 0$ som betyr at grafen til $f$ er konveks {poly-icon}`s
 
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En andregradsfunksjon $g$ er gitt ved
 
 $$
 g(x) = -2(x - 1)(x - 2)
 $$
 
-:::{figure} ./figurer/oppgaver/oppgave_10/b/merged_figure.svg
+::::{multi-plot2}
 ---
-class: no-click, adaptive-figure
+rows: 2
+cols: 2
+fontsize: 28
+---
+:::{plot}
 width: 100%
----
+function: -2 * (x - 1) * (x - 2)
+ticks: off
+text: 5, 5, "A", center-center, bbox
 :::
 
+:::{plot}
+width: 100%
+function: 2 * (x - 1) * (x - 2)
+ticks: off
+text: 5, 5, "B", center-center, bbox
+:::
 
-::::{answer}
-Graf A. 
+:::{plot}
+width: 100%
+function: -2 * (x + 1) * (x - 2)
+ticks: off
+text: 5, 5, "C", center-center, bbox
+:::
+
+:::{plot}
+width: 100%
+function: -2 * (x + 1) * (x + 2)
+ticks: off
+text: 5, 5, "D", center-center, bbox
+:::
+
 ::::
 
+
+
+:::::{answer}
+Graf A. 
 
 ::::{solution}
 Vi ser fra $g(x)$ at nullpunktene er gitt ved
@@ -1704,11 +1743,14 @@ Vi ser at $a < 0$ som betyr at grafen til $g$ er konkav {poly-icon}`frown`. Derm
 
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En andregradsfunksjon $h$ er gitt ved 
 
 $$
@@ -1718,18 +1760,45 @@ $$
 Bestem hvilken graf nedenfor som viser grafen til $h$. 
 
 
-:::{figure} ./figurer/oppgaver/oppgave_10/c/merged_figure.svg
+::::{multi-plot2}
 ---
-class: no-click, adaptive-figure
+rows: 2
+cols: 2
+fontsize: 28
+---
+:::{plot}
 width: 100%
----
+function: (x - 2)**2
+ticks: off
+text: 5, 5, "A", center-center, bbox
 :::
 
+:::{plot}
+width: 100%
+function: -(x - 2)**2
+ticks: off
+text: 5, 5, "B", center-center, bbox
+:::
 
-::::{answer}
-Graf C.
+:::{plot}
+width: 100%
+function: (x + 2)**2
+ticks: off
+text: 5, 5, "C", center-center, bbox
+:::
+
+:::{plot}
+width: 100%
+function: -(x + 2)**2
+ticks: off
+text: 5, 5, "D", center-center, bbox
+:::
+
 ::::
 
+
+:::::{answer}
+Graf C.
 
 ::::{solution}
 Vi ser fra $h(x)$ at nullpunktet er gitt ved
@@ -1743,10 +1812,12 @@ Det betyr at grafen må treffe $x$-aksen ved en negativ $x$-verdi som passer med
 Vi ser at $a = 1 > 0$ som betyr at grafen er konveks {poly-icon}`smile`. Dermed passer bare graf C. Dermed er graf C grafen til $h$.
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-::::::::::::::
 :::::::::::::::
 
 
@@ -1759,14 +1830,9 @@ Husk at en identitet er en likning som er sann for alle verdier av $x$. Det bety
 
 
 :::::::::::::::{exercise} Oppgave 11
----
-level: 3
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 Bestem $s$ og $r$ slik at likningen nedenfor er en identitet.
 
 $$
@@ -1774,12 +1840,10 @@ $$
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 s = 3 \and r = -25
 $$
-::::
-
 
 ::::{solution}
 Vi kan kjenne $s$ som symmetrilinja til en andregradsfunksjon. Venstresiden er på nullpunktsform som gjør at vi kan finne symmetrilinja ved å bruke formelen
@@ -1801,10 +1865,13 @@ s = 3 \and r = -25
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem $s$ og $r$ slik at likningen nedenfor er en identitet.
 
 $$
@@ -1812,11 +1879,10 @@ $$
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 s = -1 \and r = -4
 $$
-::::
 
 ::::{solution}
 Vi kan kjenne $s$ som symmetrilinja til en andregradsfunksjon. Venstresiden er på nullpunktsform som gjør at vi kan finne symmetrilinja ved å bruke formelen
@@ -1838,10 +1904,13 @@ s = -1 \and r = -4
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem $s$ og $r$ slik at likningen nedenfor er en identitet.
 
 $$
@@ -1849,11 +1918,10 @@ $$
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 r = 3 \and s = 1 \or r = 1 \and s = 3.
 $$
-::::
 
 ::::{solution}
 Vi gjenkjenner venstresiden som nullpunktsformen til en andregradsfunksjon der $s$ og $r$ er nullpunktene. På høyresiden er uttrykket gitt på ekstremalpunktsform som vi kan skrive om til nullpunktsform ved å bruke konjugatsetningen:
@@ -1869,10 +1937,12 @@ r = 3 \and s = 1 \or r = 1 \and s = 3.
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Bestem $s$ og $r$ slik at likningen nedenfor er en identitet
 
 $$
@@ -1880,11 +1950,10 @@ x^2 - x - 2 = (x - s)(x - r)
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 s = 2 \and r = -1 \or s = -1 \and r = 2.
 $$
-::::
 
 ::::{solution}
 Venstresiden er skrevet på standardform og høyresiden er skrevet på nullpunktsform. Vi kan skrive om venstresiden til nullpunktsform for å bestemme verdiene til $s$ og $r$. 
@@ -1920,11 +1989,59 @@ s = 2 \and r = -1 \or s = -1 \and r = 2.
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
+:::::::::::::{part} e
+Bestem $a$, $b$ og $c$ slik at likningen nedenfor er en identitet:
 
-::::::::::::::
+$$
+2(x - 3)^2 + c = a(x - b)(x + 1)
+$$
+
+
+:::::{answer}
+
+$$
+a = 2 \and b = 7 \and c = -32
+$$
+
+::::{solution}
+Siden den ledende koeffisienten må være lik i alle representasjonsformene, så er $a = 2$.
+
+Vi har at symmetrilinja er $x = 3$ som vi kan se fra venstre side av likningen. Avstanden mellom symmetrilinja og hvert nullpunkt er alltid lik. 
+Fra høyre side kan vi se at $x = -1$ er et nullpunkt. Avstanden mellom symmetrilinja og nullpunkter er da $+4$. Det andre nullpunktet vil samsvare med verdien til $b$.
+Dette nullpunktet må ha samme avstand til symmetrilinja, men ligge på den andre siden av denne linja. Dermed er 
+
+$$
+b = 3 + 4 = 7
+$$
+
+Nå har vi et fullstendig uttrykk for andregradspolynomet på høyre side som er vi kan la være en funksjon $f$ gitt ved
+
+$$
+f(x) = a(x - b)(x + 1) = 2(x - 7)(x + 1)
+$$
+
+Verdien til $c$ er lik $f(3)$ siden dette gir oss $y$-koordinaten til ekstremalpunktet til $f$:
+
+$$
+c = f(3) = 2(3 - 7)(3 + 1) = 2(-4)(4) = -32.
+$$
+
+Ergo er
+
+$$
+a = 2 \and b = 7 \and c = -32
+$$
+::::
+:::::
+
+:::::::::::::
+
+
 :::::::::::::::
 
 
@@ -1954,14 +2071,8 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 13
----
-level: 3
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Undersøk om det finnes tilfeller hvor nullpunktsformen og ekstremalpunktsformen til en andregradsfunksjon er like. 
 
 Gi et eksempel hvis du finner et.
@@ -1997,7 +2108,7 @@ Her er nullpunktet og symmetrilinja gitt ved $x = 2$.
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Undersøk om det finnes tilfeller hvor standardformen og nullpunktsformen til en andregradsfunksjon er like.
 
 Gi et eksempel hvis du finner et.
@@ -2016,7 +2127,7 @@ Da er nullpunktet til $f$ gitt ved $x = 0$. Et eksempel vil da være $f(x) = -2x
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Undersøk om det finnes tilfeller hvor standardformen og ekstremalpunktsformen til en andregradsfunksjon er like.
 
 Gi et eksempel hvis du finner et.
@@ -2035,7 +2146,7 @@ som betyr at ekstremalpunktet er $(0, 0)$. Et eksempel på en slik funksjon er $
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Undersøk om det finnes tilfeller hvor alle tre representasjonsformer er like. 
 
 Gi et eksempel om du finner et.

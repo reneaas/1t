@@ -31,7 +31,7 @@ $$
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi tegner grafen til $f(x) = x^2 - 4x + 3$ og ser hvor $y$-koordinaten til grafen er mindre enn null:
 
@@ -68,9 +68,9 @@ $$
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
-Vi tegner grafen til $f(x) = x^2 - x - 2$ og ser hvor $y$-koordinaten til grafen er større enn eller lik $y = 2$: 
+Vi tegner grafen til $f(x) = x^2 - x - 4$ og ser hvor $y$-koordinaten til grafen er større enn eller lik $y = 2$: 
 
 ::::{figure} ./figurer/eksempler/eksempel_2/figur.svg
 ---
@@ -95,7 +95,16 @@ Vi leser det som at $x$ er enten i det første intervallet, eller i det andre.
 ---
 
 :::::::::::::::{exercise} Underveisoppgave 1
-Grafen til en andregradsfunksjon $f(x) = x^2 - 2x - 8$ er vist i figuren nedenfor. 
+:::{plot}
+width: 320px
+align: right
+fontsize: 26
+function: x**2 - 2*x - 10, f
+ymin: -12
+ystep: 2
+:::
+
+Grafen til en andregradsfunksjon $f(x) = x^2 - 2x - 8$ er vist i figuren til høyre. 
 
 Bruk grafen til å løse ulikheten
 
@@ -104,21 +113,12 @@ x^2 - 2x - 10 \geq -2
 $$
 
 
-:::{plot}
-width: 70%
-function: x**2 - 2*x - 10, f
-ymin: -12
-ystep: 2
-:::
 
 
-
-::::{answer}
+:::::{answer}
 $$
 x \in \langle \gets, -2] \cup [4, \to \rangle
 $$
-::::
-
 
 ::::{solution}
 Vi ser fra grafen at $f(x) \geq -2$ når $x \leq -2$ eller når $x \geq 4$. Løsningen er derfor
@@ -127,6 +127,8 @@ $$
 x \in \langle \gets, -2] \cup [4, \to \rangle
 $$
 ::::
+
+:::::
 
 :::::::::::::::
 
@@ -166,6 +168,13 @@ La oss se på et eksempel:
 :::::::::::::::{example} Eksempel 3
 Nedenfor vises fortegnslinja til en andregradsfunksjon $f$ som har nullpunkter $x = -2$ og $x = 3$.
 
+
+:::{signchart-2}
+width: 70%
+function: -(x + 2) * (x - 3), f(x)
+factors: false
+:::
+
 Bruk fortegnslinja til å løse ulikheten 
 
 $$
@@ -173,23 +182,23 @@ f(x) < 0
 $$
 
 
-:::{figure} ./figurer/eksempler/eksempel_3/figur.svg
----
-class: no-click, adaptive-figure
-width: 100%
----
-:::
-
-
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Siden vi skal bestemme når $f(x) < 0$, så må vi se hvor fortegnslinja er **stiplet**. Fra fortegnslinja ser vi at $f(x) < 0$ når $x < -2$ eller når $x > 3$. Løsningen er derfor
 
 $$
 x \in \langle \gets, -2 \rangle \cup \langle 3, \to \rangle
 $$
+
+Denne løsningen kan vi også skrive som
+
+$$
+x \in \real \setminus [-2, 3]
+$$
+
+som sier at vi tar alle tallene på tallinja, *bortsett fra* tallene i intervallet $[-2, 3]$.
 ::::
 
 
@@ -201,22 +210,22 @@ $$
 :::::::::::::::{exercise} Underveisoppgave 2
 Nedenfor vises fortegnslinja til en andregradsfunksjon $f$. 
 
-Bruk fortegnslinja til å løse ulikheten $f(x) \geq 0$. 
-
-:::{figure} ./figurer/underveisoppgaver/underveisoppgave_2/figur.svg
----
-class: no-click, adaptive-figure
-width: 100%
----
+:::{signchart-2}
+width: 70%
+function: (x + 1) * (x - 2), f(x)
+factors: false
 :::
 
 
-::::{answer}
+
+Bruk fortegnslinja til å løse ulikheten $f(x) \geq 0$. 
+
+
+
+:::::{answer}
 $$
 x \in \langle \gets, -1] \cup [2, \to \rangle
 $$
-::::
-
 
 ::::{solution}
 For å løse ulikheten $f(x) \geq 0$ må vi se hvor fortegnslinja er **heltrukket** eller **lik null**. Fra fortegnslinja ser vi at $f(x) \geq 0$ når $x \leq -1$ eller når $x \geq 2$. Løsningen er derfor
@@ -225,6 +234,9 @@ $$
 x \in \langle \gets, -1] \cup [2, \to \rangle
 $$
 ::::
+
+:::::
+
 
 :::::::::::::::
 
@@ -245,7 +257,7 @@ $$
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi starter med å samle alle leddene på én side slik at vi får $0$ på høyre side:
 
@@ -273,15 +285,15 @@ $$
 
 Så tegner vi en fortegnslinje for hver av faktorene i andregradsuttrykket. Får å få fortegnslinja til $f(x)$, ganger vi fortegnet til hver faktor sammen og ser hvilken fortegn vi får. Se figuren nedenfor:
 
-:::{figure} ./figurer/eksempler/eksempel_4/figur.svg
----
-class: no-click, adaptive-figure
-width: 100%
----
+
+:::{signchart-2}
+width: 60%
+function: -1 * (x + 3) * (x - 1), f(x) 
 :::
 
 
-Fra fortegnslinja til $f(x)$, kan vi se at $f(x) > 0$ når $-3 < x < 1$. Løsningen er derfor
+
+Fra fortegnslinja til $f(x)$, kan vi se at $f(x) > 0$ når
 
 $$
 x \in \langle -3, 1 \rangle
@@ -304,11 +316,10 @@ x^2 + x - 8 < 4
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \in \langle -4, 3 \rangle
 $$
-::::
 
 ::::{solution}
 Vi starter med å samle alle leddene på én side slik at vi får $0$ på høyre side:
@@ -338,22 +349,21 @@ $$
 Nå tegner vi en fortegnslinje for hver av faktorene i andregradsuttrykket. Får å få fortegnslinja til $f(x) = (x + 4)(x - 3)$, ganger vi fortegnet til hver faktor sammen og ser hvilket fortegn vi får. Se figuren nedenfor:
 
 
-:::{figure} ./figurer/underveisoppgaver/underveisoppgave_3/figur.svg
----
-class: no-click, adaptive-figure
-width: 100%
----
+:::{signchart-2}
+width: 60%
+function: (x + 4) * (x - 3), f(x)
 :::
 
-Fra figuren kan vi se at $f(x) < 0$ når $-4 < x < 3$. Løsningen er derfor
+
+Fra figuren kan vi se at $f(x) < 0$ når
 
 $$
 x \in \langle -4, 3 \rangle
 $$
 
-
-
 ::::
+
+:::::
 
 :::::::::::::::
 
@@ -379,11 +389,8 @@ viser hvordan man løser en andregradsulikhet. Løsningen er $x < -1$ eller $x >
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 :::{cas-popup}
 ---
 layout: sidebar
@@ -397,7 +404,7 @@ Bruk CAS til å løse ulikheten som løses i gif-en ovenfor.
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 :::{cas-popup}
 ---
@@ -415,7 +422,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 :::{cas-popup}
 ---
 layout: sidebar
@@ -430,8 +437,6 @@ $$
 
 :::::::::::::
 
-
-::::::::::::::
 
 
 :::::::::::::::

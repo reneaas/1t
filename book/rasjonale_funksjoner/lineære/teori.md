@@ -1,9 +1,6 @@
 # Lineære-over-lineære 
 
-::::{admonition} Læringsmål
----
-class: tip
----
+::::{goals} Læringsmål
 * Kunne representere lineære-over-lineære rasjonale funksjoner algebraisk, grafisk og med fortegnslinjer.
 * Kunne bestemme $f(x)$ for rasjonale funksjoner der tellergrad og nevnergrad er 1.
 * Kunne bestemme asymptotene til rasjonale funksjoner.
@@ -12,10 +9,7 @@ class: tip
 
 En **rasjonal funksjon** er en funksjon som kan skrives som en brøk der telleren og nevneren er polynomer.
 
-:::::{admonition} Definisjon: Rasjonale funksjoner
----
-class: theory
----
+:::::{summary} Definisjon: Rasjonale funksjoner
 En rasjonal funksjon $f$ er en funksjon som kan skrives som
 
 $$
@@ -46,7 +40,7 @@ class: no-click, adaptive-figure
 
 
 :::{plot}
-width: 80%
+width: 70%
 fontsize: 18
 function: (x + 1) / (x - 2), f, (-15, 15) \ {2}
 xmin: -6.5
@@ -94,15 +88,12 @@ ymax: 8
 hline: a, dashed
 vline: c, dashed
 point: (b, 0)
-width: 70%
+width: 60%
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem $a$, $b$ og $c$ slik at grafen til $f$ har 
 
 1. En horisontal asymptote med likningen $y = 2$.
@@ -118,7 +109,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem $a$, $b$ og $c$ slik at grafen til $f$ har 
 
 1. En horisontal asymptote med likningen $y = -1$.
@@ -136,11 +127,6 @@ $$
 
 
 
-
-::::::::::::::
-
-
-
 :::::::::::::::
 
 
@@ -152,27 +138,27 @@ $$
 Vi går løs på et eksempel. 
 
 :::::::::::::::{example} Eksempel 1
-I figuren nedenfor vises grafen til en lineær-over-lineær rasjonal funksjon $f$. 
-
-Bestem $f(x)$.
-
-
 :::{plot}
-width: 80%
-fontsize: 18
+width: 320px
+align: right
+fontsize: 26
 function: 2*(x - 3) / (x + 1), f, (-15, 15) \ {-1}
-xmin: -9
-xmax: 9
-ymin: -8
-ymax: 8
+xmin: -7
+xmax: 7
+ymin: -7
+ymax: 7
 vline: -1, dashed
 hline: 2, dashed
 :::
 
+I figuren til høyre vises grafen til en lineær-over-lineær rasjonal funksjon $f$. 
 
-::::{admonition} Løsning
+Bestem $f(x)$.
+
+
+::::{solution}
 ---
-class: solution
+open:
 ---
 En rasjonal funksjon der teller og nevner er lineære polynomer, kan alltid skrives som
 
@@ -235,52 +221,44 @@ Q: Hvilken funksjon hører til grafen? ![{width: 60%}](./figurer/quiz/quiz_1/spm
 
 
 :::::::::::::::{exercise} Underveisoppgave 2
-I figuren nedenfor vises grafen til en rasjonal funksjon $f$.
-
-Bestem $f(x)$.
-
-
-:::{figure} ./figurer/underveisoppgaver/underveisoppgave_1/graf.svg
----
-width: 90%
-class: no-click, adaptive-figure
----
-viser grafen til en rasjonal funksjon $f$.
+:::{plot}
+width: 320px
+align: right
+fontsize: 26
+function: -2 * (x - 1) / (x + 1), f
+vline: -1, dashed
+hline: -2, dashed
 :::
 
 
-::::{admonition} Fasit
----
-class: dropdown, answer
----
-$$
-f(x) = \dfrac{2(x - 3)}{x + 1}
-$$
-::::
+I figuren til høyre vises grafen til en rasjonal funksjon $f$.
 
+Bestem $f(x)$.
 
-::::{admonition} Løsning
----
-class: dropdown, solution
----
-En rasjonal funksjon kan skrives som:
+:::::{answer}
+$$
+f(x) = \dfrac{-2(x - 1)}{x + 1}
+$$
+
+::::{solution}
+Funksjonen $f$ kan skrives som
 
 $$
 f(x) = \dfrac{a(x - b)}{x - c}
 $$
 
-der $y = a$ er den horisontale asymptoten, $x = b$ er nullpunktet og $x = c$ er den vertikale asymptoten.
+* Den horisontale asymptoten er $y = -2$, så da er $a = -2$.
+* Nullpunktet er $x = 1$, så da er $b = 1$. 
+* Den vertikale asympoten er $x = -1$, så da er $c = -1$.
 
-* Horisontal asymptote er $y = 2$, så $a = 2$.
-* Nullpunktet til $f$ er $x = 3$, så $x_1 = 3$.
-* Vertikal asymptote er $x = -1$, så $x_\infty = -1$.
-
-Dermed er $f(x)$ gitt ved
+Derfor har vi
 
 $$
-f(x) = \dfrac{2(x - 3)}{x + 1}
+f(x) = \dfrac{-2(x - 1)}{x - (-1)} = \dfrac{-2(x - 1)}{x + 1}
 $$
+
 ::::
+:::::
 
 
 :::::::::::::::
@@ -288,10 +266,30 @@ $$
 
 ## Bestemme egenskaper fra $f(x)$
 
-:::::{admonition} Eksempel 2
----
-class: example
----
+
+:::::::::::::::{summary} Egenskapene til en rasjonal funksjon
+Gitt en rasjonal funksjon 
+
+$$
+f(x) = \dfrac{P(x)}{Q(x)}
+$$
+
+så er egenskapene bestemt som følger:
+
+
+:::{table}
+labels: Egenskap, Bestemmes av
+Nullpunkter, Nullpunktene til telleren. Løs $P(x) = 0$.
+Vertikale asymptoter, Nullpunktene til nevneren. Løs $Q(x) = 0$.
+Horisontale asymptoter, Ledende koeffisient i P(x) delt på ledende koeffisient i Q(x) dersom tellergrad og nevnergrad er like.
+:::
+
+
+:::::::::::::::
+
+
+:::::{example} Eksempel 2
+
 En rasjonal funksjon $f$ er gitt ved
 
 $$
@@ -300,22 +298,27 @@ $$
 
 Bestem nullpunktet og asymptotene til $f$.
 
-::::{admonition} Løsning
+::::{solution}
 ---
-class: solution
+open:
 ---
-Vi kan skrive om uttrykket til $f(x)$ ved å faktorisere telleren:
+Nullpunktet finner vi ved å løse telleren lik null:
 
 $$
-f(x) = \dfrac{2x + 6}{x - 1} = \dfrac{2(x + 3)}{x - 1} 
+2x + 6 = 0 \implies x = -3
 $$
 
-som betyr at vi kan lese av nullpunktet og asymptotene til $f$:
+Den vertikale asymptoten finner vi ved å løse nevneren lik null:
 
+$$
+x - 1 = 0 \implies x = 1
+$$
 
-* Horisontal asymptote: $y = 2$. 
-* Vertikal asymptote: $x = 1$.
-* Nullpunkt: $x = -3$.
+Den horisontale asymptoten finner vi ved å se på ledende koeffisienter i teller og nevner. Siden tellergrad og nevnergrad er like, er den horisontale asymptoten gitt ved
+
+$$
+y = \dfrac{2}{1} = 2
+$$
 
 ::::
 :::::
@@ -331,39 +334,37 @@ $$
 f(x) = \dfrac{3x + 6}{x - 1}
 $$
 
-Bestem 
-
-* Nullpunktet til $f$
-* Likningen for den vertikale asymptoten til $f$
-* Likningen for den horisontale asymptoten til $f$
+Finn nullpunktet og asymptotene til $f$.
 
 
-::::{answer}
+:::::{answer}
 * Nullpunktet er $x = -2$
 * Vertikal asymptote er $x = 1$
 * Horisontal asymptote er $y = 3$
-::::
 
 ::::{solution}
-Generelt er en lineær-over-lineær rasjonal funksjon gitt ved 
+Vi løser telleren lik null for å finne nullpunktet:
 
 $$
-f(x) = \dfrac{a(x - b)}{x - c}
+3x + 6 = 0 \liff x = -2
 $$
 
-Vi har at 
+Den vertikale asymptoten finner vi ved å løse nevneren lik null:
 
 $$
-f(x) = \dfrac{3x + 6}{x - 1} = \dfrac{3(x + 2)}{x - 1}
+x - 1 = 0 \liff x = 1
 $$
 
-Sammenlikninger vi det generelle uttrykket med $f(x)$ så ser vi at 
+Den horisontale asymptoten finner vi ved å se på ledende koeffisienter i teller og nevner. Siden tellergrad og nevnergrad er like, er den horisontale asymptoten gitt ved
 
-* Nullpunktet er $x = -2$
-* Vertikal asymptote er $x = 1$
-* Horisontal asymptote er $y = 3$
+$$
+y = \dfrac{3}{1} = 3
+$$
+
 
 ::::
+
+:::::
 
 :::::::::::::::
 
@@ -374,10 +375,8 @@ Sammenlikninger vi det generelle uttrykket med $f(x)$ så ser vi at
 Vi går løs på et eksempel der vi lager en skisse av grafen til en lineær rasjonal funksjon.
 
 
-:::::::::::::::{admonition} Eksempel 3
----
-class: example
----
+:::::::::::::::{example} Eksempel 3
+
 En rasjonal funksjon $f$ er gitt ved 
 
 $$
@@ -386,9 +385,9 @@ $$
 
 Lag en skisse av grafen til $f$. 
 
-:::::{admonition} Løsning
+:::::{solution}
 ---
-class: solution
+open:
 ---
 Vi starter med å bestemme egenskapene til $f$ ved å skrive om $f(x)$ så vi kan lese av nullpunktet og asymptotene:
 
@@ -402,28 +401,34 @@ som betyr at
 * $x = 2$ er et nullpunkt.
 * $x = -3$ er en vertikal asymptote. 
 
-Vi tegner en fortegnslinje der vi passer på å få med at $x = -3$ et **bruddpunkt**: 
+Vi tegner en fortegnslinje der vi passer på å få med at $x = -3$ et **bruddpunkt**. Dette markerer vi med $\times$ i fortegnslinja. Vi får da følgende fortegnslinje for $f(x)$:
 
-:::{figure} ./figurer/eksempler/eksempel_3/fortegnslinje.svg
----
-name: fig-lineære-rasjonale-funksjoner-eksempel-3-fortegnslinje
-width: 90%
-class: no-click, adaptive-figure
----
-viser fortegnsskjema for $f(x) = (-2x + 4) / (x + 3)$. Bruddpunktene til $f(x)$ er markert med et kryss "$\times$" i fortegnslinja.
-::: 
+
+:::{signchart-2}
+width: 70%
+function: (-2*x + 4) / (x + 3), f(x)
+:::
+
 
 Ut ifra fortegnslinja til $f(x)$ kan vi se at $f(x) < 0$ når $x < -3$ og $x > 2$ og at $f(x) > 0$ når $-2 < x < 3$. 
 Samler vi dette med opplysningene om nullpunktet og asymptotene til $f$, kan vi lage en skisse av grafen til $f$ som følger:
 
-:::{figure} ./figurer/eksempler/eksempel_3/graf.svg
----
-name: fig-lineære-rasjonale-funksjoner-eksempel-3-graf
-width: 90%
-class: no-click, adaptive-figure
----
-viser en skisse av grafen til $f(x) = (-2x + 4) / (x + 3)$ med nullpunktet $x = 2$, den vertikale asymptoten $x = -3$ og den horisontale asymptoten $y = -2$.
-::: 
+:::{plot}
+width: 60%
+ticks: off
+fontsize: 22
+function: (-2*x + 4) / (x + 3), f
+vline: -3
+text: -3, 4, "$x = -3$", center-left
+hline: -2
+text: 5, -2, "$y = -2$", bottom-center
+point: (2, 0)
+text: 2, 0, "$(2, 0)$", top-right
+xmin: -10
+xmax: 10
+ymin: -10
+ymax: 10
+:::
 
 :::::
 
