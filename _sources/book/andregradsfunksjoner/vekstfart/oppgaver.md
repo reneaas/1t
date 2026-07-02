@@ -2,14 +2,9 @@
 
 
 :::::::::::::::{exercise} Oppgave 1
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 Grafen til en andregradsfunksjon $f$ er vist i figuren nedenfor. 
 
 Bestem den gjennomsnittlige vekstfarten til $f$ i intervallet $[0, 3]$. 
@@ -21,12 +16,10 @@ function: (x - 1)**2 - 4, f
 :::
 
 
-::::{answer}
+:::::{answer}
 $$
 \frac{f(3) - f(0)}{3 - 0} = 1
 $$
-::::
-
 
 ::::{solution}
 Vi ser fra grafen til $f$ at $f(0) = -3$ og $f(3) = 0$. Den gjennomsnittlige vekstfarten til $f$ i intervallet $[0, 3]$ er gitt ved
@@ -36,11 +29,14 @@ $$
 $$
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Grafen til en andregradsfunksjon $g$ er vist i figuren nedenfor. 
 
 Bestem den gjennomsnittlige vekstfarten til $g$ i intervallet $[-2, 2]$.
@@ -53,12 +49,10 @@ function: -0.5 * (x - 2)**2 + 4, g
 
 
 
-::::{answer}
+:::::{answer}
 $$
 \frac{g(2) - g(-2)}{2 - (-2)} = 2
 $$
-::::
-
 
 ::::{solution}
 Vi ser fra grafen til $g$ at $g(-2) = -4$ og $g(2) = 4$. Den gjennomsnittlige vekstfarten til $g$ i intervallet $[-2, 2]$ er gitt ved
@@ -68,11 +62,14 @@ $$
 $$
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Grafen til en andregradsfunksjon $h$ er vist i figuren nedenfor. 
 
 Bestem den gjennomsnittlige vekstfarten til $h$ i intervallet $[-3, 3]$.
@@ -84,12 +81,10 @@ function: x**2 - 4, h
 :::
 
 
-::::{answer}
+:::::{answer}
 $$
 \frac{h(3) - h(-3)}{3 - (-3)} = 0
 $$
-::::
-
 
 ::::{solution}
 Fra grafen til $h$ ser vi at $h(-3) = 5$ og $h(3) = 5$. Den gjennomsnittlige vekstfarten til $h$ i intervallet $[-3, 3]$ er gitt ved
@@ -99,12 +94,15 @@ $$
 $$
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Grafen til en andregradsfunksjon $p$ er vist i figuren nedenfor. 
 
 Bestem den gjennomsnittlige vekstfarten til $p$ i intervallet $[-4, 1]$.
@@ -118,11 +116,10 @@ ymin: -4
 :::
 
 
-::::{answer}
+:::::{answer}
 $$
 \frac{p(1) - p(-4)}{1 - (-4)} = 1
 $$
-::::
 
 ::::{solution}
 Fra grafen til $p$ ser vi at $p(-4) = 0$ og $p(1) = 5$. Den gjennomsnittlige vekstfarten til $p$ i intervallet $[-4, 1]$ er gitt ved
@@ -132,25 +129,19 @@ $$
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-
-::::::::::::::
 :::::::::::::::
 
 ---
 
 :::::::::::::::{exercise} Oppgave 2
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved 
 
 $$
@@ -160,11 +151,10 @@ $$
 Bestem den gjennomsnittlige vekstfarten til $f$ i intervallet $[1, 3]$. 
 
 
-::::{answer}
+:::::{answer}
 $$
 \frac{f(3) - f(1)}{3 - 1} = 0
 $$
-::::
 
 ::::{solution}
 Vi bestemmer $f(1)$ og $f(3)$:
@@ -182,10 +172,12 @@ $$
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En andregradsfunksjon $g$ er gitt ved
 
 $$
@@ -195,12 +187,10 @@ $$
 Bestem den gjennomsnittlige vekstfarten til $g$ i intervallet $[0, 2]$.
 
 
-::::{answer}
+:::::{answer}
 $$
 \frac{g(2) - g(0)}{2 - 0} = 0
 $$
-::::
-
 
 ::::{solution}
 Vi bestemmer $g(0)$ og $g(2)$:
@@ -218,11 +208,14 @@ $$
 $$
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En andregradsfunksjon $h$ er gitt ved 
 
 $$
@@ -232,12 +225,10 @@ $$
 Bestem den gjennomsnittlige vekstfarten til $h$ i intervallet $[0, 1]$.
 
 
-::::{answer}
+:::::{answer}
 $$
 \frac{h(1) - h(0)}{1 - 0} = 2
 $$
-::::
-
 
 ::::{solution}
 Vi bestemmer $h(0)$ og $h(1)$:
@@ -255,10 +246,12 @@ $$
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En andregradsfunksjon $p$ er gitt ved
 
 $$
@@ -267,11 +260,10 @@ $$
 
 Bestem den gjennomsnittlige vekstfarten til $p$ i intervallet $[-1, 1]$. 
 
-::::{answer}
+:::::{answer}
 $$
 \frac{p(1) - p(-1)}{1 - (-1)} = -2
 $$
-::::
 
 ::::{solution}
 Vi bestemmer $p(-1)$ og $p(1)$:
@@ -289,12 +281,12 @@ $$
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -302,14 +294,8 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 3
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Grafen til den deriverte $f'$ til en andregradsfunksjon $f$ er vist i figuren nedenfor. 
 
 Bestem den momentane vekstfarten til $f$ i $(3, f(3))$. 
@@ -323,11 +309,10 @@ function: 2*(x - 1), f'
 
 
 
-::::{answer}
+:::::{answer}
 $$
 f'(3) = 4
 $$
-::::
 
 ::::{solution}
 Vi ser at grafen til $f'$ går gjennom punktet $(3, 4)$. Den momentane vekstfarten til $f$ i punktet $(3, f(3))$ er $y$-koordinaten til punktet. Altså er 
@@ -338,11 +323,14 @@ $$
 ::::
 
 
+:::::
+
+
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Grafen til den deriverte $g'$ til en andregradsfunksjon $g$ er vist i figuren nedenfor. 
 
 Bestem stigningstallet til tangenten til grafen til $g$ i punktet $(-3, g(-3))$.
@@ -355,12 +343,10 @@ function: -2*(x + 2), g'
 :::
 
 
-::::{answer}
+:::::{answer}
 $$
 g'(-3) = 2
 $$
-::::
-
 
 ::::{solution}
 Vi ser at grafen til $g'$ går gjennom punktet $(-3, 2)$. Stigningstallet til tangenten til grafen til $g$ i punktet $(-3, g(-3))$ er $y$-koordinaten til punktet. Altså er 
@@ -370,12 +356,16 @@ g'(-3) = 2
 $$
 ::::
 
+:::::
+
+
+
 
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Grafen til den deriverte $h'$ til en andregradsfunksjon $h$ er vist i figuren nedenfor. 
 
 Bestem den momentane vekstfarten til $h$ i $(1, h(1))$. 
@@ -386,12 +376,10 @@ function: -4*x, h'
 :::
 
 
-::::{answer}
+:::::{answer}
 $$
 h'(1) = -4
 $$
-::::
-
 
 ::::{solution}
 Vi ser at grafen til $h'$ går gjennom punktet $(1, -4)$. Den momentane vekstfarten til $h$ i punktet $(1, h(1))$ er $y$-koordinaten til punktet. Altså er 
@@ -401,11 +389,13 @@ h'(1) = -4
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Grafen til den deriverte $p'$ til en andregradsfunksjon $p$ er vist i figuren nedenfor. 
 
 Bestem stigningstallet til tangenten til grafen til $p$ i punktet $(-1, p(-1))$. 
@@ -418,12 +408,10 @@ function: 2*(x + 3), p'
 :::
 
 
-::::{answer}
+:::::{answer}
 $$
 p'(-1) = 4
 $$
-::::
-
 
 ::::{solution}
 Vi ser at grafen til $p'$ går gjennom punktet $(-1, 4)$. Det er $y$-koordinaten til punktet som gir stigningstallet til tangenten til grafen til $p$ i punktet $(-1, p(-1))$. Altså er
@@ -433,12 +421,11 @@ p'(-1) = 4
 $$
 ::::
 
+:::::
 
 :::::::::::::
 
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -449,14 +436,8 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 4
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 
 :::{plot}
 width: 380
@@ -491,7 +472,7 @@ Graf B.
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 :::{plot}
 width: 380
@@ -528,7 +509,7 @@ Graf D.
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 
 :::{plot}
 width: 380
@@ -566,7 +547,7 @@ Graf A.
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 
 :::{plot}
 width: 350
@@ -604,8 +585,6 @@ Graf B.
 
 
 
-::::::::::::::
-
 
 :::::::::::::::
 
@@ -614,15 +593,8 @@ Graf B.
 
 
 :::::::::::::::{exercise} Oppgave 5
----
-level: 1
----
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 
 
 :::{plot}
@@ -658,7 +630,7 @@ Graf D.
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 :::{plot}
 align: right
@@ -695,7 +667,7 @@ Graf C.
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 
 :::{plot}
 align: right
@@ -733,7 +705,7 @@ Graf B.
 
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 
 
 
@@ -772,9 +744,6 @@ Graf C.
 
 
 
-::::::::::::::
-
-
 :::::::::::::::
 
 
@@ -787,23 +756,17 @@ level: 1
 ---
 Bestem den deriverte til funksjonene.
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 $$
 f(x) = x^2 - x + 1
 $$
 
 
-::::{answer}
+:::::{answer}
 
 $$
 f'(x) = 2x - 1
 $$
-::::
-
 
 ::::{solution}
 Vi bruker formelen 
@@ -819,21 +782,21 @@ f'(x) = 2 \cdot 1 \cdot x - 1 = 2x - 1.
 $$
 ::::
 
+:::::
+
 
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 $$
 g(x) = -x^2 + 3x - 2
 $$
 
-::::{answer} 
+:::::{answer} 
 $$
 g'(x) = -2x + 3
 $$
-::::
-
 
 ::::{solution}
 Vi bruker formelen
@@ -849,20 +812,21 @@ g'(x) = 2 \cdot (-1) \cdot x + 3 = -2x + 3.
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 $$
 h(x) = 2x^2 + 1
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 h'(x) = 4x
 $$
-::::
 
 ::::{solution}
 Vi bruker formelen
@@ -878,20 +842,20 @@ h'(x) = 2 \cdot 2 \cdot x + 0 = 4x.
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 $$
 p(x) = 3x^2 - 2x
 $$
 
-::::{answer} 
+:::::{answer} 
 $$
 p'(x) = 6x - 2
 $$
-::::
-
 
 ::::{solution}
 Vi bruker formelen
@@ -907,10 +871,12 @@ p'(x) = 2 \cdot 3 \cdot x - 2 = 6x - 2.
 $$
 ::::
 
+:::::
+
+
 
 
 :::::::::::::
-::::::::::::::
 
 
 :::::::::::::::
@@ -921,15 +887,8 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 7
----
-level: 2
----
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 
 Grafen til den deriverte $f'$ til en andregradsfunksjon $f$ er vist i figuren nedenfor.
 
@@ -945,12 +904,10 @@ class: no-click, adaptive-figure
 viser grafen til $f'$. 
 ::::
 
-::::{answer}
+:::::{answer}
 $$
 y = -x + 3
 $$
-::::
-
 
 ::::{solution}
 Punktet på grafen til $f$ er $(1, 2)$. Det betyr at $f(1) = 2$. 
@@ -964,10 +921,13 @@ y = a(x - x_0) + y_0 = -1 \cdot (x - 1) + 2 = -x + 3.
 $$
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Grafen til den deriverte $g'$ til en andregradsfunksjon $g$ er vist i figuren nedenfor. 
 
 Punktet $Q(-1, 1)$ ligger på grafen til $g$. 
@@ -983,11 +943,10 @@ viser grafen til $g'$.
 ::::
 
 
-::::{answer}
+:::::{answer}
 $$
 y = 4x + 5
 $$
-::::
 
 ::::{solution}
 Punktet på grafen til $g$ er $(-1, 1)$. Det betyr at $g(-1) = 1$.
@@ -1001,11 +960,13 @@ y = a(x - x_0) + y_0 = 4 \cdot (x - (-1)) + 1 = 4(x + 1) + 1 = 4x + 5.
 $$
 ::::
 
+:::::
+
 
 
 :::::::::::::
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Grafen til den deriverte $h'$ til en andregradsfunksjon $h$ er vist i figuren nedenfor.
 
 Punktet $R(1, -3)$ ligger på grafen til $h$. 
@@ -1021,11 +982,10 @@ viser grafen til $h'$.
 ::::
 
 
-::::{answer}
+:::::{answer}
 $$
 y = -2x - 1
 $$
-::::
 
 ::::{solution}
 Punktet på grafen til $h$ er $(1, -3)$. Det betyr at $h(1) = -3$.
@@ -1039,10 +999,12 @@ y = a(x - x_0) + y_0 = -2 \cdot (x - 1) - 3 = -2x + 2 - 3 = -2x - 1.
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Grafen til den deriverte $p'$ til en andregradsfunksjon $p$ er vist i figuren nedenfor.
 
 Punktet $S(-1, -2)$ ligger på grafen til $p$. 
@@ -1058,11 +1020,10 @@ viser grafen til $p'$.
 ::::
 
 
-::::{answer}
+:::::{answer}
 $$
 y = 3x + 1
 $$
-::::
 
 ::::{solution}
 Punktet på grafen til $p$ er $(-1, -2)$. Det betyr at $p(-1) = -2$.
@@ -1076,9 +1037,10 @@ y = a(x - x_0) + y_0 = 3 \cdot (x - (-1)) - 2 = 3(x + 1) - 2 = 3x + 1.
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
-::::::::::::::
 
 :::::::::::::::
 
@@ -1089,14 +1051,8 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 8
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 En andregradsfunksjon er gitt ved 
 
 $$
@@ -1105,12 +1061,10 @@ $$
 
 Bestem likningen for tangenten til grafen til $f$ i $(1, f(1))$.
 
-::::{answer}
+:::::{answer}
 $$
 y = -x
 $$
-::::
-
 
 ::::{solution}
 Vi bestemmer $f(1)$:
@@ -1142,10 +1096,12 @@ $$
 
 ::::
 
+:::::
+
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En andregradsfunksjon er gitt ved 
 
 $$
@@ -1154,11 +1110,10 @@ $$
 
 Bestem likningen for tangenten til grafen til $g$ i $(-1, g(-1))$.
 
-::::{answer}
+:::::{answer}
 $$
 y = 4x + 4
 $$
-::::
 
 ::::{solution}
 Vi bestemmer $g(-1)$:
@@ -1188,10 +1143,12 @@ y = a(x - x_0) + y_0 = 4 \cdot (x - (-1)) + 0 = 4(x + 1) = 4x + 4.
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En andregradsfunksjon er gitt ved 
 
 $$
@@ -1200,12 +1157,10 @@ $$
 
 Bestem likningen for tangenten til grafen til $h$ i $(2, h(2))$.
 
-::::{answer}
+:::::{answer}
 $$
 y = 7x - 7
 $$
-::::
-
 
 ::::{solution}
 Vi bestemmer $h(2)$:
@@ -1235,10 +1190,12 @@ y = a(x - x_0) + y_0 = 7 \cdot (x - 2) + 7 = 7x - 14 + 7 = 7x - 7.
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En andregradsfunksjon er gitt ved 
 
 $$
@@ -1247,12 +1204,10 @@ $$
 
 Bestem likningen for tangenten til grafen til $p$ i $(4, p(4))$.
 
-::::{answer}
+:::::{answer}
 $$
 y = 4x - 10
 $$
-::::
-
 
 ::::{solution}
 Vi bestemmer $p(4)$:
@@ -1282,9 +1237,11 @@ y = a(x - x_0) + y_0 = 4 \cdot (x - 4) + 6 = 4x - 16 + 6 = 4x - 10.
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
-::::::::::::::
+
 :::::::::::::::
 
 
@@ -1293,14 +1250,8 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 9
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved
 
 $$
@@ -1318,10 +1269,8 @@ width: 100%
 :::
 
 
-::::{answer}
+:::::{answer}
 Fortegnslinje A.
-::::
-
 
 ::::{solution}
 Vi kan se at $f(x)$ er skrevet på ekstremalpunktsform med symmetrilinje $x = 2$. Det betyr at $f'(x) = 0$ når $x = 2$. Fortegnslinjene som viser denne egenskapen er A og B.
@@ -1329,11 +1278,14 @@ Vi kan se at $f(x)$ er skrevet på ekstremalpunktsform med symmetrilinje $x = 2$
 Vi kan se at $f(x)$ sin ledende koeffisient er $a = 1$, som er positiv. Dermed må grafen til $f$ være konveks (den smiler $\smile$). Da må grafen synke til venstre for symmetrilinja og stige til høyre for symmetrilinja. Det betyr at $f'(x) < 0$ til venstre for $x = 2$ og $f'(x) > 0$ til høyre for $x = 2$. Dette stemmer for fortegnslinje A.
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En andregradsfunksjon $g$ er gitt ved
 
 $$
@@ -1351,9 +1303,8 @@ width: 100%
 :::
 
 
-::::{answer}
+:::::{answer}
 Fortegnslinje D.
-::::
 
 ::::{solution}
 Vi kan se at $g(x)$ er skrevet på ekstremalpunktsform med symmetrilinje $x = -3$. Det betyr at $g'(x) = 0$ når $x = -3$. Fortegnslinjene som viser denne egenskapen er B og D.
@@ -1361,11 +1312,13 @@ Vi kan se at $g(x)$ er skrevet på ekstremalpunktsform med symmetrilinje $x = -3
 Vi kan se at $g(x)$ sin ledende koeffisient er $a = -2$, som er negativ. Dermed må grafen til $g$ være konkav (surt fjes $\frown$). Da må grafen stige til venstre for symmetrilinja og synke til høyre for symmetrilinja. Det betyr at $g'(x) > 0$ til venstre for $x = -3$ og $g'(x) < 0$ til høyre for $x = -3$. Dette stemmer for fortegnslinje D.
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 
 En andregradsfunksjon $h$ er gitt ved
 
@@ -1384,9 +1337,8 @@ width: 100%
 :::
 
 
-::::{answer}
+:::::{answer}
 Fortegnslinje C.
-::::
 
 ::::{solution}
 Vi kan se at $h(x)$ er skrevet på nullpunktsform med nullpunkter i $x = -2$ og $x = 4$. Vi kan bestemme symmetrilinja ved å ta gjennomsnittet av nullpunktene:
@@ -1400,10 +1352,12 @@ Det betyr at $h'(x) = 0$ når $x = 1$. Fortegnslinjene som viser denne egenskape
 Vi kan se at $h(x)$ sin ledende koeffisient er $a = -3$, som er negativ. Dermed må grafen til $h$ være konkav (surt fjes $\frown$). Da må grafen stige til venstre for symmetrilinja og synke til høyre for symmetrilinja. Det betyr at $h'(x) > 0$ til venstre for $x = 1$ og $h'(x) < 0$ til høyre for $x = 1$. Dette stemmer for fortegnslinje C.
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 
 En andregradsfunksjon $p$ er gitt ved
 
@@ -1422,10 +1376,8 @@ width: 100%
 :::
 
 
-::::{answer}
+:::::{answer}
 Fortegnslinje B.
-::::
-
 
 ::::{solution}
 Vi kan se at $p(x)$ er skrevet på standardform med $a = 1$ og $b = 4$. Vi kan bestemme symmetrilinja ved å bruke formelen
@@ -1439,12 +1391,11 @@ Det betyr at $p'(x) = 0$ når $x = -2$. Fortegnslinjene som viser denne egenskap
 Vi kan se at $p(x)$ sin ledende koeffisient er $a = 1$, som er positiv. Dermed må grafen til $p$ være konveks (den smiler $\smile$). Da må grafen synke til venstre for symmetrilinja og stige til høyre for symmetrilinja. Det betyr at $p'(x) < 0$ til venstre for $x = -2$ og $p'(x) > 0$ til høyre for $x = -2$. Dette stemmer for fortegnslinje B.
 ::::
 
+:::::
+
 
 :::::::::::::
 
-
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -1453,9 +1404,7 @@ Vi kan se at $p(x)$ sin ledende koeffisient er $a = 1$, som er positiv. Dermed m
 
 
 :::::::::::::::{exercise} Oppgave 10
----
-level: 2
----
+
 
 :::{cas-popup}
 ---
@@ -1489,12 +1438,10 @@ text: 3, 0, "$(3, 0)$", top-right
 
 
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = -x^2 + 2x + 3 \qog f'(x) = -2x + 2.
 $$
-::::
-
 
 ::::{solution}
 Vi velger å skrive $f(x)$ på standardform:
@@ -1543,6 +1490,8 @@ $$
 
 ::::
 
+:::::
+
 :::::::::::::::
 
 
@@ -1578,11 +1527,10 @@ width: 80%
 :::
 
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = -x^2 + 2x + 8 \qog f'(x) = -2x + 2.
 $$
-::::
 
 ::::{solution}
 Vi velger å skrive $f(x)$ på standardform:
@@ -1635,6 +1583,8 @@ $$
 
 ::::
 
+:::::
+
 
 :::::::::::::::
 
@@ -1643,9 +1593,7 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 12
----
-level: 3
----
+
 :::{cas-popup}
 ---
 layout: sidebar
@@ -1669,12 +1617,10 @@ width: 80%
 ---
 :::
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = x^2 + 4x + 5 \qog f'(x) = 2x + 4.
 $$
-::::
-
 
 ::::{solution}
 Vi velger å skrive $f(x)$ på standardform:
@@ -1729,6 +1675,8 @@ $$
 
 ::::
 
+:::::
+
 :::::::::::::::
 
 
@@ -1763,12 +1711,10 @@ class: no-click, adaptive-figure
 :::
 
 
-::::{answer}
+:::::{answer}
 $$
 f'(x) = -2x + 5
 $$
-::::
-
 
 ::::{solution}
 Vi vet at $f'(x)$ er en lineær funksjon. Vi kan velge å skrive $f'(x)$ på ettpunktsform:
@@ -1797,6 +1743,9 @@ $$
 
 
 ::::
+
+:::::
+
 
 
 :::::::::::::::
@@ -1829,11 +1778,8 @@ width: 80%
 ---
 :::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 
 
 Grafen til en andregradsfunksjon $f$ er vist i figuren nedenfor.
@@ -1847,12 +1793,10 @@ To tangenter til grafen til $f$ går gjennom punktene $(1, f(1))$ og $(3, f(3))$
 Bestem $f'(x)$. 
 
 
-::::{answer}
+:::::{answer}
 $$
 f'(x) = -2x + 3.
 $$
-::::
-
 
 ::::{solution}
 Vi vet at $f'(x)$ er en lineær funksjon. Vi kan velge å skrive $f'(x)$ på ettpunktsform:
@@ -1878,20 +1822,22 @@ f'(x) = -2(x - 1) + 1 = -2x + 2 + 1 = -2x + 3.
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Tangentene skjærer hverandre i punktet $(2, 4)$. 
 
 Bestem $f(x)$. 
 
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = -x^2 + 3x + 1.
 $$
-::::
 
 ::::{solution}
 Tangenten i $(1, f(1))$ har stigningstall $1$. Siden den skjærer den andre tangenten i $(2, 4)$, vil $y$-koordinaten til tangenten være $f(1) = 3$ siden den stiger med $1$ fra $x = 1$ til $x = 2$.
@@ -1940,9 +1886,11 @@ $$
 
 ::::
 
+:::::
+
 
 :::::::::::::
-::::::::::::::
+
 :::::::::::::::
 
 
@@ -1977,12 +1925,10 @@ class: no-click, adaptive-figure
 :::
 
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = x^2 + 2x - 3 \qog f'(x) = 2x + 2.
 $$
-::::
-
 
 ::::{solution}
 Vi velger å skrive $f(x)$ på standardform:
@@ -2032,6 +1978,8 @@ $$
 
 ::::
 
+:::::
+
 
 :::::::::::::::
 
@@ -2056,21 +2004,17 @@ class: no-click, adaptive-figure
 ---
 :::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem $f(x)$ og $g(x)$.
 
 
-::::{answer}
+:::::{answer}
 \begin{align*}
     f(x) &= -(x - 2) \\
     \\
     g(x) &= x + 2
 \end{align*}
-::::
 
 
 ::::{solution}
@@ -2110,19 +2054,19 @@ $$
 
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Lag en funksjon $A(k)$ for arealet av rektangelet uttrykt ved $k$.
 
 
-::::{answer}
+:::::{answer}
 $$
 A(k) = -2k^2 + 4k = -2k(k - 2).
 $$
-::::
-
 
 ::::{solution}
 Grunnlinja til rektangelet er $2k$ og høyden er $f(k)$ (eller $g(-k)$ som vil ha samme verdi). Dermed er arealet av rektangelet gitt ved
@@ -2132,20 +2076,22 @@ A(k) = 2k \cdot f(k) = 2k \cdot (-(k - 2)) = -2k^2 + 4k.
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem hvilken verdi av $k$ som gir størst mulig areal av rektangelet.
 
 Hva er det største arealet?
 
 
-::::{answer}
+:::::{answer}
 $$
 k = 1 \qog A(1) = 2.
 $$
-::::
 
 ::::{solution}
 Arealet $A(k)$ er en andregradsfunksjon som er konkav (surt fjes $\frown$) siden den har negativ ledende koeffisient. Da har den et toppunkt som vi kan bestemme ved å bruke formelen for symmetrilinja:
@@ -2161,85 +2107,11 @@ A(1) = -2 \cdot 1^2 + 4 \cdot 1 = -2 + 4 = 2.
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
-
-::::::::::::::
 
 
 :::::::::::::::
 
-
-
----
-
-
-
-:::::::::::::::{exercise} Oppgave 17
-
-:::{plot}
-align: left
-width: 400
-function: -1/12 * x**2 + 20 
-line: -1, 23, solid
-point: (6, 17)
-point: (0, 23)
-ymax: 25
-ymin: -1
-ticks: off
-xmin: -18
-xmax: 18
-:::
-
-:::{cas-popup}
----
-layout: sidebar
----
-:::
-
-:::{clear}
-:::
-
-
-
-
-En arkitekt har tegnet et snitt av en lagerhall. Lagerhallen er 20 meter høy og har form som en parabel gitt ved 
-
-$$
-p(x) = -\dfrac{1}{12}x^2 + 20
-$$
-
-På taket av lagerhallen skal det plasseres et webkamera. Webkameraet skal festet på en stang som er 3 meter lang. 
-
-Den rette linjen på figuren går gjennom punktet $(0, 23)$ og er en tangent til grafen. 
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Bestem likningen til tangenten.
-
-::::{answer}
-$$
-y = -x + 23
-$$
-::::
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
-Hvor langt fra veggen på lagerhallen kan en tyv bevege seg uten å bli fotografert av webkameraet? 
-
-::::{answer}
-Ca. 5.5 meter dersom en person er 2 meter høy. 
-::::
-
-:::::::::::::
-
-
-::::::::::::::
-
-
-:::::::::::::::

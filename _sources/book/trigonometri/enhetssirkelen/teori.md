@@ -1,9 +1,6 @@
 # Enhetssirkelen
 
-:::{admonition} Læringsmål
----
-class: tip
----
+:::{goals} Læringsmål
 * Kunne beskrive hvordan $\cos v$ og $\sin v$ henger sammen med koordinatene til et punkt $P$ på enhetssirkelen.
 * Kunne bruke enhetssirkelen til å bestemme $\cos v$ og $\sin v$ for vinkler $v \in [0, 360\degree\rangle$
 * Kunne begrunne og bruke ulike trigonometriske identiteter til å bestemme ulike verdier for $\cos v$ og $\sin v$.
@@ -16,10 +13,7 @@ Vi har sett at $\sin v$ og $\cos v$ er forholdstall i rettvinklede trekanter. Fo
 
 Men trekanter som *ikke* er rettvinklede kan jo også være formlike. Her skal vi utvide definisjonen av $\sin v$ og $\cos v$ slik at de fungerer for trekanter uavhengig om rettvinklede eller ikke.
 
-
-## Enhetssirkelen 
 Vi forestiller oss at vi tar en trekant og plasserer den i et koordinatsystem der det éne hjørnet alltid er plassert i origo, den ene kateten ligger alltid på $x$-aksen og hypotenusen har lengde $1$. Da vil det ene hjørnet alltid ligge på en sirkel med radius $1$ og sentrum i origo. Denne sirkelen kaller vi for **enhetssirkelen**. 
-
 
 
 :::::::::::::::{summary} Enhetssirkelen
@@ -120,7 +114,7 @@ Bestem koordinatene til punktet $P$.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 
 :::{plot}
@@ -204,7 +198,7 @@ Bestem $\cos 150\degree$ og $\sin 150\degree$.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 :::{plot}
 width: 100%
@@ -257,10 +251,8 @@ $$
 ## Trigonometriske identiteter
 I mange sammenhenger kan vi bruke trigonometriske identiteter til å bestemme verdier for $\sin v$ og $\cos v$ gitt at vi kjenner til noen andre verdier for $\sin v$ og $\cos v$. Vi skal se på noen av de mest grunnleggende identitetene her.
 
-### Pytagoras' identitet
 
 Pytagoras' identitet har fått navnet sitt fordi den er en direkte konsekvens av Pytagoras' setning.
-
 
 :::::::::::::::{summary} Pytagoras' identitet
 
@@ -297,12 +289,6 @@ $$
 \boxed{(\cos v)^2 + (\sin v)^2 = 1}
 $$
 
-
-:::{clear}
-:::
-
-> Vi skriver ofte at $\sin^2 v = (\sin v)^2$ og $\cos^2 v = (\cos v)^2$ for å spare litt plass.
-
 :::::::::::::::
 
 
@@ -319,7 +305,7 @@ Bestem en eksakt verdi for $\cos v$.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 For alle vinkler, så gjelder Pytagoras' identitet
 
@@ -353,9 +339,6 @@ $$
 
 
 
-### Komplementvinkler
-
-
 :::::::::::::::{summary} Sinus og cosinus til komplementvinkler
 
 :::{plot}
@@ -385,52 +368,3 @@ $$
 }
 $$
 :::::::::::::::
-
-
-
-
-<!-- 
-:::::::::::::::{summary} Sinus til supplementvinkler
-
-:::{plot}
-fontsize: 28
-width: 100%
-align: right
-circle: (0, 0), 1, blue, solid
-let: v = 60
-let: u = 180 - v
-let: Px = cos(v * pi / 180)
-let: Py = sin(v * pi / 180)
-let: Qx = cos(u * pi / 180)
-let: Qy = sin(u * pi / 180)
-point: (Px, Py)
-point: (Qx, Qy)
-line-segment: (0, 0), (Px, Py), solid, red
-text: Px, Py, "$P(\cos v, \sin v)$", top-right
-text: Qx, Qy, "$Q(\cos u, \sin u)$", top-left
-angle-arc: (0, 0), 0.3, 0, u, red
-text: 0.5 * Px, 0.5 * Py, "$1$", top-left
-angle-arc: (0, 0), 0.2, 0, v, red
-let: u = 30
-text: 0.25 * cos(u / 180 * pi), 0.15 * sin(u / 180 * pi), "$v$", top-right
-axis: equal
-grid: off
-ticks: off
-nocache:
-:::
-
-
-
-For alle vinkler $v$ gjelder 
-
-$$
-\boxed{\sin (180\degree - v) = \sin v}
-$$
-::::::::::::::: -->
-
-
-
-<!-- 
-:::::::::::::::{summary} Cosinus til supplementvinkler
-
-::::::::::::::: -->

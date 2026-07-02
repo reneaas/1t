@@ -24,7 +24,7 @@ $$
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi tegner grafene til funksjonsuttrykkene på venstre og høyre side av likningen:
 
@@ -34,14 +34,21 @@ $$
 
 Det gir oss følgende figur: 
 
-:::{figure} ./figurer/eksempler/eksempel_1/figur.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
+
+:::{plot}
+width: 60%
+function: x**2 + x + 1, f
+function: x + 2, g
+ymin: -4
+ymax: 8
+point: (-1, f(-1))
+point: (1, f(1))
+line-segment: (-1, 0), (-1, f(-1)), dashed, gray
+line-segment: (1, 0), (1, f(1)), dashed, gray
 :::
 
-Vi ser at grafene skjærer hverandre i to punkter: $(-1, 1)$ og $(1, 3)$. $x$-koordinatene til disse punktene er løsningene av likningen. Det første punktet gir oss $x = -1$. Det andre punktet gir oss $x = 1$. Dermed er løsningen av likningen
+
+Vi ser at grafene skjærer hverandre i to punkter: $(-1, 1)$ og $(1, 3)$. Det er $x$-koordinatene til disse punktene som løser likningen. Det første punktet gir oss $x = -1$. Det andre punktet gir oss $x = 1$. Dermed er løsningen av likningen
 
 $$
 x = -1 \or x = 1.
@@ -56,7 +63,18 @@ $$
 
 
 :::::::::::::::{exercise} Underveisoppgave 1
-I figuren nedenfor vises grafene til 
+:::{plot}
+width: 320px
+align: right
+fontsize: 28
+function: x**2 + 3*x - 5, f
+function: 2*x - 3, g
+ymin: -9
+ymax: 4
+xmin: -7
+:::
+
+I figuren høyre vises grafene til 
 
 $$
 f(x) = x^2 + 3x - 5 \qog g(x) = 2x - 3.
@@ -68,19 +86,13 @@ $$
 x^2 + 3x - 5 = 2x - 3.
 $$
 
-:::{figure} ./figurer/underveisoppgaver/underveisoppgave_1/figur.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
 
 
-::::{answer}
+
+:::::{answer}
 $$
 x = -2 \or x = 1
 $$
-::::
 
 ::::{solution}
 Vi ser at grafene skjærer hverandre i punktene $(-2, -7)$ og $(1, -1)$. Løsningen av likningen er $x$-koordinatene til disse punktene som gir løsningen
@@ -89,6 +101,8 @@ $$
 x = -2 \or x = 1.
 $$
 ::::
+
+:::::
 
 :::::::::::::::
 
@@ -99,12 +113,28 @@ Vi kan også løse dette med digitale hjelpemidler. La oss se på et eksempel me
 
 
 :::::::::::::::{example} Eksempel 2
+
+:::{ggb-popup}
+---
+layout: sidebar
+---
+:::
+
+
 En andregradslikning er gitt ved 
 
 $$
 x^2 - 4x + 3 = -2x + 6
 $$
 
+
+Løs likningen grafisk.
+
+
+::::{solution}
+---
+open:
+---
 Nedenfor ser du en gif som viser hvordan man løser likningen med grafvinduet i Geogebra. Vi trykker på {ggb-icon}`mode_intersect` (Skjæring mellom to objekt) etterfulgt av å trykke på hver graf for å finne skjæringspunktet.
 
 :::{figure} ./videoer/grafisk_løsning.gif
@@ -119,6 +149,7 @@ Skjæringspunktene mellom de to grafene er $(3, 0)$ og $(-1, 8)$. Løsningen av 
 $$
 x = -1 \or x = 3
 $$
+::::
 
 
 
@@ -128,6 +159,14 @@ $$
 
 
 :::::::::::::::{exercise} Underveisoppgave 2
+
+:::{ggb-popup}
+---
+layout: sidebar
+---
+:::
+
+
 En andregradslikning er gitt ved
 
 $$
@@ -136,16 +175,11 @@ $$
 
 Løs likningen grafisk. 
 
-:::{ggb}
-:::
 
-
-::::{answer}
+:::::{answer}
 $$
 x = 1 \or x = 4. 
 $$
-::::
-
 
 ::::{solution}
 Vi skriver inn venstresiden og høyresiden i av likningen i Geogebra for å tegne grafene til de to funksjonene. Deretter bruker vi "skjæring mellom to objekt" {cas-icon}`mode_intersect` for å finne skjæringspunktene mellom grafene. Se figuren nedenfor.
@@ -164,6 +198,9 @@ x = 1 \or x = 4.
 $$
 
 ::::
+
+:::::
+
 
 
 :::::::::::::::
@@ -210,7 +247,7 @@ $$
 
 ::::{solution}
 ---
-dropdown: 0
+open: 
 ---
 Vi kan bruke produktregelen ved å tenke på hver faktor som to tall $A$ og $B$: 
 
@@ -241,11 +278,10 @@ $$
 (x + 2)(x - 4) = 0.
 $$
 
-::::{answer}
+:::::{answer}
 $$
 x = -2 \or x = 4.
 $$
-::::
 
 
 ::::{solution}
@@ -268,6 +304,9 @@ x = -2 \or x = 4.
 $$
 ::::
 
+:::::
+
+
 
 :::::::::::::::
 
@@ -284,7 +323,7 @@ $$
 
 ::::{solution}
 ---
-dropdown: 0
+open: 
 ---
 
 Vi faktoriserer ut en faktor $x$ fra hvert ledd:
@@ -319,12 +358,10 @@ x^2 + 3x = 0.
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x = 0 \or x = -3
 $$
-::::
-
 
 ::::{solution}
 Vi faktoriserer ut en faktor $x$ fra hvert ledd:
@@ -346,6 +383,9 @@ x = 0 \or x = -3.
 $$
 ::::
 
+:::::
+
+
 :::::::::::::::
 
 
@@ -362,7 +402,7 @@ $$
 
 ::::{solution}
 ---
-dropdown: 0
+open: 
 ---
 Vi skriver om likningen
 
@@ -397,11 +437,10 @@ x^2 - 49 = 0
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x = -7 \or x = 7.
 $$
-::::
 
 ::::{solution}
 Vi skriver om likningen
@@ -421,6 +460,8 @@ $$
 x = -7 \or x = 7.
 $$
 ::::
+
+:::::
 
 :::::::::::::::
 
@@ -455,6 +496,61 @@ width: 35%
 class: no-click, adaptive-figure
 ---
 :::
+
+
+
+:::::{proof}
+Vi starter med andregradslikningen
+
+$$
+ax^2 + bx + c = 0
+$$
+
+Målet vårt er å skrive om andregradsuttrykket til nullpunktsform.
+
+Symmetrilinja til andregradsuttrykket er
+
+$$
+x_0 = -\dfrac{b}{2a}
+$$
+
+som betyr at vi kan om uttrykket til ekstremalpunktsform:
+
+$$
+ax^2 + bx + c = a\left(x - \left(-\dfrac{b}{2a}\right)\right) + y_0 = a\left(x + \dfrac{b}{2a}\right)^2 + y_0
+$$
+
+Setter vi dette lik null får vi:
+
+$$
+a\left(x + \dfrac{b}{2a}\right)^2 + y_0 = 0
+$$
+
+$$
+\left(x + \dfrac{b}{2a}\right)^2 =-\dfrac{y_0}{a}
+$$
+
+Så tar vi kvadratroten på hver side av likningen:
+
+$$
+x + \dfrac{b}{2a} = \pm \sqrt{-\dfrac{y_0}{a}}
+$$
+
+som gir
+
+$$
+x = -\dfrac{b}{2a} \pm \sqrt{-\dfrac{y_0}{a}} = \dfrac{-b \pm \sqrt{-4y_0}}{2a}
+$$
+
+Nå gjenstår det bare å finne et uttrykk for $y_0$ uttrykt ved $a$, $b$ og $c$. Vi vet at $y_0$ er funksjonsverdien til andregradslikningen når $x = x_0 = -\dfrac{b}{2a}$:
+
+$$
+y_0 = a\left(-\dfrac{b}{2a}\right)^2 + b\left(-\dfrac{b}{2a}\right) + c = \dfrac{b^2}{4a} - \dfrac{b^2}{2a} + c = -\dfrac{b^2}{4a} + c
+$$
+
+Setter vi inn dette i uttrykket for $x$ får vi
+:::::
+
 :::::::::::::::
 
 
@@ -471,10 +567,8 @@ $$
 x^2 - 4x - 5 = 0.
 $$
 
-:::{admonition} Løsning
----
-class: solution
----
+:::{solution}
+
 Fra likningen kan vi lese av at koeffisientene er 
 
 $$
@@ -511,11 +605,10 @@ x^2 - 3x - 4 = 0.
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x = -1 \or x = 4.
 $$
-::::
 
 ::::{solution}
 Vi bruker $abc$-formelen med koeffisientene $a = 1$, $b = -3$ og $c = -4$:
@@ -532,6 +625,8 @@ $$
 
 
 ::::
+
+:::::
 
 
 :::::::::::::::
@@ -585,7 +680,7 @@ $$
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi regner ut diskriminanten med $a = 1$, $b = -4$ og $c = 4$:
 
@@ -612,10 +707,8 @@ x^2 + 2x + 8 = 0.
 $$
 
 
-::::{answer}
+:::::{answer}
 Ingen løsninger.
-::::
-
 
 ::::{solution}
 Vi regner ut diskriminanten med $a = 1$, $b = 2$ og $c = 8$:
@@ -626,6 +719,9 @@ $$
 
 Siden $D < 0$, har likningen ingen løsninger.
 ::::
+
+:::::
+
 
 :::::::::::::::
 
@@ -648,11 +744,7 @@ viser hvordan man løser en andregradslikning med CAS. Løsningene er $x = -\sqr
 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 
 :::{cas-popup}
 ---
@@ -667,7 +759,7 @@ Bruk CAS til å løse likningen som er vist i gif-en.
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 :::{cas-popup}
 ---
@@ -693,7 +785,8 @@ width: 60%
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+
+:::::::::::::::{part} c
 
 :::{cas-popup}
 ---
@@ -732,8 +825,6 @@ width: 80%
 
 :::::::::::::
 
-::::::::::::::
-
 :::::::::::::::
 
 
@@ -746,11 +837,7 @@ Når vi løste lineære likninger med programmering, skrev vi et program som sys
 Nedenfor vises et eksempel på et program som løser en andregradslikning ved å prøve ut heltallsverdier for $x$. 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 
 :::{cas-popup}
 ---
@@ -765,7 +852,7 @@ Skriv inn svaret ditt nedenfor og sjekk om du får riktig svar.
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 :::{cas-popup}
 ---
@@ -797,9 +884,6 @@ for x in range(-10, 11):
 
 
 :::::::::::::
-
-
-::::::::::::::
 
 :::{interactive-code}
 ---

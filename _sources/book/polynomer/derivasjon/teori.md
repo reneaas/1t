@@ -1,9 +1,6 @@
 # Den deriverte
 
-:::{admonition} Læringsmål
----
-class: tip
----
+:::{goals} Læringsmål
 * Kunne derivere polynomfunksjoner algebraisk.
 * Kunne bestemme likningen til tangenter til polynomfunksjoner.
 * Kan beskrive sammenhengen mellom grafen til $f$ og grafen til $f'$.
@@ -23,67 +20,41 @@ I praksis kan vi finne den deriverte algebraisk ved å følge noen bestemte regn
 
 
 :::::::::::::::{summary} Derivasjonsregler for polynomer
-Regel 1
-: For et ledd $x^n$ i et polynom $f(x)$, vil den deriverte av leddet være
 
-$$
-(x^n)' = n \cdot x^{n-1}
-$$
-
-Regel 2
-: For ethvert ledd $a x^n$ i et polynom $f(x)$, vil den deriverte av leddet være
-
-$$
-(a x^n)' = a (x^n)'
-$$
-
-Regel 3
-: Hvert ledd i et polynom deriveres hver for seg:
-
-$$
-(ax^n + bx^m)' = (ax^n)' + (bx^m)'
-$$
-
-Regel 4
-: Den deriverte av en konstant er null:
-
-$$
-C' = 0
-$$
-
-Regel 5
-: Den deriverte av et lineært ledd $ax$ er 
-
-$$
-(ax)' = a
-$$
+:::{table}
+labels: Regel, Formel
+$1$, $(x^n)' = n \cdot x^{n-1}$
+$2$, $(a x^n)' = a (x^n)'$
+$3$, $(ax^n + bx^m)' = (ax^n)' + (bx^m)'$
+$4$, $C' = 0$
+$5$, $(ax)' = a$
+:::
 :::::::::::::::
 
 ---
 
-:::::::::::::::{admonition} Eksempel 1
----
-class: example
----
+:::::::::::::::{example} Eksempel 1
 Bestem den deriverte til 
 
 $$
 f(x) = 2x^3 - 4x^2 + 6x - 2
 $$
 
-::::{admonition} Løsning
+::::{solution}
 ---
-class: solution
+open:
 ---
+$$
 \begin{align*}
     f'(x) &= (2x^3 - 4x^2 + 6x - 2)' \\
     \\
     &= 2\cdot (x^3)' - 4\cdot (x^2)' + 6\cdot x' - 2' \\
     \\
-    &= 2 \cdot 3\cdot x^2 - 4\cdot 2 \cdot x^1 + 6 \cdot 1 \cdot x^0 - 0 \\
+    &= 2 \cdot 3\cdot x^2 - 4\cdot 2 \cdot x^1 + 6 \cdot 1 - 0 \\
     \\
     &= 6x^2 - 8x + 6
 \end{align*}
+$$
 ::::
 
 :::::::::::::::
@@ -97,11 +68,26 @@ $$
 f(x) = x^4 - 3x^2 + 5x - 1
 $$
 
-::::{answer}
+:::::{answer}
 $$
 f'(x) = 4x^3 - 6x + 5
 $$
+
+::::{solution}
+$$
+\begin{align*}
+f'(x) &= (x^4 - 3x^2 + 5x - 1)' \\
+\\
+&= (x^4)' - 3\cdot (x^2)' + 5\cdot (x)' - 1' \\
+\\
+&= 4x^3 - 3\cdot 2x + 5\cdot 1 - 0 \\
+\\
+&= 4x^3 - 6x + 5
+\end{align*}
+$$
 ::::
+
+:::::
 
 :::::::::::::::
 
@@ -167,7 +153,7 @@ Bestem likningen til tangenten til grafen til $f$ i punktet $(1, f(1))$.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Likningen til tangenten er gitt ved 
 
@@ -216,11 +202,10 @@ $$
 Bestem likningen til tangenten til grafen til $f$ i punktet $(2, f(2))$.
 
 
-::::{answer}
+:::::{answer}
 $$
 y = 19x - 23
 $$
-::::
 
 ::::{solution}
 Likningen til tangenten er 
@@ -253,6 +238,8 @@ $$
 y = 19(x - 2) + 15 = 19x - 38 + 15 = 19x - 23
 $$
 ::::
+
+:::::
 :::::::::::::::
 
 
@@ -350,10 +337,7 @@ point: (3, 0)
 
 
 
-:::::::::::::::{admonition} Sammenheng mellom $f(x)$ og $f'(x)$
----
-class: summary
----
+:::::::::::::::{summary} Sammenheng mellom $f(x)$ og $f'(x)$
 La $f$ være en polynomfunksjon. Da vil følgende sammenhenger mellom grafene til $f$ og $f'$ gjelde:
 * Punkter hvor grafen til $f'$ skjærer $x$-aksen svarer til punkter på grafen til $f$ hvor tangenter har stigningstall $0$.
 * Punkter hvor $f'(x) = 0$, svarer til punkter på grafen til $f$ hvor tangenter har stigningstall $0$. 
@@ -362,264 +346,82 @@ La $f$ være en polynomfunksjon. Da vil følgende sammenhenger mellom grafene ti
 :::::::::::::::
 
 
-Ut ifra sammenhengen over, vil det i mange tilfeller være slik at punkter hvor grafen til $f'$ skjærer $x$-aksen, så har grafen til $f$ et ekstremalpunkt.
-
-:::::::::::::::{admonition} Eksempel 2
 ---
-class: example
----
-Grafen til en tredjegradsfunksjon $f$ er vist i {numref}`fig-polnyomfunksjoner-derivasjon-eksempel-2`.
 
 
-:::{figure} ./figurer/eksempler/eksempel_2/graf.svg
+
+:::::::::::::::{example} Eksempel 3
+En tredjegradsfunksjon $f$ er gitt ved
+
+$$
+f(x) = 2x^3 + 3x^2 - 36x + 6
+$$
+
+
+Finn koordinatene til eventuelle topp- og bunnpunkter på grafen til $f$.
+
+
+
+::::{solution}
 ---
-name: fig-polnyomfunksjoner-derivasjon-eksempel-2
-width: 80%
-class: no-click, adaptive-figure
+open:
 ---
-viser grafen til en tredjegradsfunksjon $f$
+Ekstremalpunktene til $f$ finnes der $f'(x) = 0$. Vi finner den deriverte først:
+
+$$
+f'(x) = (2x^3 + 3x^2 - 36x + 6)' = 6x^2 + 6x - 36
+$$
+
+Så løser vi likningen $f'(x) = 0$:
+
+$$
+6x^2 + 6x - 36 = 0 \liff x^2 + x - 6 = 0
+$$
+
+Vi bruker $abc$-formelen for å løse likningen:
+
+$$
+x = \frac{-1 \pm \sqrt{1^2 - 4\cdot 1 \cdot (-6)}}{2\cdot 1} = \frac{-1 \pm \sqrt{25}}{2} = \frac{-1 \pm 5}{2}
+$$
+
+som gir
+
+$$
+x = -3 \or x = 2
+$$
+
+Det betyr at $f'(x)$ kan nullpunktsfaktoriseres som
+
+$$
+f'(x) = 6(x + 3)(x - 2)
+$$
+
+Vi tegner et fortegnsskjema for $f'(x)$ med dens faktorer:
+
+:::{signchart-2}
+width: 60%
+function: 6 * (x + 3) * (x - 2), f'(x) 
 :::
 
-For å forstå hvordan grafen til $f'$ henger sammen med grafen til $f$ kan vi 
-1. Tegne en fortegnslinje for $f'(x)$. 
-2. Tegne grafen til $f'$ ved å bruke fortegnslinjen og passe på at nullpunktene til $f'$ svarer til ekstremalpunktene til $f$.
-
-::::::::::::::{tab-set}
-:::::::::::::{tab-item} Fortegnslinje til $f'(x)$
-
-:::{figure} ./figurer/eksempler/eksempel_2/fortegnslinje.svg
----
-name: fig-polnyomfunksjoner-derivasjon-eksempel-2-fortegnslinje
-width: 100%
-class: no-click, adaptive-figure
----
-viser fortegnslinja til $f'(x)$. Sammenhengen med grafen til $f$ er at $f'(x) > 0$ når grafen til $f$ stiger og $f'(x) < 0$ når grafen til $f$ synker. I ekstremalpunktene til $f$ er $f'(x) = 0$ fordi en tangent gjennom punktet vil være horisontal og dermed ha stigningstall $0$.
-:::
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} Grafen til $f'$
-
-:::{figure} ./figurer/eksempler/eksempel_2/f_derivert.svg
----
-name: fig-polnyomfunksjoner-derivasjon-eksempel-2-f-derivert
-width: 80%
-class: no-click, adaptive-figure
----
-viser grafen til $f'$. Nullpunktene til $f'$ svarer til samme $x$-koordinater som ekstremalpunktene til $f$.
-:::
-
-:::::::::::::
-
-
-::::::::::::::
-
-:::::::::::::::
-
----
-
-
-
-
-
-## Utledning av derivasjonsreglene (*)
-
-Vi har så langt bare påstått hva derivasjonsreglene for polynomer er. Her skal vi gå løs på å utlede én av reglene.
+Fortegnslinja til $f'(x)$ er positiv før $x = -3$ og negativ etter, som betyr at grafen til $f$ stiger før $x = -3$ og synker etter. Dermed har vi et toppunkt i $(-3, f(-3))$. Vi finner $f(-3)$:
 
 $$
-\dfrac{f(x) - f(a)}{x - a}
+f(-3) = 2\cdot (-3)^3 + 3\cdot (-3)^2 - 36\cdot (-3) + 6 = -54 + 27 + 108 + 6 = 87
 $$
 
+Dermed har vi et toppunkt i $(-3, 87)$.
 
-:::::::::::::::{theory} Bevis for derivasjonsregel 1
-La $f(x) = x^3$ være en tredjegradsfunksjon. Vi ønsker å finne den deriverte $f'(a)$ i et punkt $(a, f(a))$ på grafen til $f$.
-
-Vi starter med å finne den gjennomsnittlige vekstfarten til $f$ i intervallet $[a, x]$. Dette er gitt ved 
+Fortegnslinja til $f'(x)$ er negativ før $x = 2$ og positiv etter, som betyr at grafen til $f$ synker før $x = 2$ og stiger etter. Dermed har vi et bunnpunkt i $(2, f(2))$. Vi finner $f(2)$:
 
 $$
-\dfrac{f(x) - f(a)}{x - a} = \dfrac{x^3 - a^3}{x - a}
+f(2) = 2\cdot 2^3 + 3\cdot 2^2 - 36\cdot 2 + 6 = 16 + 12 - 72 + 6 = -38
 $$
 
-Vi utfører polynomdivisjonen med et Horner-skjema:
+Dermed har vi et bunnpunkt i $(2, -38)$.
 
-:::{horner}
----
-p: x^3 - a^3
-x: a
-width: 50%
----
-:::
-
-Vi får null i rest, og bare en kvotient:
-
-$$
-\dfrac{f(x) - f(a)}{x - a} = x^2 + ax + a^2
-$$
-
-Hvis vi nå tenker oss at vi lar punktet $(x, f(x))$ nærme seg punktet $(a, f(a))$. Da vil jo sekanten som går gjennom de punktene nærme seg en tangent i punktet $(a, f(a))$. Den gjennomsnittlige vekstfarten vil da nærme seg stigningstallet til tangenten fordi de to linjene blir gradvis mer og mer like. 
-
-Setter vi $x = a$ i uttrykket, som svarer til å se at vi lar $(x, f(x))$ komme så nærme $(a, f(a))$ som overhode mulig, så får vi 
-
-$$
-a^2 + a\cdot a + a^2 = 3a^2
-$$
-
-Altså blir stigningstallet til tangenten $3a^2$. 
-
-
-
-
-
-:::::::::::::::
-
-
-
-
-## Polynomdivisjon og tangenter (*)
-
-Vi har allerede sett at resten i polynomdivisjon med $f(x) : (x - r)$ lar oss bestemme $f(r)$. Her skal vi gå et steg videre å se at resten i en bestemt polynomdivisjon kan brukes til å bestemme likningen til en tangent til grafen til polynomfunksjonen.
-
-
-:::::::::::::::{admonition} Utforsk 1
----
-class: explore
----
-En andregradsfunksjon $f$ er gitt ved 
-
-$$
-f(x) = x^2 - 4x + 5.
-$$
-
-
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Bestem likningen for tangenten til grafen til $f$ i $(1, f(1))$ ved å bruke at $f'(x) = 2ax + b$ for en andregradsfunksjon.
-
-
-:::{admonition} Fasit
----
-class: answer, dropdown
----
-$$
-y = -2x + 4
-$$
-:::
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
-Regn ut
-
-$$
-f(x) : (x - 1)^2 
-$$
-
-
-Sammenlikn **resten** med likningen for tangenten du fant i **a**. 
-
-> Husk å utvide $(x - 1)^2$ før du gjør polynomdivisjonen.
-
-::::{admonition} Fasit
----
-class: answer, dropdown
----
-:::{figure} ./koder/utforsk/utforsk_1/b_annotert.svg
----
-width: 80%
-class: no-click, adaptive-figure
----
-:::
 
 ::::
 
-:::::::::::::
-
-
-
-::::::::::::::
-
-:::::::::::::::
-
----
-
-
-:::::::::::::::{admonition} Setning: Resten i polynomdivisjon $f(x) : (x - r)^2$
----
-class: summary
----
-Gitt et polynom $f(x)$, vil resten i polynomdivisjonen $f(x) : (x - r)^2$ være det algebraiske uttrykket til tangenten som går gjennom punktet $(r, f(r))$ på grafen til $f$.
-
-:::::::::::::::
-
-
-Før vi går videre, bør du prøve å anvende setningen.
-
-
-:::::::::::::::{admonition} Underveisoppgave 1
----
-class: check
----
-En tredjegradsfunksjon $f$ er gitt ved 
-
-$$
-f(x) = x^3 - 3x^2 - 4x + 12.
-$$
-
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Regn ut
-
-$$
-f(x) : (x - 2)^2
-$$
-
-::::{admonition} Fasit
----
-class: answer, dropdown
----
-:::{figure} ./koder/underveisoppgaver/underveisoppgave_1/a.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
-:::
-::::
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
-Bruk resultatet ditt fra **a** til å bestemme likningen for tangenten til grafen til $f$ i $(2, f(2))$.
-
-
-:::{admonition} Fasit
----
-class: answer, dropdown
----
-Fra oppgave **a** har vi at resten er gitt ved 
-
-$$
-y = -4x + 8,
-$$
-
-som er tangenten til grafen til $f$ i $(2, f(2))$.
-:::
-:::::::::::::
-
-
-
-
-::::::::::::::
 
 
 :::::::::::::::

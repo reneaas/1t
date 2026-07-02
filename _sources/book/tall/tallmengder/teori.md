@@ -1,32 +1,15 @@
 # Tallmengder
 
-:::{admonition} Læringsmål
----
-class: tip
----
+:::{goals} Læringsmål
 * Kunne beskrive de ulike spesielle tallmengdene.
 * Kunne bruke matematisk notasjon for å beskrive elementer i ulike tallmengder.
 * Kunne beskrive delmengder av de reelle tallene med intervaller og ulikheter.
 :::
 
 
-En tallmengde er en samling av tall. Noen ganger er de samlet basert på felles egenskaper som skiller dem fra andre tall. Andre ganger er de samlet fordi de alle sammen løser en bestemt likning. 
+En tallmengde er en samling av tall. Noen ganger er de samlet basert på felles egenskaper som skiller dem fra andre tall. Andre ganger er de samlet fordi de alle sammen løser en bestemt likning, ulikheter eller likningssystem.
 
-
-## Spesielle tallmengder
-
-
-:::{figure} ./figurer/teori/mengder_venndiagram.svg
----
-width: 100%
-class: clickable-figure, adaptive-figure
-figclass: margin
----
-
-viser hvordan de ulike tallmengdene henger sammen. Diagrammet illustrerer at $\mathbb{N}$ er inkludert i $\mathbb{Z}$, som igjen er inkludert i $\mathbb{Q}$, som igjen er inkludert i $\mathbb{R}$.
-:::
-
-::::{summary} De spesielle tallmengdene
+::::{summary-2} De spesielle tallmengdene
 
 
 :::{table}
@@ -36,6 +19,16 @@ $\mathbb{Z}$, **Heltallene**, $-3, -2, -1, 0, 1, 2$, Alle hele tall - inkludert 
 $\mathbb{Q}$, De **rasjonale** tallene, $-\dfrac{1}{2}, \dfrac{1}{3}, \dfrac{7}{4}, 2$, Alle tall som kan skrives som en brøk der teller og nevner er heltall.
 $\mathbb{R}$, De **reelle** tallene, $\pi, \sqrt{2}, \dfrac{10}{2}$, Alle tallene på tallinja.
 $\emptyset$, Den **tomme** mengden, -, Mengden uten noen elementer.
+:::
+
+
+:::{figure} ./figurer/teori/mengder_venndiagram.svg
+---
+width: 60%
+class: no-click, adaptive-figure
+---
+
+viser hvordan de ulike tallmengdene henger sammen. Diagrammet illustrerer at $\mathbb{N}$ er inkludert i $\mathbb{Z}$, som igjen er inkludert i $\mathbb{Q}$, som igjen er inkludert i $\mathbb{R}$.
 :::
 
 
@@ -53,7 +46,7 @@ Mengder trenger ikke bare å være tall. Hvis $A$ er en mengde av alle elever i 
 Vi skal ofte beskrive tallmengder og da trenger vi matematisk notasjon for å gjøre det. Når et tall tilhører en mengde, sier vi at tallet er et **element** i mengden. Når et tall $x$ er et element i en mengde $A$, skriver vi $x \in A$. Hvis $x$ *ikke* er et element i mengden skriver vi $x \notin A$. For eksempel er $2 \in \natural$ og $-3 \notin \natural$.
 
 
-### Listenotasjon
+## Listenotasjon
 Noen ganger vil vi beskrive en mengde bestående av noen bestemte elementer. Dette får vi bruk for når vi skal jobbe med likninger som har mer enn én løsning.
 Da kan vi bruke **listenotasjon**. Vi kan beskrive alle tallene i $\natural$ og $\integer$ ved å bruke listenotasjon:
 
@@ -63,19 +56,22 @@ $$
 
 Men vi kan også beskrive mengder som bare består av noen få elementer. For eksempel vil mengden som bare inneholder tallene $-3$, $0$ og $2$ skrives som $\{-3, 0, 2\}$. 
 
-### Ulikheter
+## Ulikheter
 
 Når vi jobber med ulikheter, vil løsningen av ulikheten ofte være en **delmengde** av de reelle tallene. For eksempel beskriver $-3 < x < 2$ alle reelle tall som er større enn $-3$ og mindre enn $2$. Slik mengder er begrenset både nedenfra og ovenfra. 
  
-:::::{summary} Begrensende mengder som ulikheter
+:::::::::::::::{summary-2} Begrensende mengder som ulikheter
 Vi kan skrive en begrenset mengde av reelle tall på følgende måter:
 
-| Ulikhet | Beskrivelse |
-|:---:|---|
-| $a \leq x \leq b$ | Alle reelle tall $x$ større enn eller lik $a$ og mindre enn eller lik $b$. |
-| $a < x < b$ | Alle reelle tall $x$ større enn $a$ og mindre enn $b$. |
-| $a \leq x < b$ | Alle reelle tall $x$ større enn eller lik $a$ og mindre enn $b$. |
-| $a < x \leq b$ | Alle reellle tall $x$ større enn $a$ og mindre enn eller lik $b$. |
+
+:::{table}
+labels: Ulikhet, Beskrivelse
+$a \leq x \leq b$ , Alle reelle tall $x$ større enn eller lik $a$ og mindre enn eller lik $b$.
+$a < x < b$ , Alle reelle tall $x$ større enn $a$ og mindre enn $b$.
+$a \leq x < b$ , Alle reelle tall $x$ større enn eller lik $a$ og mindre enn $b$.
+$a < x \leq b$ , Alle reellle tall $x$ større enn $a$ og mindre enn eller lik $b$.
+:::
+
 
 <br>
 
@@ -87,12 +83,12 @@ width: 100%
 class: no-click, adaptive-figure
 ---
 ::::
-:::::
+:::::::::::::::
 
 ---
 
 
-:::::::::::::::{exercise} Underveisoppgave 1
+:::::::::::::::{exercise-2} Underveisoppgave 1
 Ta quizen! 
 
 :::::{quiz}
@@ -150,14 +146,17 @@ Q: Q: Hvilken ulikhet passer med beskrivelsen: <br> Alle reelle tall $x$ som er 
 
 Vi kan også ha ulikheter der løsningen kun er begrenset på den ene siden. For eksempel beskriver $x \geq 2$ alle reelle tall som er større enn eller lik $2$. Slik mengder er ikke begrenset ovenfra, men er begrenset nedenfra.
 
-:::::{summary} Ubegrensede mengder som ulikheter
+:::::{summary-2} Ubegrensede mengder som ulikheter
 Vi kan skrive en ubegrenset mengde av reelle tall på følgende måter:
-| Ulikhet | Beskrivelse |
-|:---:|---|
-| $x \geq a$ | Alle reelle tall $x$ større enn eller lik $a$. |
-| $x > a$ | Alle reelle tall $x$ større enn $a$. |
-| $x \leq b$ | Alle reelle tall $x$ mindre enn eller lik $b$. |
-| $x < b$ | Alle reelle tall $x$ mindre enn $b$. |
+
+
+:::{table}
+labels: Ulikhet, Beskrivelse
+$x \geq a$ , Alle reelle tall $x$ større enn eller lik $a$.
+$x > a$ , Alle reelle tall $x$ større enn $a$.
+$x \leq b$ , Alle reelle tall $x$ mindre enn eller lik $b$.
+$x < b$ , Alle reelle tall $x$ mindre enn $b$.
+:::
 
 <br>
 
@@ -176,7 +175,7 @@ viser to typer ubegrensende mengder. Figuren øverst viser en mengde som er begr
 
 
 
-:::::::::::::::{exercise} Underveisoppgave 2
+:::::::::::::::{exercise-2} Underveisoppgave 2
 Ta quizen!
 
 
@@ -234,26 +233,24 @@ Q: Hvilken ulikhet passer med beskrivelsen: <br> Alle reelle tall $x$ som er min
 
 
 
-### Intervaller
+## Intervaller
 Etter hvert som løsningene av ulikheter blir mer kompliserte å beskrive, blir notasjonen med ulikheter ganske tungvint. Derfor har vi noe om vi kaller for **intervaller** som gjør det en del enklere å lese hvilke reelle tall som er med i mengden. 
 
 
-### Begrensede intervaller
 Akkurat som med ulikheter, kan vi beskrive en begrenset mengde av reelle tall ved hjelp av intervaller. 
 
 
-:::{margin}
-Vi leser "$\mid$" som "slik at". Det betyr at når vi skriver $\{x \in \mathbb{R} \mid a \leq x \leq b\}$, leser vi dette som "alle reelle tall $x$ slik at $a \leq x \leq b$".
-:::
-
-:::::{summary} Begrensende Intervaller
+:::::{summary-2} Begrensede Intervaller
 Intervaller kan skrives på følgende måter:
-| Intervall | Beskrivelse |
-|:---:|---|
-| $[a, b]$ | $\{x \in \mathbb{R} \mid a \leq x \leq b\}$ |
-| $\langle a, b \rangle$ | $\{x \in \mathbb{R} \mid a < x < b\}$ |
-| $[a, b \rangle$ | $\{x \in \mathbb{R} \mid a \leq x < b\}$ |
-| $\langle a, b]$ | $\{x \in \mathbb{R} \mid a < x \leq b\}$ |
+
+
+:::{table}
+labels: Intervall, Beskrivelse
+$[a, b]$ , Alle reelle tall $x$ slik at $a \leq x \leq b$. (Inkluderer både $a$ og $b$)
+$\langle a, b \rangle$ , Alle reelle tall $x$ slik at $a < x < b$. (Inkluderer verken $a$ eller $b$)
+$[a, b \rangle$ , Alle reelle tall $x$ slik at $a \leq x < b$. (Inkluderer $a$, men ikke $b$)
+$\langle a, b]$ , Alle reelle tall $x$ slik at $a < x \leq b$. (Inkluderer $b$, men ikke $a$)
+:::
 
 :::::
 
@@ -261,7 +258,7 @@ Intervaller kan skrives på følgende måter:
 ---
 
 
-:::::::::::::::{exercise} Underveisoppgave 3
+:::::::::::::::{exercise-2} Underveisoppgave 3
 Ta quizen! 
 
 :::::{quiz}
@@ -318,25 +315,30 @@ Q: Hvilket intervall passer med $0 < x \leq 4$?
 
 :::::::::::::::
 
+---
 
 
-### Ubegrensede intervaller
 Vi kan også beskrive ubegrensede mengder av reelle tall ved hjelp av intervaller. Disse intervallene strekker seg i det uendelige i minst én retning.
 
-:::::{summary} Ubegrensede intervaller
+:::::{summary-2} Ubegrensede intervaller
 Ubegrensede intervaller kan skrives på følgende måter:
-| Intervall | Beskrivelse |
-|:---:|---|
-| $[a, \to\rangle$ | $\{x \in \mathbb{R} \mid x \geq a\}$ |
-| $\langle a, \to\rangle$ | $\{x \in \mathbb{R} \mid x > a\}$ |
-| $\langle\gets, b]$ | $\{x \in \mathbb{R} \mid x \leq b\}$ |
-| $\langle\gets, b \rangle$ | $\{x \in \mathbb{R} \mid x < b\}$ |
+
+
+
+:::{table}
+labels: Intervall, Beskrivelse
+$[a, \to\rangle$ , Alle reelle tall $x$ slik at $x \geq a$. (Inkluderer $a$)
+$\langle a, \to\rangle$ , Alle reelle tall $x$ slik at $x > a$. (Inkluderer ikke $a$)
+$\langle\gets, b]$ , Alle reelle tall $x$ slik at $x \leq b$. (Inkluderer $b$)
+$\langle\gets, b \rangle$ , Alle reelle tall $x$ slik at $x < b$. (Inkluderer ikke $b$)
+:::
+
 :::::
 
 ---
 
 
-:::::::::::::::{exercise} Underveisoppgave 4
+:::::::::::::::{exercise-2} Underveisoppgave 4
 Ta quizen!
 
 

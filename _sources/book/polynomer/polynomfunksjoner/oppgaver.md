@@ -1,34 +1,23 @@
 # Oppgaver: Polynomfunksjoner
 
 :::::::::::::::{exercise} Oppgave 1
----
-level: 1
----
 
+:::::::::::::{part} a
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-
-Grafen til en tredjegradsfunksjon $f$ er vist i {numref}`fig-polynomer-polynomfunksjoner-oppgave-1-a`.
-
-Bestem $f(x)$.
-
-:::{figure} ./figurer/oppgaver/oppgave_1/a.svg
----
-name: fig-polynomer-polynomfunksjoner-oppgave-1-a
-width: 80%
-class: no-click, adaptive-figure
----
-viser grafen til en tredjegradsfunksjon $f$.
+:::{plot}
+width: 100%
+align: right
+fontsize: 26
+function: 1/2 * (x + 2) * (x - 1) * (x - 3), f
 :::
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+
+Grafen til en tredjegradsfunksjon $f$ er vist i figuren til høyre.
+
+
+Finn $f(x)$.
+
+::::{answer}
 $$
 f(x) = \dfrac{1}{2}(x + 2)(x - 1)(x - 3)
 $$
@@ -36,26 +25,23 @@ $$
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
-
-Grafen til en tredjegradsfunksjon $g$ er vist i {numref}`fig-polynomer-polynomfunksjoner-oppgave-1-b`.
-
-Bestem $g(x)$.
-
-:::{figure} ./figurer/oppgaver/oppgave_1/b.svg
----
-name: fig-polynomer-polynomfunksjoner-oppgave-1-b
-width: 80%
-class: no-click, adaptive-figure
----
-viser grafen til en tredjegradsfunksjon $g$.
+:::::::::::::{part} b
+:::{plot}
+width: 100%
+align: right
+fontsize: 26
+function: -1/4 * (x + 2) * (x - 3)**2, g
 :::
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+Grafen til en tredjegradsfunksjon $g$ er vist til høyre.
+
+Bestem $g(x)$.
+
+
+
+
+::::{answer}
 $$
 g(x) = -\dfrac{1}{4}(x - 3)^2(x + 2)
 $$
@@ -63,26 +49,22 @@ $$
 
 :::::::::::::
 
-:::::::::::::{tab-item} c
-
-Grafen til en tredjegradsfunksjon $h$ er vist i {numref}`fig-polynomer-polynomfunksjoner-oppgave-1-c`.
-
-Bestem $h(x)$.
-
-:::{figure} ./figurer/oppgaver/oppgave_1/c.svg
----
-name: fig-polynomer-polynomfunksjoner-oppgave-1-c
-width: 80%
-class: no-click, adaptive-figure
----
-viser grafen til en tredjegradsfunksjon $h$.
+:::::::::::::{part} c
+:::{plot}
+width: 100%
+align: right
+fontsize: 26
+function: -1/2 * (x + 3) * (x + 2) * (x - 1), h
 :::
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+Grafen til en tredjegradsfunksjon $h$ er vist til høyre.
+
+Finn $h(x)$.
+
+
+
+::::{answer}
 $$
 h(x) = -\dfrac{1}{2}(x + 2)(x + 3)(x - 1)
 $$
@@ -90,97 +72,65 @@ $$
 
 :::::::::::::
 
-:::::::::::::{tab-item} d
-
-Grafen til en tredjegradsfunksjon $p$ er vist i {numref}`fig-polynomer-polynomfunksjoner-oppgave-1-d`.
-
-Bestem $p(x)$.
-
-:::{figure} ./figurer/oppgaver/oppgave_1/d.svg
----
-name: fig-polynomer-polynomfunksjoner-oppgave-1-d
-width: 80%
-class: no-click, adaptive-figure
----
-viser grafen til en tredjegradsfunksjon $p$.
-:::
-
-
-::::{admonition} Fasit
----
-class: answer, dropdown
----
-$$
-p(x) = -(x + 2)^3
-$$
-::::
-
-:::::::::::::
-
-::::::::::::::
-
 
 :::::::::::::::
 
 ---
 
 :::::::::::::::{exercise} Oppgave 2
----
-level: 1
----
-Grafen til en tredjegradsfunksjon $f$ gitt ved 
+:::{plot}
+width: 350px
+align: right
+fontsize: 26
+function: x**3 + 3 * x**2 + x + 1, f
+:::
+
+
+
+Grafen til en tredjegradsfunksjon $f$ gitt ved
 
 $$
 f(x) = ax^3 + bx^2 + cx + d, 
 $$
 
-er vist i 
+er vist i figuren til høyre.
 
-:::{figure} ./figurer/oppgaver/oppgave_2/graf.svg
----
-name: fig-polynomer-polynomfunksjoner-oppgave-2
-width: 80%
-class: no-click, adaptive-figure
----
-viser grafen til en tredjegradsfunksjon $f$.
+
+:::{clear}
 :::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Sett opp en likningssystem for koeffisientene uttrykt ved $f(x)$. 
 
-> Det vil si, én av likningene blir $f(-3) = -2$ siden grafen går gjennom $(-3, -2)$. 
+::::{hint}
+* Du trenger fire likninger siden det er fire ukjente koeffisienter $a$, $b$, $c$ og $d$.
+* Én av likningene kan være $f(-3) = -2$ siden grafen går gjennom punktet $(-3, -2)$.
+::::
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 f(-3) = -2 \and f(-2) = 3 \and f(-1) = 2 \and f(0) = 1. 
 $$
-
 ::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
-> Her skal du bruke CAS til å bestemme koeffisientene til $f(x)$.
-
-Bestem $f(x)$.
-
-:::{cas-popup} 350 500
+:::::::::::::{part} b
+:::{cas-popup}
+---
+layout: sidebar
+---
 :::
 
 
-::::{answer}
+Bruk CAS til å finne $f(x)$.
+
+
+:::::{answer}
 $$
 f(x) = x^3 + 3x^2 + x + 1. 
 $$
-::::
 
 ::::{solution}
 Vi skriver inn et generelt funksjonsuttrykk og likningene i CAS, og løser deretter likningssystemet:
@@ -205,10 +155,11 @@ f(x) = x^3 + 3x^2 + x + 1.
 $$
 ::::
 
+:::::
+
 
 
 :::::::::::::
-::::::::::::::
 
 :::::::::::::::
 
@@ -217,91 +168,150 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 3
----
-level: 2
----
-> Bruk CAS til å bestemme funksjonsuttrykkene for hver av funksjonene nedenfor.
 
-::::::::::::::{tab-set}
+
+:::::::::::::{part} a
+
+:::{cas-popup}
 ---
-class: tabs-parts
+layout: sidebar
 ---
-:::::::::::::{tab-item} a
-Grafen til en tredjegradsfunksjon $f$ er vist i figuren nedenfor.
+:::
+
+:::{plot}
+width: 350px
+align: right
+fontsize: 26
+function: x**3 - 5 * x**2 + 7 * x - 2, f
+xmin: -4
+:::
+
+
+
+Grafen til en tredjegradsfunksjon $f$ er vist i figuren til høyre.
 
 Bestem $f(x)$.
 
-:::{cas-popup} 350 500
-:::
 
+:::::{answer}
+$$
+f(x) = x^3 - 5x^2 + 7x - 2
+$$
 
-:::{figure} ./figurer/oppgaver/oppgave_3/a.svg
+::::{solution}
+Vi finner fire punkter på grafen til $f$ og setter opp et likningssystem for koeffisientene som vi løser med CAS:
+
+:::{figure} ./figurer/oppgaver/oppgave_3/a_sol.png
 ---
-width: 80%
 class: no-click, adaptive-figure
+width: 60%
 ---
 :::
+
+Altså er 
+
+$$
+a = 1 \and b = -5 \and c = 7 \and d = -2.
+$$
+
+som gir at 
+
+$$
+f(x) = ax^3 + bx^2 + cx + d = x^3 - 5x^2 + 7x - 2.
+$$
+
+::::
+
+:::::
+
+
+
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
+:::{cas-popup}
+---
+layout: sidebar
+---
+:::
+
+
+:::{plot}
+width: 350px
+align: right
+fontsize: 26
+function: -x**3 - x**2 + 5 * x + 6, g
+ymin: -2
+ymax: 12
+:::
+
+
 Grafen til en tredjegradsfunksjon $g$ er vist i figuren nedenfor.
 
-Bestem $g(x)$.
+Finn $g(x)$.
 
-:::{cas-popup} 350 500
-:::
+:::::{answer}
+$$
+g(x) = -x^3 - x^2 + 5x + 6
+$$
 
+::::{solution}
+Vi finner fire punkter på grafen til $g$ og setter opp et likningssystem for koeffisientene som vi løser med CAS:
 
-:::{figure} ./figurer/oppgaver/oppgave_3/b.svg
+:::{figure} ./figurer/oppgaver/oppgave_3/b_sol.png
 ---
-width: 80%
 class: no-click, adaptive-figure
+width: 60%
 ---
-:::
+::::
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-Grafen til en tredjegradsfunksjon $h$ er vist i figuren nedenfor.
+:::::::::::::{part} c
+:::{cas-popup}
+---
+layout: sidebar
+---
+:::
+
+:::{plot}
+width: 350px
+align: right
+fontsize: 26
+function: x**3 + 2*x**2 - 5*x - 2, h
+ymin: -6
+ymax: 11
+:::
+
+
+Grafen til en tredjegradsfunksjon $h$ er vist i figuren til høyre.
 
 Bestem $h(x)$.
 
-:::{cas-popup} 350 500
-:::
 
+:::::{answer}
+$$
+h(x) = x^3 + 2x^2 - 5x - 2
+$$
 
-:::{figure} ./figurer/oppgaver/oppgave_3/c.svg
+::::{solution}
+Vi finner fire punkter på grafen til $h$ og setter opp et likningssystem for koeffisientene som vi løser med CAS:
+
+:::{figure} ./figurer/oppgaver/oppgave_3/c_sol.png
 ---
-width: 80%
 class: no-click, adaptive-figure
+width: 60%
 ---
-:::
+::::
+::::
+
+:::::
 
 :::::::::::::
-
-
-:::::::::::::{tab-item} d
-Grafen til en tredjegradsfunksjon $p$ er vist i figuren nedenfor.
-
-Bestem $p(x)$.
-
-:::{cas-popup} 350 500
-:::
-
-
-:::{figure} ./figurer/oppgaver/oppgave_3/d.svg
----
-width: 80%
-class: no-click, adaptive-figure
----
-:::
-
-:::::::::::::
-
-::::::::::::::
-
 
 
 :::::::::::::::
@@ -314,9 +324,7 @@ class: no-click, adaptive-figure
 
 
 :::::::::::::::{exercise} Oppgave 4
----
-level: 2
----
+
 En tredjegradsfunksjon $f$ er gitt ved 
 
 $$
@@ -324,76 +332,66 @@ f(x) = -(x + 1)(x - 1)(x - 2).
 $$
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem nullpunktene til $f$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 f(x) = 0 \liff x = -1 \or x = 1 \or x = 2.
 $$
-
 ::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Tegn en fortegnslinje for $f(x)$ inkludert faktorene til $f$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 
-:::{figure} ./figurer/oppgaver/oppgave_4/b.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
+:::{signchart-2}
+width: 70%
+function: -(x + 1) * (x - 1) * (x - 2)
 :::
 
 ::::
 
 :::::::::::::
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Lag en **skisse** av grafen til $f$. 
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 
-:::{figure} ./figurer/oppgaver/oppgave_4/c.svg
----
-width: 80%
-class: no-click, adaptive-figure
----
+:::{plot}
+width: 60%
+function: -(x + 1) * (x - 1) * (x - 2) 
+point: (-1, 0)
+text: -1, 0, "$(-1, 0)$", bottom-left
+point: (1, 0)
+text: 1, 0, "$(1, 0)$", top-left
+point: (2, 0)
+text: 2, 0, "$(2, 0)$", top-right
+ticks: off
+fontsize: 24
+xmin: -3
+xmax: 4
 :::
 
 ::::
 
 :::::::::::::
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Løs ulikheten 
 
 $$
 f(x) > 0. 
 $$
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 x \in \langle \gets, -1 \rangle \cup \langle 1, 2 \rangle.
 $$
@@ -401,35 +399,24 @@ $$
 
 :::::::::::::
 
-
-::::::::::::::
-
 :::::::::::::::
 
 
 ---
 
 :::::::::::::::{exercise} Oppgave 5
----
-level: 2
----
+
 En tredjegradsfunksjon $f$ er gitt ved 
 
 $$
 f(x) = (x - 1)^2 (x + 3)
 $$
 
-::::::::::::::{tab-set} 
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem nullpunktene til $f$. 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 f(x) = 0 \liff x = 1 \or x = -3.
 $$
@@ -438,20 +425,16 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Tegn et fortegnsskjema for $f(x)$. 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 
-:::{figure} ./figurer/oppgaver/oppgave_5/b.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
+:::{signchart-2}
+width: 70%
+function: (x - 1)**2 * (x + 3), f(x) 
 :::
+
 
 ::::
 
@@ -459,47 +442,42 @@ class: no-click, adaptive-figure
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Tegn en **skisse** av grafen til $f$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 
-:::{figure} ./figurer/oppgaver/oppgave_5/c.svg
----
-width: 80%
-class: no-click, adaptive-figure
----
+:::{plot}
+width: 60%
+function: (x - 1)**2 * (x + 3), f
+ticks: off
+point: (-3, 0)
+text: -3, 0, "$(-3, 0)$", top-left
+point: (1, 0)
+text: 1, 0, "$(1, 0)$", bottom-right
+xmin: -5
+xmax: 4
+ymax: 12
 :::
-
 ::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Løs ulikheten
 
 $$
 f(x) > 0. 
 $$
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
-> Det holder med ett av alternativene under.
-
+::::{answer}
 $$
-x \in \langle -3, \to \rangle \setminus \{1\} \liff x > -3 \and x \neq 1.
+x \in \langle -3, \to \rangle \setminus \{1\}
 $$
 ::::
 
 :::::::::::::
-
-::::::::::::::
 
 :::::::::::::::
 
@@ -509,26 +487,18 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 6
----
-level: 2
----
+
 En fjerdegradsfunksjon $f$ er gitt ved
 
 $$
 f(x) = (x + 1)^2(x - 2)(x - 3). 
 $$
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem nullpunktene til $f$.
 
-:::{admonition} Fasit
----
-class: answer, dropdown
----
+:::{answer}
 $$
 f(x) = 0 \liff x = -1 \or x = 2 \or x = 3.
 $$
@@ -537,63 +507,62 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Tegn et fortegnsskjema for $f(x)$, inkludert faktorene i $f(x)$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 
-:::{figure} ./figurer/oppgaver/oppgave_6/b.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
+:::{signchart-2}
+width: 70%
+function: (x + 1)**2 * (x - 2) * (x - 3), f(x) 
 :::
 
 ::::
 
 :::::::::::::
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Tegn en **skisse** av grafen til $f$.
 
-::::{admonition} Fasit
----
-class: dropdown, answer
----
-:::{figure} ./figurer/oppgaver/oppgave_6/c.svg
----
-width: 80%
-class: no-click, adaptive-figure
----
+
+
+::::{answer}
+
+:::{plot}
+width: 70%
+function: (x + 1)**2 * (x - 2) * (x - 3), f
+ticks: off
+point: (-1, 0)
+text: -1, 0, "$(-1, 0)$", bottom-left
+point: (2, 0)
+text: 2, 0, "$(2, 0)$", bottom-left
+point: (3, 0)
+text: 3, 0, "$(3, 0)$", bottom-right
+xmin: -3
+xmax: 5
+ymax: 12
 :::
+
 ::::
 
 
 :::::::::::::
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Løs ulikheten 
 
 $$
 f(x) \leq 0. 
 $$
 
-:::{admonition} Fasit
----
-class: answer, dropdown
----
-> Det holder med ett av alternativene under. 
+:::{answer}
 
 $$
-x \in [2, 3] \cup \{-1\} \liff -2 \leq x \leq 3 \or x = -1.
+x \in [2, 3] \cup \{-1\}
 $$
 :::
 
 :::::::::::::
 
-::::::::::::::
 
 :::::::::::::::

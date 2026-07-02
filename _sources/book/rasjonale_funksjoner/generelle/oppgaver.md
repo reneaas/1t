@@ -1,4 +1,4 @@
-# Oppgaver: <br> Generelle rasjonale funksjoner 
+# Oppgaver: Generelle rasjonale funksjoner 
 
 
 
@@ -6,29 +6,17 @@
 
 Bestem nullpunktene til funksjonene.
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 $$
 f(x) = \dfrac{x^2 - 4}{x + 1}
 $$
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 x = -2 \or x = 2
 $$
-::::
 
-
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Vi leter først etter nullpunktene til tellerpolynomet:
 
 $$
@@ -49,28 +37,23 @@ $$
 
 ::::
 
+
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 $$
 g(x) = \dfrac{x - 1}{(x + 3)^2}
 $$
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 x = 1
 $$
-::::
 
-
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Tellerpolynomet og nevnerpolynomet er allerede nullpunktsfaktorisert, og vi kan se at de ikke har noen felles faktorer. Derfor holder det å bestemme nullpunktene til tellerpolynomet:
 
 $$
@@ -84,28 +67,23 @@ x = 1.
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 $$
 h(x) = \dfrac{(x - 2)(x + 3)}{x^2 - 4}
 $$
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 x = -3 
 $$
-::::
 
-
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Tellerpolynomet er nullpunktsfaktorisert allerede, men vi må nullpunktsfaktorisere nevnerpolynomet for å sjekke om de to polynomeme har noen lineære faktorer til felles. Vi bruker konjugatsetningen på nevnerpolynomet:
 
 $$
@@ -131,29 +109,24 @@ x = -3.
 $$
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 $$
 p(x) = \dfrac{x^2 - x - 2}{x^2 - 9}
 $$
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 x = -1 \or x = 2.
 $$
-::::
 
-
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Vi starter med å nullpunktsfaktorisere teller- og nevnerpolynomet for å sjekke om de har noen felles lineære faktorer. Vi bruker $abc$-formelen på tellerpolynomet:
 
 $$
@@ -179,9 +152,9 @@ x = -1 \or x = 2.
 $$
 ::::
 
-:::::::::::::
+:::::
 
-::::::::::::::
+:::::::::::::
 
 :::::::::::::::
 
@@ -191,104 +164,90 @@ $$
 
 :::::::::::::::{exercise} Oppgave 2
 
-**Bruk polynomdivisjon** til å bestemme likningene til de horisontale eller skrå asymptotene til funksjonene.
+Bestem likningene til de horisontale eller skrå asymptotene til funksjonene.
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 $$
 f(x) = \dfrac{4x - 6}{2x + 1}
 $$
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 y = 2
 $$
-::::
 
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Vi utfører polynomdivisjon for å lese av kvotienten $K(x)$ i divisjonen:
 
-:::{figure} ./koder/oppgaver/oppgave_2/a.svg
+
+:::{polydiv}
 ---
-width: 50%
-class: no-click, adaptive-figure
+p: 4x - 6
+q: 2x + 1
+width: 60%
 ---
 :::
+
 
 Vi kan se at kvotienten er $K(x) = 2$ som betyr at likningen for den horisontale asymptoten er $y = 2$.
 ::::
 
+:::::
+
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 $$
 g(x) = \dfrac{4x^2 + x - 8}{x^2 + 1}
 $$
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 y = 4
 $$
-::::
 
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Vi utfører polynomdivisjon for å bestemme kvotienten $K(x)$ i divisjonen:
 
-:::{figure} ./koder/oppgaver/oppgave_2/b.svg
+
+:::{polydiv}
 ---
+p: 4x^2 + x - 8
+q: x^2 + 1
 width: 60%
-class: no-click, adaptive-figure
 ---
 :::
+
 
 Fra divisjonen får vi at $K(x) = 4$ som betyr at likningen for den horisontale asymptoten er $y = 4$.
 
 ::::
 
+:::::
+
 
 :::::::::::::
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 $$
 h(x) = \dfrac{x^2 + x - 2}{x + 5}
 $$
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 y = x - 4.
 $$
-::::
 
-
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Vi utfører polynomdivisjon for å bestemme kvotienten $K(x)$ i divisjonen:
 
-:::{figure} ./koder/oppgaver/oppgave_2/c.svg
+:::{polydiv}
 ---
+p: x^2 + x - 2
+q: x + 5
 width: 60%
-class: no-click, adaptive-figure
 ---
 :::
 
@@ -296,35 +255,30 @@ Fra divisjonen får vi at $K(x) = x - 4$ som betyr at likningen for den skrå as
 
 ::::
 
+:::::
+
 :::::::::::::
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 $$
 p(x) = \dfrac{x + 3}{x^2 + 2x + 1}
 $$
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 y = 0
 $$
-::::
 
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Tellergraden er lavere enn nevnergraden som betyr at telleren allerede *er* et restpolynom i divisjonen. Derfor vil kvotienten være $K(x) = 0$ og vi får at likningen til den horisontale asymptoten er $y = 0$.
 ::::
+
+:::::
 
 
 
 :::::::::::::
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -337,28 +291,17 @@ Tellergraden er lavere enn nevnergraden som betyr at telleren allerede *er* et r
 
 Bestem likningene til de vertikale asymptotene til hver av funksjonene (dersom de eksisterer).
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 $$
 f(x) = \dfrac{x^2 - 4}{x^2 - 9}
 $$
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 x = -3 \or x = 3.
 $$
-::::
 
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Vi må starte med å nullpunktsfaktorisere teller- og nevnerpolynomet for å sjekke om de har noen felles faktorer. Med konjugatsetningen kan vi skrive: 
 
 $$
@@ -386,22 +329,22 @@ $$
 som er likningene til de vertikale asymptotene til $f$.
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 $$
 g(x) = \dfrac{x^2 - x - 6}{(x + 3)(x - 4)}
 $$
 
 
+:::::{answer}
+$x = -3$ og $x = 4$. 
 
-
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Vi starter med å nullpunktsfaktorisere tellerpolynomet for å se etter lineære faktorer som er felles:
 
 $$
@@ -422,30 +365,24 @@ $$
 
 Dermed likningene til de vertikale asymptotene $x = -3$ og $x = 4$.
 ::::
+:::::
+
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 $$
 h(x) = \dfrac{x + 3}{x^2 + 6x + 9}
 $$
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 x = -3.
 $$
-::::
 
-
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Vi starter med å se de lineære faktorene i teller- og nevnerpolynomet. Vi kan skrive om nevnerpolynomet med 1.kvadratsetning:
 
 $$
@@ -467,27 +404,21 @@ $$
 Dermed har $f$ er en vertikal asymptote i $x = -3$. 
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 $$
 p(x) = \dfrac{x^2 + 4x + 3}{x + 1}
 $$
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 Ingen vertikale asymptoter.
-::::
 
-
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Vi starter med å se om teller- og nevnerpolynomet har felles lineære faktorer og kvitter oss med dem. Vi skriver om tellerpolynomet med fullstendig kvadraters metode:
 
 $$
@@ -503,12 +434,15 @@ $$
 Vi ser at selv om $x = -1$ er et bruddpunkt for $p$ siden det er nullpunktet til nevnerpolynomet, så vil det ikke være en vertikal asymptote fordi tellerpolynomet hadde én av den samme lineære faktoren. Dermed har $p$ ingen vertikale asymptoter.
 ::::
 
+:::::
+
 
 :::::::::::::
 
-::::::::::::::
 
 :::::::::::::::
+
+
 
 ---
 
@@ -553,10 +487,7 @@ points: [(2, 0), (2, 0), (-2, 0), (-2, 0)]
 
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 Graf **C**. 
 ::::
 
@@ -598,35 +529,24 @@ points: [((-1, 0), (3, 0)), (3, 0), (1, 0), ((-1, 0), (3, 0))]
 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem hvilken graf som tilhører $f$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 Graf **B**.
 ::::
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem hvilken graf som tilhører $g$.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 Graf **C**.
 ::::
 
 :::::::::::::
-::::::::::::::
 
 :::::::::::::::
 
@@ -661,37 +581,25 @@ points: [(2, 0), (-2, 0), (-1, 0), (-1, 0)]
 :::
 
 
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem hvilken graf som tilhører $f$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 Graf **A**.
 ::::
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem hvilken graf som tilhører $g$.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 Graf **C**.
 ::::
 
 :::::::::::::
 
-::::::::::::::
 
 :::::::::::::::
 
@@ -705,26 +613,15 @@ $$
 f(x) = \dfrac{x^2 - 16}{(x + 2)(x - 2)}
 $$
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem nullpunktene til $f$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 x = \pm 4.
 $$
-::::
 
-::::{admonition} Løsning
----
-class: answer, dropdown
----
+::::{solution} 
 Vi starter med å se etter nullpunktene til tellerpolynomet:
 
 $$
@@ -738,32 +635,27 @@ x = \pm 4.
 $$
 :::: 
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem likningen til den horisontale asymptoten til $f$. 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 y = 1.
 $$
-:::: 
 
-
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Vi utfører polynomdivisjon for å bestemme kvotienten $K(x)$: 
 
-:::{figure} ./koder/oppgaver/oppgave_7/b.svg
+:::{polydiv}
 ---
+p: x^2 - 16
+q: x^2 - 4
 width: 60%
-class: no-click, adaptive-figure
 ---
 :::
 
@@ -775,28 +667,24 @@ $$
 
 :::: 
 
+::::: 
+
+
 
 
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem likningene til $f$ sine vertikale asymptoter, dersom de eksisterer.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 x = \pm 2.
 $$
-::::
 
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Vi starter med å nullpunktsfaktorisere teller- og nevnerpolynomet for å eliminere felles faktorer. Fra **a** har vi at nullpunktene til tellerpolynomet er $x = \pm 4$. Det betyr at vi kan skrive $f(x)$ som 
 
 $$
@@ -812,31 +700,26 @@ $$
 som er likningene til de vertikale asymptotene til $f$.
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Tegn et fortegnsskjema for $f(x)$. 
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
-
-
-:::{signchart}
-width: 100%
+:::::{answer}
+:::{signchart-2}
+width: 70%
 function: (x**2 - 16) / ((x + 2) * (x - 2)), f(x)
 :::
-
-
-::::
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} e
+:::::::::::::{part} e
 Lag en skisse av grafen til $f$. Skissen skal inneholde:
 
 * Nullpunktene til $f$.
@@ -844,14 +727,11 @@ Lag en skisse av grafen til $f$. Skissen skal inneholde:
 * Vertikale asymptoter.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 
 
 :::{plot}
-width: 80%
+width: 70%
 function: (x**2 - 16) / ((x + 2) * (x - 2)), f
 ticks: off
 xmin: -10
@@ -868,36 +748,26 @@ point: (-4, 0)
 text: 4, 0, "$(4,0)$", bottom-right
 text: -4, 0, "$(-4,0)$", bottom-left
 :::
-
-
-
 ::::
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} f
+:::::::::::::{part} f
 Løs ulikheten $f(x) \geq 0$.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 x \in \langle \gets, -4] \cup \langle -2, 2 \rangle \cup [4, \to \rangle.
 $$
-::::
 
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Vi bruker fortegnslinja til $f(x)$ som vi tegnet i **d** til å bestemme hvor $f(x) \geq 0$:
 
-:::{signchart}
-width: 100%
+:::{signchart-2}
+width: 70%
 function: (x**2 - 16) / ((x + 2) * (x - 2)), f(x)
 factors: false
 :::
@@ -909,9 +779,9 @@ x \in \langle \gets, -4] \cup \langle -2, 2 \rangle \cup [4, \to \rangle.
 $$
 ::::
 
-:::::::::::::
+:::::
 
-::::::::::::::
+:::::::::::::
 
 :::::::::::::::
 
@@ -926,28 +796,17 @@ $$
 f(x) = \dfrac{x^2 - 8x + 12}{(x - 2)(x + 3)}
 $$
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem nullpunktene til $f$. 
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 x = 6.
 $$
-::::
 
-
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Nullpunktene til $f$ er gitt ved nullpunktene til tellerpolynomet så lenge nevnerpolynomet ikke også har samme nullpunkter. Nullpunktene til tellerpolynomet kan vi bestemme med $abc$-formelen som gir
 
 \begin{align*}
@@ -981,53 +840,29 @@ x = 6.
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem likningene til asymptotene til $f$ dersom de eksisterer.
 
 
-::::::::::::{admonition} Fasit
----
-class: answer, dropdown
----
-:::::::::::{tab-set}
----
-class: tabs-parts
----
-::::::::::{tab-item} Horisontale/skrå asymptoter
-$$
-y = 1. 
-$$
-::::::::::
+:::::{answer}
+* Horisontal asymptote: $y = 1$
+* Vertikal asymptote: $x = -3$
 
-
-::::::::::{tab-item} Vertikale asymptoter
-$$
-x = -3.
-$$
-::::::::::
-:::::::::::
-
-::::::::::::
-
-::::::::::::{admonition} Løsning
----
-class: solution, dropdown
----
-:::::::::::{tab-set}
----
-class: tabs-parts
----
-::::::::::{tab-item} Horisontale/skrå asymptoter
+::::{solution}
 For å bestemme eventuelle horisontale eller skrå asymptoter, utfører polynomdivisjon for å bestemme kvotienten $K(x)$: 
 
-:::{figure} ./koder/oppgaver/oppgave_8/b.svg
+:::{polydiv}
 ---
-width: 80%
-class: no-click, adaptive-figure
+p: x^2 - 8x + 12
+q: (x - 2)(x + 3)
+width: 70%
 ---
 :::
+
 
 Fra polynomdivisjonen finner vi at $K(x) = 1$ som betyr at likningen til den horisontale asymptoten til $f$ er 
 
@@ -1035,10 +870,7 @@ $$
 y = 1.
 $$ 
 
-::::::::::
 
-
-::::::::::{tab-item} Vertikale asymptoter
 For å bestemme likningene til eventuelle vertikale asymptoter, faktoriserer vi teller- og nevnerpolynomet og eliminerer alle lineære faktorer som er felles. Vi har at 
 
 $$
@@ -1056,16 +888,16 @@ Likningen til den vertikale asymptoten til $f$ er derfor
 $$
 x = -3.
 $$ 
-::::::::::
 
-:::::::::::
+::::
 
-::::::::::::
+
+:::::
 
 
 :::::::::::::
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Lag en skisse av grafen til $f$. Skissen skal inneholde:
 
 * Nullpunkter
@@ -1076,22 +908,27 @@ Lag en skisse av grafen til $f$. Skissen skal inneholde:
 > Hint: Det kan være lurt å tegne et fortegnsskjema for $f(x)$ først.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
-:::{figure} ./figurer/oppgaver/oppgave_8/c_graf.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
-:::
-::::
+:::::{answer}
 
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+:::{plot}
+width: 60%
+ticks: off
+function: (x**2 - 8*x + 12) / ((x - 2) * (x + 3)), f
+vline: -3, dashed
+text: -3, -4, "$x = -3$", center-left
+hline: 1, dashed
+text: 3, 1, "$y = 1$", top-center
+point: (6, 0)
+text: 6, 0, "$(6,0)$", bottom-right
+text: 2, -4/5, "$\times$", center-center
+xmin: -10
+xmax: 10
+ymin: -10
+ymax: 10
+:::
+
+
+::::{solution}
 Vi har allerede sett at vi kan skrive $f(x)$ som
 
 $$
@@ -1100,51 +937,53 @@ $$
 
 så lenge $x \neq 2$. I $x = 2$ vil grafen til $f$ ha et hull, men vil ellers oppføre som en lineær-over-lineær rasjonal funksjon slik som vi har uttrykt over. Vi kan tegne et fortegnsskjema for det forenklede uttrykket for $f(x)$ og så må vi huske på at $x = 2$ representerer et bruddpunkt.
 
-:::{figure} ./figurer/oppgaver/oppgave_8/c_fortegnslinje.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
+
+:::{signchart-2}
+width: 70%
+function: (x**2 - 8*x + 12) / ((x - 2) * (x + 3)), f(x)
 :::
+
 
 Denne informasjonen om fortegnet til $f(x)$ sammen med asymptotene $y = 1$ og $x = -3$ kan vi skissere grafen til $f$ som følger:
 
-:::{figure} ./figurer/oppgaver/oppgave_8/c_graf.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
+:::{plot}
+width: 60%
+ticks: off
+function: (x**2 - 8*x + 12) / ((x - 2) * (x + 3)), f
+vline: -3, dashed
+text: -3, -4, "$x = -3$", center-left
+hline: 1, dashed
+text: 3, 1, "$y = 1$", top-center
+point: (6, 0)
+text: 6, 0, "$(6,0)$", bottom-right
+text: 2, -4/5, "$\times$", center-center
+xmin: -10
+xmax: 10
+ymin: -10
+ymax: 10
 :::
 
 ::::
 
+:::::
+
 :::::::::::::
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Løs ulikheten $f(x) \leq 0$. 
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 x \in \langle -3, 6] \setminus \{2\}.
 $$
-::::
 
-
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 For å løse ulikheten $f(x) \leq 0$ bruker vi fortegnslinja til $f(x)$ som vi tegnet i **c**: 
 
-:::{figure} ./figurer/oppgaver/oppgave_8/c_fortegnslinje.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
+:::{signchart-2}
+width: 70%
+function: (x**2 - 8*x + 12) / ((x - 2) * (x + 3)), f(x)
 :::
 
 Fra fortegnslinja til $f(x)$ kan vi lese av at for det *forenklede* uttrykket er $f(x) \leq 0$ når 
@@ -1161,45 +1000,133 @@ $$
 
 ::::
 
+:::::
+
 :::::::::::::
-::::::::::::::
 
 :::::::::::::::
 
+
 ---
 
+
+
 :::::::::::::::{exercise} Oppgave 9
+:::::::::::::{part} a
+:::{plot}
+width: 350px
+align: right
+fontsize: 24
+function: (x**2 - 1) / (x**2 - 4), f
+vline: -2, dashed
+vline: 2, dashed
+hline: 1, dashed
+:::
 
-> I 1T skal du ikke lære å finne $f'(x)$ for den deriverte til en rasjonal funksjon $f$. Likevel kan vi finne ut mye om $f'$ fra grafen til $f$.
 
-I {numref}`fig-generelle-rasjonale-funksjoner-oppgave-9-graf` vises grafen til en rasjonal funksjon $f$ gitt ved 
+
+Grafen til en rasjonal funksjon $f$ er vist til høyre.
+
+Bestem et mulig funksjonsuttrykk $f(x)$.
+
+
+:::::{answer}
+$$
+f(x) = \dfrac{(x + 1)(x - 1)}{(x + 2)(x - 2)}
+$$
+:::::
+
+
+:::::::::::::
+
+
+
+:::::::::::::{part} b
+:::{plot}
+width: 350px
+align: right
+fontsize: 24
+function: 2*(x + 1) * (x - 3) / ((x + 2) * (x - 1)), g
+vline: -2, dashed
+vline: 1, dashed
+hline: 2, dashed
+ymax: 10
+ymin: -10
+xmax: 7
+xmin: -7
+ystep: 2
+:::
+
+Grafen til en rasjonal funksjon $g$ er vist til høyre.
+
+Bestem et mulig funksjonsuttrykk $g(x)$.
+
+
+:::::{answer}
+$$
+g(x) = \dfrac{2(x + 1)(x - 3)}{(x + 2)(x - 1)}
+$$
+:::::
+
+:::::::::::::
+
+
+:::::::::::::{part} c
+:::{plot}
+width: 350px
+align: right
+fontsize: 24
+function: -(x**2 - 9) / (x + 1), h
+vline: -1, dashed
+line: -1, 1, dashed
+:::
+
+Grafen til en rasjonal funksjon $h$ er vist til høyre.
+
+Bestem et mulig funksjonsuttrykk $h(x)$.
+
+
+:::::{answer}
+$$
+h(x) = \dfrac{-(x + 3)(x - 3)}{x + 1}
+$$
+:::::
+
+:::::::::::::
+
+
+:::::::::::::::
+
+
+
+---
+
+:::::::::::::::{exercise} Oppgave 10
+
+:::{plot}
+width: 350px
+align: right
+fontsize: 24
+function: (x - 2) / (x + 1), f
+ticks: off
+vline: -1, dashed
+hline: 1, dashed
+point: (2, 0)
+:::
+
+
+I figuren til høyre vises grafen til funksjonen $f$ gitt ved
 
 $$
 f(x) = \dfrac{x - 2}{x + 1}
 $$
 
 
-:::{figure} ./figurer/oppgaver/oppgave_9/graf.svg
----
-name: fig-generelle-rasjonale-funksjoner-oppgave-9-graf
-width: 100%
-class: no-click, adaptive-figure
----
-viser grafen til en rasjonal funksjon $f$.
-:::
 
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem nullpunktet og likningene til asymptotene til $f$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 * Nullpunkt: $x = 2$. 
 * Vertikal asymptote: $x = -1$.
 * Horisontal asymptote: $y = 1$.
@@ -1208,13 +1135,10 @@ class: answer, dropdown
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bruk grafen til $f$ til å bestemme den horisontale asymptoten til $f'$. 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 y = 0.
 $$
@@ -1223,27 +1147,24 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-> Grafen til $f'$ har samme vertikal asymptote som $f$. 
+:::::::::::::{part} c
 
 Tegn en fortegnslinje for $f'(x)$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
-:::{figure} ./figurer/oppgaver/oppgave_9/f_derivert_fortegnslinje.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
+::::{answer}
+
+:::{signchart-2}
+width: 60%
+function: 3 / (x + 1)**2, f'(x)
+factors: false
 :::
+
 ::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Lag en skisse av grafen til $f'$. Skissen skal inneholde (hvis de eksisterer):
 
 * Nullpunktene til $f'$.
@@ -1251,25 +1172,25 @@ Lag en skisse av grafen til $f'$. Skissen skal inneholde (hvis de eksisterer):
 * Horisontale asymptoter til $f'$.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 * Ingen nullpunkter
 * Vertikal asymptote: $x = -1$.
 * Horisontal asymptote: $y = 0$ ($x$-aksen).
 
-:::{figure} ./figurer/oppgaver/oppgave_9/graf_derivert.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
+
+:::{plot}
+width: 60%
+function: 3 / (x + 1)**2, f'
+ticks: off
+vline: -1, dashed
+text: -1, 3, "$x = -1$", center-left
+hline: 0, dashed
+text: 3, 0, "$y = 0$", top-center
 :::
+
 ::::
 
 :::::::::::::
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -1277,36 +1198,33 @@ class: no-click, adaptive-figure
 
 ---
 
-:::::::::::::::{exercise} Oppgave 10
+:::::::::::::::{exercise} Oppgave 11
+:::{plot}
+width: 350px
+align: right
+fontsize: 24
+function: (-x**2 + 1) / (x**2 - 4), f
+ticks: off
+point: (-1, 0)
+point: (1, 0)
+vline: -2, dashed
+vline: 2, dashed
+hline: -1, dashed
+:::
 
-
-I {numref}`fig-generelle-rasjonale-funksjoner-oppgave-10-graf` vises grafen til en rasjonal funksjon $f$ gitt ved 
+I figuren til høyre vises grafen til funksjonen $f$ gitt ved
 
 $$
 f(x) = \dfrac{-x^2 + 1}{x^2 - 4}
 $$
 
-:::{figure} ./figurer/oppgaver/oppgave_10/graf.svg
----
-name: fig-generelle-rasjonale-funksjoner-oppgave-10-graf
-width: 100%
-class: no-click, adaptive-figure
----
-viser grafen til en rasjonal funksjon $f$. 
-:::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem nullpunktene og likningene til asymptotene til $f$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 * Nullpunkter: $x = \pm 1$.
 * Vertikale asymptoter: $x = \pm 2$.
 * Horisontal asymptote: $y = -1$.
@@ -1315,13 +1233,10 @@ class: answer, dropdown
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bruk grafen til å bestemme nullpunktene til $f'$. 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 x = 0.
 $$
@@ -1330,13 +1245,10 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bruk grafen til $f$ til å bestemme likningen til den horisontale asymptoten til $f'$. 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 y = 0.
 $$
@@ -1345,26 +1257,24 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Tegn en fortegnslinje for $f'(x)$. 
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
-:::{figure} ./figurer/oppgaver/oppgave_10/derivert_fortegnslinje.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
+::::{answer}
+
+:::{signchart-2}
+width: 70%
+function: (-2*x * (-x**2 + 1) - 2*x * (x**2 - 4)) / (x**2 - 4)**2, f'(x)
+factors: false
 :::
+
 ::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} e
+:::::::::::::{part} e
 Lag en skisse av grafen til $f'$. Skissen skal inneholde:
 
 * Nullpunktene til $f'$.
@@ -1372,25 +1282,26 @@ Lag en skisse av grafen til $f'$. Skissen skal inneholde:
 * Horisontale asymptoter til $f'$.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 * Nullpunkt: $x = 0$.
 * Vertikale asymptoter: $x = -2$ og $x = 2$.
 * Horisontal asymptote: $y = 0$.
 
-:::{figure} ./figurer/oppgaver/oppgave_10/derivert_graf.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
+
+:::{plot}
+width: 60%
+function: (-2*x * (-x**2 + 1) - 2*x * (x**2 - 4)) / (x**2 - 4)**2, f'
+ticks: off
+vline: -2, dashed
+vline: 2, dashed
+hline: 0, dashed
+point: (0, 0)
 :::
+
 ::::
 
 :::::::::::::
 
-::::::::::::::
 
 :::::::::::::::
 
@@ -1399,7 +1310,7 @@ class: no-click, adaptive-figure
 ---
 
 
-:::::::::::::::{exercise} Oppgave 11
+:::::::::::::::{exercise} Oppgave 12
 
 En rasjonal funksjon $f$ er gitt ved 
 
@@ -1412,51 +1323,43 @@ Nedenfor følger noen påstander.
 1. Avgjør om påstanden er **sann** eller **usann**.
 2. Hvis påstanden er **usann**, rett opp i påstanden så den blir **sann**. 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} Påstand 1
+
+:::::::::::::{part} a
+**Påstand**:
+
 Grafen til $f$ har én vertikal asymptote så lengde $m$ er et oddetall.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 Påstanden er usann når $m = 3$. Påstanden er sann for alle andre oddetall. 
 ::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} Påstand 2
+:::::::::::::{part} b
+**Påstand**:
+
 Grafen til $f$ skjærer $x$-aksen i to punkter for alle $m \in \mathbb{N}$. 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 Påstanden er usann for $m = 3$. Påstanden er sann for alle $m \in \mathbb{N} \setminus \{3\}$.
 ::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} Påstand 3
+:::::::::::::{part} c
+**Påstand**:
+
 Grafen til $f$ har en skrå asymptote **kun** når $m = 1$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 Påstanden er sann fordi det er **kun** når $m = 1$ at tellerpolynomet er én grad høyere enn nevnerpolynomet.
 ::::
 
 :::::::::::::
 
-
-::::::::::::::
 
 
 :::::::::::::::

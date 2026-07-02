@@ -1,8 +1,6 @@
 # Oppgaver: Polynomdivisjon
 
-## Oppgave 1
-
-
+:::::::::::::::{exercise-2} Oppgave 1
 :::::::::::::{part} a
 Regn ut
 
@@ -110,13 +108,13 @@ width: 60%
 :::::
 :::::::::::::
 
+:::::::::::::::
+
 
 ---
 
 
-## Oppgave 2
-
-
+:::::::::::::::{exercise-2} Oppgave 2
 :::::::::::::{part} a
 Regn ut 
 
@@ -226,12 +224,13 @@ width: 70%
 :::::
 :::::::::::::
 
+:::::::::::::::
+
 
 ---
 
 
-## Oppgave 3
-
+:::::::::::::::{exercise-2} Oppgave 3
 Utfør polynomdivisjonene.
 
 
@@ -338,12 +337,13 @@ width: 60%
 ::::
 :::::
 :::::::::::::
+:::::::::::::::
 
 
 ---
 
 
-## Oppgave 4
+:::::::::::::::{exercise-2} Oppgave 4
 
 Utfør polynomdivisjonene.
 
@@ -454,6 +454,8 @@ width: 90%
 :::::
 :::::::::::::
 
+:::::::::::::::
+
 
 
 ---
@@ -466,7 +468,7 @@ x^3 - x + 1 = x^3 + 0x^2 - x + 1
 $$
 :::
 
-## Oppgave 5
+:::::::::::::::{exercise-2} Oppgave 5
 
 Utfør polynomdivisjonene.
 
@@ -576,6 +578,7 @@ width: 75%
 ::::
 :::::
 :::::::::::::
+:::::::::::::::
 
 
 
@@ -583,7 +586,7 @@ width: 75%
 
 
 
-## Oppgave 6
+:::::::::::::::{exercise-2} Oppgave 6
 
 :::::::::::::{part} a
 Bestem $a$, $b$ og $c$ slik at likningen blir en identitet.
@@ -715,13 +718,15 @@ $$
 :::::
 :::::::::::::
 
+:::::::::::::::
+
 
 
 ---
 
 
 
-## Oppgave 7
+:::::::::::::::{exercise-2} Oppgave 7
 Nedenfor vises noen Horner-skjemaer som er brukt for å utføre polynomdivisjon.
 
 
@@ -811,13 +816,15 @@ $$
 :::::
 
 :::::::::::::
+:::::::::::::::
 
 
 
 ---
 
 
-## Oppgave 8
+:::::::::::::::{exercise-2} Oppgave 8
+
 Bruk et Horner-skjema til å utføre polynomdivisjonene.
 
 
@@ -967,6 +974,118 @@ tutor:
 :::::
 :::::::::::::
 
+:::::::::::::::
+
+
+---
 
 
 
+:::::::::::::::{exercise} Oppgave 9
+Bruk et Horner-skjema til å regne ut funksjonsverdiene.
+
+
+:::::::::::::{part} a
+Regn $f(2)$ for funksjonen
+
+$$
+f(x) = x^3 - 2x^2 - 5x + 8.
+$$
+
+:::::{answer}
+:::{horner}
+---
+p: x^3 - 2x^2 - 5x + 8
+x: 2
+width: 60% 
+---
+:::
+
+Resten er lik $-2$ så $f(2) = -2$.
+
+::::{solution}
+:::{horner}
+---
+p: x^3 - 2x^2 - 5x + 8
+x: 2
+width: 60% 
+tutor: 
+---
+:::
+::::
+
+:::::
+
+:::::::::::::
+
+
+:::::::::::::{part} b
+Regn ut $f(-3)$ for funksjonen
+
+$$
+f(x) = x^3 - 2x + 1
+$$
+
+
+:::::{answer}
+:::{horner}
+---
+p: x^3 - 2x + 1
+x: -3
+width: 60%
+---
+:::
+
+Resten er lik $-20$, så $f(-3) = -20$.
+
+::::{solution}
+:::{horner}
+---
+p: x^3 - 2x + 1
+x: -3
+width: 60%
+tutor:
+---
+:::
+::::
+
+:::::
+
+:::::::::::::
+
+
+:::::::::::::{part} c
+Regn ut $f(1)$ for funksjonen
+
+$$
+f(x) = 2x^3 - 3x^2 - 5x + 6
+$$
+
+:::::{answer}
+:::{horner}
+---
+p: 2x^3 - 3x^2 - 5x + 6
+x: 1
+width: 60% 
+---
+:::
+
+Resten er lik $0$, så $f(1) = 0$.
+
+
+::::{solution}
+:::{horner}
+---
+p: 2x^3 - 3x^2 - 5x + 6
+x: 1
+width: 60% 
+tutor:
+---
+:::
+::::
+
+:::::
+
+:::::::::::::
+
+:::::::::::::::

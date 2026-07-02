@@ -24,11 +24,7 @@ labels: Solgte bagetter, Overskudd (kroner)
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bruk opplysningene ovenfor til å vise at funksjonen $O$ gitt ved 
 
 $$
@@ -40,7 +36,7 @@ er en god modell for hvor stort overskuddet blir en i løpet av en uke når kant
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Hvor mange bagetter må kantinen produsere og selge i løpet av en uke for at overskuddet skal bli størst mulig, ifølge modellen?
 
 Hvor stort blir dette overskuddet?
@@ -54,7 +50,7 @@ Ca. 284 bagetter. Da blir overskuddet ca. 4459.49 kr.
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem stigningstallet til den rette linjen som går gjennom punktene $(100, O(100))$ og $(200, O(200))$. 
 
 Gi en praktisk tolkning av svaret.
@@ -72,7 +68,7 @@ Praktisk tolkning: Overskuddet øker i gjennomsnitt med ca. 24 kr for hver ekstr
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Bestem den momentane vekstfarten når $x = 235$. 
 
 Gi en praktisk tolkning av svaret.
@@ -87,9 +83,6 @@ Praktisk tolkning: Hvis kantina øker produksjonen og salget fra 235 til 236 bag
 ::::
 
 :::::::::::::
-
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -141,13 +134,7 @@ Saturn, 9.58, 29.46
 :::
 
 
-
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Lag en modell på formen
 
 $$
@@ -168,7 +155,7 @@ $$
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Hva er perioden til jorda, ifølge modellen din? 
 
 
@@ -183,7 +170,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Neptun er den planeten som ligger lengst unna solen med en avstand på ca. $30.1 \, \mathrm{AU}$. 
 
 Hvor lang tid bruker Neptun på én runde rundt solen, ifølge modellen din? 
@@ -202,7 +189,7 @@ Alså bruker Neptun ca. 163.49 år på én runde rundt solen, ifølge modellen.
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Pluto er en dvergplanet som bruker hele 247.94 år på én runde rundt solen.
 
 Hvor langt unna solen er Pluto, ifølge modellen din? 
@@ -219,7 +206,7 @@ Altså er Pluto ca. 39.73 AU unna solen, ifølge modellen.
 :::::::::::::
 
 
-:::::::::::::{tab-item} e
+:::::::::::::{part} e
 Johannes Kepler var en astronom som levde rundt år 1600. Han oppdaget en lov som vi i dag kaller for Keplers 3.lov:
 
 > For perioden $P$ og avstanden $x$ til en planet, så er $P^2$ proporsjonal med $x^3$. Det betyr at det finnes en konstant $k$ slik at $P^2 = k \cdot x^3$.
@@ -241,8 +228,6 @@ Altså stemmer modellen godt overens med Keplers 3.lov.
 :::::::::::::
 
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -280,11 +265,8 @@ Oktober 2024, 1657
 
 La $x$ være antall måneder etter desember 2022, det vil si at $x = 1$ tilsvarer januar 2023, $x = 3$ tilsvarer mars 2023, og så videre.
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bruk opplysningene ovenfor til å vise at funksjonen $K$ gitt ved 
 
 $$
@@ -298,7 +280,7 @@ er en god modell for antall registrerte tilfeller av kikhoste i Norge i perioden
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem stigningstallet til den rette linjen som gjennom punktene $(4, K(4))$ og $(21, K(21))$. <br> Gi en praktisk tolkning av svaret du får.
 
 
@@ -313,7 +295,7 @@ Praktisk tolkning: Antallet registrerte tilfeller av kikhoste øker i gjennomsni
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Hvor mange tilfeller av kikhoste vil bli registrert i Norge i mai 2025 ifølge modellen?
 
 ::::{answer}
@@ -327,8 +309,6 @@ tilfeller av kikhoste i Norge i mai 2025. Altså ca. 5499 tilfeller.
 ::::
 
 :::::::::::::
-
-::::::::::::::
 
 :::::::::::::::
 
@@ -356,11 +336,8 @@ $$
 kan brukes som en modell for hvor mange liter vann $V(x)$ som er tappet ut av tanken $x$ minutter etter tappingen startet.
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem $V(0)$. Gi en praktisk tolkning av svaret.
 
 ::::{answer}
@@ -374,7 +351,7 @@ Praktisk tolkning: Null liter med vann har blitt tappet fra tanken.
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem verdimengden til $V$.
 
 ::::{answer}
@@ -386,7 +363,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Hvor lang tid vil det ta før halvparten av vannet er tappet ut av tanken?
 
 
@@ -401,7 +378,7 @@ Ca. 12 minutter.
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Bestem stigningstallet til den rette linjen som går gjennom punktene $(0, V(0))$ og $(30, V(30))$. Gi en praktisk tolkning av svaret du får. 
 
 
@@ -416,7 +393,7 @@ Praktisk tolkning: I gjennomsnitt blir det tappet ut ca. 62.5 liter vann per min
 :::::::::::::
 
 
-:::::::::::::{tab-item} e
+:::::::::::::{part} e
 Undersøk om det noen gang vil tappes ut mer enn 105 liter vann i løpet av ett minutt.
 
 ::::{answer}
@@ -426,7 +403,6 @@ $V'(x) > 105$ har ingen løsning der $x \in [0, 40]$. Dermed tappes det aldri ut
 
 :::::::::::::
 
-::::::::::::::
 
 :::::::::::::::
 
@@ -449,11 +425,8 @@ $$
 
 for folketallet $F(x)$ tusen innbyggere i området $x$ år etter 1960.
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Vis hvordan du på to ulike måter kan bestemme når folketallet var høyest ifølge modellen.
 
 
@@ -468,7 +441,7 @@ Toppunkt i $(22.5, 10.22)$. Folketallet er altså størst i år 1982, og da er d
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem stigningstallet til den rette linjen som går gjennom punktene $(30, F(30))$ og $(70, F(70))$. 
 
 Gi en praktisk tolkning av dette stigningstallet.
@@ -486,7 +459,7 @@ Praktisk: tolkning: Folketallet avtar i gjennomsnitt med ca. 150 innbyggere per 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Når vil folketallet avta raskest ifølge modellen? 
 
 
@@ -504,7 +477,6 @@ Altså avtar folketallet raskest i år 2031, ifølge modellen.
 
 :::::::::::::
 
-::::::::::::::
 
 :::::::::::::::
 
@@ -530,11 +502,8 @@ $$
 kan brukes som en modell for temperaturen $T(x) \degree \mathrm{C}$ i vannet $x$ timer etter at strømmen er slått av.
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Hva er temperaturen i vannet når strømmen blir slått av?
 
 
@@ -549,7 +518,7 @@ Temperaturen er altså ca. $38 \degree \mathrm{C}$ når strømmen blir slått av
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Hvor lang tid vil det ta før temperaturen i vannet er under $20\degree \mathrm{C}$?
 
 ::::{answer}
@@ -563,7 +532,7 @@ Altså vil temperaturen i bassenget være under $20 \degree \mathrm{C}$ etter ca
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem stigningstallet til den rette linjen som går gjennom punktene $(0, T(0))$ og $(4, T(4))$. 
 
 Gi en praktisk tolkning av svaret.
@@ -581,7 +550,7 @@ Praktisk tolkning: Temperaturen i vannet synker i gjennomsnitt med ca. $3.68 \de
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Vil temperaturen i vannet noen gang synke med mer enn $5\degree\mathrm{C}$ i løpet av én time?
 
 ::::{answer}
@@ -595,7 +564,7 @@ Siden løsningen til $T'(x) = -5$ er negativ, så vil temperaturen i vannet aldr
 :::::::::::::
 
 
-:::::::::::::{tab-item} e
+:::::::::::::{part} e
 Gi en praktisk tolkning av tallet $3.5$ i modellen.
 
 ::::{answer}
@@ -604,8 +573,6 @@ Tallet $3.5$ er temperaturen til omgivelsene rundt bassenget. Når tiden blir ve
 
 :::::::::::::
 
-
-::::::::::::::
 
 :::::::::::::::
 
@@ -639,11 +606,8 @@ labels: Lufttrykk (hPa), Kokepunkt for vann ($\mathrm{^\circ C}$)
 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem en modell $K$ på formen 
 
 $$
@@ -661,7 +625,7 @@ $$
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Nedenfor vises en samtale mellom to elever.
 
 :::{dialogue}
@@ -700,7 +664,7 @@ De to modellene gir altså det samme resultatet.
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Omtrent hvor høyt over havet er det mulig å få egg hardkokte?
 
 ::::{answer}
@@ -716,7 +680,6 @@ Ca. 4.22 km over havet.
 
 :::::::::::::
 
-::::::::::::::
 
 
 :::::::::::::::
@@ -754,11 +717,7 @@ labels: Tid (minutter), Temperatur ($\mathrm{^\circ C}$)
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Lag en modell på formen
 
 $$
@@ -779,7 +738,7 @@ $$
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Anslå gyldighetsområdet til modellen $T$.
 
 
@@ -798,7 +757,7 @@ Gyldighetsområdet til modellen er derfor omtrent $x \in [0, 100.21]$.
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Sofie og Malene har fått en annen idé.
 
 
@@ -837,8 +796,6 @@ $$
 :::::::::::::
 
 
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -880,11 +837,8 @@ $2$, $2.83$
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Lag en modell på formen 
 
 $$
@@ -903,7 +857,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Etter at hullet ble åpnet, varierte høyden til vannstanden med tiden slik at den kan beskrives av en modell på formen 
 
 $$
@@ -927,7 +881,7 @@ Verdien til $r$ er tiden det tar før tanken er tom, ifølge modellen. Altså vi
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Hvor lang tid tar det før lengden av strålen og høyden på vannstanden er like?
 
 ::::{answer}
@@ -940,8 +894,6 @@ Altså tar det ca. 9.83 sekunder før høyden og vannstrålen er like lange.
 
 
 :::::::::::::
-
-::::::::::::::
 
 
 :::::::::::::::

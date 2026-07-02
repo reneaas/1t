@@ -31,14 +31,14 @@ $$
 :::{figure} ./figurer/eksempler/eksempel_1/figur.svg
 ---
 class: no-click, adaptive-figure
-width: 80%
+width: 70%
 ---
 :::
 
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Grafen til $f$ skjærer $x$-aksen i $x = 2$. Siden vi skal bestemme når $f(x) \geq 0$, må vi sjekke hvor grafen til $f$ ligger over eller på $x$-aksen. Vi ser fra grafen at når $x > 2$ ligger grafen over $x$-aksen. Siden grafen til $f$ er på $x$-aksen når $x = 2$, så er løsningen av ulikheten 
 
@@ -69,14 +69,14 @@ $$
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi tegner først grafen til $f(x) = 2x - 1$ og så undersøker vi hvor grafen til $f$ ligger under linja $y = 3$. 
 
 :::{figure} ./figurer/eksempler/eksempel_2/figur.svg
 ---
 class: no-click, adaptive-figure
-width: 90%
+width: 70%
 ---
 :::
 
@@ -108,7 +108,7 @@ $$
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi tegner grafene til 
 
@@ -119,7 +119,7 @@ $$
 :::{figure} ./figurer/eksempler/eksempel_3/figur.svg
 ---
 class: no-click, adaptive-figure
-width: 90%
+width: 70%
 ---
 :::
 
@@ -177,7 +177,7 @@ $$
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi starter med å trekke fra $3x$ på hver side av ulikheten:
 
@@ -245,7 +245,7 @@ $$
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi bruker CAS til å løse ulikheten slik som vi viser i gif-en nedenfor:
 
@@ -254,7 +254,7 @@ Vi bruker CAS til å løse ulikheten slik som vi viser i gif-en nedenfor:
 :::{figure} ./videoer/cas.gif
 ---
 class: no-click, adaptive-figure
-width: 100%
+width: 80%
 ---
 :::
 
@@ -272,108 +272,3 @@ $$
 
 :::::::::::::::
 
-
-
-### Med fortegnslinjer
-En annen strategi som vi kommer til å benytte oss særdeles mye av når vi skal løse ulikheter generelt, er å bruke fortegnslinjer til å løse ulikhetene. La oss først definere hva vi mener med dette begrepet.
-
-
-:::::::::::::::{summary} Fortegnslinjer
-En **fortegnslinje** er en linje som viser hvor en funksjon er positiv, negativ eller lik null. 
-Vi bruker **heltrukne** og **stiplede** linjer for å skille mellom fortegnene:
-
-* <span style="display:inline-block; width:100px; border-bottom: 3px solid red; vertical-align:middle;"></span> $=$ Positivt fortegn
-* <span style="display:inline-block; width:100px; border-bottom: 3px dashed royalblue; vertical-align:middle;"></span> $=$ Negativt fortegn
-* Vi markerer med $0$ ved nullpunktene til funksjonen.
-
-I figuren nedenfor vises fortegnslinja til $f(x) = 2(x - 1)$. 
-
-:::{signchart}
-width: 100%
-function: 2*(x - 1), f(x)
-factors: false
-:::
-
-
-
-
-:::::::::::::::
-
-
----
-
-
-Strategien vi skal bruke når vi løser ulikheter kan oppsummeres som nedenfor.
-
-
-:::::::::::::::{summary} Strategi: Løsning av ulikheter med fortegnslinjer
-1. Vi skriver om ulikheten slik at vi for $0$ på den éne siden av ulikheten.
-2. Vi tegner fortegnslinja til $f(x)$.
-3. Vi leser av løsningen til ulikheten fra fortegnslinja til $f(x)$.
-:::::::::::::::
-
----
-
-La oss se på et eksempel
-
-
-:::::::::::::::{example} Eksempel 6
-Løs ulikheten
-
-$$
-x - 3 \lt -2x + 3
-$$
-
-::::{solution}
----
-dropdown: 0
----
-Vi sørger for at vi for $0$ på den éne siden av ulikheten først:
-
-$$
-x - 3 \lt -2x + 3
-$$
-
-$$
-x + 2x - 3 - 3 \lt 0
-$$
-
-$$
-3x - 6 \lt 0
-$$
-
-Vi setter $f(x) = 3x - 6$. Da er målet vårt å løse ulikheten $f(x) \lt 0$. Først bestemmer vi nullpunktsformen til $f(x)$:
-
-$$
-f(x) = 0 \liff 3x - 6 = 0
-$$
-
-som gir 
-
-$$
-3x = 6 \liff x = 2
-$$
-
-Dette gir oss at $f(x) = 3(x - 2)$.
-
-Vi tegner deretter et **fortegnsskjema** for $f(x)$ ved å tenke oss følgende:
-1. Vi tegner en tallinje for $x$-aksen og markerer nullpunktet $x = 2$.
-2. Vi tegner en fortegnslinje for hver av faktorene i $f(x)$ som *her* er $3$ og $(x - 2)$.
-3. Ganger vi fortegnene sammen for hver del av fortegnslinja til $3$ og $(x - 2)$, får vi fortegnslinja til $f(x)$. 
-
-Se figuren nedenfor.
-
-:::{signchart}
-width: 100%
-function: 3*x - 6, f(x)
-:::
-
-Fra fortegnslinja til $f(x)$, ser vi at $f(x) \lt 0$ når $x < 2$ siden det er her fortegnslinja til $f(x)$ er stiplet. Dermed er løsningen av ulikheten
-
-$$
-x < 2 \liff x \in \langle \gets , 2 \rangle.
-$$
-
-::::
-
-:::::::::::::::

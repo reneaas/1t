@@ -49,13 +49,29 @@
   }
 
   function initToggle(btn, config) {
+    var content = btn.nextElementSibling;
+    var wrapper = btn.parentElement;
+
+    if (!content || !content.classList.contains(config.contentClass)) {
+      return;
+    }
+
+    if (!btn.dataset.label) {
+      btn.dataset.label = btn.textContent;
+    }
+
+    if (btn.getAttribute("aria-expanded") === "true") {
+      btn.textContent = config.hideLabel;
+      content.style.display = "block";
+      if (wrapper) wrapper.classList.add("is-open");
+    } else {
+      btn.setAttribute("aria-expanded", "false");
+      content.style.display = "none";
+      if (wrapper) wrapper.classList.remove("is-open");
+    }
+
     btn.addEventListener("click", function () {
       var expanded = btn.getAttribute("aria-expanded") === "true";
-      var content = btn.nextElementSibling;
-      var wrapper = btn.parentElement;
-      if (!content || !content.classList.contains(config.contentClass)) {
-        return;
-      }
 
       if (expanded) {
         btn.setAttribute("aria-expanded", "false");

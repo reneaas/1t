@@ -2,996 +2,482 @@
 
 
 
+:::::::::::::::{exercise-2} Oppgave 1
+Finn koeffisientene til funksjonsuttrykkene.
 
-:::::::::::::::{exercise} Oppgave 1
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Les av koeffisientene til
 
+
+:::::::::::::{part} a
 $$
-f(x) = -2x^2 - 2x + 12
+f(x) = -x^2 - 2x + 12.
 $$
 
-::::{answer}
+
+:::::{answer-2}
 $$
-a = -2 \and b = -2 \and c = 12
+a = -1 \and b = -2 \and c = 12
 $$
-::::
+:::::
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
-Les av koeffisientene til 
 
+:::::::::::::{part} b
 $$
 g(x) = -x^2 + x + 2
 $$
 
-::::{answer}
+
+:::::{answer-2}
 $$
 a = -1 \and b = 1 \and c = 2
 $$
-::::
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-Les av koeffisientene til 
 
+
+:::::::::::::{part} c
 $$
-h(x) = -2x^2 + 5
+h(x) = x^2 + 5
 $$
 
-::::{answer}
+
+:::::{answer-2}
 $$
-a = -2 \and b = 0 \and c = 5
+a = 1 \and b = 0 \and c = 5
 $$
-::::
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
-Les av koeffisientene til 
 
+:::::::::::::{part} d
 $$
-p(x) = -x^2 + 3x
+p(x) = 3x^2 + 4x
 $$
 
-::::{answer}
+
+:::::{answer-2}
 $$
-a = -1 \and b = 3 \and c = 0
+a = 3 \and b = 4 \and c = 0
 $$
-::::
+:::::
+
 
 :::::::::::::
-
-
-::::::::::::::
 
 
 :::::::::::::::
 
 
----
-
-
-:::::::::::::::{exercise} Oppgave 2
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-En andregradsfunksjon $f$ er gitt ved 
-
-$$
-f(x) = 2x^2 + 4x - 5
-$$
-
-Regn ut $f(-1)$, $f(0)$ og $f(2)$.
-
-
-::::{answer}
-\begin{align*}
-f(-1) &= -7, \\
-\\
-f(0) &= -5, \\
-\\
-f(2) &= 11.
-\end{align*}
-::::
-
-::::{solution}
-\begin{align*}
-f(-1) &= 2 \cdot (-1)^2 + 4 \cdot (-1) - 5 = 2 - 4 - 5 = -7, \\
-\\
-f(0) &= 2 \cdot 0^2 + 4 \cdot 0 - 5 = -5, \\
-\\
-f(2) &= 2 \cdot 2^2 + 4 \cdot 2 - 5 = 8 + 8 - 5 = 11.
-\end{align*}
-::::
-
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
-En andregradsfunksjon $g$ er gitt ved 
-
-$$
-g(x) = -x^2 + 3x + 2
-$$
-
-Regn ut $g(-2)$, $g(1)$ og $g(4)$. 
-
-
-::::{answer}
-\begin{align*}
-g(-2) &= -8, \\
-g(1) &= 4, \\
-g(4) &= -2.
-\end{align*}
-::::
-
-
-::::{solution}
-\begin{align*}
-g(-2) &= -(-2)^2 + 3 \cdot (-2) + 2 = -4 - 6 + 2 = -8, \\
-g(1) &= -(1)^2 + 3 \cdot (1) + 2 = -1 + 3 + 2 = 4, \\
-g(4) &= -(4)^2 + 3 \cdot (4) + 2 = -16 + 12 + 2 = -2.
-\end{align*}
-::::
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} c
-Grafen til en andregradsfunksjon $h$ er vist nedenfor.
-
-Bruk grafen til å bestemme $h(-3)$, $h(-2)$, $h(-1)$, $h(0)$ og $h(1)$. 
-
-:::{figure} ./figurer/oppgaver/oppgave_2/c.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
-:::
-
-
-::::{answer}
-\begin{align*}
-h(-3) &= 0, \\
-\\
-h(-2) &= -3, \\
-\\
-h(-1) &= -4, \\
-\\
-h(0) &= -3, \\
-\\
-h(1) &= 0.
-\end{align*}
-::::
-
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} d
-Grafen til en andregradsfunksjon $p$ er vist nedenfor.
-
-Bruk grafen til å bestemme $p(-1)$, $p(0)$, $p(1)$, $p(2)$ og $p(3)$.  
-
-:::{figure} ./figurer/oppgaver/oppgave_2/d.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
-:::
-
-
-::::{answer}
-\begin{align*}
-p(-1) &= 0, \\
-\\
-p(0) &= 3, \\
-\\
-p(1) &= 4, \\
-\\
-p(2) &= 3, \\
-\\
-p(3) &= 0.
-\end{align*}
-::::
-
-
-:::::::::::::
-
-::::::::::::::
-:::::::::::::::
-
 
 ---
 
 
 
-
-:::::::::::::::{exercise} Oppgave 3
----
-level: 1
----
-Nedenfor vises grafen til en andregradsfunksjon
-
-$$
-f(x) = ax^2 + bx + c
-$$
-
-:::{figure} ./figurer/oppgaver/oppgave_3/figur.svg
----
-class: no-click, adaptive-figure
-width: 
----
-:::
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-
-:::::::::::::{tab-item} a
-Er grafen til $f$ konveks eller konkav? 
-
-Kan du si noe om koeffisientene til $f(x)$ ut ifra dette?
-
-::::{answer}
-Grafen er konveks siden den smiler {poly-icon}`smile`. 
-
-Dette betyr at $a > 0$ (koeffisienten er positiv).
-::::
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
-Bestem verdien til $a$. 
-
-
-
-::::{answer}
-$$
-a = 1
-$$
-::::
-
-
-::::{solution}
-Bunnpunktet til $f$ er i $(2, -1)$. Går vi én enhet langs $x$-aksen til høyre og finner grafen, er vi i $(3, 0)$. Altså øker $y$-verdien med $1$ som betyr at
-
-$$
-a = 1
-$$
-::::
-
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} c
-Bestem likningen til symmetrilinja til $f$ og bruk denne til å bestemme verdien til $b$.
-
-
-::::{answer}
-**Symmetrilinje**:
-
-$$
-x = 2
-$$
-
-
-**Koeffisienten $b$**:
-
-$$
-b = -4
-$$
-::::
-
-::::{solution}
-Likningen til symmetrilinja er $x = 2$ siden det er $x$-koordinaten der grafen har et bunnpunkt. Da får vi
-
-$$
-x = -\dfrac{b}{2a} \liff 2 = -\dfrac{b}{2 \cdot 1} \liff b = -4.
-$$
-::::
-
-:::::::::::::
-
-
-
-:::::::::::::{tab-item} d
-Bestem koordinatene til skjæringspunktet med $y$-aksen.
-
-Bruk svaret ditt til å bestemme verdien til $c$.
-
-
-::::{answer}
-Grafen skjærer $y$-aksen i $(0, 3)$ som betyr at $c = 3$.
-::::
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} e
-Bruk svarene dine fra **a**, **b** og **c** til å bestemme $f(x)$.
-
-
-::::{answer}
-$$
-f(x) = x^2 - 4x + 3
-$$
-::::
-
-:::::::::::::
-
-
-
-::::::::::::::
-
-:::::::::::::::
-
-
----
-
-:::::::::::::::{exercise} Oppgave 4
----
-level: 1
----
+:::::::::::::::{exercise-2} Oppgave 2
 En andregradsfunksjon $f$ er gitt ved
 
 $$
-f(x) = 2x^2 + 4x - 5
+f(x) = 2x^2 + 4x - 4.
 $$
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
 
-:::::::::::::{tab-item} a
-Hva er verdiene til koeffisientene til $f(x)$? 
+:::::::::::::{part} a
+Regn ut $f(-1)$
 
-::::{answer}
+
+:::::{answer-2}
+
 $$
-a = 2 \and b = 4 \and c = -5.
+f(-1) = -6
+$$
+
+::::{solution-2}
+$$
+\begin{align*}
+f(\textcolor{red}{-1}) &= 2 \cdot (\textcolor{red}{-1})^2 + 4 \cdot (\textcolor{red}{-1}) - 4 \\
+\\
+&= 2 - 4 - 4 \\
+\\
+&= -6.
+\end{align*}
 $$
 ::::
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
-Er grafen til $f$ konveks eller konkav? 
+:::::::::::::{part} b
+Regn ut $f(0)$.
 
-Begrunn svaret ditt.
+Hva forteller svaret om grafen til $f$?
+:::::::::::::
 
-::::{answer}
-Grafen er konveks {poly-icon}`smile` fordi $a > 0$.
-::::
+
+:::::::::::::{part} c
+Regn ut $f(1)$.
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} d
+Hvilken graf nedenfor viser grafen til $f$?
 
-:::{sidebar}
-{popup}`Hva var formelen for symmetrilinja igjen?<$$x = -\dfrac{b}{2a}$$>`
+
+::::{multi-plot2}
+---
+rows: 2
+cols: 2
+fontsize: 32
+ymin: -8
+ymax: 8
+ystep: 2
+---
+:::{plot}
+width: 100%
+function: 2*x**2 + 4*x - 4
+text: 5, 5, "A", center-center, bbox
 :::
 
-Bestem symmetrilinja til $f$.
+:::{plot}
+width: 100%
+function: 2*x**2 + 4*x - 4
+text: 5, 5, "B", center-center, bbox
+:::
+
+
+:::{plot}
+width: 100%
+function: -(2*x**2 - 4*x - 4)
+text: 5, 5, "C", center-center, bbox
+:::
+
+
+:::{plot}
+width: 100%
+function: -(2*x**2 + 4*x - 4)
+text: 5, 5, "D", center-center, bbox
+:::
+
+::::
+
+
+:::::::::::::
+
+:::::::::::::::
+
+
+
+---
+
+
+
+:::::::::::::::{exercise-2} Oppgave 3
+:::{plot}
+width: 50%
+function: (x - 1)**2 - 4, f
+fontsize: 28
+:::
+
+
+Grafen til en andregradsfunksjon $f$ er vist i figuren ovenfor.
+
+
+:::::::::::::{part} a
+Bruk grafen til å finne $f(0)$.
+
+
+:::::::::::::
+
+
+:::::::::::::{part} b
+Bruk grafen til å bestemme $f(3)$.
+
+
+:::::::::::::
+
+
+
+:::::::::::::{part} c
+Bruk grafen til å finne $f(1)$.
+
+
+:::::::::::::
+
+
+
+:::::::::::::::
+
+
+
+---
+
+
+
+:::::::::::::::{exercise-2} Oppgave 4
+
+:::{plot}
+width: 50%
+function: (x + 1)**2 - 9, f
+fontsize: 28
+ymin: -10
+:::
+
+Grafen til en andregradsfunksjon $f(x) = ax^2 + bx + c$ er vist i figuren ovenfor.
+
+
+:::::::::::::{part} a
+Finn symmetrilinja til $f$.
+
+
+:::::::::::::
+
+
+
+:::::::::::::{part} b
+Bestem $a$.
+
+
+:::::::::::::
+
+
+
+:::::::::::::{part} c
+Finn $c$.
+
+:::::::::::::
+
+
+:::::::::::::{part} d
+Bestem $b$.
+
+:::::::::::::
+
+
+:::::::::::::{part} e
+Finn $f(x)$. 
+
+
+:::::::::::::
+
+
+:::::::::::::::
+
+
+
+---
+
+
+
+:::::::::::::::{exercise-2} Oppgave 5
+En andregradsfunksjon $f$ er gitt ved
+
+$$
+f(x) = 2x^2 + 4x - 5.
+$$
+
+
+:::::::::::::{part} a
+I hvilket punkt skjærer grafen til $f$ gjennom $y$-aksen?
+
+:::::::::::::
+
+
+:::::::::::::{part} b
+Finn symmetrilinja til grafen til $f$.
+
+
+:::::::::::::
+
+
+:::::::::::::{part} c
+Bestem koordinatene til ekstremalpunktet til $f$.
+
+Avgjør om det er et toppunkt eller et bunnpunkt.
+
+
+
+
+:::::::::::::
+
+
+
+:::::::::::::::
+
+
+
+---
+
+
+:::::::::::::::{exercise-2} Oppgave 6
+En andregradsfunksjon $g$ er gitt ved
+
+$$
+g(x) = -x^2 + 8x + 6
+$$
+
+:::::::::::::{part} a
+I hvilket punkt skjærer grafen til $g$ gjennom $y$-aksen?
+
+
+:::::{answer-2}
+$$
+(0, 6)
+$$
+:::::
+:::::::::::::
+
+
+:::::::::::::{part} b
+Bestem likningen til symmetrilinja til $g$.
+
+
+:::::{answer-2}
+$$
+x = 4
+$$
+:::::
+
+:::::::::::::
+
+
+:::::::::::::{part} c
+Bestem koordinatene til ekstremalpunktet til $g$.
+
+Avgjør om det er et toppunkt eller et bunnpunkt.
+
+:::::{answer-2}
+Toppunkt i $(4, 22)$.
+:::::
+
+:::::::::::::
+
+:::::::::::::::
+
+
+---
+
+
+:::::::::::::::{exercise-2} Oppgave 7
+:::::::::::::{part} a
+:::{plot}
+width: 100%
+align: right
+function: x**2 + 2*x - 1, f
+fontsize: 28 
+:::
+
+Grafen til en andregradsfunksjon $f$ er vist i figuren til høyre.
+
+
+Finn $f(x)$.
+
+
 
 :::{clear}
 :::
 
-::::{answer}
+:::::{answer-2}
 $$
-x = -1
+f(x) = x^2 + 2x - 1.
 $$
-::::
 
-::::{solution}
+::::{solution-2}
+Ekstremalpunktet til grafen er i $(-1, -2)$. Går vi én enhet langs $x$-aksen, vil grafen være i $(0, -1)$ som betyr at $y$-verdien øker med $1$. Derfor er $a = 1$.
+
+Vi ser at grafen til $f$ skjærer $y$-aksen i $y = -1$ som betyr at $c = -1$.
+
+Symmetrilinja til grafen er $x = -1$. Med formelen for symmetrilinja får vi:
+
 $$
-x = -\frac{b}{2a} = -\dfrac{4}{2 \cdot 2} = -1
+x = -\dfrac{b}{2a} \liff -1 = -\dfrac{b}{2 \cdot 1}
+$$
+
+Altså har vi 
+
+$$
+-\dfrac{b}{2} = -1  \liff b = 2. 
+$$
+
+Dermed er
+
+$$
+f(x) = x^2 + 2x - 1.
 $$
 ::::
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
-Har grafen til $f$ et topp- eller bunnpunkt?
-
-Bestem koordinatene til dette punktet.
-
-::::{answer}
-Grafen har et bunnpunkt i $(-1, -7)$.
-::::
-
-::::{solution}
-Grafen til $f$ har et bunnpunkt siden $a > 0$ som gjør at grafen er konveks {poly-icon}`smile`.
-
-Symmetrilinja er $x = -1$. Dette er $x$-koordinaten til bunnpunktet. Vi setter $x = -1$ inn i $f(x)$ for å finne $y$-koordinaten til bunnpunktet:
-
-$$
-f(-1) = 2 \cdot (-1)^2 + 4 \cdot (-1) - 5 = 2 - 4 - 5 = -7.
-$$
-
-Dermed er koordinatene til bunnpunktet $(-1, -7)$.
-::::
-
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} e
-Lag en skisse av grafen til $f$ og marker egenskapene du har funnet på grafen. 
-
-::::{answer}
-:::{figure} ./figurer/oppgaver/oppgave_4/figur.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
-:::
-::::
-
-:::::::::::::
-
-
-::::::::::::::
-
-:::::::::::::::
-
-
----
-
-
-:::::::::::::::{exercise} Oppgave 5
----
-level: 1
----
-Nedenfor vises grafen til en andregradsfunksjon $f(x) = ax^2 + bx + c$. 
-
-:::{figure} ./figurer/oppgaver/oppgave_5/figur.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
+:::::::::::::{part} b
+:::{plot}
+width: 100%
+align: right
+function: -(x - 2)**2 + 4, g
+fontsize: 28 
 :::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Bruk grafen til å bestemme verdien til $a$.
-
-
-::::{answer}
-$$
-a = -1
-$$
-::::
-
-
-::::{solution}
-Toppunktet til $f$ er $(-2, 9)$. Øker vi $x$ med én enhet til høyre, så finner vi grafen i $(-1, 8)$ som betyr at $y$-verdien har sunket med $1$. Dermed er
-
-$$
-a = -1.
-$$
-::::
-
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
-Bruk grafen til å bestemme verdien til $b$.
-
-
-::::{answer}
-$$
-b = -4
-$$
-::::
-
-
-::::{solution}
-Grafen til $f$ har symmetrilinje i $x = -2$ siden dette er $x$-koordinaten til toppunktet. Fra formelen for symmetrilinja til $f$ får vi da at
-
-$$
-x = -\dfrac{b}{2a} \liff -2 = -\dfrac{b}{2 \cdot (-1)} \liff b = 4.
-$$
-::::
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} c
-Bruk grafen til å bestemme verdien til $c$.
-
-
-::::{answer}
-$$
-c = 5.
-$$
-::::
-
-
-::::{solution}
-Grafen til $f$ skjærer $y$-aksen i $(0, 5)$ som betyr at 
-
-$$
-c = 5.
-$$
-::::
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} d
-Bruk svarene dine fra **a**, **b** og **c** til å bestemme $f(x)$. 
-
-
-::::{answer}
-$$
-f(x) = -x^2 + 4x + 5
-$$
-::::
-
-::::{solution}
-Vi vet nå at koeffisientene til $f(x)$ er
-
-$$
-a = -1 \and b = 4 \and c = 5
-$$
-
-som betyr at
-
-$$
-f(x) = -x^2 + 4x + 5
-$$
-::::
-
-
-:::::::::::::
-
-
-
-::::::::::::::
-
-
-:::::::::::::::
-
-
----
-
-
-:::::::::::::::{exercise} Oppgave 6
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Grafen til en andregradsfunksjon $f$ er vist i figuren nedenfor.
-
-Bestem $f(x)$.
-
-:::{figure} ./figurer/oppgaver/oppgave_6/a.svg
----
-class: no-click, adaptive-figure
-width: 70%
----
-:::
-
-
-::::{answer}
-$$
-f(x) = 2x^2 + 8x + 6.
-$$
-::::
-
-
-::::{solution}
-Vi skriver $f(x)$ på standardform
-
-$$
-f(x) = ax^2 + bx + c.
-$$
-
-Vi finner ekstremalpunktet til $f$ i $(-2, -2)$. Vi flytter oss én enhet til høyre langs $x$-aksen og finner grafen i $(-1, 0)$ som betyr at $y$-verdien har økt med $2$. Det betyr at $a = 2$. 
-
-Grafen til $f$ har symmetrilinje i $x = -2$ siden ekstremalpunktet er i $(-2, -2)$. Fra formelen for symmetrilinja til $f$ finner vi da at
-
-$$
-x = -\dfrac{b}{2a} \liff -2 = -\dfrac{b}{2 \cdot 2} \liff b = 8.
-$$
-
-Vi ser at grafen til $f$ skjærer $y$-aksen i $(0, 6)$ som betyr at $c = 6$. Dermed er 
-
-$$
-f(x) = 2x^2 + 8x + 6.
-$$
-
-::::
-
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
-Grafen til en andregradsfunksjon $g$ er vist i figuren nedenfor.
+Grafen til en andregradsfunksjon $g$ er vist i figuren til høyre.
 
 Bestem $g(x)$.
 
-:::{figure} ./figurer/oppgaver/oppgave_6/b.svg
----
-class: no-click, adaptive-figure
-width: 70%
----
+:::::::::::::
+
+
+
+:::::::::::::{part} c
+:::{plot}
+width: 100%
+align: right
+function: 2 * x**2 - 4, h
+fontsize: 28 
 :::
 
-::::{answer}
-$$
-g(x) = -x^2 + 4x - 5.
-$$
-::::
+Grafen til en andregradsfunksjon $h$ er vist i figuren til høyre.
 
-::::{solution}
-Vi skriver $g(x)$ på standardform
-
-$$
-g(x) = ax^2 + bx + c.
-$$
-
-Vi ser at ekstremalpunktet til $g$ er i $(2, -1)$. Øker vi $x$ med én enhet til høyre, så finner vi grafen i $(3, -2)$ som betyr at $y$-verdien synker med $1$ enhet. Dermed er $a = -1$. 
-
-Ekstremalpunktet er i $(2, -1)$ som gir at likningen til symmetrilinja er $x = 2$ siden dette er $x$-koordinaten til punktet. Fra formelen for symmetrilinja til $g$ kan vi bestemme verdien til $b$:
-
-$$
-x = -\dfrac{b}{2a} \liff 2 = -\dfrac{b}{2 \cdot (-1)} \liff b = -4.
-$$
-
-Vi ser at grafen til $g$ skjærer $y$-aksen i $(0, -5)$ som betyr at $c = -5$. Dermed er
-
-$$
-g(x) = -x^2 + 4x - 5.
-$$
-
-::::
-
+Finn $h(x)$.
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-Grafen til en andregradsfunksjon $h$ er vist i figuren nedenfor.
 
-Bestem $h(x)$.
-
-:::{figure} ./figurer/oppgaver/oppgave_6/c.svg
----
-class: no-click, adaptive-figure
-width: 70%
----
+:::::::::::::{part} d
+:::{plot}
+width: 100%
+align: right
+function: (x + 2)**2 + 1, p
+fontsize: 28 
 :::
 
+Grafen til en andregradsfunksjon $p$ er vist i figuren til høyre.
 
-
-::::{answer}
-$$
-h(x) = x^2 + 2x + 4.
-$$
-::::
-
-::::{solution}
-Vi skriver $h(x)$ på standardform
-
-$$
-h(x) = ax^2 + bx + c
-$$
-
-Ekstremalpunktet til $h$ er i $(-1, 3)$. Øker vi $x$ med én enhet og finner grafen igjen, havner vi i punktet $(0, 4)$. Altså har $y$-verdien økt med $1$ enhet som betyr at $a = 1$.
-
-Ekstremalpunktet $(-1, 3)$ gir oss symmetrilinja $x = -1$ siden $x$-koordinaten er symmetrilinja til grafen. Da kan vi finne $b$:
-
-$$
-x = -\dfrac{b}{2a} \liff -1 = -\dfrac{b}{2 \cdot 1} \liff b = 2.
-$$
-
-Grafen til $h$ skjærer $y$-aksen i punktet $(0, 4)$ som betyr at $c = 4$. Dermed er
-
-$$
-h(x) = x^2 + 2x + 4.
-$$
-::::
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} d
-Grafen til en andregradsfunksjon $p$ er vist i figuren nedenfor.
 
 Bestem $p(x)$.
 
-
-:::{plot}
-width: 70%
-function: -1/2 * x**2 + 2*x, p
-:::
-
-
-
-::::{answer}
-$$
-p(x) = -\dfrac{1}{2}x^2 + 2x.
-$$
-::::
-
-
-::::{solution}
-Vi skriver $p(x)$ på standardform 
-
-$$
-p(x) = ax^2 + bx + c
-$$
-
-Ekstremalpunktet til $p$ er $(2, 2)$. Hvis øker $x$ med én enhet, så klarer vi ikke lese av de eksakte koordinatene til punktet på grafen. 
-Øker vi $x$ med $2$ enheter, så finner vi grafen i punktet $(4, 0)$ som betyr at $y$-verdien har sunket med $2$ enheter. Da har vi at
-
-$$
-2^2 \cdot a = -2 \liff 4a = -2 \liff a = -\dfrac{1}{2}
-$$
-
-Siden ekstremalpunktet er i $(2, 2)$, så er symmetrilinja $x = 2$ ($x$-koordinaten til punktet). Fra formelen for symmetrilinja, finner vi da at 
-
-$$
-x = -\dfrac{b}{2a} \liff 2 = -\dfrac{b}{2 \cdot \left(-\dfrac{1}{2}\right)} \liff b = 2
-$$
-
-Grafen til $p$ skjærer $y$-aksen i $(0, 0)$ som betyr at $c = 0$. Dermed er
-
-$$
-p(x) = -\dfrac{1}{2}x^2 + 2x
-$$
-::::
-
-
 :::::::::::::
 
-
-::::::::::::::
-:::::::::::::::
-
-
----
-
-
-:::::::::::::::{exercise} Oppgave 7
----
-level: 2
----
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-
-En andregradsfunksjon $f$ er gitt ved 
-
-$$
-f(x) = x^2 + 2x - 2.
-$$
-
-Bestem hvilken av grafene nedenfor som viser grafen til $f$.
-
-:::{figure} ./figurer/oppgaver/oppgave_7/a/merged_figure.svg
----
-class: no-click, adaptive-figure
-width: 100%
----
-:::
-
-::::{answer}
-Graf B viser grafen til $f$.
-::::
-
-::::{solution}
-Koeffisientene til $f(x)$ er 
-
-$$
-a = 2 \and b = 4 \and c = -5.
-$$
-
-Vi ser derfor at grafen til $f$ er konveks {poly-icon}`smile` siden $a > 0$. Det betyr at grafen til $f$ enten er B eller D. Grafen til $f$ skjærer $y$-aksen i et punkt med negativ $y$-koordinat siden $c < 0$, men dette er sant både for graf B og D.
-
-Symmetrilinja til $f$ er gitt ved 
-
-$$
-x = -\dfrac{b}{2a} = -\dfrac{2}{2 \cdot 1} = -1.
-$$
-
-Dette passer bare med graf B som betyr at grafen til $f$ er graf B.
-::::
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
-En andregradsfunksjon $g$ er gitt ved
-
-$$
-g(x) = x^2 - 4x
-$$
-
-Bestem hvilken av grafene nedenfor som viser grafen til $g$.
-
-
-:::{figure} ./figurer/oppgaver/oppgave_7/b/merged_figure.svg
----
-class: no-click, adaptive-figure
-width: 100%
----
-:::
-
-::::{answer}
-Graf D.
-::::
-
-
-::::{solution}
-Koeffisientene til $g(x)$ er
-
-$$
-a = 1 \and b = -4 \and c = 0.
-$$
-
-Siden $a > 0$ er grafen til $g$ konveks {poly-icon}`smile`. Det passer bare med graf B og D. 
-
-Symmtrilinja til $g$ er gitt ved 
-
-$$
-x = -\dfrac{b}{2a} = - \dfrac{-4}{2\cdot 1} = 2. 
-$$
-
-Det er bare graf D som har en symmetrilinja langs en positiv $x$-verdi, så dermed er graf D grafen til $g$.
-::::
-
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} c
-En andregradsfunksjon $h$ er gitt ved
-
-$$
-h(x) = x^2 + 6x + 5
-$$
-
-Bestem hvilken av grafene nedenfor som viser grafen til $h$.
-
-
-:::{figure} ./figurer/oppgaver/oppgave_7/c/merged_figure.svg
----
-class: no-click, adaptive-figure
-width: 100%
----
-:::
-
-
-::::{answer}
-Graf A.
-::::
-
-::::{solution}
-Koeffisientene til $h(x)$ er 
-
-$$
-a = 1 \and b = 6 \and c = 5.
-$$
-
-Grafen til $h$ skjærer $y$-aksen i $(0, 5)$ siden $c = 5$. Det bare graf A og C som skjærer $y$-aksen i et punkt med positiv $y$-verdi. 
-
-Symmetrilinja til $h$ er gitt ved 
-
-$$
-x = -\dfrac{b}{2a} = -\dfrac{6}{2 \cdot 1} = -3.
-$$
-
-Altså må grafen til $h$ ha en symmetrilinja langs en negativ $x$-verdi. Dette stemmer bare for graf A. Dermed er graf A grafen til $h$.
-::::
-
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} d
-En andregradsfunksjon $p$ er gitt ved
-
-$$
-p(x) = -2x^2 + 4x - 1
-$$
-
-Bestem hvilken av grafene nedenfor som viser grafen til $p$.
-
-
-:::{figure} ./figurer/oppgaver/oppgave_7/d/merged_figure.svg
----
-class: no-click, adaptive-figure
-width: 100%
----
-:::
-
-
-::::{answer}
-Graf C. 
-::::
-
-::::{solution}
-Koeffisientene til $p(x)$ er 
-
-$$
-a = -2 \and b = 4 \and c = -1
-$$
-
-Grafen til $p$ er konkav {poly-icon}`frown` siden $a < 0$. Det betyr at grafen til $p$ enten er A eller C.
-
-Symmetrilinja til $p$ er gitt ved 
-
-$$
-x = -\dfrac{b}{2a} = -\dfrac{4}{2 \cdot (-2)} = 1.
-$$
-
-Det er bare graf C som har en symmetrilinje langs en positiv $x$-verdi, så dermed er graf C grafen til $p$.
-::::
-
-
-:::::::::::::
-
-
-
-::::::::::::::
 
 :::::::::::::::
 
 
 
-
 ---
 
 
-:::::::::::::::{exercise} Oppgave 8
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::::{exercise-2} Oppgave 8
+
+:::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved 
 
 
@@ -1006,17 +492,26 @@ Lag en skisse av grafen til $f$ og marker følgende egenskaper:
 * Topp- eller bunnpunkt med koordinater
 
 
-::::{answer}
-:::{figure} ./figurer/oppgaver/oppgave_8/a.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
+
+:::::{answer-2}
+
+:::{plot}
+width: 70%
+ticks: off
+function: -x**2 + 4*x + 3, f
+fontsize: 22
+vline: 2
+point: (0, 3)
+point: (2, 7)
+text: 0, 3, "$(0, 3)$", top-left
+text: 2, 7, "$(2, 7)$", top-right
+text: 2, -2, "$x = 2$", center-right
+ymax: 10
+xmax: 8
 :::
-::::
 
 
-::::{solution}
+::::{solution-2}
 Koeffisientene til $f(x)$ er 
 
 $$
@@ -1024,7 +519,7 @@ a = -1 \and b = 4 \and c = 3.
 $$
 
 Skjæringspunktet med $y$-aksen
-: Konstantleddet er $x = 3$ som betyr at grafen skjærer $y$-aksen i $(0, 3)$.
+: Konstantleddet er $c = 3$ som betyr at grafen skjærer $y$-aksen i $(0, 3)$.
 
 Symmetrilinja
 : Symmetrilinja er gitt ved 
@@ -1040,23 +535,15 @@ Topp- eller bunnpunkt
     f(2) = -1 \cdot 2^2 + 4 \cdot 2 + 3 = 7.
     $$
     Dermed er toppunktet til $f$ gitt ved $(2, 7)$.
-
-
-Når har vi nok opplysninger til å tegne en skisse av grafen til $f$:
-
-:::{figure} ./figurer/oppgaver/oppgave_8/a.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-
 ::::
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+
+:::::::::::::{part} b
 En andregradsfunksjon $g$ er gitt ved 
 
 
@@ -1071,17 +558,26 @@ Lag en skisse av grafen til $g$ og marker følgende egenskaper:
 * Topp- eller bunnpunkt med koordinater
 
 
-::::{answer}
-:::{figure} ./figurer/oppgaver/oppgave_8/b.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
+
+:::::{answer-2}
+
+:::{plot}
+width: 70%
+function: 2 * x**2 + 4 * x - 1, g
+fontsize: 22
+ticks: off
+point: (-1, -3)
+text: -1, -3, "$(-1, -3)$", bottom-left
+point: (0, -1)
+text: 0, -1, "$(0, -1)$", bottom-right
+vline: -1
+text: -1, 4, "$x = -1$", center-left
+xmin: -5
+xmax: 3
 :::
-::::
 
 
-::::{solution}
+::::{solution-2}
 Koeffisientene til $g(x)$ er
 
 $$
@@ -1107,22 +603,15 @@ Topp- eller bunnpunkt
     $$
 
     Dermed er bunnpunktet til $g$ gitt ved $(-1, -3)$.
-
-Når har vi nok opplysninger til å tegne en skisse av grafen til $g$:
-
-:::{figure} ./figurer/oppgaver/oppgave_8/b.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-
 ::::
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+
+:::::::::::::{part} c
 En andregradsfunksjon $h$ er gitt ved 
 
 
@@ -1137,16 +626,22 @@ Lag en skisse av grafen til $h$ og marker følgende egenskaper:
 * Topp- eller bunnpunkt med koordinater
 
 
-::::{answer}
-:::{figure} ./figurer/oppgaver/oppgave_8/c.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-::::
 
-::::{solution}
+
+:::::{answer-2}
+Grafen har bunnpunkt i samme punkt som skjæringspunktet med $y$-aksen. Derfor markerer vi kun dette punktet i grafen. I tillegg er symmetrilinja $x = 0$ som samsvarer med $y$-aksen.
+
+:::{plot}
+width: 70%
+function: x**2 - 4, h
+ticks: off
+fontsize: 22
+point: (0, -4)
+text: 0, -4, "$(0, -4)$", bottom-left
+:::
+
+
+::::{solution-2}
 Koeffisientene til $h(x)$ er 
 
 $$
@@ -1171,23 +666,16 @@ Topp- eller bunnpunkt
     $$
 
     Dermed er bunnpunktet til $h$ gitt ved $(0, -4)$.
-
-
-Når har vi nok opplysninger til å tegne en skisse av grafen til $h$:
-
-:::{figure} ./figurer/oppgaver/oppgave_8/c.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-
 ::::
+:::::
+
+
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En andregradsfunksjon $p$ er gitt ved 
 
 
@@ -1202,16 +690,23 @@ Lag en skisse av grafen til $p$ og marker følgende egenskaper:
 * Topp- eller bunnpunkt med koordinater
 
 
-::::{answer}
-:::{figure} ./figurer/oppgaver/oppgave_8/d.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-::::
 
-::::{solution}
+:::::{answer-2}
+:::{plot}
+width: 70%
+function: -x**2 + 2*x, p
+ticks: off
+fontsize: 22
+point: (0, 0)
+text: 0, 0, "$(0, 0)$", top-left
+point: (1, 1)
+text: 1, 1, "$(1, 1)$", top-right
+vline: 1
+text: 1, 4, "$x = 1$", center-right
+:::
+
+
+::::{solution-2}
 Koeffisientene til $p(x)$ er 
 
 $$
@@ -1236,728 +731,389 @@ Topp- eller bunnpunkt
     $$
 
     Dermed er toppunktet til $p$ gitt ved $(1, 1)$.
-
-
-Nå har vi nok opplysninger til å tegne en skisse av grafen til $p$:
-
-:::{figure} ./figurer/oppgaver/oppgave_8/d.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-
 ::::
+:::::
 
 
 :::::::::::::
 
 
-::::::::::::::
 :::::::::::::::
 
 
+
 ---
 
 
-:::::::::::::::{exercise} Oppgave 9
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
 
-:::{cas-popup}
----
-layout: sidebar
----
+
+:::::::::::::::{exercise-2} Oppgave 9
+:::::::::::::{part} a
+
+:::{plot}
+width: 100%
+align: right
+fontsize: 26
+function: -1/2 * x**2 + 2*x + 1, f
+ticks: off
+point: (0, 1)
+point: (2, 3)
+text: 0, 1, "$(0, 1)$", top-left
+text: 2, 3, "$(2, 3)$", top-center
 :::
 
 
-Grafen til en andregradsfunksjon $f$ er vist i figuren nedenfor.
+I figuren til høyre vises grafen til en andregradsfunksjon $f$.
 
-Bruk CAS til å bestemme $f(x)$.
+Bestem $f(x)$.
 
 
-:::{figure} ./figurer/oppgaver/oppgave_9/a.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-
-
-::::{answer}
-$$
-f(x) = x^2 - 2x - 3
-$$
-::::
-
-
-::::{solution}
-Vi trenger tre punkter på grafen til $f$. Vi ser at grafen går gjennom punktene $(-1, 0)$, $(3, 0)$ og $(0, -3)$. Da kan vi sette opp et likningssystem og bestemme koeffisientene til $f(x)$:
-
-:::{figure} ./figurer/oppgaver/oppgave_9/a_sol.png
----
-class: no-click, adaptive-figure
-width: 60%
----
-:::
-
-Fra utskriften finner vi at koeffisientene er 
-
-$$
-a = 1 \and b = -2 \and c = -3
-$$
-
-
-Dermed får vi at 
-
-$$
-f(x) = x^2 - 2x - 3
-$$
-::::
-
-
-:::::::::::::
-
-
-
-:::::::::::::{tab-item} b
-
-:::{cas-popup}
----
-layout: sidebar
----
-:::
-
-
-Grafen til en andregradsfunksjon $g$ er vist i figuren nedenfor.
-
-Bruk CAS til å bestemme $g(x)$.
-
-
-:::{figure} ./figurer/oppgaver/oppgave_9/b.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-
-
-
-::::{answer}
-$$
-g(x) = -2x^2 - 4x - 3
-$$
-::::
-
-
-::::{solution}
-Vi trenger tre punkter på grafen til $g$. Vi ser at grafen til $g$ går gjennom punktene $(-1, -1)$, $(0, -3)$ og $(-2, -3)$. Da kan vi sette opp et likningssystem og bestemme koeffisientene til $g(x)$:
-
-
-:::{figure} ./figurer/oppgaver/oppgave_9/b_sol.png
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-
-Fra utskriften ser vi at koeffisientene er 
-
-$$
-a = -2 \and b = -4 \and c = -3
-$$
-
-Dermed er $g(x)$ gitt ved 
-
-$$
-g(x) = -2x^2 - 4x - 3
-$$
-::::
-
-
-:::::::::::::
-
-
-
-:::::::::::::{tab-item} c
-
-:::{cas-popup}
----
-layout: sidebar
----
-:::
-
-
-Grafen til en andregradsfunksjon $h$ er vist i figuren nedenfor.
-
-Bruk CAS til å bestemme $h(x)$.
-
-
-:::{figure} ./figurer/oppgaver/oppgave_9/c.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-
-
-::::{answer}
-$$
-h(x) = x^2 + 6x + 5
-$$
-::::
-
-::::{solution}
-Vi trenger tre punkter på grafen til $h$. Vi ser at grafen til $h$ går gjennom punktene $(-5, 0)$, $(-1, 0)$ og $(0, 5)$. Da kan vi sette opp et likningssystem og bestemme koeffisientene til $h(x)$:
-
-
-:::{figure} ./figurer/oppgaver/oppgave_9/c_sol.png
----
-class: no-click, adaptive-figure
-width: 60%
----
-:::
-
-Fra utskriften ser vi at koeffisientene er
-
-$$
-a = 1 \and b = 6 \and c = 5
-$$
-
-Dermed er $h(x)$: 
-
-$$
-h(x) = x^2 + 6x + 5
-$$
-
-
-::::
-
-
-
-:::::::::::::
-
-
-
-:::::::::::::{tab-item} d
-
-:::{cas-popup}
----
-layout: sidebar
----
-:::
-
-
-Grafen til en andregradsfunksjon $p$ er vist i figuren nedenfor.
-
-Bruk CAS til å bestemme $p(x)$.
-
-
-:::{figure} ./figurer/oppgaver/oppgave_9/d.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-
-
-
-::::{answer}
-$$
-p(x) = -\dfrac{1}{2}x^2 + 2x - 2
-$$
-::::
-
-::::{solution}
-Vi trenger tre punkter på grafen til $p$. Vi ser at grafen til $p$ går gjennom punktene $(2, 0)$, $(0, -2)$ og $(4, -2)$. Da kan vi sette opp et likningssystem og bestemme koeffisientene til $p(x)$:
-
-:::{figure} ./figurer/oppgaver/oppgave_9/d_sol.png
----
-class: no-click, adaptive-figure
-width: 60%
----
-:::
-
-Fra utskriften ser vi at koeffisientene er
-
-$$
-a = -\dfrac{1}{2} \and b = 2 \and c = -2
-$$
-
-Dermed er $p(x)$:
-
-$$
-p(x) = -\dfrac{1}{2}x^2 + 2x - 2
-$$
-::::
-
-:::::::::::::
-
-
-
-::::::::::::::
-:::::::::::::::
-
-
----
-
-:::::::::::::::{exercise} Oppgave 10
----
-level: 3
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-I figuren nedenfor vises grafen til en andregradsfunksjon $f$. 
-
-Bestem $f(x)$. 
-
-:::{figure} ./figurer/oppgaver/oppgave_10/a.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-
-
-::::{answer}
+:::::{answer-2}
 $$
 f(x) = -\dfrac{1}{2}x^2 + 2x + 1.
 $$
-::::
 
-
-::::{solution}
-Vi skriver $f(x)$ på standardform
+::::{solution-2}
+På standardform kan vi skrive funksjonsuttrykket som
 
 $$
-f(x) = ax^2 + bx + c. 
+f(x) = ax^2 + bx + c
 $$
 
-Vi ser at grafen til $f$ har et toppunkt i $(2, 3)$. Flytter vi oss $2$ enheter langs $x$-aksen til venstre ligger skjæringspunktet til grafen med $y$-aksen i $(0, 1)$.
-Her har $y$-verdien sunket med $2$ enheter som betyr at
+Grafen til $f$ skjærer $y$-aksen i $(0, 1)$ som betyr at $c = 1$.
+
+Symmetrilinja til grafen er gitt ved $x = 2$. Da får vi at
 
 $$
-2^2 a = -2 \liff 4a = -2 \liff a = -\dfrac{1}{2}
+x = -\dfrac{b}{2a} \liff 2 = -\dfrac{b}{2a} \liff b = -4a.
 $$
 
-Siden grafen til $f$ har et toppunkt i $(2, 3)$ så er symmetrilinja gitt ved $x = 2$. Vi kan bestemme $b$ ved hjelp av formelen for symmetrilinja:
+Det betyr at vi nå kan skrive $f(x)$ som:
 
 $$
-x = -\dfrac{b}{2a}  \liff 2 = -\dfrac{b}{2 \cdot \left(-\dfrac{1}{2}\right)} \liff 2 = b \liff b = 2.
+f(x) = ax^2 - 4ax + 1.
 $$
 
-Siden grafen til $f$ skjærer $y$-aksen i $(0, 1)$ så er $c = 1$. Dermed har vi
+Grafen til $f$ går gjennom $(2, 3)$ som betyr at
+
+$$
+f(2) = 3 
+$$
+
+$$
+a \cdot 2^2 - 4a \cdot 2 + 1 = 3
+$$
+
+$$
+4a - 8a + 1 = 3
+$$
+
+$$
+-4a = 2 \liff a = -\dfrac{1}{2}.
+$$
+
+Altså er 
 
 $$
 f(x) = -\dfrac{1}{2}x^2 + 2x + 1.
 $$
 
+
+
+
 ::::
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
-I figuren nedenfor vises grafen til en andregradsfunksjon $g$. 
 
-Bestem $g(x)$. 
+:::::::::::::{part} b
 
-:::{figure} ./figurer/oppgaver/oppgave_10/b.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
+:::{plot}
+width: 100%
+align: right
+fontsize: 26
+ticks: off
+function: 2 * x**2 + 4 * x + 4, g
+point: (-1, 2)
+point: (-2, 4)
+text: -1, 2, "$(-1, 2)$", bottom-center
+text: -2, 4, "$(-2, 4)$", bottom-left
+ymin: -1
+xmax: 3
 :::
 
-::::{answer}
-$$
-g(x) = 2x^2 + 4x + 4.
-$$
-::::
 
-::::{solution}
-Siden $g$ er en andregradsfunksjon, så er 
+I figuren til høyre vises grafen til en andregradsfunksjon $g$.
+
+Bestem $g(x)$.
+
+
+
+:::::{answer-2}
+
+$$
+g(x) = 2x^2 + 4x + 4
+$$
+
+
+::::{solution-2}
+Funksjonsuttrykket til $g$ kan skrives som
 
 $$
 g(x) = ax^2 + bx + c.
 $$
 
-Grafen til $g$ har et bunnpunkt i $(-1, 2)$ som betyr at symmetrilinja er $x = -1$. Da får vi at
+Vi har at grafen til $g$ har symmetrilinje i $x = -1$ som betyr at
 
 $$
-x = -\dfrac{b}{2a} = -1 \liff b = 2a.
+x = -\dfrac{b}{2a} \liff -1 = -\dfrac{b}{2a} \liff b = 2a
 $$
 
-Grafen til $g$ går gjennom punktet $(-2, 4)$ som ligger én enhet til venstre for bunnpunktet. Det betyr at hvis vi flytter oss én enhet til høyre, så får vi et punkt med samme $y$-koordinat. Dette blir da $(0, 4)$ som er punktet grafen til $g$ skjærer $y$-aksen. Dermed er 
+Siden punktet $(-2, 4)$ ligger på grafen til $g$ vil også punktet $(0, 4)$ ligge på grafen til $g$ siden begge punkter ligger symmetrisk om symmetrilinja (altså samme avstand fra symmetrilinja). Ergo er $c = 4$. 
+
+Flytter vi oss én enhet langs $x$-aksen fra ekstremalpunktet $(-1, 2)$, havner grafen i $(0, 4)$ som betyr at $g(x)$ øker med $2$. Da er $a = 2$. Siden $b = 2a$ får vi da at 
 
 $$
-c = 4.
+b = 2 \cdot 2 = 4
 $$
 
-Nå kan vi skrive om $g(x)$ til 
+Altså er
 
 $$
-g(x) = ax^2 + 2ax + 4.
+a = 2 \and b = 4 \and c = 4
 $$
 
-Nå bruker vi bunnpunktet til å bestemme verdien til $a$. Siden grafen går gjennom $(-1, 2)$, så betyr det at
+så da følger det at
 
 $$
-g(-1) = 2 \liff a \cdot (-1)^2 + 2a \cdot (-1) + 4 = 2
-$$
-
-som vi forenkler til
-
-$$
--a + 4 = 2 \liff -a = -2 \liff a = 2.
-$$
-
-Nå kan vi regne ut verdien til $b$:
-
-$$
-b = 2a = 2 \cdot 2 = 4.
-$$
-
-Dermed er koeffisientene til $g(x)$ gitt ved
-
-$$
-a = 2 \and b = 4 \and c = 4.
-$$
-
-Dermed er
-
-$$
-g(x) = 2x^2 + 4x + 4.
+g(x) = 2x^2 + 4x + 4
 $$
 
 ::::
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-I figuren nedenfor vises grafen til en andregradsfunksjon $h$. 
 
-Bestem $h(x)$. 
-
-:::{figure} ./figurer/oppgaver/oppgave_10/c.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
+:::::::::::::{part} c
+:::{plot}
+width: 100%
+align: right
+ticks: off
+fontsize: 26
+function: x**2 - 6*x + 9, h
+point: (3, 0)
+point: (5, 4)
+point: (1, 4)
+text: 5, 4, "$(5, 4)$", bottom-right
+text: 1, 4, "$(1, 4)$", top-right
+xmin: -1
+ymin: -1
 :::
 
 
-::::{answer}
-$$
-h(x) = x^2 - 6x + 9.
-$$
-::::
+I figuren til høyre vises grafen til en andregradsfunksjon $h$.
 
 
-::::{solution}
-Vi starter med standardformen til $h(x)$ som er
+Bestem $h(x)$.
+
+
+
+:::::{answer-2}
+
+$$
+h(x) = x^2 - 6x + 9 = (x - 3)^2
+$$
+
+::::{solution-2}
+Funksjonsuttrykket kan skrives på formen
 
 $$
 h(x) = ax^2 + bx + c.
 $$
 
-Grafen til $h$ skjærer $y$-aksen i $(0, 9)$ som betyr at $c = 9$.
-
-Grafen til $h$ går gjennom punktene $(1, 4)$ og $(5, 4)$ som har samme $y$-koordinat. Siden de har samme $y$-koordinat, må symmetrilinja ligge midt mellom disse to punktene som betyr at symmetrilinja er gjennomsnittet av $x$-koordinatene:
-
+Siden punktene $(1, 4)$ og $(5, 4)$ har samme $y$-koordinat, vil symmetrilinja ligge midt mellom de punktene. Det kan vi regne ut ved å ta gjennomsnittet av $x$-koordinatene:
 
 $$
-x = \dfrac{1 + 5}{2} = 3.
-$$
-
-> Gjennomsnittet av to tall ligger alltid midt mellom de to tallene!
-
-Men da får vi at 
-
-$$
-x = -\dfrac{b}{2a} = 3 \liff b = -6a.
-$$
-
-Da kan vi skrive om $h(x)$ til 
-
-$$
-h(x) = ax^2 - 6ax + 9.
-$$
-
-Nå trenger vi å bruke ett av punktene vi ikke har brukt enda. Vi velger $(1, 4)$ som betyr at 
-
-$$
-h(1) = 4 \liff a \cdot 1^2 - 6a \cdot 1 + 9 = 4
-$$
-
-som vi forenkler til
-
-$$
--5a + 9 = 4 \liff -5a = -5 \liff a = 1.
-$$
-
-Nå kan vi regne ut verdien til $b$:
-
-$$
-b = -6a = -6 \cdot 1 = -6.
-$$
-
-Dermed er koeffisientene til $h(x)$ gitt ved
-
-$$
-a = 1 \and b = -6 \and c = 9.
-$$
-
-Dermed er
-
-$$
-h(x) = x^2 - 6x + 9.
-$$
-
-::::
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} d
-I figuren nedenfor vises grafen til en andregradsfunksjon $p$. 
-
-Bestem $p(x)$. 
-
-:::{figure} ./figurer/oppgaver/oppgave_10/d.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-
-
-::::{answer}
-$$
-p(x) = -2x^2 + 2x + 12.
-$$
-::::
-
-
-::::{solution}
-Standardformen til $p(x)$ er gitt ved 
-
-$$
-p(x) = ax^2 + bx + c.
-$$
-
-Vi ser at grafen til $p$ skjærer $y$-aksen i $(0, 12)$ som betyr at $c = 12$. 
-
-Grafen til $p$ har to nullpunkter i $(-2, 0)$ og $(3, 0)$. Siden disse punktene har samme $y$-koordinat, så må symmetrilinja ligge midt mellom disse to punktene som betyr at symmetrilinja er gjennomsnittet av $x$-koordinatene:
-
-$$
-x = \dfrac{-2 + 3}{2} = \dfrac{1}{2}
+x_0 = \dfrac{1 + 5}{2} = \dfrac{6}{2} = 3
 $$
 
 Da får vi at
 
 $$
-x = -\dfrac{b}{2a} = \dfrac{1}{2} \liff b = -a.
+x_0 = -\dfrac{b}{2a} \liff 3 = -\dfrac{b}{2a}
 $$
 
-Da kan vi skrive om $p(x)$ til
+Altså må 
 
 $$
-p(x) = ax^2 - ax + 12.
+b = -6a
 $$
 
-Nå trenger vi å bruke ett av punktene vi ikke har brukt enda. Vi velger $(3, 0)$ som betyr at
+Så langt kan vi skrive $h(x)$ som
 
 $$
-p(3) = 0 \liff a \cdot 3^2 - a \cdot 3 + 12 = 0
+h(x) = ax^2 - 6ax + c
 $$
 
-som vi forenkler til
+Bunnpunktet til grafen ligger på $x$-aksen, med koordinatene $(3, 0)$ som betyr at 
 
 $$
-6a + 12 = 0 \liff 6a = -12 \liff a = -2.
+h(3) = 0
 $$
 
-Nå kan vi regne ut verdien til $b$:
-
 $$
-b = -a = -(-2) = 2.
+a\cdot 3^2 - 6a \cdot 3 + c = 0
 $$
 
-Dermed er koeffisientene til $p(x)$ gitt ved
-
 $$
-a = -2 \and b = 2 \and c = 12.
+9a - 18a + c = 0
 $$
 
-Det betyr at 
-
 $$
-p(x) = -2x^2 + 2x + 12.
+c = 9a
 $$
 
+Altså er funksjonsuttrykket 
+
+$$
+h(x) = ax^2 - 6ax + 9a = a(x^2 - 6x + 9) = a(x - 3)^2 
+$$
+
+Til slutt bruker vi ett av de andre punktene til å finne $a$. Vi velger $(1, 4)$: 
+
+$$
+h(1) = 4
+$$
+
+$$
+a(1 - 3)^2 = 4
+$$
+
+$$
+4a = 4
+$$
+
+$$
+a = 1
+$$
+
+Dermed er funksjonsuttrykket
+
+$$
+h(x) = x^2 - 6x + 9 = (x - 3)^2
+$$
 ::::
-
-:::::::::::::
-
-
-::::::::::::::
-:::::::::::::::
-
-
----
-
-
-:::::::::::::::{exercise} Oppgave 11 
----
-level: 3
----
-
-Siri har laget programmet nedenfor: 
-
-:::{code-block} python
----
-linenos:
----
-def f(x):
-    return x ** 2 + 2 * x - 15
-
-x = -5
-verdi = f(x)
-
-while x <= 5:
-
-    if f(x) < verdi:
-        verdi = f(x)
-
-    x = x + 1
-
-print(verdi)
-:::
-
-Hva finner Siri når hun kjører programmet?
-
-
-Hvilken verdi skrives ut?
-
-:::::::::::::::
-
-
----
-
-
-:::::::::::::::{exercise} Oppgave 12
----
-level: 3
----
-
-Anna jobber med andregradsfunksjonen
-
-$$
-f(x) = x^2 - 4x + 5
-$$
-
-Hun ønsker å bestemme bunnpunktet med programmering og har laget en figur som illustrerer strategien hun vil bruke:
-
-:::{figure} ./figurer/oppgaver/oppgave_12/bunnpunkt.svg
----
-class: no-click, adaptive-figure
-width: 70%
----
-:::
-
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Bruk strategien til Anna og skriv ferdig programmet nedenfor.
-
-Bestem koordinatene til bunnpunktet til $f$ med programmet.
-
-
-
-::::{solution}
-Løsning med `for`{l=python}-løkke:
-
-
-:::{code-block} python
----
-linenos:
----
-def f(x):
-    return x**2 - 4*x + 5
-
-
-for x in range(0, 11):
-    if f(x) <= f(x + 1):
-        bunnpunkt = (x, f(x))
-        print(bunnpunkt)
-
-        break
-:::
-
-
-Løsning med `while`{l=python}-løkke:
-
-:::{code-block} python
----
-linenos:
----
-def f(x):
-    return x**2 - 4*x + 5
-
-
-x = 0
-while f(x) < f(x + 1):
-    x = x + 1
-
-
-bunnpunkt = (x, f(x))
-print(bunnpunkt)
-:::
-
-
-::::
-
-
+:::::
 
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} b
-Anna vil bruke en tilsvarende strategi til å bestemme toppunktet til 
+:::::::::::::{part} d
+:::{plot}
+width: 100%
+align: right
+fontsize: 26
+ticks: off
+function: -2*x**2 + 2*x + 12, p
+point: (-2, 0)
+point: (3, 0)
+point: (0, 12)
+text: -2, 0, "$(-2, 0)$", top-left
+text: 3, 0, "$(3, 0)$", top-right
+text: 0, 12, "$(0, 12)$", top-left
+ymax: 14
+:::
+
+
+I figuren til høyre vises en andregradsfunksjon $p$.
+
+Bestem $p(x)$.
+
+
+
+:::::{answer-2}
+$$
+p(x) = -2x^2 + 2x + 12
+$$
+
+
+::::{solution-2}
+Funksjonsuttrykket kan skrives som
 
 $$
-g(x) = -2x^2 + 8x - 4.
+p(x) = ax^2 + bx + c
 $$
 
-Gjør nødvendige endringer i programmet slik at det finner toppunktet til $g$.
+
+Siden grafen til $p$ går skjærer gjennom $y$-aksen i $(0, 12)$ er $c = 12$.
+
+Vi kan merke oss at grafen til $p$ skjærer $x$-aksen i $(-2, 0)$ og $(3, 0)$. Symmetrilinja vil ligge midt mellom disse to punktene som vi kan finne ved å ta gjennomsnittet av $x$-koordinatene:
+
+$$
+x_0 = \dfrac{-2 + 3}{2} = \dfrac{1}{2}
+$$
+
+Altså har vi at 
+
+$$
+x_0 = -\dfrac{b}{2a} \liff \dfrac{1}{2} = -\dfrac{b}{2a}
+$$
+
+som gir
+
+$$
+b = -a
+$$
+
+Funksjonsuttrykket kan derfor skrives som
+
+$$
+p(x) = ax^2 - ax + 12
+$$
+
+Vi bruker ett av de nullpunktene til å finne $a$. Vi velger $(3, 0)$:
+
+$$
+p(3) = 0
+$$
+
+$$
+a \cdot 3^2 - a \cdot 3 + 12 = 0
+$$
+
+$$
+9a - 3a + 12 = 0
+$$
+
+$$
+6a = -12
+$$
+
+$$
+a = -2
+$$
+
+Dermed er funksjonsuttrykket
+
+$$
+p(x) = -2x^2 + 2x + 12
+$$
+::::
+:::::
+
 
 :::::::::::::
 
 
-::::::::::::::
-
-
-::::{interactive-code}
-def f(x):
-    return x**2 - 4*x + 5
-
-
-# TODO: skriv kode her
-::::
 
 :::::::::::::::
+
+
+

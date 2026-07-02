@@ -1,9 +1,6 @@
 # Potensfunksjoner
 
-:::{admonition} Læringsmål
----
-class: tip
----
+:::{goals} Læringsmål
 * Kan forklare begrepet proprosjonalitet og anvende begrepet proporsjonalitet.
 * Kan beskrive egenskapene til potensfunksjoner.
 * Kjenner til sammenhengen mellom potensfunksjoner og rotfunksjoner.

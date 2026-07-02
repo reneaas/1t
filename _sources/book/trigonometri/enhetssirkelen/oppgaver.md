@@ -2,11 +2,8 @@
 
 
 :::::::::::::::{exercise} Oppgave 1
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 
 :::{plot}
 align: right
@@ -31,10 +28,6 @@ Bruk figuren til høyre til å bestemme
 * $\tan 36\degree$
 
 
-
-:::{clear}
-:::
-
 ::::{answer}
 * $\cos 36 \degree = 0.81$
 * $\sin 36 \degree = 0.59$
@@ -45,7 +38,7 @@ Bruk figuren til høyre til å bestemme
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 :::{plot}
 align: right
@@ -70,9 +63,6 @@ Bruk figuren til å bestemme
 
 
 
-:::{clear}
-:::
-
 ::::{answer}
 * $\cos 72\degree = 0.31$
 * $\sin 72\degree = 0.95$
@@ -84,7 +74,7 @@ Bruk figuren til å bestemme
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 :::{plot}
 align: right
 width: 100%
@@ -107,10 +97,6 @@ Bruk figuren til å bestemme
 * $\tan 140\degree$
 
 
-
-:::{clear}
-:::
-
 ::::{answer}
 * $\cos 140\degree = -0.77$
 * $\sin 140\degree = 0.64$
@@ -120,10 +106,6 @@ Bruk figuren til å bestemme
 
 :::::::::::::
 
-
-
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -133,11 +115,8 @@ Bruk figuren til å bestemme
 
 
 :::::::::::::::{exercise} Oppgave 2
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 :::{plot}
 align: right
 width: 100%
@@ -158,9 +137,6 @@ Bestem koordinatene til punktet $P$ på enhetssirkelen vist til høyre.
 
 
 
-:::{clear}
-:::
-
 ::::{answer}
 $$
 P\left(\dfrac{\sqrt{3}}{2}, \dfrac{1}{2}\right)
@@ -170,7 +146,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 :::{plot}
 align: right
 width: 100%
@@ -190,11 +166,6 @@ grid: off
 Bestem koordinatene til punktet $P$ på enhetssirkelen vist til høyre.
 
 
-
-:::{clear}
-:::
-
-
 ::::{answer}
 $$
 P\left(\dfrac{\sqrt{2}}{2}, \dfrac{\sqrt{2}}{2}\right)
@@ -205,7 +176,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 :::{plot}
 align: right
 width: 100%
@@ -226,9 +197,6 @@ Bestem koordinatene til punktet $P$ på enhetssirkelen vist til høyre.
 
 
 
-:::{clear}
-:::
-
 ::::{answer}
 $$
 P\left(\dfrac{1}{2}, \dfrac{\sqrt{3}}{2}\right)
@@ -238,8 +206,6 @@ $$
 
 :::::::::::::
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -271,11 +237,8 @@ ticks: off
 
 I enhetssirkelen ovenfor er det tegnet inn et punkt $P$ som ligger på sirkelen med en vinkel på $120\degree$ med $x$-aksen.
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem koordinatene til punktet $P$ på enhetssirkelen vist ovenfor.
 
 ::::{answer}
@@ -286,7 +249,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem eksakte verdier for 
 
 * $\cos 120\degree$
@@ -311,8 +274,6 @@ $$
 
 :::::::::::::
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -345,11 +306,8 @@ ticks: off
 I enhetssirkelen ovenfor er det tegnet inn et punkt $P$ som ligger på sirkelen med en vinkel på $135\degree$ med $x$-aksen.
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem koordinatene til punktet $P$.
 
 
@@ -363,7 +321,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem eksakte verdier for
 
 * $\cos 135\degree$
@@ -381,8 +339,6 @@ Bestem eksakte verdier for
 
 :::::::::::::
 
-
-::::::::::::::
 
 :::::::::::::::
 
@@ -416,11 +372,8 @@ ticks: off
 I enhetssirkelen ovenfor er det tegnet inn et punkt $P$ som ligger på sirkelen med en vinkel på $150\degree$ med $x$-aksen.
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem koordinatene til punktet $P$. 
 
 
@@ -433,7 +386,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem eksakte verdier for
 
 * $\cos 150\degree$
@@ -448,8 +401,6 @@ Bestem eksakte verdier for
 
 :::::::::::::
 
-
-::::::::::::::
 
 
 :::::::::::::::

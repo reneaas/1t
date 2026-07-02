@@ -1,18 +1,16 @@
 # Arealsetningen
 
-:::::::::::::::{admonition} Læringsmål
----
-class: tip
----
+:::::::::::::::{goals} Læringsmål 
 * Kunne bruke arealsetningen til arealberegninger for trekanter. 
 * Kunne begrunne arealsetningen.
 :::::::::::::::
 
 
 
-## Repetisjon: Arealet av en trekant
-
 Fra geometri har du tidligere lært en måte å regne ut arealet av en trekant. Arealet $T$ av en trekant med grunnlinje $g$ og høyde $h$ er 
+
+:::::::::::::::{summary} Arealet av en trekant
+Arealet av en trekant med grunnlinje $g$ og høyde $h$ er gitt ved
 
 $$
 T = \dfrac{1}{2} \cdot g \cdot h.
@@ -67,6 +65,7 @@ line-segment: (Cx + ds, ds), (Cx, ds), solid, gray
 text: 0.5 * (Ax + Bx), 0, "$g$", bottom-center
 :::
 ::::
+:::::::::::::::
 
 
 
@@ -74,10 +73,8 @@ text: 0.5 * (Ax + Bx), 0, "$g$", bottom-center
 
 
 
-:::::::::::::::{admonition} Underveisoppgave 1
----
-class: check 
----
+:::::::::::::::{exercise} Underveisoppgave 1
+
 En trekant $\triangle ABC$ er vist i figuren nedenfor. $AB = 4$. 
 
 Bestem arealet av trekanten.
@@ -85,32 +82,28 @@ Bestem arealet av trekanten.
 
 :::{figure} ./figurer/underveisoppgaver/oppgave_1/figur.svg
 ---
-width: 80%
+width: 60%
 class: no-click, adaptive-figure
 ---
 :::
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
+
 $$
 T = 2. 
 $$
-::::
 
-
-::::{admonition} Løsning
----
-class: solution, dropdown
----
+::::{solution}
 Fra figuren, kan vi se at grunnlinja er $g = AB = 4$ og høyden er $h = 1$. Dermed blir arealet av trekanten 
 
 $$
 T = \dfrac{g \cdot h}{2} = \dfrac{4 \cdot 1}{2} = 2. 
 $$
 ::::
+
+:::::
+
 
 
 
@@ -129,7 +122,7 @@ ticks: off
 axis: off
 axis: equal 
 align: right
-triangle: svs=(3, 30, 6), angles=(A), color=blue, angle-color=red, angle-radius=40, corner-labels=(A="$A$", B="$B$", C="$C$"), lw=3
+triangle: svs=(3, 30, 6), angles=(A), color=blue, angle-color=red, angle-radius=60, corner-labels=(A="$A$", B="$B$", C="$C$"), lw=3
 fontsize: 30
 :::
 
@@ -146,10 +139,7 @@ $$
 :::{clear}
 :::
 
-::::::::::::::{admonition} Forklaring av formelen
----
-class: theory, dropdown
---- 
+:::::{proof}
 :::{plot}
 width: 100%
 ticks: off
@@ -162,7 +152,7 @@ let: Bx = 3
 let: By = 0
 let: Cx = 6 * cos(pi/6)
 let: Cy = 6 * sin(pi/6)
-triangle: svs=(3, 30, 6), angles=(A), color=blue, angle-color=red, angle-radius=40, corner-labels=(A="$A$", B="$B$", C="$C$"), lw=3
+triangle: svs=(3, 30, 6), angles=(A), color=blue, angle-color=red, angle-radius=60, corner-labels=(A="$A$", B="$B$", C="$C$"), lw=3
 vline: Cx, 0, Cy, dashed, gray
 hline: 0, Bx, Cx, dashed, gray
 text: Cx, 0.5*Cy, "$h$", center-right
@@ -194,9 +184,7 @@ T = \dfrac{1}{2} \cdot AB \cdot AC \cdot \sin A.
 $$
 
 
-::::::::::::::
-
-
+:::::
 
 :::::::::::::::
 
@@ -222,13 +210,10 @@ Figuren til høyre viser en trekant $\triangle ABC$.
 Bestem arealet av trekanten.
 
 
-:::{clear}
-:::
-
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Arealet til trekanten er gitt ved 
 
@@ -269,15 +254,10 @@ En trekant $\triangle ABC$ er vist i figuren til høyre.
 Bestem arealet av trekanten.
 
 
-:::{clear}
-:::
-
-
-::::{answer}
+:::::{answer}
 $$
 T = \dfrac{5\sqrt{3}}{2}.
 $$
-::::
 
 
 ::::{solution}
@@ -293,6 +273,9 @@ $$
 T = \dfrac{1}{2} \cdot 5 \cdot 2 \cdot \dfrac{\sqrt{3}}{2} = \dfrac{5\sqrt{3}}{2}.
 $$
 ::::
+
+:::::
+
 
 :::::::::::::::
 
@@ -350,7 +333,7 @@ Det er enklest å huske formelen for arealsetningen ved å tenke seg følgende o
 :::{plot}
 width: 100%
 align: right
-triangle: points=((0, 0), (4, 0), (4 - 2 * cos(pi/3), 2 * sin(pi/3))), color=blue, angle-color=red, angles=(B), angle-radius=20, corner-labels=(A="$A$", B="$B$", C="$C$"), lw=3, side-labels=(AB=exact, BC=exact), angle-labels=(B=numeric)
+triangle: points=((0, 0), (4, 0), (4 - 2 * cos(pi/3), 2 * sin(pi/3))), color=blue, angle-color=red, angles=(B), angle-radius=60, corner-labels=(A="$A$", B="$B$", C="$C$"), lw=3, side-labels=(AB=exact, BC=exact), angle-labels=(B=numeric)
 fontsize: 30
 axis: off
 axis: equal
@@ -362,13 +345,9 @@ Figuren til høyre viser en trekant $\triangle ABC$.
 Bestem arealet til trekanten.
 
 
-:::{clear}
-:::
-
-
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi tar produktet av de to sidene som spenner ut vinkelen i hjørnet $B$. Siden $AB = 4$ og $BC = 2$, så får vi at arealet av trekanten er
 
@@ -393,7 +372,7 @@ der vi har brukt at $\sin 60\degree = \dfrac{\sqrt{3}}{2}$.
 :::{plot}
 width: 100%
 align: right
-triangle: points=((0, 0), (3, 0), (3 - 5 * cos(pi/6), 5 * sin(pi/6))), color=blue, angle-color=red, angles=(B), angle-radius=30, corner-labels=(A="$A$", B="$B$", C="$C$"), lw=3, side-labels=(AB=exact, BC=exact), angle-labels=(B=numeric)
+triangle: points=((0, 0), (3, 0), (3 - 5 * cos(pi/6), 5 * sin(pi/6))), color=blue, angle-color=red, angles=(B), angle-radius=60, corner-labels=(A="$A$", B="$B$", C="$C$"), lw=3, side-labels=(AB=exact, BC=exact), angle-labels=(B=numeric)
 axis: equal
 axis: off
 fontsize: 30
@@ -407,15 +386,10 @@ Bestem arealet av trekanten.
 
 
 
-:::{clear}
-:::
-
-::::{answer}
+:::::{answer}
 $$
 T = \dfrac{15}{4}
 $$
-::::
-
 
 ::::{solution}
 Arealet av trekanten er
@@ -424,6 +398,9 @@ $$
 T = \dfrac{1}{2} \cdot 3 \cdot 5 \cdot \sin 30\degree = \dfrac{1}{2} \cdot 3 \cdot 5 \cdot \dfrac{1}{2} = \dfrac{15}{4}.
 $$
 ::::
+
+:::::
+
 
 :::::::::::::::
 

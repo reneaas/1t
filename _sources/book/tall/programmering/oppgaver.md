@@ -1357,11 +1357,20 @@ Nedenfor vises et kvadrat med sidelengder $3$.
 Kvadratet er fylt med mindre fargelagte kvadrater som blir mindre og mindre. 
 
 
-:::{figure} ./figurer/oppgaver/oppgave_15/figur.svg
----
-width: 80%
-class: no-click, adaptive-figure
----
+
+:::{plot}
+axis: off
+axis: equal
+width: 50%
+let: s = 3
+line-segment: (0, 0), (s, 0), solid, blue
+line-segment: (s, 0), (s, s), solid, blue
+line-segment: (s, s), (0, s), solid, blue
+line-segment: (0, s), (0, 0), solid, blue
+repeat: n=1..7; line-segment: (s / 2**n, 0), (s / 2**n, s / 2**(n - 1)), dashdot, gray
+repeat: n=1..7; line-segment: (0, s/2**n), (s / 2**(n - 1), s / 2**n), dashdot, gray
+repeat: n=1..8; fill-polygon: (s / 2**n, s / 2**n), (s / 2**(n - 1), s/2**n), (s / 2**(n - 1), s / 2**(n - 1)), (s / 2**n, s / 2**(n - 1)), 0.3
+lw: 1.5
 :::
 
 
@@ -1447,11 +1456,18 @@ Nedenfor vises en figur som er satt sammen av uendelige mange linjestykker.
 Lengden til et linjestykke er alltid $90 \%$ av lengden til det forrige linjestykket. Det første linjestykket er $100$ cm langt. 
 
 
-:::{figure} ./figurer/oppgaver/oppgave_16/figur.svg
----
+:::{plot}
+lw: 1.5
+axis: equal
+axis: off
+figsize: (8, 2)
 width: 100%
-class: no-click, adaptive-figure
----
+let: s = 100
+let: r = 0.9
+def: x(n) = s * r * (r**n - 1) / (r - 1)
+def: y(n) = s - r**2 * s * ((-r)**(n-1) - 1) / (1 + r)
+repeat: n=1..100; line-segment: (x(n), y(n)), (x(n), y(n + 1)), solid, blue
+repeat: n=1..100; line-segment: (x(n), y(n + 1)), (x(n + 1), y(n + 1)), solid, blue
 :::
 
 

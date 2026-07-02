@@ -17,7 +17,7 @@ $$
 
 Vi kan se at dersom vi tar de naturlige tallene $\{1, 2, 3, 4, \ldots\}$ og ganger dem med $2$, så får vi alle partallene. Dette motiverer følgende resultat:
 
-:::::::::::::::{summary} Partallene
+:::::::::::::::{summary-2} Partallene
 Partallene $\{2, 4, 6, 8, \ldots\}$ er gitt ved formelen
 
 $$
@@ -28,7 +28,7 @@ $$
 
 Hvis vi tar partallene $\{2, 4, 6, 8, \ldots\}$ og trekker fra $1$, så får vi alle oddetallene $\{1, 3, 5, \ldots\}$. Det gjør at vi kan skrive ned en generell formel for alle oddetallene:
 
-:::::::::::::::{summary} Oddetallene
+:::::::::::::::{summary-2} Oddetallene
 Oddetallene $\{1, 3, 5, 7, \ldots\}$ er gitt ved formelen
 
 $$
@@ -38,13 +38,13 @@ $$
 
 Dersom vi ønsker å regne ut et en verdi med formelen, så erstatter vi $n$ med et bestemt tall. 
 
-:::::::::::::::{example} Eksempel 1
+:::::::::::::::{example-2} Eksempel 1
 Bestem verdien til det $5$-te partallet. 
 
 
-::::{solution}
+::::{solution-2}
 ---
-dropdown: 0
+open:
 ---
 Vi setter inn $n = 5$ i formelen for partallene $P_n = 2n$: 
 
@@ -63,7 +63,7 @@ En tallfølge $a_n$ er en følge av tall som følger et bestemt mønster. For ek
 
 Vi starter med å se på en bestemt tallfølge.
 
-:::::::::::::::{example} Eksempel 1
+:::::::::::::::{example-2} Eksempel 2
 Nedenfor vises noen figurer som følger et bestemt mønster.
 
 :::{figure} ./figurer/eksempel/eksempel_1/figur_kvadrattall.svg

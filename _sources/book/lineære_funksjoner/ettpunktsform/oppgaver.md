@@ -3,14 +3,8 @@
 
 
 :::::::::::::::{exercise} Oppgave 1
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem stigningstallet og punktet $(x_0, y_0)$ som ligger på grafen til $f$ når 
 
 $$
@@ -21,11 +15,10 @@ $$
 * Stigningstall: $2$
 * Punkt: $(1, 3)$
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem stigningstallet og punktet $(x_0, y_0)$ som ligger på grafen til $g$ når 
 
 $$
@@ -36,11 +29,10 @@ $$
 * Stigningstall: $-1$
 * Punkt: $(-2, -3)$
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem stigningstallet og punktet $(x_0, y_0)$ som ligger på grafen til $h$ når 
 
 $$
@@ -52,11 +44,10 @@ $$
 * Stigningstall: $3$
 * Punkt: $(-1, -2)$
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Bestem stigningstallet og punktet $(x_0, y_0)$ som ligger på grafen til $p$ når 
 
 $$
@@ -68,11 +59,7 @@ $$
 * Stigningstall: $-4$
 * Punkt: $(3, 2)$
 ::::
-
 :::::::::::::
-
-::::::::::::::
-
 
 
 :::::::::::::::
@@ -82,103 +69,105 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 2
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Grafen til en lineær funksjon $f$ og et punkt $P$ er vist i figuren nedenfor.
+
+:::::::::::::{part} a
+:::{plot}
+width: 100%
+align: right
+fontsize: 28
+function: x + 1, f
+point: (1, 2)
+text: 1, 2, "$P$", bottom-right
+:::
+
+
+Grafen til en lineær funksjon $f$ og et punkt $P$ er vist i figuren til høyre.
 
 Bestem $f(x)$ på ettpunktsform med utgangspunkt i punktet $P$.
-
-:::{figure} ./figurer/oppgaver/oppgave_2/a.svg
----
-width: 80%
-class: no-click, adaptive-figure
----
-:::
 
 ::::{answer}
 $$
 f(x) = (x - 1) + 2
 $$
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
-Grafen til en lineær funksjon $g$ og et punkt $Q$ er vist i figuren nedenfor.
+
+:::::::::::::{part} b
+:::{plot}
+width: 100%
+align: right
+fontsize: 28
+function: -2 * (x + 2) + 3, g
+point: (-2, 3)
+text: -2, 3, "$Q$", bottom-left
+:::
+
+
+Grafen til en lineær funksjon $g$ og et punkt $Q$ er vist i figuren til høyre.
 
 Bestem $g(x)$ på ettpunktsform med utgangspunkt i punktet $Q$.
 
 
-:::{figure} ./figurer/oppgaver/oppgave_2/b.svg
----
-width: 80%
-class: no-click, adaptive-figure
----
-:::
-
-
-::::{answer}
+:::::{answer}
 $$
 g(x) = -2(x + 2) + 3
 $$
-::::
-
+:::::
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-Grafen til en lineær funksjon $h$ og et punkt $R$ er vist i figuren nedenfor.
-
-Bestem $h(x)$ på ettpunktsform med utgangspunkt i punktet $R$.
-
-
-:::{figure} ./figurer/oppgaver/oppgave_2/c.svg
----
-width: 80%
-class: no-click, adaptive-figure
----
+:::::::::::::{part} c
+:::{plot}
+width: 100%
+align: right
+fontsize: 28
+function: 2 * (x + 1) - 3, h
+point: (-1, -3)
+text: -1, -3, "$R$", top-left
 :::
 
 
-::::{answer}
+
+Grafen til en lineær funksjon $h$ og et punkt $R$ er vist i figuren til høyre.
+
+Bestem $h(x)$ på ettpunktsform med utgangspunkt i punktet $R$.
+
+:::::{answer-2}
 $$
 h(x) = 2(x + 1) - 3
 $$
-::::
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
-Grafen til en lineær funksjon $p$ og et punkt $S$ er vist i figuren nedenfor.
+:::::::::::::{part} d
+:::{plot}
+width: 100%
+align: right
+fontsize: 28
+function: -(x + 2) + 4, p
+point: (-2, 4)
+text: -2, 4, "$S$", top-right
+:::
+
+
+Grafen til en lineær funksjon $p$ og et punkt $S$ er vist i figuren til høyre.
 
 Bestem $p(x)$ på ettpunktsform med utgangspunkt i punktet $S$.
 
 
-:::{figure} ./figurer/oppgaver/oppgave_2/d.svg
----
-width: 80%
-class: no-click, adaptive-figure
----
-:::
-
-
-::::{answer}
+:::::{answer-2}
 $$
 p(x) = -(x + 2) + 4
 $$
-::::
+:::::
+
 
 :::::::::::::
 
-::::::::::::::
 
 :::::::::::::::
 
@@ -187,14 +176,9 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 3
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 En lineær funksjon $f$ har stigningstall $2$ og går gjennom punktet $(1, 3)$.
 
 Bestem $f(x)$ på ettpunktsform.
@@ -204,12 +188,10 @@ $$
 f(x) = 2(x - 1) + 3
 $$
 ::::
-
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En lineær funksjon $g$ har stigningstall $-1$ og går gjennom punktet $(2, -1)$.
 
 Bestem $g(x)$ på ettpunktsform.
@@ -219,12 +201,10 @@ $$
 g(x) = -1(x - 2) - 1
 $$
 ::::
-
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 En lineær funksjon $h$ har stigningstall $3$ og går gjennom punktet $(-1, 5)$.
 
 Bestem $h(x)$ på ettpunktsform.
@@ -235,12 +215,10 @@ $$
 h(x) = 3(x + 1) + 5
 $$
 ::::
-
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 En lineær funksjon $p$ har stigningstall $2$ og går gjennom punktet $(3, -1)$.
 
 Bestem $p(x)$ på ettpunktsform.
@@ -251,11 +229,7 @@ $$
 p(x) = 2(x - 3) - 1
 $$
 ::::
-
-
 :::::::::::::
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -273,11 +247,7 @@ $$
 f(x) = 2(x - 1) + 3
 $$
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem hvilket stigningstall og hvilket punkt eleven har brukt for å sette opp $f(x)$. 
 
 ::::{answer}
@@ -288,7 +258,7 @@ Bestem hvilket stigningstall og hvilket punkt eleven har brukt for å sette opp 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Skriv om $f(x)$ til standardform og bestem hvor grafen til $f$ skjærer $y$-aksen.
 
 ::::{answer}
@@ -298,11 +268,10 @@ $$
 
 Grafen skjærer $y$-aksen i $(0, 1)$.
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Skriv om $f(x)$ til nullpunktsform og bestem nullpunktet til $f$.
 
 ::::{answer}
@@ -312,25 +281,25 @@ $$
 
 Grafen til $f$ har nullpunkt i $x = -\dfrac{1}{2}$.
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
-Lag en skisse av grafen til $f$. 
+:::::::::::::{part} d
+Tegn grafen til $f$. 
 
-::::{answer}
-:::{figure} ./figurer/oppgaver/oppgave_4/d.svg
----
-width: 80%
-class: no-click, adaptive-figure
----
+
+
+:::::{answer-2}
+:::{plot}
+width: 50%
+function: 2 * (x - 1) + 3, f 
 :::
-::::
+
+:::::
 
 :::::::::::::
 
-::::::::::::::
+
 
 :::::::::::::::
 
@@ -346,7 +315,7 @@ level: 3
 I figuren nedenfor vises grafene til to lineære funksjoner $f$ og $g$. Grafene er parallelle. Et område er fargelagt.
 
 :::{plot}
-width: 80%
+width: 60%
 function: -x + 1, f
 function: -(x - 2) + 1, g
 point: (2, 1)
@@ -364,11 +333,7 @@ ticks: off
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem $f(x)$. 
 
 
@@ -376,12 +341,10 @@ Bestem $f(x)$.
 $$
 f(x) = -x + 1
 $$
-::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem $g(x)$. 
 
 ::::{answer}
@@ -389,22 +352,17 @@ $$
 g(x) = -(x - 2) + 1
 $$
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem arealet av det fargelagte området i figuren.
 
 ::::{answer}
 Arealet er $4$.
 ::::
-
 :::::::::::::
 
-
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -414,14 +372,9 @@ Arealet er $4$.
 
 
 :::::::::::::::{exercise} Oppgave 6
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 Bestem $a$ og $b$ slik at likningen nedenfor blir en identitet
 
 $$
@@ -437,7 +390,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem $a$ og $b$ slik at likningen nedenfor blir en identitet
 
 $$
@@ -450,11 +403,10 @@ $$
 a = -3 \and b = -\dfrac{2}{3}
 $$
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem $a$ og $b$ slik at likningen nedenfor blir en identitet
 
 $$
@@ -467,11 +419,10 @@ $$
 a = 2 \and b = -1
 $$
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Bestem $a$ og $b$ slik at likningen nedenfor blir en identitet
 
 $$
@@ -484,10 +435,7 @@ $$
 a = -1 \and b = -9
 $$
 ::::
-
 :::::::::::::
-
-::::::::::::::
 
 
 

@@ -8,18 +8,13 @@ level: 1
 I figuren nedenfor vises grafen til $f(x) = x + 3$. 
 
 
-:::{figure} ./figurer/oppgaver/oppgave_1/figur.svg
----
-width: 80%
-class: no-click, adaptive-figure
----
+:::{plot}
+width: 60%
+function: x + 3, f 
 :::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bruk figuren til å løse likningen
 
 $$
@@ -32,11 +27,10 @@ $$
 x = -3
 $$
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bruk figuren til å løse likningen
 
 $$
@@ -49,11 +43,10 @@ $$
 x = 1
 $$
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bruk figuren til å løse likningen
 
 $$
@@ -65,11 +58,10 @@ $$
 x = -5
 $$
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Bruk figuren til å løse likningen
 
 $$
@@ -81,11 +73,7 @@ $$
 x = 2
 $$
 ::::
-
 :::::::::::::
-
-
-::::::::::::::
 
 :::::::::::::::
 
@@ -94,9 +82,7 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 2
----
-level: 1
----
+
 Løs likningene grafisk med graftegneren i Geogebra.
 
 
@@ -124,12 +110,10 @@ $$
 
 ::::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
 
+
+
+:::::::::::::{part} a
 :::{ggb-popup}
 ---
 layout: sidebar
@@ -141,15 +125,11 @@ $$
 2x - 5 = 1
 $$
 
-:::{clear}
-:::
 
-::::{answer}
+:::::{answer}
 $$
 x = 3
 $$
-::::
-
 
 ::::{solution}
 Vi skriver uttrykkene til venstre og høyre side i algebrafeltet og trykker på {ggb-icon}`mode_intersect` (Skjæring mellom to objekt) etterfulgt av å trykke på hver graf for å finne skjæringspunktet. Se figuren nedenfor.
@@ -168,12 +148,11 @@ x = 3
 $$
 ::::
 
-
+:::::
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
-
+:::::::::::::{part} b
 :::{ggb-popup}
 ---
 layout: sidebar
@@ -184,15 +163,12 @@ $$
 x + 4 = -2x + 1
 $$
 
-:::{clear}
-:::
 
-::::{answer}
+
+:::::{answer}
 $$
 x = -1
 $$
-::::
-
 
 ::::{solution}
 Vi skriver inn uttrykkene på venstre og høyre side av likningen i algebrafeltet og trykker på {ggb-icon}`mode_intersect` (Skjæring mellom to objekt) etterfulgt av å trykke på hver graf for å finne skjæringspunktene. Se figuren nedenfor.
@@ -212,11 +188,12 @@ $$
 
 ::::
 
-
+:::::
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+
+:::::::::::::{part} c
 :::{ggb-popup}
 ---
 layout: sidebar
@@ -227,15 +204,10 @@ $$
 -x + 1 = 2x + 7
 $$
 
-:::{clear}
-:::
-
-::::{answer}
+:::::{answer}
 $$
 x = -2
 $$
-::::
-
 
 ::::{solution}
 Vi skriver inn uttrykkene på venstre og høyre side av likningen i algebrafeltet og trykker på {ggb-icon}`mode_intersect` (Skjæring mellom to objekt) etterfulgt av å trykke på hver graf for å finne skjæringspunktene. Se figuren nedenfor.
@@ -254,11 +226,13 @@ x = -2
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
 
+:::::::::::::{part} d
 :::{ggb-popup}
 ---
 layout: sidebar
@@ -270,16 +244,12 @@ $$
 x - 3 = -x + 5
 $$
 
-:::{clear}
-:::
 
 
-::::{answer}
+:::::{answer}
 $$
 x = 4
 $$
-::::
-
 
 ::::{solution}
 Vi skriver inn uttrykkene på venstre og høyre side av likningen i algebrafeltet og trykker på {ggb-icon}`mode_intersect` (Skjæring mellom to objekt) etterfulgt av å trykke på hver graf for å finne skjæringspunktene. Se figuren nedenfor.
@@ -298,26 +268,22 @@ x = 4
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
-::::::::::::::
 :::::::::::::::
 
 
 ---
 
 :::::::::::::::{exercise} Oppgave 3
----
-level: 1
----
+
 Løs likningene nedenfor algebraisk.
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 
 $$
 x - 2 = 0
@@ -331,8 +297,8 @@ $$
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
 
+:::::::::::::{part} b
 $$
 x - 2 = 4
 $$
@@ -343,10 +309,11 @@ x = 6
 $$
 ::::
 
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 
 $$
 -2x + 4 = 8
@@ -361,8 +328,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
-
+:::::::::::::{part} d
 
 $$
 -4x + 6 = 7x
@@ -375,7 +341,7 @@ $$
 ::::
 
 :::::::::::::
-::::::::::::::
+
 
 
 
@@ -385,20 +351,12 @@ $$
 ---
 
 :::::::::::::::{exercise} Oppgave 4
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-I programmet nedenfor løses en likning. 
 
-1. Bestem hvilken likning programmet løser.
-2. Hvilke verdier er det programmet prøver ut for $x$? 
-3. Bestem verdien programmet skriver ut og sjekk svaret ditt ved å kjøre programmet.
 
+:::::::::::::{part} a
+Programmet nedenfor løser en likning.
+
+Løs likningen og forutsi hva programmet skriver ut.
 
 :::{interactive-code}
 ---
@@ -410,23 +368,14 @@ for x in range(-10, 11):
 :::
 
 
-::::{answer}
-1. Programmet løser likningen $x + 5 = 0$.
-2. Programmet prøver ut verdiene $x \in \set{-10, -9, \ldots, 9, 10}$.
-3. Programmet skriver ut verdien $-5$. 
-
-::::
-
-
 :::::::::::::
 
-:::::::::::::{tab-item} b
 
-I programmet nedenfor løses en likning. 
 
-1. Bestem hvilken likning programmet løser.
-2. Bestem verdien programmet skriver ut og sjekk svaret ditt ved å kjøre programmet.
+:::::::::::::{part} b
+Programmet nedenfor løser en likning.
 
+Løs likningen og forutsi hva programmet skriver ut.
 
 :::{interactive-code}
 ---
@@ -438,16 +387,14 @@ for x in range(-10, 11):
 :::
 
 
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-I programmet nedenfor løses en likning. 
 
-1. Bestem hvilken likning programmet løser.
-2. Bestem verdien programmet skriver ut og sjekk svaret ditt ved å kjøre programmet.
+:::::::::::::{part} c
+Programmet nedenfor løser en likning.
 
+Løs likningen og forutsi hva programmet skriver ut.
 
 :::{interactive-code}
 ---
@@ -457,15 +404,16 @@ for x in range(-10, 11):
     if -x + 8 == 3*x:
         print(x)
 :::
+
 :::::::::::::
 
-:::::::::::::{tab-item} d
 
-I programmet nedenfor løses en likning. 
 
-1. Bestem hvilken likning programmet løser.
-2. Bestem verdien programmet skriver ut og sjekk svaret ditt ved å kjøre programmet.
+:::::::::::::{part} d
 
+Programmet nedenfor løser en likning.
+
+Løs likningen og forutsi hva programmet skriver ut.
 
 :::{interactive-code}
 ---
@@ -475,10 +423,7 @@ for x in range(-10, 11):
     if 2*x - 4 == 3*x + 1:
         print(x)
 :::
-
 :::::::::::::
-
-::::::::::::::
 
 :::::::::::::::
 
@@ -489,29 +434,19 @@ for x in range(-10, 11):
 ---
 level: 2
 ---
-Grafene til to lineære funksjoner $f$ og $g$ er vist i figuren nedenfor. Funksjonsuttrykkene er gitt ved 
-
-$$
-f(x) = x - 2 \quad \text{og} \quad g(x) = -3x - 6.
-$$
-
+Grafene til to lineære funksjoner $f$ og $g$ er vist i figuren nedenfor.
 
 :::{plot}
-width: 70%
+width: 60%
 function: x - 2, f
 function: -3*x - 6, g
 :::
 
 
+Bruk figuren til å løse likningene nedenfor.
 
-Løs likningene nedenfor ved hjelp av figuren der det er mulig. Hvis ikke må du bruke en annen metode.
 
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Løs likningen
 
 $$
@@ -523,10 +458,10 @@ $$
 x = 2
 $$
 ::::
-
 :::::::::::::
 
-:::::::::::::{tab-item} b
+
+:::::::::::::{part} b
 Løs likningen
 
 $$
@@ -539,11 +474,10 @@ $$
 x = -3
 $$
 ::::
-
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Løs likningen
 
 $$
@@ -556,28 +490,7 @@ $$
 x = -1
 $$
 ::::
-
 :::::::::::::
-
-
-:::::::::::::{tab-item} d
-Løs likningen
-
-$$
-g(x) = -2
-$$
-
-::::{answer}
-$$
-x = -\dfrac{4}{3}
-$$
-::::
-
-:::::::::::::
-
-::::::::::::::
-
-
 
 
 
@@ -588,20 +501,16 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 6
----
-level: 2
----
+
 En lineær funksjon $f$ er gitt ved 
 
 $$
 f(x) = \dfrac{1}{2}x + 3. 
 $$
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 Bestem i hvilket punkt grafen til $f$ skjærer $x$-aksen.
 
 ::::{answer}
@@ -609,10 +518,10 @@ $$
 (-6, 0)
 $$
 ::::
-
 :::::::::::::
 
-:::::::::::::{tab-item} b
+
+:::::::::::::{part} b
 Bestem i hvilket punkt grafen til $f$ skjærer linja $y = 2$. 
 
 ::::{answer}
@@ -620,10 +529,10 @@ $$
 (-2, 2)
 $$
 ::::
-
 :::::::::::::
 
-:::::::::::::{tab-item} c
+
+:::::::::::::{part} c
 En annen lineær funksjon $g$ er gitt ved 
 
 $$
@@ -637,10 +546,8 @@ $$
 (2, 2)
 $$
 ::::
-
-
 :::::::::::::
-::::::::::::::
+
 
 :::::::::::::::
 
@@ -649,9 +556,7 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 7
----
-level: 2
----
+
 Bruk CAS til å løse likningene nedenfor.
 
 
@@ -667,12 +572,8 @@ class: no-click, adaptive-figure
 ::::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
 
+:::::::::::::{part} a
 :::{cas-popup}
 ---
 layout: sidebar
@@ -683,10 +584,18 @@ $$
 4x + 2 = 0
 $$
 
+
+:::::{answer-2}
+$$
+x = -\dfrac{1}{2}
+$$
+:::::
+
+
 :::::::::::::
 
-:::::::::::::{tab-item} b
 
+:::::::::::::{part} b
 :::{cas-popup}
 ---
 layout: sidebar
@@ -698,10 +607,19 @@ $$
 2x - 3 = 5
 $$
 
+
+:::::{answer-2}
+$$
+x = 4
+$$
+:::::
+
+
 :::::::::::::
 
-:::::::::::::{tab-item} c
 
+
+:::::::::::::{part} c
 :::{cas-popup}
 ---
 layout: sidebar
@@ -712,10 +630,19 @@ layout: sidebar
 $$
 3x + 4 = 2x + 7
 $$
+
+
+:::::{answer-2}
+$$
+x = 3
+$$
+:::::
+
+
 :::::::::::::
 
-:::::::::::::{tab-item} d
 
+:::::::::::::{part} d
 :::{cas-popup}
 ---
 layout: sidebar
@@ -728,12 +655,17 @@ $$
 $$
 
 
-> For å lage en brøk i CAS, skriver du bare telleren etterfulgt av skråstrek `/`. Deretter kan du skrive nevneren. 
+> For å lage en brøk i CAS, trykker du på skråstrek `/`.
+
+
+:::::{answer-2}
+$$
+x = -10
+$$
+:::::
+
 
 :::::::::::::
-
-
-::::::::::::::
 
 
 
@@ -743,14 +675,10 @@ $$
 ---
 
 :::::::::::::::{exercise} Oppgave 8
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+
+:::::::::::::{part} a
 Fyll ut programmet nedenfor slik at det løser likningen
 
 $$
@@ -758,6 +686,8 @@ $$
 $$
 
 :::{interactive-code}
+# TODO: Bytt ut ????
+
 for x in range(????):
     if ????:
         print(x)
@@ -765,10 +695,26 @@ for x in range(????):
 
 :::
 
+
+
+:::::{answer-2}
+:::{code-block} python
+---
+linenos:
+---
+for x in range(-100, 101):
+    if -4 * x + 3 == -2 * x + 5:
+        print(x)
+:::
+
+som gir at $x = -1$.
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Fyll ut programmet nedenfor slik at det løser likningen
 
 $$
@@ -777,6 +723,8 @@ $$
 
 
 :::{interactive-code}
+# TODO: Bytt ut ????
+
 for x in range(????):
     if ????:
         print(x)
@@ -784,10 +732,26 @@ for x in range(????):
 
 :::
 
+
+
+:::::{answer-2}
+:::{code-block} python
+---
+linenos:
+---
+for x in range(-100, 101):
+    if 3*x - 7 == 2*x + 5:
+        print(x)
+:::
+
+som gir $x = 12$.
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Fyll ut programmet nedenfor slik at det løser likningen
 
 $$
@@ -795,16 +759,32 @@ $$
 $$
 
 :::{interactive-code}
+# TODO: Bytt ut ????
 for x in range(????):
     if ????:
         print(x)
 
 
 :::
+
+
+:::::{answer-2}
+:::{code-block} python
+---
+linenos:
+---
+for x in range(-100, 101):
+    if 2*x + 4 == 10:
+        print(x)
+:::
+
+som gir $x = 3$.
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Fyll ut programmet nedenfor slik at det løser likningen
 
 $$
@@ -812,6 +792,8 @@ $$
 $$
 
 :::{interactive-code}
+# TODO: Bytt ut ????
+
 for x in range(????):
     if ????:
         print(x)
@@ -819,9 +801,25 @@ for x in range(????):
 
 :::
 
+
+
+:::::{answer-2}
+:::{code-block} python
+---
+linenos:
+---
+for x in range(-100, 101):
+    if 3*x + 2 == 2*x + 7:
+        print(x)
+:::
+
+som gir $x = 5$.
+
+:::::
+
+
 :::::::::::::
 
-::::::::::::::
 :::::::::::::::
 
 
@@ -830,9 +828,14 @@ for x in range(????):
 
 
 :::::::::::::::{exercise} Oppgave 9
+
+:::{cas-popup}
 ---
-level: 2
+layout: sidebar
 ---
+:::
+
+
 To lineære funksjoner er gitt ved 
 
 $$
@@ -840,42 +843,58 @@ f(x) = 3x - 2 \quad \text{og} \quad g(x) = -2x + 4.
 $$
 
 
-:::{cas-popup}
-:::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bruk CAS til å løse likningen
 
 $$
 f(x) = 0
 $$
 
+:::::{answer-2}
+$$
+x = \dfrac{2}{3}
+$$
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bruk CAS til å løse likningen 
 
 $$
 f(x) = 2
 $$
 
+
+:::::{answer-2}
+$$
+x = \dfrac{4}{3}
+$$
+:::::
+
+
 :::::::::::::
 
-:::::::::::::{tab-item} c
+
+:::::::::::::{part} c
 Bruk CAS til å løse likningen
 
 $$
 f(x) = g(x)
 $$
 
+
+:::::{answer-2}
+$$
+x = \dfrac{6}{5}
+$$
+:::::
 :::::::::::::
-::::::::::::::
+
+
 
 
 :::::::::::::::

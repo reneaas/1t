@@ -1,19 +1,13 @@
 # Polynomlikninger
 
-:::{admonition} Læringsmål
----
-class: tip
----
+:::{goals} Læringsmål
 * Kunne bestemme nullpunktene til et tredjegradspolynom.
 * Kunne løse tredjegradslikninger.
 :::
 
-Først må vi utvide begrepsapparatet vårt litt: 
+Vanligvis snakker vi om nullpunkter, men et annet begrep som er mye brukt når det kommer til polynomer er **røtter**.
 
-::::{admonition} Definisjon: Røtter
----
-class: summary
----
+::::{summary} Definisjon: Røtter
 Et nullpunkt til en polynomfunksjon kalles for en **rot** til polynomet. Samlingen av alle nullpunktene til et polynom kalles for **røttene** til polynomet.
 ::::
 
@@ -27,10 +21,10 @@ For å bestemme nullpunktene, eller røttene, til et tredjegradspolynom, får vi
 
 ## Tredjegradslikninger
 
-:::::::::::::::{admonition} Setning: Heltallsrøtter for polynomer
----
-class: summary
----
+Setningen nedenfor forteller oss hvor vi skal starte når vi skal lete etter røttene til et tredjegradspolynom.
+
+:::::::::::::::{summary} Setning: Heltallsrøtter for polynomer
+
 Et tredjegradspolynom 
 
 $$
@@ -44,10 +38,7 @@ Setningen over lar oss systematisk finne alle *mulige* heltallsrøtter for et tr
 kan vi garantere at det må være i listen over alle tall som *kan* være en faktor i konstantleddet $d$.
 
 
-:::::::::::::::{admonition} Eksempel 1
----
-class: example
----
+:::::::::::::::{example} Eksempel 1
 Et tredjegradspolynom $f$ er gitt ved 
 
 $$
@@ -56,11 +47,11 @@ $$
 
 Bestem nullpunktene til $f$. 
 
-::::::::::::::{admonition} Løsning
+::::{solution}
 ---
-class: solution
+open:
 ---
-Vi starter med å observere at $d = -8$, så *hvis* $f$ har heltallsrøtter, så vil de være en faktor i $(-8)$. Dette gir mulighetene:
+Vi starter med å observere at $d = -8$, så *hvis* $f(x)$ har heltallsrøtter, så vil de være en faktor i $(-8)$. Dette gir mulighetene:
 
 $$
 x = \pm 1, \pm 2, \pm 4, \pm 8
@@ -68,153 +59,181 @@ $$
 
 fordi $(-8)$ er delelig med alle disse tallene. 
 
+Vi prøver oss fram med et Horner-skjema. Vi starter med $x = 1$:
 
 
-Vi prøver ut noen av verdiene i lista. Vi kan enten 
-1. Regne ut funksjonsverdier og utføre polynomdivisjon når vi finner en rot.
-2. Bruke et Horner-skjema til å regne ut funksjonsverdier og utføre polynomdivisjon samtidig.
-
-````{tab} Vanlig polynomdivisjon
-Vi starter med å lete etter en rot ved å regne ut $f(x)$:
-
-\begin{align*}
-    f(1) &= 1^3 + 2\cdot 1^2 - 4\cdot 1 - 8 = -9, \\
-    \\
-    f(-1) &= (-1)^3 + 2\cdot (-1)^2 - 4\cdot (-1) - 8 = -3, \\
-    \\
-    f(2) &= 2^3 + 2\cdot 2^2 - 4\cdot 2 - 8 = 0.
-\end{align*}
-
-Så vi finner at $f(2) = 0$, som betyr at $(x - 2)$ er en faktor i $f(x)$. Dermed har vi
-
-:::{figure} ./koder/eksempler/eksempel_1/eksempel_1_polydiv.svg
+:::{horner}
 ---
-width: 90%
-class: no-click, adaptive-figure
+p: x^3 + 2x^2 - 4x - 8
+x: 1
+width: 50% 
 ---
 :::
 
-````
+Resten ble lik $-9$, så $x = 1$ er ikke en rot. Vi prøver oss fram med $x = -1$:
 
 
-````{tab} Horner-skjema
-
-Bruker vi et Horner-skjema, får vi utført polynomdivisjon samtidig som vi regner ut funksjonsverdiene: 
-
-:::{figure} ./koder/eksempler/eksempel_1/eksempel_1_syntetisk_1.svg
+:::{horner}
 ---
-width: 50%
-class: no-click, adaptive-figure
+p: x^3 + 2x^2 - 4x - 8
+x: -1
+width: 50% 
 ---
-Horner-skjema for $x = 1$. Her finner vi at $f(1) = -9$. 
 :::
 
-Vi prøver videre.
+Resten ble lik $-3$, så heller ikke $x = -1$ er en rot. Vi prøver oss fram med $x = 2$:
 
-:::{figure} ./koder/eksempler/eksempel_1/eksempel_1_syntetisk_-1.svg
+:::{horner}
 ---
-width: 50%
-class: no-click, adaptive-figure
+p: x^3 + 2x^2 - 4x - 8
+x: 2
+width: 50% 
 ---
-Horner-skjema for $x = -1$. Her finner vi at $f(-1) = -3$.
 :::
 
-Vi prøver neste verdi:
-
-
-:::{figure} ./koder/eksempler/eksempel_1/eksempel_1_syntetisk_2.svg
----
-width: 50%
-class: no-click, adaptive-figure
----
-Horner-skjema for $x = 2$. Her finner vi at $f(2) = 0$. 
-:::
-
-
-
-Dermed vet vi at $x = 2$ er en rot for $f$. Vi kan også lese av koeffisientene til kvotienten i polynomdivisjon som
+Her ble resten lik $0$ som betyr at $x = 2$ er en rot i polynomet. Fra Horner-skjemaet kan vi lese av at kvotienten i polynomdivisjonen er $(x^2 + 4x + 4)$. Da følger det at
 
 $$
-f(x) : (x - 2) = x^2 + 4x + 4.
+x^3 + 2x^2 - 4x - 8 = (x - 2)(x^2 + 4x + 4).
 $$
 
-````
-
-
-Vi kan derfor skrive $f(x)$ som
+Vi kan faktorisere andregradspolynomet videre med 1.kvadratsetning:
 
 $$
-f(x) = x^3 + 2x^2 - 4x - 8 = (x - 2)(x^2 + 4x + 4).
+x^2 + 4x + 4 = (x + 2)^2.
 $$
 
-Videre kan vi faktorisere andregradspolynomet med 1.kvadratsetning:
-
-$$
-(x^2 + 4x + 4) = (x + 2)^2,
-$$
-
-som betyr at 
+Altså er
 
 $$
 f(x) = (x - 2)(x + 2)^2.
 $$
 
-Altså er røttene til $f$
+Altså er nullpunktene til $f$ gitt ved
 
 $$
-x = -2 \quad \lor \quad x = 2.
+x = -2 \or x = 2
 $$
 
-Vi kan også observere her at **begge** røttene var i listen over *mulige kandidater* for heltallsrøtter! 
-::::::::::::::
+
+Vi kan også merke oss at begge disse nullpunktene er i lista over mulige heltallsrøtter som vi laget i starten, akkurat som vi forventet.
+
+
+::::
+
+
 :::::::::::::::
 
 ---
 
-:::::::::::::::{admonition} Underveisoppgave 1
----
-class: check
----
-Et tredjegradspolynom $f$ er gitt ved
+:::::::::::::::{exercise} Underveisoppgave 1
+
+Et tredjegradspolynom $f(x)$ er gitt ved
 
 $$
 f(x) = x^3 + 6x^2 + 3x - 10.
 $$
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Skriv ned alle mulige heltallsrøtter for $f$.
 
-Bestem en av røttene til $f$ ved å prøve ut verdier fra lista.
+:::::::::::::{part} a
+Skriv ned alle mulige heltallsrøtter for $f(x)$.
 
-::::::::::::{admonition} Fasit
----
-class: dropdown, answer
----
+
+:::::{answer}
 $$
 x = \pm 1, \pm 2, \pm 5, \pm 10
 $$
-::::::::::::
+
+::::{solution}
+Konstantleddet til polynomet er $-10$. Alle mulige heltallsrøtter vil være de heltallene som deler $-10$. Dette er
+
+$$
+x = \pm 1, \pm 2, \pm 5, \pm 10
+$$
+::::
+
+:::::
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
+Finn én av røttene til $f(x)$.
+
+
+:::::{answer}
+
+$$
+x = 1
+$$
+
+::::{solution}
+Vi bruker Horner-skjema og starter med $x = 1$:
+
+:::{horner}
+---
+p: x^3 + 6x^2 + 3x - 10
+x: 1
+width: 50%
+---
+:::
+
+Resten ble lik $0$ som betyr at $x = 1$ er en rot i polynomet.
+
+::::
+:::::
+
+
+
+
+:::::::::::::
+
+:::::::::::::{part} c
 Bestem alle røttene til $f$. 
 
-::::::::::::{admonition} Fasit
----
-class: dropdown, answer
----
+:::::{answer}
 $$
-x = -5 \quad \lor \quad x = -2 \quad \lor \quad x = 1
+x = -5 \or x = -2 \or x = 1
 $$
-::::::::::::
-:::::::::::::
 
-::::::::::::::
+::::{solution}
+Vi regner ut dette Horner-skjema i oppgave **b**: 
+
+:::{horner}
+---
+p: x^3 + 6x^2 + 3x - 10
+x: 1
+width: 50%
+---
+:::
+
+Kvotienten i divisjonen er $(x^2 + 7x + 10)$ som betyr at 
+
+$$
+f(x) = (x - 1)(x^2 + 7x + 10).
+$$
+
+Vi bruker $abc$-formelen for å finne røttene til andregradspolynomet:
+
+$$
+x = \dfrac{-7 \pm \sqrt{7^2 - 4 \cdot 1 \cdot 10}}{2 \cdot 1} = \dfrac{-7 \pm \sqrt{49 - 40}}{2} = \dfrac{-7 \pm \sqrt{9}}{2} = \dfrac{-7 \pm 3}{2}
+$$
+
+som gir
+
+$$
+x = -2 \or x = -5
+$$
+
+Altså er røttene til $f(x)$ gitt ved
+
+$$
+x = -5 \or x = -2 \or x = 1
+$$
+
+::::
+
+:::::
+:::::::::::::
 
 :::::::::::::::
 
@@ -234,7 +253,13 @@ $$
 f(x) = ax^3 + bx^2 + cx + d
 $$
 
-så vil alle rasjonale røtter være på formen $x = \dfrac{p}{q}$ der $p$ er en faktor i konstantleddet $d$ og $q$ er en faktor i den ledende koeffisienten $a$.
+så vil alle rasjonale røtter være på formen 
+
+$$
+x = \dfrac{p}{q}
+$$
+
+der $p$ er en faktor i konstantleddet $d$ og $q$ er en faktor i den ledende koeffisienten $a$.
 
 :::::::::::::::
 
@@ -253,7 +278,7 @@ Bestem i hvilke punkter grafen til $f$ skjærer $x$-aksen.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Først lister vi opp alle mulige faktorer $p$ i konstantleddet $d = 5$. Dette vil være
 

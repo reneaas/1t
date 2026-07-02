@@ -1,34 +1,28 @@
 # Oppgavesamling: Rasjonale funksjoner
 
 
-:::::::::::::::{admonition} Oppgave 1
----
-class: problem-level-1
----
-I {numref}`fig-rasjonale-funksjoner-oppgavesamling-oppgave-1` vises grafen til en rasjonal funksjon $f$. En horisontal og en vertikal asymptote for $f$ er tegnet inn.
+:::::::::::::::{exercise} Oppgave 1
 
-:::{figure} ./figurer/oppgave_1/graf.svg
----
-name: fig-rasjonale-funksjoner-oppgavesamling-oppgave-1
-width: 100%
-class: no-click, adaptive-figure
----
-viser grafen til en rasjonal funksjon $f$. En horisontal og en vertikal asymptote for $f$ er tegnet inn.
+:::{plot}
+width: 350px
+align: right
+fontsize: 24
+function: 2 * (x - 3) / (x + 1), f
+vline: -1, dashed
+hline: 2, dashed
+ymax: 10
+ymin: -10
+ystep: 2
 :::
 
+Grafen til en rasjonal funksjon $f$ er vist i figuren til høyre.
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem et mulig uttrykk for $f(x)$. 
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 f(x) = \dfrac{-2x + 6}{x + 1}
 $$  
@@ -37,13 +31,10 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Løs ulikheten $f(x) < 0$. 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 x \in \mathbb{R} \setminus [-1, 3]
 $$
@@ -52,49 +43,36 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Løs ulikheten $f(x) \geq 2$. 
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
-x \in \langle -1, 1]
+x \in \langle \gets, -1 \rangle
 $$
 ::::
 
 :::::::::::::
 
-::::::::::::::
 
 :::::::::::::::
 
 
 ---
 
-:::::::::::::::{admonition} Oppgave 2
----
-class: problem-level-1
----
+:::::::::::::::{exercise} Oppgave 2
+
 En rasjonal funksjon $f$ er gitt ved 
 
 $$
 f(x) = \dfrac{-x + 2}{x - 1}
 $$
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Løs likningen $f(x) = 0$. 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 x = 2. 
 $$
@@ -102,13 +80,10 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
-Avgjør om $f$ har en vertikal asymptote, og bestem likningen til asymptoten hvis den finnes.
+:::::::::::::{part} b
+Bestem eventuelle vertikale asymptoter til grafen til $f$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 x = 1. 
 $$
@@ -117,13 +92,11 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-Avgjør om $f$ har en horisontal asymptote og bestem likningen til asymptoten hvis den finnes.
+:::::::::::::{part} c
+Bestem eventuelle horisontale eller skrå asymptoter til grafen til $f$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
+--
 $$
 y = -1. 
 $$
@@ -131,140 +104,50 @@ $$
 
 :::::::::::::
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Lag en skisse av grafen til $f$. 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
-:::{figure} ./figurer/oppgave_2/d.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
+::::{answer}
+
+:::{plot}
+width: 60%
+function: (-x + 2) / (x - 1), f
+ticks: off
+vline: 1, dashed
+text: 1, -4, "$x = 1$", center-right
+hline: -1, dashed
+text: 4, -1, "$y = -1$", bottom-center
+point: (2, 0)
+text: 2, 0, "$(2, 0)$", top-right
 :::
+
 ::::
 
 :::::::::::::
-
-::::::::::::::
 
 :::::::::::::::
 
----
-
-:::::::::::::::{admonition} Oppgave 3
----
-class: problem-level-1
----
-
-I {numref}`fig-rasjonale-funksjoner-oppgavesamling-oppgave-3` vises grafen til en rasjonal funksjon $f$. En horisontal og en vertikal asymptote for $f$ er tegnet inn.
-
-:::{figure} ./figurer/oppgave_3/graf.svg
----
-name: fig-rasjonale-funksjoner-oppgavesamling-oppgave-3
-width: 100%
-class: no-click, adaptive-figure
----
-viser grafen til en rasjonal funksjon $f$. En horisontal og en vertikal asymptote for $f$ er tegnet inn.
-:::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Bestem et mulig uttrykk for $f(x)$. 
-
-
-::::{admonition} Fasit
----
-class: answer, dropdown
----
-$$
-f(x) = \dfrac{3x + 3}{x - 2}
-$$
-::::
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
-Bestem definisjonsmengden til $f$. 
-
-
-::::{admonition} Fasit
----
-class: answer, dropdown
----
-$$
-D_f = \mathbb{R} \setminus \{2\}
-$$
-::::
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} c
-Løs $f(x) > 0$.
-
-
-::::{admonition} Fasit
----
-class: answer, dropdown
----
-$$
-x \in \mathbb{R} \setminus [-1, 2].
-$$
-::::
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} d
-Løs $f(x) \leq 2$.
-
-::::{admonition} Fasit
----
-class: answer, dropdown
----
-$$
-x \in [-7, 2\rangle .
-$$
-::::
-
-:::::::::::::
-
-::::::::::::::
-
-:::::::::::::::
 
 ---
 
-:::::::::::::::{admonition} Oppgave 4
----
-class: problem-level-1
----
+
+
+
+:::::::::::::::{exercise} Oppgave 4
+
 En rasjonal funksjon $f$ er gitt ved 
 
 $$
 f(x) = \dfrac{2x - 1}{3x + 4}
 $$
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Avgjør om $f$ har nullpunkter og bestem nullpunktene hvis de finnes.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 x = \dfrac{1}{2}
 $$
@@ -272,14 +155,11 @@ $$
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Avgjør om $f$ har vertikale asymptoter og bestem likningene til asymptotene hvis de finnes.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 x = -\dfrac{4}{3}
 $$
@@ -287,14 +167,11 @@ $$
 
 :::::::::::::
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Avgjør om $f$ har horisontale asymptoter og bestem likningene til asymptotene hvis de finnes.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 y = \dfrac{2}{3}
 $$
@@ -302,14 +179,11 @@ $$
 
 :::::::::::::
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Lag en skisse av grafen til $f$. 
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 :::{figure} ./figurer/oppgave_4/d.svg
 ---
 width: 100%
@@ -321,17 +195,12 @@ class: no-click, adaptive-figure
 :::::::::::::
 
 
-::::::::::::::
-
-
 :::::::::::::::
 
 ---
 
-:::::::::::::::{admonition} Oppgave 5
----
-class: problem-level-2
----
+:::::::::::::::{exercise} Oppgave 5
+
 To rasjonale funksjoner $f$ og $g$ er gitt ved
 
 $$
@@ -397,45 +266,32 @@ vline: -3, dashed, red
 ::::
 
 
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Avgjør hvilken figur som viser grafen til $f$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 Graf **A**. 
 ::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Avgjør hvilken figur som viser grafen til $g$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 Graf **C**. 
 ::::
 
 :::::::::::::
-::::::::::::::
+
 
 :::::::::::::::
 
 ---
 
-:::::::::::::::{admonition} Oppgave 6
----
-class: problem-level-2
----
+:::::::::::::::{exercise} Oppgave 6
+
 Tre rasjonale funksjoner $f$, $g$ og $h$ er gitt ved
 
 $$
@@ -526,10 +382,7 @@ text: 5, 8, "F", center-center, bbox
 
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 * Graf **F** viser $f$.
 * Graf **A** viser $g$.
 * Graf **C** viser $h$.
@@ -542,28 +395,20 @@ class: answer, dropdown
 
 ---
 
-:::::::::::::::{admonition} Oppgave 7
----
-class: problem-level-2
----
+:::::::::::::::{exercise} Oppgave 7
+
 En rasjonal funksjon $f$ er gitt ved 
 
 $$
 f(x) = \dfrac{x^2 - 4}{(x + 2)(x - 4)} 
 $$
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem nullpunktene til $f$, dersom de finnes.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 x = 2.
 $$
@@ -572,14 +417,11 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem likningene til de vertikale asymptotene til $f$, dersom de finnes.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 x = 4.
 $$
@@ -588,13 +430,10 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem likningen til $f$ sin skrå eller horisontale asymptote, dersom den finnes.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 y = 1.
 $$
@@ -603,13 +442,10 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Løs ulikheten $f(x) > 0$
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 x \in \langle \gets, 2 \rangle \cup \langle 4, \to \rangle \setminus \{-2\}
 $$
@@ -618,14 +454,11 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} e
+:::::::::::::{part} e
 Lag en skisse av grafen til $f$.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 :::{figure} ./figurer/oppgave_7/e.svg
 ---
 width: 100%
@@ -636,35 +469,24 @@ class: no-click, adaptive-figure
 
 :::::::::::::
 
-::::::::::::::
-
 
 :::::::::::::::
 
 ---
 
-:::::::::::::::{admonition} Oppgave 8
----
-class: problem-level-2
----
+:::::::::::::::{exercise} Oppgave 8
 En rasjonal funksjon $g$ er gitt ved 
 
 $$
 g(x) = \dfrac{x^2 + 6x + 9}{x - 2}
 $$
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem nullpunktene til $g$, dersom de finnes.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 x = -3. 
 $$
@@ -672,13 +494,10 @@ $$
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem likningene til $g$ sine vertikale asymptoter, dersom de finnes.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 x = 2. 
 $$
@@ -687,14 +506,11 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem likningen til en eventuell skrå eller horisontal asymptote til $g$.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 y = x + 8. 
 $$
@@ -703,13 +519,10 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Løs ulikheten $g(x) < 0$. 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 x \in \langle \gets, 2 \rangle \setminus \{-3\}
 $$
@@ -718,14 +531,11 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} e
+:::::::::::::{part} e
 Lag en skisse av grafen til $g$. 
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 :::{figure} ./figurer/oppgave_8/e.svg
 ---
 width: 100%
@@ -736,7 +546,6 @@ class: no-click, adaptive-figure
 
 :::::::::::::
 
-::::::::::::::
 
 :::::::::::::::
 
@@ -744,27 +553,19 @@ class: no-click, adaptive-figure
 ---
 
 
-:::::::::::::::{admonition} Oppgave 9
----
-class: problem-level-2
----
+:::::::::::::::{exercise} Oppgave 9
+
 En rasjonal funksjon $f$ er gitt ved 
 
 $$
 f(x) = \dfrac{x^3 - 4x}{(x + 2)(x - 1)}
 $$
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem nullpunktene til $f$, dersom de finnes.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 x = 0 \or x = 2.
 $$
@@ -773,14 +574,11 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem likningene til $f$ sine vertikale asymptoter, dersom de finnes.
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 x = 1.
 $$
@@ -790,13 +588,10 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem likningen til en eventuell skrå eller horisontal asymptote til $f$.
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 y = x - 1.
 $$
@@ -805,14 +600,11 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Løs ulikheten $f(x) \geq 0$. 
 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 $$
 x \in [0, 1 \rangle \cup [2, \to \rangle
 $$
@@ -822,13 +614,10 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} e
+:::::::::::::{part} e
 Lag en skisse av grafen til $f$. 
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+::::{answer}
 :::{figure} ./figurer/oppgave_9/e.svg
 ---
 width: 100%
@@ -839,9 +628,6 @@ class: no-click, adaptive-figure
 
 :::::::::::::
 
-
-
-::::::::::::::
 
 
 :::::::::::::::

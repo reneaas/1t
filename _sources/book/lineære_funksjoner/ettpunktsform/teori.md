@@ -1,9 +1,6 @@
 # Ettpunktsform
 
-:::{admonition} Læringsmål
----
-class: tip
----
+:::{goals} Læringsmål
 * Kunne representere en lineær funksjon på ettpunktsform og beskrive sammenhengen med den grafiske representasjonen.
 * Kunne bytte fra en representasjon til en annen.
 :::
@@ -13,7 +10,7 @@ Hittil har vi sett på to måter å representere en lineær funksjon på, nemlig
 Her skal vi se på en tredje måte å representere en lineær funksjon som vi skal kalle for **ettpunktsform**. Denne måten å uttrykke en lineær funksjon forteller oss stigningen til grafen og ett punkt som grafen går gjennom. Vi kan se på denne måten å uttrykke funksjonen på som at vi *bygger opp* linja ved å starte fra ett punkt og så forteller stigningstallet oss hvilken retning vi skal tegne grafen i.
 
 
-:::::::::::::::{theory} Ettpunktsform
+:::::::::::::::{summary-2} Ettpunktsform
 En lineær funksjon $f$ kan skrives på ettpunktsform som følger: 
 
 :::{figure} ./figurer/teori/algebraisk_representasjon/ettpunktsform.svg
@@ -48,62 +45,39 @@ ticks: off
 ---
 
 
-:::::::::::::::{explore} Utforsk 1
-Nedenfor vises grafen til en lineær funksjon $f$ i et interaktivt vindu der $f(x)$ er skrevet på ettpunktsform 
+:::::::::::::::{explore-2} Utforsk 1
+I den interaktive figuren nedenfor vises grafen til en lineær funksjon skrevet på formen
 
 $$
-f(x) = a\cdot (x - x_0) + y_0
+f(x) = a(x - x_0) + y_0
 $$
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Undersøk hva som skjer med grafen til $f$ når du justerer verdien til $x_0$. 
+Bruk figuren til å undersøke hvordan $a$, $x_0$ og $y_0$ påvirker grafen til $f$.
 
-Gi en beskrivelse av hva som skjer med grafen.
+:::{interactive-graph} 
+interactive-var: a, -5, 5, 11
+interactive-var: x_0, -5, 5, 11
+interactive-var: y_0, -5, 5, 11
+interactive-var-start: a=2, x_0=3, y_0=1
 
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
-Undersøk hva som skjer med grafen til $f$ når du justerer verdien til $y_0$. 
-
-Gi en beskrivelse av hva som skjer med grafen.
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} c
-Undersøk hva som skjer med grafen til $f$ når du justerer verdien til $a$.
-
-Er det noen forskjell fra standardform og nullpunktsform? Kan du fortsatt lese av verdien til $a$ på samme måte som før?
-
-:::::::::::::
-
-::::::::::::::
-
-
-:::{ggb} 720 600
----
-material_id: u8hkthry
----
+function: a*(x - x_0) + y_0, f
+point: (x_0, y_0)
+text: x_0, y_0, "$({x_0}, {y_0})$", bottom-right
+line-segment: (x_0, y_0), (x_0, y_0 + a), dashed, red
+line-segment: (x_0, y_0 + a), (x_0 + 1, y_0 + a), dashed, gray
+text: x_0 + 0.5, y_0 + a, "$1$",top-center
+text: x_0 - 0.2, 0.5 * (y_0 + y_0 + a), "${a}$", center-left
 :::
-
-
 :::::::::::::::
 
 
 
-
-
 ---
 
 
 
 
-:::::::::::::::{underveisoppgave} Underveisoppgave 1
+:::::::::::::::{exercise-2} Underveisoppgave 1
 En lineær funksjon $f$ er gitt ved 
 
 $$
@@ -124,15 +98,17 @@ cols: 2
 
 
 
-::::{answer}
+:::::{answer-2}
 Graf B
-::::
 
-::::{solution}
+
+::::{solution-2}
 Fra ettpunktsformen til $f(x)$ kan vi lese av at grafen må gå gjennom punktet $(1, 3)$. Dette passer med graf A, B og C. Stigningstallet til $f$ er $a = 2$ som eliminerer graf A siden den har negativ stigning. Sjekker vi stigningstallet til graf B er stigningstallet $a = 2$, mens stigningstallet til graf C er $a = 1$. 
 
 Dermed er graf B grafen til $f$.
 ::::
+
+:::::
 
 
 :::::::::::::::
@@ -140,7 +116,7 @@ Dermed er graf B grafen til $f$.
 ---
 
 
-:::::::::::::::{exercise} Underveisoppgave 2
+:::::::::::::::{exercise-2} Underveisoppgave 2
 :::{plot}
 width: 380
 function: -3*(x - 1) - 2, f
@@ -187,11 +163,11 @@ $$
 :::::
 
 
-::::{answer}
+:::::{answer-2}
 A
-::::
 
-::::{solution}
+
+::::{solution-2}
 Vi ser fra grafen til $f$ at når vi øker $x$ med $1$, så synker $f(x)$ med $-3$. Dermed er stigningstallet $a = -3$. Vi kan også se at grafen går gjennom punktet $(1, -2)$ som betyr at 
 
 $$
@@ -200,6 +176,10 @@ $$
 
 som passer med svaralternativ A.
 ::::
+
+
+:::::
+
 
 
 :::::::::::::::

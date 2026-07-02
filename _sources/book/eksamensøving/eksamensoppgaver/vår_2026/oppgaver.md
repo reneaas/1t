@@ -715,7 +715,7 @@ $$
 
 
 
-En rasjonal funksjon $g$ har horisontal asymptote $y = 2$. Grafen til $g$ skjærer ikke $y$-aksen.
+En rasjonal funksjon $g$ har en horisontal asymptote $y = 2$. Grafen til $g$ skjærer ikke $y$-aksen.
 
 :::::::::::::{part} b
 

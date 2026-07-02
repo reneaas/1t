@@ -1,28 +1,22 @@
 # Oppgaver: Andregradslikninger
 
 :::::::::::::::{exercise} Oppgave 1
----
-level: 1
----
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Grafen til en andregradsfunksjon $f$ er vist i figuren nedenfor.
+:::::::::::::{part} a
+:::{plot}
+width: 320px
+align: right
+fontsize: 26
+function: (x + 3) * (x - 1), f
+:::
+
+Grafen til en andregradsfunksjon $f$ er vist i figuren til høyre.
 
 Bruk figuren til å løse likningen
 
 $$
 f(x) = 0
 $$
-
-
-:::{plot}
-width: 70%
-function: (x + 3) * (x - 1), f
-:::
 
 
 ::::{answer}
@@ -33,19 +27,21 @@ $$
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
-Grafen til en andregradsfunksjon $g$ er vist i figuren nedenfor.
+:::::::::::::{part} b
+:::{plot}
+width: 320px
+align: right
+fontsize: 26
+function: (x - 1)**2, g
+:::
+
+Grafen til en andregradsfunksjon $g$ er vist i figuren til høyre.
 
 Bruk figuren til å løse likningen:
 
 $$
 g(x) = 0
 $$
-
-:::{plot}
-width: 70%
-function: (x - 1)**2, g
-:::
 
 
 ::::{answer}
@@ -58,8 +54,15 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-Grafen til en andregradsfunksjon $h$ er vist i figuren nedenfor.
+:::::::::::::{part} c
+:::{plot}
+width: 320px
+align: right
+fontsize: 26
+function: -(x - 2) * (x+2), h
+:::
+
+Grafen til en andregradsfunksjon $h$ er vist i figuren til høyre.
 
 Bruk figuren til å løse likningen
 
@@ -67,10 +70,6 @@ $$
 h(x) = 0
 $$
 
-:::{plot}
-width: 70%
-function: -(x - 2) * (x+2), h
-:::
 
 
 ::::{answer}
@@ -83,20 +82,22 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
-Grafen til en andregradsfunksjon $p$ er vist i figuren nedenfor.
+:::::::::::::{part} d
+:::{plot}
+width: 320px
+align: right
+fontsize: 26
+function: 0.5 * (x + 4) * (x - 3), p
+ymin: -7
+:::
+
+Grafen til en andregradsfunksjon $p$ er vist i figuren til høyre.
 
 Bruk figuren til å løse likningen:
 
 $$
 p(x) = 0
 $$
-
-:::{plot}
-width: 70%
-function: 0.5 * (x + 4) * (x - 3), p
-ymin: -7
-:::
 
 
 
@@ -116,9 +117,6 @@ $$
 ---
 
 :::::::::::::::{exercise} Oppgave 2
----
-level: 1
----
 
 ::::{hints} Hvordan løser jeg en likning grafisk med Geogebra?
 Nedenfor vises en gif som viser hvordan man løser likningen 
@@ -132,40 +130,30 @@ Vi trykker på {ggb-icon}`mode_intersect` (Skjæring mellom to objekt) etterfulg
 :::{figure} ./videoer/grafisk_løsning.gif
 ---
 class: no-click, adaptive-figure
-width: 100%
+width: 80%
 ---
-Løsningen er $x$-koordinatene til skjæringspunktene. Altså $x = -1 \or x = 3$.
 :::
 
 ::::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 
 :::{ggb-popup}
 ---
 layout: sidebar
 ---
 :::
-
-
-
-Løs likningen nedenfor grafisk. 
+Løs likningen nedenfor grafisk.
 
 $$
 2x^2 + 2x - 12 = 0
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x = -3 \or x = 2
 $$
-::::
-
 
 ::::{solution}
 Vi skriver inn likningene for venstre og høyre side av likningen og bruker "skjæring mellom to objekt" {ggb-icon}`mode_intersect` for å finne skjæringspunktene. Se figuren nedenfor.
@@ -186,10 +174,13 @@ $$
 
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 :::{ggb-popup}
 ---
@@ -197,18 +188,16 @@ layout: sidebar
 ---
 :::
 
-Løs likningen nedenfor grafisk. 
 
 $$
 2x^2 - 4x = -2
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x = 1
 $$
-::::
 
 ::::{solution}
 Vi skriver inn likningene for venstre og høyre side av likningen og bruker "skjæring mellom to objekt" {ggb-icon}`mode_intersect` for å finne skjæringspunktene. Se figuren nedenfor.
@@ -228,10 +217,12 @@ $$
 
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 
 :::{ggb-popup}
 ---
@@ -246,11 +237,10 @@ x^2 + 2x - 2 = 4x + 6
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x = -2 \or x = 4
 $$
-::::
 
 ::::{solution}
 Vi skriver inn likningene for venstre og høyre side av likningen og bruker "skjæring mellom to objekt" {ggb-icon}`mode_intersect` for å finne skjæringspunktene. Se figuren nedenfor.
@@ -270,10 +260,12 @@ $$
 
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 
 :::{ggb-popup}
 ---
@@ -289,11 +281,10 @@ $$
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x \approx 0.5 \or x \approx 2.33.
 $$
-::::
 
 ::::{solution}
 Vi skriver inn likningene for venstre og høyre side av likningen og bruker "skjæring mellom to objekt" {ggb-icon}`mode_intersect` for å finne skjæringspunktene. Se figuren nedenfor.
@@ -314,12 +305,10 @@ $$
 > Her bruker vi $\approx$ fordi vi bare finner en tilnærmet verdi for $x$-koordinatene og ikke nødvendigvis den eksakte verdien. 
 
 ::::
+:::::
 
 :::::::::::::
 
-
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -328,14 +317,9 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 3
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 Løs likningen
 
 $$
@@ -343,11 +327,10 @@ x^2 - 4 = 0
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x = \pm 2
 $$
-::::
 
 
 ::::{solution}
@@ -362,10 +345,12 @@ x = \pm 2
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Løs likningen
 
 $$
@@ -373,12 +358,10 @@ x^2 - 1 = 0
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x = \pm 1
 $$
-::::
-
 
 ::::{solution}
 $$
@@ -392,11 +375,14 @@ x = \pm 1
 $$
 ::::
 
+:::::
+
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Løs likningen
 
 $$
@@ -404,12 +390,10 @@ x^2 - 16 = 0
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x = \pm 4
 $$
-::::
-
 
 ::::{solution}
 $$
@@ -423,22 +407,25 @@ x = \pm 4
 $$
 ::::
 
+:::::
+
+
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Løs likningen
 
 $$
 x^2 - 2 = 0
 $$
 
-::::{answer}
+:::::{answer}
 $$
 x = \pm \sqrt{2}
 $$
-::::
 
 ::::{solution}
 $$
@@ -446,11 +433,12 @@ x^2 - 2 = 0 \liff x^2 = 2 \liff x = \pm \sqrt{2}
 $$
 ::::
 
+:::::
+
+
 :::::::::::::
 
 
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -458,14 +446,8 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 4
----
-level: 1
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Løs likningen
 
 $$
@@ -473,16 +455,16 @@ x^2 - 5x = 0.
 $$
 
 
-::::{answer}
+:::::{answer}
 $$
 x = 0 \or x = 5
 $$
-::::
+:::::
 
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Løs likningen
 
 $$
@@ -498,7 +480,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Løs likningen
 
 $$
@@ -513,7 +495,7 @@ $$
 
 :::::::::::::
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Løs likningen
 
 $$
@@ -528,7 +510,7 @@ $$
 ::::
 
 :::::::::::::
-::::::::::::::
+
 
 :::::::::::::::
 
@@ -537,17 +519,12 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 5
----
-level: 1
----
+
 Løs likningene med {popup}`$abc$-formelen. <En likning på formen $ax^2 + bx + c = 0$ har løsningen $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$>`
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
 
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 $$
 x^2 - 5x + 6 = 0
 $$
@@ -559,7 +536,7 @@ $$
 :::
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::::{part} b
 $$
 x^2 - 3x - 4 = 0
 $$
@@ -571,7 +548,7 @@ $$
 :::
 :::::::::::::
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 $$
 x^2 - x - 6 = 0
 $$
@@ -583,7 +560,7 @@ $$
 :::
 :::::::::::::
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 $$
 x^2 - 4x - 5 = 0
 $$
@@ -595,7 +572,6 @@ $$
 :::
 :::::::::::::
 
-::::::::::::::
 :::::::::::::::
 
 
@@ -603,88 +579,69 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 6
----
-level: 2
----
 
 Løs likningene ved hjelp av {popup}`$abc$-formelen. <En likning på formen $ax^2 + bx + c = 0$ har løsningen $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$>`
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
 
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 
 $$
 2x^2 - 5x + 2 = 0
 $$
 
-:::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 x = \dfrac{1}{2} \or x = 2
 $$
-:::
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 $$
 3x^2 - 7x + 2 = 0
 $$
 
-:::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
+
 $$
 x \in \left\{\dfrac{1}{3}, 2\right\}
 $$
-:::
+:::::
 
 :::::::::::::
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 
 $$
 -x^2 + 9x + 12 = 0
 $$
 
-:::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer} 
 $$
 x = \dfrac{-\sqrt{129} + 9}{2} \or x = \dfrac{\sqrt{129} + 9}{2}
 $$
-:::
+:::::
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 
 $$
 \dfrac{1}{2}x^2 - \dfrac{3}{4}x - \dfrac{1}{2} = 0
 $$
 
-:::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 x = -\dfrac{1}{2} \or x = 2
 $$
-:::
+:::::
 
 :::::::::::::
-
-::::::::::::::
 
 :::::::::::::::
 
@@ -695,95 +652,77 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 7
----
-level: 2
----
+
 > Noen ganger jobber vi med andregradslikninger som vi må skrive om til formen $ax^2 + bx + c = 0$ før vi kan bruke $abc$-formelen. 
 
 Løs likningene med $abc$-formelen.
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 $$
 x^2 + x + 1 = x + 5
 $$
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
+
 $$
-x = -2 \, \lor \, x = 2
+x = -2 \or x = 2
 $$
-::::
+:::::
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 $$
 x^2 + x - 3 = -2x + 1
 $$
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
-x = -4 \, \lor \, x = 1
+x = -4 \or x = 1
 $$
-::::
+:::::
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 $$
 -x^2 + x + 3 = 3x - 1
 $$
 
-::::{admonition} Fasit
----
-class: answer, dropdown
----
+:::::{answer}
 $$
 x = -1 - \sqrt{5} \or x = -1 + \sqrt{5}
 $$
-::::
+:::::
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 $$
 2x^2 + 5x - 1 = -2x + 3
 $$
 
-::::{answer}
+:::::{answer}
 $$
 x = \dfrac{1}{2} \or x = -4. 
 $$
-::::
+:::::
 
 :::::::::::::
 
-::::::::::::::
 
 :::::::::::::::
 
 ---
 
 :::::::::::::::{exercise} Oppgave 8
----
-level: 2
----
+
 Løs likningene med CAS.
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 :::{cas-popup}
 ---
 layout: sidebar
@@ -797,7 +736,7 @@ $$
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 :::{cas-popup}
 ---
 layout: sidebar
@@ -812,7 +751,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 :::{cas-popup}
 ---
 layout: sidebar
@@ -826,7 +765,7 @@ $$
 
 :::::::::::::
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 :::{cas-popup}
 ---
 layout: sidebar
@@ -840,7 +779,6 @@ $$
 
 :::::::::::::
 
-::::::::::::::
 
 :::::::::::::::
 
@@ -848,16 +786,12 @@ $$
 ---
 
 
-:::::::::::::::{exercise} Oppgave 9
----
-level: 2
----
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::::{exercise} Oppgave 9
+
+
+
+:::::::::::::{part} a
 :::{cas-popup}
 ---
 layout: sidebar
@@ -885,7 +819,7 @@ for x in range(-10, 11):
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 :::{cas-popup}
 ---
 layout: sidebar
@@ -914,7 +848,7 @@ for x in range(-10, 11):
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 :::{cas-popup}
 ---
 layout: sidebar
@@ -942,7 +876,7 @@ for x in range(-10, 11):
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 :::{cas-popup}
 ---
 layout: sidebar
@@ -970,8 +904,6 @@ for x in range(-10, 11):
 :::::::::::::
 
 
-::::::::::::::
-
 :::::::::::::::
 
 
@@ -979,15 +911,10 @@ for x in range(-10, 11):
 
 
 :::::::::::::::{exercise} Oppgave 10
----
-level: 2
----
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+
+:::::::::::::{part} a
 Fyll ut programmet og bruk det til å løse likningen
 
 $$
@@ -1021,7 +948,7 @@ for x in range(-10, 11):
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Fyll ut programmet og bruk det til å løse likningen
 
 $$
@@ -1055,7 +982,7 @@ for x in range(-10, 11):
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Fyll ut programmet og bruk det til å løse likningen
 
 $$
@@ -1089,7 +1016,7 @@ for x in range(-10, 11):
 
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 Fyll ut programmet og bruk det til å løse likningen
 
 $$
@@ -1123,11 +1050,6 @@ for x in range(-10, 11):
 
 
 
-
-
-
-::::::::::::::
-
 :::::::::::::::
 
 
@@ -1135,20 +1057,10 @@ for x in range(-10, 11):
 
 
 :::::::::::::::{exercise} Oppgave 11
----
-level: 3
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
 
-:::{cas-popup}
----
-layout: sidebar
----
-:::
+
+:::::::::::::{part} a
+
 
 
 
@@ -1161,13 +1073,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
-
-:::{cas-popup}
----
-layout: sidebar
----
-:::
+:::::::::::::{part} b
 
 
 
@@ -1180,13 +1086,8 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 
-:::{cas-popup}
----
-layout: sidebar
----
-:::
 
 
 
@@ -1199,13 +1100,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
-
-:::{cas-popup}
----
-layout: sidebar
----
-:::
+:::::::::::::{part} d
 
 
 
@@ -1217,7 +1112,6 @@ $$
 
 :::::::::::::
 
-::::::::::::::
 :::::::::::::::
 
 
@@ -1226,15 +1120,8 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 12
----
-level: 3
----
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem diskriminanten $D$ for likningen
 
 $$
@@ -1247,7 +1134,7 @@ og avgjør hvor mange løsninger likningen har.
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem diskriminanten $D$ for likningen
 
 $$
@@ -1258,7 +1145,7 @@ og avgjør hvor mange løsninger likningen har.
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem diskriminanten $D$ for likningen
 
 $$
@@ -1269,7 +1156,6 @@ og avgjør hvor mange løsninger likningen har.
 :::::::::::::
 
 
-::::::::::::::
 
 :::::::::::::::
 
@@ -1278,15 +1164,9 @@ og avgjør hvor mange løsninger likningen har.
 
 
 :::::::::::::::{exercise} Oppgave 13
----
-level: 3
----
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 
 :::{cas-popup}
 ---
@@ -1305,7 +1185,7 @@ Bestem $k$ slik at likningen har én løsning.
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 
 :::{cas-popup}
@@ -1326,7 +1206,7 @@ Bestem $k$ slik at grafen til $f$ skjærer $x$-aksen én gang.
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 
 
 :::{cas-popup}
@@ -1349,132 +1229,27 @@ Bestem $k$ slik at $f$ har nøyaktig ett nullpunkt.
 
 
 
-::::::::::::::
-
-
 
 :::::::::::::::
 
 
+
 ---
+
+
+
 
 :::::::::::::::{exercise} Oppgave 14
----
-level: 3
----
-Grafen til en andregradsfunksjon $f$ er vist nedenfor.
 
-
-:::{figure} ./figurer/oppgaver/oppgave_14/figur.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-
-:::{cas-popup}
----
-layout: sidebar
----
-:::
-
-
-Bestem $f(x)$. 
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
-Bruk grafen til å løse likningen
-
-$$
-f(x) = 0
-$$
-
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} c
-Bruk $abc$-formelen til å løse likningen
-
-$$
-f(x) = 0
-$$
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} d
-
-:::{cas-popup}
----
-layout: sidebar
----
-:::
-
-
-
-Bruk CAS til å løse likningen
-
-$$
-f(x) = 14
-$$
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} e
-Skriv et program som løser likningen
-
-$$
-f(x) = 8
-$$
-
-:::{interactive-code}
-# Din kode her 
-
-
-
-:::
-
-:::::::::::::
-
-
-::::::::::::::
-
-:::::::::::::::
-
-
-
-
----
-
-
-
-
-:::::::::::::::{exercise} Oppgave 15
----
-level: 4
----
 Vi går ut ifra en helt generell andregradslikning 
 
 $$
 ax^2 + bx + c = 0.
 $$
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
 
-:::::::::::::{tab-item} a
-Forklar at vi kan skrive om likningen til
+:::::::::::::{part} a
+Vis ved regning at vi kan skrive om likningen til
 
 $$
 a(x - x_0)^2 + y_0 = 0
@@ -1486,7 +1261,7 @@ og bestem $x_0$ og $y_0$ uttrykt ved $a$, $b$ og $c$.
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Forklar at løsningene av likningen er 
 
 $$
@@ -1495,7 +1270,6 @@ $$
 
 Bruk dette til å utlede $abc$-formelen. 
 :::::::::::::
-::::::::::::::
 
 
 :::::::::::::::

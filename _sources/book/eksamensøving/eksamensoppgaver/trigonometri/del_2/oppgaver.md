@@ -22,24 +22,24 @@ Du får vite følgende om en trekant $ABC$
 Bestem lengdene av sidene $AC$ og $BC$ eksakt.
 
 
-:::::{answer}
+::::::{answer}
 $$
 AC = 2 \and BC = 2 \sqrt{21}
 $$
 
-:::::
-
 
 :::::{solution}
-Vi kan lage oss en hjelpetegning for å få oversikt over trekanten:
 
-:::{figure} ./figurer/oppgave_1/hjelpefigur.svg
----
-width: 80%
-class: no-click, adaptive-figure
----
-viser en skisse av trekanten der vi har satt $x = AC$ og $y = BC$. 
+:::{plot}
+width: 100%
+align: right
+triangle: svs=(8, 120, 4), angles=(A), angle-text=(A="$120^\circ$"), angle-radius=40, side-text=(AB="$8$", CA="$x$", BC="$y$")
+axis: off
+axis: equal
+fontsize: 30
 :::
+
+Vi kan lage oss en hjelpetegning for å få oversikt over trekanten:
 
 Siden arealet er $T = 4\sqrt{3}$, kan vi sette opp en likningen for $x$ med utgangspunkt i arealsetningen for trekanten:
 
@@ -80,6 +80,9 @@ Dermed er $BC = 2\sqrt{21}$.
 
 :::::
 
+::::::
+
+
 :::::::::::::::
 
 
@@ -92,7 +95,7 @@ Dermed er $BC = 2\sqrt{21}$.
 :::{plot}
 axis: equal
 axis: off
-width: 50%
+width: 40%
 let: s = 4
 let: v = pi / 3
 repeat: n=0..5; line-segment: (s * cos(v * n), s * sin(v * n)), (s * cos(v * (n + 1)), s * sin(v * (n + 1))), dashed, gray

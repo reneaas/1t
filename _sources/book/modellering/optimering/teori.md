@@ -45,7 +45,7 @@ Lag en oversikt over arealet for ulike lengder av sidekantene og bestem omtrent 
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Siden vi har $64$ m med gjerde til rådighet som skal fordeles rundt to sidekanter med lengde $x$ og to sidekanter med lengde $y$, kan vi sette opp følgende likning for omkretsen:
 
@@ -129,7 +129,7 @@ Lag en grafisk framstilling og bestem lengden på sidekantene som gir størst mu
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Fra Eksempel 1 har vi så langt funnet ut at
 
@@ -201,7 +201,7 @@ Bestem lengden på sidekantene som gir størst mulig areal.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Fra Eksempel 1 og 2 så fant vi at en modell for arealet $A$ er gitt ved 
 
@@ -240,205 +240,7 @@ Fra gif-en ovenfor ser vi at når vi løser $A'(x) = 0$, så får vi $x = 16$. H
 :::::::::::::::
 
 
-### Programmering
 
-
-En annen vanlig strategi er å bruke programmering til å løse optimeringsproblemer. Her skal vi se hvordan vi kan bruke programmering til å finne topp- og bunnpunkter på grafen til en funksjon.
-
-#### Toppunkter
-Vi tenker oss at vi starter i et valgt punkt $x = a$. Hvis et toppunkt ligger på oversiden av $x = a$, så betyr det at grafen til $f$ stiger. Da kan vi bruke følgende strategi:
-
-
-:::::::::::::::{summary} Toppunkter med programmering
-For en funksjon $f$, kan vi lete etter nullpunkter med følgende algoritme:
-
-::::::::::::::{theory} Algoritme
-1. Velg et punkt $x = a$ som startpunkt.
-2. Så lenge $f(a) < f(a + 1)$:
-    * Sett $a = a + 1$ (øk verdien med til $a$ med $1$).
-
-::::::::::::::
-
-Programmet stopper når $f(a) < f(a + 1)$ er usant, som betyr at neste verdi $f(a + 1)$ er lavere enn $f(a)$. Den siste verdien for $a$ vil da gi en tilnærming til et toppunkt $(a, f(a))$ på grafen til $f$. Figuren nedenfor viser grafisk hvordan algoritmen fungerer.
-
-:::{interactive-graph} 
-width: 60%
-interactive-var: a, 0, 5, 6
-interactive-var-start: 1
-let: h = 1
-function: -x * (x - 6), (0, 6)
-def: f(x) = -x * (x - 6)
-point: (a, f(a))
-point: (a + h, f(a + h))
-text: 6, 10, "$f({a}) < f({a} + {h:.0f})$:  {f(a) < f(a + h)}", bbox
-ymin: -1
-ymax: 12
-xmin: -1
-xmax: 8
-text: a, 0, "${a:.0f}$", bottom-center
-text: a + h, 0, "${a} + {h:.0f}$", bottom-right
-ticks: off
-vline: a, 0, f(a), dashed, gray
-vline: a + h, 0, f(a + h), dashed, gray
-hline: f(a), 0, a, dashed, gray
-hline: f(a + h), 0, a + h, dashed, gray
-hline: f(a + h), a + h, 6, dashed, gray
-text: 6, f(a + h), "$f({a} + {h:.0f})$", center-right
-text: 0, f(a), "$f({a})$", center-left
-:::
-
-:::::::::::::::
-
-
----
-
-
-:::::::::::::::{example} Eksempel 4
-
-:::{plot}
-align: right
-width: 100%
-function: x * (32 - x), (0, 32), A, blue
-xmin: -2
-xmax: 34
-ymin: -1
-ymax: 260
-ticks: off
-fontsize: 26
-lw: 3
-:::
-
-
-
-Arealfunksjonen fra eksempel 1 er gitt ved
-
-$$
-A(x) = x(32 - x)
-$$
-
-Denne grafen har et toppunkt, som gjør at vi kan bruke algoritmen vi diskuterte ovenfor.
-
-Vi kan velge $a = 0$, og deretter øker vi $a$ med $1$ så lenge $A(a) < A(a + 1)$ er sant.
-
-
-:::{clear}
-:::
-
-:::{interactive-code}
-def A(x):
-    return x * (32 - x)
-
-a = 0
-while A(a) < A(a + 1):
-    a = a + 1
-
-print("Toppunkt:")
-print((a, A(a)))
-:::
-
-
-:::::::::::::::
-
-
-
----
-
-
-#### Bunnpunkter
-Når vi skal lete etter et bunnpunkt, så starter vi i et punkt $x = a$ og sjekker om $f(a) > f(a + 1)$ er sant. Hvis det er sant, så betyr det at grafen til $f$ synker og da kan vi bruke følgende strategi:
-
-
-:::::::::::::::{summary} Bunnpunkter med programmering
-For en funksjon $f$, kan vi lete etter nullpunkter med følgende algoritme
-
-::::::::::::::{theory} Algoritme
-1. Velg et punkt $x = a$ som startpunkt.
-2. Så lenge $f(a) > f(a + 1)$:
-    * Sett $a = a + 1$ (øk verdien med til $a$ med $1$).
-
-::::::::::::::
-
-Programmet stopper når $f(a) > f(a + 1)$ er usant, som betyr at $f(a + 1)$ vil ligge høyere enn $f(a)$. Den siste verdien for $a$ vil da gi en tilnærming til et bunnpunkt $(a, f(a))$ på grafen til $f$. Figuren nedenfor viser grafisk hvordan algoritmen fungerer.
-
-
-:::{interactive-graph} 
-width: 60%
-interactive-var: a, 0, 5, 6
-interactive-var-start: 0
-let: h = 1
-function: (x - 3)**2 + 1
-def: f(x) = (x - 3)**2 + 1
-point: (a, f(a))
-point: (a + h, f(a + h))
-text: 5, 10, "$f({a}) > f({a} + {h:.0f})$:  {f(a) > f(a + h)}", bbox
-ymin: -1
-ymax: 12
-xmin: -1
-xmax: 8
-text: a, 0, "${a:.0f}$", bottom-center
-text: a + h, 0, "${a} + {h:.0f}$", bottom-right
-ticks: off
-vline: a, 0, f(a), dashed, gray
-vline: a + h, 0, f(a + h), dashed, gray
-hline: f(a), 0, a, dashed, gray
-hline: f(a + h), 0, a + h, dashed, gray
-hline: f(a + h), a + h, 6, dashed, gray
-text: 6, f(a + h), "$f({a} + {h:.0f})$", center-right
-text: 0, f(a), "$f({a})$", center-left
-:::
-
-:::::::::::::::
-
-
-
----
-
-
-
-:::::::::::::::{example} Eksempel 5
-
-:::{plot}
-align: right
-width: 100%
-function: (x - 3)^2 + 1, f
-xmin: -1
-ymin: -1
-ticks: off
-fontsize: 26
-lw: 3
-:::
-
-
-
-En andregradsfunksjon $f$ er gitt ved
-
-$$
-f(x) = (x - 3)^2 + 1
-$$
-
-Grafen har et bunnpunkt, så da kan vi bruke algoritmen ovenfor til å finne koordinatene til bunnpunktet med følgende program:
-
-
-:::{clear}
-:::
-
-
-:::{interactive-code}
-def f(x):
-    return (x - 3)**2 + 1
-
-a = 0
-while f(a) > f(a + 1):
-    a = a + 1
-
-print("Bunnpunkt:")
-print((a, f(a)))
-:::
-
-:::::::::::::::
-
-
-En svakhet med algoritmene vi har sett på for å finne topp- og bunnpunkter er at de ikke nødvendigvis gir oss eksakte verdier for topp- og bunnpunktene. I Eksempel 4 og 5 så er det slik at topp- og bunnpunktene ligger på heltall, så da får vi eksakte verdier for topp- og bunnpunktene. I oppgavene skal du jobbe med oppgaver der du i stedet bruker mindre steg enn $1$ for å få en bedre tilnærming til topp- og bunnpunktene.
 
 
 
@@ -485,7 +287,7 @@ Bestem $a$ slik at arealet av rektangelet er størst mulig.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi setter opp en modell $A$ for arealet for en verdi av $a \in [0, 3]$. Grunnlinjen til rektangelet er $a$ og høyden er $f(a)$, som gir oss arealet $A$ gitt ved 
 
@@ -538,7 +340,7 @@ En vanlig problemstilling er å bestemme en modell for en lengde for å så best
 :::::::::::::::{example} Eksempel 5
 Figuren nedenfor viser to punkter $A$, $B$ og et punkt $M$.
 
-Bestem den korteste mulige lengden $AM + MB$ kan være.
+Bestem den korteste mulige lengden $AM + MB$ kan ha.
 
 :::{plot}
 width: 70%
@@ -570,7 +372,7 @@ text: 13, -6, "$12$", center-right
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 La $M$ ha koordinatene $(x, 0)$ slik at avstanden fra punktet som ligger på linja som ligger nærmest $A$ til punktet $M$ er lik $x$, og avstanden fra punktet som ligger på linja som ligger nærmest $B$ til punktet $M$ er lik $12 - x$. Vi kan bruke Pytagoras' setning til å sette opp en modell for lengden $L$ av $AM + MB$. Først bestemmer vi $AM$:
 

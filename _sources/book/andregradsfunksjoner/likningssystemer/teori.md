@@ -29,7 +29,7 @@ x - y &= 3
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Den første likningen representerer en andregradsfunksjon som vi kan se ved å løse likningen for $y$:
 
@@ -94,12 +94,10 @@ width: 80%
 :::
 
 
-::::{answer}
+:::::{answer}
 $$
 x = -1 \and y = 0 \or x = -3 \and y = 2
 $$
-::::
-
 
 ::::{solution}
 Grafene skjærer hverandre i punktene $(-1, 0)$ og $(-3, 2)$. Løsningen av likningssystemet er derfor 
@@ -108,6 +106,8 @@ $$
 x = -1 \and y = 0 \or x = -3 \and y = 2
 $$
 ::::
+
+:::::
 
 
 
@@ -130,6 +130,13 @@ Et likningssystem er gitt ved
     x^2 - 2x - y &= 3
 \end{align*}
 
+Løs likningssystemet grafisk.
+
+::::{solution}
+---
+open:
+---
+
 Nedenfor ser du en gif som viser hvordan man løser likningen med grafvinduet i Geogebra. Vi trykker på {ggb-icon}`mode_intersect` (Skjæring mellom to objekt) etterfulgt av å trykke på hver graf for å finne skjæringspunktet.
 
 :::{figure} ./videoer/grafisk_løsning.gif
@@ -144,6 +151,7 @@ Skjæringspunktene mellom de to grafene er $(4, 5)$ og $(0, -3)$ som betyr at l�
 $$
 x = 4 \and y = 5 \or x = 0 \and y = -3
 $$
+::::
 
 
 
@@ -154,6 +162,14 @@ $$
 
 
 :::::::::::::::{exercise} Underveisoppgave 2
+
+:::{ggb-popup}
+---
+layout: sidebar
+---
+:::
+
+
 Et likningssystem er gitt ved 
 
 \begin{align*}
@@ -163,15 +179,12 @@ Et likningssystem er gitt ved
 
 Bruk Geogebra-vinduet nedenfor til å løse likningssystemet grafisk.
 
-:::{ggb}
-:::
 
 
-::::{answer}
+:::::{answer}
 $$
 x = 1 \and y = 1 \or x = 4 \and y = 7
 $$
-::::
 
 ::::{solution}
 Vi skriver inn likningene i algebrafeltet og trykker først på {ggb-icon}`mode_point` for å få opp alternativer og deretter trykker på {ggb-icon}`mode_intersect` (Skjæring mellom to objekt) etterfulgt av å trykke på hver graf for å finne skjæringspunktene. Se figuren nedenfor. 
@@ -191,6 +204,8 @@ $$
 
 
 ::::
+
+:::::
 
 
 :::::::::::::::
@@ -212,7 +227,7 @@ x - y &= 3
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi starter med å løse likning 2 for $y$:
 
@@ -270,12 +285,10 @@ x^2 - 3x - 2y &= -4
 \end{align*}
 
 
-::::{answer}
+:::::{answer}
 $$
 x = 4 \and y = 4 \or x = 3 \and y = 2
 $$
-::::
-
 
 ::::{solution}
 Vi løser likning 1 for $y$:
@@ -328,10 +341,9 @@ Dermed er løsningen av likningssystemet
 $$
 x = 4 \and y = 4 \or x = 3 \and y = 2
 $$
-
-
-
 ::::
+
+:::::
 
 :::::::::::::::
 
@@ -351,11 +363,7 @@ width: 80%
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 :::{cas-popup}
 ---
 layout: sidebar
@@ -367,7 +375,7 @@ Bruk CAS til å løse likningssystemet som er vist i gif-en.
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 :::{cas-popup}
 ---
 layout: sidebar
@@ -386,7 +394,7 @@ Bruk CAS til å løse likningssystemet
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 :::{cas-popup}
 ---
 layout: sidebar
@@ -406,9 +414,6 @@ Bruk CAS til å løse likningssystemet
 :::::::::::::
 
 
-::::::::::::::
-
-
 :::::::::::::::
 
 
@@ -420,11 +425,7 @@ Når vi løser en ikke-lineært likningssystem med programmering, kan vi bruke s
 :::::::::::::::{explore} Utforsk 2
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 
 :::{cas-popup}
 ---
@@ -439,7 +440,7 @@ Bruk CAS til å forutsi utskriften til programmet og kjør det for å sjekke sva
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Endre på programmet og bruk det til å løse likningssystemet
 
 \begin{align*}
@@ -478,9 +479,6 @@ $$
 ::::
 
 :::::::::::::
-
-
-::::::::::::::
 
 
 :::{interactive-code}

@@ -1,9 +1,6 @@
 # Polynomfunksjoner
 
-:::{admonition} Læringsmål
----
-class: tip
----
+:::{goals} Læringsmål
 * Kunne bestemme nullpunktene til polynomfunksjoner grafisk eller ved hjelp av nullpunktsformen.
 * Kunne tegne fortegnslinjer for en polynomfunksjon og skissere grafen.
 * Kunne bestemme $f(x)$ for polynomfunksjoner. 
@@ -11,10 +8,8 @@ class: tip
 
 Vi har allerede møtt på to polynomfunksjoner – lineære funksjoner og andregradsfunksjoner. Nå skal vi gå løs på helt generelle polynomfunksjoner.
 
-:::::{admonition} Definisjon: Polynomfunksjon
----
-class: theory
----
+:::::{summary} Definisjon: Polynomfunksjon
+
 Et **polynom** $f(x)$ er en sum av ledd på formen $a_n x^n$ der $a_n$ er koeffisienten til leddet og $n \in \{0, 1, 2, \ldots\}$ 
 
 Den største verdien av $n$ i summen kalles for **graden** til polynomet.
@@ -24,10 +19,8 @@ En **polynomfunksjon** $f$ er en funksjon der funksjonsuttrykket $f(x)$ er et po
 :::::
  
 
-:::::::::::::::{admonition} Eksempel 1
----
-class: example
----
+:::::::::::::::{example} Eksempel 1
+
 Nedenfor ser du fire eksempler på polynomfunksjoner med ulik grad.
 
 
@@ -223,12 +216,10 @@ width: 80%
 :::
 
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = -x^3 - 5x^2 - 7x - 3.
 $$
-::::
-
 
 ::::{solution}
 Vi trenger 4 punkter på grafen til $f$ for å bestemme $f(x)$. Fra figuren ser vi at grafen til $f$ går gjennom disse punktene:
@@ -262,6 +253,8 @@ $$
 
 ::::
 
+:::::
+
 
 :::::::::::::::
 
@@ -291,7 +284,7 @@ $$
 :::{figure} ./figurer/teori/nullpunktsform/tre_nullpunkter.svg
 ---
 class: no-click, adaptive-figure
-width: 80%
+width: 70%
 ---
 :::
 
@@ -317,7 +310,7 @@ width: 70%
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi skriver $f(x)$ på nullpunktsform med tre nullpunkter:
 
@@ -372,12 +365,10 @@ width: 70%
 :::
 
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = -2(x + 2)(x + 1)(x - 3).
 $$
-::::
-
 
 ::::{solution}
 Vi skriver $f(x)$ på nullpunktsform med tre nullpunkter:
@@ -418,6 +409,8 @@ $$
 
 ::::
 
+:::::
+
 
 :::::::::::::::
 
@@ -441,7 +434,7 @@ $$
 :::{figure} ./figurer/teori/nullpunktsform/to_nullpunkter.svg
 ---
 class: no-click, adaptive-figure
-width: 80%
+width: 70%
 ---
 :::
 
@@ -475,7 +468,7 @@ Bestem $f(x)$.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi ser at grafen til $f$ har et dobbelt nullpunkt i $(3, 0)$ siden grafen både har et nullpunkt og et ekstremalpunkt der. Grafen til $f$ har også et nullpunkt i $(-2, 0)$ som betyr at vi kan skrive $f(x)$ på nullpunktsform som
 
@@ -529,12 +522,10 @@ Bestem $f(x)$.
 :::
 
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = -2(x + 1)^2(x - 1)
 $$
-::::
-
 
 ::::{solution}
 Fra grafen til $f$ kan vi se at $f$ har et dobbelt nullpunkt i $(-1, 0)$ siden både er et nullpunkt og et ekstremalpunkt. Vi ser også at $(1, 0)$ er et nullpunkt siden grafen skjærer $x$-aksen der. Da kan vi skrive $f(x)$ på nullpunktsform som
@@ -560,6 +551,8 @@ $$
 f(x) = -2(x + 1)^2(x - 1)
 $$
 ::::
+
+:::::
 
 
 
@@ -610,7 +603,7 @@ width: 80%
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Siden grafen til $f$ bare har ett nullpunkt, så skriver vi $f(x)$ på formen 
 
@@ -713,12 +706,10 @@ width: 80%
 :::
 
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = (x + 3)\left(-\dfrac{1}{4}x^2 + x - 2\right).
 $$
-::::
-
 
 ::::{solution}
 Vi ser at grafen til $f$ har ett nullpunkt i $(-3, 0)$. Da kan vi skrive $f(x)$ på formen
@@ -800,6 +791,8 @@ f(x) = (x + 3)\left(ax^2 + bx - 2\right) = (x + 3)\left(-\dfrac{1}{4}x^2 + x - 2
 $$
 
 ::::
+
+:::::
 
 
 :::::::::::::::

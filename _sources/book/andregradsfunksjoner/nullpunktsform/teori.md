@@ -127,22 +127,24 @@ Nullpunktsform gir oss et nytt verktøy for å bestemme funksjonsuttrykk ut ifra
 
 
 :::::::::::::::{example} Eksempel 2
-Grafen til en andregradsfunksjon $f$ er vist i figuren nedenfor.
+:::{plot}
+width: 320px
+align: right
+fontsize: 28
+function: -(x + 2) * (x - 3), f
+ymax: 7
+:::
+
+Grafen til en andregradsfunksjon $f$ er vist i figuren til høyre.
 
 
 Bestem $f(x)$.
 
 
-:::{plot}
-width: 70%
-function: -(x + 2) * (x - 3), f
-ymax: 7
-:::
-
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi ser at grafen til $f$ skjærer $x$-aksen i punktene $(-2, 0)$ og $(3, 0)$. Dermed er nullpunktene til $f$ gitt ved $x_1 = -2$ og $x_2 = 3$. Vi kan da skrive $f(x)$ på nullpunktsform:
 
@@ -175,24 +177,23 @@ $$
 ---
 
 :::::::::::::::{exercise} Underveisoppgave 1
-Grafen til en andregradsfunksjon $f$ er vist i figuren nedenfor.
-
-Bestem $f(x)$ på nullpunktsform.
-
-:::{figure} ./figurer/underveisoppgaver/underveisoppgave_4/figur.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
+:::{plot}
+width: 320px
+align: right
+fontsize: 28
+function: 1/2 * (x + 1) * (x - 4), f
 :::
 
 
-::::{answer}
+Grafen til en andregradsfunksjon $f$ er vist i figuren til høyre.
+
+Bestem $f(x)$ på nullpunktsform.
+
+
+:::::{answer}
 $$
 f(x) = \dfrac{1}{2}(x + 1)(x - 4)
 $$
-::::
-
 
 ::::{solution}
 Vi ser at grafen til $f$ skjærer $x$-aksen i punktene $(-1, 0)$ og $(4, 0)$. Dermed er nullpunktene til $f$ gitt ved $x_1 = -1$ og $x_2 = 4$. Vi kan da skrive $f(x)$ på nullpunktsform:
@@ -219,6 +220,8 @@ $$
 f(x) = \frac{1}{2}(x + 1)(x - 4).
 $$
 ::::
+
+:::::
 
 
 :::::::::::::::
@@ -257,7 +260,7 @@ Bestem nullpunktsformen til $f(x)$.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi kan skrive $f(x)$ som 
 
@@ -287,13 +290,12 @@ $$
 Bestem nullpunktsformen til $f(x)$. Hva er nullpunktene til $f$?
 
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = (x + 1)(x - 5)
 $$
 
 Nullpunktene er $x = -1$ og $x = 5$. 
-::::
 
 ::::{solution}
 Vi bruker konjugatsetningen:
@@ -309,6 +311,8 @@ x = -1 \or x = 5
 $$
 
 ::::
+
+:::::
 
 :::::::::::::::
 
@@ -327,7 +331,7 @@ Vis at det ikke er mulig å skrive $f(x)$ på nullpunktsform.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi kan merke oss at begge leddene har samme fortegn som betyr at vi ikke kan faktorisere uttrykket med konjugatsetningen siden konjugatsetningen er gitt ved 
 
@@ -362,10 +366,8 @@ width: 80%
 
 
 
-::::::::::::::{admonition} Bevis
----
-class: theory, dropdown
----
+::::{proof}
+
 Symmetrilinja ligger midt mellom nullpunktene. Det betyr at avstanden fra symmetrilinja til hvert nullpunkt er like. Da har vi:
 
 $$
@@ -379,7 +381,7 @@ $$
 $$
 x_0 = \dfrac{x_1 + x_2}{2}
 $$
-::::::::::::::
+::::
 
 
 
@@ -409,7 +411,7 @@ Bestem $f(x)$ på ekstremalpunktsform.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi ser fra $f(x)$ at $a = 1$. Videre ser vi at nullpunktene er $x_1 = -1$ og $x_2 = 3$. Da finner vi symmetrilinja ved å ta gjennomsnittet av de to: 
 
@@ -445,12 +447,10 @@ $$
 Bestem ekstremalformen til $f(x)$. 
 
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = -3(x + 1)^2 - 27
 $$
-::::
-
 
 ::::{solution}
 Vi bestemmer symmetrilinja ved å finne gjennomsnittet av nullpunktene som er gitt ved $x_1 = 2$ og $x_2 = -4$. Da får vi:
@@ -472,6 +472,8 @@ f(x) = a(x - x_0)^2 + y_0 = -3(x + 1)^2 - 27.
 $$
 
 ::::
+
+:::::
 
 
 
@@ -495,7 +497,7 @@ Bestem $f(x)$ på standardform.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 :::{sidebar}
 Regneregel: 
@@ -531,11 +533,10 @@ $$
 
 Bestem $f(x)$ på standardform.
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = 2x^2 + 4x - 6
 $$
-::::
 
 ::::{solution}
 Vi ganger ut parentesene og samler leddene:
@@ -550,6 +551,8 @@ f(x) &= 2(x + 3)(x - 1) \\
 &= 2x^2 + 4x - 6.
 \end{align*}
 ::::
+
+:::::
 
 :::::::::::::::
 
@@ -568,7 +571,7 @@ Bestem $f(x)$ på nullpunktsform.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi starter med å finne ekstremalpunktet så vi kan skrive $f(x)$ på ekstremalpunktsform. Vi finner symmetrilinja ved å bruke formelen for symmetrilinja:
 

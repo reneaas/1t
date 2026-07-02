@@ -38,22 +38,32 @@ Løs likningen grafisk.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
+
+
+:::{plot}
+width: 100%
+align: right
+fontsize: 28
+function: 2*x + 1, f
+function: 3*x - 2, g
+point: (3, 7)
+line-segment: (3, 0), (3, 7), gray, dashdot
+ymin: -3
+ymax: 10
+:::
+
+
+
 Vi tegner grafene til funksjonene
 
 $$
 f(x) = 2x + 1 \quad \text{og} \quad g(x) = 3x - 2
 $$
 
-:::{figure} ./figurer/eksempler/eksempel_1/figur.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
-:::
 
-Fra figuren ovenfor kan vi se at grafene til $f$ og $g$ skjærer hverandre i punktet $(3, 7)$. Men det er $x$-koordinaten som løser likningen, som betyr at løsningen av likningen er 
+Fra figuren til høyre kan vi se at grafene til $f$ og $g$ skjærer hverandre i punktet $(3, 7)$. Men det er $x$-koordinaten som løser likningen, som betyr at løsningen av likningen er 
 
 $$
 x = 3.
@@ -112,11 +122,10 @@ $$
 :::
 
 
-::::{answer}
+:::::{answer}
 $$
 x = 2.
 $$
-::::
 
 ::::{solution}
 Vi tegner grafene til funksjonene på venstre og høyre side av likningen og finner skjæringspunktet mellom dem ved å bruke "skjæring mellom to objekt" {ggb-icon}`mode_intersect`. Se figuren nedenfor:
@@ -125,7 +134,7 @@ Vi tegner grafene til funksjonene på venstre og høyre side av likningen og fin
 :::{figure} ./figurer/underveisoppgaver/underveisoppgave_2/sol.png
 ---
 class: no-click, adaptive-figure
-width: 100%
+width: 80%
 ---
 :::
 
@@ -135,6 +144,8 @@ $$
 x = 2.
 $$
 ::::
+
+:::::
 
 
 :::::::::::::::
@@ -164,7 +175,7 @@ $$
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi kan starte med å trekke fra $2x$ på begge sider av likningen:
 
@@ -203,8 +214,8 @@ $$
 ## Algebraisk løsning med CAS
 Vi kan også bruke CAS til å løse lineære likninger algebraisk. Dette innebærer at vi lar datamaskinen utføre den algebraiske utregningen for oss og gir oss svaret. 
 
-:::::::::::::::{explore} Eksempel 4
-Nedenfor ser du en *gif* som viser hvordan man løser en likning med CAS.
+:::::::::::::::{example} Eksempel 4
+Nedenfor ser du en *gif* som viser hvordan man løser likningen $2x - 6 = 0$ med CAS.
 
 :::{figure} ./videoer/cas-likninger.gif
 ---
@@ -214,12 +225,14 @@ class: no-click, adaptive-figure
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
 
+:::::::::::::::
+
+
+:::::::::::::::{exercise-2} Underveisoppgave 2
+
+
+:::::::::::::{part} a
 :::{cas-popup}
 ---
 layout: sidebar
@@ -228,13 +241,11 @@ layout: sidebar
 
 
 
-Bruk CAS-vinduet til å løse likningen akkurat slik det vises i *gif-en* ovenfor. 
-
-
+Bruk CAS-vinduet til å løse likningen i eksempel 4.
 :::::::::::::
 
-:::::::::::::{tab-item} b
 
+:::::::::::::{part} b
 :::{cas-popup}
 ---
 layout: sidebar
@@ -249,11 +260,17 @@ $$
 4x - 6 = x + 3
 $$
 
+
+:::::{answer-2}
+$$
+x = 3
+$$
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-
+:::::::::::::{part} c
 :::{cas-popup}
 ---
 layout: sidebar
@@ -267,11 +284,15 @@ $$
 3x - 2 = \dfrac{1}{2}x + 1
 $$
 
+
+:::::{answer-2}
+$$
+x = \dfrac{6}{5}
+$$
+:::::
+
+
 :::::::::::::
-
-
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -283,7 +304,7 @@ $$
 
 Når vi løser likninger med programmering, er en vanlig strategi å systematisk prøve ut mange forskjellige verdier av $x$ for å se om likningen er oppfylt. Før vi går videre, bør du repetere hvordan vi lager tallfølger med `for`{l=python}-løkker så du husker hvordan vi kan lage mange forskjellige verdier av $x$. 
 
-:::::::::::::::{exercise} Underveisoppgave 1
+:::::::::::::::{exercise} Underveisoppgave 3
 Ta quizen! 
 
 :::{quiz}
@@ -328,55 +349,59 @@ Siden vi bare sjekker heltall med strategien, så er det ikke sikkert at vi finn
 Strategien vi skal se på her, går ut på å prøve ut heltallige verdier for $x$ og sjekke om likningen er oppfylt for noen av dem.
 
 :::::::::::::::{explore} Utforsk 1
-Programmet nedenfor prøver ut noen heltallsverdier for $x$ og sjekker om en likning er oppfylt.
+Nedenfor vises noen programmer som prøver ut forskjellige verdier av $x$ for å løse en likning.
+
+For hvert program, finn ut hvilken likning som løses og forutsi hvilke verdier programmet skriver ut.
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Les programmet og svar på følgende:
 
-1. Hvilken likning er det programmet prøver å løse?
-2. Hvordan skiller skrivemåten for å sjekke om en likning er oppfylt seg fra når vi definerer variabler?
-3. Hvilken verdi er det programmet skriver ut? Skriv inn forutsigelsen din og sjekk svaret ditt.
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
-Endre på programmet slik at det løser likningen
-
-$$
-4x - 6 = x + 3
-$$
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} c
-Endre på programmet og prøv å bruke det til å løse likningen
-
-$$
-3x - 1 = x + 2
-$$
-
-Kan du forklare hvorfor du ikke får en løsning med programmet?
-
-:::::::::::::
-
-::::::::::::::
-
-
+:::::::::::::{part} a
 :::{interactive-code} 
 ---
 predict: 
 ---
-for x in range(-5, 6):
+for x in range(-100, 101):
     if 2*x - 1 == -x + 2:
         print(x)
+
+
 :::
+
+
+:::::::::::::
+
+
+
+:::::::::::::{part} b
+:::{interactive-code} 
+---
+predict: 
+---
+for x in range(-100, 101):
+    if 3*x + 4 == -2*x + 9:
+        print(x)
+
+
+:::
+:::::::::::::
+
+
+
+:::::::::::::{part} c
+:::{interactive-code} 
+---
+predict: 
+---
+for x in range(-100, 101):
+    if 1/2 * x + 8 == x - 4:
+        print(x)
+
+
+:::
+:::::::::::::
+
+
+
 
 
 :::::::::::::::

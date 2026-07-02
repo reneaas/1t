@@ -6,12 +6,18 @@
 level: 1
 ---
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Bruk figuren nedenfor til å løse likningssystemet 
+
+:::::::::::::{part} a
+:::{plot}
+nocache:
+width: 320px
+align: right
+fontsize: 26
+implicit-curve: x**2 - 2 * x + y = 4
+implicit-curve: -x + y = 2, red
+:::
+
+Bruk figuren til høyre til å løse likningssystemet 
 
 \begin{align*}
     x^2 - 2x + y &= 4\\
@@ -20,27 +26,10 @@ Bruk figuren nedenfor til å løse likningssystemet
 \end{align*}
 
 
-:::{plot}
-width: 70%
-implicit-curve: x**2 - 2 * x + y = 4
-implicit-curve: -x + y = 2, red
-nocache:
-:::
-
-
-:::{figure} ./figurer/oppgaver/oppgave_1/a.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-
-
-::::{answer}
+:::::{answer}
 $$
 x = -1 \and y = 1 \or x = 2 \and y = 4.
 $$
-::::
 
 ::::{solution}
 Vi ser fra figuren at grafene til likningene skjærer hverandre i punktene $(-1, 1)$ og $(2, 4)$. Løsningen av likningssystemet er derfor 
@@ -51,12 +40,27 @@ $$
 
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
-Bruk figuren nedenfor til å løse likningssystemet 
+:::{plot}
+nocache:
+width: 320px
+align: right
+fontsize: 26
+implicit-curve: x**2 + x - y = 2, blue
+implicit-curve: -2*x + y = 4, red
+ymax: 12
+ymin: -3
+:::
+
+
+
+Bruk figuren til høyre til å løse likningssystemet 
 
 \begin{align*}
     x^2 + x - y &= 2\\
@@ -64,19 +68,11 @@ Bruk figuren nedenfor til å løse likningssystemet
     -2x + y &= 4
 \end{align*}
 
-:::{figure} ./figurer/oppgaver/oppgave_1/b.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
 
-
-::::{answer}
+:::::{answer}
 $$
 x = -2 \and y = 0 \or x = 3 \and y = 10.
 $$
-::::
 
 ::::{solution}
 Grafene til likningene skjærer hverandre i punktene $(-2, 0)$ og $(3, 10)$. Løsniingen av likningssystemet er derfor
@@ -86,12 +82,24 @@ x = -2 \and y = 0 \or x = 3 \and y = 10.
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
+:::{plot}
+nocache:
+width: 320px
+align: right
+fontsize: 26
+implicit-curve: x**2 + 2*x - y - 1 = 0, blue
+implicit-curve: 3*x - y = -1, red
+ymax: 9
+ymin: -4
+:::
 
-Bruk figuren nedenfor til å løse likningssystemet 
+Bruk figuren til høyre til å løse likningssystemet 
 
 \begin{align*}
     x^2 + 2x - y - 1 &= 0\\
@@ -99,20 +107,13 @@ Bruk figuren nedenfor til å løse likningssystemet
     3x - y &= -1
 \end{align*}
 
-:::{figure} ./figurer/oppgaver/oppgave_1/c.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
 
 
-::::{answer}
+
+:::::{answer}
 $$
 x = -1 \and y = -2 \or x = 2 \and y = 7.
 $$
-::::
-
 
 ::::{solution}
 Grafene skjærer hverandre i punktene $(-1, -2)$ og $(2, 7)$. Løsningen av likningssystemet er derfor
@@ -122,45 +123,9 @@ x = -1 \and y = -2 \or x = 2 \and y = 7.
 $$
 ::::
 
-:::::::::::::
-
-
-:::::::::::::{tab-item} d
-
-Bruk figuren nedenfor til å løse likningssystemet 
-
-\begin{align*}
-    x^2 - 2x + y &= -1\\
-    \\
-    2x + y &= 3
-\end{align*}
-
-:::{figure} ./figurer/oppgaver/oppgave_1/d.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-
-
-::::{answer}
-$$
-x = 2 \and y = -1
-$$
-::::
-
-::::{solution}
-Grafene skjærer hverandre i ett punkt: $(2, -1)$. Løsningen av likningssystemet er derfor
-
-$$
-x = 2 \and y = -1
-$$
-::::
+:::::
 
 :::::::::::::
-
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -170,9 +135,7 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 2
----
-level: 1
----
+
 Bruk Geogebra til å løse likningssystemene grafisk. 
 
 
@@ -202,11 +165,7 @@ $$
 ::::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 
 :::{ggb-popup}
 ---
@@ -221,12 +180,10 @@ layout: sidebar
 \end{align*}
 
 
-::::{answer}
+:::::{answer}
 $$
 x = -3 \and y = 13 \or x = 1 \and y = 1
 $$
-::::
-
 
 ::::{solution}
 Vi tegner grafene til likningene i Geogebra og bruker "skjæring mellom to objekt" {ggb-icon}`mode_intersect` for å finne skjæringspunktet mellom dem. Se figuren nedenfor:
@@ -246,11 +203,13 @@ $$
 
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 :::{ggb-popup}
 ---
 layout: sidebar
@@ -263,12 +222,10 @@ x^2 - x - y &= 3 \\
 x - y &= -5
 \end{align*}
 
-::::{answer}
+:::::{answer}
 $$
 x = -2 \and y = 3 \or x = 4 \and y = 9
 $$
-::::
-
 
 ::::{solution}
 Vi tegner grafene til likningene i Geogebra og bruker "skjæring mellom to objekt" {ggb-icon}`mode_intersect` for å finne skjæringspunktet mellom dem. Se figuren nedenfor:
@@ -287,12 +244,13 @@ x = -2 \and y = 3 \or x = 4 \and y = 9
 $$
 
 ::::
+:::::
 
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 :::{ggb-popup}
 ---
 layout: sidebar
@@ -306,12 +264,10 @@ x^2 + 2x - y &= 0 \\
 \end{align*}
 
 
-::::{answer}
+:::::{answer}
 $$
 x = -1 \and y = -1 \or x = 1 \and y = 3
 $$
-::::
-
 
 ::::{solution}
 Vi tegner grafene til likningene i Geogebra og bruker "skjæring mellom to objekt" {ggb-icon}`mode_intersect` for å finne skjæringspunktet mellom dem. Se figuren nedenfor:
@@ -330,11 +286,13 @@ x = -1 \and y = -1 \or x = 1 \and y = 3
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 
 :::{ggb-popup}
 ---
@@ -350,12 +308,10 @@ layout: sidebar
 \end{align*}
 
 
-::::{answer}
+:::::{answer}
 $$
 x = 0 \and y = 1 \or x = 3 \and y = -5
 $$
-::::
-
 
 ::::{solution}
 Vi tegner grafene til likningene i Geogebra og bruker "skjæring mellom to objekt" {ggb-icon}`mode_intersect` for å finne skjæringspunktet mellom dem. Se figuren nedenfor:
@@ -374,11 +330,10 @@ x = 0 \and y = 1 \or x = 4 \and y = -7
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
-
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -393,11 +348,8 @@ level: 1
 ---
 Løs likningssystemene algebraisk. 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 
 \begin{align*}
     x^2 - 2x + y &= 4\\
@@ -405,12 +357,10 @@ class: tabs-parts
     -x + y &= 2
 \end{align*}
 
-::::{answer}
+:::::{answer}
 $$
 x = -1 \and y = 1 \or x = 2 \and y = 4.
 $$
-::::
-
 
 ::::{solution}
 Vi løser likning 2 for $y$:
@@ -458,13 +408,17 @@ Dermed er løsningen av likningssystemet
 $$
 x = -1 \and y = 1 \or x = 2 \and y = 4.
 $$
-
 ::::
+
+:::::
+
+
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 \begin{align*}
     x^2 + x - y &= 2\\
@@ -473,12 +427,10 @@ $$
 \end{align*}
 
 
-::::{answer}
+:::::{answer}
 $$
 x = -2 \and y = 0 \or x = 3 \and y = 10.
 $$
-::::
-
 
 ::::{solution}
 Vi løser likning 2 for $y$:
@@ -530,11 +482,13 @@ x = -2 \and y = 0 \or x = 3 \and y = 10.
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 
 \begin{align*}
     3x - y &= -1 \\
@@ -543,12 +497,10 @@ $$
 \end{align*}
 
 
-::::{answer}
+:::::{answer}
 $$
 x = -1 \and y = -2 \or x = 2 \and y = 7.
 $$
-::::
-
 
 ::::{solution}
 Vi løser likning 1 for $y$:
@@ -600,11 +552,13 @@ x = -1 \and y = -2 \or x = 2 \and y = 7.
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 
 \begin{align*}
     x^2 - 2x + y &= -1\\
@@ -613,12 +567,10 @@ $$
 \end{align*}
 
 
-::::{answer}
+:::::{answer}
 $$
 x = 2 \and y = -1.
 $$
-::::
-
 
 ::::{solution}
 Vi løser likning 2 for $y$:
@@ -664,9 +616,9 @@ x = 2 \and y = -1.
 $$
 ::::
 
-:::::::::::::
+:::::
 
-::::::::::::::
+:::::::::::::
 
 
 :::::::::::::::
@@ -676,16 +628,11 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 4
----
-level: 1
----
+
 Bruk CAS til å løse likningssystemene. 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 :::{cas-popup}
 ---
 layout: sidebar
@@ -699,11 +646,10 @@ layout: sidebar
 \end{align*}
 
 
-::::{answer}
+:::::{answer}
 $$
 x = 4 \and y = 1 \or x = 1 \and y = -\dfrac{1}{2}
 $$
-::::
 
 ::::{solution}
 :::{figure} ./figurer/oppgaver/oppgave_4/a.png
@@ -720,10 +666,12 @@ x = 4 \and y = 1 \or x = 1 \and y = -\dfrac{1}{2}
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 
 :::{cas-popup}
 ---
@@ -738,12 +686,10 @@ layout: sidebar
 \end{align*}
 
 
-::::{answer}
+:::::{answer}
 $$
 x = -1 \and y = 3 \or x = \dfrac{7}{2} \and y = 12.
 $$
-::::
-
 
 ::::{solution}
 :::{figure} ./figurer/oppgaver/oppgave_4/b.png
@@ -760,10 +706,12 @@ x = -1 \and y = 3 \or x = \dfrac{7}{2} \and y = 12.
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 
 :::{cas-popup}
 ---
@@ -779,12 +727,10 @@ x + 4y &= 8
 \end{align*}
 
 
-::::{answer}
+:::::{answer}
 $$
 x = 0 \and y = 2 \or x = -\dfrac{1}{4} \and y = \dfrac{33}{16}
 $$
-::::
-
 
 ::::{solution}
 :::{figure} ./figurer/oppgaver/oppgave_4/c.png
@@ -801,11 +747,13 @@ x = 0 \and y = 2 \or x = -\dfrac{1}{4} \and y = \dfrac{33}{16}
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 :::{cas-popup}
 ---
 layout: sidebar
@@ -820,12 +768,10 @@ x^2 - 3 &= y + 2x
 \end{align*}
 
 
-::::{answer}
+:::::{answer}
 $$
 x = 0 \and y = -3 \or x = 4 \and y = 5.
 $$
-::::
-
 
 ::::{solution}
 :::{figure} ./figurer/oppgaver/oppgave_4/d.png
@@ -842,10 +788,10 @@ x = 0 \and y = -3 \or x = 4 \and y = 5.
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -859,14 +805,8 @@ Det kan være lurt å løse likningene med hensyn på $y$ slik at du kan gjenkje
 
 
 :::::::::::::::{exercise} Oppgave 5
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Avgjør hvilken av figurene nedenfor du kan bruke til å løse likningssystemet 
 
 
@@ -894,7 +834,7 @@ Figur C.
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Avgjør hvilken av figurene nedenfor du kan bruke til å løse likningssystemet 
 
 
@@ -924,7 +864,7 @@ Figur A.
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Avgjør hvilken av figurene nedenfor du kan bruke til å løse likningssystemet 
 
 
@@ -952,10 +892,6 @@ Figur D.
 
 :::::::::::::
 
-
-
-
-::::::::::::::
 :::::::::::::::
 
 
@@ -963,14 +899,8 @@ Figur D.
 
 
 :::::::::::::::{exercise} Oppgave 6
----
-level: 2
----
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Lag et likningssystem du kan bruke figuren nedenfor til å løse
 
 :::{figure} ./figurer/oppgaver/oppgave_6/a.svg
@@ -983,7 +913,7 @@ width: 80%
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Lag et likningssystem du kan bruke figuren nedenfor til å løse
 
 :::{figure} ./figurer/oppgaver/oppgave_6/b.svg
@@ -997,7 +927,7 @@ width: 80%
 
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Lag et likningssystem du kan bruke figuren nedenfor til å løse
 
 :::{figure} ./figurer/oppgaver/oppgave_6/c.svg
@@ -1019,17 +949,11 @@ width: 80%
 
 
 :::::::::::::::{exercise} Oppgave 7
----
-level: 2
----
+
 Bruk CAS til å forutsi hva som skrives ut av programmene nedenfor.
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 :::{cas-popup}
 ---
 layout: sidebar
@@ -1056,7 +980,7 @@ for x in range(-10, 11):
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 :::{cas-popup}
 ---
 layout: sidebar
@@ -1083,7 +1007,7 @@ for x in range(-10, 11):
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 :::{cas-popup}
 ---
 layout: sidebar
@@ -1110,7 +1034,7 @@ for x in range(-10, 11):
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{part} d
 :::{cas-popup}
 ---
 layout: sidebar
@@ -1137,9 +1061,6 @@ for x in range(-10, 11):
 :::::::::::::
 
 
-
-::::::::::::::
-
 :::::::::::::::
 
 
@@ -1147,9 +1068,7 @@ for x in range(-10, 11):
 
 
 :::::::::::::::{exercise} Oppgave 8
----
-level: 2
----
+
 Anna har skrevet et program for å løse et likningssystem. Programmet er vist nedenfor.
 
 :::{code-block} python
@@ -1165,11 +1084,7 @@ for x in range(-100, 101):
 :::
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 :::{ggb-popup}
 ---
 layout: sidebar
@@ -1181,7 +1096,7 @@ Løs likningssystemet grafisk.
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 :::{cas-popup}
 ---
 layout: sidebar
@@ -1193,23 +1108,19 @@ Løs likningssystemet med CAS.
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Løs likningssystemet algebraisk. 
 
 
 :::::::::::::
 
-
-::::::::::::::
 :::::::::::::::
 
 
 ---
 
 :::::::::::::::{exercise} Oppgave 9
----
-level: 3
----
+
 :::{cas-popup}
 ---
 layout: sidebar
@@ -1228,11 +1139,7 @@ Et likningssystem er gitt ved
 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 
 
 Bestem $k$ slik at likningssystemet har nøyaktig én løsning.
@@ -1248,7 +1155,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 For hvilke verdier av $k$ har likningssystemet to løsninger? 
 
 
@@ -1262,7 +1169,6 @@ $$
 :::::::::::::
 
 
-::::::::::::::
 
 :::::::::::::::
 
@@ -1271,9 +1177,7 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 10
----
-level: 3
----
+
 
 :::{cas-popup}
 ---
@@ -1292,11 +1196,7 @@ x + y &= 2
 \end{align*}
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem $k$ slik at likningssystemet har nøyaktig én løsning.
 
 
@@ -1308,19 +1208,18 @@ $$
 
 :::::::::::::
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 For hvilke verdier av $k$ vil likningsystemet ikke ha noen løsning?
 
 
 ::::{answer}
 $$
-k \in \langle \gets, -1 \rangle \cup \langle 3, \gets \rangle
+k \in \langle \gets, -1 \rangle \cup \langle 3, \to \rangle
 $$
 ::::
 
 :::::::::::::
 
-::::::::::::::
 
 
 :::::::::::::::
@@ -1335,9 +1234,7 @@ Det kan være lurt å tenke deg at du roterer grafen 90 grader og deretter speil
 
 
 :::::::::::::::{exercise} Oppgave 11
----
-level: 3
----
+
 Grafen til en andregradsfunksjon kalles for en **parabel**. Men en parabel må ikke være en funksjon. For at grafen skal være en funksjon, så kan det bare finnes én $y$-verdi for hver $x$-verdi. Hvis parabelen derimot ligger langs $x$-aksen, så har den flere $y$-verdier for hver $x$-verdi. Da er ikke grafen en funksjon, men en **kurve**.
 
 I figuren nedenfor vises en slik **parabel**. 
@@ -1350,11 +1247,8 @@ width: 90%
 ---
 :::
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem likningen til parabelen på standardform:
 
 $$
@@ -1362,28 +1256,48 @@ x = ay^2 + by + c
 $$
 
 
+:::::{answer}
+$$
+x = y^2 - 2y - 3
+$$
+:::::
+
+
 :::::::::::::
 
-:::::::::::::{tab-item} b
-Bestem likningen til parabelen på ekstremalpunktssform:
+:::::::::::::{part} b
+Bestem likningen til parabelen på ekstremalpunktsform:
 
 $$
 x = a(y - y_0)^2 + x_0
 $$
 
+
+:::::{answer}
+$$
+x = (y - 1)^2 - 4
+$$
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem likningen til parabelen på nullpunktsform:
 
 $$
 x = a(y - y_1)(y - y_2)
 $$
 
+
+:::::{answer}
+$$
+x = (y + 1)(y - 3)
+$$
+:::::
+
 :::::::::::::
 
-::::::::::::::
 
 :::::::::::::::
 

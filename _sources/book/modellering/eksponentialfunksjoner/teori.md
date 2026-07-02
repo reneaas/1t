@@ -1,10 +1,7 @@
 # Eksponentialfunksjoner
 
 
-:::::{admonition} Læringsmål
----
-class: tip
----
+:::::{goals} Læringsmål
 * Kunne veksle mellom prosentvis endring og vekstfaktor. 
 * Kunne sette opp og tolke eksponentialfunksjoner i praktiske situasjoner.
 * Kunne lage matematiske modeller ved bruk av regresjon. 
@@ -287,10 +284,11 @@ $$
 V = 1 + p
 $$
 
-| $V$ | $p$ | Beskrivelse |
-| --- | --- | --- |
-| $V > 1$ | $p > 0$ | Økning |
-| $0 < V < 1$ | $p < 0$ | Nedgang |
+:::{table}
+labels: $V$, $p$, Beskrivelse
+$V > 1$, $p > 0$, Økning
+$0 < V < 1$, $p < 0$, Nedgang
+:::
 
 :::::::::::::::
 
@@ -305,7 +303,7 @@ En vare øker med $15 \%$. Bestem vekstfaktoren til endringen.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Her er $p = 15 \% = 0.15$ siden det er en økning på $15 \%$. Vekstfaktoren $V$ er da
 
@@ -327,7 +325,7 @@ Prisen på en vare synker med $8 \%$. Bestem vekstfaktoren til endringen.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Her er $p = -8 \% = -0.08$ siden det er en nedgang på $8 \%$. Vekstfaktoren $V$ er da
 
@@ -869,7 +867,7 @@ Bestem en funksjon $f(x)$ som gir beløpet du har på kontoen etter $x$ år.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Siden vi setter inn $1000$ kr, så er startverdien 
 
@@ -902,12 +900,10 @@ En bil blir kjøpt for 200 000 kr, og verdien synker med 15\% per år.
 
 Sett opp et funksjonsuttrykk $f(x)$ som gir verdien av bilen etter $x$ år.
 
-::::{answer}
+:::::{answer}
 $$
 f(x) = 200 \, 000 \cdot 0.85^x
 $$
-::::
-
 
 ::::{solution}
 Startverdien er $200 \, 000$ kr siden dette er det bilen blir kjøpt for, så 
@@ -928,6 +924,9 @@ $$
 f(x) = a \cdot b^x = 200 \, 000 \cdot 0.85^x.
 $$
 ::::
+
+:::::
+
 
 
 :::::::::::::::
@@ -1039,7 +1038,7 @@ $$
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Siden innskuddet skal vokse med $5\%$ per år, så er vekstfaktoren $b = 1.05$. Da har vi at innskuddet vi satt inn må oppfylle
 
@@ -1312,7 +1311,7 @@ Lag et program som regner ut på kontoen etter $5$ år.
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Vi har at startverdien er $a = 1000$ og at vekstfaktoren er $b = 1.05$. Da har vi at 
 
@@ -1330,6 +1329,8 @@ for n in range(1, 6):   # for år 1, 2, 3, 4, 5
     s = s * 1.05        # Øk sparebeløpet med 5%
 
 print(f"{s = :.2f} kr")
+
+
 :::
 ::::
 
@@ -1349,7 +1350,7 @@ Hvor mye penger har du på kontoen etter $10$ år?
 
 ::::{solution}
 ---
-dropdown: 0
+open:
 ---
 Her har vi at startverdien er $a = 1000$ og at vekstfaktoren er $b = 1.004$. Siden vi setter inn et innskudd hver måned, kan vi ikke bare bruke én eksponentiell modell for å regne ut beløpet på kontoen over tid. I stedet må vi bruke algoritmen nedenfor:
 
@@ -1368,6 +1369,8 @@ for n in range(1, 11):  # for år 1, 2, ..., 10
     s = s * 1.05        # Øk sparebeløpet med 5% rente
 
 print(f"{s = :.2f} kr")
+
+
 :::
 
 ::::

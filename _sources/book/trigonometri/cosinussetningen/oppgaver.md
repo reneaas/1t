@@ -2,39 +2,37 @@
 
 
 :::::::::::::::{exercise} Oppgave 1
----
-level: 1
----
 
+
+
+:::::::::::::{part} a
 :::{cas-popup}
-:::
-
-
-::::::::::::::{tab-set}
 ---
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Bestem $x$ i trekanten nedenfor.
-
-
-:::{figure} ./figurer/oppgaver/oppgave_1/a/figur.svg
----
-width: 80%
-class: no-click, adaptive-figure
+layout: sidebar
 ---
 :::
 
 
+Finn $BC$ i trekanten nedenfor.
 
-::::{answer}
+
+:::{plot}
+figsize: (5, 2.5)
+axis: off
+axis: equal
+width: 60%
+triangle: svs=(3, 110, 2), angles=(A), angle-labels=(A=numeric), side-labels=(AB=exact, CA=exact)
+:::
+
+
+
+:::::{answer}
 $$
-x \approx 4.14
+BC \approx 4.14
 $$
-::::
-
-
 ::::{solution}
+La $x = BC$. Fra cosinussetningen får vi at
+
 :::{figure} ./figurer/oppgaver/oppgave_1/a/sol.png
 ---
 width: 70%
@@ -42,33 +40,46 @@ class: no-click, adaptive-figure
 ---
 :::
 
+Altså er
+
 $$
-x \approx 4.14
+BC \approx 4.14
 $$
 ::::
+:::::
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
-Bestem $x$ i trekanten nedenfor.
-
-
-:::{figure} ./figurer/oppgaver/oppgave_1/b/figur.svg
+:::::::::::::{part} b
+:::{cas-popup}
 ---
-width: 80%
-class: no-click, adaptive-figure
+layout: sidebar
 ---
 :::
 
-::::{answer}
+
+Bestem $CA$ i trekanten nedenfor.
+
+
+:::{plot}
+figsize: (5, 3)
+axis: off
+axis: equal
+width: 60%
+triangle: sss=(6, 5.97, 3.99), angles=(C), angle-labels=(C=numeric), side-labels=(AB=numeric, BC=numeric)
+:::
+
+
+:::::{answer}
 $$
-x \approx 3.99
+CA \approx 3.99
 $$
-::::
 
 ::::{solution}
+Vi lar $x = CA$. Med cosinussetningen får vi da:
+
 :::{figure} ./figurer/oppgaver/oppgave_1/b/sol.png
 ---
 width: 70%
@@ -76,33 +87,42 @@ class: no-click, adaptive-figure
 ---
 :::
 
+Altså er
+
 $$
-x \approx 3.99
+CA \approx 3.99
 $$
 ::::
+
+:::::
 
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-Bestem $x$ i trekanten nedenfor.
-
-
-:::{figure} ./figurer/oppgaver/oppgave_1/c/figur.svg
+:::::::::::::{part} c
+:::{cas-popup}
 ---
-width: 80%
-class: no-click, adaptive-figure
+layout: sidebar
 ---
 :::
 
-::::{answer}
-$$
-x \approx 2.99
-$$
-::::
 
+Bestem $AB$ i trekanten nedenfor.
+
+:::{plot}
+figsize: (5, 3)
+axis: off
+axis: equal
+width: 60%
+triangle: sss=(3, 7, 5), angles=(B), angle-labels=(B=numeric), side-labels=(BC=numeric, CA=numeric), angle-radius=60, label-offset=40, angle-offset=60
+:::
+
+:::::{answer}
+$$
+AB = 3
+$$
 
 ::::{solution}
 :::{figure} ./figurer/oppgaver/oppgave_1/c/sol.png
@@ -112,18 +132,19 @@ class: no-click, adaptive-figure
 ---
 :::
 
-$AB < AC = 5$ som betyr at $AB \approx 5.59$ ikke er en mulighet. Dermed har vi at
+Fra figuren er det klart at $AB \lt BC$. Altså er ikke $AB = 8$ en mulighet. Derfor er
 
 $$
-x \approx 2.99
+AB = 3
 $$
 ::::
+
+:::::
+
 
 
 
 :::::::::::::
-
-::::::::::::::
 
 
 
@@ -136,37 +157,40 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 2
----
-level: 1
----
+
+
+
+
+:::::::::::::{part} a
 
 :::{cas-popup}
-:::
-
-
-::::::::::::::{tab-set}
 ---
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Bestem $x$ i trekanten nedenfor.
-
-:::{figure} ./figurer/oppgaver/oppgave_2/a/figur.svg
----
-width: 80%
-class: no-click, adaptive-figure
+layout: sidebar
 ---
 :::
 
 
-::::{answer}
-$$
-x \approx 117.28\degree
-$$
-::::
+Bestem $\angle A$ i trekanten nedenfor.
 
+
+:::{plot}
+figsize: (5, 3)
+axis: off
+axis: equal
+width: 60%
+triangle: sss=(3, 6, 4), angles=(A), side-labels=(BC=numeric, CA=numeric, AB=numeric), angle-radius=40, label-offset=30
+:::
+
+
+
+:::::{answer}
+$$
+\angle A \approx 117.28\degree
+$$
 
 ::::{solution}
+Vi lar $x = \angle A$. Fra cosinussetningen får vi da at
+
 :::{figure} ./figurer/oppgaver/oppgave_2/a/sol.png
 ---
 width: 100%
@@ -174,35 +198,48 @@ class: no-click, adaptive-figure
 ---
 :::
 
+Altså er
 
 $$
-x \approx 117.28\degree
+\angle A \approx 117.28\degree
 $$
 ::::
+
+:::::
+
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
-Bestem $x$ i trekanten nedenfor.
-
-:::{figure} ./figurer/oppgaver/oppgave_2/b/figur.svg
+:::::::::::::{part} b
+:::{cas-popup}
 ---
-width: 80%
-class: no-click, adaptive-figure
+layout: sidebar
 ---
 :::
 
 
-::::{answer}
-$$
-x \approx 104.48\degree
-$$
-::::
+Bestem $\angle C$ i trekanten nedenfor.
 
+
+:::{plot}
+figsize: (5, 3)
+axis: off
+axis: equal
+width: 60%
+triangle: sss=(4, 2, 3), angles=(C), side-labels=(BC=numeric, CA=numeric, AB=numeric), angle-radius=40, label-offset=30
+:::
+
+
+:::::{answer}
+$$
+\angle C \approx 104.48\degree
+$$
 
 ::::{solution}
+Vi lar $x = \angle C$. Fra cosinussetningen får vi da at
+
 :::{figure} ./figurer/oppgaver/oppgave_2/b/sol.png
 ---
 width: 100%
@@ -210,35 +247,47 @@ class: no-click, adaptive-figure
 ---
 :::
 
+Altså er
 
 $$
-x \approx 104.48\degree
+\angle C \approx 104.48\degree
 $$
 ::::
+:::::
 
 
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
-Bestem $x$ i trekanten nedenfor.
+:::::::::::::{part} c
 
-:::{figure} ./figurer/oppgaver/oppgave_2/c/figur.svg
+:::{cas-popup}
 ---
-width: 80%
-class: no-click, adaptive-figure
+layout: sidebar
 ---
 :::
 
 
-::::{answer}
-$$
-x \approx 58.81\degree
-$$
-::::
+Bestem $\angle B$ i trekanten nedenfor.
 
+
+:::{plot}
+figsize: (5, 3)
+axis: off
+axis: equal
+width: 60%
+triangle: sss=(7, 4, 6), angles=(B), side-labels=(BC=numeric, CA=numeric, AB=numeric), angle-radius=40, label-offset=30
+:::
+
+
+:::::{answer}
+$$
+\angle B \approx 58.81\degree
+$$
 
 ::::{solution}
+Vi lar $x = \angle B$. Fra cosinussetningen får vi da at
+
 :::{figure} ./figurer/oppgaver/oppgave_2/c/sol.png
 ---
 width: 100%
@@ -246,16 +295,18 @@ class: no-click, adaptive-figure
 ---
 :::
 
+Altså er
+
 
 $$
-x \approx 58.81\degree
+\angle B \approx 58.81\degree
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -276,7 +327,8 @@ En trekant $\triangle ABC$ er vist nedenfor.
 
 
 :::{plot}
-fontsize: 25
+fontsize: 20
+figsize: (5, 2.5)
 width: 60%
 axis: equal
 axis: off
@@ -302,20 +354,14 @@ text: 0.5 * (Ax + Cx), 0.5 * (Ay + Cy), "$2\ell$", top-left
 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem et eksakt uttrykk for arealet av trekanten uttrykt ved $\ell$.
 
 
-::::{answer}
+:::::{answer}
 $$
 T = \dfrac{5\sqrt{3}}{2} \cdot \ell^2
 $$
-::::
-
 
 ::::{solution}
 Med arealsetningen får vi at
@@ -331,6 +377,8 @@ T = \dfrac{1}{2} \cdot 2 \ell \cdot 5 \ell \cdot \dfrac{\sqrt{3}}{2} = \dfrac{5\
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
@@ -338,16 +386,14 @@ $$
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem et eksakt uttrykk for lengden $BC$ uttrykt ved $\ell$.
 
 
-::::{answer}
+:::::{answer}
 $$
 BC = \sqrt{19} \cdot \ell
 $$
-::::
-
 
 ::::{solution}
 Vi lar $x = BC$. Fra cosinussetningen får vi da at
@@ -371,10 +417,11 @@ $$
 Altså er $BC = \sqrt{19} \cdot \ell$.
 ::::
 
+:::::
+
 :::::::::::::
 
 
-::::::::::::::
 
 :::::::::::::::
 
@@ -419,8 +466,8 @@ text: Bx, By, "$B$", bottom-right
 text: Cx, Cy, "$C$", top-right
 text: Dx, Dy, "$D$", top-left
 let: ds = 0.2
-line-segment: (Bx - ds, By), (Bx - ds, By + ds), solid, gray
-line-segment: (Bx - ds, By + ds), (Bx, By + ds), solid, gray
+line-segment: (Bx - ds, By), (Bx - ds, By + ds), solid, red
+line-segment: (Bx - ds, By + ds), (Bx, By + ds), solid, red
 angle-arc: (Cx, Cy), 0.2, 90 + 180 - 120, 90 + 180, red
 text: 0.5 * (Ax + Bx), 0.5 * (Ay + By) - 0.1, "$\sqrt{3}$", bottom-center
 text: 0.5 * (Ax + Dx), 0.5 * (Ay + Dy) - 0.1, "$\sqrt{7}$", bottom-left
@@ -432,19 +479,14 @@ text: Cx - 0.18, Cy - 0.1, "$120^\circ$", bottom-left
 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem omkretsen $\mathcal{O}$ av $\square ABCD$.
 
 
-::::{answer}
+:::::{answer}
 $$
 \mathcal{O} = 4 + \sqrt{3} + \sqrt{7}.
 $$
-::::
 
 ::::{solution}
 Vi deler opp firkant $\square ABCD$ i to trekanter $\triangle ABC$ og $\triangle ACD$.
@@ -478,18 +520,19 @@ $$
 
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem arealet $T$ av $\square ABCD$.
 
 
-::::{answer}
+:::::{answer}
 $$
 T = 2\sqrt{3}
 $$
-::::
 
 ::::{solution}
 Arealet av $\triangle ABC$ kan regnes ut direkte med grunnlinje $AB$ og høyde $BC$ (siden trekanten er rettvinklet):
@@ -517,10 +560,10 @@ $$
 
 ::::
 
+:::::
+
 :::::::::::::
 
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -530,37 +573,58 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 5
+
+:::{cas-popup}
 ---
-level: 2
+layout: sidebar
 ---
+:::
 
 Nedenfor vises en firkant $\square ABCD$. 
 
-:::{figure} ./figurer/oppgaver/oppgave_5/figur.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
+:::{plot}
+figsize: (5, 3)
+fontsize: 16
+axis: equal
+axis: off
+width: 70%
+let: u = -25 * pi/180
+let: Ax = 0
+let: Ay = 0
+let: Bx = 1.33 * cos(u)
+let: By = 1.33 * sin(u)
+let: Dx = 2 * cos(u + 139.2 * pi/180)
+let: Dy = 2 * sin(u + 139.2 * pi/180)
+let: Cx = Bx + 2 * cos(-24.68 * pi/180 + pi + u - 100.17 * pi/180)
+let: Cy = By + 2 * sin(-24.68 * pi/180 + pi + u - 100.17 * pi/180)
+line-segment: (Ax, Ay), (Bx, By), solid, blue
+line-segment: (Bx, By), (Cx, Cy), solid, blue
+line-segment: (Cx, Cy), (Dx, Dy), solid, blue
+line-segment: (Dx, Dy), (Ax, Ay), solid, blue
+line-segment: (Bx, By), (Dx, Dy), dashed, gray
+angle-arc: (Ax, Ay), 0.2, u * 180/pi, u * 180/pi + 139.2, red
+angle-arc: (Bx, By), 0.2, u * 180/pi + 180 - 24.68, u * 180/pi + 180 - 24.68 - 100.17, red
+text: 0.5 * (Ax + Dx), 0.5 * (Ay + Dy), "$2$", bottom-left
+text: 0.5 * (Cx + Dx), 0.5 * (Cy + Dy), "$4$", top-right
+text: 0.5 * (Bx + Cx), 0.5 * (By + Cy), "$2$", bottom-right
+text: Ax, Ay, "$A$", bottom-left
+text: Bx, By, "$B$", bottom-center
+text: Cx, Cy, "$C$", center-right
+text: Dx, Dy, "$D$", top-left
+text: Ax + 0.2, Ay + 0.2, "$139.2^\circ$", top-center
+text: Bx + 0.1, By + 0.3, "$100.17^\circ$", top-center
 :::
 
-:::{cas-popup}
-:::
 
 
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem omkretsen av $\square ABCD$.
 
 
-::::{answer}
+:::::{answer}
 $$
 \mathcal{O} \approx 9.33.
 $$
-::::
 
 ::::{solution}
 Vi bruker cosinussetningen på $\triangle BCD$ for å bestemme lengden $BD$:
@@ -602,13 +666,20 @@ $$
 
 ::::
 
+:::::
+
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem arealet av $\square ABCD$.
 
+
+:::::{answer}
+$$
+T_{\square ABCD} \approx 3.95. 
+$$
 
 ::::{solution}
 Fra oppgave **a** fant vi at 
@@ -647,9 +718,9 @@ $$
 
 ::::
 
-:::::::::::::
+:::::
 
-::::::::::::::
+:::::::::::::
 
 
 :::::::::::::::
@@ -659,9 +730,6 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 6
----
-level: 2
----
 
 
 :::{cas-popup}
@@ -675,7 +743,8 @@ En firkant $\square ABCD$ er vist nedenfor.
 
 
 :::{plot}
-fontsize: 25
+figsize: (5, 3)
+fontsize: 18
 width: 60%
 axis: off
 axis: equal
@@ -710,21 +779,15 @@ text: 0.5 * (Bx + Cx), 0.5 * (By + Cy), "$\sqrt{2} \cdot a$", bottom-right
 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem et eksakt uttrykk for $BD$ uttrykt ved $a$.
 
 
 
-::::{answer}
+:::::{answer}
 $$
 BD = \sqrt{3} \cdot a.
 $$
-::::
-
 
 ::::{solution}
 La $x = BD$. Vi kan merke oss at siden $\angle ADB = 30 \degree$ og $\angle A = 120\degree$, så følger det at $\angle ABD = 30\degree$ som betyr at $\triangle ABD$ er en likebeint trekant. Dermed er $AB = AD = a$. Da kan bruke cosinussetningen til å bestemme $x$:
@@ -743,18 +806,20 @@ x = BD = \sqrt{3} \cdot a.
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem et eksakt uttrykk for omkretsen til $\square ABCD$.
 
 
-::::{answer}
+:::::{answer}
 $$
 \mathcal{O} = \dfrac{1}{2}\cdot a \cdot \left(3\sqrt{2} + \sqrt{6} + 4\right).
 $$
-::::
+
 
 ::::{solution}
 Vi bestemmer lengden $CD$ ved å bruke cosinussetningen ut ifra vinkel $\angle DBC$ som gir
@@ -804,17 +869,20 @@ $$
 
 ::::
 
+
+:::::
+
 :::::::::::::
 
-:::::::::::::{tab-item} c
+:::::::::::::{part} c
 Bestem $a$ slik at arealet av firkanten er $\sqrt{3}$.
 
 
-::::{answer}
+:::::{answer}
 $$
 a = \sqrt{6} - \sqrt{2}
 $$
-::::
+
 
 ::::{solution}
 Vi setter opp en likning der vi uttrykket arealet til $\square ABCD$ ved $a$ ved å bruke arealsetningen på $\triangle ABD$ og $\triangle BCD$, som vi løser med CAS:
@@ -836,9 +904,9 @@ $$
 
 ::::
 
-:::::::::::::
+:::::
 
-::::::::::::::
+:::::::::::::
 
 
 :::::::::::::::
@@ -849,9 +917,6 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 7
----
-level: 2
----
 
 :::{cas-popup}
 ---
@@ -865,6 +930,7 @@ Nedenfor vises en regulær 5-kant med sidelengder $\ell$.
 
 
 :::{plot}
+figsize: (5, 3.5)
 axis: off
 axis: equal
 width: 50%
@@ -902,19 +968,14 @@ text: 0.5 * (Ax + Bx), 0.5 * (Ay + By) - 0.1, "$\ell$", bottom-center
 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+:::::::::::::{part} a
 Bestem et eksakt uttrykk for $AC$ uttrykt ved $\ell$.
 
 
-::::{answer}
+:::::{answer}
 $$
 AC = \dfrac{1}{2}\left(\sqrt{5} + 1\right)\cdot \ell
 $$
-::::
 
 ::::{solution}
 Vi bruker cosinussetningen med $AB = BC = \ell$ som gir:
@@ -932,20 +993,19 @@ AC = \dfrac{1}{2}\left(\sqrt{5} + 1\right)\cdot \ell
 $$
 ::::
 
+:::::
+
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 Bestem et eksakt uttrykk for arealet av 5-kanten uttrykt ved $\ell$.
 
 
-::::{answer}
+:::::{answer}
 $$
 T_{ABCDE} = \dfrac{1}{4} \sqrt{5\left(2\sqrt{5} + 5\right)} \cdot \ell^2
 $$
-::::
-
-
 
 ::::{solution}
 Fra figuren, kan vi merke oss at 5-kant $ABCDE$ er delt opp i tre trekanter $\triangle ABC$, $\triangle ACE$ og $\triangle CDE$. Vi kan også merke oss at $\triangle ABC$ og $\triangle CDE$ er **kongruente** (de er formlike *og* like store) fordi $\angle D = \angle B$ og $CD = DE = \ell$. Dermed kan vi uttrykke arealet av 5-kanten som 
@@ -1013,11 +1073,12 @@ $$
 
 ::::
 
+:::::
+
+
 
 
 :::::::::::::
-
-::::::::::::::
 
 
 :::::::::::::::
@@ -1026,9 +1087,7 @@ $$
 ---
 
 :::::::::::::::{exercise} Oppgave 8
----
-level: 2
----
+
 Anna jobber med å finne en ukjent side $x$ i trekant. <br>
 Hun har brukt cosinussetningen og har satt opp likningen
 
@@ -1073,9 +1132,6 @@ Dette er en mulighet for opplysningene Anna kan ha fått.
 
 
 :::::::::::::::{exercise} Oppgave 9
----
-level: 3
----
 
 :::{cas-popup}
 ---
@@ -1135,11 +1191,10 @@ text: 0.5 * (Ax + Bx), 0.5 * (Ay + By), "$2$", bottom-center
 
 
 
-::::{answer}
+:::::{answer}
 $$
 T_{\mathrm{7-kant}} \approx 14.5.
 $$
-::::
 
 
 ::::{solution}
@@ -1244,6 +1299,8 @@ $$
 
 ::::
 
+:::::
+
 
 :::::::::::::::
 
@@ -1279,19 +1336,14 @@ fontsize: 25
 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
+:::::::::::::{part} a
 Bestem en eksakt verdi for omkretsen $\mathcal{O}$ av $6$-kanten.
 
-::::{answer}
+:::::{answer}
 $$
 \mathcal{O} = 4 \sqrt{3}
 $$
-::::
-
 
 ::::{solution}
 Sirkelen er innskrevet i en regulær $6$-kant som betyr at **høyden** i trekanten er lik radius i sirkelen. Dermed er høyden $1$. 
@@ -1319,21 +1371,21 @@ $$
 $$
 ::::
 
+:::::
+
 
 :::::::::::::
 
 
 
-:::::::::::::{tab-item} b
+:::::::::::::{part} b
 En eksakt verdi for arealet $T$ av $6$-kanten.
 
 
-::::{answer}
+:::::{answer}
 $$
 T = 2 \sqrt{3}
 $$
-::::
-
 
 ::::{solution}
 Sidelengdene til de $6$ trekantene som bygger opp $6$-kanten har sidelengder $\ell = 2x$ der $x = \dfrac{\sqrt{3}}{3}$ som vi fant i oppgave **a**. Altså blir sidelengdene som spenner ut hver trekant i $6$-kanten lik
@@ -1371,9 +1423,9 @@ $$
 
 ::::
 
-:::::::::::::
+:::::
 
-::::::::::::::
+:::::::::::::
 
 :::::::::::::::
 
