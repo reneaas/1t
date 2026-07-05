@@ -409,7 +409,6 @@ layout: sidebar
 
 
 :::{plot}
-nocache:
 fontsize: 30
 width: 100%
 align: right
@@ -645,7 +644,6 @@ $$
 I figuren nedenfor vises en firkant $ABCD$. I firkanten er $\angle C = 150\degree$. 
 
 :::{plot}
-nocache:
 width: 60%
 figsize: (5, 2)
 axis: off
