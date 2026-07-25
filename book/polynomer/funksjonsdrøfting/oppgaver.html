@@ -808,9 +808,9 @@ a</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-082f1dfd" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-082f1dfd" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-082f1dfd" class="ggb-window"></div>
+<button id="button-ggb-cas-b7900099" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-b7900099" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-b7900099" class="ggb-window"></div>
 </div>
 
 <style>
@@ -861,12 +861,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-082f1dfd';
+    const storageKey = 'ggb-cas-state-ggb-cas-b7900099';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-082f1dfd").width(),
-            h = $("#ggb-cas-082f1dfd").height();
+      const w = $("#ggb-cas-b7900099").width(),
+            h = $("#ggb-cas-b7900099").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -937,7 +937,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-082f1dfd").dialog({
+    const $dlg = $("#dialog-ggb-cas-b7900099").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -947,7 +947,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-082f1dfd",
+            appName: "classic", id: "ggb-cas-b7900099",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -959,7 +959,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-082f1dfd");
+          }, true).inject("ggb-cas-b7900099");
         } else {
           applySize();
         }
@@ -980,12 +980,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-082f1dfd").empty();
+            $("#ggb-cas-b7900099").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-082f1dfd",
+              appName: "classic", id: "ggb-cas-b7900099",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -995,7 +995,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-082f1dfd");
+            }, true).inject("ggb-cas-b7900099");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -1047,7 +1047,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-082f1dfd')) {
+          if (!e.target.closest('#ggb-cas-b7900099')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -1075,7 +1075,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-082f1dfd');
+      const ggbContainer = document.getElementById('ggb-cas-b7900099');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -1121,10 +1121,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-082f1dfd").button()
+    $("#button-ggb-cas-b7900099").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-082f1dfd").dialog("open");
+        $("#dialog-ggb-cas-b7900099").dialog("open");
       });
   });
 })();
@@ -1157,9 +1157,9 @@ b</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-9d32aa2b" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-9d32aa2b" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-9d32aa2b" class="ggb-window"></div>
+<button id="button-ggb-cas-5078e322" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-5078e322" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-5078e322" class="ggb-window"></div>
 </div>
 
 <style>
@@ -1210,12 +1210,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-9d32aa2b';
+    const storageKey = 'ggb-cas-state-ggb-cas-5078e322';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-9d32aa2b").width(),
-            h = $("#ggb-cas-9d32aa2b").height();
+      const w = $("#ggb-cas-5078e322").width(),
+            h = $("#ggb-cas-5078e322").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -1286,7 +1286,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-9d32aa2b").dialog({
+    const $dlg = $("#dialog-ggb-cas-5078e322").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -1296,7 +1296,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-9d32aa2b",
+            appName: "classic", id: "ggb-cas-5078e322",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -1308,7 +1308,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-9d32aa2b");
+          }, true).inject("ggb-cas-5078e322");
         } else {
           applySize();
         }
@@ -1329,12 +1329,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-9d32aa2b").empty();
+            $("#ggb-cas-5078e322").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-9d32aa2b",
+              appName: "classic", id: "ggb-cas-5078e322",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -1344,7 +1344,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-9d32aa2b");
+            }, true).inject("ggb-cas-5078e322");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -1396,7 +1396,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-9d32aa2b')) {
+          if (!e.target.closest('#ggb-cas-5078e322')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -1424,7 +1424,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-9d32aa2b');
+      const ggbContainer = document.getElementById('ggb-cas-5078e322');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -1470,10 +1470,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-9d32aa2b").button()
+    $("#button-ggb-cas-5078e322").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-9d32aa2b").dialog("open");
+        $("#dialog-ggb-cas-5078e322").dialog("open");
       });
   });
 })();
@@ -1506,9 +1506,9 @@ c</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-012684b8" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-012684b8" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-012684b8" class="ggb-window"></div>
+<button id="button-ggb-cas-87a99a07" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-87a99a07" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-87a99a07" class="ggb-window"></div>
 </div>
 
 <style>
@@ -1559,12 +1559,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-012684b8';
+    const storageKey = 'ggb-cas-state-ggb-cas-87a99a07';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-012684b8").width(),
-            h = $("#ggb-cas-012684b8").height();
+      const w = $("#ggb-cas-87a99a07").width(),
+            h = $("#ggb-cas-87a99a07").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -1635,7 +1635,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-012684b8").dialog({
+    const $dlg = $("#dialog-ggb-cas-87a99a07").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -1645,7 +1645,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-012684b8",
+            appName: "classic", id: "ggb-cas-87a99a07",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -1657,7 +1657,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-012684b8");
+          }, true).inject("ggb-cas-87a99a07");
         } else {
           applySize();
         }
@@ -1678,12 +1678,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-012684b8").empty();
+            $("#ggb-cas-87a99a07").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-012684b8",
+              appName: "classic", id: "ggb-cas-87a99a07",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -1693,7 +1693,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-012684b8");
+            }, true).inject("ggb-cas-87a99a07");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -1745,7 +1745,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-012684b8')) {
+          if (!e.target.closest('#ggb-cas-87a99a07')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -1773,7 +1773,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-012684b8');
+      const ggbContainer = document.getElementById('ggb-cas-87a99a07');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -1819,10 +1819,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-012684b8").button()
+    $("#button-ggb-cas-87a99a07").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-012684b8").dialog("open");
+        $("#dialog-ggb-cas-87a99a07").dialog("open");
       });
   });
 })();
@@ -1855,9 +1855,9 @@ d</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-36c28851" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-36c28851" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-36c28851" class="ggb-window"></div>
+<button id="button-ggb-cas-36a076bd" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-36a076bd" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-36a076bd" class="ggb-window"></div>
 </div>
 
 <style>
@@ -1908,12 +1908,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-36c28851';
+    const storageKey = 'ggb-cas-state-ggb-cas-36a076bd';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-36c28851").width(),
-            h = $("#ggb-cas-36c28851").height();
+      const w = $("#ggb-cas-36a076bd").width(),
+            h = $("#ggb-cas-36a076bd").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -1984,7 +1984,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-36c28851").dialog({
+    const $dlg = $("#dialog-ggb-cas-36a076bd").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -1994,7 +1994,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-36c28851",
+            appName: "classic", id: "ggb-cas-36a076bd",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -2006,7 +2006,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-36c28851");
+          }, true).inject("ggb-cas-36a076bd");
         } else {
           applySize();
         }
@@ -2027,12 +2027,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-36c28851").empty();
+            $("#ggb-cas-36a076bd").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-36c28851",
+              appName: "classic", id: "ggb-cas-36a076bd",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -2042,7 +2042,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-36c28851");
+            }, true).inject("ggb-cas-36a076bd");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -2094,7 +2094,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-36c28851')) {
+          if (!e.target.closest('#ggb-cas-36a076bd')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -2122,7 +2122,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-36c28851');
+      const ggbContainer = document.getElementById('ggb-cas-36a076bd');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -2168,10 +2168,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-36c28851").button()
+    $("#button-ggb-cas-36a076bd").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-36c28851").dialog("open");
+        $("#dialog-ggb-cas-36a076bd").dialog("open");
       });
   });
 })();
@@ -2258,11 +2258,11 @@ f(x) = x^3 + 4x^2 - 3x - 18
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-25T00:57:08.839588</dc:date>
+    <dc:date>2026-07-25T20:12:48.274617</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -2271,8 +2271,8 @@ f(x) = x^3 + 4x^2 - 3x - 18
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_5f34f50a69f1_b46c13_figure_1">
-  <g id="cpl_5f34f50a69f1_b46c13_patch_1">
+ <g id="cpl_0d7cebebd95d_af7586_figure_1">
+  <g id="cpl_0d7cebebd95d_af7586_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -2281,8 +2281,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_5f34f50a69f1_b46c13_axes_1">
-   <g id="cpl_5f34f50a69f1_b46c13_patch_2">
+  <g id="cpl_0d7cebebd95d_af7586_axes_1">
+   <g id="cpl_0d7cebebd95d_af7586_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -2291,117 +2291,117 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_5f34f50a69f1_b46c13_matplotlib.axis_1">
-    <g id="cpl_5f34f50a69f1_b46c13_text_1">
+   <g id="cpl_0d7cebebd95d_af7586_matplotlib.axis_1">
+    <g id="cpl_0d7cebebd95d_af7586_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_5f34f50a69f1_b46c13_CMMI12-79" d="M 3033 2624 
-C 2828 2585 2752 2431 2752 2310 
-C 2752 2156 2873 2105 2963 2105 
-C 3155 2105 3289 2271 3289 2444 
-C 3289 2694 2982 2816 2713 2816 
-C 2323 2816 2105 2451 2048 2329 
-C 1900 2790 1504 2816 1388 2816 
-C 736 2816 390 1993 390 1849 
-C 390 1823 416 1790 460 1790 
-C 512 1790 524 1829 537 1855 
-C 755 2572 1184 2687 1369 2687 
-C 1657 2687 1715 2438 1715 2284 
-C 1715 2143 1676 1993 1600 1678 
-L 1382 778 
-C 1286 390 1100 64 761 64 
-C 729 64 569 64 435 126 
-C 665 166 716 358 716 435 
-C 716 563 620 640 499 640 
-C 345 640 179 505 179 300 
+       <path id="cpl_0d7cebebd95d_af7586_CMMI12-78" d="M 3034 2606 
+C 2829 2567 2752 2414 2752 2293 
+C 2752 2139 2874 2088 2963 2088 
+C 3155 2088 3290 2254 3290 2427 
+C 3290 2695 2982 2816 2714 2816 
+C 2323 2816 2106 2433 2048 2312 
+C 1901 2816 1504 2816 1389 2816 
+C 736 2816 390 1980 390 1839 
+C 390 1814 416 1782 461 1782 
+C 512 1782 525 1820 538 1846 
+C 755 2555 1184 2689 1370 2689 
+C 1658 2689 1715 2420 1715 2267 
+C 1715 2127 1677 1980 1600 1673 
+L 1382 798 
+C 1286 415 1101 64 762 64 
+C 730 64 570 64 435 147 
+C 666 192 717 383 717 460 
+C 717 588 621 664 499 664 
+C 346 664 179 530 179 326 
 C 179 57 480 -64 755 -64 
-C 1062 -64 1280 153 1414 415 
-C 1516 64 1836 -64 2073 -64 
-C 2726 -64 3072 751 3072 896 
-C 3072 929 3046 955 3008 955 
-C 2950 955 2944 922 2924 870 
-C 2752 300 2380 64 2092 64 
-C 1868 64 1747 204 1747 467 
-C 1747 607 1772 712 1875 1146 
-L 2099 2039 
-C 2195 2425 2412 2687 2707 2687 
-C 2720 2687 2899 2687 3033 2624 
+C 1062 -64 1280 179 1414 441 
+C 1517 64 1837 -64 2074 -64 
+C 2726 -64 3072 773 3072 913 
+C 3072 945 3046 971 3008 971 
+C 2950 971 2944 939 2925 888 
+C 2752 326 2381 64 2093 64 
+C 1869 64 1747 230 1747 492 
+C 1747 632 1773 734 1875 1156 
+L 2099 2024 
+C 2195 2408 2413 2689 2707 2689 
+C 2720 2689 2899 2689 3034 2606 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_5f34f50a69f1_b46c13_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_0d7cebebd95d_af7586_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_5f34f50a69f1_b46c13_matplotlib.axis_2">
-    <g id="cpl_5f34f50a69f1_b46c13_text_2">
+   <g id="cpl_0d7cebebd95d_af7586_matplotlib.axis_2">
+    <g id="cpl_0d7cebebd95d_af7586_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_5f34f50a69f1_b46c13_CMMI12-7a" d="M 1683 -673 
-C 1510 -921 1260 -1152 947 -1152 
-C 870 -1152 563 -1139 467 -826 
-C 486 -833 518 -833 531 -833 
-C 723 -833 851 -666 851 -519 
-C 851 -372 729 -320 633 -320 
-C 531 -320 307 -397 307 -711 
-C 307 -1050 582 -1280 947 -1280 
-C 1587 -1280 2233 -673 2412 -7 
-L 3040 2483 
-C 3046 2515 3059 2553 3059 2591 
-C 3059 2687 2982 2752 2886 2752 
-C 2828 2752 2694 2726 2643 2534 
-L 2169 657 
-C 2137 542 2137 530 2086 459 
+       <path id="cpl_0d7cebebd95d_af7586_CMMI12-79" d="M 1683 -700 
+C 1510 -939 1261 -1152 947 -1152 
+C 870 -1152 563 -1152 467 -889 
+C 486 -895 518 -895 531 -895 
+C 723 -895 851 -729 851 -582 
+C 851 -435 730 -384 634 -384 
+C 531 -384 307 -458 307 -759 
+C 307 -1071 582 -1286 947 -1286 
+C 1587 -1286 2234 -700 2413 6 
+L 3040 2485 
+C 3046 2517 3059 2556 3059 2594 
+C 3059 2689 2982 2753 2886 2753 
+C 2829 2753 2694 2727 2643 2535 
+L 2170 658 
+C 2138 543 2138 530 2086 460 
 C 1958 281 1747 64 1440 64 
-C 1081 64 1049 415 1049 587 
-C 1049 951 1222 1443 1395 1902 
-C 1465 2087 1504 2177 1504 2305 
-C 1504 2573 1312 2816 998 2816 
-C 409 2816 172 1890 172 1838 
-C 172 1813 198 1781 243 1781 
-C 300 1781 307 1807 332 1896 
-C 486 2432 729 2687 979 2687 
-C 1036 2687 1145 2687 1145 2477 
-C 1145 2311 1075 2126 979 1883 
-C 665 1047 665 836 665 683 
-C 665 76 1100 -64 1420 -64 
-C 1606 -64 1836 -7 2060 230 
-L 2067 223 
-C 1971 -141 1907 -359 1683 -673 
+C 1082 64 1050 415 1050 588 
+C 1050 952 1222 1443 1395 1903 
+C 1466 2088 1504 2178 1504 2305 
+C 1504 2574 1312 2816 998 2816 
+C 410 2816 173 1890 173 1839 
+C 173 1814 198 1782 243 1782 
+C 301 1782 307 1807 333 1897 
+C 486 2433 730 2689 979 2689 
+C 1037 2689 1146 2689 1146 2478 
+C 1146 2312 1075 2127 979 1884 
+C 666 1047 666 837 666 683 
+C 666 77 1101 -64 1421 -64 
+C 1606 -64 1837 -6 2061 230 
+L 2067 224 
+C 1971 -147 1907 -392 1683 -700 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_5f34f50a69f1_b46c13_CMMI12-7a" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_0d7cebebd95d_af7586_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_5f34f50a69f1_b46c13_line2d_1">
+   <g id="cpl_0d7cebebd95d_af7586_line2d_1">
     <defs>
-     <path id="cpl_5f34f50a69f1_b46c13_m0819f8dbfb" d="M 3 0 
+     <path id="cpl_0d7cebebd95d_af7586_m97f8953061" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_5f34f50a69f1_b46c13_m0819f8dbfb" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_0d7cebebd95d_af7586_m97f8953061" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_5f34f50a69f1_b46c13_line2d_2">
+   <g id="cpl_0d7cebebd95d_af7586_line2d_2">
     <defs>
-     <path id="cpl_5f34f50a69f1_b46c13_mce62bc5d80" d="M 0 -3 
+     <path id="cpl_0d7cebebd95d_af7586_m02be78eb9e" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_5f34f50a69f1_b46c13_mce62bc5d80" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_0d7cebebd95d_af7586_m02be78eb9e" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_5f34f50a69f1_b46c13_line2d_3">
+   <g id="cpl_0d7cebebd95d_af7586_line2d_3">
     <path d="M 95.512813 346.6 
 L 99.168907 316.525619 
 L 102.789929 288.551321 
@@ -2497,30 +2497,30 @@ L 363.237246 30.249783
 L 366.45889 12.037676 
 L 368.638913 -1 
 L 368.638913 -1 
-" clip-path="url(#cpl_5f34f50a69f1_b46c13_p98e87774d0)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_0d7cebebd95d_af7586_p4231a2b01e)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_5f34f50a69f1_b46c13_patch_3">
+   <g id="cpl_0d7cebebd95d_af7586_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_5f34f50a69f1_b46c13_patch_4">
+   <g id="cpl_0d7cebebd95d_af7586_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_5f34f50a69f1_b46c13_patch_5">
+   <g id="cpl_0d7cebebd95d_af7586_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_5f34f50a69f1_b46c13_patch_6">
+   <g id="cpl_0d7cebebd95d_af7586_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_5f34f50a69f1_b46c13_text_3">
-    <g id="cpl_5f34f50a69f1_b46c13_patch_7">
+   <g id="cpl_0d7cebebd95d_af7586_text_3">
+    <g id="cpl_0d7cebebd95d_af7586_patch_7">
      <path d="M 401.317322 88.523386 
 L 419.982678 88.523386 
 Q 431.982678 88.523386 431.982678 76.523386 
@@ -2536,32 +2536,32 @@ z
     <!-- A -->
     <g transform="translate(401.317322 70.709936) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_5f34f50a69f1_b46c13_CMSS17-43" d="M 2272 4416 
-L 1721 4416 
+      <path id="cpl_0d7cebebd95d_af7586_CMSS17-41" d="M 2272 4416 
+L 1722 4416 
 L 166 0 
-L 652 0 
-L 1100 1280 
+L 653 0 
+L 1101 1280 
 L 2816 1280 
 L 3270 0 
 L 3827 0 
 L 2272 4416 
 z
-M 2694 1638 
-L 1222 1638 
-C 1529 2530 1913 3638 1958 3924 
-L 1964 3924 
-C 2009 3663 2137 3281 2246 2956 
-L 2694 1638 
+M 2694 1637 
+L 1222 1637 
+C 1530 2528 1914 3638 1958 3925 
+L 1965 3925 
+C 2010 3663 2138 3281 2246 2956 
+L 2694 1637 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_5f34f50a69f1_b46c13_CMSS17-43" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_0d7cebebd95d_af7586_CMSS17-41" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_5f34f50a69f1_b46c13_p98e87774d0">
+  <clipPath id="cpl_0d7cebebd95d_af7586_p4231a2b01e">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -2576,11 +2576,11 @@ z
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-25T00:57:08.896846</dc:date>
+    <dc:date>2026-07-25T20:12:48.299337</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -2589,8 +2589,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_139503d0db7d_fcac32_figure_1">
-  <g id="cpl_139503d0db7d_fcac32_patch_1">
+ <g id="cpl_39bc69b08706_7ce18e_figure_1">
+  <g id="cpl_39bc69b08706_7ce18e_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -2599,8 +2599,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_139503d0db7d_fcac32_axes_1">
-   <g id="cpl_139503d0db7d_fcac32_patch_2">
+  <g id="cpl_39bc69b08706_7ce18e_axes_1">
+   <g id="cpl_39bc69b08706_7ce18e_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -2609,117 +2609,117 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_139503d0db7d_fcac32_matplotlib.axis_1">
-    <g id="cpl_139503d0db7d_fcac32_text_1">
+   <g id="cpl_39bc69b08706_7ce18e_matplotlib.axis_1">
+    <g id="cpl_39bc69b08706_7ce18e_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_139503d0db7d_fcac32_CMMI12-79" d="M 3033 2624 
-C 2828 2585 2752 2431 2752 2310 
-C 2752 2156 2873 2105 2963 2105 
-C 3155 2105 3289 2271 3289 2444 
-C 3289 2694 2982 2816 2713 2816 
-C 2323 2816 2105 2451 2048 2329 
-C 1900 2790 1504 2816 1388 2816 
-C 736 2816 390 1993 390 1849 
-C 390 1823 416 1790 460 1790 
-C 512 1790 524 1829 537 1855 
-C 755 2572 1184 2687 1369 2687 
-C 1657 2687 1715 2438 1715 2284 
-C 1715 2143 1676 1993 1600 1678 
-L 1382 778 
-C 1286 390 1100 64 761 64 
-C 729 64 569 64 435 126 
-C 665 166 716 358 716 435 
-C 716 563 620 640 499 640 
-C 345 640 179 505 179 300 
+       <path id="cpl_39bc69b08706_7ce18e_CMMI12-78" d="M 3034 2606 
+C 2829 2567 2752 2414 2752 2293 
+C 2752 2139 2874 2088 2963 2088 
+C 3155 2088 3290 2254 3290 2427 
+C 3290 2695 2982 2816 2714 2816 
+C 2323 2816 2106 2433 2048 2312 
+C 1901 2816 1504 2816 1389 2816 
+C 736 2816 390 1980 390 1839 
+C 390 1814 416 1782 461 1782 
+C 512 1782 525 1820 538 1846 
+C 755 2555 1184 2689 1370 2689 
+C 1658 2689 1715 2420 1715 2267 
+C 1715 2127 1677 1980 1600 1673 
+L 1382 798 
+C 1286 415 1101 64 762 64 
+C 730 64 570 64 435 147 
+C 666 192 717 383 717 460 
+C 717 588 621 664 499 664 
+C 346 664 179 530 179 326 
 C 179 57 480 -64 755 -64 
-C 1062 -64 1280 153 1414 415 
-C 1516 64 1836 -64 2073 -64 
-C 2726 -64 3072 751 3072 896 
-C 3072 929 3046 955 3008 955 
-C 2950 955 2944 922 2924 870 
-C 2752 300 2380 64 2092 64 
-C 1868 64 1747 204 1747 467 
-C 1747 607 1772 712 1875 1146 
-L 2099 2039 
-C 2195 2425 2412 2687 2707 2687 
-C 2720 2687 2899 2687 3033 2624 
+C 1062 -64 1280 179 1414 441 
+C 1517 64 1837 -64 2074 -64 
+C 2726 -64 3072 773 3072 913 
+C 3072 945 3046 971 3008 971 
+C 2950 971 2944 939 2925 888 
+C 2752 326 2381 64 2093 64 
+C 1869 64 1747 230 1747 492 
+C 1747 632 1773 734 1875 1156 
+L 2099 2024 
+C 2195 2408 2413 2689 2707 2689 
+C 2720 2689 2899 2689 3034 2606 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_139503d0db7d_fcac32_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_39bc69b08706_7ce18e_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_139503d0db7d_fcac32_matplotlib.axis_2">
-    <g id="cpl_139503d0db7d_fcac32_text_2">
+   <g id="cpl_39bc69b08706_7ce18e_matplotlib.axis_2">
+    <g id="cpl_39bc69b08706_7ce18e_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_139503d0db7d_fcac32_CMMI12-7a" d="M 1683 -673 
-C 1510 -921 1260 -1152 947 -1152 
-C 870 -1152 563 -1139 467 -826 
-C 486 -833 518 -833 531 -833 
-C 723 -833 851 -666 851 -519 
-C 851 -372 729 -320 633 -320 
-C 531 -320 307 -397 307 -711 
-C 307 -1050 582 -1280 947 -1280 
-C 1587 -1280 2233 -673 2412 -7 
-L 3040 2483 
-C 3046 2515 3059 2553 3059 2591 
-C 3059 2687 2982 2752 2886 2752 
-C 2828 2752 2694 2726 2643 2534 
-L 2169 657 
-C 2137 542 2137 530 2086 459 
+       <path id="cpl_39bc69b08706_7ce18e_CMMI12-79" d="M 1683 -700 
+C 1510 -939 1261 -1152 947 -1152 
+C 870 -1152 563 -1152 467 -889 
+C 486 -895 518 -895 531 -895 
+C 723 -895 851 -729 851 -582 
+C 851 -435 730 -384 634 -384 
+C 531 -384 307 -458 307 -759 
+C 307 -1071 582 -1286 947 -1286 
+C 1587 -1286 2234 -700 2413 6 
+L 3040 2485 
+C 3046 2517 3059 2556 3059 2594 
+C 3059 2689 2982 2753 2886 2753 
+C 2829 2753 2694 2727 2643 2535 
+L 2170 658 
+C 2138 543 2138 530 2086 460 
 C 1958 281 1747 64 1440 64 
-C 1081 64 1049 415 1049 587 
-C 1049 951 1222 1443 1395 1902 
-C 1465 2087 1504 2177 1504 2305 
-C 1504 2573 1312 2816 998 2816 
-C 409 2816 172 1890 172 1838 
-C 172 1813 198 1781 243 1781 
-C 300 1781 307 1807 332 1896 
-C 486 2432 729 2687 979 2687 
-C 1036 2687 1145 2687 1145 2477 
-C 1145 2311 1075 2126 979 1883 
-C 665 1047 665 836 665 683 
-C 665 76 1100 -64 1420 -64 
-C 1606 -64 1836 -7 2060 230 
-L 2067 223 
-C 1971 -141 1907 -359 1683 -673 
+C 1082 64 1050 415 1050 588 
+C 1050 952 1222 1443 1395 1903 
+C 1466 2088 1504 2178 1504 2305 
+C 1504 2574 1312 2816 998 2816 
+C 410 2816 173 1890 173 1839 
+C 173 1814 198 1782 243 1782 
+C 301 1782 307 1807 333 1897 
+C 486 2433 730 2689 979 2689 
+C 1037 2689 1146 2689 1146 2478 
+C 1146 2312 1075 2127 979 1884 
+C 666 1047 666 837 666 683 
+C 666 77 1101 -64 1421 -64 
+C 1606 -64 1837 -6 2061 230 
+L 2067 224 
+C 1971 -147 1907 -392 1683 -700 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_139503d0db7d_fcac32_CMMI12-7a" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_39bc69b08706_7ce18e_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_139503d0db7d_fcac32_line2d_1">
+   <g id="cpl_39bc69b08706_7ce18e_line2d_1">
     <defs>
-     <path id="cpl_139503d0db7d_fcac32_mff93698306" d="M 3 0 
+     <path id="cpl_39bc69b08706_7ce18e_m764f2c9ca9" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_139503d0db7d_fcac32_mff93698306" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_39bc69b08706_7ce18e_m764f2c9ca9" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_139503d0db7d_fcac32_line2d_2">
+   <g id="cpl_39bc69b08706_7ce18e_line2d_2">
     <defs>
-     <path id="cpl_139503d0db7d_fcac32_m783b422904" d="M 0 -3 
+     <path id="cpl_39bc69b08706_7ce18e_m85fafbd6dd" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_139503d0db7d_fcac32_m783b422904" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_39bc69b08706_7ce18e_m85fafbd6dd" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_139503d0db7d_fcac32_line2d_3">
+   <g id="cpl_39bc69b08706_7ce18e_line2d_3">
     <path d="M 55.094999 346.6 
 L 58.379161 328.087655 
 L 61.627431 311.032891 
@@ -2817,30 +2817,30 @@ L 323.885259 29.752348
 L 327.506281 -0.837975 
 L 327.524892 -1 
 L 327.524892 -1 
-" clip-path="url(#cpl_139503d0db7d_fcac32_p990b35eeef)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_39bc69b08706_7ce18e_p4baac2ed30)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_139503d0db7d_fcac32_patch_3">
+   <g id="cpl_39bc69b08706_7ce18e_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_139503d0db7d_fcac32_patch_4">
+   <g id="cpl_39bc69b08706_7ce18e_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_139503d0db7d_fcac32_patch_5">
+   <g id="cpl_39bc69b08706_7ce18e_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_139503d0db7d_fcac32_patch_6">
+   <g id="cpl_39bc69b08706_7ce18e_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_139503d0db7d_fcac32_text_3">
-    <g id="cpl_139503d0db7d_fcac32_patch_7">
+   <g id="cpl_39bc69b08706_7ce18e_text_3">
+    <g id="cpl_39bc69b08706_7ce18e_patch_7">
      <path d="M 401.2993 88.523386 
 L 420.0007 88.523386 
 Q 432.0007 88.523386 432.0007 76.523386 
@@ -2856,38 +2856,38 @@ z
     <!-- B -->
     <g transform="translate(401.2993 70.709936) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_139503d0db7d_fcac32_CMSS17-44" d="M 569 4416 
-L 569 0 
+      <path id="cpl_39bc69b08706_7ce18e_CMSS17-42" d="M 570 4416 
+L 570 0 
 L 2163 0 
-C 3033 0 3667 575 3667 1200 
-C 3667 1684 3251 2175 2502 2316 
-C 3334 2559 3501 3039 3501 3311 
-C 3501 3880 2873 4416 1996 4416 
-L 569 4416 
+C 3034 0 3667 574 3667 1200 
+C 3667 1685 3251 2176 2502 2317 
+C 3334 2558 3501 3040 3501 3313 
+C 3501 3883 2874 4416 1997 4416 
+L 570 4416 
 z
 M 1088 2496 
-L 1088 4057 
-L 1824 4057 
-C 2483 4057 3001 3722 3001 3305 
-C 3001 2925 2592 2496 1766 2496 
+L 1088 4059 
+L 1824 4059 
+C 2483 4059 3002 3724 3002 3306 
+C 3002 2926 2592 2496 1766 2496 
 L 1088 2496 
 z
-M 1088 358 
-L 1088 2105 
-L 1939 2105 
-C 2630 2105 3161 1678 3161 1206 
-C 3161 772 2694 358 1984 358 
-L 1088 358 
+M 1088 357 
+L 1088 2107 
+L 1939 2107 
+C 2630 2107 3162 1679 3162 1206 
+C 3162 772 2694 357 1984 357 
+L 1088 357 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_139503d0db7d_fcac32_CMSS17-44" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_39bc69b08706_7ce18e_CMSS17-42" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_139503d0db7d_fcac32_p990b35eeef">
+  <clipPath id="cpl_39bc69b08706_7ce18e_p4baac2ed30">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -2902,11 +2902,11 @@ z
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-25T00:57:08.953967</dc:date>
+    <dc:date>2026-07-25T20:12:48.323857</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -2915,8 +2915,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_32b8883060f8_ed7f94_figure_1">
-  <g id="cpl_32b8883060f8_ed7f94_patch_1">
+ <g id="cpl_defb7a80ee0e_0f7b3e_figure_1">
+  <g id="cpl_defb7a80ee0e_0f7b3e_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -2925,8 +2925,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_32b8883060f8_ed7f94_axes_1">
-   <g id="cpl_32b8883060f8_ed7f94_patch_2">
+  <g id="cpl_defb7a80ee0e_0f7b3e_axes_1">
+   <g id="cpl_defb7a80ee0e_0f7b3e_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -2935,117 +2935,117 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_32b8883060f8_ed7f94_matplotlib.axis_1">
-    <g id="cpl_32b8883060f8_ed7f94_text_1">
+   <g id="cpl_defb7a80ee0e_0f7b3e_matplotlib.axis_1">
+    <g id="cpl_defb7a80ee0e_0f7b3e_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_32b8883060f8_ed7f94_CMMI12-79" d="M 3033 2624 
-C 2828 2585 2752 2431 2752 2310 
-C 2752 2156 2873 2105 2963 2105 
-C 3155 2105 3289 2271 3289 2444 
-C 3289 2694 2982 2816 2713 2816 
-C 2323 2816 2105 2451 2048 2329 
-C 1900 2790 1504 2816 1388 2816 
-C 736 2816 390 1993 390 1849 
-C 390 1823 416 1790 460 1790 
-C 512 1790 524 1829 537 1855 
-C 755 2572 1184 2687 1369 2687 
-C 1657 2687 1715 2438 1715 2284 
-C 1715 2143 1676 1993 1600 1678 
-L 1382 778 
-C 1286 390 1100 64 761 64 
-C 729 64 569 64 435 126 
-C 665 166 716 358 716 435 
-C 716 563 620 640 499 640 
-C 345 640 179 505 179 300 
+       <path id="cpl_defb7a80ee0e_0f7b3e_CMMI12-78" d="M 3034 2606 
+C 2829 2567 2752 2414 2752 2293 
+C 2752 2139 2874 2088 2963 2088 
+C 3155 2088 3290 2254 3290 2427 
+C 3290 2695 2982 2816 2714 2816 
+C 2323 2816 2106 2433 2048 2312 
+C 1901 2816 1504 2816 1389 2816 
+C 736 2816 390 1980 390 1839 
+C 390 1814 416 1782 461 1782 
+C 512 1782 525 1820 538 1846 
+C 755 2555 1184 2689 1370 2689 
+C 1658 2689 1715 2420 1715 2267 
+C 1715 2127 1677 1980 1600 1673 
+L 1382 798 
+C 1286 415 1101 64 762 64 
+C 730 64 570 64 435 147 
+C 666 192 717 383 717 460 
+C 717 588 621 664 499 664 
+C 346 664 179 530 179 326 
 C 179 57 480 -64 755 -64 
-C 1062 -64 1280 153 1414 415 
-C 1516 64 1836 -64 2073 -64 
-C 2726 -64 3072 751 3072 896 
-C 3072 929 3046 955 3008 955 
-C 2950 955 2944 922 2924 870 
-C 2752 300 2380 64 2092 64 
-C 1868 64 1747 204 1747 467 
-C 1747 607 1772 712 1875 1146 
-L 2099 2039 
-C 2195 2425 2412 2687 2707 2687 
-C 2720 2687 2899 2687 3033 2624 
+C 1062 -64 1280 179 1414 441 
+C 1517 64 1837 -64 2074 -64 
+C 2726 -64 3072 773 3072 913 
+C 3072 945 3046 971 3008 971 
+C 2950 971 2944 939 2925 888 
+C 2752 326 2381 64 2093 64 
+C 1869 64 1747 230 1747 492 
+C 1747 632 1773 734 1875 1156 
+L 2099 2024 
+C 2195 2408 2413 2689 2707 2689 
+C 2720 2689 2899 2689 3034 2606 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_32b8883060f8_ed7f94_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_defb7a80ee0e_0f7b3e_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_32b8883060f8_ed7f94_matplotlib.axis_2">
-    <g id="cpl_32b8883060f8_ed7f94_text_2">
+   <g id="cpl_defb7a80ee0e_0f7b3e_matplotlib.axis_2">
+    <g id="cpl_defb7a80ee0e_0f7b3e_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_32b8883060f8_ed7f94_CMMI12-7a" d="M 1683 -673 
-C 1510 -921 1260 -1152 947 -1152 
-C 870 -1152 563 -1139 467 -826 
-C 486 -833 518 -833 531 -833 
-C 723 -833 851 -666 851 -519 
-C 851 -372 729 -320 633 -320 
-C 531 -320 307 -397 307 -711 
-C 307 -1050 582 -1280 947 -1280 
-C 1587 -1280 2233 -673 2412 -7 
-L 3040 2483 
-C 3046 2515 3059 2553 3059 2591 
-C 3059 2687 2982 2752 2886 2752 
-C 2828 2752 2694 2726 2643 2534 
-L 2169 657 
-C 2137 542 2137 530 2086 459 
+       <path id="cpl_defb7a80ee0e_0f7b3e_CMMI12-79" d="M 1683 -700 
+C 1510 -939 1261 -1152 947 -1152 
+C 870 -1152 563 -1152 467 -889 
+C 486 -895 518 -895 531 -895 
+C 723 -895 851 -729 851 -582 
+C 851 -435 730 -384 634 -384 
+C 531 -384 307 -458 307 -759 
+C 307 -1071 582 -1286 947 -1286 
+C 1587 -1286 2234 -700 2413 6 
+L 3040 2485 
+C 3046 2517 3059 2556 3059 2594 
+C 3059 2689 2982 2753 2886 2753 
+C 2829 2753 2694 2727 2643 2535 
+L 2170 658 
+C 2138 543 2138 530 2086 460 
 C 1958 281 1747 64 1440 64 
-C 1081 64 1049 415 1049 587 
-C 1049 951 1222 1443 1395 1902 
-C 1465 2087 1504 2177 1504 2305 
-C 1504 2573 1312 2816 998 2816 
-C 409 2816 172 1890 172 1838 
-C 172 1813 198 1781 243 1781 
-C 300 1781 307 1807 332 1896 
-C 486 2432 729 2687 979 2687 
-C 1036 2687 1145 2687 1145 2477 
-C 1145 2311 1075 2126 979 1883 
-C 665 1047 665 836 665 683 
-C 665 76 1100 -64 1420 -64 
-C 1606 -64 1836 -7 2060 230 
-L 2067 223 
-C 1971 -141 1907 -359 1683 -673 
+C 1082 64 1050 415 1050 588 
+C 1050 952 1222 1443 1395 1903 
+C 1466 2088 1504 2178 1504 2305 
+C 1504 2574 1312 2816 998 2816 
+C 410 2816 173 1890 173 1839 
+C 173 1814 198 1782 243 1782 
+C 301 1782 307 1807 333 1897 
+C 486 2433 730 2689 979 2689 
+C 1037 2689 1146 2689 1146 2478 
+C 1146 2312 1075 2127 979 1884 
+C 666 1047 666 837 666 683 
+C 666 77 1101 -64 1421 -64 
+C 1606 -64 1837 -6 2061 230 
+L 2067 224 
+C 1971 -147 1907 -392 1683 -700 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_32b8883060f8_ed7f94_CMMI12-7a" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_defb7a80ee0e_0f7b3e_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_32b8883060f8_ed7f94_line2d_1">
+   <g id="cpl_defb7a80ee0e_0f7b3e_line2d_1">
     <defs>
-     <path id="cpl_32b8883060f8_ed7f94_m2320568587" d="M 3 0 
+     <path id="cpl_defb7a80ee0e_0f7b3e_m5278c2f8d6" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_32b8883060f8_ed7f94_m2320568587" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_defb7a80ee0e_0f7b3e_m5278c2f8d6" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_32b8883060f8_ed7f94_line2d_2">
+   <g id="cpl_defb7a80ee0e_0f7b3e_line2d_2">
     <defs>
-     <path id="cpl_32b8883060f8_ed7f94_mb8a193157f" d="M 0 -3 
+     <path id="cpl_defb7a80ee0e_0f7b3e_mec1612c067" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_32b8883060f8_ed7f94_mb8a193157f" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_defb7a80ee0e_0f7b3e_mec1612c067" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_32b8883060f8_ed7f94_line2d_3">
+   <g id="cpl_defb7a80ee0e_0f7b3e_line2d_3">
     <path d="M 93.925107 -1 
 L 97.624648 30.242981 
 L 101.272294 59.185118 
@@ -3142,30 +3142,30 @@ L 360.947482 316.799937
 L 364.115876 333.838328 
 L 366.355002 346.6 
 L 366.355002 346.6 
-" clip-path="url(#cpl_32b8883060f8_ed7f94_p81d9c9c9d1)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_defb7a80ee0e_0f7b3e_pe941697ae7)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_32b8883060f8_ed7f94_patch_3">
+   <g id="cpl_defb7a80ee0e_0f7b3e_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_32b8883060f8_ed7f94_patch_4">
+   <g id="cpl_defb7a80ee0e_0f7b3e_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_32b8883060f8_ed7f94_patch_5">
+   <g id="cpl_defb7a80ee0e_0f7b3e_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_32b8883060f8_ed7f94_patch_6">
+   <g id="cpl_defb7a80ee0e_0f7b3e_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_32b8883060f8_ed7f94_text_3">
-    <g id="cpl_32b8883060f8_ed7f94_patch_7">
+   <g id="cpl_defb7a80ee0e_0f7b3e_text_3">
+    <g id="cpl_defb7a80ee0e_0f7b3e_patch_7">
      <path d="M 401.671637 88.523386 
 L 419.628363 88.523386 
 Q 431.628363 88.523386 431.628363 76.523386 
@@ -3181,27 +3181,27 @@ z
     <!-- C -->
     <g transform="translate(401.671637 70.709936) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_32b8883060f8_ed7f94_CMSS17-45" d="M 3501 705 
-C 3072 416 2873 332 2355 332 
-C 1459 332 934 1304 934 2191 
-C 934 3137 1472 4070 2380 4070 
-C 2790 4070 3059 3954 3385 3748 
-L 3475 4255 
-C 3168 4409 2777 4480 2387 4480 
-C 1158 4480 396 3343 396 2191 
-C 396 924 1299 -77 2323 -77 
-C 2873 -77 3065 -32 3539 268 
-L 3501 705 
+      <path id="cpl_defb7a80ee0e_0f7b3e_CMSS17-43" d="M 3501 714 
+C 3072 427 2874 344 2355 344 
+C 1459 344 934 1303 934 2179 
+C 934 3112 1472 4032 2381 4032 
+C 2790 4032 3059 3918 3386 3715 
+L 3475 4217 
+C 3168 4370 2778 4440 2387 4440 
+C 1158 4440 397 3316 397 2179 
+C 397 927 1299 -64 2323 -64 
+C 2874 -64 3066 -19 3539 280 
+L 3501 714 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_32b8883060f8_ed7f94_CMSS17-45" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_defb7a80ee0e_0f7b3e_CMSS17-43" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_32b8883060f8_ed7f94_p81d9c9c9d1">
+  <clipPath id="cpl_defb7a80ee0e_0f7b3e_pe941697ae7">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -3216,11 +3216,11 @@ z
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-25T00:57:09.009877</dc:date>
+    <dc:date>2026-07-25T20:12:48.347424</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -3229,8 +3229,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_536363d318ac_345491_figure_1">
-  <g id="cpl_536363d318ac_345491_patch_1">
+ <g id="cpl_13b5ab3de506_32b7fa_figure_1">
+  <g id="cpl_13b5ab3de506_32b7fa_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -3239,8 +3239,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_536363d318ac_345491_axes_1">
-   <g id="cpl_536363d318ac_345491_patch_2">
+  <g id="cpl_13b5ab3de506_32b7fa_axes_1">
+   <g id="cpl_13b5ab3de506_32b7fa_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -3249,117 +3249,117 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_536363d318ac_345491_matplotlib.axis_1">
-    <g id="cpl_536363d318ac_345491_text_1">
+   <g id="cpl_13b5ab3de506_32b7fa_matplotlib.axis_1">
+    <g id="cpl_13b5ab3de506_32b7fa_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_536363d318ac_345491_CMMI12-79" d="M 3033 2624 
-C 2828 2585 2752 2431 2752 2310 
-C 2752 2156 2873 2105 2963 2105 
-C 3155 2105 3289 2271 3289 2444 
-C 3289 2694 2982 2816 2713 2816 
-C 2323 2816 2105 2451 2048 2329 
-C 1900 2790 1504 2816 1388 2816 
-C 736 2816 390 1993 390 1849 
-C 390 1823 416 1790 460 1790 
-C 512 1790 524 1829 537 1855 
-C 755 2572 1184 2687 1369 2687 
-C 1657 2687 1715 2438 1715 2284 
-C 1715 2143 1676 1993 1600 1678 
-L 1382 778 
-C 1286 390 1100 64 761 64 
-C 729 64 569 64 435 126 
-C 665 166 716 358 716 435 
-C 716 563 620 640 499 640 
-C 345 640 179 505 179 300 
+       <path id="cpl_13b5ab3de506_32b7fa_CMMI12-78" d="M 3034 2606 
+C 2829 2567 2752 2414 2752 2293 
+C 2752 2139 2874 2088 2963 2088 
+C 3155 2088 3290 2254 3290 2427 
+C 3290 2695 2982 2816 2714 2816 
+C 2323 2816 2106 2433 2048 2312 
+C 1901 2816 1504 2816 1389 2816 
+C 736 2816 390 1980 390 1839 
+C 390 1814 416 1782 461 1782 
+C 512 1782 525 1820 538 1846 
+C 755 2555 1184 2689 1370 2689 
+C 1658 2689 1715 2420 1715 2267 
+C 1715 2127 1677 1980 1600 1673 
+L 1382 798 
+C 1286 415 1101 64 762 64 
+C 730 64 570 64 435 147 
+C 666 192 717 383 717 460 
+C 717 588 621 664 499 664 
+C 346 664 179 530 179 326 
 C 179 57 480 -64 755 -64 
-C 1062 -64 1280 153 1414 415 
-C 1516 64 1836 -64 2073 -64 
-C 2726 -64 3072 751 3072 896 
-C 3072 929 3046 955 3008 955 
-C 2950 955 2944 922 2924 870 
-C 2752 300 2380 64 2092 64 
-C 1868 64 1747 204 1747 467 
-C 1747 607 1772 712 1875 1146 
-L 2099 2039 
-C 2195 2425 2412 2687 2707 2687 
-C 2720 2687 2899 2687 3033 2624 
+C 1062 -64 1280 179 1414 441 
+C 1517 64 1837 -64 2074 -64 
+C 2726 -64 3072 773 3072 913 
+C 3072 945 3046 971 3008 971 
+C 2950 971 2944 939 2925 888 
+C 2752 326 2381 64 2093 64 
+C 1869 64 1747 230 1747 492 
+C 1747 632 1773 734 1875 1156 
+L 2099 2024 
+C 2195 2408 2413 2689 2707 2689 
+C 2720 2689 2899 2689 3034 2606 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_536363d318ac_345491_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_13b5ab3de506_32b7fa_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_536363d318ac_345491_matplotlib.axis_2">
-    <g id="cpl_536363d318ac_345491_text_2">
+   <g id="cpl_13b5ab3de506_32b7fa_matplotlib.axis_2">
+    <g id="cpl_13b5ab3de506_32b7fa_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_536363d318ac_345491_CMMI12-7a" d="M 1683 -673 
-C 1510 -921 1260 -1152 947 -1152 
-C 870 -1152 563 -1139 467 -826 
-C 486 -833 518 -833 531 -833 
-C 723 -833 851 -666 851 -519 
-C 851 -372 729 -320 633 -320 
-C 531 -320 307 -397 307 -711 
-C 307 -1050 582 -1280 947 -1280 
-C 1587 -1280 2233 -673 2412 -7 
-L 3040 2483 
-C 3046 2515 3059 2553 3059 2591 
-C 3059 2687 2982 2752 2886 2752 
-C 2828 2752 2694 2726 2643 2534 
-L 2169 657 
-C 2137 542 2137 530 2086 459 
+       <path id="cpl_13b5ab3de506_32b7fa_CMMI12-79" d="M 1683 -700 
+C 1510 -939 1261 -1152 947 -1152 
+C 870 -1152 563 -1152 467 -889 
+C 486 -895 518 -895 531 -895 
+C 723 -895 851 -729 851 -582 
+C 851 -435 730 -384 634 -384 
+C 531 -384 307 -458 307 -759 
+C 307 -1071 582 -1286 947 -1286 
+C 1587 -1286 2234 -700 2413 6 
+L 3040 2485 
+C 3046 2517 3059 2556 3059 2594 
+C 3059 2689 2982 2753 2886 2753 
+C 2829 2753 2694 2727 2643 2535 
+L 2170 658 
+C 2138 543 2138 530 2086 460 
 C 1958 281 1747 64 1440 64 
-C 1081 64 1049 415 1049 587 
-C 1049 951 1222 1443 1395 1902 
-C 1465 2087 1504 2177 1504 2305 
-C 1504 2573 1312 2816 998 2816 
-C 409 2816 172 1890 172 1838 
-C 172 1813 198 1781 243 1781 
-C 300 1781 307 1807 332 1896 
-C 486 2432 729 2687 979 2687 
-C 1036 2687 1145 2687 1145 2477 
-C 1145 2311 1075 2126 979 1883 
-C 665 1047 665 836 665 683 
-C 665 76 1100 -64 1420 -64 
-C 1606 -64 1836 -7 2060 230 
-L 2067 223 
-C 1971 -141 1907 -359 1683 -673 
+C 1082 64 1050 415 1050 588 
+C 1050 952 1222 1443 1395 1903 
+C 1466 2088 1504 2178 1504 2305 
+C 1504 2574 1312 2816 998 2816 
+C 410 2816 173 1890 173 1839 
+C 173 1814 198 1782 243 1782 
+C 301 1782 307 1807 333 1897 
+C 486 2433 730 2689 979 2689 
+C 1037 2689 1146 2689 1146 2478 
+C 1146 2312 1075 2127 979 1884 
+C 666 1047 666 837 666 683 
+C 666 77 1101 -64 1421 -64 
+C 1606 -64 1837 -6 2061 230 
+L 2067 224 
+C 1971 -147 1907 -392 1683 -700 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_536363d318ac_345491_CMMI12-7a" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_13b5ab3de506_32b7fa_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_536363d318ac_345491_line2d_1">
+   <g id="cpl_13b5ab3de506_32b7fa_line2d_1">
     <defs>
-     <path id="cpl_536363d318ac_345491_m455cb4fdcc" d="M 3 0 
+     <path id="cpl_13b5ab3de506_32b7fa_md0621a6ac1" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_536363d318ac_345491_m455cb4fdcc" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_13b5ab3de506_32b7fa_md0621a6ac1" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_536363d318ac_345491_line2d_2">
+   <g id="cpl_13b5ab3de506_32b7fa_line2d_2">
     <defs>
-     <path id="cpl_536363d318ac_345491_m4b33d75775" d="M 0 -3 
+     <path id="cpl_13b5ab3de506_32b7fa_m0ac046efbb" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_536363d318ac_345491_m4b33d75775" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_13b5ab3de506_32b7fa_m0ac046efbb" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_536363d318ac_345491_line2d_3">
+   <g id="cpl_13b5ab3de506_32b7fa_line2d_3">
     <path d="M 10.8 319.282224 
 L 14.314521 293.139365 
 L 17.749167 269.232166 
@@ -3465,30 +3465,30 @@ L 305.380773 40.92969
 L 308.921919 10.893791 
 L 310.267082 -1 
 L 310.267082 -1 
-" clip-path="url(#cpl_536363d318ac_345491_p6a2120ea51)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_13b5ab3de506_32b7fa_pb4c9d10119)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_536363d318ac_345491_patch_3">
+   <g id="cpl_13b5ab3de506_32b7fa_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_536363d318ac_345491_patch_4">
+   <g id="cpl_13b5ab3de506_32b7fa_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_536363d318ac_345491_patch_5">
+   <g id="cpl_13b5ab3de506_32b7fa_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_536363d318ac_345491_patch_6">
+   <g id="cpl_13b5ab3de506_32b7fa_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_536363d318ac_345491_text_3">
-    <g id="cpl_536363d318ac_345491_patch_7">
+   <g id="cpl_13b5ab3de506_32b7fa_text_3">
+    <g id="cpl_13b5ab3de506_32b7fa_patch_7">
      <path d="M 400.518575 88.523386 
 L 420.781425 88.523386 
 Q 432.781425 88.523386 432.781425 76.523386 
@@ -3504,29 +3504,29 @@ z
     <!-- D -->
     <g transform="translate(400.518575 70.709936) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_536363d318ac_345491_CMSS17-46" d="M 569 4416 
-L 569 0 
+      <path id="cpl_13b5ab3de506_32b7fa_CMSS17-44" d="M 570 4416 
+L 570 0 
 L 2144 0 
-C 3193 0 4000 981 4000 2169 
-C 4000 3396 3193 4416 2144 4416 
-L 569 4416 
+C 3194 0 4000 980 4000 2170 
+C 4000 3398 3194 4416 2144 4416 
+L 570 4416 
 z
-M 1094 358 
-L 1094 4057 
-L 2003 4057 
-C 2860 4057 3475 3275 3475 2169 
-C 3475 1108 2867 358 2003 358 
-L 1094 358 
+M 1094 357 
+L 1094 4059 
+L 2003 4059 
+C 2861 4059 3475 3277 3475 2170 
+C 3475 1107 2867 357 2003 357 
+L 1094 357 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_536363d318ac_345491_CMSS17-46" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_13b5ab3de506_32b7fa_CMSS17-44" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_536363d318ac_345491_p6a2120ea51">
+  <clipPath id="cpl_13b5ab3de506_32b7fa_pb4c9d10119">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -3565,11 +3565,11 @@ f(x) = x^3 - 3x^2 + 1.
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-25T00:57:06.120495</dc:date>
+    <dc:date>2026-07-25T20:12:47.531330</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -3578,8 +3578,8 @@ f(x) = x^3 - 3x^2 + 1.
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_cefa7a21a46d_524fee_figure_1">
-  <g id="cpl_cefa7a21a46d_524fee_patch_1">
+ <g id="cpl_7b1826ba75e9_eba36d_figure_1">
+  <g id="cpl_7b1826ba75e9_eba36d_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -3588,8 +3588,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_cefa7a21a46d_524fee_axes_1">
-   <g id="cpl_cefa7a21a46d_524fee_patch_2">
+  <g id="cpl_7b1826ba75e9_eba36d_axes_1">
+   <g id="cpl_7b1826ba75e9_eba36d_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -3598,117 +3598,117 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_cefa7a21a46d_524fee_matplotlib.axis_1">
-    <g id="cpl_cefa7a21a46d_524fee_text_1">
+   <g id="cpl_7b1826ba75e9_eba36d_matplotlib.axis_1">
+    <g id="cpl_7b1826ba75e9_eba36d_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_cefa7a21a46d_524fee_CMMI12-79" d="M 3033 2624 
-C 2828 2585 2752 2431 2752 2310 
-C 2752 2156 2873 2105 2963 2105 
-C 3155 2105 3289 2271 3289 2444 
-C 3289 2694 2982 2816 2713 2816 
-C 2323 2816 2105 2451 2048 2329 
-C 1900 2790 1504 2816 1388 2816 
-C 736 2816 390 1993 390 1849 
-C 390 1823 416 1790 460 1790 
-C 512 1790 524 1829 537 1855 
-C 755 2572 1184 2687 1369 2687 
-C 1657 2687 1715 2438 1715 2284 
-C 1715 2143 1676 1993 1600 1678 
-L 1382 778 
-C 1286 390 1100 64 761 64 
-C 729 64 569 64 435 126 
-C 665 166 716 358 716 435 
-C 716 563 620 640 499 640 
-C 345 640 179 505 179 300 
+       <path id="cpl_7b1826ba75e9_eba36d_CMMI12-78" d="M 3034 2606 
+C 2829 2567 2752 2414 2752 2293 
+C 2752 2139 2874 2088 2963 2088 
+C 3155 2088 3290 2254 3290 2427 
+C 3290 2695 2982 2816 2714 2816 
+C 2323 2816 2106 2433 2048 2312 
+C 1901 2816 1504 2816 1389 2816 
+C 736 2816 390 1980 390 1839 
+C 390 1814 416 1782 461 1782 
+C 512 1782 525 1820 538 1846 
+C 755 2555 1184 2689 1370 2689 
+C 1658 2689 1715 2420 1715 2267 
+C 1715 2127 1677 1980 1600 1673 
+L 1382 798 
+C 1286 415 1101 64 762 64 
+C 730 64 570 64 435 147 
+C 666 192 717 383 717 460 
+C 717 588 621 664 499 664 
+C 346 664 179 530 179 326 
 C 179 57 480 -64 755 -64 
-C 1062 -64 1280 153 1414 415 
-C 1516 64 1836 -64 2073 -64 
-C 2726 -64 3072 751 3072 896 
-C 3072 929 3046 955 3008 955 
-C 2950 955 2944 922 2924 870 
-C 2752 300 2380 64 2092 64 
-C 1868 64 1747 204 1747 467 
-C 1747 607 1772 712 1875 1146 
-L 2099 2039 
-C 2195 2425 2412 2687 2707 2687 
-C 2720 2687 2899 2687 3033 2624 
+C 1062 -64 1280 179 1414 441 
+C 1517 64 1837 -64 2074 -64 
+C 2726 -64 3072 773 3072 913 
+C 3072 945 3046 971 3008 971 
+C 2950 971 2944 939 2925 888 
+C 2752 326 2381 64 2093 64 
+C 1869 64 1747 230 1747 492 
+C 1747 632 1773 734 1875 1156 
+L 2099 2024 
+C 2195 2408 2413 2689 2707 2689 
+C 2720 2689 2899 2689 3034 2606 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_cefa7a21a46d_524fee_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_7b1826ba75e9_eba36d_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_cefa7a21a46d_524fee_matplotlib.axis_2">
-    <g id="cpl_cefa7a21a46d_524fee_text_2">
+   <g id="cpl_7b1826ba75e9_eba36d_matplotlib.axis_2">
+    <g id="cpl_7b1826ba75e9_eba36d_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_cefa7a21a46d_524fee_CMMI12-7a" d="M 1683 -673 
-C 1510 -921 1260 -1152 947 -1152 
-C 870 -1152 563 -1139 467 -826 
-C 486 -833 518 -833 531 -833 
-C 723 -833 851 -666 851 -519 
-C 851 -372 729 -320 633 -320 
-C 531 -320 307 -397 307 -711 
-C 307 -1050 582 -1280 947 -1280 
-C 1587 -1280 2233 -673 2412 -7 
-L 3040 2483 
-C 3046 2515 3059 2553 3059 2591 
-C 3059 2687 2982 2752 2886 2752 
-C 2828 2752 2694 2726 2643 2534 
-L 2169 657 
-C 2137 542 2137 530 2086 459 
+       <path id="cpl_7b1826ba75e9_eba36d_CMMI12-79" d="M 1683 -700 
+C 1510 -939 1261 -1152 947 -1152 
+C 870 -1152 563 -1152 467 -889 
+C 486 -895 518 -895 531 -895 
+C 723 -895 851 -729 851 -582 
+C 851 -435 730 -384 634 -384 
+C 531 -384 307 -458 307 -759 
+C 307 -1071 582 -1286 947 -1286 
+C 1587 -1286 2234 -700 2413 6 
+L 3040 2485 
+C 3046 2517 3059 2556 3059 2594 
+C 3059 2689 2982 2753 2886 2753 
+C 2829 2753 2694 2727 2643 2535 
+L 2170 658 
+C 2138 543 2138 530 2086 460 
 C 1958 281 1747 64 1440 64 
-C 1081 64 1049 415 1049 587 
-C 1049 951 1222 1443 1395 1902 
-C 1465 2087 1504 2177 1504 2305 
-C 1504 2573 1312 2816 998 2816 
-C 409 2816 172 1890 172 1838 
-C 172 1813 198 1781 243 1781 
-C 300 1781 307 1807 332 1896 
-C 486 2432 729 2687 979 2687 
-C 1036 2687 1145 2687 1145 2477 
-C 1145 2311 1075 2126 979 1883 
-C 665 1047 665 836 665 683 
-C 665 76 1100 -64 1420 -64 
-C 1606 -64 1836 -7 2060 230 
-L 2067 223 
-C 1971 -141 1907 -359 1683 -673 
+C 1082 64 1050 415 1050 588 
+C 1050 952 1222 1443 1395 1903 
+C 1466 2088 1504 2178 1504 2305 
+C 1504 2574 1312 2816 998 2816 
+C 410 2816 173 1890 173 1839 
+C 173 1814 198 1782 243 1782 
+C 301 1782 307 1807 333 1897 
+C 486 2433 730 2689 979 2689 
+C 1037 2689 1146 2689 1146 2478 
+C 1146 2312 1075 2127 979 1884 
+C 666 1047 666 837 666 683 
+C 666 77 1101 -64 1421 -64 
+C 1606 -64 1837 -6 2061 230 
+L 2067 224 
+C 1971 -147 1907 -392 1683 -700 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_cefa7a21a46d_524fee_CMMI12-7a" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_7b1826ba75e9_eba36d_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_cefa7a21a46d_524fee_line2d_1">
+   <g id="cpl_7b1826ba75e9_eba36d_line2d_1">
     <defs>
-     <path id="cpl_cefa7a21a46d_524fee_ma5716ba37d" d="M 3 0 
+     <path id="cpl_7b1826ba75e9_eba36d_m4354a30f8c" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_cefa7a21a46d_524fee_ma5716ba37d" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_7b1826ba75e9_eba36d_m4354a30f8c" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_cefa7a21a46d_524fee_line2d_2">
+   <g id="cpl_7b1826ba75e9_eba36d_line2d_2">
     <defs>
-     <path id="cpl_cefa7a21a46d_524fee_m02df096ba5" d="M 0 -3 
+     <path id="cpl_7b1826ba75e9_eba36d_ma75ebd89a8" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_cefa7a21a46d_524fee_m02df096ba5" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_7b1826ba75e9_eba36d_ma75ebd89a8" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_cefa7a21a46d_524fee_line2d_3">
+   <g id="cpl_7b1826ba75e9_eba36d_line2d_3">
     <path d="M 168.962612 -1 
 L 172.015345 21.662338 
 L 174.997363 42.173045 
@@ -3790,30 +3790,30 @@ L 358.950595 309.895255
 L 361.932613 332.268911 
 L 363.735396 346.6 
 L 363.735396 346.6 
-" clip-path="url(#cpl_cefa7a21a46d_524fee_pf690199fc3)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_7b1826ba75e9_eba36d_pa23d3d5e20)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_cefa7a21a46d_524fee_patch_3">
+   <g id="cpl_7b1826ba75e9_eba36d_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_cefa7a21a46d_524fee_patch_4">
+   <g id="cpl_7b1826ba75e9_eba36d_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_cefa7a21a46d_524fee_patch_5">
+   <g id="cpl_7b1826ba75e9_eba36d_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_cefa7a21a46d_524fee_patch_6">
+   <g id="cpl_7b1826ba75e9_eba36d_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_cefa7a21a46d_524fee_text_3">
-    <g id="cpl_cefa7a21a46d_524fee_patch_7">
+   <g id="cpl_7b1826ba75e9_eba36d_text_3">
+    <g id="cpl_7b1826ba75e9_eba36d_patch_7">
      <path d="M 401.317322 80.764498 
 L 419.982678 80.764498 
 Q 431.982678 80.764498 431.982678 68.764498 
@@ -3829,32 +3829,32 @@ z
     <!-- A -->
     <g transform="translate(401.317322 62.951048) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_cefa7a21a46d_524fee_CMSS17-43" d="M 2272 4416 
-L 1721 4416 
+      <path id="cpl_7b1826ba75e9_eba36d_CMSS17-41" d="M 2272 4416 
+L 1722 4416 
 L 166 0 
-L 652 0 
-L 1100 1280 
+L 653 0 
+L 1101 1280 
 L 2816 1280 
 L 3270 0 
 L 3827 0 
 L 2272 4416 
 z
-M 2694 1638 
-L 1222 1638 
-C 1529 2530 1913 3638 1958 3924 
-L 1964 3924 
-C 2009 3663 2137 3281 2246 2956 
-L 2694 1638 
+M 2694 1637 
+L 1222 1637 
+C 1530 2528 1914 3638 1958 3925 
+L 1965 3925 
+C 2010 3663 2138 3281 2246 2956 
+L 2694 1637 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_cefa7a21a46d_524fee_CMSS17-43" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_7b1826ba75e9_eba36d_CMSS17-41" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_cefa7a21a46d_524fee_pf690199fc3">
+  <clipPath id="cpl_7b1826ba75e9_eba36d_pa23d3d5e20">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -3869,11 +3869,11 @@ z
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-25T00:57:06.176704</dc:date>
+    <dc:date>2026-07-25T20:12:47.554523</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -3882,8 +3882,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_e5e3a621a8d1_3c6ec4_figure_1">
-  <g id="cpl_e5e3a621a8d1_3c6ec4_patch_1">
+ <g id="cpl_53e35bb6396a_8ee982_figure_1">
+  <g id="cpl_53e35bb6396a_8ee982_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -3892,8 +3892,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_e5e3a621a8d1_3c6ec4_axes_1">
-   <g id="cpl_e5e3a621a8d1_3c6ec4_patch_2">
+  <g id="cpl_53e35bb6396a_8ee982_axes_1">
+   <g id="cpl_53e35bb6396a_8ee982_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -3902,117 +3902,117 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_e5e3a621a8d1_3c6ec4_matplotlib.axis_1">
-    <g id="cpl_e5e3a621a8d1_3c6ec4_text_1">
+   <g id="cpl_53e35bb6396a_8ee982_matplotlib.axis_1">
+    <g id="cpl_53e35bb6396a_8ee982_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_e5e3a621a8d1_3c6ec4_CMMI12-79" d="M 3033 2624 
-C 2828 2585 2752 2431 2752 2310 
-C 2752 2156 2873 2105 2963 2105 
-C 3155 2105 3289 2271 3289 2444 
-C 3289 2694 2982 2816 2713 2816 
-C 2323 2816 2105 2451 2048 2329 
-C 1900 2790 1504 2816 1388 2816 
-C 736 2816 390 1993 390 1849 
-C 390 1823 416 1790 460 1790 
-C 512 1790 524 1829 537 1855 
-C 755 2572 1184 2687 1369 2687 
-C 1657 2687 1715 2438 1715 2284 
-C 1715 2143 1676 1993 1600 1678 
-L 1382 778 
-C 1286 390 1100 64 761 64 
-C 729 64 569 64 435 126 
-C 665 166 716 358 716 435 
-C 716 563 620 640 499 640 
-C 345 640 179 505 179 300 
+       <path id="cpl_53e35bb6396a_8ee982_CMMI12-78" d="M 3034 2606 
+C 2829 2567 2752 2414 2752 2293 
+C 2752 2139 2874 2088 2963 2088 
+C 3155 2088 3290 2254 3290 2427 
+C 3290 2695 2982 2816 2714 2816 
+C 2323 2816 2106 2433 2048 2312 
+C 1901 2816 1504 2816 1389 2816 
+C 736 2816 390 1980 390 1839 
+C 390 1814 416 1782 461 1782 
+C 512 1782 525 1820 538 1846 
+C 755 2555 1184 2689 1370 2689 
+C 1658 2689 1715 2420 1715 2267 
+C 1715 2127 1677 1980 1600 1673 
+L 1382 798 
+C 1286 415 1101 64 762 64 
+C 730 64 570 64 435 147 
+C 666 192 717 383 717 460 
+C 717 588 621 664 499 664 
+C 346 664 179 530 179 326 
 C 179 57 480 -64 755 -64 
-C 1062 -64 1280 153 1414 415 
-C 1516 64 1836 -64 2073 -64 
-C 2726 -64 3072 751 3072 896 
-C 3072 929 3046 955 3008 955 
-C 2950 955 2944 922 2924 870 
-C 2752 300 2380 64 2092 64 
-C 1868 64 1747 204 1747 467 
-C 1747 607 1772 712 1875 1146 
-L 2099 2039 
-C 2195 2425 2412 2687 2707 2687 
-C 2720 2687 2899 2687 3033 2624 
+C 1062 -64 1280 179 1414 441 
+C 1517 64 1837 -64 2074 -64 
+C 2726 -64 3072 773 3072 913 
+C 3072 945 3046 971 3008 971 
+C 2950 971 2944 939 2925 888 
+C 2752 326 2381 64 2093 64 
+C 1869 64 1747 230 1747 492 
+C 1747 632 1773 734 1875 1156 
+L 2099 2024 
+C 2195 2408 2413 2689 2707 2689 
+C 2720 2689 2899 2689 3034 2606 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_e5e3a621a8d1_3c6ec4_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_53e35bb6396a_8ee982_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_e5e3a621a8d1_3c6ec4_matplotlib.axis_2">
-    <g id="cpl_e5e3a621a8d1_3c6ec4_text_2">
+   <g id="cpl_53e35bb6396a_8ee982_matplotlib.axis_2">
+    <g id="cpl_53e35bb6396a_8ee982_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_e5e3a621a8d1_3c6ec4_CMMI12-7a" d="M 1683 -673 
-C 1510 -921 1260 -1152 947 -1152 
-C 870 -1152 563 -1139 467 -826 
-C 486 -833 518 -833 531 -833 
-C 723 -833 851 -666 851 -519 
-C 851 -372 729 -320 633 -320 
-C 531 -320 307 -397 307 -711 
-C 307 -1050 582 -1280 947 -1280 
-C 1587 -1280 2233 -673 2412 -7 
-L 3040 2483 
-C 3046 2515 3059 2553 3059 2591 
-C 3059 2687 2982 2752 2886 2752 
-C 2828 2752 2694 2726 2643 2534 
-L 2169 657 
-C 2137 542 2137 530 2086 459 
+       <path id="cpl_53e35bb6396a_8ee982_CMMI12-79" d="M 1683 -700 
+C 1510 -939 1261 -1152 947 -1152 
+C 870 -1152 563 -1152 467 -889 
+C 486 -895 518 -895 531 -895 
+C 723 -895 851 -729 851 -582 
+C 851 -435 730 -384 634 -384 
+C 531 -384 307 -458 307 -759 
+C 307 -1071 582 -1286 947 -1286 
+C 1587 -1286 2234 -700 2413 6 
+L 3040 2485 
+C 3046 2517 3059 2556 3059 2594 
+C 3059 2689 2982 2753 2886 2753 
+C 2829 2753 2694 2727 2643 2535 
+L 2170 658 
+C 2138 543 2138 530 2086 460 
 C 1958 281 1747 64 1440 64 
-C 1081 64 1049 415 1049 587 
-C 1049 951 1222 1443 1395 1902 
-C 1465 2087 1504 2177 1504 2305 
-C 1504 2573 1312 2816 998 2816 
-C 409 2816 172 1890 172 1838 
-C 172 1813 198 1781 243 1781 
-C 300 1781 307 1807 332 1896 
-C 486 2432 729 2687 979 2687 
-C 1036 2687 1145 2687 1145 2477 
-C 1145 2311 1075 2126 979 1883 
-C 665 1047 665 836 665 683 
-C 665 76 1100 -64 1420 -64 
-C 1606 -64 1836 -7 2060 230 
-L 2067 223 
-C 1971 -141 1907 -359 1683 -673 
+C 1082 64 1050 415 1050 588 
+C 1050 952 1222 1443 1395 1903 
+C 1466 2088 1504 2178 1504 2305 
+C 1504 2574 1312 2816 998 2816 
+C 410 2816 173 1890 173 1839 
+C 173 1814 198 1782 243 1782 
+C 301 1782 307 1807 333 1897 
+C 486 2433 730 2689 979 2689 
+C 1037 2689 1146 2689 1146 2478 
+C 1146 2312 1075 2127 979 1884 
+C 666 1047 666 837 666 683 
+C 666 77 1101 -64 1421 -64 
+C 1606 -64 1837 -6 2061 230 
+L 2067 224 
+C 1971 -147 1907 -392 1683 -700 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_e5e3a621a8d1_3c6ec4_CMMI12-7a" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_53e35bb6396a_8ee982_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_e5e3a621a8d1_3c6ec4_line2d_1">
+   <g id="cpl_53e35bb6396a_8ee982_line2d_1">
     <defs>
-     <path id="cpl_e5e3a621a8d1_3c6ec4_mf883d7c65f" d="M 3 0 
+     <path id="cpl_53e35bb6396a_8ee982_mf9271a15cd" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_e5e3a621a8d1_3c6ec4_mf883d7c65f" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_53e35bb6396a_8ee982_mf9271a15cd" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_e5e3a621a8d1_3c6ec4_line2d_2">
+   <g id="cpl_53e35bb6396a_8ee982_line2d_2">
     <defs>
-     <path id="cpl_e5e3a621a8d1_3c6ec4_m5134d40ab1" d="M 0 -3 
+     <path id="cpl_53e35bb6396a_8ee982_m2b32ad99b2" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_e5e3a621a8d1_3c6ec4_m5134d40ab1" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_53e35bb6396a_8ee982_m2b32ad99b2" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_e5e3a621a8d1_3c6ec4_line2d_3">
+   <g id="cpl_53e35bb6396a_8ee982_line2d_3">
     <path d="M 100.235774 346.6 
 L 103.215931 326.586991 
 L 106.118074 308.576473 
@@ -4093,30 +4093,30 @@ L 290.949936 28.85554
 L 294.011829 3.138072 
 L 294.48508 -1 
 L 294.48508 -1 
-" clip-path="url(#cpl_e5e3a621a8d1_3c6ec4_pb8eff162d9)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_53e35bb6396a_8ee982_pf93f71cceb)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5e3a621a8d1_3c6ec4_patch_3">
+   <g id="cpl_53e35bb6396a_8ee982_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5e3a621a8d1_3c6ec4_patch_4">
+   <g id="cpl_53e35bb6396a_8ee982_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_e5e3a621a8d1_3c6ec4_patch_5">
+   <g id="cpl_53e35bb6396a_8ee982_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_e5e3a621a8d1_3c6ec4_patch_6">
+   <g id="cpl_53e35bb6396a_8ee982_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_e5e3a621a8d1_3c6ec4_text_3">
-    <g id="cpl_e5e3a621a8d1_3c6ec4_patch_7">
+   <g id="cpl_53e35bb6396a_8ee982_text_3">
+    <g id="cpl_53e35bb6396a_8ee982_patch_7">
      <path d="M 401.2993 80.764498 
 L 420.0007 80.764498 
 Q 432.0007 80.764498 432.0007 68.764498 
@@ -4132,38 +4132,38 @@ z
     <!-- B -->
     <g transform="translate(401.2993 62.951048) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_e5e3a621a8d1_3c6ec4_CMSS17-44" d="M 569 4416 
-L 569 0 
+      <path id="cpl_53e35bb6396a_8ee982_CMSS17-42" d="M 570 4416 
+L 570 0 
 L 2163 0 
-C 3033 0 3667 575 3667 1200 
-C 3667 1684 3251 2175 2502 2316 
-C 3334 2559 3501 3039 3501 3311 
-C 3501 3880 2873 4416 1996 4416 
-L 569 4416 
+C 3034 0 3667 574 3667 1200 
+C 3667 1685 3251 2176 2502 2317 
+C 3334 2558 3501 3040 3501 3313 
+C 3501 3883 2874 4416 1997 4416 
+L 570 4416 
 z
 M 1088 2496 
-L 1088 4057 
-L 1824 4057 
-C 2483 4057 3001 3722 3001 3305 
-C 3001 2925 2592 2496 1766 2496 
+L 1088 4059 
+L 1824 4059 
+C 2483 4059 3002 3724 3002 3306 
+C 3002 2926 2592 2496 1766 2496 
 L 1088 2496 
 z
-M 1088 358 
-L 1088 2105 
-L 1939 2105 
-C 2630 2105 3161 1678 3161 1206 
-C 3161 772 2694 358 1984 358 
-L 1088 358 
+M 1088 357 
+L 1088 2107 
+L 1939 2107 
+C 2630 2107 3162 1679 3162 1206 
+C 3162 772 2694 357 1984 357 
+L 1088 357 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_e5e3a621a8d1_3c6ec4_CMSS17-44" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_53e35bb6396a_8ee982_CMSS17-42" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_e5e3a621a8d1_3c6ec4_pb8eff162d9">
+  <clipPath id="cpl_53e35bb6396a_8ee982_pf93f71cceb">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -4178,11 +4178,11 @@ z
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-25T00:57:06.233104</dc:date>
+    <dc:date>2026-07-25T20:12:47.577732</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -4191,8 +4191,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_768465d4ea8f_ec53eb_figure_1">
-  <g id="cpl_768465d4ea8f_ec53eb_patch_1">
+ <g id="cpl_50ce7b5fe033_c2bb40_figure_1">
+  <g id="cpl_50ce7b5fe033_c2bb40_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -4201,8 +4201,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_768465d4ea8f_ec53eb_axes_1">
-   <g id="cpl_768465d4ea8f_ec53eb_patch_2">
+  <g id="cpl_50ce7b5fe033_c2bb40_axes_1">
+   <g id="cpl_50ce7b5fe033_c2bb40_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -4211,117 +4211,117 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_768465d4ea8f_ec53eb_matplotlib.axis_1">
-    <g id="cpl_768465d4ea8f_ec53eb_text_1">
+   <g id="cpl_50ce7b5fe033_c2bb40_matplotlib.axis_1">
+    <g id="cpl_50ce7b5fe033_c2bb40_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_768465d4ea8f_ec53eb_CMMI12-79" d="M 3033 2624 
-C 2828 2585 2752 2431 2752 2310 
-C 2752 2156 2873 2105 2963 2105 
-C 3155 2105 3289 2271 3289 2444 
-C 3289 2694 2982 2816 2713 2816 
-C 2323 2816 2105 2451 2048 2329 
-C 1900 2790 1504 2816 1388 2816 
-C 736 2816 390 1993 390 1849 
-C 390 1823 416 1790 460 1790 
-C 512 1790 524 1829 537 1855 
-C 755 2572 1184 2687 1369 2687 
-C 1657 2687 1715 2438 1715 2284 
-C 1715 2143 1676 1993 1600 1678 
-L 1382 778 
-C 1286 390 1100 64 761 64 
-C 729 64 569 64 435 126 
-C 665 166 716 358 716 435 
-C 716 563 620 640 499 640 
-C 345 640 179 505 179 300 
+       <path id="cpl_50ce7b5fe033_c2bb40_CMMI12-78" d="M 3034 2606 
+C 2829 2567 2752 2414 2752 2293 
+C 2752 2139 2874 2088 2963 2088 
+C 3155 2088 3290 2254 3290 2427 
+C 3290 2695 2982 2816 2714 2816 
+C 2323 2816 2106 2433 2048 2312 
+C 1901 2816 1504 2816 1389 2816 
+C 736 2816 390 1980 390 1839 
+C 390 1814 416 1782 461 1782 
+C 512 1782 525 1820 538 1846 
+C 755 2555 1184 2689 1370 2689 
+C 1658 2689 1715 2420 1715 2267 
+C 1715 2127 1677 1980 1600 1673 
+L 1382 798 
+C 1286 415 1101 64 762 64 
+C 730 64 570 64 435 147 
+C 666 192 717 383 717 460 
+C 717 588 621 664 499 664 
+C 346 664 179 530 179 326 
 C 179 57 480 -64 755 -64 
-C 1062 -64 1280 153 1414 415 
-C 1516 64 1836 -64 2073 -64 
-C 2726 -64 3072 751 3072 896 
-C 3072 929 3046 955 3008 955 
-C 2950 955 2944 922 2924 870 
-C 2752 300 2380 64 2092 64 
-C 1868 64 1747 204 1747 467 
-C 1747 607 1772 712 1875 1146 
-L 2099 2039 
-C 2195 2425 2412 2687 2707 2687 
-C 2720 2687 2899 2687 3033 2624 
+C 1062 -64 1280 179 1414 441 
+C 1517 64 1837 -64 2074 -64 
+C 2726 -64 3072 773 3072 913 
+C 3072 945 3046 971 3008 971 
+C 2950 971 2944 939 2925 888 
+C 2752 326 2381 64 2093 64 
+C 1869 64 1747 230 1747 492 
+C 1747 632 1773 734 1875 1156 
+L 2099 2024 
+C 2195 2408 2413 2689 2707 2689 
+C 2720 2689 2899 2689 3034 2606 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_768465d4ea8f_ec53eb_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_50ce7b5fe033_c2bb40_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_768465d4ea8f_ec53eb_matplotlib.axis_2">
-    <g id="cpl_768465d4ea8f_ec53eb_text_2">
+   <g id="cpl_50ce7b5fe033_c2bb40_matplotlib.axis_2">
+    <g id="cpl_50ce7b5fe033_c2bb40_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_768465d4ea8f_ec53eb_CMMI12-7a" d="M 1683 -673 
-C 1510 -921 1260 -1152 947 -1152 
-C 870 -1152 563 -1139 467 -826 
-C 486 -833 518 -833 531 -833 
-C 723 -833 851 -666 851 -519 
-C 851 -372 729 -320 633 -320 
-C 531 -320 307 -397 307 -711 
-C 307 -1050 582 -1280 947 -1280 
-C 1587 -1280 2233 -673 2412 -7 
-L 3040 2483 
-C 3046 2515 3059 2553 3059 2591 
-C 3059 2687 2982 2752 2886 2752 
-C 2828 2752 2694 2726 2643 2534 
-L 2169 657 
-C 2137 542 2137 530 2086 459 
+       <path id="cpl_50ce7b5fe033_c2bb40_CMMI12-79" d="M 1683 -700 
+C 1510 -939 1261 -1152 947 -1152 
+C 870 -1152 563 -1152 467 -889 
+C 486 -895 518 -895 531 -895 
+C 723 -895 851 -729 851 -582 
+C 851 -435 730 -384 634 -384 
+C 531 -384 307 -458 307 -759 
+C 307 -1071 582 -1286 947 -1286 
+C 1587 -1286 2234 -700 2413 6 
+L 3040 2485 
+C 3046 2517 3059 2556 3059 2594 
+C 3059 2689 2982 2753 2886 2753 
+C 2829 2753 2694 2727 2643 2535 
+L 2170 658 
+C 2138 543 2138 530 2086 460 
 C 1958 281 1747 64 1440 64 
-C 1081 64 1049 415 1049 587 
-C 1049 951 1222 1443 1395 1902 
-C 1465 2087 1504 2177 1504 2305 
-C 1504 2573 1312 2816 998 2816 
-C 409 2816 172 1890 172 1838 
-C 172 1813 198 1781 243 1781 
-C 300 1781 307 1807 332 1896 
-C 486 2432 729 2687 979 2687 
-C 1036 2687 1145 2687 1145 2477 
-C 1145 2311 1075 2126 979 1883 
-C 665 1047 665 836 665 683 
-C 665 76 1100 -64 1420 -64 
-C 1606 -64 1836 -7 2060 230 
-L 2067 223 
-C 1971 -141 1907 -359 1683 -673 
+C 1082 64 1050 415 1050 588 
+C 1050 952 1222 1443 1395 1903 
+C 1466 2088 1504 2178 1504 2305 
+C 1504 2574 1312 2816 998 2816 
+C 410 2816 173 1890 173 1839 
+C 173 1814 198 1782 243 1782 
+C 301 1782 307 1807 333 1897 
+C 486 2433 730 2689 979 2689 
+C 1037 2689 1146 2689 1146 2478 
+C 1146 2312 1075 2127 979 1884 
+C 666 1047 666 837 666 683 
+C 666 77 1101 -64 1421 -64 
+C 1606 -64 1837 -6 2061 230 
+L 2067 224 
+C 1971 -147 1907 -392 1683 -700 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_768465d4ea8f_ec53eb_CMMI12-7a" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_50ce7b5fe033_c2bb40_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_768465d4ea8f_ec53eb_line2d_1">
+   <g id="cpl_50ce7b5fe033_c2bb40_line2d_1">
     <defs>
-     <path id="cpl_768465d4ea8f_ec53eb_m01e4b7c0cc" d="M 3 0 
+     <path id="cpl_50ce7b5fe033_c2bb40_m0f40199de8" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_768465d4ea8f_ec53eb_m01e4b7c0cc" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_50ce7b5fe033_c2bb40_m0f40199de8" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_768465d4ea8f_ec53eb_line2d_2">
+   <g id="cpl_50ce7b5fe033_c2bb40_line2d_2">
     <defs>
-     <path id="cpl_768465d4ea8f_ec53eb_m055103a4fb" d="M 0 -3 
+     <path id="cpl_50ce7b5fe033_c2bb40_m43a3d027a4" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_768465d4ea8f_ec53eb_m055103a4fb" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_50ce7b5fe033_c2bb40_m43a3d027a4" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_768465d4ea8f_ec53eb_line2d_3">
+   <g id="cpl_50ce7b5fe033_c2bb40_line2d_3">
     <path d="M 170.772793 346.6 
 L 173.772606 325.304272 
 L 176.727999 305.884648 
@@ -4402,30 +4402,30 @@ L 359.456473 45.668862
 L 362.438491 23.016096 
 L 365.383545 -1 
 L 365.383545 -1 
-" clip-path="url(#cpl_768465d4ea8f_ec53eb_p0226e7c122)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_50ce7b5fe033_c2bb40_pdb7e894c79)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_768465d4ea8f_ec53eb_patch_3">
+   <g id="cpl_50ce7b5fe033_c2bb40_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_768465d4ea8f_ec53eb_patch_4">
+   <g id="cpl_50ce7b5fe033_c2bb40_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_768465d4ea8f_ec53eb_patch_5">
+   <g id="cpl_50ce7b5fe033_c2bb40_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_768465d4ea8f_ec53eb_patch_6">
+   <g id="cpl_50ce7b5fe033_c2bb40_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_768465d4ea8f_ec53eb_text_3">
-    <g id="cpl_768465d4ea8f_ec53eb_patch_7">
+   <g id="cpl_50ce7b5fe033_c2bb40_text_3">
+    <g id="cpl_50ce7b5fe033_c2bb40_patch_7">
      <path d="M 401.671637 80.764498 
 L 419.628363 80.764498 
 Q 431.628363 80.764498 431.628363 68.764498 
@@ -4441,27 +4441,27 @@ z
     <!-- C -->
     <g transform="translate(401.671637 62.951048) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_768465d4ea8f_ec53eb_CMSS17-45" d="M 3501 705 
-C 3072 416 2873 332 2355 332 
-C 1459 332 934 1304 934 2191 
-C 934 3137 1472 4070 2380 4070 
-C 2790 4070 3059 3954 3385 3748 
-L 3475 4255 
-C 3168 4409 2777 4480 2387 4480 
-C 1158 4480 396 3343 396 2191 
-C 396 924 1299 -77 2323 -77 
-C 2873 -77 3065 -32 3539 268 
-L 3501 705 
+      <path id="cpl_50ce7b5fe033_c2bb40_CMSS17-43" d="M 3501 714 
+C 3072 427 2874 344 2355 344 
+C 1459 344 934 1303 934 2179 
+C 934 3112 1472 4032 2381 4032 
+C 2790 4032 3059 3918 3386 3715 
+L 3475 4217 
+C 3168 4370 2778 4440 2387 4440 
+C 1158 4440 397 3316 397 2179 
+C 397 927 1299 -64 2323 -64 
+C 2874 -64 3066 -19 3539 280 
+L 3501 714 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_768465d4ea8f_ec53eb_CMSS17-45" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_50ce7b5fe033_c2bb40_CMSS17-43" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_768465d4ea8f_ec53eb_p0226e7c122">
+  <clipPath id="cpl_50ce7b5fe033_c2bb40_pdb7e894c79">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -4476,11 +4476,11 @@ z
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-25T00:57:06.289650</dc:date>
+    <dc:date>2026-07-25T20:12:47.601013</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -4489,8 +4489,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_c8c334bd9719_a5cf48_figure_1">
-  <g id="cpl_c8c334bd9719_a5cf48_patch_1">
+ <g id="cpl_0ab77ce0de7e_4bbf6e_figure_1">
+  <g id="cpl_0ab77ce0de7e_4bbf6e_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -4499,8 +4499,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_c8c334bd9719_a5cf48_axes_1">
-   <g id="cpl_c8c334bd9719_a5cf48_patch_2">
+  <g id="cpl_0ab77ce0de7e_4bbf6e_axes_1">
+   <g id="cpl_0ab77ce0de7e_4bbf6e_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -4509,117 +4509,117 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_c8c334bd9719_a5cf48_matplotlib.axis_1">
-    <g id="cpl_c8c334bd9719_a5cf48_text_1">
+   <g id="cpl_0ab77ce0de7e_4bbf6e_matplotlib.axis_1">
+    <g id="cpl_0ab77ce0de7e_4bbf6e_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_c8c334bd9719_a5cf48_CMMI12-79" d="M 3033 2624 
-C 2828 2585 2752 2431 2752 2310 
-C 2752 2156 2873 2105 2963 2105 
-C 3155 2105 3289 2271 3289 2444 
-C 3289 2694 2982 2816 2713 2816 
-C 2323 2816 2105 2451 2048 2329 
-C 1900 2790 1504 2816 1388 2816 
-C 736 2816 390 1993 390 1849 
-C 390 1823 416 1790 460 1790 
-C 512 1790 524 1829 537 1855 
-C 755 2572 1184 2687 1369 2687 
-C 1657 2687 1715 2438 1715 2284 
-C 1715 2143 1676 1993 1600 1678 
-L 1382 778 
-C 1286 390 1100 64 761 64 
-C 729 64 569 64 435 126 
-C 665 166 716 358 716 435 
-C 716 563 620 640 499 640 
-C 345 640 179 505 179 300 
+       <path id="cpl_0ab77ce0de7e_4bbf6e_CMMI12-78" d="M 3034 2606 
+C 2829 2567 2752 2414 2752 2293 
+C 2752 2139 2874 2088 2963 2088 
+C 3155 2088 3290 2254 3290 2427 
+C 3290 2695 2982 2816 2714 2816 
+C 2323 2816 2106 2433 2048 2312 
+C 1901 2816 1504 2816 1389 2816 
+C 736 2816 390 1980 390 1839 
+C 390 1814 416 1782 461 1782 
+C 512 1782 525 1820 538 1846 
+C 755 2555 1184 2689 1370 2689 
+C 1658 2689 1715 2420 1715 2267 
+C 1715 2127 1677 1980 1600 1673 
+L 1382 798 
+C 1286 415 1101 64 762 64 
+C 730 64 570 64 435 147 
+C 666 192 717 383 717 460 
+C 717 588 621 664 499 664 
+C 346 664 179 530 179 326 
 C 179 57 480 -64 755 -64 
-C 1062 -64 1280 153 1414 415 
-C 1516 64 1836 -64 2073 -64 
-C 2726 -64 3072 751 3072 896 
-C 3072 929 3046 955 3008 955 
-C 2950 955 2944 922 2924 870 
-C 2752 300 2380 64 2092 64 
-C 1868 64 1747 204 1747 467 
-C 1747 607 1772 712 1875 1146 
-L 2099 2039 
-C 2195 2425 2412 2687 2707 2687 
-C 2720 2687 2899 2687 3033 2624 
+C 1062 -64 1280 179 1414 441 
+C 1517 64 1837 -64 2074 -64 
+C 2726 -64 3072 773 3072 913 
+C 3072 945 3046 971 3008 971 
+C 2950 971 2944 939 2925 888 
+C 2752 326 2381 64 2093 64 
+C 1869 64 1747 230 1747 492 
+C 1747 632 1773 734 1875 1156 
+L 2099 2024 
+C 2195 2408 2413 2689 2707 2689 
+C 2720 2689 2899 2689 3034 2606 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_c8c334bd9719_a5cf48_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_0ab77ce0de7e_4bbf6e_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_c8c334bd9719_a5cf48_matplotlib.axis_2">
-    <g id="cpl_c8c334bd9719_a5cf48_text_2">
+   <g id="cpl_0ab77ce0de7e_4bbf6e_matplotlib.axis_2">
+    <g id="cpl_0ab77ce0de7e_4bbf6e_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_c8c334bd9719_a5cf48_CMMI12-7a" d="M 1683 -673 
-C 1510 -921 1260 -1152 947 -1152 
-C 870 -1152 563 -1139 467 -826 
-C 486 -833 518 -833 531 -833 
-C 723 -833 851 -666 851 -519 
-C 851 -372 729 -320 633 -320 
-C 531 -320 307 -397 307 -711 
-C 307 -1050 582 -1280 947 -1280 
-C 1587 -1280 2233 -673 2412 -7 
-L 3040 2483 
-C 3046 2515 3059 2553 3059 2591 
-C 3059 2687 2982 2752 2886 2752 
-C 2828 2752 2694 2726 2643 2534 
-L 2169 657 
-C 2137 542 2137 530 2086 459 
+       <path id="cpl_0ab77ce0de7e_4bbf6e_CMMI12-79" d="M 1683 -700 
+C 1510 -939 1261 -1152 947 -1152 
+C 870 -1152 563 -1152 467 -889 
+C 486 -895 518 -895 531 -895 
+C 723 -895 851 -729 851 -582 
+C 851 -435 730 -384 634 -384 
+C 531 -384 307 -458 307 -759 
+C 307 -1071 582 -1286 947 -1286 
+C 1587 -1286 2234 -700 2413 6 
+L 3040 2485 
+C 3046 2517 3059 2556 3059 2594 
+C 3059 2689 2982 2753 2886 2753 
+C 2829 2753 2694 2727 2643 2535 
+L 2170 658 
+C 2138 543 2138 530 2086 460 
 C 1958 281 1747 64 1440 64 
-C 1081 64 1049 415 1049 587 
-C 1049 951 1222 1443 1395 1902 
-C 1465 2087 1504 2177 1504 2305 
-C 1504 2573 1312 2816 998 2816 
-C 409 2816 172 1890 172 1838 
-C 172 1813 198 1781 243 1781 
-C 300 1781 307 1807 332 1896 
-C 486 2432 729 2687 979 2687 
-C 1036 2687 1145 2687 1145 2477 
-C 1145 2311 1075 2126 979 1883 
-C 665 1047 665 836 665 683 
-C 665 76 1100 -64 1420 -64 
-C 1606 -64 1836 -7 2060 230 
-L 2067 223 
-C 1971 -141 1907 -359 1683 -673 
+C 1082 64 1050 415 1050 588 
+C 1050 952 1222 1443 1395 1903 
+C 1466 2088 1504 2178 1504 2305 
+C 1504 2574 1312 2816 998 2816 
+C 410 2816 173 1890 173 1839 
+C 173 1814 198 1782 243 1782 
+C 301 1782 307 1807 333 1897 
+C 486 2433 730 2689 979 2689 
+C 1037 2689 1146 2689 1146 2478 
+C 1146 2312 1075 2127 979 1884 
+C 666 1047 666 837 666 683 
+C 666 77 1101 -64 1421 -64 
+C 1606 -64 1837 -6 2061 230 
+L 2067 224 
+C 1971 -147 1907 -392 1683 -700 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_c8c334bd9719_a5cf48_CMMI12-7a" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_0ab77ce0de7e_4bbf6e_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_c8c334bd9719_a5cf48_line2d_1">
+   <g id="cpl_0ab77ce0de7e_4bbf6e_line2d_1">
     <defs>
-     <path id="cpl_c8c334bd9719_a5cf48_m45aa808fae" d="M 3 0 
+     <path id="cpl_0ab77ce0de7e_4bbf6e_m0e78d7be41" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_c8c334bd9719_a5cf48_m45aa808fae" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_0ab77ce0de7e_4bbf6e_m0e78d7be41" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_c8c334bd9719_a5cf48_line2d_2">
+   <g id="cpl_0ab77ce0de7e_4bbf6e_line2d_2">
     <defs>
-     <path id="cpl_c8c334bd9719_a5cf48_m11a6d6aef1" d="M 0 -3 
+     <path id="cpl_0ab77ce0de7e_4bbf6e_m52c1ab5d7c" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_c8c334bd9719_a5cf48_m11a6d6aef1" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_0ab77ce0de7e_4bbf6e_m52c1ab5d7c" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_c8c334bd9719_a5cf48_line2d_3">
+   <g id="cpl_0ab77ce0de7e_4bbf6e_line2d_3">
     <path d="M 113.782931 346.6 
 L 116.981139 314.843213 
 L 120.149533 285.570868 
@@ -4713,30 +4713,30 @@ L 334.561948 38.099444
 L 337.543966 12.549335 
 L 339.04315 -1 
 L 339.04315 -1 
-" clip-path="url(#cpl_c8c334bd9719_a5cf48_pcd4826fbe3)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_0ab77ce0de7e_4bbf6e_pd99c8eb52f)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_c8c334bd9719_a5cf48_patch_3">
+   <g id="cpl_0ab77ce0de7e_4bbf6e_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_c8c334bd9719_a5cf48_patch_4">
+   <g id="cpl_0ab77ce0de7e_4bbf6e_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_c8c334bd9719_a5cf48_patch_5">
+   <g id="cpl_0ab77ce0de7e_4bbf6e_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_c8c334bd9719_a5cf48_patch_6">
+   <g id="cpl_0ab77ce0de7e_4bbf6e_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_c8c334bd9719_a5cf48_text_3">
-    <g id="cpl_c8c334bd9719_a5cf48_patch_7">
+   <g id="cpl_0ab77ce0de7e_4bbf6e_text_3">
+    <g id="cpl_0ab77ce0de7e_4bbf6e_patch_7">
      <path d="M 400.518575 80.764498 
 L 420.781425 80.764498 
 Q 432.781425 80.764498 432.781425 68.764498 
@@ -4752,29 +4752,29 @@ z
     <!-- D -->
     <g transform="translate(400.518575 62.951048) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_c8c334bd9719_a5cf48_CMSS17-46" d="M 569 4416 
-L 569 0 
+      <path id="cpl_0ab77ce0de7e_4bbf6e_CMSS17-44" d="M 570 4416 
+L 570 0 
 L 2144 0 
-C 3193 0 4000 981 4000 2169 
-C 4000 3396 3193 4416 2144 4416 
-L 569 4416 
+C 3194 0 4000 980 4000 2170 
+C 4000 3398 3194 4416 2144 4416 
+L 570 4416 
 z
-M 1094 358 
-L 1094 4057 
-L 2003 4057 
-C 2860 4057 3475 3275 3475 2169 
-C 3475 1108 2867 358 2003 358 
-L 1094 358 
+M 1094 357 
+L 1094 4059 
+L 2003 4059 
+C 2861 4059 3475 3277 3475 2170 
+C 3475 1107 2867 357 2003 357 
+L 1094 357 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_c8c334bd9719_a5cf48_CMSS17-46" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_0ab77ce0de7e_4bbf6e_CMSS17-44" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_c8c334bd9719_a5cf48_pcd4826fbe3">
+  <clipPath id="cpl_0ab77ce0de7e_4bbf6e_pd99c8eb52f">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -4813,11 +4813,11 @@ f'(x) = x^3 - 2x^2 - x + 2.
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-25T00:57:06.353446</dc:date>
+    <dc:date>2026-07-25T20:12:47.625910</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -4826,8 +4826,8 @@ f'(x) = x^3 - 2x^2 - x + 2.
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_84fa8c926167_09a342_figure_1">
-  <g id="cpl_84fa8c926167_09a342_patch_1">
+ <g id="cpl_bd1f8300eaa2_b1d1a9_figure_1">
+  <g id="cpl_bd1f8300eaa2_b1d1a9_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -4836,8 +4836,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_84fa8c926167_09a342_axes_1">
-   <g id="cpl_84fa8c926167_09a342_patch_2">
+  <g id="cpl_bd1f8300eaa2_b1d1a9_axes_1">
+   <g id="cpl_bd1f8300eaa2_b1d1a9_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -4846,117 +4846,117 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_84fa8c926167_09a342_matplotlib.axis_1">
-    <g id="cpl_84fa8c926167_09a342_text_1">
+   <g id="cpl_bd1f8300eaa2_b1d1a9_matplotlib.axis_1">
+    <g id="cpl_bd1f8300eaa2_b1d1a9_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_84fa8c926167_09a342_CMMI12-79" d="M 3033 2624 
-C 2828 2585 2752 2431 2752 2310 
-C 2752 2156 2873 2105 2963 2105 
-C 3155 2105 3289 2271 3289 2444 
-C 3289 2694 2982 2816 2713 2816 
-C 2323 2816 2105 2451 2048 2329 
-C 1900 2790 1504 2816 1388 2816 
-C 736 2816 390 1993 390 1849 
-C 390 1823 416 1790 460 1790 
-C 512 1790 524 1829 537 1855 
-C 755 2572 1184 2687 1369 2687 
-C 1657 2687 1715 2438 1715 2284 
-C 1715 2143 1676 1993 1600 1678 
-L 1382 778 
-C 1286 390 1100 64 761 64 
-C 729 64 569 64 435 126 
-C 665 166 716 358 716 435 
-C 716 563 620 640 499 640 
-C 345 640 179 505 179 300 
+       <path id="cpl_bd1f8300eaa2_b1d1a9_CMMI12-78" d="M 3034 2606 
+C 2829 2567 2752 2414 2752 2293 
+C 2752 2139 2874 2088 2963 2088 
+C 3155 2088 3290 2254 3290 2427 
+C 3290 2695 2982 2816 2714 2816 
+C 2323 2816 2106 2433 2048 2312 
+C 1901 2816 1504 2816 1389 2816 
+C 736 2816 390 1980 390 1839 
+C 390 1814 416 1782 461 1782 
+C 512 1782 525 1820 538 1846 
+C 755 2555 1184 2689 1370 2689 
+C 1658 2689 1715 2420 1715 2267 
+C 1715 2127 1677 1980 1600 1673 
+L 1382 798 
+C 1286 415 1101 64 762 64 
+C 730 64 570 64 435 147 
+C 666 192 717 383 717 460 
+C 717 588 621 664 499 664 
+C 346 664 179 530 179 326 
 C 179 57 480 -64 755 -64 
-C 1062 -64 1280 153 1414 415 
-C 1516 64 1836 -64 2073 -64 
-C 2726 -64 3072 751 3072 896 
-C 3072 929 3046 955 3008 955 
-C 2950 955 2944 922 2924 870 
-C 2752 300 2380 64 2092 64 
-C 1868 64 1747 204 1747 467 
-C 1747 607 1772 712 1875 1146 
-L 2099 2039 
-C 2195 2425 2412 2687 2707 2687 
-C 2720 2687 2899 2687 3033 2624 
+C 1062 -64 1280 179 1414 441 
+C 1517 64 1837 -64 2074 -64 
+C 2726 -64 3072 773 3072 913 
+C 3072 945 3046 971 3008 971 
+C 2950 971 2944 939 2925 888 
+C 2752 326 2381 64 2093 64 
+C 1869 64 1747 230 1747 492 
+C 1747 632 1773 734 1875 1156 
+L 2099 2024 
+C 2195 2408 2413 2689 2707 2689 
+C 2720 2689 2899 2689 3034 2606 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_84fa8c926167_09a342_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_bd1f8300eaa2_b1d1a9_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_84fa8c926167_09a342_matplotlib.axis_2">
-    <g id="cpl_84fa8c926167_09a342_text_2">
+   <g id="cpl_bd1f8300eaa2_b1d1a9_matplotlib.axis_2">
+    <g id="cpl_bd1f8300eaa2_b1d1a9_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_84fa8c926167_09a342_CMMI12-7a" d="M 1683 -673 
-C 1510 -921 1260 -1152 947 -1152 
-C 870 -1152 563 -1139 467 -826 
-C 486 -833 518 -833 531 -833 
-C 723 -833 851 -666 851 -519 
-C 851 -372 729 -320 633 -320 
-C 531 -320 307 -397 307 -711 
-C 307 -1050 582 -1280 947 -1280 
-C 1587 -1280 2233 -673 2412 -7 
-L 3040 2483 
-C 3046 2515 3059 2553 3059 2591 
-C 3059 2687 2982 2752 2886 2752 
-C 2828 2752 2694 2726 2643 2534 
-L 2169 657 
-C 2137 542 2137 530 2086 459 
+       <path id="cpl_bd1f8300eaa2_b1d1a9_CMMI12-79" d="M 1683 -700 
+C 1510 -939 1261 -1152 947 -1152 
+C 870 -1152 563 -1152 467 -889 
+C 486 -895 518 -895 531 -895 
+C 723 -895 851 -729 851 -582 
+C 851 -435 730 -384 634 -384 
+C 531 -384 307 -458 307 -759 
+C 307 -1071 582 -1286 947 -1286 
+C 1587 -1286 2234 -700 2413 6 
+L 3040 2485 
+C 3046 2517 3059 2556 3059 2594 
+C 3059 2689 2982 2753 2886 2753 
+C 2829 2753 2694 2727 2643 2535 
+L 2170 658 
+C 2138 543 2138 530 2086 460 
 C 1958 281 1747 64 1440 64 
-C 1081 64 1049 415 1049 587 
-C 1049 951 1222 1443 1395 1902 
-C 1465 2087 1504 2177 1504 2305 
-C 1504 2573 1312 2816 998 2816 
-C 409 2816 172 1890 172 1838 
-C 172 1813 198 1781 243 1781 
-C 300 1781 307 1807 332 1896 
-C 486 2432 729 2687 979 2687 
-C 1036 2687 1145 2687 1145 2477 
-C 1145 2311 1075 2126 979 1883 
-C 665 1047 665 836 665 683 
-C 665 76 1100 -64 1420 -64 
-C 1606 -64 1836 -7 2060 230 
-L 2067 223 
-C 1971 -141 1907 -359 1683 -673 
+C 1082 64 1050 415 1050 588 
+C 1050 952 1222 1443 1395 1903 
+C 1466 2088 1504 2178 1504 2305 
+C 1504 2574 1312 2816 998 2816 
+C 410 2816 173 1890 173 1839 
+C 173 1814 198 1782 243 1782 
+C 301 1782 307 1807 333 1897 
+C 486 2433 730 2689 979 2689 
+C 1037 2689 1146 2689 1146 2478 
+C 1146 2312 1075 2127 979 1884 
+C 666 1047 666 837 666 683 
+C 666 77 1101 -64 1421 -64 
+C 1606 -64 1837 -6 2061 230 
+L 2067 224 
+C 1971 -147 1907 -392 1683 -700 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_84fa8c926167_09a342_CMMI12-7a" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_bd1f8300eaa2_b1d1a9_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_84fa8c926167_09a342_line2d_1">
+   <g id="cpl_bd1f8300eaa2_b1d1a9_line2d_1">
     <defs>
-     <path id="cpl_84fa8c926167_09a342_m0fcb254417" d="M 3 0 
+     <path id="cpl_bd1f8300eaa2_b1d1a9_m54c3dbb709" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_84fa8c926167_09a342_m0fcb254417" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_bd1f8300eaa2_b1d1a9_m54c3dbb709" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_84fa8c926167_09a342_line2d_2">
+   <g id="cpl_bd1f8300eaa2_b1d1a9_line2d_2">
     <defs>
-     <path id="cpl_84fa8c926167_09a342_me8baef5f06" d="M 0 -3 
+     <path id="cpl_bd1f8300eaa2_b1d1a9_m5bfbb16563" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_84fa8c926167_09a342_me8baef5f06" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_bd1f8300eaa2_b1d1a9_m5bfbb16563" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_84fa8c926167_09a342_line2d_3">
+   <g id="cpl_bd1f8300eaa2_b1d1a9_line2d_3">
     <path d="M 93.293752 -1 
 L 95.947262 29.340907 
 L 98.583153 56.972152 
@@ -5050,30 +5050,30 @@ L 318.640103 56.777404
 L 321.222743 24.048088 
 L 323.065229 -1 
 L 323.065229 -1 
-" clip-path="url(#cpl_84fa8c926167_09a342_p2b3eaadcec)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_bd1f8300eaa2_b1d1a9_p4e81332b9a)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_84fa8c926167_09a342_patch_3">
+   <g id="cpl_bd1f8300eaa2_b1d1a9_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_84fa8c926167_09a342_patch_4">
+   <g id="cpl_bd1f8300eaa2_b1d1a9_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_84fa8c926167_09a342_patch_5">
+   <g id="cpl_bd1f8300eaa2_b1d1a9_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_84fa8c926167_09a342_patch_6">
+   <g id="cpl_bd1f8300eaa2_b1d1a9_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_84fa8c926167_09a342_text_3">
-    <g id="cpl_84fa8c926167_09a342_patch_7">
+   <g id="cpl_bd1f8300eaa2_b1d1a9_text_3">
+    <g id="cpl_bd1f8300eaa2_b1d1a9_patch_7">
      <path d="M 401.317322 88.523386 
 L 419.982678 88.523386 
 Q 431.982678 88.523386 431.982678 76.523386 
@@ -5089,32 +5089,32 @@ z
     <!-- A -->
     <g transform="translate(401.317322 70.709936) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_84fa8c926167_09a342_CMSS17-43" d="M 2272 4416 
-L 1721 4416 
+      <path id="cpl_bd1f8300eaa2_b1d1a9_CMSS17-41" d="M 2272 4416 
+L 1722 4416 
 L 166 0 
-L 652 0 
-L 1100 1280 
+L 653 0 
+L 1101 1280 
 L 2816 1280 
 L 3270 0 
 L 3827 0 
 L 2272 4416 
 z
-M 2694 1638 
-L 1222 1638 
-C 1529 2530 1913 3638 1958 3924 
-L 1964 3924 
-C 2009 3663 2137 3281 2246 2956 
-L 2694 1638 
+M 2694 1637 
+L 1222 1637 
+C 1530 2528 1914 3638 1958 3925 
+L 1965 3925 
+C 2010 3663 2138 3281 2246 2956 
+L 2694 1637 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_84fa8c926167_09a342_CMSS17-43" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_bd1f8300eaa2_b1d1a9_CMSS17-41" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_84fa8c926167_09a342_p2b3eaadcec">
+  <clipPath id="cpl_bd1f8300eaa2_b1d1a9_p4e81332b9a">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -5129,11 +5129,11 @@ z
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-25T00:57:06.411582</dc:date>
+    <dc:date>2026-07-25T20:12:47.650752</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -5142,8 +5142,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_9c88d6ce02d6_571811_figure_1">
-  <g id="cpl_9c88d6ce02d6_571811_patch_1">
+ <g id="cpl_297f2b61d1bf_ebd9a3_figure_1">
+  <g id="cpl_297f2b61d1bf_ebd9a3_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -5152,8 +5152,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_9c88d6ce02d6_571811_axes_1">
-   <g id="cpl_9c88d6ce02d6_571811_patch_2">
+  <g id="cpl_297f2b61d1bf_ebd9a3_axes_1">
+   <g id="cpl_297f2b61d1bf_ebd9a3_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -5162,117 +5162,117 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_9c88d6ce02d6_571811_matplotlib.axis_1">
-    <g id="cpl_9c88d6ce02d6_571811_text_1">
+   <g id="cpl_297f2b61d1bf_ebd9a3_matplotlib.axis_1">
+    <g id="cpl_297f2b61d1bf_ebd9a3_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_9c88d6ce02d6_571811_CMMI12-79" d="M 3033 2624 
-C 2828 2585 2752 2431 2752 2310 
-C 2752 2156 2873 2105 2963 2105 
-C 3155 2105 3289 2271 3289 2444 
-C 3289 2694 2982 2816 2713 2816 
-C 2323 2816 2105 2451 2048 2329 
-C 1900 2790 1504 2816 1388 2816 
-C 736 2816 390 1993 390 1849 
-C 390 1823 416 1790 460 1790 
-C 512 1790 524 1829 537 1855 
-C 755 2572 1184 2687 1369 2687 
-C 1657 2687 1715 2438 1715 2284 
-C 1715 2143 1676 1993 1600 1678 
-L 1382 778 
-C 1286 390 1100 64 761 64 
-C 729 64 569 64 435 126 
-C 665 166 716 358 716 435 
-C 716 563 620 640 499 640 
-C 345 640 179 505 179 300 
+       <path id="cpl_297f2b61d1bf_ebd9a3_CMMI12-78" d="M 3034 2606 
+C 2829 2567 2752 2414 2752 2293 
+C 2752 2139 2874 2088 2963 2088 
+C 3155 2088 3290 2254 3290 2427 
+C 3290 2695 2982 2816 2714 2816 
+C 2323 2816 2106 2433 2048 2312 
+C 1901 2816 1504 2816 1389 2816 
+C 736 2816 390 1980 390 1839 
+C 390 1814 416 1782 461 1782 
+C 512 1782 525 1820 538 1846 
+C 755 2555 1184 2689 1370 2689 
+C 1658 2689 1715 2420 1715 2267 
+C 1715 2127 1677 1980 1600 1673 
+L 1382 798 
+C 1286 415 1101 64 762 64 
+C 730 64 570 64 435 147 
+C 666 192 717 383 717 460 
+C 717 588 621 664 499 664 
+C 346 664 179 530 179 326 
 C 179 57 480 -64 755 -64 
-C 1062 -64 1280 153 1414 415 
-C 1516 64 1836 -64 2073 -64 
-C 2726 -64 3072 751 3072 896 
-C 3072 929 3046 955 3008 955 
-C 2950 955 2944 922 2924 870 
-C 2752 300 2380 64 2092 64 
-C 1868 64 1747 204 1747 467 
-C 1747 607 1772 712 1875 1146 
-L 2099 2039 
-C 2195 2425 2412 2687 2707 2687 
-C 2720 2687 2899 2687 3033 2624 
+C 1062 -64 1280 179 1414 441 
+C 1517 64 1837 -64 2074 -64 
+C 2726 -64 3072 773 3072 913 
+C 3072 945 3046 971 3008 971 
+C 2950 971 2944 939 2925 888 
+C 2752 326 2381 64 2093 64 
+C 1869 64 1747 230 1747 492 
+C 1747 632 1773 734 1875 1156 
+L 2099 2024 
+C 2195 2408 2413 2689 2707 2689 
+C 2720 2689 2899 2689 3034 2606 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_9c88d6ce02d6_571811_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_297f2b61d1bf_ebd9a3_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_9c88d6ce02d6_571811_matplotlib.axis_2">
-    <g id="cpl_9c88d6ce02d6_571811_text_2">
+   <g id="cpl_297f2b61d1bf_ebd9a3_matplotlib.axis_2">
+    <g id="cpl_297f2b61d1bf_ebd9a3_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_9c88d6ce02d6_571811_CMMI12-7a" d="M 1683 -673 
-C 1510 -921 1260 -1152 947 -1152 
-C 870 -1152 563 -1139 467 -826 
-C 486 -833 518 -833 531 -833 
-C 723 -833 851 -666 851 -519 
-C 851 -372 729 -320 633 -320 
-C 531 -320 307 -397 307 -711 
-C 307 -1050 582 -1280 947 -1280 
-C 1587 -1280 2233 -673 2412 -7 
-L 3040 2483 
-C 3046 2515 3059 2553 3059 2591 
-C 3059 2687 2982 2752 2886 2752 
-C 2828 2752 2694 2726 2643 2534 
-L 2169 657 
-C 2137 542 2137 530 2086 459 
+       <path id="cpl_297f2b61d1bf_ebd9a3_CMMI12-79" d="M 1683 -700 
+C 1510 -939 1261 -1152 947 -1152 
+C 870 -1152 563 -1152 467 -889 
+C 486 -895 518 -895 531 -895 
+C 723 -895 851 -729 851 -582 
+C 851 -435 730 -384 634 -384 
+C 531 -384 307 -458 307 -759 
+C 307 -1071 582 -1286 947 -1286 
+C 1587 -1286 2234 -700 2413 6 
+L 3040 2485 
+C 3046 2517 3059 2556 3059 2594 
+C 3059 2689 2982 2753 2886 2753 
+C 2829 2753 2694 2727 2643 2535 
+L 2170 658 
+C 2138 543 2138 530 2086 460 
 C 1958 281 1747 64 1440 64 
-C 1081 64 1049 415 1049 587 
-C 1049 951 1222 1443 1395 1902 
-C 1465 2087 1504 2177 1504 2305 
-C 1504 2573 1312 2816 998 2816 
-C 409 2816 172 1890 172 1838 
-C 172 1813 198 1781 243 1781 
-C 300 1781 307 1807 332 1896 
-C 486 2432 729 2687 979 2687 
-C 1036 2687 1145 2687 1145 2477 
-C 1145 2311 1075 2126 979 1883 
-C 665 1047 665 836 665 683 
-C 665 76 1100 -64 1420 -64 
-C 1606 -64 1836 -7 2060 230 
-L 2067 223 
-C 1971 -141 1907 -359 1683 -673 
+C 1082 64 1050 415 1050 588 
+C 1050 952 1222 1443 1395 1903 
+C 1466 2088 1504 2178 1504 2305 
+C 1504 2574 1312 2816 998 2816 
+C 410 2816 173 1890 173 1839 
+C 173 1814 198 1782 243 1782 
+C 301 1782 307 1807 333 1897 
+C 486 2433 730 2689 979 2689 
+C 1037 2689 1146 2689 1146 2478 
+C 1146 2312 1075 2127 979 1884 
+C 666 1047 666 837 666 683 
+C 666 77 1101 -64 1421 -64 
+C 1606 -64 1837 -6 2061 230 
+L 2067 224 
+C 1971 -147 1907 -392 1683 -700 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_9c88d6ce02d6_571811_CMMI12-7a" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_297f2b61d1bf_ebd9a3_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_9c88d6ce02d6_571811_line2d_1">
+   <g id="cpl_297f2b61d1bf_ebd9a3_line2d_1">
     <defs>
-     <path id="cpl_9c88d6ce02d6_571811_m52d9ca34d6" d="M 3 0 
+     <path id="cpl_297f2b61d1bf_ebd9a3_mcf22d0c238" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_9c88d6ce02d6_571811_m52d9ca34d6" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_297f2b61d1bf_ebd9a3_mcf22d0c238" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_9c88d6ce02d6_571811_line2d_2">
+   <g id="cpl_297f2b61d1bf_ebd9a3_line2d_2">
     <defs>
-     <path id="cpl_9c88d6ce02d6_571811_ma2eea93ade" d="M 0 -3 
+     <path id="cpl_297f2b61d1bf_ebd9a3_m321050022f" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_9c88d6ce02d6_571811_ma2eea93ade" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_297f2b61d1bf_ebd9a3_m321050022f" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_9c88d6ce02d6_571811_line2d_3">
+   <g id="cpl_297f2b61d1bf_ebd9a3_line2d_3">
     <path d="M 94.459007 346.6 
 L 97.118769 317.322299 
 L 99.728035 291.016208 
@@ -5366,30 +5366,30 @@ L 318.373851 299.246365
 L 320.956491 331.695422 
 L 322.074779 346.6 
 L 322.074779 346.6 
-" clip-path="url(#cpl_9c88d6ce02d6_571811_pd525624b1c)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_297f2b61d1bf_ebd9a3_p59367264fc)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_9c88d6ce02d6_571811_patch_3">
+   <g id="cpl_297f2b61d1bf_ebd9a3_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_9c88d6ce02d6_571811_patch_4">
+   <g id="cpl_297f2b61d1bf_ebd9a3_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_9c88d6ce02d6_571811_patch_5">
+   <g id="cpl_297f2b61d1bf_ebd9a3_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_9c88d6ce02d6_571811_patch_6">
+   <g id="cpl_297f2b61d1bf_ebd9a3_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_9c88d6ce02d6_571811_text_3">
-    <g id="cpl_9c88d6ce02d6_571811_patch_7">
+   <g id="cpl_297f2b61d1bf_ebd9a3_text_3">
+    <g id="cpl_297f2b61d1bf_ebd9a3_patch_7">
      <path d="M 401.2993 88.523386 
 L 420.0007 88.523386 
 Q 432.0007 88.523386 432.0007 76.523386 
@@ -5405,38 +5405,38 @@ z
     <!-- B -->
     <g transform="translate(401.2993 70.709936) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_9c88d6ce02d6_571811_CMSS17-44" d="M 569 4416 
-L 569 0 
+      <path id="cpl_297f2b61d1bf_ebd9a3_CMSS17-42" d="M 570 4416 
+L 570 0 
 L 2163 0 
-C 3033 0 3667 575 3667 1200 
-C 3667 1684 3251 2175 2502 2316 
-C 3334 2559 3501 3039 3501 3311 
-C 3501 3880 2873 4416 1996 4416 
-L 569 4416 
+C 3034 0 3667 574 3667 1200 
+C 3667 1685 3251 2176 2502 2317 
+C 3334 2558 3501 3040 3501 3313 
+C 3501 3883 2874 4416 1997 4416 
+L 570 4416 
 z
 M 1088 2496 
-L 1088 4057 
-L 1824 4057 
-C 2483 4057 3001 3722 3001 3305 
-C 3001 2925 2592 2496 1766 2496 
+L 1088 4059 
+L 1824 4059 
+C 2483 4059 3002 3724 3002 3306 
+C 3002 2926 2592 2496 1766 2496 
 L 1088 2496 
 z
-M 1088 358 
-L 1088 2105 
-L 1939 2105 
-C 2630 2105 3161 1678 3161 1206 
-C 3161 772 2694 358 1984 358 
-L 1088 358 
+M 1088 357 
+L 1088 2107 
+L 1939 2107 
+C 2630 2107 3162 1679 3162 1206 
+C 3162 772 2694 357 1984 357 
+L 1088 357 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_9c88d6ce02d6_571811_CMSS17-44" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_297f2b61d1bf_ebd9a3_CMSS17-42" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_9c88d6ce02d6_571811_pd525624b1c">
+  <clipPath id="cpl_297f2b61d1bf_ebd9a3_p59367264fc">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -5451,11 +5451,11 @@ z
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-25T00:57:06.469431</dc:date>
+    <dc:date>2026-07-25T20:12:47.674550</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -5464,8 +5464,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_ced2bc2a0fa2_35034c_figure_1">
-  <g id="cpl_ced2bc2a0fa2_35034c_patch_1">
+ <g id="cpl_8e94e488e7ae_0d6832_figure_1">
+  <g id="cpl_8e94e488e7ae_0d6832_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -5474,8 +5474,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_ced2bc2a0fa2_35034c_axes_1">
-   <g id="cpl_ced2bc2a0fa2_35034c_patch_2">
+  <g id="cpl_8e94e488e7ae_0d6832_axes_1">
+   <g id="cpl_8e94e488e7ae_0d6832_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -5484,117 +5484,117 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_ced2bc2a0fa2_35034c_matplotlib.axis_1">
-    <g id="cpl_ced2bc2a0fa2_35034c_text_1">
+   <g id="cpl_8e94e488e7ae_0d6832_matplotlib.axis_1">
+    <g id="cpl_8e94e488e7ae_0d6832_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_ced2bc2a0fa2_35034c_CMMI12-79" d="M 3033 2624 
-C 2828 2585 2752 2431 2752 2310 
-C 2752 2156 2873 2105 2963 2105 
-C 3155 2105 3289 2271 3289 2444 
-C 3289 2694 2982 2816 2713 2816 
-C 2323 2816 2105 2451 2048 2329 
-C 1900 2790 1504 2816 1388 2816 
-C 736 2816 390 1993 390 1849 
-C 390 1823 416 1790 460 1790 
-C 512 1790 524 1829 537 1855 
-C 755 2572 1184 2687 1369 2687 
-C 1657 2687 1715 2438 1715 2284 
-C 1715 2143 1676 1993 1600 1678 
-L 1382 778 
-C 1286 390 1100 64 761 64 
-C 729 64 569 64 435 126 
-C 665 166 716 358 716 435 
-C 716 563 620 640 499 640 
-C 345 640 179 505 179 300 
+       <path id="cpl_8e94e488e7ae_0d6832_CMMI12-78" d="M 3034 2606 
+C 2829 2567 2752 2414 2752 2293 
+C 2752 2139 2874 2088 2963 2088 
+C 3155 2088 3290 2254 3290 2427 
+C 3290 2695 2982 2816 2714 2816 
+C 2323 2816 2106 2433 2048 2312 
+C 1901 2816 1504 2816 1389 2816 
+C 736 2816 390 1980 390 1839 
+C 390 1814 416 1782 461 1782 
+C 512 1782 525 1820 538 1846 
+C 755 2555 1184 2689 1370 2689 
+C 1658 2689 1715 2420 1715 2267 
+C 1715 2127 1677 1980 1600 1673 
+L 1382 798 
+C 1286 415 1101 64 762 64 
+C 730 64 570 64 435 147 
+C 666 192 717 383 717 460 
+C 717 588 621 664 499 664 
+C 346 664 179 530 179 326 
 C 179 57 480 -64 755 -64 
-C 1062 -64 1280 153 1414 415 
-C 1516 64 1836 -64 2073 -64 
-C 2726 -64 3072 751 3072 896 
-C 3072 929 3046 955 3008 955 
-C 2950 955 2944 922 2924 870 
-C 2752 300 2380 64 2092 64 
-C 1868 64 1747 204 1747 467 
-C 1747 607 1772 712 1875 1146 
-L 2099 2039 
-C 2195 2425 2412 2687 2707 2687 
-C 2720 2687 2899 2687 3033 2624 
+C 1062 -64 1280 179 1414 441 
+C 1517 64 1837 -64 2074 -64 
+C 2726 -64 3072 773 3072 913 
+C 3072 945 3046 971 3008 971 
+C 2950 971 2944 939 2925 888 
+C 2752 326 2381 64 2093 64 
+C 1869 64 1747 230 1747 492 
+C 1747 632 1773 734 1875 1156 
+L 2099 2024 
+C 2195 2408 2413 2689 2707 2689 
+C 2720 2689 2899 2689 3034 2606 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_ced2bc2a0fa2_35034c_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_8e94e488e7ae_0d6832_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_ced2bc2a0fa2_35034c_matplotlib.axis_2">
-    <g id="cpl_ced2bc2a0fa2_35034c_text_2">
+   <g id="cpl_8e94e488e7ae_0d6832_matplotlib.axis_2">
+    <g id="cpl_8e94e488e7ae_0d6832_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_ced2bc2a0fa2_35034c_CMMI12-7a" d="M 1683 -673 
-C 1510 -921 1260 -1152 947 -1152 
-C 870 -1152 563 -1139 467 -826 
-C 486 -833 518 -833 531 -833 
-C 723 -833 851 -666 851 -519 
-C 851 -372 729 -320 633 -320 
-C 531 -320 307 -397 307 -711 
-C 307 -1050 582 -1280 947 -1280 
-C 1587 -1280 2233 -673 2412 -7 
-L 3040 2483 
-C 3046 2515 3059 2553 3059 2591 
-C 3059 2687 2982 2752 2886 2752 
-C 2828 2752 2694 2726 2643 2534 
-L 2169 657 
-C 2137 542 2137 530 2086 459 
+       <path id="cpl_8e94e488e7ae_0d6832_CMMI12-79" d="M 1683 -700 
+C 1510 -939 1261 -1152 947 -1152 
+C 870 -1152 563 -1152 467 -889 
+C 486 -895 518 -895 531 -895 
+C 723 -895 851 -729 851 -582 
+C 851 -435 730 -384 634 -384 
+C 531 -384 307 -458 307 -759 
+C 307 -1071 582 -1286 947 -1286 
+C 1587 -1286 2234 -700 2413 6 
+L 3040 2485 
+C 3046 2517 3059 2556 3059 2594 
+C 3059 2689 2982 2753 2886 2753 
+C 2829 2753 2694 2727 2643 2535 
+L 2170 658 
+C 2138 543 2138 530 2086 460 
 C 1958 281 1747 64 1440 64 
-C 1081 64 1049 415 1049 587 
-C 1049 951 1222 1443 1395 1902 
-C 1465 2087 1504 2177 1504 2305 
-C 1504 2573 1312 2816 998 2816 
-C 409 2816 172 1890 172 1838 
-C 172 1813 198 1781 243 1781 
-C 300 1781 307 1807 332 1896 
-C 486 2432 729 2687 979 2687 
-C 1036 2687 1145 2687 1145 2477 
-C 1145 2311 1075 2126 979 1883 
-C 665 1047 665 836 665 683 
-C 665 76 1100 -64 1420 -64 
-C 1606 -64 1836 -7 2060 230 
-L 2067 223 
-C 1971 -141 1907 -359 1683 -673 
+C 1082 64 1050 415 1050 588 
+C 1050 952 1222 1443 1395 1903 
+C 1466 2088 1504 2178 1504 2305 
+C 1504 2574 1312 2816 998 2816 
+C 410 2816 173 1890 173 1839 
+C 173 1814 198 1782 243 1782 
+C 301 1782 307 1807 333 1897 
+C 486 2433 730 2689 979 2689 
+C 1037 2689 1146 2689 1146 2478 
+C 1146 2312 1075 2127 979 1884 
+C 666 1047 666 837 666 683 
+C 666 77 1101 -64 1421 -64 
+C 1606 -64 1837 -6 2061 230 
+L 2067 224 
+C 1971 -147 1907 -392 1683 -700 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_ced2bc2a0fa2_35034c_CMMI12-7a" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_8e94e488e7ae_0d6832_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_ced2bc2a0fa2_35034c_line2d_1">
+   <g id="cpl_8e94e488e7ae_0d6832_line2d_1">
     <defs>
-     <path id="cpl_ced2bc2a0fa2_35034c_m88894534f6" d="M 3 0 
+     <path id="cpl_8e94e488e7ae_0d6832_m82e9fa0615" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_ced2bc2a0fa2_35034c_m88894534f6" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_8e94e488e7ae_0d6832_m82e9fa0615" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_ced2bc2a0fa2_35034c_line2d_2">
+   <g id="cpl_8e94e488e7ae_0d6832_line2d_2">
     <defs>
-     <path id="cpl_ced2bc2a0fa2_35034c_mc5399ce9be" d="M 0 -3 
+     <path id="cpl_8e94e488e7ae_0d6832_m39b1320796" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_ced2bc2a0fa2_35034c_mc5399ce9be" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_8e94e488e7ae_0d6832_m39b1320796" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_ced2bc2a0fa2_35034c_line2d_3">
+   <g id="cpl_8e94e488e7ae_0d6832_line2d_3">
     <path d="M 134.734771 -1 
 L 137.429262 35.147449 
 L 140.091778 67.92715 
@@ -5689,30 +5689,30 @@ L 361.506611 33.108959
 L 364.089251 3.941367 
 L 364.506248 -1 
 L 364.506248 -1 
-" clip-path="url(#cpl_ced2bc2a0fa2_35034c_p3bce80cbfb)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_8e94e488e7ae_0d6832_pab19892f85)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_ced2bc2a0fa2_35034c_patch_3">
+   <g id="cpl_8e94e488e7ae_0d6832_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_ced2bc2a0fa2_35034c_patch_4">
+   <g id="cpl_8e94e488e7ae_0d6832_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_ced2bc2a0fa2_35034c_patch_5">
+   <g id="cpl_8e94e488e7ae_0d6832_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_ced2bc2a0fa2_35034c_patch_6">
+   <g id="cpl_8e94e488e7ae_0d6832_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_ced2bc2a0fa2_35034c_text_3">
-    <g id="cpl_ced2bc2a0fa2_35034c_patch_7">
+   <g id="cpl_8e94e488e7ae_0d6832_text_3">
+    <g id="cpl_8e94e488e7ae_0d6832_patch_7">
      <path d="M 401.671637 88.523386 
 L 419.628363 88.523386 
 Q 431.628363 88.523386 431.628363 76.523386 
@@ -5728,27 +5728,27 @@ z
     <!-- C -->
     <g transform="translate(401.671637 70.709936) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_ced2bc2a0fa2_35034c_CMSS17-45" d="M 3501 705 
-C 3072 416 2873 332 2355 332 
-C 1459 332 934 1304 934 2191 
-C 934 3137 1472 4070 2380 4070 
-C 2790 4070 3059 3954 3385 3748 
-L 3475 4255 
-C 3168 4409 2777 4480 2387 4480 
-C 1158 4480 396 3343 396 2191 
-C 396 924 1299 -77 2323 -77 
-C 2873 -77 3065 -32 3539 268 
-L 3501 705 
+      <path id="cpl_8e94e488e7ae_0d6832_CMSS17-43" d="M 3501 714 
+C 3072 427 2874 344 2355 344 
+C 1459 344 934 1303 934 2179 
+C 934 3112 1472 4032 2381 4032 
+C 2790 4032 3059 3918 3386 3715 
+L 3475 4217 
+C 3168 4370 2778 4440 2387 4440 
+C 1158 4440 397 3316 397 2179 
+C 397 927 1299 -64 2323 -64 
+C 2874 -64 3066 -19 3539 280 
+L 3501 714 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_ced2bc2a0fa2_35034c_CMSS17-45" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_8e94e488e7ae_0d6832_CMSS17-43" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_ced2bc2a0fa2_35034c_p3bce80cbfb">
+  <clipPath id="cpl_8e94e488e7ae_0d6832_pab19892f85">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -5763,11 +5763,11 @@ z
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-25T00:57:06.527228</dc:date>
+    <dc:date>2026-07-25T20:12:47.698121</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -5776,8 +5776,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_572378ee9d35_87ae5c_figure_1">
-  <g id="cpl_572378ee9d35_87ae5c_patch_1">
+ <g id="cpl_bc184b35ee23_004207_figure_1">
+  <g id="cpl_bc184b35ee23_004207_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -5786,8 +5786,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_572378ee9d35_87ae5c_axes_1">
-   <g id="cpl_572378ee9d35_87ae5c_patch_2">
+  <g id="cpl_bc184b35ee23_004207_axes_1">
+   <g id="cpl_bc184b35ee23_004207_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -5796,117 +5796,117 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_572378ee9d35_87ae5c_matplotlib.axis_1">
-    <g id="cpl_572378ee9d35_87ae5c_text_1">
+   <g id="cpl_bc184b35ee23_004207_matplotlib.axis_1">
+    <g id="cpl_bc184b35ee23_004207_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_572378ee9d35_87ae5c_CMMI12-79" d="M 3033 2624 
-C 2828 2585 2752 2431 2752 2310 
-C 2752 2156 2873 2105 2963 2105 
-C 3155 2105 3289 2271 3289 2444 
-C 3289 2694 2982 2816 2713 2816 
-C 2323 2816 2105 2451 2048 2329 
-C 1900 2790 1504 2816 1388 2816 
-C 736 2816 390 1993 390 1849 
-C 390 1823 416 1790 460 1790 
-C 512 1790 524 1829 537 1855 
-C 755 2572 1184 2687 1369 2687 
-C 1657 2687 1715 2438 1715 2284 
-C 1715 2143 1676 1993 1600 1678 
-L 1382 778 
-C 1286 390 1100 64 761 64 
-C 729 64 569 64 435 126 
-C 665 166 716 358 716 435 
-C 716 563 620 640 499 640 
-C 345 640 179 505 179 300 
+       <path id="cpl_bc184b35ee23_004207_CMMI12-78" d="M 3034 2606 
+C 2829 2567 2752 2414 2752 2293 
+C 2752 2139 2874 2088 2963 2088 
+C 3155 2088 3290 2254 3290 2427 
+C 3290 2695 2982 2816 2714 2816 
+C 2323 2816 2106 2433 2048 2312 
+C 1901 2816 1504 2816 1389 2816 
+C 736 2816 390 1980 390 1839 
+C 390 1814 416 1782 461 1782 
+C 512 1782 525 1820 538 1846 
+C 755 2555 1184 2689 1370 2689 
+C 1658 2689 1715 2420 1715 2267 
+C 1715 2127 1677 1980 1600 1673 
+L 1382 798 
+C 1286 415 1101 64 762 64 
+C 730 64 570 64 435 147 
+C 666 192 717 383 717 460 
+C 717 588 621 664 499 664 
+C 346 664 179 530 179 326 
 C 179 57 480 -64 755 -64 
-C 1062 -64 1280 153 1414 415 
-C 1516 64 1836 -64 2073 -64 
-C 2726 -64 3072 751 3072 896 
-C 3072 929 3046 955 3008 955 
-C 2950 955 2944 922 2924 870 
-C 2752 300 2380 64 2092 64 
-C 1868 64 1747 204 1747 467 
-C 1747 607 1772 712 1875 1146 
-L 2099 2039 
-C 2195 2425 2412 2687 2707 2687 
-C 2720 2687 2899 2687 3033 2624 
+C 1062 -64 1280 179 1414 441 
+C 1517 64 1837 -64 2074 -64 
+C 2726 -64 3072 773 3072 913 
+C 3072 945 3046 971 3008 971 
+C 2950 971 2944 939 2925 888 
+C 2752 326 2381 64 2093 64 
+C 1869 64 1747 230 1747 492 
+C 1747 632 1773 734 1875 1156 
+L 2099 2024 
+C 2195 2408 2413 2689 2707 2689 
+C 2720 2689 2899 2689 3034 2606 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_572378ee9d35_87ae5c_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_bc184b35ee23_004207_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_572378ee9d35_87ae5c_matplotlib.axis_2">
-    <g id="cpl_572378ee9d35_87ae5c_text_2">
+   <g id="cpl_bc184b35ee23_004207_matplotlib.axis_2">
+    <g id="cpl_bc184b35ee23_004207_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_572378ee9d35_87ae5c_CMMI12-7a" d="M 1683 -673 
-C 1510 -921 1260 -1152 947 -1152 
-C 870 -1152 563 -1139 467 -826 
-C 486 -833 518 -833 531 -833 
-C 723 -833 851 -666 851 -519 
-C 851 -372 729 -320 633 -320 
-C 531 -320 307 -397 307 -711 
-C 307 -1050 582 -1280 947 -1280 
-C 1587 -1280 2233 -673 2412 -7 
-L 3040 2483 
-C 3046 2515 3059 2553 3059 2591 
-C 3059 2687 2982 2752 2886 2752 
-C 2828 2752 2694 2726 2643 2534 
-L 2169 657 
-C 2137 542 2137 530 2086 459 
+       <path id="cpl_bc184b35ee23_004207_CMMI12-79" d="M 1683 -700 
+C 1510 -939 1261 -1152 947 -1152 
+C 870 -1152 563 -1152 467 -889 
+C 486 -895 518 -895 531 -895 
+C 723 -895 851 -729 851 -582 
+C 851 -435 730 -384 634 -384 
+C 531 -384 307 -458 307 -759 
+C 307 -1071 582 -1286 947 -1286 
+C 1587 -1286 2234 -700 2413 6 
+L 3040 2485 
+C 3046 2517 3059 2556 3059 2594 
+C 3059 2689 2982 2753 2886 2753 
+C 2829 2753 2694 2727 2643 2535 
+L 2170 658 
+C 2138 543 2138 530 2086 460 
 C 1958 281 1747 64 1440 64 
-C 1081 64 1049 415 1049 587 
-C 1049 951 1222 1443 1395 1902 
-C 1465 2087 1504 2177 1504 2305 
-C 1504 2573 1312 2816 998 2816 
-C 409 2816 172 1890 172 1838 
-C 172 1813 198 1781 243 1781 
-C 300 1781 307 1807 332 1896 
-C 486 2432 729 2687 979 2687 
-C 1036 2687 1145 2687 1145 2477 
-C 1145 2311 1075 2126 979 1883 
-C 665 1047 665 836 665 683 
-C 665 76 1100 -64 1420 -64 
-C 1606 -64 1836 -7 2060 230 
-L 2067 223 
-C 1971 -141 1907 -359 1683 -673 
+C 1082 64 1050 415 1050 588 
+C 1050 952 1222 1443 1395 1903 
+C 1466 2088 1504 2178 1504 2305 
+C 1504 2574 1312 2816 998 2816 
+C 410 2816 173 1890 173 1839 
+C 173 1814 198 1782 243 1782 
+C 301 1782 307 1807 333 1897 
+C 486 2433 730 2689 979 2689 
+C 1037 2689 1146 2689 1146 2478 
+C 1146 2312 1075 2127 979 1884 
+C 666 1047 666 837 666 683 
+C 666 77 1101 -64 1421 -64 
+C 1606 -64 1837 -6 2061 230 
+L 2067 224 
+C 1971 -147 1907 -392 1683 -700 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_572378ee9d35_87ae5c_CMMI12-7a" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_bc184b35ee23_004207_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_572378ee9d35_87ae5c_line2d_1">
+   <g id="cpl_bc184b35ee23_004207_line2d_1">
     <defs>
-     <path id="cpl_572378ee9d35_87ae5c_mf9baacb5f8" d="M 3 0 
+     <path id="cpl_bc184b35ee23_004207_m10f064a2ad" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_572378ee9d35_87ae5c_mf9baacb5f8" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_bc184b35ee23_004207_m10f064a2ad" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_572378ee9d35_87ae5c_line2d_2">
+   <g id="cpl_bc184b35ee23_004207_line2d_2">
     <defs>
-     <path id="cpl_572378ee9d35_87ae5c_m6c8e6dcdf9" d="M 0 -3 
+     <path id="cpl_bc184b35ee23_004207_m8a0356b80a" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_572378ee9d35_87ae5c_m6c8e6dcdf9" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_bc184b35ee23_004207_m8a0356b80a" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_572378ee9d35_87ae5c_line2d_3">
+   <g id="cpl_bc184b35ee23_004207_line2d_3">
     <path d="M 135.725221 346.6 
 L 138.387768 311.96746 
 L 141.023659 280.507698 
@@ -5998,30 +5998,30 @@ L 359.616224 306.303437
 L 362.17224 333.420011 
 L 363.340993 346.6 
 L 363.340993 346.6 
-" clip-path="url(#cpl_572378ee9d35_87ae5c_p7c60cd115a)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_bc184b35ee23_004207_p8bad9d4574)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_572378ee9d35_87ae5c_patch_3">
+   <g id="cpl_bc184b35ee23_004207_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_572378ee9d35_87ae5c_patch_4">
+   <g id="cpl_bc184b35ee23_004207_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_572378ee9d35_87ae5c_patch_5">
+   <g id="cpl_bc184b35ee23_004207_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_572378ee9d35_87ae5c_patch_6">
+   <g id="cpl_bc184b35ee23_004207_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_572378ee9d35_87ae5c_text_3">
-    <g id="cpl_572378ee9d35_87ae5c_patch_7">
+   <g id="cpl_bc184b35ee23_004207_text_3">
+    <g id="cpl_bc184b35ee23_004207_patch_7">
      <path d="M 400.518575 88.523386 
 L 420.781425 88.523386 
 Q 432.781425 88.523386 432.781425 76.523386 
@@ -6037,29 +6037,29 @@ z
     <!-- D -->
     <g transform="translate(400.518575 70.709936) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_572378ee9d35_87ae5c_CMSS17-46" d="M 569 4416 
-L 569 0 
+      <path id="cpl_bc184b35ee23_004207_CMSS17-44" d="M 570 4416 
+L 570 0 
 L 2144 0 
-C 3193 0 4000 981 4000 2169 
-C 4000 3396 3193 4416 2144 4416 
-L 569 4416 
+C 3194 0 4000 980 4000 2170 
+C 4000 3398 3194 4416 2144 4416 
+L 570 4416 
 z
-M 1094 358 
-L 1094 4057 
-L 2003 4057 
-C 2860 4057 3475 3275 3475 2169 
-C 3475 1108 2867 358 2003 358 
-L 1094 358 
+M 1094 357 
+L 1094 4059 
+L 2003 4059 
+C 2861 4059 3475 3277 3475 2170 
+C 3475 1107 2867 357 2003 357 
+L 1094 357 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_572378ee9d35_87ae5c_CMSS17-46" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_bc184b35ee23_004207_CMSS17-44" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_572378ee9d35_87ae5c_p7c60cd115a">
+  <clipPath id="cpl_bc184b35ee23_004207_p8bad9d4574">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -6098,11 +6098,11 @@ f(x) = 2x^3 - 3x^2 - 12x + 6.
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-25T00:57:06.588257</dc:date>
+    <dc:date>2026-07-25T20:12:47.721942</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -6111,8 +6111,8 @@ f(x) = 2x^3 - 3x^2 - 12x + 6.
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_0765711fdb62_c80a82_figure_1">
-  <g id="cpl_0765711fdb62_c80a82_patch_1">
+ <g id="cpl_972f22b188b6_baa5cd_figure_1">
+  <g id="cpl_972f22b188b6_baa5cd_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -6121,8 +6121,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_0765711fdb62_c80a82_axes_1">
-   <g id="cpl_0765711fdb62_c80a82_patch_2">
+  <g id="cpl_972f22b188b6_baa5cd_axes_1">
+   <g id="cpl_972f22b188b6_baa5cd_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -6131,117 +6131,117 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_0765711fdb62_c80a82_matplotlib.axis_1">
-    <g id="cpl_0765711fdb62_c80a82_text_1">
+   <g id="cpl_972f22b188b6_baa5cd_matplotlib.axis_1">
+    <g id="cpl_972f22b188b6_baa5cd_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_0765711fdb62_c80a82_CMMI12-79" d="M 3033 2624 
-C 2828 2585 2752 2431 2752 2310 
-C 2752 2156 2873 2105 2963 2105 
-C 3155 2105 3289 2271 3289 2444 
-C 3289 2694 2982 2816 2713 2816 
-C 2323 2816 2105 2451 2048 2329 
-C 1900 2790 1504 2816 1388 2816 
-C 736 2816 390 1993 390 1849 
-C 390 1823 416 1790 460 1790 
-C 512 1790 524 1829 537 1855 
-C 755 2572 1184 2687 1369 2687 
-C 1657 2687 1715 2438 1715 2284 
-C 1715 2143 1676 1993 1600 1678 
-L 1382 778 
-C 1286 390 1100 64 761 64 
-C 729 64 569 64 435 126 
-C 665 166 716 358 716 435 
-C 716 563 620 640 499 640 
-C 345 640 179 505 179 300 
+       <path id="cpl_972f22b188b6_baa5cd_CMMI12-78" d="M 3034 2606 
+C 2829 2567 2752 2414 2752 2293 
+C 2752 2139 2874 2088 2963 2088 
+C 3155 2088 3290 2254 3290 2427 
+C 3290 2695 2982 2816 2714 2816 
+C 2323 2816 2106 2433 2048 2312 
+C 1901 2816 1504 2816 1389 2816 
+C 736 2816 390 1980 390 1839 
+C 390 1814 416 1782 461 1782 
+C 512 1782 525 1820 538 1846 
+C 755 2555 1184 2689 1370 2689 
+C 1658 2689 1715 2420 1715 2267 
+C 1715 2127 1677 1980 1600 1673 
+L 1382 798 
+C 1286 415 1101 64 762 64 
+C 730 64 570 64 435 147 
+C 666 192 717 383 717 460 
+C 717 588 621 664 499 664 
+C 346 664 179 530 179 326 
 C 179 57 480 -64 755 -64 
-C 1062 -64 1280 153 1414 415 
-C 1516 64 1836 -64 2073 -64 
-C 2726 -64 3072 751 3072 896 
-C 3072 929 3046 955 3008 955 
-C 2950 955 2944 922 2924 870 
-C 2752 300 2380 64 2092 64 
-C 1868 64 1747 204 1747 467 
-C 1747 607 1772 712 1875 1146 
-L 2099 2039 
-C 2195 2425 2412 2687 2707 2687 
-C 2720 2687 2899 2687 3033 2624 
+C 1062 -64 1280 179 1414 441 
+C 1517 64 1837 -64 2074 -64 
+C 2726 -64 3072 773 3072 913 
+C 3072 945 3046 971 3008 971 
+C 2950 971 2944 939 2925 888 
+C 2752 326 2381 64 2093 64 
+C 1869 64 1747 230 1747 492 
+C 1747 632 1773 734 1875 1156 
+L 2099 2024 
+C 2195 2408 2413 2689 2707 2689 
+C 2720 2689 2899 2689 3034 2606 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_0765711fdb62_c80a82_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_972f22b188b6_baa5cd_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_0765711fdb62_c80a82_matplotlib.axis_2">
-    <g id="cpl_0765711fdb62_c80a82_text_2">
+   <g id="cpl_972f22b188b6_baa5cd_matplotlib.axis_2">
+    <g id="cpl_972f22b188b6_baa5cd_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_0765711fdb62_c80a82_CMMI12-7a" d="M 1683 -673 
-C 1510 -921 1260 -1152 947 -1152 
-C 870 -1152 563 -1139 467 -826 
-C 486 -833 518 -833 531 -833 
-C 723 -833 851 -666 851 -519 
-C 851 -372 729 -320 633 -320 
-C 531 -320 307 -397 307 -711 
-C 307 -1050 582 -1280 947 -1280 
-C 1587 -1280 2233 -673 2412 -7 
-L 3040 2483 
-C 3046 2515 3059 2553 3059 2591 
-C 3059 2687 2982 2752 2886 2752 
-C 2828 2752 2694 2726 2643 2534 
-L 2169 657 
-C 2137 542 2137 530 2086 459 
+       <path id="cpl_972f22b188b6_baa5cd_CMMI12-79" d="M 1683 -700 
+C 1510 -939 1261 -1152 947 -1152 
+C 870 -1152 563 -1152 467 -889 
+C 486 -895 518 -895 531 -895 
+C 723 -895 851 -729 851 -582 
+C 851 -435 730 -384 634 -384 
+C 531 -384 307 -458 307 -759 
+C 307 -1071 582 -1286 947 -1286 
+C 1587 -1286 2234 -700 2413 6 
+L 3040 2485 
+C 3046 2517 3059 2556 3059 2594 
+C 3059 2689 2982 2753 2886 2753 
+C 2829 2753 2694 2727 2643 2535 
+L 2170 658 
+C 2138 543 2138 530 2086 460 
 C 1958 281 1747 64 1440 64 
-C 1081 64 1049 415 1049 587 
-C 1049 951 1222 1443 1395 1902 
-C 1465 2087 1504 2177 1504 2305 
-C 1504 2573 1312 2816 998 2816 
-C 409 2816 172 1890 172 1838 
-C 172 1813 198 1781 243 1781 
-C 300 1781 307 1807 332 1896 
-C 486 2432 729 2687 979 2687 
-C 1036 2687 1145 2687 1145 2477 
-C 1145 2311 1075 2126 979 1883 
-C 665 1047 665 836 665 683 
-C 665 76 1100 -64 1420 -64 
-C 1606 -64 1836 -7 2060 230 
-L 2067 223 
-C 1971 -141 1907 -359 1683 -673 
+C 1082 64 1050 415 1050 588 
+C 1050 952 1222 1443 1395 1903 
+C 1466 2088 1504 2178 1504 2305 
+C 1504 2574 1312 2816 998 2816 
+C 410 2816 173 1890 173 1839 
+C 173 1814 198 1782 243 1782 
+C 301 1782 307 1807 333 1897 
+C 486 2433 730 2689 979 2689 
+C 1037 2689 1146 2689 1146 2478 
+C 1146 2312 1075 2127 979 1884 
+C 666 1047 666 837 666 683 
+C 666 77 1101 -64 1421 -64 
+C 1606 -64 1837 -6 2061 230 
+L 2067 224 
+C 1971 -147 1907 -392 1683 -700 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_0765711fdb62_c80a82_CMMI12-7a" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_972f22b188b6_baa5cd_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_0765711fdb62_c80a82_line2d_1">
+   <g id="cpl_972f22b188b6_baa5cd_line2d_1">
     <defs>
-     <path id="cpl_0765711fdb62_c80a82_m35f725b79d" d="M 3 0 
+     <path id="cpl_972f22b188b6_baa5cd_maed7ad21c5" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_0765711fdb62_c80a82_m35f725b79d" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_972f22b188b6_baa5cd_maed7ad21c5" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_0765711fdb62_c80a82_line2d_2">
+   <g id="cpl_972f22b188b6_baa5cd_line2d_2">
     <defs>
-     <path id="cpl_0765711fdb62_c80a82_mf41d330c94" d="M 0 -3 
+     <path id="cpl_972f22b188b6_baa5cd_mf17f71e625" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_0765711fdb62_c80a82_mf41d330c94" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_972f22b188b6_baa5cd_mf17f71e625" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_0765711fdb62_c80a82_line2d_3">
+   <g id="cpl_972f22b188b6_baa5cd_line2d_3">
     <path d="M 164.828799 346.6 
 L 169.113203 316.370806 
 L 173.293353 288.43548 
@@ -6304,30 +6304,30 @@ L 321.196118 290.646693
 L 325.269767 317.97299 
 L 329.321201 346.6 
 L 329.321201 346.6 
-" clip-path="url(#cpl_0765711fdb62_c80a82_p79a9720876)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_972f22b188b6_baa5cd_pa36e88cd10)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_0765711fdb62_c80a82_patch_3">
+   <g id="cpl_972f22b188b6_baa5cd_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_0765711fdb62_c80a82_patch_4">
+   <g id="cpl_972f22b188b6_baa5cd_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_0765711fdb62_c80a82_patch_5">
+   <g id="cpl_972f22b188b6_baa5cd_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_0765711fdb62_c80a82_patch_6">
+   <g id="cpl_972f22b188b6_baa5cd_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_0765711fdb62_c80a82_text_3">
-    <g id="cpl_0765711fdb62_c80a82_patch_7">
+   <g id="cpl_972f22b188b6_baa5cd_text_3">
+    <g id="cpl_972f22b188b6_baa5cd_patch_7">
      <path d="M 401.317322 59.427556 
 L 419.982678 59.427556 
 Q 431.982678 59.427556 431.982678 47.427556 
@@ -6343,32 +6343,32 @@ z
     <!-- A -->
     <g transform="translate(401.317322 41.614105) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_0765711fdb62_c80a82_CMSS17-43" d="M 2272 4416 
-L 1721 4416 
+      <path id="cpl_972f22b188b6_baa5cd_CMSS17-41" d="M 2272 4416 
+L 1722 4416 
 L 166 0 
-L 652 0 
-L 1100 1280 
+L 653 0 
+L 1101 1280 
 L 2816 1280 
 L 3270 0 
 L 3827 0 
 L 2272 4416 
 z
-M 2694 1638 
-L 1222 1638 
-C 1529 2530 1913 3638 1958 3924 
-L 1964 3924 
-C 2009 3663 2137 3281 2246 2956 
-L 2694 1638 
+M 2694 1637 
+L 1222 1637 
+C 1530 2528 1914 3638 1958 3925 
+L 1965 3925 
+C 2010 3663 2138 3281 2246 2956 
+L 2694 1637 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_0765711fdb62_c80a82_CMSS17-43" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_972f22b188b6_baa5cd_CMSS17-41" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_0765711fdb62_c80a82_p79a9720876">
+  <clipPath id="cpl_972f22b188b6_baa5cd_pa36e88cd10">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -6383,11 +6383,11 @@ z
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-25T00:57:06.644393</dc:date>
+    <dc:date>2026-07-25T20:12:47.744813</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -6396,8 +6396,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_3a5b03e7ae2e_1eeb1d_figure_1">
-  <g id="cpl_3a5b03e7ae2e_1eeb1d_patch_1">
+ <g id="cpl_8d287bd1ffac_aa2ae2_figure_1">
+  <g id="cpl_8d287bd1ffac_aa2ae2_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -6406,8 +6406,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_3a5b03e7ae2e_1eeb1d_axes_1">
-   <g id="cpl_3a5b03e7ae2e_1eeb1d_patch_2">
+  <g id="cpl_8d287bd1ffac_aa2ae2_axes_1">
+   <g id="cpl_8d287bd1ffac_aa2ae2_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -6416,117 +6416,117 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_3a5b03e7ae2e_1eeb1d_matplotlib.axis_1">
-    <g id="cpl_3a5b03e7ae2e_1eeb1d_text_1">
+   <g id="cpl_8d287bd1ffac_aa2ae2_matplotlib.axis_1">
+    <g id="cpl_8d287bd1ffac_aa2ae2_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_3a5b03e7ae2e_1eeb1d_CMMI12-79" d="M 3033 2624 
-C 2828 2585 2752 2431 2752 2310 
-C 2752 2156 2873 2105 2963 2105 
-C 3155 2105 3289 2271 3289 2444 
-C 3289 2694 2982 2816 2713 2816 
-C 2323 2816 2105 2451 2048 2329 
-C 1900 2790 1504 2816 1388 2816 
-C 736 2816 390 1993 390 1849 
-C 390 1823 416 1790 460 1790 
-C 512 1790 524 1829 537 1855 
-C 755 2572 1184 2687 1369 2687 
-C 1657 2687 1715 2438 1715 2284 
-C 1715 2143 1676 1993 1600 1678 
-L 1382 778 
-C 1286 390 1100 64 761 64 
-C 729 64 569 64 435 126 
-C 665 166 716 358 716 435 
-C 716 563 620 640 499 640 
-C 345 640 179 505 179 300 
+       <path id="cpl_8d287bd1ffac_aa2ae2_CMMI12-78" d="M 3034 2606 
+C 2829 2567 2752 2414 2752 2293 
+C 2752 2139 2874 2088 2963 2088 
+C 3155 2088 3290 2254 3290 2427 
+C 3290 2695 2982 2816 2714 2816 
+C 2323 2816 2106 2433 2048 2312 
+C 1901 2816 1504 2816 1389 2816 
+C 736 2816 390 1980 390 1839 
+C 390 1814 416 1782 461 1782 
+C 512 1782 525 1820 538 1846 
+C 755 2555 1184 2689 1370 2689 
+C 1658 2689 1715 2420 1715 2267 
+C 1715 2127 1677 1980 1600 1673 
+L 1382 798 
+C 1286 415 1101 64 762 64 
+C 730 64 570 64 435 147 
+C 666 192 717 383 717 460 
+C 717 588 621 664 499 664 
+C 346 664 179 530 179 326 
 C 179 57 480 -64 755 -64 
-C 1062 -64 1280 153 1414 415 
-C 1516 64 1836 -64 2073 -64 
-C 2726 -64 3072 751 3072 896 
-C 3072 929 3046 955 3008 955 
-C 2950 955 2944 922 2924 870 
-C 2752 300 2380 64 2092 64 
-C 1868 64 1747 204 1747 467 
-C 1747 607 1772 712 1875 1146 
-L 2099 2039 
-C 2195 2425 2412 2687 2707 2687 
-C 2720 2687 2899 2687 3033 2624 
+C 1062 -64 1280 179 1414 441 
+C 1517 64 1837 -64 2074 -64 
+C 2726 -64 3072 773 3072 913 
+C 3072 945 3046 971 3008 971 
+C 2950 971 2944 939 2925 888 
+C 2752 326 2381 64 2093 64 
+C 1869 64 1747 230 1747 492 
+C 1747 632 1773 734 1875 1156 
+L 2099 2024 
+C 2195 2408 2413 2689 2707 2689 
+C 2720 2689 2899 2689 3034 2606 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_3a5b03e7ae2e_1eeb1d_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_8d287bd1ffac_aa2ae2_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_3a5b03e7ae2e_1eeb1d_matplotlib.axis_2">
-    <g id="cpl_3a5b03e7ae2e_1eeb1d_text_2">
+   <g id="cpl_8d287bd1ffac_aa2ae2_matplotlib.axis_2">
+    <g id="cpl_8d287bd1ffac_aa2ae2_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_3a5b03e7ae2e_1eeb1d_CMMI12-7a" d="M 1683 -673 
-C 1510 -921 1260 -1152 947 -1152 
-C 870 -1152 563 -1139 467 -826 
-C 486 -833 518 -833 531 -833 
-C 723 -833 851 -666 851 -519 
-C 851 -372 729 -320 633 -320 
-C 531 -320 307 -397 307 -711 
-C 307 -1050 582 -1280 947 -1280 
-C 1587 -1280 2233 -673 2412 -7 
-L 3040 2483 
-C 3046 2515 3059 2553 3059 2591 
-C 3059 2687 2982 2752 2886 2752 
-C 2828 2752 2694 2726 2643 2534 
-L 2169 657 
-C 2137 542 2137 530 2086 459 
+       <path id="cpl_8d287bd1ffac_aa2ae2_CMMI12-79" d="M 1683 -700 
+C 1510 -939 1261 -1152 947 -1152 
+C 870 -1152 563 -1152 467 -889 
+C 486 -895 518 -895 531 -895 
+C 723 -895 851 -729 851 -582 
+C 851 -435 730 -384 634 -384 
+C 531 -384 307 -458 307 -759 
+C 307 -1071 582 -1286 947 -1286 
+C 1587 -1286 2234 -700 2413 6 
+L 3040 2485 
+C 3046 2517 3059 2556 3059 2594 
+C 3059 2689 2982 2753 2886 2753 
+C 2829 2753 2694 2727 2643 2535 
+L 2170 658 
+C 2138 543 2138 530 2086 460 
 C 1958 281 1747 64 1440 64 
-C 1081 64 1049 415 1049 587 
-C 1049 951 1222 1443 1395 1902 
-C 1465 2087 1504 2177 1504 2305 
-C 1504 2573 1312 2816 998 2816 
-C 409 2816 172 1890 172 1838 
-C 172 1813 198 1781 243 1781 
-C 300 1781 307 1807 332 1896 
-C 486 2432 729 2687 979 2687 
-C 1036 2687 1145 2687 1145 2477 
-C 1145 2311 1075 2126 979 1883 
-C 665 1047 665 836 665 683 
-C 665 76 1100 -64 1420 -64 
-C 1606 -64 1836 -7 2060 230 
-L 2067 223 
-C 1971 -141 1907 -359 1683 -673 
+C 1082 64 1050 415 1050 588 
+C 1050 952 1222 1443 1395 1903 
+C 1466 2088 1504 2178 1504 2305 
+C 1504 2574 1312 2816 998 2816 
+C 410 2816 173 1890 173 1839 
+C 173 1814 198 1782 243 1782 
+C 301 1782 307 1807 333 1897 
+C 486 2433 730 2689 979 2689 
+C 1037 2689 1146 2689 1146 2478 
+C 1146 2312 1075 2127 979 1884 
+C 666 1047 666 837 666 683 
+C 666 77 1101 -64 1421 -64 
+C 1606 -64 1837 -6 2061 230 
+L 2067 224 
+C 1971 -147 1907 -392 1683 -700 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_3a5b03e7ae2e_1eeb1d_CMMI12-7a" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_8d287bd1ffac_aa2ae2_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_3a5b03e7ae2e_1eeb1d_line2d_1">
+   <g id="cpl_8d287bd1ffac_aa2ae2_line2d_1">
     <defs>
-     <path id="cpl_3a5b03e7ae2e_1eeb1d_m783f123873" d="M 3 0 
+     <path id="cpl_8d287bd1ffac_aa2ae2_mc1d92d1aeb" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_3a5b03e7ae2e_1eeb1d_m783f123873" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_8d287bd1ffac_aa2ae2_mc1d92d1aeb" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_3a5b03e7ae2e_1eeb1d_line2d_2">
+   <g id="cpl_8d287bd1ffac_aa2ae2_line2d_2">
     <defs>
-     <path id="cpl_3a5b03e7ae2e_1eeb1d_m70fc84acd3" d="M 0 -3 
+     <path id="cpl_8d287bd1ffac_aa2ae2_ma21fbd72da" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_3a5b03e7ae2e_1eeb1d_m70fc84acd3" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_8d287bd1ffac_aa2ae2_ma21fbd72da" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_3a5b03e7ae2e_1eeb1d_line2d_3">
+   <g id="cpl_8d287bd1ffac_aa2ae2_line2d_3">
     <path d="M 128.478799 346.6 
 L 132.743234 316.507948 
 L 136.923384 288.56527 
@@ -6589,30 +6589,30 @@ L 284.852774 290.690151
 L 288.926424 318.018837 
 L 292.971201 346.6 
 L 292.971201 346.6 
-" clip-path="url(#cpl_3a5b03e7ae2e_1eeb1d_p71b3fd9c98)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_8d287bd1ffac_aa2ae2_pe4ee55ddc9)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_3a5b03e7ae2e_1eeb1d_patch_3">
+   <g id="cpl_8d287bd1ffac_aa2ae2_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_3a5b03e7ae2e_1eeb1d_patch_4">
+   <g id="cpl_8d287bd1ffac_aa2ae2_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_3a5b03e7ae2e_1eeb1d_patch_5">
+   <g id="cpl_8d287bd1ffac_aa2ae2_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_3a5b03e7ae2e_1eeb1d_patch_6">
+   <g id="cpl_8d287bd1ffac_aa2ae2_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_3a5b03e7ae2e_1eeb1d_text_3">
-    <g id="cpl_3a5b03e7ae2e_1eeb1d_patch_7">
+   <g id="cpl_8d287bd1ffac_aa2ae2_text_3">
+    <g id="cpl_8d287bd1ffac_aa2ae2_patch_7">
      <path d="M 401.2993 59.427556 
 L 420.0007 59.427556 
 Q 432.0007 59.427556 432.0007 47.427556 
@@ -6628,38 +6628,38 @@ z
     <!-- B -->
     <g transform="translate(401.2993 41.614105) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_3a5b03e7ae2e_1eeb1d_CMSS17-44" d="M 569 4416 
-L 569 0 
+      <path id="cpl_8d287bd1ffac_aa2ae2_CMSS17-42" d="M 570 4416 
+L 570 0 
 L 2163 0 
-C 3033 0 3667 575 3667 1200 
-C 3667 1684 3251 2175 2502 2316 
-C 3334 2559 3501 3039 3501 3311 
-C 3501 3880 2873 4416 1996 4416 
-L 569 4416 
+C 3034 0 3667 574 3667 1200 
+C 3667 1685 3251 2176 2502 2317 
+C 3334 2558 3501 3040 3501 3313 
+C 3501 3883 2874 4416 1997 4416 
+L 570 4416 
 z
 M 1088 2496 
-L 1088 4057 
-L 1824 4057 
-C 2483 4057 3001 3722 3001 3305 
-C 3001 2925 2592 2496 1766 2496 
+L 1088 4059 
+L 1824 4059 
+C 2483 4059 3002 3724 3002 3306 
+C 3002 2926 2592 2496 1766 2496 
 L 1088 2496 
 z
-M 1088 358 
-L 1088 2105 
-L 1939 2105 
-C 2630 2105 3161 1678 3161 1206 
-C 3161 772 2694 358 1984 358 
-L 1088 358 
+M 1088 357 
+L 1088 2107 
+L 1939 2107 
+C 2630 2107 3162 1679 3162 1206 
+C 3162 772 2694 357 1984 357 
+L 1088 357 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_3a5b03e7ae2e_1eeb1d_CMSS17-44" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_8d287bd1ffac_aa2ae2_CMSS17-42" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_3a5b03e7ae2e_1eeb1d_p71b3fd9c98">
+  <clipPath id="cpl_8d287bd1ffac_aa2ae2_pe4ee55ddc9">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -6674,11 +6674,11 @@ z
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-25T00:57:06.701260</dc:date>
+    <dc:date>2026-07-25T20:12:47.768428</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -6687,8 +6687,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_42b0e03de11c_39fd07_figure_1">
-  <g id="cpl_42b0e03de11c_39fd07_patch_1">
+ <g id="cpl_ea9612bc0d4d_999d1c_figure_1">
+  <g id="cpl_ea9612bc0d4d_999d1c_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -6697,8 +6697,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_42b0e03de11c_39fd07_axes_1">
-   <g id="cpl_42b0e03de11c_39fd07_patch_2">
+  <g id="cpl_ea9612bc0d4d_999d1c_axes_1">
+   <g id="cpl_ea9612bc0d4d_999d1c_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -6707,117 +6707,117 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_42b0e03de11c_39fd07_matplotlib.axis_1">
-    <g id="cpl_42b0e03de11c_39fd07_text_1">
+   <g id="cpl_ea9612bc0d4d_999d1c_matplotlib.axis_1">
+    <g id="cpl_ea9612bc0d4d_999d1c_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_42b0e03de11c_39fd07_CMMI12-79" d="M 3033 2624 
-C 2828 2585 2752 2431 2752 2310 
-C 2752 2156 2873 2105 2963 2105 
-C 3155 2105 3289 2271 3289 2444 
-C 3289 2694 2982 2816 2713 2816 
-C 2323 2816 2105 2451 2048 2329 
-C 1900 2790 1504 2816 1388 2816 
-C 736 2816 390 1993 390 1849 
-C 390 1823 416 1790 460 1790 
-C 512 1790 524 1829 537 1855 
-C 755 2572 1184 2687 1369 2687 
-C 1657 2687 1715 2438 1715 2284 
-C 1715 2143 1676 1993 1600 1678 
-L 1382 778 
-C 1286 390 1100 64 761 64 
-C 729 64 569 64 435 126 
-C 665 166 716 358 716 435 
-C 716 563 620 640 499 640 
-C 345 640 179 505 179 300 
+       <path id="cpl_ea9612bc0d4d_999d1c_CMMI12-78" d="M 3034 2606 
+C 2829 2567 2752 2414 2752 2293 
+C 2752 2139 2874 2088 2963 2088 
+C 3155 2088 3290 2254 3290 2427 
+C 3290 2695 2982 2816 2714 2816 
+C 2323 2816 2106 2433 2048 2312 
+C 1901 2816 1504 2816 1389 2816 
+C 736 2816 390 1980 390 1839 
+C 390 1814 416 1782 461 1782 
+C 512 1782 525 1820 538 1846 
+C 755 2555 1184 2689 1370 2689 
+C 1658 2689 1715 2420 1715 2267 
+C 1715 2127 1677 1980 1600 1673 
+L 1382 798 
+C 1286 415 1101 64 762 64 
+C 730 64 570 64 435 147 
+C 666 192 717 383 717 460 
+C 717 588 621 664 499 664 
+C 346 664 179 530 179 326 
 C 179 57 480 -64 755 -64 
-C 1062 -64 1280 153 1414 415 
-C 1516 64 1836 -64 2073 -64 
-C 2726 -64 3072 751 3072 896 
-C 3072 929 3046 955 3008 955 
-C 2950 955 2944 922 2924 870 
-C 2752 300 2380 64 2092 64 
-C 1868 64 1747 204 1747 467 
-C 1747 607 1772 712 1875 1146 
-L 2099 2039 
-C 2195 2425 2412 2687 2707 2687 
-C 2720 2687 2899 2687 3033 2624 
+C 1062 -64 1280 179 1414 441 
+C 1517 64 1837 -64 2074 -64 
+C 2726 -64 3072 773 3072 913 
+C 3072 945 3046 971 3008 971 
+C 2950 971 2944 939 2925 888 
+C 2752 326 2381 64 2093 64 
+C 1869 64 1747 230 1747 492 
+C 1747 632 1773 734 1875 1156 
+L 2099 2024 
+C 2195 2408 2413 2689 2707 2689 
+C 2720 2689 2899 2689 3034 2606 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_42b0e03de11c_39fd07_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_ea9612bc0d4d_999d1c_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_42b0e03de11c_39fd07_matplotlib.axis_2">
-    <g id="cpl_42b0e03de11c_39fd07_text_2">
+   <g id="cpl_ea9612bc0d4d_999d1c_matplotlib.axis_2">
+    <g id="cpl_ea9612bc0d4d_999d1c_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_42b0e03de11c_39fd07_CMMI12-7a" d="M 1683 -673 
-C 1510 -921 1260 -1152 947 -1152 
-C 870 -1152 563 -1139 467 -826 
-C 486 -833 518 -833 531 -833 
-C 723 -833 851 -666 851 -519 
-C 851 -372 729 -320 633 -320 
-C 531 -320 307 -397 307 -711 
-C 307 -1050 582 -1280 947 -1280 
-C 1587 -1280 2233 -673 2412 -7 
-L 3040 2483 
-C 3046 2515 3059 2553 3059 2591 
-C 3059 2687 2982 2752 2886 2752 
-C 2828 2752 2694 2726 2643 2534 
-L 2169 657 
-C 2137 542 2137 530 2086 459 
+       <path id="cpl_ea9612bc0d4d_999d1c_CMMI12-79" d="M 1683 -700 
+C 1510 -939 1261 -1152 947 -1152 
+C 870 -1152 563 -1152 467 -889 
+C 486 -895 518 -895 531 -895 
+C 723 -895 851 -729 851 -582 
+C 851 -435 730 -384 634 -384 
+C 531 -384 307 -458 307 -759 
+C 307 -1071 582 -1286 947 -1286 
+C 1587 -1286 2234 -700 2413 6 
+L 3040 2485 
+C 3046 2517 3059 2556 3059 2594 
+C 3059 2689 2982 2753 2886 2753 
+C 2829 2753 2694 2727 2643 2535 
+L 2170 658 
+C 2138 543 2138 530 2086 460 
 C 1958 281 1747 64 1440 64 
-C 1081 64 1049 415 1049 587 
-C 1049 951 1222 1443 1395 1902 
-C 1465 2087 1504 2177 1504 2305 
-C 1504 2573 1312 2816 998 2816 
-C 409 2816 172 1890 172 1838 
-C 172 1813 198 1781 243 1781 
-C 300 1781 307 1807 332 1896 
-C 486 2432 729 2687 979 2687 
-C 1036 2687 1145 2687 1145 2477 
-C 1145 2311 1075 2126 979 1883 
-C 665 1047 665 836 665 683 
-C 665 76 1100 -64 1420 -64 
-C 1606 -64 1836 -7 2060 230 
-L 2067 223 
-C 1971 -141 1907 -359 1683 -673 
+C 1082 64 1050 415 1050 588 
+C 1050 952 1222 1443 1395 1903 
+C 1466 2088 1504 2178 1504 2305 
+C 1504 2574 1312 2816 998 2816 
+C 410 2816 173 1890 173 1839 
+C 173 1814 198 1782 243 1782 
+C 301 1782 307 1807 333 1897 
+C 486 2433 730 2689 979 2689 
+C 1037 2689 1146 2689 1146 2478 
+C 1146 2312 1075 2127 979 1884 
+C 666 1047 666 837 666 683 
+C 666 77 1101 -64 1421 -64 
+C 1606 -64 1837 -6 2061 230 
+L 2067 224 
+C 1971 -147 1907 -392 1683 -700 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_42b0e03de11c_39fd07_CMMI12-7a" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_ea9612bc0d4d_999d1c_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_42b0e03de11c_39fd07_line2d_1">
+   <g id="cpl_ea9612bc0d4d_999d1c_line2d_1">
     <defs>
-     <path id="cpl_42b0e03de11c_39fd07_m6ecb6f2b36" d="M 3 0 
+     <path id="cpl_ea9612bc0d4d_999d1c_m78db105763" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_42b0e03de11c_39fd07_m6ecb6f2b36" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_ea9612bc0d4d_999d1c_m78db105763" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_42b0e03de11c_39fd07_line2d_2">
+   <g id="cpl_ea9612bc0d4d_999d1c_line2d_2">
     <defs>
-     <path id="cpl_42b0e03de11c_39fd07_m301fb836dc" d="M 0 -3 
+     <path id="cpl_ea9612bc0d4d_999d1c_m11429499c6" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_42b0e03de11c_39fd07_m301fb836dc" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_ea9612bc0d4d_999d1c_m11429499c6" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_42b0e03de11c_39fd07_line2d_3">
+   <g id="cpl_ea9612bc0d4d_999d1c_line2d_3">
     <path d="M 126.616414 -1 
 L 130.932723 30.156293 
 L 135.166123 59.120108 
@@ -6881,30 +6881,30 @@ L 287.062663 53.910346
 L 291.216188 25.222713 
 L 294.833586 -1 
 L 294.833586 -1 
-" clip-path="url(#cpl_42b0e03de11c_39fd07_p262949499c)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_ea9612bc0d4d_999d1c_p4971d19984)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_42b0e03de11c_39fd07_patch_3">
+   <g id="cpl_ea9612bc0d4d_999d1c_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_42b0e03de11c_39fd07_patch_4">
+   <g id="cpl_ea9612bc0d4d_999d1c_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_42b0e03de11c_39fd07_patch_5">
+   <g id="cpl_ea9612bc0d4d_999d1c_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_42b0e03de11c_39fd07_patch_6">
+   <g id="cpl_ea9612bc0d4d_999d1c_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_42b0e03de11c_39fd07_text_3">
-    <g id="cpl_42b0e03de11c_39fd07_patch_7">
+   <g id="cpl_ea9612bc0d4d_999d1c_text_3">
+    <g id="cpl_ea9612bc0d4d_999d1c_patch_7">
      <path d="M 401.671637 59.427556 
 L 419.628363 59.427556 
 Q 431.628363 59.427556 431.628363 47.427556 
@@ -6920,27 +6920,27 @@ z
     <!-- C -->
     <g transform="translate(401.671637 41.614105) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_42b0e03de11c_39fd07_CMSS17-45" d="M 3501 705 
-C 3072 416 2873 332 2355 332 
-C 1459 332 934 1304 934 2191 
-C 934 3137 1472 4070 2380 4070 
-C 2790 4070 3059 3954 3385 3748 
-L 3475 4255 
-C 3168 4409 2777 4480 2387 4480 
-C 1158 4480 396 3343 396 2191 
-C 396 924 1299 -77 2323 -77 
-C 2873 -77 3065 -32 3539 268 
-L 3501 705 
+      <path id="cpl_ea9612bc0d4d_999d1c_CMSS17-43" d="M 3501 714 
+C 3072 427 2874 344 2355 344 
+C 1459 344 934 1303 934 2179 
+C 934 3112 1472 4032 2381 4032 
+C 2790 4032 3059 3918 3386 3715 
+L 3475 4217 
+C 3168 4370 2778 4440 2387 4440 
+C 1158 4440 397 3316 397 2179 
+C 397 927 1299 -64 2323 -64 
+C 2874 -64 3066 -19 3539 280 
+L 3501 714 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_42b0e03de11c_39fd07_CMSS17-45" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_ea9612bc0d4d_999d1c_CMSS17-43" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_42b0e03de11c_39fd07_p262949499c">
+  <clipPath id="cpl_ea9612bc0d4d_999d1c_p4971d19984">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -6955,11 +6955,11 @@ z
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-25T00:57:06.758126</dc:date>
+    <dc:date>2026-07-25T20:12:47.792259</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -6968,8 +6968,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_09a2c14121d3_b801c9_figure_1">
-  <g id="cpl_09a2c14121d3_b801c9_patch_1">
+ <g id="cpl_d584290809bc_2b83c4_figure_1">
+  <g id="cpl_d584290809bc_2b83c4_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -6978,8 +6978,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_09a2c14121d3_b801c9_axes_1">
-   <g id="cpl_09a2c14121d3_b801c9_patch_2">
+  <g id="cpl_d584290809bc_2b83c4_axes_1">
+   <g id="cpl_d584290809bc_2b83c4_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -6988,117 +6988,117 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_09a2c14121d3_b801c9_matplotlib.axis_1">
-    <g id="cpl_09a2c14121d3_b801c9_text_1">
+   <g id="cpl_d584290809bc_2b83c4_matplotlib.axis_1">
+    <g id="cpl_d584290809bc_2b83c4_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_09a2c14121d3_b801c9_CMMI12-79" d="M 3033 2624 
-C 2828 2585 2752 2431 2752 2310 
-C 2752 2156 2873 2105 2963 2105 
-C 3155 2105 3289 2271 3289 2444 
-C 3289 2694 2982 2816 2713 2816 
-C 2323 2816 2105 2451 2048 2329 
-C 1900 2790 1504 2816 1388 2816 
-C 736 2816 390 1993 390 1849 
-C 390 1823 416 1790 460 1790 
-C 512 1790 524 1829 537 1855 
-C 755 2572 1184 2687 1369 2687 
-C 1657 2687 1715 2438 1715 2284 
-C 1715 2143 1676 1993 1600 1678 
-L 1382 778 
-C 1286 390 1100 64 761 64 
-C 729 64 569 64 435 126 
-C 665 166 716 358 716 435 
-C 716 563 620 640 499 640 
-C 345 640 179 505 179 300 
+       <path id="cpl_d584290809bc_2b83c4_CMMI12-78" d="M 3034 2606 
+C 2829 2567 2752 2414 2752 2293 
+C 2752 2139 2874 2088 2963 2088 
+C 3155 2088 3290 2254 3290 2427 
+C 3290 2695 2982 2816 2714 2816 
+C 2323 2816 2106 2433 2048 2312 
+C 1901 2816 1504 2816 1389 2816 
+C 736 2816 390 1980 390 1839 
+C 390 1814 416 1782 461 1782 
+C 512 1782 525 1820 538 1846 
+C 755 2555 1184 2689 1370 2689 
+C 1658 2689 1715 2420 1715 2267 
+C 1715 2127 1677 1980 1600 1673 
+L 1382 798 
+C 1286 415 1101 64 762 64 
+C 730 64 570 64 435 147 
+C 666 192 717 383 717 460 
+C 717 588 621 664 499 664 
+C 346 664 179 530 179 326 
 C 179 57 480 -64 755 -64 
-C 1062 -64 1280 153 1414 415 
-C 1516 64 1836 -64 2073 -64 
-C 2726 -64 3072 751 3072 896 
-C 3072 929 3046 955 3008 955 
-C 2950 955 2944 922 2924 870 
-C 2752 300 2380 64 2092 64 
-C 1868 64 1747 204 1747 467 
-C 1747 607 1772 712 1875 1146 
-L 2099 2039 
-C 2195 2425 2412 2687 2707 2687 
-C 2720 2687 2899 2687 3033 2624 
+C 1062 -64 1280 179 1414 441 
+C 1517 64 1837 -64 2074 -64 
+C 2726 -64 3072 773 3072 913 
+C 3072 945 3046 971 3008 971 
+C 2950 971 2944 939 2925 888 
+C 2752 326 2381 64 2093 64 
+C 1869 64 1747 230 1747 492 
+C 1747 632 1773 734 1875 1156 
+L 2099 2024 
+C 2195 2408 2413 2689 2707 2689 
+C 2720 2689 2899 2689 3034 2606 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_09a2c14121d3_b801c9_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_d584290809bc_2b83c4_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_09a2c14121d3_b801c9_matplotlib.axis_2">
-    <g id="cpl_09a2c14121d3_b801c9_text_2">
+   <g id="cpl_d584290809bc_2b83c4_matplotlib.axis_2">
+    <g id="cpl_d584290809bc_2b83c4_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_09a2c14121d3_b801c9_CMMI12-7a" d="M 1683 -673 
-C 1510 -921 1260 -1152 947 -1152 
-C 870 -1152 563 -1139 467 -826 
-C 486 -833 518 -833 531 -833 
-C 723 -833 851 -666 851 -519 
-C 851 -372 729 -320 633 -320 
-C 531 -320 307 -397 307 -711 
-C 307 -1050 582 -1280 947 -1280 
-C 1587 -1280 2233 -673 2412 -7 
-L 3040 2483 
-C 3046 2515 3059 2553 3059 2591 
-C 3059 2687 2982 2752 2886 2752 
-C 2828 2752 2694 2726 2643 2534 
-L 2169 657 
-C 2137 542 2137 530 2086 459 
+       <path id="cpl_d584290809bc_2b83c4_CMMI12-79" d="M 1683 -700 
+C 1510 -939 1261 -1152 947 -1152 
+C 870 -1152 563 -1152 467 -889 
+C 486 -895 518 -895 531 -895 
+C 723 -895 851 -729 851 -582 
+C 851 -435 730 -384 634 -384 
+C 531 -384 307 -458 307 -759 
+C 307 -1071 582 -1286 947 -1286 
+C 1587 -1286 2234 -700 2413 6 
+L 3040 2485 
+C 3046 2517 3059 2556 3059 2594 
+C 3059 2689 2982 2753 2886 2753 
+C 2829 2753 2694 2727 2643 2535 
+L 2170 658 
+C 2138 543 2138 530 2086 460 
 C 1958 281 1747 64 1440 64 
-C 1081 64 1049 415 1049 587 
-C 1049 951 1222 1443 1395 1902 
-C 1465 2087 1504 2177 1504 2305 
-C 1504 2573 1312 2816 998 2816 
-C 409 2816 172 1890 172 1838 
-C 172 1813 198 1781 243 1781 
-C 300 1781 307 1807 332 1896 
-C 486 2432 729 2687 979 2687 
-C 1036 2687 1145 2687 1145 2477 
-C 1145 2311 1075 2126 979 1883 
-C 665 1047 665 836 665 683 
-C 665 76 1100 -64 1420 -64 
-C 1606 -64 1836 -7 2060 230 
-L 2067 223 
-C 1971 -141 1907 -359 1683 -673 
+C 1082 64 1050 415 1050 588 
+C 1050 952 1222 1443 1395 1903 
+C 1466 2088 1504 2178 1504 2305 
+C 1504 2574 1312 2816 998 2816 
+C 410 2816 173 1890 173 1839 
+C 173 1814 198 1782 243 1782 
+C 301 1782 307 1807 333 1897 
+C 486 2433 730 2689 979 2689 
+C 1037 2689 1146 2689 1146 2478 
+C 1146 2312 1075 2127 979 1884 
+C 666 1047 666 837 666 683 
+C 666 77 1101 -64 1421 -64 
+C 1606 -64 1837 -6 2061 230 
+L 2067 224 
+C 1971 -147 1907 -392 1683 -700 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_09a2c14121d3_b801c9_CMMI12-7a" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_d584290809bc_2b83c4_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_09a2c14121d3_b801c9_line2d_1">
+   <g id="cpl_d584290809bc_2b83c4_line2d_1">
     <defs>
-     <path id="cpl_09a2c14121d3_b801c9_m8ad1a90885" d="M 3 0 
+     <path id="cpl_d584290809bc_2b83c4_m7952527f03" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_09a2c14121d3_b801c9_m8ad1a90885" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_d584290809bc_2b83c4_m7952527f03" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_09a2c14121d3_b801c9_line2d_2">
+   <g id="cpl_d584290809bc_2b83c4_line2d_2">
     <defs>
-     <path id="cpl_09a2c14121d3_b801c9_m2afa94443b" d="M 0 -3 
+     <path id="cpl_d584290809bc_2b83c4_m5b94caf4d5" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_09a2c14121d3_b801c9_m2afa94443b" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_d584290809bc_2b83c4_m5b94caf4d5" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_09a2c14121d3_b801c9_line2d_3">
+   <g id="cpl_d584290809bc_2b83c4_line2d_3">
     <path d="M 162.966414 -1 
 L 167.302692 30.29662 
 L 171.536092 59.252989 
@@ -7162,30 +7162,30 @@ L 323.539132 53.059274
 L 327.692657 24.325373 
 L 331.183586 -1 
 L 331.183586 -1 
-" clip-path="url(#cpl_09a2c14121d3_b801c9_pd848489622)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_d584290809bc_2b83c4_p2c84c1b5ef)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_09a2c14121d3_b801c9_patch_3">
+   <g id="cpl_d584290809bc_2b83c4_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_09a2c14121d3_b801c9_patch_4">
+   <g id="cpl_d584290809bc_2b83c4_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_09a2c14121d3_b801c9_patch_5">
+   <g id="cpl_d584290809bc_2b83c4_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_09a2c14121d3_b801c9_patch_6">
+   <g id="cpl_d584290809bc_2b83c4_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_09a2c14121d3_b801c9_text_3">
-    <g id="cpl_09a2c14121d3_b801c9_patch_7">
+   <g id="cpl_d584290809bc_2b83c4_text_3">
+    <g id="cpl_d584290809bc_2b83c4_patch_7">
      <path d="M 400.518575 59.427556 
 L 420.781425 59.427556 
 Q 432.781425 59.427556 432.781425 47.427556 
@@ -7201,29 +7201,29 @@ z
     <!-- D -->
     <g transform="translate(400.518575 41.614105) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_09a2c14121d3_b801c9_CMSS17-46" d="M 569 4416 
-L 569 0 
+      <path id="cpl_d584290809bc_2b83c4_CMSS17-44" d="M 570 4416 
+L 570 0 
 L 2144 0 
-C 3193 0 4000 981 4000 2169 
-C 4000 3396 3193 4416 2144 4416 
-L 569 4416 
+C 3194 0 4000 980 4000 2170 
+C 4000 3398 3194 4416 2144 4416 
+L 570 4416 
 z
-M 1094 358 
-L 1094 4057 
-L 2003 4057 
-C 2860 4057 3475 3275 3475 2169 
-C 3475 1108 2867 358 2003 358 
-L 1094 358 
+M 1094 357 
+L 1094 4059 
+L 2003 4059 
+C 2861 4059 3475 3277 3475 2170 
+C 3475 1107 2867 357 2003 357 
+L 1094 357 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_09a2c14121d3_b801c9_CMSS17-46" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_d584290809bc_2b83c4_CMSS17-44" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_09a2c14121d3_b801c9_pd848489622">
+  <clipPath id="cpl_d584290809bc_2b83c4_p2c84c1b5ef">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
