@@ -26,7 +26,8 @@ cols: 2
 :::{plot}
 axis: off
 axis: equal
-width: 100%
+align: right
+width: 380px
 let: s = 6
 let: Ax = 0
 let: Ay = 0
@@ -35,18 +36,26 @@ let: Bx = s * cos(v)
 let: By = 0
 let: Cx = s * cos(v)
 let: Cy = s * sin(v)
-triangle: points=((Ax, Ay), (Bx, By), (Cx, Cy)), angles=(A, B), angle-radius=60
+line-segment: (Ax, Ay), (Bx, By), blue
+line-segment: (Ax, Ay), (Cx, Cy), blue
+line-segment: (Bx, By), (Cx, Cy), blue
+angle-arc: (Ax, Ay), 1, 0, v * 180 / pi, red
 fontsize: 26
-text: 0.5 * (Ax + Bx), 0, "Hosliggende katet", bottom-center
-text: Bx, 0.5 * (By + Cy), "Motstående\\ \,katet", center-right
+let: ds = 0.5
+text: 0.5 * (Ax + Bx), -ds, "Hosliggende katet", bottom-center
+text: Bx + ds, 0.5 * (By + Cy), "Motstående\\ \,katet", center-right
 text: 0.5 * (Ax + Cx), 0.5 * (Ay + Cy), "Hypotenus", top-left
+line-segment: (Bx - ds, By), (Bx - ds, By + ds), solid, gray
+line-segment: (Bx - ds, By + ds), (Bx, By + ds), solid, gray
+nocache:
 :::
 
 
 :::{plot}
 axis: off
 axis: equal
-width: 100%
+align: right
+width: 380px
 let: s = 6
 let: Ax = 0
 let: Ay = 0
@@ -55,11 +64,18 @@ let: Bx = s * cos(v)
 let: By = 0
 let: Cx = s * cos(v)
 let: Cy = s * sin(v)
-triangle: points=((Ax, Ay), (Bx, By), (Cx, Cy)), angles=(B, C), angle-radius=60
+line-segment: (Ax, Ay), (Bx, By), blue
+line-segment: (Ax, Ay), (Cx, Cy), blue
+line-segment: (Bx, By), (Cx, Cy), blue
+angle-arc: (Cx, Cy), 1, 270, 270 - (90 - v * 180 / pi), red
 fontsize: 26
-text: 0.5 * (Ax + Bx), 0, "Motstående katet", bottom-center
-text: Bx, 0.5 * (By + Cy), "Hosliggende\\ \,katet", center-right
+let: ds = 0.5
+text: 0.5 * (Ax + Bx), -ds, "Motstående katet", bottom-center
+text: Bx + ds, 0.5 * (By + Cy), "Hosliggende\\ \,katet", center-right
 text: 0.5 * (Ax + Cx), 0.5 * (Ay + Cy), "Hypotenus", top-left
+nocache:
+line-segment: (Bx - ds, By), (Bx - ds, By + ds), solid, gray
+line-segment: (Bx - ds, By + ds), (Bx, By + ds), solid, gray
 :::
 
 ::::
@@ -123,7 +139,7 @@ Vi skal nå se på de to mest grunnleggende trigonometriske størrelsene. Den en
 axis: off
 axis: equal
 align: right
-width: 380px
+width: 350px 
 let: s = 6
 let: Ax = 0
 let: Ay = 0
@@ -132,13 +148,19 @@ let: Bx = s * cos(v)
 let: By = 0
 let: Cx = s * cos(v)
 let: Cy = s * sin(v)
-triangle: points=((Ax, Ay), (Bx, By), (Cx, Cy)), angles=(A, B), angle-radius=45, angle-text=(A="$v$"), angle-radius=80
-nocache:
+line-segment: (Ax, Ay), (Bx, By), blue
+line-segment: (Ax, Ay), (Cx, Cy), blue
+line-segment: (Bx, By), (Cx, Cy), blue
+angle-arc: (Ax, Ay), 1, 0, v * 180 / pi, red
 fontsize: 26
-let: ds = 0.3
+let: ds = 0.5
 text: 0.5 * (Ax + Bx), -ds, "Hosliggende katet", bottom-center
 text: Bx + ds, 0.5 * (By + Cy), "Motstående\\ \,katet", center-right
 text: 0.5 * (Ax + Cx), 0.5 * (Ay + Cy), "Hypotenus", top-left
+nocache:
+line-segment: (Bx - ds, By), (Bx - ds, By + ds), solid, gray
+line-segment: (Bx - ds, By + ds), (Bx, By + ds), solid, gray
+text: 1.2 * cos(v/2), 1.2 * sin(v/2), "$v$", center-center
 :::
 
 Sinus og cosinus til en vinkel $v$ i en rettvinklet trekant er definert som **forholdstallene**:
@@ -219,6 +241,7 @@ triangle: sss=(sqrt(3), 1, 2), angles=(A, B, C), angle-radius=60, angle-labels=(
 axis: off
 axis: equal
 fontsize: 30
+nocache:
 :::
 
 
