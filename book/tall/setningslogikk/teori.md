@@ -68,10 +68,16 @@ Vi kan også lese $P \iff Q$ som at $P$ er sann hvis og bare hvis $Q$ er sann.
 :::
 
 :::::::::::::::{summary} Ekvivalens
-Hvis en påstand $P$ er sann betyr at en påstand $Q$ også må er sann og omvendt, skriver vi dette som $P \iff Q$. Vi leser dette som "$P$ er ekvivalent med $Q$". 
+Hvis en påstand $P$ er sann betyr at en påstand $Q$ også må er sann og *omvendt*, skriver vi dette som 
+
+$$
+P \iff Q
+$$
+
+Vi leser dette som "$P$ er ekvivalent med $Q$", eller "$P$ er sann hvis og bare hvis $Q$ er sann".
 :::::::::::::::
 
-Vi tar et eksempel.
+La oss ta et eksempel:
 
 :::{margin}
 Vi kunne også skrevet 
