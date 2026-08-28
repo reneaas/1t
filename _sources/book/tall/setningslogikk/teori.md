@@ -171,14 +171,15 @@ $$
 
 
 
-## Oppsummering
-
 ::::{summary} Oppsummering
+La $P$ og $Q$ være påstander. Da gjelder følgende:
 
-| Skrivemåte | Betydning | Eksempel |
-|---|---|:---:|
-| $P \implies Q$ | $P$ impliserer $Q$ | $x = 2 \limplies x^2 = 4$ | 
-| $P \iff Q$ | $P$ er ekvivalent med $Q$ | $2x = 4 \liff x = 2$ |
-| $P \lor Q$ | $P$ eller $Q$ (eller begge) | $x = -2 \or x = 2$ |
-| $P \land Q$ | $P$ og $Q$ (samtidig) | $x = 1 \and y = 1$ |
+:::{table}
+labels: Skrivemåte, Betydning, Eksempel
+$P \implies Q$, $P$ impliserer $Q$, $x = 2 \implies x^2 = 4$
+$P \iff Q$, $P$ og $Q$ er ekvivalente, $2x = 4 \iff x = 2$
+$P \lor Q$, $P$ eller $Q$ eller begge, $x = -2 \quad \lor \quad x = 2$
+$P \land Q$, $P$ og samtidig $Q$, $x = 1 \quad \land \quad y = 1$
+:::
+
 ::::
