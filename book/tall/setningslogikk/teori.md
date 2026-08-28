@@ -1,4 +1,4 @@
-# Matematisk logikk og symboler
+# Matematisk logikk
 
 
 :::{goals} Læringsmål
