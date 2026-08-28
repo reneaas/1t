@@ -1,4 +1,4 @@
-# Oppgaver: Matematisk logikk og symboler
+# Oppgaver: Matematisk logikk
 
 
 :::::::::::::::{exercise} Oppgave 1
