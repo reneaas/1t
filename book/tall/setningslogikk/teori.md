@@ -63,9 +63,6 @@ $$
 
 Hvis to påstander må være sanne samtidig, sier vi at de er **ekvivalente**. Det betyr at hvis én av de er sanne, så må begge være sanne. I eksempel 1 så vi at det at Anna bodde i Norge ikke nødvendigvis ville betydd at hun bodde i Oslo. Disse påstandene er derfor ikke ekvivalente. 
 
-:::{margin}
-Vi kan også lese $P \iff Q$ som at $P$ er sann hvis og bare hvis $Q$ er sann.
-:::
 
 :::::::::::::::{summary} Ekvivalens
 Hvis en påstand $P$ er sann betyr at en påstand $Q$ også må er sann og *omvendt*, skriver vi dette som 
@@ -116,14 +113,20 @@ $$
 Noen ganger så vil vi uttrykke at én av flere påstander kan være sanne, men ikke nødvendigvis alle sammen samtidig. Da bruker vi **logisk-eller**. Hvis vi for eksempel sier at "Anna bor i Oslo eller Bergen", så betyr det at hun kan bo i Oslo, eller hun kan bo i Bergen, eller hun kan bo i begge byene. 
 
 :::::::::::::::{summary} Logisk-eller
-Hvis en påstand $P$ er sann eller en annen påstand $Q$ er sann, skriver vi dette som $P \lor Q$. Vi leser dette som "$P$ eller $Q$". 
+Hvis en påstand $P$ er sann eller en annen påstand $Q$ er sann, eller at begge er sanne, skriver vi dette som 
+
+$$
+P \lor Q
+$$ 
+
+Vi leser dette som "$P$ eller $Q$, (eller begge)". 
 :::::::::::::::
 
 
 ---
 
 :::::::::::::::{example} Eksempel 4
-Hvis Anna bor i Oslo eller Bergen, kan vi skrive dette som 
+Hvis Anna bor i Oslo eller Bergen (eller begge), kan vi skrive dette som 
 
 $$
 \text{Anna bor i Oslo} \or \text{Anna bor i Bergen}
@@ -157,7 +160,13 @@ I tilfeller hvor to påstander må være sanne samtidig, bruker vi **logisk-og**
 
 
 :::::::::::::::{summary} Logisk-og
-Hvis en påstand $P$ er sann og en annen påstand $Q$ er sann, skriver vi dette som $P \land Q$. Vi leser dette som "$P$ og $Q$ *samtidig*". 
+Hvis en påstand $P$ er sann og en annen påstand $Q$ er sann, skriver vi dette som 
+
+$$
+P \land Q
+$$ 
+
+Vi leser dette som "$P$ og *samtidig* $Q$". 
 :::::::::::::::
 
 :::::::::::::::{example} Eksempel 6
@@ -168,7 +177,7 @@ x + y &= 2 \\
 x - y &= 0
 \end{align*}
 
-så mener vi egentlig at de skal være oppfylt samtidig. Da er det mer presist å skrive at 
+så mener vi egentlig at de to likningene skal være oppfylt samtidig. Da er det mer presist å skrive at 
 
 $$
 x + y = 2 \and x - y = 0
