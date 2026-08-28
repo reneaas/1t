@@ -50,6 +50,13 @@ $$
 x = 2 \limplies x^2 = 4
 $$
 
+
+Men dersom $x^2 = 4$, så betyr ikke det nødvendigvis at $x = 2$. Vi har også at $x^2 = 4$ dersom $x = -2$. Dermed har vi at 
+
+$$
+x^2 = 4 \nimplies x = 2
+$$
+
 :::::::::::::::
 
 ---
