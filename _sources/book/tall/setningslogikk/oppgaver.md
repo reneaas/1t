@@ -140,7 +140,8 @@ Sann.
 Vi setter $a = 2n$ og $b = 2m$ for $n, m \in \natural$. Da får vi at 
 
 $$
-a \cdot b = (2n) \cdot (2m) = 4nm = 2(2nm)
+a \cdot b = (2n) \cdot (2m) = 4nm = 2\cdot (2nm)
+$$
 
 Siden $2nm \in \natural$, så er $a \cdot b$ et partall. Altså er påstanden sann.
 $$
