@@ -65,7 +65,7 @@ Hvis to påstander må være sanne samtidig, sier vi at de er **ekvivalente**. D
 
 
 :::::::::::::::{summary} Ekvivalens
-Hvis en påstand $P$ er sann betyr at en påstand $Q$ også må er sann og *omvendt*, skriver vi dette som 
+Hvis det at en påstand $P$ er sann betyr at en påstand $Q$ også er sann, og *omvendt*, skriver vi dette som 
 
 $$
 P \iff Q
