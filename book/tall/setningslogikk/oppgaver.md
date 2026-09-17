@@ -80,13 +80,50 @@ Vurder om påstandene nedenfor er sanne. Hvis påstanden er sann, forklar hvorfo
 
 
 :::{hint}
-Hvis $a$ er et partall, kan du skrive $a = 2\cdot n$ for et tall $n \in \natural$.
+Hvis $a$ er et partall, kan du skrive $a = 2\cdot n$ for et tall $n \in \natural$. Hvis $a$ er et oddetall, så kan vi skrive det som $a = 2n - 1$. 
 :::
+
+
 
 :::::::::::::{part} a
 $$
 a \text{ er et partall} \and b \text{ er et partall} \limplies a + b \text{ er et partall}
 $$
+
+
+:::::{answer}
+Sann. 
+
+::::{solution}
+Vi antar at $a$ og $b$ er partall slik at 
+
+$$
+a = 2n \qog b = 2m
+$$
+
+der $n, m \in \natural$. Da har vi at 
+
+$$
+a + b = 2n + 2m = 2(n + m)
+$$
+
+Siden $n + m \in \natural$, så finnes det et natural tall $k \in \natural$ slik at 
+
+$$
+k = n + m
+$$
+
+slik at vi kan skrive 
+
+$$
+a + b = 2k
+$$
+
+Altså er $a + b$ et partall, og påstanden er sann.
+::::
+:::::
+
+
 :::::::::::::
 
 
@@ -94,8 +131,48 @@ $$
 $$
 a \text{ er et partall} \and b \text{ er et partall} \limplies a \cdot b \text{ er et partall}
 $$
+
+
+:::::{answer}
+Sann.
+
+::::{solution}
+Vi setter $a = 2n$ og $b = 2m$ for $n, m \in \natural$. Da får vi at 
+
+$$
+a \cdot b = (2n) \cdot (2m) = 4nm = 2(2nm)
+
+Siden $2nm \in \natural$, så er $a \cdot b$ et partall. Altså er påstanden sann.
+$$
+::::
+:::::
+
 :::::::::::::
 
+
+:::::::::::::{part} c
+$$
+a \text{ er et partall} \and b \text{ er et partall} \limpliedby a + b \text{ er et partall}
+$$
+
+
+:::::{answer}
+Usann.
+
+
+::::{solution}
+Dersom $a + b$ er et partall, så kan både $a$ og $b$ være partall, men de kan også begge være oddetall som vi kan se ved å anta at $a = 2n - 1$ og $b = 2m - 1$ for $n, m \in \natural$. Da får vi at 
+
+$$
+a + b = (2n - 1) + (2m - 1) = 2n + 2m - 2 = 2(n + m - 1)
+$$
+
+Vi har at $n + m - 1 \in \natural$ som betyr at $a + b$ er et partall også hvis $a$ og $b$ er oddetall. Altså er påstanden feil.
+::::
+:::::
+
+
+:::::::::::::
 
 
 :::::::::::::::
