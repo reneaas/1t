@@ -1237,11 +1237,10 @@ $$
 
 
 :::::{answer}
-:::::{answer}
 $$
 16 - x^2 = (4 + x)(4 - x) = -(x + 4)(x - 4)
 $$
-:::::
+
 
 ::::{solution}
 Vi kan faktorisere direkte med konjugatsetninge:
