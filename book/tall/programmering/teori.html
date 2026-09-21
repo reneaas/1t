@@ -55,10 +55,13 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css?v=4c969af8" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/general_style.css?v=dfcc20d4" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/calculator_popup.css?v=9c5cafe2" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/escapeRoom/escape-room.css?v=9eb2d604" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/flashcards.css?v=816457f1" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/interactive_code.css?v=44933e1a" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/jeopardy.css?v=951b6e4f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/notebook.css?v=60159d5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/popup_code.css?v=b88b7ace" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/quiz.css?v=bc8164d8" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" />
@@ -100,9 +103,10 @@
     <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="../../../_static/tabs.js?v=3ee01567"></script>
     <script src="../../../_static/munchboka/js/solution_timer.js?v=192f5d3d"></script>
+    <script src="../../../_static/munchboka/js/calculator_popup.js?v=93ae1e49"></script>
     <script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
     <script src="../../../_static/munchboka/js/flashcards.js?v=293ceac2"></script>
-    <script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=ce240afa"></script>
+    <script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=9bcf659f"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/codeEditor.js?v=d7a9df79"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/workerManager.js?v=024a7849"></script>
@@ -147,6 +151,7 @@
     <script src="../../../_static/munchboka/js/geogebra-setup.js?v=8e77fc11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
+    <script src="../../../_static/munchboka/js/popup_code.js?v=da823f0c"></script>
     <link rel="canonical" href="https://www.munchboka.no/1t/book/tall/programmering/teori.html" />
     <link rel="icon" href="../../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -478,6 +483,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../../programmering/if_else/if_else.html"><code class="code docutils literal highlight highlight-python"><span class="k">if</span></code>-<code class="code docutils literal highlight highlight-python"><span class="k">else</span></code>-setninger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../programmering/feilmeldinger/teori.html">Feilsøking og debugging</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Oppgavesamlinger</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../oppgavesamlinger/tall/oppgaver.html">Tall og algebra</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Eksamensøving</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../eksamens%C3%B8ving/repetisjon/funksjoner/jeopardy.html">Repetisjon: <em>Speedrun</em></a></li>
@@ -500,6 +509,7 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Eksamensressurser</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../eksamensressurser/python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../eksamensressurser/notebook.html">Python notebook</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://www.geogebra.org/classic">Geogebra</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../eksamensressurser/cas.html">CAS-funksjoner</a></li>
 </ul>
@@ -735,7 +745,7 @@ a)</div>
 <p>Les programmet nedenfor og prøv å forutsi hvilke tall programmet skriver ut.</p>
 <p>Skriv inn gjetningen din nedenfor og sjekk svaret ditt!</p>
 
-        <div id="container-code-fb8284cc"></div>
+        <div id="container-code-8fdf213a"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -745,7 +755,7 @@ a)</div>
 `;
 
                 makePredictionInteractiveCode(
-                    "container-code-fb8284cc",
+                    "container-code-8fdf213a",
                     code,
                 );
             });
@@ -761,7 +771,7 @@ b)</div>
 <p>Les programmet nedenfor og prøv å forutsi hvilke tall programmet skriver ut.</p>
 <p>Skriv inn gjetningen din nedenfor og sjekk svaret ditt!</p>
 
-        <div id="container-code-9ea8da10"></div>
+        <div id="container-code-6bec064f"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -771,7 +781,7 @@ b)</div>
 `;
 
                 makePredictionInteractiveCode(
-                    "container-code-9ea8da10",
+                    "container-code-6bec064f",
                     code,
                 );
             });
@@ -787,7 +797,7 @@ c)</div>
 <p>Les programmet nedenfor og prøv å forutsi hvilke tall programmet skriver ut.</p>
 <p>Skriv inn gjetningen din nedenfor og sjekk svaret ditt!</p>
 
-        <div id="container-code-a2db2fd5"></div>
+        <div id="container-code-54788176"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -797,7 +807,7 @@ c)</div>
 `;
 
                 makePredictionInteractiveCode(
-                    "container-code-a2db2fd5",
+                    "container-code-54788176",
                     code,
                 );
             });
@@ -813,7 +823,7 @@ c)</div>
 <p>Ta quizen!</p>
 
         <!-- Container for the quiz -->
-        <div id="quiz-container-84aff946606040509118e94431ed28ec" class="quiz-main-container"></div>
+        <div id="quiz-container-28889bc47d43460f91302e8b00828bf5" class="quiz-main-container"></div>
         <!-- Include KaTeX for LaTeX rendering -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
         <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
@@ -825,7 +835,7 @@ c)</div>
                 const questionsData = [{"content": "Hvilke tall skrives ut av programmet nedenfor?  <pre><code class=\"python\">for n in range(1, 4):\n    print(n)</code></pre>", "answers": [{"content": "1, 2, 3", "isCorrect": true}, {"content": "1, 2, 3, 4", "isCorrect": false}, {"content": "1, 4", "isCorrect": false}, {"content": "1, 2, 3, 4, 5", "isCorrect": false}]}, {"content": "Hvilke tall skrives ut av programmet nedenfor? <pre><code class=\"python\">for n in range(0, 6):\n    print(n)</code></pre>", "answers": [{"content": "0, 1, 2, 3, 4, 5", "isCorrect": true}, {"content": "0, 1, 2, 3, 4, 5, 6", "isCorrect": false}, {"content": "0, 6", "isCorrect": false}, {"content": "1, 2, 3, 4, 5", "isCorrect": false}]}, {"content": "Hvilke tall skrives ut av programmet nedenfor? <pre><code class=\"python\">for n in range(-2, 2):\n    print(n)</code></pre>", "answers": [{"content": "-2, -1, 0, 1", "isCorrect": true}, {"content": "-2, -1, 0, 1, 2", "isCorrect": false}, {"content": "-2, 2", "isCorrect": false}, {"content": "-1, 0, 1, 2", "isCorrect": false}]}, {"content": "Hvilke tall skrives ut av programmet nedenfor? <pre><code class=\"python\">for n in range(-3, 4):\n    print(n)</code></pre>", "answers": [{"content": "-3, -2, -1, 0, 1, 2, 3", "isCorrect": true}, {"content": "-3, -2, -1, 0, 1, 2", "isCorrect": false}, {"content": "-3, 4", "isCorrect": false}, {"content": "-2, -1, 0, 1, 2, 3", "isCorrect": false}]}];
 
                 // Initialize the multiple-choice quiz
-                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-84aff946606040509118e94431ed28ec', questionsData);
+                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-28889bc47d43460f91302e8b00828bf5', questionsData);
             });
         </script>
         </div>
@@ -857,7 +867,7 @@ a)</div>
 <p>Les programmet nedenfor og prøv å forutsi hvilke tall programmet skriver ut.</p>
 <p>Skriv inn gjetningen din nedenfor og sjekk svaret ditt!</p>
 
-        <div id="container-code-a78e57d7"></div>
+        <div id="container-code-f5df9c37"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -867,7 +877,7 @@ a)</div>
 `;
 
                 makePredictionInteractiveCode(
-                    "container-code-a78e57d7",
+                    "container-code-f5df9c37",
                     code,
                 );
             });
@@ -883,7 +893,7 @@ b)</div>
 <p>Les programmet nedenfor og prøv å forutsi hvilke tall programmet skriver ut.</p>
 <p>Skriv inn gjetningen din nedenfor og sjekk svaret ditt!</p>
 
-        <div id="container-code-473ab4b7"></div>
+        <div id="container-code-21bc918e"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -893,7 +903,7 @@ b)</div>
 `;
 
                 makePredictionInteractiveCode(
-                    "container-code-473ab4b7",
+                    "container-code-21bc918e",
                     code,
                 );
             });
@@ -909,7 +919,7 @@ c)</div>
 <p>Les programmet nedenfor og prøv å forutsi hvilke tall programmet skriver ut.</p>
 <p>Skriv inn gjetningen din nedenfor og sjekk svaret ditt!</p>
 
-        <div id="container-code-adfae4c5"></div>
+        <div id="container-code-c2617698"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -919,7 +929,7 @@ c)</div>
 `;
 
                 makePredictionInteractiveCode(
-                    "container-code-adfae4c5",
+                    "container-code-c2617698",
                     code,
                 );
             });
@@ -934,7 +944,7 @@ c)</div>
 <div class="exercise-body docutils container">
 
         <!-- Container for the quiz -->
-        <div id="quiz-container-5c35b495c4454b61913f2bc22657a2d1" class="quiz-main-container"></div>
+        <div id="quiz-container-b8a9394bc6ce4c7fbee89215f0b4ee02" class="quiz-main-container"></div>
         <!-- Include KaTeX for LaTeX rendering -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
         <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
@@ -946,7 +956,7 @@ c)</div>
                 const questionsData = [{"content": "Hvilken tallfølge skrives ut av programmet? <pre><code class=\"python\">for x in range(1, 5, 1):\n    print(x)</code></pre>", "answers": [{"content": "$1, 2, 3, 4$", "isCorrect": true}, {"content": "$1, 2, 3, 4, 5$", "isCorrect": false}, {"content": "$1, 2, 3$", "isCorrect": false}, {"content": "$1, 2, 3, 4, 5, 6$", "isCorrect": false}]}, {"content": "Hvilken tallfølge skrives ut av programmet? <pre><code class=\"python\">for x in range(1, 5, 2): \n    print(x)</code></pre>", "answers": [{"content": "$1, 3$", "isCorrect": true}, {"content": "$1, 3, 5$", "isCorrect": false}, {"content": "$1, 3, 4$", "isCorrect": false}, {"content": "$0, 2, 4$", "isCorrect": false}]}, {"content": "Hvilket program gir utskriften <pre><code class=\"console\">-4 \n-2 \n0 \n2 \n4</code></pre>", "answers": [{"content": "<pre><code class=\"python\">for x in range(-4, 5, 2): \n    print(x)</code></pre>", "isCorrect": true}, {"content": "<pre><code class=\"python\">for x in range(-4, 4, 2): \n    print(x)</code></pre>", "isCorrect": false}, {"content": "<pre><code class=\"python\">for x in range(-4, 2, 4): \n    print(x)</code></pre>", "isCorrect": false}, {"content": "<pre><code class=\"python\">for x in range(-4, 2, 5): \n    print(x)</code></pre>", "isCorrect": false}]}, {"content": "Hvilken tallfølge skrives ut av programmet? <pre><code class=\"python\">for x in range(1, 10, 3): \n    print(x)</code></pre>", "answers": [{"content": "$1, 4, 7$", "isCorrect": true}, {"content": "$1, 4, 7, 10$", "isCorrect": false}, {"content": "$1, 3, 6, 10$", "isCorrect": false}, {"content": "$1, 3, 6, 9$", "isCorrect": false}]}, {"content": "Hvilken tallfølge skrives ut av programmet? <pre><code class=\"python\">for x in range(12, 2, -4): \n    print(x)</code></pre>", "answers": [{"content": "$12, 8, 4$", "isCorrect": true}, {"content": "$12, 8, 4, 0$", "isCorrect": false}, {"content": "$12, 8, 4, 2$", "isCorrect": false}, {"content": "$12, 2, -4$", "isCorrect": false}]}];
 
                 // Initialize the multiple-choice quiz
-                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-5c35b495c4454b61913f2bc22657a2d1', questionsData);
+                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-b8a9394bc6ce4c7fbee89215f0b4ee02', questionsData);
             });
         </script>
         </div>
@@ -964,7 +974,7 @@ a)</div>
 <div class="part-body docutils container">
 <p>Lag et program som skriver ut partallene fra og med <span class="math notranslate nohighlight">\(2\)</span> til og med <span class="math notranslate nohighlight">\(20\)</span>.</p>
 
-        <div id="container-code-ff6b93cd"></div>
+        <div id="container-code-07d72283"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -975,7 +985,7 @@ a)</div>
 `;
 
                 makeInteractiveCode(
-                    "container-code-ff6b93cd",
+                    "container-code-07d72283",
                     code,
                 );
             });
@@ -998,7 +1008,7 @@ b)</div>
 <div class="part-body docutils container">
 <p>Lag et program som skriver ut oddetallene fra og med <span class="math notranslate nohighlight">\(1\)</span> til og med <span class="math notranslate nohighlight">\(19\)</span>.</p>
 
-        <div id="container-code-c82add21"></div>
+        <div id="container-code-688ae60d"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1009,7 +1019,7 @@ b)</div>
 `;
 
                 makeInteractiveCode(
-                    "container-code-c82add21",
+                    "container-code-688ae60d",
                     code,
                 );
             });
@@ -1032,7 +1042,7 @@ c)</div>
 <div class="part-body docutils container">
 <p>Lag et program som skriver ut tallfølgen <span class="math notranslate nohighlight">\(10, 20, 30, 40, 50\)</span>.</p>
 
-        <div id="container-code-9d166d20"></div>
+        <div id="container-code-10e7e49c"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1043,7 +1053,7 @@ c)</div>
 `;
 
                 makeInteractiveCode(
-                    "container-code-9d166d20",
+                    "container-code-10e7e49c",
                     code,
                 );
             });
@@ -1077,7 +1087,7 @@ a)</div>
 <p>Les programmet og forutsi hvilke tall programmet skriver ut.</p>
 <p>Skriv inn svaret ditt nedenfor sjekk.</p>
 
-        <div id="container-code-19f2c462"></div>
+        <div id="container-code-c4bab6a2"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1087,7 +1097,7 @@ a)</div>
     print(a)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-19f2c462",
+                    "container-code-c4bab6a2",
                     code,
                 );
             });
@@ -1103,7 +1113,7 @@ b)</div>
 <p>Les programmet og forutsi hvilke tall programmet skriver ut.</p>
 <p>Skriv inn svaret ditt nedenfor sjekk.</p>
 
-        <div id="container-code-9df6b504"></div>
+        <div id="container-code-d77e2148"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1113,7 +1123,7 @@ b)</div>
     print(a)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-9df6b504",
+                    "container-code-d77e2148",
                     code,
                 );
             });
@@ -1129,7 +1139,7 @@ c)</div>
 <p>Les programmet og forutsi hvilke tall programmet skriver ut.</p>
 <p>Skriv inn svaret ditt nedenfor sjekk.</p>
 
-        <div id="container-code-f00c0a13"></div>
+        <div id="container-code-d47f531e"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1139,7 +1149,7 @@ c)</div>
     print(a)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-f00c0a13",
+                    "container-code-d47f531e",
                     code,
                 );
             });
@@ -1166,7 +1176,7 @@ a)</div>
 a_n = 2n + 3 \qfor n \in \set{1, 2, 3, 4, 5}
 \]</div>
 
-        <div id="container-code-76174ec5"></div>
+        <div id="container-code-7806995a"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1177,7 +1187,7 @@ a_n = 2n + 3 \qfor n \in \set{1, 2, 3, 4, 5}
 `;
 
                 makeInteractiveCode(
-                    "container-code-76174ec5",
+                    "container-code-7806995a",
                     code,
                 );
             });
@@ -1206,7 +1216,7 @@ b)</div>
 b_n = n^2 + 2n + 1 \qfor n \in \set{1, 3, 5, 7, 9}
 \]</div>
 
-        <div id="container-code-cc0ccc7f"></div>
+        <div id="container-code-aadf68c7"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1217,7 +1227,7 @@ b_n = n^2 + 2n + 1 \qfor n \in \set{1, 3, 5, 7, 9}
 `;
 
                 makeInteractiveCode(
-                    "container-code-cc0ccc7f",
+                    "container-code-aadf68c7",
                     code,
                 );
             });
@@ -1246,7 +1256,7 @@ c)</div>
 c_n = 2^n \qfor n \in \set{-2, -1, 0, 1, 2}
 \]</div>
 
-        <div id="container-code-ed786390"></div>
+        <div id="container-code-c8120eb1"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1257,7 +1267,7 @@ c_n = 2^n \qfor n \in \set{-2, -1, 0, 1, 2}
 `;
 
                 makeInteractiveCode(
-                    "container-code-ed786390",
+                    "container-code-c8120eb1",
                     code,
                 );
             });
@@ -1296,7 +1306,7 @@ a)</div>
 <p>Les programmet nedenfor og forutsi hva som skrives ut.</p>
 <p>Skriv inn svaret ditt nedenfor og sjekk.</p>
 
-        <div id="container-code-fae55065"></div>
+        <div id="container-code-229073c8"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1307,7 +1317,7 @@ for n in range(1, 6):
 print(s)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-fae55065",
+                    "container-code-229073c8",
                     code,
                 );
             });
@@ -1323,7 +1333,7 @@ b)</div>
 <p>Les programmet nedenfor og forutsi hva som skrives ut.</p>
 <p>Skriv inn svaret ditt nedenfor og sjekk.</p>
 
-        <div id="container-code-23e431c4"></div>
+        <div id="container-code-679c46eb"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1334,7 +1344,7 @@ for n in range(1, 6):
 print(s)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-23e431c4",
+                    "container-code-679c46eb",
                     code,
                 );
             });

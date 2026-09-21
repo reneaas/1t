@@ -55,10 +55,13 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css?v=4c969af8" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/general_style.css?v=dfcc20d4" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/calculator_popup.css?v=9c5cafe2" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/escapeRoom/escape-room.css?v=9eb2d604" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/flashcards.css?v=816457f1" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/interactive_code.css?v=44933e1a" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/jeopardy.css?v=951b6e4f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/notebook.css?v=60159d5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/popup_code.css?v=b88b7ace" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/quiz.css?v=bc8164d8" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" />
@@ -100,9 +103,10 @@
     <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="../../../_static/tabs.js?v=3ee01567"></script>
     <script src="../../../_static/munchboka/js/solution_timer.js?v=192f5d3d"></script>
+    <script src="../../../_static/munchboka/js/calculator_popup.js?v=93ae1e49"></script>
     <script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
     <script src="../../../_static/munchboka/js/flashcards.js?v=293ceac2"></script>
-    <script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=ce240afa"></script>
+    <script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=9bcf659f"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/codeEditor.js?v=d7a9df79"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/workerManager.js?v=024a7849"></script>
@@ -145,11 +149,12 @@
     <script src="../../../_static/munchboka/js/geogebra-setup.js?v=8e77fc11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
+    <script src="../../../_static/munchboka/js/popup_code.js?v=da823f0c"></script>
     <link rel="canonical" href="https://www.munchboka.no/1t/book/programmering/feilmeldinger/teori.html" />
     <link rel="icon" href="../../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Repetisjon: Speedrun" href="../../eksamens%C3%B8ving/repetisjon/funksjoner/jeopardy.html" />
+    <link rel="next" title="Oppgavesamling: Tall og algebra" href="../../oppgavesamlinger/tall/oppgaver.html" />
     <link rel="prev" title="if-else-setninger" href="../if_else/if_else.html" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -476,6 +481,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../if_else/if_else.html"><code class="code docutils literal highlight highlight-python"><span class="k">if</span></code>-<code class="code docutils literal highlight highlight-python"><span class="k">else</span></code>-setninger</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Feilsøking og debugging</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Oppgavesamlinger</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../oppgavesamlinger/tall/oppgaver.html">Tall og algebra</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Eksamensøving</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../eksamens%C3%B8ving/repetisjon/funksjoner/jeopardy.html">Repetisjon: <em>Speedrun</em></a></li>
@@ -498,6 +507,7 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Eksamensressurser</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../eksamensressurser/python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../eksamensressurser/notebook.html">Python notebook</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://www.geogebra.org/classic">Geogebra</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../eksamensressurser/cas.html">CAS-funksjoner</a></li>
 </ul>
@@ -693,7 +703,7 @@ document.write(`
 <label class="sd-tab-label" for="sd-tab-item-0">
 a</label><div class="sd-tab-content docutils">
 
-        <div id="container-code-53450c2a"></div>
+        <div id="container-code-e78f00ab"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -706,7 +716,7 @@ print(s)
 `;
 
                 makeInteractiveCode(
-                    "container-code-53450c2a",
+                    "container-code-e78f00ab",
                     code,
                 );
             });
@@ -728,7 +738,7 @@ print(s)
 <label class="sd-tab-label" for="sd-tab-item-1">
 b</label><div class="sd-tab-content docutils">
 
-        <div id="container-code-61006a38"></div>
+        <div id="container-code-bfa6fe08"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -737,7 +747,7 @@ b</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-61006a38",
+                    "container-code-bfa6fe08",
                     code,
                 );
             });
@@ -756,7 +766,7 @@ b</label><div class="sd-tab-content docutils">
 <label class="sd-tab-label" for="sd-tab-item-2">
 c</label><div class="sd-tab-content docutils">
 
-        <div id="container-code-c00cbb86"></div>
+        <div id="container-code-6d95b95b"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -764,7 +774,7 @@ c</label><div class="sd-tab-content docutils">
 print(x)`;
 
                 makeInteractiveCode(
-                    "container-code-c00cbb86",
+                    "container-code-6d95b95b",
                     code,
                 );
             });
@@ -824,11 +834,11 @@ print(x)`;
       </div>
     </a>
     <a class="right-next"
-       href="../../eksamens%C3%B8ving/repetisjon/funksjoner/jeopardy.html"
+       href="../../oppgavesamlinger/tall/oppgaver.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Repetisjon: <em>Speedrun</em></p>
+        <p class="prev-next-title">Oppgavesamling: Tall og algebra</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

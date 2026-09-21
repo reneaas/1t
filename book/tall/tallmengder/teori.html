@@ -55,10 +55,13 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css?v=4c969af8" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/general_style.css?v=dfcc20d4" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/calculator_popup.css?v=9c5cafe2" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/escapeRoom/escape-room.css?v=9eb2d604" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/flashcards.css?v=816457f1" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/interactive_code.css?v=44933e1a" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/jeopardy.css?v=951b6e4f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/notebook.css?v=60159d5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/popup_code.css?v=b88b7ace" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/quiz.css?v=bc8164d8" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" />
@@ -100,9 +103,10 @@
     <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="../../../_static/tabs.js?v=3ee01567"></script>
     <script src="../../../_static/munchboka/js/solution_timer.js?v=192f5d3d"></script>
+    <script src="../../../_static/munchboka/js/calculator_popup.js?v=93ae1e49"></script>
     <script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
     <script src="../../../_static/munchboka/js/flashcards.js?v=293ceac2"></script>
-    <script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=ce240afa"></script>
+    <script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=9bcf659f"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/codeEditor.js?v=d7a9df79"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/workerManager.js?v=024a7849"></script>
@@ -147,6 +151,7 @@
     <script src="../../../_static/munchboka/js/geogebra-setup.js?v=8e77fc11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
+    <script src="../../../_static/munchboka/js/popup_code.js?v=da823f0c"></script>
     <link rel="canonical" href="https://www.munchboka.no/1t/book/tall/tallmengder/teori.html" />
     <link rel="icon" href="../../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -478,6 +483,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../../programmering/if_else/if_else.html"><code class="code docutils literal highlight highlight-python"><span class="k">if</span></code>-<code class="code docutils literal highlight highlight-python"><span class="k">else</span></code>-setninger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../programmering/feilmeldinger/teori.html">Feilsøking og debugging</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Oppgavesamlinger</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../oppgavesamlinger/tall/oppgaver.html">Tall og algebra</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Eksamensøving</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../eksamens%C3%B8ving/repetisjon/funksjoner/jeopardy.html">Repetisjon: <em>Speedrun</em></a></li>
@@ -500,6 +509,7 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Eksamensressurser</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../eksamensressurser/python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../eksamensressurser/notebook.html">Python notebook</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://www.geogebra.org/classic">Geogebra</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../eksamensressurser/cas.html">CAS-funksjoner</a></li>
 </ul>
@@ -753,7 +763,7 @@ Da kan vi bruke <strong>listenotasjon</strong>. Vi kan beskrive alle tallene i <
 <p>Ta quizen!</p>
 
         <!-- Container for the quiz -->
-        <div id="quiz-container-98bf32e111214ce08bec38f0198367de" class="quiz-main-container"></div>
+        <div id="quiz-container-5e904c0ede1a43b88ffc950c4b257d20" class="quiz-main-container"></div>
         <!-- Include KaTeX for LaTeX rendering -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
         <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
@@ -765,7 +775,7 @@ Da kan vi bruke <strong>listenotasjon</strong>. Vi kan beskrive alle tallene i <
                 const questionsData = [{"content": "Hvilken ulikhet passer med beskrivelsen: <br> Alle reelle tall $x$ som er større enn eller lik $-1$ og mindre enn eller lik $1$?", "answers": [{"content": "$-1 \\leq x \\leq 1$", "isCorrect": true}, {"content": "$-1 < x < 1$", "isCorrect": false}, {"content": "$-1 \\leq x < 1$", "isCorrect": false}, {"content": "$-1 < x \\leq 1$", "isCorrect": false}]}, {"content": "Hvilken ulikhet passer med beskrivelsen: <br> Alle reelle tall $x$ som er større enn $0$ og mindre enn $3$?", "answers": [{"content": "$0 < x < 3$", "isCorrect": true}, {"content": "$0 \\leq x < 3$", "isCorrect": false}, {"content": "$0 < x \\leq 3$", "isCorrect": false}, {"content": "$0 \\leq x \\leq 3$", "isCorrect": false}]}, {"content": "Hvilken ulikhet passer med beskrivelsen: <br> Alle reelle tall $x$ som er større enn eller lik $2$ og mindre enn $5$?", "answers": [{"content": "$2 \\leq x < 5$", "isCorrect": true}, {"content": "$2 < x < 5$", "isCorrect": false}, {"content": "$2 \\leq x \\leq 5$", "isCorrect": false}, {"content": "$2 < x \\leq 5$", "isCorrect": false}]}, {"content": "Hvilken ulikhet passer med beskrivelsen: <br> Alle reelle tall $x$ som er større enn $-4$ og mindre enn eller lik $1$?", "answers": [{"content": "$-4 < x \\leq 1$", "isCorrect": true}, {"content": "$-4 \\leq x < 1$", "isCorrect": false}, {"content": "$-4 < x < 1$", "isCorrect": false}, {"content": "$-4 \\leq x \\leq 1$", "isCorrect": false}]}, {"content": "Hvilken ulikhet passer med beskrivelsen: <br> Alle reelle tall $x$ som er større enn eller lik $-3$ og mindre enn eller lik $2$?", "answers": [{"content": "$-3 \\leq x \\leq 2$", "isCorrect": true}, {"content": "$-3 < x < 2$", "isCorrect": false}, {"content": "$-3 \\leq x < 2$", "isCorrect": false}, {"content": "$-3 < x \\leq 2$", "isCorrect": false}]}, {"content": "Hvilken ulikhet passer med beskrivelsen: <br> Alle reelle tall $x$ som er større enn $1$ og mindre enn eller lik $4$?", "answers": [{"content": "$1 < x \\leq 4$", "isCorrect": true}, {"content": "$1 \\leq x < 4$", "isCorrect": false}, {"content": "$1 < x < 4$", "isCorrect": false}, {"content": "$1 \\leq x \\leq 4$", "isCorrect": false}]}, {"content": "Hvilken ulikhet passer med beskrivelsen: <br> Alle reelle tall $x$ som er større enn eller lik $-2$ og mindre enn $3$?", "answers": [{"content": "$-2 \\leq x < 3$", "isCorrect": true}, {"content": "$-2 < x < 3$", "isCorrect": false}, {"content": "$-2 \\leq x \\leq 3$", "isCorrect": false}, {"content": "$-2 < x \\leq 3$", "isCorrect": false}]}, {"content": "Q: Hvilken ulikhet passer med beskrivelsen: <br> Alle reelle tall $x$ som er større enn $-5$ og mindre enn eller lik $0$?", "answers": [{"content": "$-5 < x \\leq 0$", "isCorrect": true}, {"content": "$-5 \\leq x < 0$", "isCorrect": false}, {"content": "$-5 < x < 0$", "isCorrect": false}, {"content": "$-5 \\leq x \\leq 0$", "isCorrect": false}]}];
 
                 // Initialize the multiple-choice quiz
-                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-98bf32e111214ce08bec38f0198367de', questionsData);
+                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-5e904c0ede1a43b88ffc950c4b257d20', questionsData);
             });
         </script>
         </div>
@@ -795,7 +805,7 @@ Da kan vi bruke <strong>listenotasjon</strong>. Vi kan beskrive alle tallene i <
 <p>Ta quizen!</p>
 
         <!-- Container for the quiz -->
-        <div id="quiz-container-de78e44ebe4743f0b2d45e18f7b4c44f" class="quiz-main-container"></div>
+        <div id="quiz-container-30d76502e2414881bb4d4679c6d23cc8" class="quiz-main-container"></div>
         <!-- Include KaTeX for LaTeX rendering -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
         <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
@@ -807,7 +817,7 @@ Da kan vi bruke <strong>listenotasjon</strong>. Vi kan beskrive alle tallene i <
                 const questionsData = [{"content": "Hvilken ulikhet passer med beskrivelsen: <br> Alle reelle tall $x$ som er større enn eller lik $-2$?", "answers": [{"content": "$x \\geq -2$", "isCorrect": true}, {"content": "$x > -2$", "isCorrect": false}, {"content": "$x \\leq -2$", "isCorrect": false}, {"content": "$x < -2$", "isCorrect": false}]}, {"content": "Hvilken ulikhet passer med beskrivelsen: <br> Alle reelle tall $x$ som er mindre enn $4$?", "answers": [{"content": "$x < 4$", "isCorrect": true}, {"content": "$x \\leq 4$", "isCorrect": false}, {"content": "$x > 4$", "isCorrect": false}, {"content": "$x \\geq 4$", "isCorrect": false}]}, {"content": "Hvilken ulikhet passer med beskrivelsen: <br> Alle reelle tall $x$ som er mindre enn eller lik $-1$?", "answers": [{"content": "$x \\leq -1$", "isCorrect": true}, {"content": "$x < -1$", "isCorrect": false}, {"content": "$x \\geq -1$", "isCorrect": false}, {"content": "$x > -1$", "isCorrect": false}]}, {"content": "Hvilken ulikhet passer med beskrivelsen: <br> Alle reelle tall $x$ som er større enn $3$?", "answers": [{"content": "$x > 3$", "isCorrect": true}, {"content": "$x \\geq 3$", "isCorrect": false}, {"content": "$x < 3$", "isCorrect": false}, {"content": "$x \\leq 3$", "isCorrect": false}]}, {"content": "Hvilken ulikhet passer med beskrivelsen: <br> Alle reelle tall $x$ som er større enn eller lik $-5$?", "answers": [{"content": "$x \\geq -5$", "isCorrect": true}, {"content": "$x > -5$", "isCorrect": false}, {"content": "$x \\leq -5$", "isCorrect": false}, {"content": "$x < -5$", "isCorrect": false}]}, {"content": "Hvilken ulikhet passer med beskrivelsen: <br> Alle reelle tall $x$ som er mindre enn eller lik $2$?", "answers": [{"content": "$x \\leq 2$", "isCorrect": true}, {"content": "$x < 2$", "isCorrect": false}, {"content": "$x \\geq 2$", "isCorrect": false}, {"content": "$x > 2$", "isCorrect": false}]}, {"content": "Hvilken ulikhet passer med beskrivelsen: <br> Alle reelle tall $x$ som er større enn eller lik $0$?", "answers": [{"content": "$x \\geq 0$", "isCorrect": true}, {"content": "$x > 0$", "isCorrect": false}, {"content": "$x \\leq 0$", "isCorrect": false}, {"content": "$x < 0$", "isCorrect": false}]}, {"content": "Hvilken ulikhet passer med beskrivelsen: <br> Alle reelle tall $x$ som er mindre enn $-3$?", "answers": [{"content": "$x < -3$", "isCorrect": true}, {"content": "$x \\leq -3$", "isCorrect": false}, {"content": "$x \\geq -3$", "isCorrect": false}, {"content": "$x > -3$", "isCorrect": false}]}];
 
                 // Initialize the multiple-choice quiz
-                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-de78e44ebe4743f0b2d45e18f7b4c44f', questionsData);
+                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-30d76502e2414881bb4d4679c6d23cc8', questionsData);
             });
         </script>
         </div>
@@ -832,7 +842,7 @@ Da kan vi bruke <strong>listenotasjon</strong>. Vi kan beskrive alle tallene i <
 <p>Ta quizen!</p>
 
         <!-- Container for the quiz -->
-        <div id="quiz-container-096830e50c05448693c985b65f4ebb37" class="quiz-main-container"></div>
+        <div id="quiz-container-6c116c6821334f4a9ec82f41ba058aca" class="quiz-main-container"></div>
         <!-- Include KaTeX for LaTeX rendering -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
         <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
@@ -844,7 +854,7 @@ Da kan vi bruke <strong>listenotasjon</strong>. Vi kan beskrive alle tallene i <
                 const questionsData = [{"content": "Hvilket intervall passer med $-1 \\leq x \\leq 2$?", "answers": [{"content": "$[-1, 2]$", "isCorrect": true}, {"content": "$\\langle -1, 2 \\rangle$", "isCorrect": false}, {"content": "$[-1, 2 \\rangle$", "isCorrect": false}, {"content": "$\\langle -1, 2]$", "isCorrect": false}]}, {"content": "Hvilket intervall passer med $0 < x < 3$?", "answers": [{"content": "$\\langle 0, 3 \\rangle$", "isCorrect": true}, {"content": "$[0, 3]$", "isCorrect": false}, {"content": "$[0, 3 \\rangle$", "isCorrect": false}, {"content": "$\\langle 0, 3]$", "isCorrect": false}]}, {"content": "Hvilket intervall passer med $-2 \\leq x < 1$?", "answers": [{"content": "$[-2, 1 \\rangle$", "isCorrect": true}, {"content": "$\\langle -2, 1 \\rangle$", "isCorrect": false}, {"content": "$[-2, 1]$", "isCorrect": false}, {"content": "$\\langle -2, 1]$", "isCorrect": false}]}, {"content": "Hvilket intervall passer med $-3 < x \\leq 4$?", "answers": [{"content": "$\\langle -3, 4]$", "isCorrect": true}, {"content": "$[-3, 4]$", "isCorrect": false}, {"content": "$[-3, 4 \\rangle$", "isCorrect": false}, {"content": "$\\langle -3, 4 \\rangle$", "isCorrect": false}]}, {"content": "Hvilket intervall passer med $1 \\leq x \\leq 5$?", "answers": [{"content": "$[1, 5]$", "isCorrect": true}, {"content": "$\\langle 1, 5 \\rangle$", "isCorrect": false}, {"content": "$[1, 5 \\rangle$", "isCorrect": false}, {"content": "$\\langle 1, 5]$", "isCorrect": false}]}, {"content": "Hvilket intervall passer med $-4 < x < 2$?", "answers": [{"content": "$\\langle -4, 2 \\rangle$", "isCorrect": true}, {"content": "$[-4, 2]$", "isCorrect": false}, {"content": "$[-4, 2 \\rangle$", "isCorrect": false}, {"content": "$\\langle -4, 2]$", "isCorrect": false}]}, {"content": "Hvilket intervall passer med $-1 \\leq x < 3$?", "answers": [{"content": "$[-1, 3 \\rangle$", "isCorrect": true}, {"content": "$\\langle -1, 3 \\rangle$", "isCorrect": false}, {"content": "$[-1, 3]$", "isCorrect": false}, {"content": "$\\langle -1, 3]$", "isCorrect": false}]}, {"content": "Hvilket intervall passer med $0 < x \\leq 4$?", "answers": [{"content": "$\\langle 0, 4]$", "isCorrect": true}, {"content": "$[0, 4]$", "isCorrect": false}, {"content": "$[0, 4 \\rangle$", "isCorrect": false}, {"content": "$\\langle 0, 4 \\rangle$", "isCorrect": false}]}];
 
                 // Initialize the multiple-choice quiz
-                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-096830e50c05448693c985b65f4ebb37', questionsData);
+                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-6c116c6821334f4a9ec82f41ba058aca', questionsData);
             });
         </script>
         </div>
@@ -866,7 +876,7 @@ Da kan vi bruke <strong>listenotasjon</strong>. Vi kan beskrive alle tallene i <
 <p>Ta quizen!</p>
 
         <!-- Container for the quiz -->
-        <div id="quiz-container-69835dbd65da42b0ae5d135fbae51f0a" class="quiz-main-container"></div>
+        <div id="quiz-container-9c86d12caf2849e583f4497ea48687ed" class="quiz-main-container"></div>
         <!-- Include KaTeX for LaTeX rendering -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
         <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
@@ -878,7 +888,7 @@ Da kan vi bruke <strong>listenotasjon</strong>. Vi kan beskrive alle tallene i <
                 const questionsData = [{"content": "Hvilket intervall passer med $x \\geq -2$?", "answers": [{"content": "$[-2, \\to\\rangle$", "isCorrect": true}, {"content": "$\\langle -2, \\to\\rangle$", "isCorrect": false}, {"content": "$\\langle -2, \\gets]$", "isCorrect": false}, {"content": "$\\langle -2, \\gets \\rangle$", "isCorrect": false}]}, {"content": "Hvilket intervall passer med $x > 3$?", "answers": [{"content": "$\\langle 3, \\to\\rangle$", "isCorrect": true}, {"content": "$[3, \\to\\rangle$", "isCorrect": false}, {"content": "$[3, \\gets]$", "isCorrect": false}, {"content": "$\\langle 3, \\gets \\rangle$", "isCorrect": false}]}, {"content": "Hvilket intervall passer med $x \\leq 1$?", "answers": [{"content": "$\\langle\\gets, 1]$", "isCorrect": true}, {"content": "$\\langle\\gets, 1 \\rangle$", "isCorrect": false}, {"content": "$[1, \\gets]$", "isCorrect": false}, {"content": "$[1, \\gets \\rangle$", "isCorrect": false}]}, {"content": "Hvilket intervall passer med $x < -4$?", "answers": [{"content": "$\\langle\\gets, -4 \\rangle$", "isCorrect": true}, {"content": "$\\langle\\gets, -4]$", "isCorrect": false}, {"content": "$[-4, \\gets]$", "isCorrect": false}, {"content": "$[-4, \\gets \\rangle$", "isCorrect": false}]}, {"content": "Hvilket intervall passer med $x \\geq 0$?", "answers": [{"content": "$[0, \\to\\rangle$", "isCorrect": true}, {"content": "$\\langle 0, \\to\\rangle$", "isCorrect": false}, {"content": "$\\langle 0, \\gets]$", "isCorrect": false}, {"content": "$\\langle 0, \\gets \\rangle$", "isCorrect": false}]}, {"content": "Hvilket intervall passer med $x < 2$?", "answers": [{"content": "$\\langle\\gets, 2 \\rangle$", "isCorrect": true}, {"content": "$\\langle\\gets, 2]$", "isCorrect": false}, {"content": "$[2, \\gets]$", "isCorrect": false}, {"content": "$[2, \\gets \\rangle$", "isCorrect": false}]}, {"content": "Hvilket intervall passer med $x \\leq -1$?", "answers": [{"content": "$\\langle\\gets, -1]$", "isCorrect": true}, {"content": "$\\langle\\gets, -1 \\rangle$", "isCorrect": false}, {"content": "$[-1, \\gets]$", "isCorrect": false}, {"content": "$[-1, \\gets \\rangle$", "isCorrect": false}]}, {"content": "Hvilket intervall passer med $x > 5$?", "answers": [{"content": "$\\langle 5, \\to\\rangle$", "isCorrect": true}, {"content": "$[5, \\to\\rangle$", "isCorrect": false}, {"content": "$[5, \\gets]$", "isCorrect": false}, {"content": "$\\langle 5, \\gets \\rangle$", "isCorrect": false}]}];
 
                 // Initialize the multiple-choice quiz
-                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-69835dbd65da42b0ae5d135fbae51f0a', questionsData);
+                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-9c86d12caf2849e583f4497ea48687ed', questionsData);
             });
         </script>
         </div>
