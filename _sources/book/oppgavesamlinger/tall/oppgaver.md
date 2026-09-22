@@ -193,10 +193,13 @@ $$
 
 ::::{solution}
 Fra oppgave **a** har vi at 
+
 $$
 \sqrt{75} + \sqrt{27} - \sqrt{12} = 6\sqrt{3}
 $$
+
 Dermed blir brøken
+
 $$
 \dfrac{\sqrt{75} + \sqrt{27} - \sqrt{12}}{2\sqrt{3}} = \dfrac{6\sqrt{3}}{2\sqrt{3}} = 3
 $$
