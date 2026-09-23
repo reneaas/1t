@@ -920,14 +920,14 @@ $$x \in \mathbb{Z} \quad \boxed{\phantom{= -2}} \quad x \in \mathbb{Q}$$
 correct:
 ---
 $$
-\impliedby
+\implies
 $$
 ::::::
 
 
 ::::::{quiz-answer}
 $$
-\implies
+\impliedby
 $$
 ::::::
 
