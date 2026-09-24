@@ -246,10 +246,10 @@ Intervaller kan skrives på følgende måter:
 
 :::{table}
 labels: Intervall, Beskrivelse
-$[a, b]$ , Alle reelle tall $x$ slik at $a \leq x \leq b$. (Inkluderer både $a$ og $b$)
-$\langle a, b \rangle$ , Alle reelle tall $x$ slik at $a < x < b$. (Inkluderer verken $a$ eller $b$)
-$[a, b \rangle$ , Alle reelle tall $x$ slik at $a \leq x < b$. (Inkluderer $a$, men ikke $b$)
-$\langle a, b]$ , Alle reelle tall $x$ slik at $a < x \leq b$. (Inkluderer $b$, men ikke $a$)
+$[a, b]$ , Alle reelle tall $x$ slik at $a \leq x \leq b$. Inkluderer både $a$ og $b$
+$\langle a, b \rangle$ , Alle reelle tall $x$ slik at $a < x < b$. Inkluderer verken $a$ eller $b$
+$[a, b \rangle$ , Alle reelle tall $x$ slik at $a \leq x < b$. Inkluderer $a$, men ikke $b$
+$\langle a, b]$ , Alle reelle tall $x$ slik at $a < x \leq b$. Inkluderer $b$, men ikke $a$
 :::
 
 :::::

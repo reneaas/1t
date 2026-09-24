@@ -470,55 +470,38 @@ $$
 
 
 
-:::::::::::::::{exercise-2} Oppgave 8
-:::::::::::::{part} a
-Om en lineær funksjon $f$ får du vite at 
-* Stigningstallet er $2$
-* Grafen til $f$ skjærer $y$-aksen i punktet $(0, 1)$. 
 
-Bestem hvilken graf nedenfor som viser grafen til $f$.
+:::::::::::::::{exercise} Oppgave 8
+
+I figuren nedenfor vises grafene til to lineære funksjoner $f$ og $g$.
+
+Bestem arealet av det fargelagte området i figuren.
 
 
-::::{multi-plot2}
----
-rows: 2
-cols: 2
-fontsize: 26
+:::{plot}
+width: 60%
+function: -x + 1, f
+function: 0.5*x - 2, g
+xmin: -1
+xmax: 5
+ymin: -3
+ymax: 2
 ticks: off
----
-:::{plot}
-function: 2*x - 1
-text: 5, 5, "A", center-center, bbox
+point: (0, 1)
+text: 0, 1, "$(0, 1)$", top-right
+point: (0, -2)
+text: 0, -2, "$(0, -2)$", bottom-right
+point: (2, -1)
+text: 2 + 0.2, -1, "$(2, -1)$", center-right
+fill-polygon: (2, -1), (1, 0), (4, 0), blue, 0.3
 :::
 
 
-:::{plot}
-function: 2*x + 1 
-text: 5, 5, "B", center-center, bbox
-:::
-
-
-:::{plot}
-function: -2*x + 1 
-text: 5, 5, "C", center-center, bbox
-:::
-
-:::{plot}
-function: -2*x - 1 
-text: 5, 5, "D", center-center, bbox
-:::
-
-
-
-
+::::{answer-2}
+Arealet er $\dfrac{3}{2}$
 ::::
 
 
 
-:::::{answer-2}
-Graf B
-:::::
-
-:::::::::::::
 
 :::::::::::::::
