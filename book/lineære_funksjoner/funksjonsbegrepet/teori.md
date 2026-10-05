@@ -7,6 +7,41 @@
 :::
 
 
+Når vi jobber med funksjoner, er **koordinatsystemet** et sentralt verktøy, så er det viktig at vi først og fremst forstår hvordan vi leser av koordinatene til punktet i et koordinatsystem:
+
+
+:::::::::::::::{summary} Koordinatsystemet
+
+Koordinatsystemet består av to tallinjer som vi kaller for **akser**. De to aksene er:
+* $x$-aksen (den horisontale aksen - også kalt *førsteaksen*).
+* $y$-aksen (den vertikale aksen - også kalt *andreaksen*).
+
+Punktet der aksene møtes kaller vi for **origo**. Origo har koordinatene $(0, 0)$.
+
+For å finne et punkt $(x, y)$ i koordinatsystemet, går vi $x$ plasser parallelt med $x$-aksen og $y$ plasser parallelt med $y$-aksen. Da står vi på punktet $(x, y)$. 
+Vi kaller $x$-verdien til punktet for $x$-koordinaten og $y$-verdien for $y$-koordinaten.
+
+I figuren nedenfor vises et konkret eksempel med punktet $(3, 2)$.
+
+
+:::{plot}
+point: (3, 2)
+text: 3, 2, "$(3, 2)$", top-right
+hline: 2, 0, 3
+vline: 3, 0, 2
+width: 60%
+fontsize: 24
+:::
+
+:::::::::::::::
+
+
+---
+
+
+Nå som vi vet hvordan vi leser av koordinatene til punktet i et koordinatsystem, kan vi gå videre til å definere hva en funksjon er.
+
+
 :::::::::::::::{summary} Definisjon: Funksjoner
 En **funksjon** $f$ er en regel som tar inn et tall $x$, gjør noe med tallet og gir oss nøyaktig ett tall $y$. Vi skriver det som 
 

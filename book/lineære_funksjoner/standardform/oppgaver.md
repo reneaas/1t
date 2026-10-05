@@ -2,95 +2,8 @@
 # Oppgaver: Standardform
 
 
+
 :::::::::::::::{exercise-2} Oppgave 1
-Ta quizen! 
-
-:::{quiz}
-Q: Hvilket punkt er vist i figuren nedenfor? ![{width: 60%}](figurer/oppgaver/quiz_1/oppgave_1.svg)
-+ $(2, 3)$
-- $(3, 2)$
-- $(-2, 3)$
-- $(-3, 2)$
-
-Q: Hvilket punkt er vist i figuren nedenfor? ![{width: 60%}](figurer/oppgaver/quiz_1/oppgave_2.svg)
-+ $(-1, 2)$
-- $(2, -1)$
-- $(1, -2)$
-- $(-2, 1)$
-
-Q: Hvilket punkt er vist i figuren nedenfor? ![{width: 60%}](figurer/oppgaver/quiz_1/oppgave_3.svg)
-+ $(-3, -2)$
-- $(-2, -3)$
-- $(3, 2)$
-- $(2, 3)$
-
-Q: Hvilket punkt er vist i figuren nedenfor? ![{width: 60%}](figurer/oppgaver/quiz_1/oppgave_4.svg)
-+ $(-3, 0)$
-- $(0, -3)$
-- $(3, 0)$
-- $(0, 3)$
-
-Q: Hvilket punkt er vist i figuren nedenfor? ![{width: 60%}](figurer/oppgaver/quiz_1/oppgave_5.svg)
-+ $(0, 4)$
-- $(4, 0)$
-- $(0, -4)$
-- $(-4, 0)$
-
-Q: Hvilket punkt er vist i figuren nedenfor? ![{width: 60%}](figurer/oppgaver/quiz_1/oppgave_6.svg)
-+ $(-3, -4)$
-- $(3, 4)$
-- $(4, 3)$
-- $(4, -3)$
-:::
-:::::::::::::::
-
-
----
-
-
-:::::::::::::::{exercise-2} Oppgave 2
-
-I figuren nedenfor vises seks punkter $A$, $B$, $C$, $D$, $E$ og $F$.
-
-
-:::{plot}
-point: (-1, 3)
-text: -1, 3, "$A$", center-left
-point: (-2, 0)
-text: -2, 0, "$B$", top-center
-point: (1, 3)
-text: 1, 3, "$C$", center-right
-point: (0, -2)
-text: 0, -2, "$D$", center-right
-point: (3, 1)
-text: 3, 1, "$E$", center-right
-point: (3, -1)
-text: 3, -1, "$F$", bottom-right
-width: 70%
-:::
-
-
-
-
-Sett sammen riktig koordinater $(x, y)$ med riktig punktnavn.
-
-
-:::{pair-puzzle}
-$A$ : $(-1, 3)$
-$B$ : $(-2, 0)$
-$C$ : $(1, 3)$
-$D$ : $(0, -2)$
-$E$ : $(3, 1)$
-$F$ : $(3, -1)$
-:::
-
-:::::::::::::::
-
-
----
-
-
-:::::::::::::::{exercise-2} Oppgave 3
 :::{quiz}
 
 Q: Hvilket funksjonsuttrykk stemmer med grafen vist i figuren nedenfor? ![{width: 60%}](figurer/oppgaver/quiz_2/oppgave_1.svg)
@@ -137,7 +50,7 @@ Q: Hvilket funksjonsuttrykk stemmer med grafen vist i figuren nedenfor? ![{width
 ---
 
 
-:::::::::::::::{exercise-2} Oppgave 4
+:::::::::::::::{exercise-2} Oppgave 2
 En lineær funksjon $f$ er gitt ved
 
 $$
@@ -199,7 +112,7 @@ $$
 
 
 
-:::::::::::::::{exercise-2} Oppgave 5
+:::::::::::::::{exercise-2} Oppgave 3
 Grafen til en lineær funksjon $f$ er vist i figuren nedenfor.
 
 
@@ -312,7 +225,7 @@ $$
 
 
 
-:::::::::::::::{exercise-2} Oppgave 7
+:::::::::::::::{exercise-2} Oppgave 4
 
 
 :::::::::::::{part} a
@@ -471,7 +384,7 @@ $$
 
 
 
-:::::::::::::::{exercise} Oppgave 8
+:::::::::::::::{exercise} Oppgave 5
 
 I figuren nedenfor vises grafene til to lineære funksjoner $f$ og $g$.
 
