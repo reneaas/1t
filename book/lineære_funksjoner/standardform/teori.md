@@ -1,137 +1,18 @@
 # Standardform
 
 :::{goals} Læringsmål
-* Kunne representere en lineær funksjon på standardform og beskrive sammenhengen med den grafiske representasjonen.
-* Kunne bytte fra en representasjon til en annen.
+* Kunne representere en lineær funksjon på standardform og beskrive sammenhengen med den grafiske representasjonen
+* Kunne bestemme $f(x)$ fra graf
+* Kunne gå fra funksjonsuttrykk til graf
 :::
 
-En lineær funksjon er en rett linje som du kanskje har lært å beskrive med en likning
-
-$$
-y = ax + b 
-$$
+En lineær funksjon er en funksjon som beskriver en skrå linje i et koordinatsystem. Det som kjennetegner funksjonen spesielt er at når vi øker $x$ med $1$, så øker funksjonsverdien med et fast tall $a$ som kalles for **stigningstallet til funksjonen**.
 
 
-der vi setter inn en verdi for $x$ for å finne den **tilhørende** verdien for $y$. Gjør vi dette med mange ulike verdier for $x$, får vi en samling punkter $(x, y)$ – dette kaller vi for **grafen** til den lineære funksjonen. Vi gir gjerne funksjonen et navn, for eksempel $f$, og skriver funksjonsuttrykket som
-
-$$
-f(x) = ax + b
-$$
-
-som betyr at $y = f(x)$. Vi kaller $f(x)$ for **funksjonsverdien** når vi tenker på et bestemt tall $x$, og **funksjonsuttrykket** når vi ikke tenker på noe spesielt tall for $x$.
+Ulike måter å skrive funksjonsuttrykk på kaller for **algebraiske representasjoner**. Ulike slike representasjoner lar oss lese av noen egenskaper ved grafen til funksjonen rett fra funksjonsuttrykket. Den første vi skal se på kalles for **standardform**. 
 
 
-:::::::::::::::{summary-2} Koordinatsystemet
-
-Koordinatsystemet består av to tallinjer som vi kaller for **akser**. De to aksene er:
-* $x$-aksen (den horisontale aksen - også kalt *førsteaksen*).
-* $y$-aksen (den vertikale aksen - også kalt *andreaksen*).
-
-Punktet der aksene møtes kaller vi for **origo**. Origo har koordinatene $(0, 0)$.
-
-For å finne et punkt $(x, y)$ i koordinatsystemet, går vi $x$ plasser parallelt med $x$-aksen og $y$ plasser parallelt med $y$-aksen. Da står vi på punktet $(x, y)$. 
-Vi kaller $x$-verdien til punktet for $x$-koordinaten og $y$-verdien for $y$-koordinaten.
-
-I figuren nedenfor vises et konkret eksempel med punktet $(3, 2)$.
-
-
-:::{plot}
-point: (3, 2)
-text: 3, 2, "$(3, 2)$", top-right
-hline: 2, 0, 3
-vline: 3, 0, 2
-width: 80%
-:::
-
-:::::::::::::::
-
-
----
-
-
-
-
-:::::::::::::::{example-2} Eksempel 1
-I figuren nedenfor vises grafen til en lineær funksjon $f$ gitt ved 
-
-$$
-f(x) = 2x + 1.
-$$
-
-
-:::{plot}
-function: 2 * x + 1, f
-width: 70%
-annotate: (3.5, 2), (2, 5), "$(2, f(2))$"
-point: (2, 5)
-xmin: -3
-ymax: 8
-vline: 2, 0, 5
-hline: 5, 0, 2
-:::
-
-
-
-I figuren har vi markert et punkt $(2, f(2))$ på grafen til $f$. Vi ser at $x$-koordinaten til dette punktet er $2$ og $y$-koordinaten er $5$. Det betyr at 
-
-$$
-f(2) = 5
-$$
-
-Vi kan også sjekke at dette stemmer ved å regne ut verdien med funksjonsuttrykket til $f$:
-
-$$
-f(\textcolor{red}{2}) = 2 \cdot \textcolor{red}{2} + 1 = 4 + 1 = 5. 
-$$
-
-
-:::::::::::::::
-
-
----
-
-
-:::::::::::::::{exercise-2} Underveisoppgave 1
-:::{plot}
-function: 3*x - 2, f
-width: 100%
-align: right
-fontsize: 26
-:::
-
-En lineær funksjon $f$ er gitt ved 
-
-$$
-f(x) = 3x - 2
-$$
-
-Bestem $f(2)$ ved
-1. Å regne ut med funksjonsuttrykket
-2. Ved å lese av fra grafen til $f$ vist i figuren nedenfor.
-
-
-
-::::{answer-2}
-$$
-f(2) = 4
-$$
-::::
-
-
-
-
-:::::::::::::::
-
-
-## Standardform: Algebraisk og grafisk representasjon
-
-
-En **representasjon** er en måte å beskrive noe på. En lineær funksjon kan representeres på flere måter, for eksempel med en formel som vi gjerne kaller for en **algebraisk representasjon**. En lineær funksjon kan også representeres grafisk med en **graf**. Det finnes flere representasjoner, men disse er de to viktigste. 
-
-En algebraisk representasjon kan gi oss umiddelbar informasjon om grafen til en funksjon. Å velge en representasjon som er hensiktmessig for å løse en oppgave er en viktig ferdighet i matematikk. Den første vi skal se på kaller vi for **standardform**. 
-
-
-:::::::::::::::{summary-2} Standardform
+:::::::::::::::{summary} Standardform
 
 En lineær funksjon $f$ kan skrives på **standardform** som
 
@@ -167,10 +48,10 @@ annotate: (1, -1), (0, -1), "Skjæring med $y$-aksen $(0, b)$", -0.4
 ---
 
 
-:::::::::::::::{example-2} Eksempel 2
+:::::::::::::::{example} Eksempel 1
 :::{plot}
 function: -2*x + 1, f
-width: 100%
+width: 350px
 align: right
 fontsize: 26
 :::
@@ -181,7 +62,7 @@ Bestem $f(x)$.
 
 
 
-::::{solution-2}
+::::{solution}
 ---
 open:
 ---
@@ -209,10 +90,10 @@ $$
 ---
 
 
-:::::::::::::::{exercise-2} Underveisoppgave 2 
+:::::::::::::::{exercise} Underveisoppgave 1
 :::{plot}
 function: 3*x - 4, f
-width: 100%
+width: 350px
 align: right
 fontsize: 26
 
@@ -223,12 +104,12 @@ Bestem $f(x)$.
 
 
 
-:::::{answer-2}
+:::::{answer}
 $$
 f(x) = 3x - 4
 $$
 
-::::{solution-2}
+::::{solution}
 En lineær funksjon på standardform er gitt ved 
 
 $$
@@ -259,7 +140,7 @@ $$
 
 La oss se på et eksempel der vi går fra funksjonsuttrykk til graf. 
 
-:::::::::::::::{example-2} Eksempel 3
+:::::::::::::::{example-2} Eksempel 2
 En lineær funksjon $f$ er gitt ved 
 
 $$
@@ -304,7 +185,7 @@ text: -1, 3.5, "$-1$", center-right
 ---
 
 
-:::::::::::::::{exercise-2} Underveisoppgave 3
+:::::::::::::::{exercise-2} Underveisoppgave 2
 En lineær funksjon $f$ er gitt ved
 
 $$
@@ -350,25 +231,11 @@ Vi vet allerede nå at vi kan bestemme stigningstallet $a$ til en lineær funksj
 
 
 :::::::::::::::{summary-2} Topunktsformelen
-Hvis grafen til en lineær funksjon $f$ går gjennom punktene $(x_1, y_1)$ og $(x_2, y_2)$, så er stigningstallet $a$ gitt ved 
-
-$$
-a = \dfrac{\Delta y}{\Delta x} = \dfrac{y_2 - y_1}{x_2 - x_1}
-$$
-
-
-der vi har definert
-
-$$
-\Delta y = y_2 - y_1 \qog \Delta x = x_2 - x_1
-$$
-
-Vi leser symbolet $\Delta$ som "endring i" slik at $\Delta y$ betyr "endring i $y$-verdien" og $\Delta x$ betyr "endring i $x$-verdien". Stigningstallet er altså endringen i $y$-verdien delt på endringen i $x$-verdien.
-
 
 :::{plot}
 function: x + 1
-width: 70%
+width: 100%
+align: right
 ticks: off
 xmin: -1
 xmax: 4.5
@@ -381,8 +248,24 @@ hline: 2, 1, 4
 vline: 4, 2, 5
 text: 2.5, 2, "$\Delta x$", bottom-center
 text: 4, 3.5, "$\Delta y$", center-right
+fontsize: 28
 :::
 
+
+Dersom en lineær funksjon $f$ går gjennom to punkter $(x_1, y_1)$ og $(x_2, y_2)$, så er stigningstallet $a$ gitt ved
+
+$$
+a = \dfrac{y_2 - y_1}{x_2 - x_1}
+$$
+
+Vi definerer gjerne $\Delta y = y_2 - y_1$ og $\Delta x = x_2 - x_1$. Da kan vi skrive stigningstallet som
+
+$$
+a = \frac{\Delta y}{\Delta x}
+$$
+
+
+der vi leser $\Delta$ som "endring i". Altså er $\Delta y$ endringen i $y$-verdien og $\Delta x$ endringen i $x$-verdien.
 
 
 
@@ -391,14 +274,15 @@ text: 4, 3.5, "$\Delta y$", center-right
 ---
 
 
-:::::::::::::::{example-2} Eksempel 4
+:::::::::::::::{example-2} Eksempel 3
 :::{plot}
+nocache:
 function: 3*x - 5, f
-width: 100%
+width: 350px
 align: right
 fontsize: 26
 ticks: off
-xmin: -2
+xmin: -1
 xmax: 5
 ymin: -7
 ymax: 5
@@ -443,10 +327,10 @@ $$
 ---
 
 
-:::::::::::::::{exercise-2} Underveisoppgave 4
+:::::::::::::::{exercise-2} Underveisoppgave 3
 :::{plot}
 function: -2*x + 4, f
-width: 100%
+width: 350px
 align: right
 fontsize: 26
 ticks: off
@@ -492,6 +376,88 @@ $$
 
 
 :::::::::::::::
+
+
+---
+
+
+## Nullpunkter 
+Punktet der en lineær funksjon skjærer $x$-aksen, kaller vi for **nullpunktet** til funksjonen. Dette vil være et punkt der funksjonsverdien er lik null, altså den $x$-verdien som gir at $f(x) = 0$.
+
+En lineær funksjon kan bare ha ett nullpunkt siden den kun kan skjære $x$-aksen én gang. 
+
+
+
+:::::::::::::::{summary} Nullpunktet til en lineær funksjon
+:::{plot}
+width: 320px
+align: right
+function: 2*x - 4, f
+point: (2, 0)
+ticks: off
+fontsize: 26
+xmin: -1
+annotate: (3, -3), (2, 0), "Nullpunkt $(x, 0)$ \n \n der $f(x) = 0$", -0.3
+:::
+
+
+Nullpunktet til en lineær funksjon $f$ er den $x$-verdien der $f(x) = 0$.
+
+:::::::::::::::
+
+
+
+---
+
+
+
+:::::::::::::::{example} Eksempel 4
+En lineær funksjon $f$ er gitt ved 
+
+$$
+f(x) = 2x - 4
+$$
+
+Bestem nullpunktet til $f$.
+
+
+::::{solution}
+---
+open:
+---
+Nullpunktet til $f$ vil være løsningen av likningen $f(x) = 0$. Vi har at
+
+$$
+f(x) = 0
+$$
+
+$$
+2x - 4 = 0
+$$
+
+Vi plusser på $4$ på hver side av likningen som gir
+
+$$
+2x = 4
+$$
+
+Så deler vi med $2$ på begge sider av likningen som gir
+
+$$
+x = 2
+$$
+
+Dermed er nullpunktet til $f$ gitt ved 
+
+$$
+x = 2
+$$
+
+> Vi kan også oppgi nullpunktet som $(2, 0)$, men siden $y = 0$ i et nullpunkt så oppgir vi nesten alltid *kun* $x$-verdien til punktet. 
+::::
+
+:::::::::::::::
+
 
 
 
