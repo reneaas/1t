@@ -1097,7 +1097,7 @@ point: (0, -2)
 text: 0, -2, "$(0, -2)$", bottom-right
 point: (2, -1)
 text: 2 + 0.2, -1, "$(2, -1)$", center-right
-fill-polygon: (2, -1), (1, 0), (4, 0), blue, 0.3
+fill-polygon: (2, -1), (1, 0), (4, 0), blue, 0.2
 :::
 
 
@@ -1206,3 +1206,37 @@ $$
 
 
 :::::::::::::::
+
+
+
+<!-- 
+
+:::::::::::::::{exercise} Oppgave 10
+::::::::{escape-room-2}
+:::::::{room}
+---
+code: 20
+---
+
+:::{plot}
+width: 350px
+align: right
+function: 4*x - 2, f, red
+fontsize: 26
+:::
+
+
+Grafen til en lineær funksjon $f$ er vist til høyre.
+
+Koden til neste rom er $a^2 + b^2$.
+:::::::
+
+
+:::::::{room}
+---
+code: 
+---
+Grafen til en lineær funksjon $f$ er vist til høyre.
+:::::::
+::::::::
+::::::::::::::: -->
