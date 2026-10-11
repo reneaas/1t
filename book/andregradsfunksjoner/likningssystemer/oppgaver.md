@@ -1240,12 +1240,13 @@ Grafen til en andregradsfunksjon kalles for en **parabel**. Men en parabel må i
 I figuren nedenfor vises en slik **parabel**. 
 
 
-:::{figure} ./figurer/oppgaver/oppgave_11/a.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
+:::{plot}
+width: 70%
+curve: t**2 - 2*t - 3, t, (-6, 6), blue
 :::
+
+
+
 
 
 :::::::::::::{part} a
