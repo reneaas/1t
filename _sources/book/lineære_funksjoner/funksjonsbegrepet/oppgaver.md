@@ -104,6 +104,12 @@ $$
 Hvilket punkt er vist i koordinatsystemet nedenfor?
 
 
+:::{plot}
+width: 60%
+point: (-3, -2)
+fontsize: 24
+:::
+
 ::::::{quiz-answer}
 ---
 correct:
