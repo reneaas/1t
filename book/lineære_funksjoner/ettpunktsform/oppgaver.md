@@ -272,14 +272,14 @@ Grafen skjærer $y$-aksen i $(0, 1)$.
 
 
 :::::::::::::{part} c
-Skriv om $f(x)$ til nullpunktsform og bestem nullpunktet til $f$.
+Bestem nullpunktet til $f$.
 
 ::::{answer}
 $$
-f(x) = 2\left(x + \frac{1}{2}\right)
+x = -\dfrac{1}{2}
 $$
 
-Grafen til $f$ har nullpunkt i $x = -\dfrac{1}{2}$.
+
 ::::
 :::::::::::::
 
