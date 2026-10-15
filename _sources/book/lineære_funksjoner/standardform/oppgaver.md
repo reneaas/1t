@@ -675,15 +675,31 @@ $$
 $$
 
 ::::{solution}
-Vi vet at stigningstallet er $a = 2$. For hver gang vi øker $x$ med $1$, så øker $f(x)$ med $2$. 
-
-For å komme til $y$-aksen, kan vi gå fra $x = -2$ til $x = 0$ som er to enheter langs $x$-aksen. Da må $f(x)$ øke med $2a = 2 \cdot 2 = 4$. Det betyr at 
+Vi vet at stigningstallet er $a = 2$ som betyr at 
 
 $$
-f(0) = -5 + 4 = -1
+f(x) = 2x + b
 $$
 
-Dermed blir koordinatene til skjæringspunktet mellom $f$ og $y$-aksen $(0, -1)$.
+For å finne verdien til $b$ velger vi et av punktene på linja og setter opp en likning for $b$. Vi bruker punktet $(3, 5)$ som gir at 
+
+$$
+f(3) = 5
+$$
+
+$$
+2 \cdot 3 + b = 5
+$$
+
+$$
+6 + b = 5
+$$
+
+$$
+b = 5 - 6 = -1
+$$
+
+Altså er konstantleddet $b = -1$ og grafen til $f$ skjærer $y$-aksen i $(0, -1)$.
 ::::
 :::::
 
@@ -764,16 +780,24 @@ $$
 a = \frac{\Delta y}{\Delta x} = \frac{-5}{5} = -1
 $$
 
-Funksjonsverdien synker altså med $-1$ hver gang vi øker $x$ med $1$. Det betyr at grafen vil synke med $-3$ enheter fra $x = -3$ til $x = 0$. Derfor får vi at 
+Dermed kan vi skrive $f(x)$ som $f(x) = -x + b$. For å finne konstantleddet $b$ bruker vi et av punktene på grafen. Vi bruker punktet $(2, 1)$ som gir at
 
 $$
-f(0) = 6 - 3 = 3
+f(2) = 1
 $$
 
-Dermed blir konstantleddet $b = 3$ og 
+$$
+-2 + b = 1
+$$
 
 $$
-f(x) = ax + b = -1\cdot x + 3 = -x + 3
+b = 1 + 2 = 3
+$$
+
+Dermed er 
+
+$$
+f(x) = -x + 3
 $$
 
 ::::
@@ -822,16 +846,28 @@ $$
 a = \dfrac{\Delta y}{\Delta x} = \dfrac{3}{6} = \dfrac{1}{2}
 $$
 
-Hvis vi flytter oss $2$ enheter fra $x = -2$ til $x = 0$, må funksjonsverdien øke med $\dfrac{1}{2} \cdot 2 = 1$. Det betyr at 
+Dermed er $g(x) = \dfrac{1}{2}x + b$. For å finne konstantleddet $b$ bruker vi punktet $(4, 3)$ som gir at
 
 $$
-g(0) = g(-2) + 1 = 0 + 1 = 1
+g(4) = 3
 $$
 
-Dermed blir konstantleddet $b = 1$ og 
+$$
+\dfrac{1}{2} \cdot 4 + b = 3
+$$
 
 $$
-g(x) = ax + b = \dfrac{1}{2}x + 1
+2 + b = 3
+$$
+
+$$
+b = 3 - 2 = 1
+$$
+
+Dermed er 
+
+$$
+g(x) = \dfrac{1}{2}x + 1
 $$
 
 ::::
@@ -881,10 +917,24 @@ $$
 a = \dfrac{\Delta y}{\Delta x} = \dfrac{-4}{4} = -1
 $$
 
-Hvis vi flytter oss én enhet $x = 1$ tilbake til $x = 0$, må funksjonsverdien øke med $1$ siden stigningstallet er $a = -1$. Da vil grafen skjærer $y$-aksen i $(0, -1)$. Ergo er $b = -1$ og funksjonsuttrykket blir
+Dermed er $h(x) = -x + b$. For å bestemme $b$ bruker vi punktet $(1, -2)$ som gir at
 
 $$
-h(x) = ax + b = -x - 1
+h(1) = -2
+$$
+
+$$
+-1 + b = -2
+$$
+
+$$
+b = -1 + 2 = -1
+$$
+
+Altså er 
+
+$$
+g(x) = -x - 1
 $$
 
 ::::
@@ -1208,35 +1258,3 @@ $$
 :::::::::::::::
 
 
-
-<!-- 
-
-:::::::::::::::{exercise} Oppgave 10
-::::::::{escape-room-2}
-:::::::{room}
----
-code: 20
----
-
-:::{plot}
-width: 350px
-align: right
-function: 4*x - 2, f, red
-fontsize: 26
-:::
-
-
-Grafen til en lineær funksjon $f$ er vist til høyre.
-
-Koden til neste rom er $a^2 + b^2$.
-:::::::
-
-
-:::::::{room}
----
-code: 
----
-Grafen til en lineær funksjon $f$ er vist til høyre.
-:::::::
-::::::::
-::::::::::::::: -->
