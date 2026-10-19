@@ -1,10 +1,9 @@
 # Dev
 
 :::{plot}
+nocache:
 width: 70%
-function: x**2 - 2*x, f, (-1, 4], blue
-function-endpoints: true
+circle: (0, 0), 1, blue
 fontsize: 24
-ymax: 9
-ymin: -3
+axis: equal
 :::
