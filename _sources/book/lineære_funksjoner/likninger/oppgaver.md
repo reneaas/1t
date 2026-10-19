@@ -543,7 +543,7 @@ Bestem i hvilket punkt grafen til $f$ og $g$ skjærer hverandre.
 
 ::::{answer}
 $$
-(2, 2)
+(2, 4)
 $$
 ::::
 :::::::::::::
