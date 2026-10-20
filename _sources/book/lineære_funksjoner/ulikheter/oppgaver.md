@@ -158,6 +158,15 @@ Løs ulikhetene algebraisk.
 $$
 2x + 5 \lt -2
 $$
+
+
+:::::{answer}
+$$
+x \lt -\dfrac{7}{2}
+$$
+:::::
+
+
 :::::::::::::
 
 
@@ -165,6 +174,13 @@ $$
 $$
 3x + 2 \gt -2x + 7
 $$
+
+
+:::::{answer}
+$$
+x \gt 1
+$$
+:::::
 :::::::::::::
 
 
@@ -173,6 +189,13 @@ $$
 $$
 \dfrac{1}{5}x + 3 \leq -2x + 3
 $$
+
+:::::{answer}
+
+$$
+x \lgeq 0
+$$
+:::::
 :::::::::::::
 
 
@@ -180,6 +203,12 @@ $$
 $$
 -2x + \dfrac{1}{2} \geq 5x + 3
 $$
+
+:::::{answer}
+$$
+x \leq -\dfrac{5}{14}
+$$
+:::::
 :::::::::::::
 
 :::::::::::::::
@@ -315,7 +344,7 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 5
-Nedenfor grafen til fire lineære funksjoner.
+Nedenfor vises grafene til fire lineære funksjoner.
 
 ::::{multi-plot2}
 ---
