@@ -375,7 +375,7 @@ $$
 
 
 :::::{answer}
-Funksjon A.
+Funksjon B.
 :::::
 
 :::::::::::::
