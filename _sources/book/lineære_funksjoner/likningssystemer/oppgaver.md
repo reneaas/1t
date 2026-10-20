@@ -1362,7 +1362,7 @@ for x in range(????):
 
 :::::{answer}
 $$
-x = 2 \and y = -5
+x = -3 \and y = 5
 $$
 
 ::::{solution}
@@ -1372,20 +1372,20 @@ linenos:
 ---
 for x in range(-10, 11):
     for y in range(-10, 11):
-        if 2*x + y == -1 and 5*x + y == 5:
+        if 2*x + y == -1 and 5*x + 4*y == 5:
             print((x, y))
 ```
 
 som gir utskriften 
 
 ```{code-block} console
-(2, -5)
+(-3, 5)
 ```
 
 Dermed er løsningen 
 
 $$
-x = 2 \and y = -5
+x = -3 \and y = 5
 $$
 ::::
 
