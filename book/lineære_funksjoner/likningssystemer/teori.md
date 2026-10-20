@@ -51,7 +51,7 @@ $$
 
 til formen $y = ax + b$ ved å løse likningen for $y$. Men dette fungerer bare for **skrå** linjer. 
 
-Til nå har vi tenkt på lineære funksjoner som linjer på formen $y = ax + b$ der $y = f(x)$. Vi har også sett at vi kan skrive disse på {popup}`nullpunktsform<$y = a(x - x_1)$>` og {popup}`ettpunktsform<$y = a(x - x_0) + y_0$>`. Men linjer i planet trenger ikke alltid være lineære funksjoner. Mer generelt kan vi dele linjer inn i tre kategorier:
+Til nå har vi tenkt på lineære funksjoner som linjer på formen $y = ax + b$ der $y = f(x)$. Vi har også sett at vi kan skrive disse på  {popup}`ettpunktsform<$y = a(x - x_0) + y_0$>`. Men linjer i planet trenger ikke alltid være lineære funksjoner. Mer generelt kan vi dele linjer inn i tre kategorier:
 1. **Skrå linjer**: Linjer som kan skrives på de tre formene vi har sett på tidligere.
 2. **Horisontale linjer**: Linjer som er på formen $y = \text{konstant}$, for eksempel $y = 3$.
 3. **Vertikale linjer**: Linjer som er på formen $x = \text{konstant}$, for eksempel $x = -2$.
