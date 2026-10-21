@@ -366,7 +366,7 @@ Koeffisient $b$
 : Grafen til $f$ har toppunkt i $(2, 3)$. Det er $x$-koordinaten til dette punktet som gir symmetrilinja som er $x = 2$. Da kan vi bestemme $b$:
 
 $$
-x = -\dfrac{b}{2a} \liff -2 = -\dfrac{b}{2 \cdot \left(-\dfrac{1}{2}\right)} \liff -2 = \dfrac{b}{1} \liff b = -2
+x = -\dfrac{b}{2a} \liff 2 = -\dfrac{b}{2 \cdot \left(-\dfrac{1}{2}\right)} \liff 2 = \dfrac{b}{1} \liff b = 2
 $$
 
 Koeffisient $c$
@@ -377,13 +377,13 @@ Funksjonsuttrykket $f(x)$
 : Nå har vi funnet at koeffisientene til $f(x)$ er
 
     $$
-    a = -\dfrac{1}{2} \and b = -2 \and c = 1
+    a = -\dfrac{1}{2} \and b = 2 \and c = 1
     $$
 
     Dermed er
 
     $$
-    f(x) = -\dfrac{1}{2}x^2 - 2x + 1
+    f(x) = -\dfrac{1}{2}x^2 + 2x + 1
     $$
 
 ::::
