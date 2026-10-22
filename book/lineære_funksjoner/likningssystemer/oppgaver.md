@@ -2,7 +2,7 @@
 
 
 :::::::::::::::{exercise} Oppgave 1
-Bruk figurene til å løse likningsystemene.
+Bruk figurene til å løse likningssystemene.
 
 
 :::::::::::::{part} a
@@ -159,7 +159,7 @@ layout: sidebar
 ---
 :::
 
-Løs likningsystemet nedenfor grafisk. 
+Løs likningssystemet nedenfor grafisk. 
 
 \begin{align*}
     -2x + y &= 3 \\
@@ -206,7 +206,7 @@ layout: sidebar
 ---
 :::
 
-Løs likningsystemet nedenfor grafisk. 
+Løs likningssystemet nedenfor grafisk. 
 
 \begin{align*}
 -x + y &= -1 \\
@@ -254,7 +254,7 @@ layout: sidebar
 
 
 
-Løs likningsystemet nedenfor grafisk. 
+Løs likningssystemet nedenfor grafisk. 
 
 \begin{align*}
 2x - y &= 0 \\
@@ -305,7 +305,7 @@ layout: sidebar
 :::
 
 
-Løs likningsystemet nedenfor grafisk. 
+Løs likningssystemet nedenfor grafisk. 
 
 \begin{align*}
     -2x + y &= -5 \\
