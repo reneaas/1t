@@ -693,7 +693,7 @@ $$
 $$
 
 $$
-y = \dfrac{14}{3} = \dfrac{2 \cdot 7}{2 \cdot 3} = \dfrac{7}{3}
+y = \dfrac{14}{6} = \dfrac{2 \cdot 7}{2 \cdot 3} = \dfrac{7}{3}
 $$
 
 Dermed er løsningen 
