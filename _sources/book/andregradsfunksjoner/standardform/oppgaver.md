@@ -301,6 +301,153 @@ $$
 :::::::::::::
 
 
+
+:::::::::::::{part} c
+:::{plot}
+width: 350px
+align: right
+function: 2*x**2 - 8*x, h
+fontsize: 26
+ymin: -9
+ymax: 5
+:::
+
+Grafen til en andregradsfunksjon $h$ er vist i figuren til høyre.
+
+Bestem $h(x)$.
+
+
+:::::{answer}
+$$
+h(x) = 2x^2 - 8x
+$$
+
+::::{solution}
+Grafen til $h$ har et bunnpunkt i $(2, -8)$. Øker vi $x$ med én enhet, så øker $h(x)$ med $2$. Dermed er $a = 2$.
+
+Symmetrilinja til grafen er $x = 2$ som gir
+
+$$
+x = -\dfrac{b}{2a} \liff 2 = -\dfrac{b}{2 \cdot 2} \liff b = -8
+$$
+
+Grafen skjærer $y$-aksen i $(0, 0)$ som gir at $c = 0$. Dermed er 
+
+$$
+h(x) = 2x^2 - 8x
+$$
+::::
+:::::
+
+:::::::::::::
+
+
+:::::::::::::::
+
+
+
+---
+
+
+
+:::::::::::::::{exercise} Oppgave 4
+
+
+:::::::::::::{part} a
+:::{plot}
+width: 350px
+align: right
+function: 1/2 * x**2 + 2*x - 1, f
+fontsize: 26
+xmin: -7
+xmax: 5
+:::
+
+Grafen til en andregradsfunksjon $f$ er vist i figuren til høyre.
+
+Bestem $f(x)$.
+
+
+:::::{answer}
+$$
+f(x) = \frac{1}{2}x^2 + 2x - 1
+$$
+
+::::{solution}
+Grafen har et bunnpunkt i $(-2, -3)$. Dersom vi øker $x$ med $2$ enheter, så ender vi opp i $(0, -1)$ på grafen. Da har $f(x)$ økt med $2$ som gir
+
+$$
+2^2 \cdota = 2 \liff 4a = 2 \liff a = \dfrac{1}{2}
+$$
+
+Symmetrilinja er gitt ved $x = -2$ som gir
+
+$$
+-2 = -\dfrac{b}{2a} \liff b = 4a = 4 \cdot \dfrac{1}{2} = 2
+$$
+
+Grafen skjærer $y$-aksen i $(0, -1)$ som gir at $c = -1$. Dermed er 
+
+$$
+f(x) = \frac{1}{2}x^2 + 2x - 1
+$$
+::::
+:::::
+
+:::::::::::::
+
+
+
+:::::::::::::{part} b
+:::{plot}
+width: 350px
+align: right
+function: -1/3 * x**2 + 4*x, g
+fontsize: 26
+xmin: -2
+xmax: 16
+xstep: 2
+ymin: -2
+ymax: 14
+ystep: 2
+:::
+
+
+Grafen til en andregradsfunksjon $g$ er vist i figuren til høyre.
+
+Bestem $g(x)$.
+
+
+:::::{answer}
+$$
+g(x) = -\frac{1}{3}x^2 + 4x
+$$
+
+::::{solution}
+Grafen har et toppunkt i $(6, 12)$. Øker vi $x$ med $6$ enheter, så ender vi opp i $(12, 0)$ på grafen som betyr at 
+
+$$
+6^2 a = -12 \liff 36a = -12 \liff a = -\dfrac{1}{3}
+$$
+
+Symmetrilinja til grafen er gitt ved $x = 6$ som gir
+
+$$
+6 = -\dfrac{b}{2a} \liff b = -12a = -12 \cdot \left(-\dfrac{1}{3}\right) = 4
+$$
+
+Grafen skjærer $y$-aksen i $(0, 0)$ som gir at $c = 0$. Dermed er 
+
+$$
+g(x) = -\frac{1}{3}x^2 + 4x
+$$
+::::
+:::::
+
+
+:::::::::::::
+
+
 :::::::::::::{part} c
 :::{plot}
 width: 350px
@@ -329,7 +476,7 @@ $$
 Symmetrilinja er $x = 0$ som gir
 
 $$
-x = -\dfrac{b}{2a} \liff 0 = -\dfrac{b}{2 \cdot (-1)} \liff b = 0
+0 = -\dfrac{b}{2a} \liff b = 0
 $$
 
 Grafen skjærer også $y$-aksen i $(0, 2)$ som betyr at $c = 2$. Dermed er 
@@ -342,55 +489,13 @@ $$
 
 :::::::::::::
 
-
-:::::::::::::{part} d
-:::{plot}
-width: 350px
-align: right
-function: 2*x**2 - 8*x, p
-fontsize: 26
-ymin: -9
-ymax: 5
-:::
-
-Grafen til en andregradsfunksjon $p$ er vist i figuren til høyre.
-
-Bestem $p(x)$.
-
-
-:::::{answer}
-$$
-p(x) = 2x^2 - 8x
-$$
-
-::::{solution}
-Grafen til $p$ har et bunnpunkt i $(2, -8)$. Øker vi $x$ med én enhet, så øker $p(x)$ med $2$. Dermed er $a = 2$.
-
-Symmetrilinja til grafen er $x = 2$ som gir
-
-$$
-x = -\dfrac{b}{2a} \liff 2 = -\dfrac{b}{2 \cdot 2} \liff b = -8
-$$
-
-Grafen skjærer $y$-aksen i $(0, 0)$ som gir at $c = 0$. Dermed er 
-
-$$
-p(x) = 2x^2 - 8x
-$$
-::::
-:::::
-
-:::::::::::::
-
-
 :::::::::::::::
-
 
 
 ---
 
 
-:::::::::::::::{exercise} Oppgave 4
+:::::::::::::::{exercise} Oppgave 5
 :::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved 
 
@@ -609,7 +714,7 @@ Vi har at $a \gt 0$ som eliminerer graf C og D. Vi kan se at konstantleddet er n
 ---
 
 
-:::::::::::::::{exercise} Oppgave 5
+:::::::::::::::{exercise} Oppgave 6
 En andregradsfunksjon $f$ er gitt ved 
 
 $$
@@ -725,7 +830,7 @@ text: 2, 4, "$x = 2$", center-right
 ---
 
 
-:::::::::::::::{exercise-2} Oppgave 6
+:::::::::::::::{exercise-2} Oppgave 7
 :::::::::::::{part} a
 :::{plot}
 width: 100%
@@ -953,7 +1058,7 @@ Topp- eller bunnpunkt
 
 
 
-:::::::::::::::{exercise-2} Oppgave 7
+:::::::::::::::{exercise-2} Oppgave 8
 :::::::::::::{part} a
 
 :::{plot}
@@ -1327,7 +1432,155 @@ $$
 
 
 
-:::::::::::::::{exercise} Oppgave 8
+:::::::::::::::{exercise} Oppgave 9
+
+:::::::::::::{part} a
+Programmet nedenfor mangler funksjonsuttrykket $f(x)$ til en andregradsfunksjon $f$ for å kunne kjøres.
+
+
+:::{interactive-code}
+def f(x):
+    return ????
+    
+for x in range(0, 7):
+    print(f(x))
+
+
+:::
+
+
+
+Når programmet ble kjørt med det riktige funksjonsuttrykket, skrev det ut følgende verdier:
+
+:::{code-block} console
+4
+-1
+-4
+-5
+-4
+-1
+4
+:::
+
+
+Bestem $f(x)$ og fiks programmet. 
+
+Sjekk at du får samme utskrift når du kjører programmet.
+
+
+
+
+:::::{answer}
+$$
+f(x) = x^2 - 6x +4
+$$
+
+
+::::{solution}
+Når vi kjører programmet, så får vi $f(x)$ for $x = 0, 1, \ldots, 6$. I praksis får vi funksjonsverdiene til verditabellen
+
+:::{table}
+---
+width: 70%
+transpose: true
+---
+labels: $x$, $f(x)$
+$0$, $4$
+$1$, $-1$
+$2$, $-4$
+$3$, $-5$
+$4$, $-4$
+$5$, $-1$
+$6$, $4$
+:::
+
+Vi kan observere at $x = 3$ må være symmetrilinja siden $f(2) = f(4)$ og tilsvarende jo lenger vekk fra symmetrilinja vi beveger oss. 
+
+Fra $x = 3$ til $x = 4$ øker $f(x)$ med $1$ som betyr at $a = 1$
+
+Fra symmetrilinja får vi at 
+
+$$
+3 = -\dfrac{b}{2a} \liff b = -6a = -6
+$$
+
+Og for $x = 0$ er $f(x) = 4$ som betyr at $c = 4$. Dermed er 
+
+$$
+f(x) = x^2 - 6x + 4
+$$
+
+
+::::
+
+
+:::::
+
+
+
+:::::::::::::
+
+
+
+:::::::::::::{part} b
+Siri har laget programmet nedenfor.
+
+Avgjør hvilken verdi programmet skriver ut. Sjekk deretter svaret ditt.
+
+:::{interactive-code}
+---
+predict:
+---
+def f(x):
+    return x ** 2 + 2 * x - 15
+
+x = -5
+
+while f(x) > f(x + 1):
+    x = x + 1
+
+print((x, f(x)))
+:::
+
+
+
+:::::{answer}
+$$
+(1, -16)
+$$
+
+
+::::{solution}
+Programmet leter etter bunnpunktet på grafen til $f$. Først finner vi symmetrilinja:
+
+$$
+x = -\dfrac{b}{2a} = -\dfrac{2}{2 \cdot 1} = -1
+$$
+
+Deretter regner vi ut $y$-koordinaten til bunnpunktet:
+
+$$
+f(-1) = (-1)^2 + 2 \cdot (-1) - 15 = 1 - 2 - 15 = -16
+$$
+
+Altså skriver programmet ut $(-1, -16)$. 
+::::
+
+:::::
+:::::::::::::
+
+
+
+
+:::::::::::::::
+
+
+
+---
+
+
+
+:::::::::::::::{exercise} Oppgave 10
 
 
 ::::{hint} Hvordan bestemmer jeg funksjonsuttrykket med CAS?
@@ -1487,63 +1740,6 @@ $$
 :::::
 
 :::::::::::::
-
-
-:::::::::::::::
-
-
-
----
-
-
-
-:::::::::::::::{exercise} Oppgave 9
-Siri har laget programmet nedenfor.
-
-Avgjør hvilken verdi programmet skriver ut. Sjekk deretter svaret ditt.
-
-:::{interactive-code}
----
-predict:
----
-def f(x):
-    return x ** 2 + 2 * x - 15
-
-x = -5
-
-while f(x) > f(x + 1):
-    x = x + 1
-
-print((x, f(x)))
-:::
-
-
-
-:::::{answer}
-$$
-(1, -16)
-$$
-
-
-::::{solution}
-Programmet leter etter bunnpunktet på grafen til $f$. Først finner vi symmetrilinja:
-
-$$
-x = -\dfrac{b}{2a} = -\dfrac{2}{2 \cdot 1} = -1
-$$
-
-Deretter regner vi ut $y$-koordinaten til bunnpunktet:
-
-$$
-f(-1) = (-1)^2 + 2 \cdot (-1) - 15 = 1 - 2 - 15 = -16
-$$
-
-Altså skriver programmet ut $(-1, -16)$. 
-::::
-
-:::::
-
-
 
 
 :::::::::::::::
