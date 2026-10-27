@@ -167,7 +167,7 @@ $$
 :::::::::::::
 
 
-:::::::::::::{part} e
+:::::::::::::{part} d
 Bestem $f(x)$.
 
 :::::{answer}
@@ -1062,7 +1062,7 @@ Topp- eller bunnpunkt
 :::::::::::::{part} a
 
 :::{plot}
-width: 100%
+width: 350px
 align: right
 fontsize: 26
 function: -1/2 * x**2 + 2*x + 1, f
@@ -1143,7 +1143,7 @@ $$
 :::::::::::::{part} b
 
 :::{plot}
-width: 100%
+width: 350px
 align: right
 fontsize: 26
 ticks: off
@@ -1211,128 +1211,14 @@ $$
 
 
 
+
 :::::::::::::{part} c
 :::{plot}
-width: 100%
-align: right
-ticks: off
-fontsize: 26
-function: x**2 - 6*x + 9, h
-point: (3, 0)
-point: (5, 4)
-point: (1, 4)
-text: 5, 4, "$(5, 4)$", bottom-right
-text: 1, 4, "$(1, 4)$", top-right
-xmin: -1
-ymin: -1
-:::
-
-
-I figuren til høyre vises grafen til en andregradsfunksjon $h$.
-
-
-Bestem $h(x)$.
-
-
-
-:::::{answer-2}
-
-$$
-h(x) = x^2 - 6x + 9 = (x - 3)^2
-$$
-
-::::{solution-2}
-Funksjonsuttrykket kan skrives på formen
-
-$$
-h(x) = ax^2 + bx + c.
-$$
-
-Siden punktene $(1, 4)$ og $(5, 4)$ har samme $y$-koordinat, vil symmetrilinja ligge midt mellom de punktene. Det kan vi regne ut ved å ta gjennomsnittet av $x$-koordinatene:
-
-$$
-x_0 = \dfrac{1 + 5}{2} = \dfrac{6}{2} = 3
-$$
-
-Da får vi at
-
-$$
-x_0 = -\dfrac{b}{2a} \liff 3 = -\dfrac{b}{2a}
-$$
-
-Altså må 
-
-$$
-b = -6a
-$$
-
-Så langt kan vi skrive $h(x)$ som
-
-$$
-h(x) = ax^2 - 6ax + c
-$$
-
-Bunnpunktet til grafen ligger på $x$-aksen, med koordinatene $(3, 0)$ som betyr at 
-
-$$
-h(3) = 0
-$$
-
-$$
-a\cdot 3^2 - 6a \cdot 3 + c = 0
-$$
-
-$$
-9a - 18a + c = 0
-$$
-
-$$
-c = 9a
-$$
-
-Altså er funksjonsuttrykket 
-
-$$
-h(x) = ax^2 - 6ax + 9a = a(x^2 - 6x + 9) = a(x - 3)^2 
-$$
-
-Til slutt bruker vi ett av de andre punktene til å finne $a$. Vi velger $(1, 4)$: 
-
-$$
-h(1) = 4
-$$
-
-$$
-a(1 - 3)^2 = 4
-$$
-
-$$
-4a = 4
-$$
-
-$$
-a = 1
-$$
-
-Dermed er funksjonsuttrykket
-
-$$
-h(x) = x^2 - 6x + 9 = (x - 3)^2
-$$
-::::
-:::::
-
-:::::::::::::
-
-
-
-:::::::::::::{part} d
-:::{plot}
-width: 100%
+width: 350px
 align: right
 fontsize: 26
 ticks: off
-function: -2*x**2 + 2*x + 12, p
+function: -2*x**2 + 2*x + 12, h
 point: (-2, 0)
 point: (3, 0)
 point: (0, 12)
@@ -1343,29 +1229,29 @@ ymax: 14
 :::
 
 
-I figuren til høyre vises en andregradsfunksjon $p$.
+I figuren til høyre vises en andregradsfunksjon $h$.
 
-Bestem $p(x)$.
+Bestem $h(x)$.
 
 
 
 :::::{answer-2}
-$$
-p(x) = -2x^2 + 2x + 12
-$$
 
+$$
+h(x) = -2x^2 + 2x + 12
+$$
 
 ::::{solution-2}
 Funksjonsuttrykket kan skrives som
 
 $$
-p(x) = ax^2 + bx + c
+h(x) = ax^2 + bx + c
 $$
 
 
-Siden grafen til $p$ går skjærer gjennom $y$-aksen i $(0, 12)$ er $c = 12$.
+Siden grafen til $h$ går skjærer gjennom $y$-aksen i $(0, 12)$ er $c = 12$.
 
-Vi kan merke oss at grafen til $p$ skjærer $x$-aksen i $(-2, 0)$ og $(3, 0)$. Symmetrilinja vil ligge midt mellom disse to punktene som vi kan finne ved å ta gjennomsnittet av $x$-koordinatene:
+Vi kan merke oss at grafen til $h$ skjærer $x$-aksen i $(-2, 0)$ og $(3, 0)$. Symmetrilinja vil ligge midt mellom disse to punktene som vi kan finne ved å ta gjennomsnittet av $x$-koordinatene:
 
 $$
 x_0 = \dfrac{-2 + 3}{2} = \dfrac{1}{2}
@@ -1386,13 +1272,13 @@ $$
 Funksjonsuttrykket kan derfor skrives som
 
 $$
-p(x) = ax^2 - ax + 12
+h(x) = ax^2 - ax + 12
 $$
 
 Vi bruker ett av de nullpunktene til å finne $a$. Vi velger $(3, 0)$:
 
 $$
-p(3) = 0
+h(3) = 0
 $$
 
 $$
@@ -1414,7 +1300,7 @@ $$
 Dermed er funksjonsuttrykket
 
 $$
-p(x) = -2x^2 + 2x + 12
+h(x) = -2x^2 + 2x + 12
 $$
 ::::
 :::::
