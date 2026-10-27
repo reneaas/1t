@@ -29,14 +29,14 @@ width: 60%
 :::::::::::::{part} a
 Bestem $a$, $b$ og $c$ slik at grafen til $f$ har
 
-1. En horisontal asymptote med likningen $y = 3$
+1. En horisontal asymptote med likningen $y = 2$
 2. En vertikal asymptote med likningen $x = -1$
-3. Et nullpunkt i $x = 2$.
+3. Et nullpunkt i $x = 3$.
 
 
 :::::{answer-2}
 $$
-a = 3 \and b = 2 \and c = -1
+a = 2 \and b = 3 \and c = -1
 $$
 :::::
 :::::::::::::
