@@ -70,28 +70,6 @@ Grafen har et ekstremalpunkt i $(2, -4)$. Siden den ledende koeffisienten $a = -
 
 :::::::::::::
 
-
-:::::::::::::{part} d
-En andregradsfunksjon $d$ er gitt ved
-
-$$
-p(x) = 4(x + 3)^2 + 2
-$$
-
-Bestem grafens ekstremalpunkt og avgjør om det er et toppunkt eller bunnpunkt.
-
-
-:::::{answer}
-Bunnpunkt i $(-3, 2)$.
-
-::::{solution}
-Grafen har et ekstremalpunkt i $(-3, 2)$. Siden den ledende koeffisienten $a = 4 > 0$, så grafen er konveks {poly-icon}`smile` og ekstremalpunktet er derfor et bunnpunkt.
-::::
-
-:::::
-
-:::::::::::::
-
 :::::::::::::::
 
 
