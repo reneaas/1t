@@ -80,7 +80,7 @@ Grafen har et ekstremalpunkt i $(2, -4)$. Siden den ledende koeffisienten $a = -
 
 :::::::::::::{part} a
 :::{plot}
-width: 100%
+width: 350px
 align: right
 fontsize: 26
 function: -(x + 1)**2 + 4, f
@@ -104,7 +104,7 @@ $$
 
 :::::::::::::{part} b
 :::{plot}
-width: 100%
+width: 350px
 align: right
 fontsize: 26
 function: 2 * (x - 2)**2 + 1, g
@@ -128,7 +128,7 @@ $$
 
 :::::::::::::{part} c
 :::{plot}
-width: 100%
+width: 350px
 align: right
 fontsize: 26
 function: -2*(x - 2)**2 - 1, h
@@ -152,7 +152,7 @@ $$
 
 :::::::::::::{part} d
 :::{plot}
-width: 100%
+width: 350px
 align: right
 fontsize: 26
 function: (x + 2)**2 - 3, p
@@ -784,22 +784,22 @@ $$
 g(x) = a(x + 3)^2 + 2.
 $$
 
-Vi trenger ett punkt til på grafen til $g$ for å bestemme verdien til $a$. Vi ser at grafen skjærer $x$-aksen i $(-2, 0)$ som betyr at 
+Vi trenger ett punkt til på grafen til $g$ for å bestemme verdien til $a$. Vi ser at grafen skjærer $x$-aksen i $(-1, 0)$ som betyr at 
 
 $$
-g(-2) = 0 \liff a(-2 + 3)^2 + 2 = 0.
+g(-1) = 0 \liff a(-1 + 3)^2 + 2 = 0.
 $$
 
 Vi forenkler dette til
 
 $$
-a + 2 = 0 \liff a = -2.
+4a + 2 = 0 \liff a = -\dfrac{1}{2}.
 $$
 
 Dermed er 
 
 $$
-g(x) = -2(x + 3)^2 + 2.
+g(x) = -\dfrac{1}{2}(x + 3)^2 + 2.
 $$
 ::::
 
@@ -1094,7 +1094,7 @@ $$
 h(x) = -2(x - 2)^2 + 3
 $$
 
-Lag en skisse av grafen til $g$ der du markerer:
+Lag en skisse av grafen til $h$ der du markerer:
 * Ekstremalpunktet
 * Symmetrilinja
 * Skjæringspunktet med $y$-aksen
@@ -1109,7 +1109,7 @@ $$
 p(x) = (x + 2)^2 + 3
 $$
 
-Lag en skisse av grafen til $g$ der du markerer:
+Lag en skisse av grafen til $p$ der du markerer:
 * Ekstremalpunktet
 * Symmetrilinja
 * Skjæringspunktet med $y$-aksen
@@ -1541,7 +1541,7 @@ $$
 
 
 :::{margin} Tips: Oppgave 12
-I denne oppgaven kan du selv velge om du vil bestemme $f(x)$ på standardform eller ekstremalpunktsform. Målet er å øve på å velge den formen som utynytter opplysningene i oppgaven best mulig!
+I denne oppgaven kan du selv velge om du vil bestemme $f(x)$ på standardform eller ekstremalpunktsform. Målet er å øve på å velge den formen som utnytter opplysningene i oppgaven best mulig!
 :::
 
 

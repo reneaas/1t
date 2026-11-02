@@ -1,7 +1,8 @@
 # Oppgaver: Nullpunktsform
 
-:::::::::::::::{exercise} Oppgave 1
 
+
+:::::::::::::::{exercise} Oppgave 1
 :::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved
 
@@ -21,11 +22,12 @@ $$
 :::::::::::::
 
 
+
 :::::::::::::{part} b
 En andregradsfunksjon $g$ er gitt ved
 
 $$
-g(x) = -2(x - 1)(x - 1) = -2(x - 1)^2
+g(x) = -2(x - 1)^2
 $$
 
 Bestem nullpunktene til $g$.
@@ -36,785 +38,45 @@ $$
 x = 1
 $$
 :::::
-
 :::::::::::::
 
 
+
 :::::::::::::{part} c
-En andregradsfunksjon $h$ er gitt ved
+En andregradsfunksjon $h$ er gitt ved 
 
 $$
-h(x) = \left(x - \dfrac{1}{2}\right)(x + 4)
+h(x) = 4x(x - 2)
 $$
 
 Bestem nullpunktene til $h$.
 
+
 :::::{answer}
 $$
-x = \dfrac{1}{2} \or x = -4
+x = 0 \or x = 2
 $$
 :::::
 
 :::::::::::::
 
-
-:::::::::::::{part} d
-En andregradsfunksjon $p$ er gitt ved
-
-$$
-p(x) = -3(x + 2)^2 
-$$
-
-Bestem nullpunktene til $p$.
-
-
-:::::{answer}
-$$
-x = -2
-$$
-:::::
-
-:::::::::::::
 
 :::::::::::::::
-
 
 
 ---
 
 
-:::{margin} Tips: Oppgave 2
-Husk på konjugatsetningen:
-
-$$
-a^2 - b^2 = (a + b)(a - b)
-$$
-
-:::
 
 :::::::::::::::{exercise} Oppgave 2
-
-
-:::::::::::::{part} a
-En andregradsfunksjon $f$ er gitt ved
-
-$$
-f(x) = (x - 2)^2 - 4
-$$
-
-Bestem $f(x)$ på nullpunktsform.
-
-
-:::::{answer}
-$$
-f(x) = x(x - 4)
-$$
-
-::::{solution}
-Vi bruker konjugatsetningen for å skrive om $f(x)$ til nullpunktsform:
-
-\begin{align*}
-f(x) &= (x - 2)^2 - 2^2 \\
-\\
-&= (x - 2 + 2)(x - 2 - 2) \\
-\\
-&= (x - 0)(x - 4) \\
-\\
-&= x(x - 4)
-\end{align*}
-::::
-
-:::::
-
-
-:::::::::::::
-
-
-:::::::::::::{part} b
-En andregradsfunksjon $g$ er gitt ved
-
-$$
-g(x) = -(x + 3)^2 + 9
-$$
-
-Bestem $g(x)$ på nullpunktsform.
-
-
-:::::{answer}
-$$
-g(x) = -x(x + 6)
-$$
-
-::::{solution}
-Vi bruker konjugatsetningen for å skrive om $g(x)$ til nullpunktsform:
-
-\begin{align*}
-g(x) &= -(x + 3)^2 + 3^2 \\
-\\
-&= -\left((x + 3)^2 - 3^2 \right) \\
-\\
-&= -\left((x + 3 + 3)(x + 3 - 3)\right) \\
-\\
-&= -\left((x + 6)(x - 0)\right) \\
-\\
-&= -x(x + 6)    
-\end{align*}
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::{part} c
-En andregradsfunksjon $h$ er gitt ved
-
-$$
-h(x) = (x - 6)^2 - 1
-$$
-
-Bestem $h(x)$ på nullpunktsform.
-
-
-:::::{answer}
-$$
-h(x) = (x - 5)(x - 7)
-$$
-
-::::{solution}
-Vi bruker konjugatsetningen for å skrive om $h(x)$ til nullpunktsform:
-
-\begin{align*}
-h(x) &= (x - 6)^2 - 1^2 \\
-\\
-&= (x - 6 + 1)(x - 6 - 1) \\
-\\
-&= (x - 5)(x - 7)
-\end{align*}
-::::
-
-:::::
-
-
-:::::::::::::
-
-
-:::::::::::::{part} d
-En andregradsfunksjon $p$ er gitt ved
-
-$$
-p(x) = -(x - 3)^2 + 16
-$$
-
-Bestem $p(x)$ på nullpunktsform.
-
-
-:::::{answer}
-$$
-p(x) = -(x - 7)(x + 1)
-$$
-
-
-::::{solution}
-Vi bruker konjugatsetningen for å skrive om $p(x)$ til nullpunktsform:
-
-\begin{align*}
-p(x) &= -(x - 3)^2 + 4^2 \\
-\\
-&= -\left((x - 3)^2 - 4^2 \right) \\
-\\
-&= -\left((x - 3 + 4)(x - 3 - 4)\right) \\
-\\
-&= -\left((x + 1)(x - 7)\right) \\
-\\
-&= -(x + 1)(x - 7)
-\end{align*}
-::::
-:::::
-:::::::::::::
-
-
-
-::::::::::::::
-:::::::::::::::
-
-
-
----
-
-
-:::{margin} Tips: Oppgave 3
-Husk: Sammenheng mellom nullpunkter $x_1$ og $x_2$ og symmetrilinje $x_0$ er gitt ved
-
-$$
-x_0 = \dfrac{x_1 + x_2}{2}
-$$
-:::
-
-
-:::::::::::::::{exercise} Oppgave 3
-
-
-:::::::::::::{part} a
-En andregradsfunksjon $f$ er gitt ved
-
-$$
-f(x) = 2(x - 1)(x + 3)
-$$
-
-Bestem $f(x)$ på ekstremalpunktsform. 
-
-
-:::::{answer}
-$$
-f(x) = 2(x + 1)^2 - 8.
-$$
-
-::::{solution}
-Fra $f(x)$ kan vi se at nullpunktene er $x_1 = 1$ og $x_2 = -3$. Symmetrilinja er da gitt ved 
-
-$$
-x_0 = \frac{x_1 + x_2}{2} = \frac{1 - 3}{2} = -1.
-$$
-
-For å bestemme $y$-koordinaten til ekstremalpunktet må vi sette inn $x_0$ i $f(x)$:
-
-$$
-y_0 = f(-1) = 2(-1 - 1)(-1 + 3) = 2(-2)(2) = -8.
-$$
-
-Vi kan også lese av at $a = 2$ fra $f(x)$. Dermed er $f(x)$ på ekstremalpunktsform gitt ved
-
-$$
-f(x) = 2(x + 1)^2 - 8.
-$$
-::::
-
-:::::
-
-:::::::::::::
-
-:::::::::::::{part} b
-En andregradsfunksjon $g$ er gitt ved
-
-$$
-g(x) = -3(x + 2)(x - 4)
-$$
-
-Bestem $g(x)$ på ekstremalpunktsform.
-
-
-
-:::::{answer}
-$$
-g(x) = -3(x - 1)^2 + 27.
-$$
-
-::::{solution}
-Fra $g(x)$ kan vi se at nullpunktene er $x_1 = -2$ og $x_2 = 4$. Symmetrilinja er da gitt ved
-
-$$
-x_0 = \frac{x_1 + x_2}{2} = \frac{-2 + 4}{2} = 1.
-$$
-
-For å bestemme $y$-koordinaten til ekstremalpunktet må vi sette inn $x_0$ i $g(x)$:
-
-$$
-y_0 = g(1) = -3(1 + 2)(1 - 4) = -3(3)(-3) = 27.
-$$
-
-Vi kan også lese av at $a = -3$ fra $g(x)$. Dermed er $g(x)$ på ekstremalpunktsform gitt ved
-
-$$
-g(x) = -3(x - 1)^2 + 27.
-$$
-::::
-
-:::::
-
-
-
-:::::::::::::
-
-
-:::::::::::::{part} c
-En andregradsfunksjon $h$ er gitt ved
-
-$$
-h(x) = \frac{1}{2}(x + 5)(x - 1)
-$$
-
-Bestem $h(x)$ på ekstremalpunktsform.
-
-
-
-:::::{answer}
-$$
-h(x) = \frac{1}{2}(x + 2)^2 - \frac{9}{2}.
-$$
-
-::::{solution}
-Fra $h(x)$ kan vi se at nullpunktene er $x_1 = -5$ og $x_2 = 1$. Symmetrilinja er da gitt ved
-
-$$
-x_0 = \frac{x_1 + x_2}{2} = \frac{-5 + 1}{2} = -2.
-$$
-
-For å bestemme $y$-koordinaten til ekstremalpunktet må vi sette inn $x_0$ i $h(x)$:
-
-$$
-y_0 = h(-2) = \frac{1}{2}(-2 + 5)(-2 - 1) = \frac{1}{2}(3)(-3) = -\frac{9}{2}.
-$$
-
-Vi kan også lese av at $a = \frac{1}{2}$ fra $h(x)$. Dermed er $h(x)$ på ekstremalpunktsform gitt ved
-
-$$
-h(x) = \frac{1}{2}(x + 2)^2 - \frac{9}{2}.
-$$
-::::
-
-:::::
-
-
-:::::::::::::
-
-
-:::::::::::::{part} d
-En andregradsfunksjon $p$ er gitt ved
-
-$$
-p(x) = -\frac{1}{3}(x - 2)(x + 4)
-$$
-
-Bestem $p(x)$ på ekstremalpunktsform.
-
-
-:::::{answer}
-$$
-p(x) = -\frac{1}{3}(x + 1)^2 + 3.
-$$
-
-::::{solution}
-Fra $p(x)$ kan vi se at nullpunktene er $x_1 = 2$ og $x_2 = -4$. Symmetrilinja er da gitt ved
-
-$$
-x_0 = \frac{x_1 + x_2}{2} = \frac{2 - 4}{2} = -1.
-$$
-
-For å bestemme $y$-koordinaten til ekstremalpunktet må vi sette inn $x_0$ i $p(x)$:
-
-$$
-y_0 = p(-1) = -\frac{1}{3}(-1 - 2)(-1 + 4) = -\frac{1}{3}(-3)(3) = 3.
-$$
-
-Vi kan også lese av at $a = -\frac{1}{3}$ fra $p(x)$. Dermed er $p(x)$ på ekstremalpunktsform gitt ved
-
-$$
-p(x) = -\frac{1}{3}(x + 1)^2 + 3.
-$$
-::::
-
-:::::
-
-
-:::::::::::::
-
-:::::::::::::::
-
-
-
----
-
-
-:::::::::::::::{exercise} Oppgave 4
-
-
-:::::::::::::{part} a
-En andregradsfunksjon $f$ er gitt ved
-
-$$
-f(x) = (x - 1)(x + 3)
-$$
-
-Bestem $f(x)$ på standardform.
-
-
-:::::{answer}
-$$
-f(x) = x^2 + 2x - 3.
-$$
-
-::::{solution}
-Vi ganger ut parentesene og samler leddene: 
-
-\begin{align*}
-f(x) &= (x - 1)(x + 3) \\
-\\
-&= x^2 + 3x - x - 3 \\
-\\
-&= x^2 + 2x - 3.
-\end{align*}
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::{part} b
-En andregradsfunksjon $g$ er gitt ved
-
-$$
-g(x) = -2(x + 2)(x - 4)
-$$
-
-Bestem $g(x)$ på standardform.
-
-
-:::::{answer}
-$$
-g(x) = -2x^2 + 4x + 16.
-$$
-
-::::{solution}
-Vi ganger ut parentesene og samler leddene:
-
-\begin{align*}
-g(x) &= -2(x + 2)(x - 4) \\
-\\
-&= -2(x^2 - 4x + 2x - 8) \\
-\\
-&= -2(x^2 - 2x - 8) \\
-\\
-&= -2x^2 + 4x + 16.
-\end{align*}
-
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::{part} c
-En andregradsfunksjon $h$ er gitt ved
-
-$$
-h(x) = -3(x + 4)^2 
-$$
-
-
-Bestem $h(x)$ på standardform.
-
-:::::{answer}
-$$
-h(x) = -3x^2 - 24x - 48.
-$$
-
-::::{solution}
-Vi ganger ut parentesene og samler leddene:
-
-\begin{align*}
-h(x) &= -3(x + 4)^2 \\
-\\
-&= -3(x^2 + 8x + 16) \\
-\\
-&= -3x^2 - 24x - 48.
-\end{align*}
-::::
-
-:::::
-
-
-:::::::::::::
-
-
-:::::::::::::{part} d
-En andregradsfunksjon $p$ er gitt ved
-
-$$
-p(x) = 2(x + 2)(x + 3)
-$$
-
-Bestem $p(x)$ på standardform.
-
-
-:::::{answer}
-$$
-p(x) = 2x^2 + 10x + 12.
-$$
-
-::::{solution}
-Vi ganger ut parentesene og samler leddene:
-
-\begin{align*}
-p(x) &= 2(x + 2)(x + 3) \\
-\\
-&= 2(x^2 + 3x + 2x + 6) \\
-\\
-&= 2(x^2 + 5x + 6) \\
-\\
-&= 2x^2 + 10x + 12.
-\end{align*}
-::::
-
-:::::
-
-:::::::::::::
-
-:::::::::::::::
-
-
----
-
-:::{margin} Tips: Oppgave 5
-Husk at for et uttrykk på standardform $ax^2 + bx + c$, så er symmetrilinja gitt ved 
-
-$$
-x_0 = -\frac{b}{2a}
-$$
-:::
-
-
-:::::::::::::::{exercise} Oppgave 5
-
-:::::::::::::{part} a
-En andregradsfunksjon $f$ er gitt ved
-
-$$
-f(x) = x^2 + 6x + 8
-$$
-
-Bestem $f(x)$ på nullpunktsform.
-
-
-:::::{answer}
-$$
-f(x) = (x + 2)(x + 4).
-$$
-
-::::{solution}
-Vi ser at koeffisientene til $f(x)$ er 
-
-$$
-a = 1 \and b = 6 \and c = 8.
-$$
-
-Så bestemmer vi symmetrilinja: 
-
-$$
-x_0 = -\frac{b}{2a} = -\frac{6}{2 \cdot 1} = -3.
-$$
-
-Deretter finner vi $y$-koordinaten til ekstremalpunktet: 
-
-$$
-y_0 = f(-3) = (-3)^2 + 6(-3) + 8 = 9 - 18 + 8 = -1.
-$$
-
-Dermed kan vi skrive $f(x)$ på ekstremalpunktsform som
-
-$$
-f(x) = (x + 3)^2 - 1.
-$$
-
-Nå bruker vi konjugatsetningen for å skrive om $f(x)$ til nullpunktsform: 
-
-$$
-f(x) = (x + 3)^2 - 1 = (x + 3 - 1)(x + 3 + 1) = (x + 2)(x + 4).
-$$
-
-::::
-
-:::::
-
-:::::::::::::
-
-:::::::::::::{part} b
-En andregradsfunksjon $g$ er gitt ved
-
-
-$$
-g(x) = -x^2 + 4x + 5
-$$
-
-Bestem $g(x)$ på nullpunktsform.
-
-
-
-:::::{answer}
-$$
-g(x) = -(x + 1)(x - 5).
-$$
-
-::::{solution}
-Vi ser at koeffisientene til $g(x)$ er
-
-$$
-a = -1 \and b = 4 \and c = 5.
-$$
-
-Så bestemmer vi symmetrilinja:
-
-$$
-x_0 = -\frac{b}{2a} = -\frac{4}{2 \cdot -1} = 2.
-$$
-
-Deretter finner vi $y$-koordinaten til ekstremalpunktet:
-
-$$
-y_0 = g(2) = -2^2 + 4\cdot 2 + 5 = -4 + 8 + 5 = 9.
-$$
-
-Dermed kan vi skrive $g(x)$ på ekstremalpunktsform som
-
-$$
-g(x) = -(x - 2)^2 + 9.
-$$
-
-Nå bruker vi konjugatsetningen for å skrive om $g(x)$ til nullpunktsform:
-
-$$
-g(x) = -(x - 2)^2 + 3^2 = -(x - 2 + 3)(x - 2 - 3) = -(x + 1)(x - 5).
-$$
-
-
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::{part} c
-En andregradsfunksjon $h$ er gitt ved
-
-$$
-h(x) = x^2 - x - 6
-$$
-
-Bestem $h(x)$ på nullpunktsform.
-
-
-:::::{answer}
-$$
-h(x) = (x - 3)(x + 2).
-$$
-
-::::{solution}
-Vi ser at koeffisientene til $h(x)$ er
-
-$$
-a = 1 \and b = -1 \and c = -6.
-$$
-
-Så bestemmer vi symmetrilinja:
-
-$$
-x_0 = -\frac{b}{2a} = -\frac{-1}{2 \cdot 1} = \frac{1}{2}.
-$$
-
-Deretter finner vi $y$-koordinaten til ekstremalpunktet:
-
-$$
-y_0 = h\left(\frac{1}{2}\right) = \left(\frac{1}{2}\right)^2 - \frac{1}{2} - 6 = \frac{1}{4} - \frac{2}{4} - \frac{24}{4} = -\frac{25}{4}.
-$$
-
-Dermed kan vi skrive $h(x)$ på ekstremalpunktsform som
-
-$$
-h(x) = \left(x - \frac{1}{2}\right)^2 -\frac{25}{4}.
-$$
-
-Nå bruker vi konjugatsetningen for å skrive om $h(x)$ til nullpunktsform:
-
-$$
-h(x) = \left(x - \frac{1}{2}\right)^2 - \left(\frac{5}{2}\right)^2 = \left(x - \frac{1}{2} - \frac{5}{2}\right)\left(x - \frac{1}{2} + \frac{5}{2}\right) = (x - 3)(x + 2).
-$$
-::::
-
-:::::
-
-
-
-:::::::::::::
-
-
-:::::::::::::{part} d
-En andregradsfunksjon $p$ er gitt ved
-
-$$
-p(x) = 2x^2 + 8x - 10
-$$
-
-Bestem $p(x)$ på nullpunktsform.
-
-
-:::::{answer}
-$$
-p(x) = 2(x - 1)(x + 5).
-$$
-
-::::{solution}
-Vi ser at koeffisientene til $p(x)$ er
-
-$$
-a = 2 \and b = 8 \and c = -10.
-$$
-
-Da kan vi bestemme symmetrilinja:
-
-$$
-x_0 = -\frac{b}{2a} = -\frac{8}{2 \cdot 2} = -2.
-$$
-
-Deretter finner vi $y$-koordinaten til ekstremalpunktet:
-
-$$
-y_0 = p(-2) = 2(-2)^2 + 8(-2) - 10 = 8 - 16 - 10 = -18.
-$$
-
-Dermed kan vi skrive $p(x)$ på ekstremalpunktsform som
-
-$$
-p(x) = 2(x + 2)^2 - 18.
-$$
-
-Først faktoriserer vi ut den ledende koeffisienten $2$:
-
-$$
-p(x) = 2(x + 2)^2 - 18 = 2\left((x + 2)^2 - 9\right)
-$$
-
-Deretter bruker vi konjugatsetningen for å skrive om $p(x)$ til nullpunktsform:
-
-$$
-p(x) = 2\left((x + 2)^2 - 3^2\right) = 2\left((x + 2 - 3)(x + 2 + 3)\right) = 2(x - 1)(x + 5).
-$$
-::::
-
-:::::
-
-
-:::::::::::::
-:::::::::::::::
-
-
----
-
-
-
-
-
-:::::::::::::::{exercise} Oppgave 6
 
 :::::::::::::{part} a
 
 :::{plot}
-width: 320px
+width: 350px
 align: right
-fontsize: 28
 function: (x + 2) * (x - 1), f
+fontsize: 24
 :::
 
 
@@ -823,101 +85,112 @@ Grafen til en andregradsfunksjon $f$ er vist i figuren til høyre.
 Bestem $f(x)$ på nullpunktsform.
 
 
+
 :::::{answer}
 $$
-f(x) = (x + 2)(x - 1).
+f(x) = (x + 2)(x - 1)
 $$
 
 ::::{solution}
-Vi ser at grafen til $f$ har nullpunkter $(-2, 0)$ og $(1, 0)$. Det betyr at 
+Nullpunktene til $f$ er $x = -2$ og $x = 1$. Dermed er 
 
 $$
 f(x) = a(x + 2)(x - 1)
 $$
 
-Vi ser også at grafen skjærer $y$-aksen i punktet $(0, -2)$ som betyr at 
+For å bestemme $a$, velger vi et annet punkt på grafen enn nullpunktene. Grafen skjærer $y$-aksen i $(0, -2)$ som gir
 
 $$
-f(0) = -2 \liff a(0 + 2)(0 - 1) = -2.
+f(0) = -2
 $$
 
-Dette forenkler vi til
-
 $$
--2a = -2 \liff a = 1.
+a(0 + 2)\cdot(0 - 1) = -2
 $$
 
-Dermed har vi at
+$$
+-2a = -2 \liff a = 1
+$$
+
+Dermed er 
 
 $$
-f(x) = 1\cdot(x + 2)(x - 1) = (x + 2)(x - 1).
+f(x) = (x + 2)(x - 1)
 $$
+
 ::::
-
 :::::
+
 
 :::::::::::::
 
 
 :::::::::::::{part} b
+
 :::{plot}
-width: 320px
+width: 350px
 align: right
-fontsize: 28
-function: 3 * (x + 1)**2, g
+function: -2 * (x + 1) * (x - 4), g
+ymax: 16
+ymin: -4
+ystep: 2
+fontsize: 24
 :::
 
+
 Grafen til en andregradsfunksjon $g$ er vist i figuren til høyre.
+
+
 
 Bestem $g(x)$ på nullpunktsform.
 
 
-
-
 :::::{answer}
 $$
-g(x) = 3(x + 1)^2
+g(x) = -2(x + 1)(x - 4)
 $$
 
 ::::{solution}
-Grafen til $g$ har bare ett nullpunkt i $(-1, 0)$. Det betyr at vi kan skrive $g(x)$ på nullpunktsform som
+Nullpunktene til $g$ er $x = -1$ og $x = 4$. Dermed er 
 
 $$
-g(x) = a(x + 1)(x + 1) = a(x + 1)^2
+g(x) = a(x + 1)(x - 4)
 $$
 
-Vi ser at grafen skjærer $y$-aksen i punktet $(0, 3)$ som betyr at 
+Grafen til $g$ skjærer $y$-aksen i $(0, 8)$ som gir at 
 
 $$
-g(0) = 3 \liff a(0 + 1)^2 = 3.
+g(0) = 8
 $$
 
-Dette forenkler vi til
-
 $$
-a = 3
+a(0 + 1)(0 - 4) = 8
 $$
 
-Dermed har vi at 
+$$
+-4a = 8 \liff a = -2
+$$
+
+Dermed er 
 
 $$
-g(x) = 3(x + 1)^2
+g(x) = -2(x + 1)(x - 4)
 $$
 ::::
-
 :::::
 
-
 :::::::::::::
+
 
 
 :::::::::::::{part} c
 
 :::{plot}
-width: 320px
+width: 350px
 align: right
-fontsize: 28
-function: -1/2 * (x + 2) * (x - 3), h
+function: 1/3 * (x + 5) * (x - 3), h
+fontsize: 24
+xmin: -7
 :::
 
 
@@ -926,682 +199,44 @@ Grafen til en andregradsfunksjon $h$ er vist i figuren til høyre.
 Bestem $h(x)$ på nullpunktsform.
 
 
-
 :::::{answer}
 $$
-h(x) = -\frac{1}{2}(x + 2)(x - 3).
+h(x) = \dfrac{1}{3}(x + 5)(x - 3)
 $$
 
 ::::{solution}
-Grafen til $h$ har nullpunkter i $(-2, 0)$ og $(3, 0)$. Det betyr at vi kan skrive $h(x)$ på nullpunktsform som
+Nullpunktene til $h$ er $x = -5$ og $x = 3$. Da har vi at 
 
 $$
-h(x) = a(x + 2)(x - 3).
+h(x) = a(x + 5)(x - 3)
 $$
 
-Vi ser at grafen skjærer $y$-aksen i punktet $(0, 3)$ som betyr at 
+Grafen til $h$ går gjennom punktet $(1, -4)$ som gir
 
 $$
-h(0) = 3 \liff a(0 + 2)(0 - 3) = 3.
+h(1) = -4
 $$
 
-Dette forenkler vi til
-
-$$
--6a = 3 \liff a = -\frac{1}{2}.
-$$
-
-Dermed har vi at
-
-$$
-h(x) = -\frac{1}{2}(x + 2)(x - 3).
-$$
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::{part} d
-
-:::{plot}
-width: 320px
-align: right
-fontsize: 28
-function: -2 * (x - 3)**2, p
-:::
-
-Grafen til en andregradsfunksjon $p$ er vist i figuren til høyre.
-
-Bestem $p(x)$ på nullpunktsform.
-
-
-
-:::::{answer}
-$$
-p(x) = -2(x - 3)^2
-$$
-
-::::{solution}
-Grafen til $p$ har bare ett nullpunkt i $(3, 0)$. Det betyr at vi kan skrive $p(x)$ på nullpunktsform som
-
-$$
-p(x) = a(x - 3)(x - 3) = a(x - 3)^2
-$$
-
-Vi ser at grafen går gjennom punktet $(2, -2)$ som betyr at 
-
-$$
-p(2) = -2 \liff a(2 - 3)^2 = -2 \liff a = -2.
-$$
-
-Dermed er uttrykket for $p(x)$ gitt ved 
-
-$$
-p(x) = -2(x - 3)^2
-$$
-
-::::
-
-:::::
-
-
-:::::::::::::
-
-:::::::::::::::
-
-
----
-
-
-:::::::::::::::{exercise} Oppgave 7
-
-
-:::::::::::::{part} a
-En andregradsfunksjon $f$ er gitt ved
-
-$$
-f(x) = -x^2 + 4x + 5
-$$
-
-Bestem nullpunktene til $f$.
-
-
-:::::{answer}
-$$
-x = -1 \or x = 5.
-$$
-
-::::{solution}
-Vi ser at koeffisientene til $f(x)$ er
-
-$$
-a = -1 \and b = 4 \and c = 5.
-$$
-
-Først finner vi symmetrilinja:
-
-$$
-x_0 = -\frac{b}{2a} = -\frac{4}{2 \cdot -1} = 2.
-$$
-
-Deretter finner vi $y$-koordinaten til ekstremalpunktet:
-
-$$
-y_0 = f(2) = -2^2 + 4\cdot 2 + 5 = -4 + 8 + 5 = 9.
-$$
-
-Ekstremalpunktsformen til $f(x)$ er da 
-
-$$
-f(x) = -(x - 2)^2 + 9.
-$$
-
-Så bruker vi konjugatsetningen for å skrive om $f(x)$ til nullpunktsform:
-
-$$
-f(x) = -\left((x - 2)^2 - 3^2\right) = -\left((x - 2 + 3)(x - 2 - 3)\right) = -(x + 1)(x - 5).
-$$
-
-Dermed er nullpunktene til $f$ gitt ved
-
-$$
-x = -1 \or x = 5.
-$$
-::::
-
-:::::
-
-
-:::::::::::::
-
-
-
-:::::::::::::{part} b
-En andregradsfunksjon $g$ er gitt ved
-
-$$
-g(x) = x^2 - 5x - 6
-$$
-
-Bestem i hvilke punkter grafen til $g$ skjærer $x$-aksen.
-
-
-:::::{answer}
-$$
-x = 6 \qog x = -1.
-$$
-
-::::{solution}
-Vi ser at koeffisientene til $g(x)$ er
-
-$$
-a = 1 \and b = -5 \and c = -6.
-$$
-
-Først finner vi symmetrilinja: 
-
-$$
-x_0 = -\frac{b}{2a} = -\frac{-5}{2 \cdot 1} = \frac{5}{2}.
-$$
-
-Deretter finner vi $y$-koordinaten til ekstremalpunktet:
-
-$$
-y_0 = g\left(\frac{5}{2}\right) = \left(\frac{5}{2}\right)^2 - 5\cdot\frac{5}{2} - 6 = \frac{25}{4} - \frac{25}{2} - 6 = \frac{25}{4} - \frac{50}{4} - \frac{24}{4} = -\frac{49}{4}.
-$$
-
-Nå kan vi skrive $g(x)$ på ekstremalpunktsform som
-
-$$
-g(x) = (x - \frac{5}{2})^2 - \frac{49}{4}.
 $$
-
-Så bruker vi konjugatsetningen for å skrive om $g(x)$ til nullpunktsform:
-
-$$
-g(x) = (x - \frac{5}{2})^2 - \left(\frac{7}{2}\right)^2 = (x - \frac{5}{2} - \frac{7}{2})(x - \frac{5}{2} + \frac{7}{2}) = (x - 6)(x + 1).
-$$
-
-Dermed skjærer grafen $x$-aksen i punktene
-
-$$
-x = 6 \qog x = -1.
-$$
-
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::{part} c
-En andregradsfunksjon $h$ er gitt ved
-
-$$
-h(x) = x^2 + 5x - 14
-$$
-
-Bestem nullpunktene til $h$.
-
-
-:::::{answer}
-$$
-x = 2 \or x = -7.
-$$
-
-::::{solution}
-Vi ser at koeffisientene til $h(x)$ er
-
-$$
-a = 1 \and b = 5 \and c = -14.
-$$
-
-Først finner vi symmetrilinja:
-
-$$
-x_0 = -\frac{b}{2a} = -\frac{5}{2 \cdot 1} = -\frac{5}{2}.
-$$
-
-Deretter finner vi $y$-koordinaten til ekstremalpunktet:
-
-$$
-y_0 = h\left(-\frac{5}{2}\right) = \left(-\frac{5}{2}\right)^2 + 5\left(-\frac{5}{2}\right) - 14 = \frac{25}{4} - \frac{25}{2} - 14 = \frac{25}{4} - \frac{50}{4} - \frac{56}{4} = -\frac{81}{4}.
-$$
-
-Ekstremalpunktsformen til $h(x)$ er da
-
-$$
-h(x) = \left(x + \frac{5}{2}\right)^2 - \frac{81}{4}.
-$$
-
-Så bruker vi konjugatsetningen for å skrive om $h(x)$ til nullpunktsform:
-
-$$
-h(x) = \left(x + \frac{5}{2}\right)^2 - \left(\frac{9}{2}\right)^2 = \left(x + \frac{5}{2} - \frac{9}{2}\right)\left(x + \frac{5}{2} + \frac{9}{2}\right) = (x - 2)(x + 7).
-$$
-
-Dermed er nullpunktene til $h$ gitt ved
-
-$$
-x = 2 \or x = -7.
-$$
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::{part} d
-En andregradsfunksjon $p$ er gitt ved
-
-$$
-p(x) = x^2 + 6x + 8
-$$
-
-Bestem i hvilke punkter grafen til $p$ skjærer $x$-aksen.
-
-
-:::::{answer}
-$$
-x = -2 \qog x = -4.
-$$
-
-::::{solution}
-Vi ser at koeffisientene til $p(x)$ er
-
-$$
-a = 1 \and b = 6 \and c = 8.
-$$
-
-Først finner vi symmetrilinja:
-
-$$
-x_0 = -\frac{b}{2a} = -\frac{6}{2 \cdot 1} = -3.
-$$
-
-Deretter finner vi $y$-koordinaten til ekstremalpunktet:
-
-$$
-y_0 = p(-3) = (-3)^2 + 6 \cdot (-3) + 8 = 9 - 18 + 8 = -1.
-$$
-
-Ekstremalpunktsformen til $p(x)$ er da
-
-$$
-p(x) = (x + 3)^2 - 1.
-$$
-
-Så bruker vi konjugatsetningen for å skrive om $p(x)$ til nullpunktsform:
-
-$$
-p(x) = (x + 3)^2 - 1 = (x + 3 - 1)(x + 3 + 1) = (x + 2)(x + 4).
-$$
-
-Dermed skjærer grafen $x$-aksen i punktene
-
-$$
-x = -2 \qog x = -4.
-$$
-::::
-
-:::::
-
-
-:::::::::::::
-
-:::::::::::::::
-
-
----
-
-:::{margin} Tips: Oppgave 8
-Her må du selv velge hvilken representasjon du vil bruke for å bestemme funksjonsuttrykkene. Velg det du tenker er enklest for deg! 
-:::
-
-:::::::::::::::{exercise} Oppgave 8
-
-
-:::::::::::::{part} a
-:::{plot}
-width: 320px
-align: right
-fontsize: 28
-function: (x + 1) * (x - 3), f
-:::
-
-
-Grafen til en andregradsfunksjon $f$ er vist i figuren til høyre.
-
-Bestem $f(x)$. 
-
-
-
-:::::{answer}
+a(1 + 5)(1 - 3) = -4
 $$
-f(x) = (x + 1)(x - 3).
-$$
-
-::::{solution}
-Grafen til $f$ har nullpunkter i $(-1, 0)$ og $(3, 0)$. Det betyr at vi kan skrive $f(x)$ på nullpunktsform som
-
-$$
-f(x) = a(x + 1)(x - 3).
-$$
 
-Vi ser at grafen skjærer $y$-aksen i punktet $(0, -3)$ som vi kan bruke til å finne verdien til $a$:
-
 $$
-f(0) = -3 \liff a(0 + 1)(0 - 3) = -3.
+a \cdot 6 \cdot (-2) = -4
 $$
-
-Dette forenkler vi til
 
 $$
--3a = -3 \liff a = 1.
+-12a = -4 \liff a = \dfrac{1}{3}
 $$
 
 Dermed er 
 
 $$
-f(x) = 1\cdot(x + 1)(x - 3) = (x + 1)(x - 3).
+h(x) = \dfrac{1}{3}(x + 5)(x - 3)
 $$
 
 ::::
-
 :::::
-
-
-:::::::::::::
-
-
-:::::::::::::{part} b
-:::{plot}
-width: 320px
-align: right
-fontsize: 28
-function: 2 * (x - 1)**2 + 2, g
-:::
-
-Grafen til en andregradsfunksjon $g$ er vist i figuren til høyre.
-
-Bestem $g(x)$.
-
-
-
-
-:::::{answer}
-$$
-g(x) = 2(x - 1)^2 + 2.
-$$
-
-::::{solution}
-Grafen til $g$ har et bunnpunkt i $(1, 2)$ som betyr at vi kan skrive $g(x)$ på ekstremalpunktsform som
-
-$$
-g(x) = a(x - 1)^2 + 2.
-$$
-
-Vi ser at grafen skjærer $y$-aksen i $(0, 4)$ som vi kan bruke til å finne verdien til $a$:
-
-$$
-g(0) = 4 \liff a(0 - 1)^2 + 2 = 4.
-$$
-
-Dette forenkler vi til
-
-$$
-a + 2 = 4 \liff a = 2.
-$$
-
-Dermed er
-
-$$
-g(x) = 2(x - 1)^2 + 2.
-$$
-::::
-
-:::::
-
-
-
-:::::::::::::
-
-
-:::::::::::::{part} c
-:::{plot}
-width: 320px
-align: right
-fontsize: 28
-function: -2*x**2 + 18, h
-ymax: 20
-ymin: -4
-ystep: 2
-:::
-
-Grafen til en andregradsfunksjon $h$ er vist i figuren til høyre.
-
-Bestem $h(x)$.
-
-
-
-:::::{answer}
-$$
-h(x) = -2x^2 + 18.
-$$
-
-::::{solution}
-Grafen til $h$ har et toppunkt i $(0, 18)$ som betyr at vi kan skrive $h(x)$ på ekstremalpunktsform som
-
-$$
-h(x) = a(x - 0)^2 + 18 = ax^2 + 18.
-$$
-
-Vi ser at grafen skjærer $x$-aksen i $(3, 0)$ som vi kan bruke til å finne verdien til $a$:
-
-$$
-h(3) = 0 \liff a(3)^2 + 18 = 0.
-$$
-
-Dette forenkler vi til
-
-$$
-9a + 18 = 0 \liff 9a = -18 \liff a = -2.
-$$
-
-Dermed er
-
-$$
-h(x) = -2x^2 + 18.
-$$
-::::
-
-:::::
-
-
-
-:::::::::::::
-
-
-:::::::::::::{part} d
-:::{plot}
-width: 320px
-align: right
-fontsize: 28
-function: -(x - 1)**2 + 9, p
-ymax: 11
-ymin: -3
-:::
-
-Grafen til en andregradsfunksjon $p$ er vist i figuren til høyre.
-
-Bestem $p(x)$.
-
-
-
-:::::{answer}
-$$
-p(x) = -(x + 2)(x - 4).
-$$
-
-::::{solution}
-Grafen til $p$ har nullpunkter i $(-2, 0)$ og $(4, 0)$. Det betyr at vi kan skrive $p(x)$ på nullpunktsform som
-
-$$
-p(x) = a(x + 2)(x - 4).
-$$
-
-Grafen til $p$ skjærer $y$-aksen i punktet $(0, 8)$ som vi kan bruke til å finne verdien til $a$:
-
-$$
-p(0) = 8 \liff a(0 + 2)(0 - 4) = 8.
-$$
-
-Dette forenkler vi til
-
-$$
--8a = 8 \liff a = -1.
-$$
-
-Dermed er
-
-$$
-p(x) = -1(x + 2)(x - 4) = -(x + 2)(x - 4).
-$$
-::::
-
-:::::
-
-
-:::::::::::::
-
-
-
-:::::::::::::::
-
-
----
-
-
-:::{margin} Tips: Oppgave 9 
-Når en funksjon er skrevet på formen $a(x - x_0)^2 + y_0$, må du faktorisere ut $a$ fra begge ledd før du kan bruke konjugatsetningen. 
-
-Husk at hvis leddene har samme fortegn, så har ikke funksjonen nullpunkter siden vi ikke kan bruke konjugatsetningen. 
-:::
-
-
-:::::::::::::::{exercise} Oppgave 9 
-
-:::::::::::::{part} a
-En andregradsfunksjon $f$ er gitt ved
-
-$$
-f(x) = (x - 4)^2 - 9
-$$
-
-Avgjør om $f$ har nullpunkter. Hvis ja, bestem nullpunktene.
-
-
-
-:::::{answer}
-Nullpunktene er $x = 1$ og $x = 7$.
-
-::::{solution}
-Leddene har motsatt fortegn som betyr at vi kan bruke konjugatsetningen:
-
-$$
-f(x) = (x - 4)^2 - 3^2 = (x - 4 - 3)(x - 4 + 3) = (x - 7)(x - 1).
-$$
-
-Nullpunktene er dermed $x = 1$ og $x = 7$.
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::{part} b
-En andregradsfunksjon $g$ er gitt ved
-
-$$
-g(x) = -2(x + 1)^2 + 4
-$$
-
-Avgjør om $g$ har nullpunkter. Hvis ja, bestem nullpunktene.
-
-
-:::::{answer}
-$$
-x = -3 \qog x = 1.
-$$
-
-::::{solution}
-Leddene har motsatt fortegn som betyr at vi kan bruke konjugatsetningen:
-
-$$
-g(x) = -2(x + 1)^2 + 4 = -2((x + 1) - 2)((x + 1) + 2) = -2(x - 1)(x + 3).
-$$
-
-Nullpunktene til $g$ er dermed 
-
-$$
-x = -3 \qog x = 1.
-$$
-::::
-
-:::::
-
-:::::::::::::
-
-:::::::::::::{part} c
-En andregradsfunksjon $h$ er gitt ved
-
-$$
-h(x) = (x + 3)^2 + 1
-$$
-
-Avgjør om $h$ har nullpunkter. Hvis ja, bestem nullpunktene.
-
-
-:::::{answer}
-Ingen nullpunkter.
-
-::::{solution}
-Leddene har samme fortegn som betyr at vi ikke kan bruke konjugatsetningen til å faktorisere $h(x)$ til nullpunktsform. Dermed har ikke $h$ noen nullpunkter.
-::::
-
-:::::
-
-
-
-:::::::::::::
-
-:::::::::::::{part} d
-En andregradsfunksjon $p$ er gitt ved
-
-$$
-p(x) = -\frac{1}{2}(x - 4)^2
-$$
-
-
-Avgjør om $p$ har nullpunkter. Hvis ja, bestem nullpunktene.
-
-
-:::::{answer}
-$$
-x = 4
-$$
-
-::::{solution}
-Vi har at $p(x)$ er skrevet på nullpunktsform (og ekstremalpunktsform, med $y_0 = 0$). Dermed har $p$ bare ett nullpunkts i $x = 4$.
-::::
-
-:::::
-
 :::::::::::::
 
 :::::::::::::::
@@ -1610,9 +245,7 @@ Vi har at $p(x)$ er skrevet på nullpunktsform (og ekstremalpunktsform, med $y_0
 ---
 
 
-
-
-:::::::::::::::{exercise} Oppgave 10
+:::::::::::::::{exercise} Oppgave 3
 
 :::::::::::::{part} a
 En andregradsfunksjon $f$ er gitt ved
@@ -1824,218 +457,458 @@ Vi ser at $a = 1 > 0$ som betyr at grafen er konveks {poly-icon}`smile`. Dermed 
 ---
 
 
-:::{margin} Tips: Oppgave 11
-Husk at en identitet er en likning som er sann for alle verdier av $x$. Det betyr at venstre side og høyre side er alltid like uansett hva vi setter inn for $x$.
+:::::::::::::::{exercise} Oppgave 4
+
+
+:::{hint} Hint
+Bruk konjugatsetningen til å skrive om funksjonsuttrykkene til nullpunktsform og les av nullpunktene. For eksempel har vi at hvis $f(x) = (x + 5)^2 - 16$, så er:
+
+$$
+(x + 5)^2 - 16 = (x + 5)^2 - 4^2 = (x + 5 + 4)(x + 5 - 4) = (x + 9)(x + 1)
+$$
+
+som vil gi nullpunktene $x = -9$ og $x = -1$ for $f$.
+:::
+
+:::::::::::::{part} a
+Funksjonen $f$ er gitt ved 
+
+$$
+f(x) = (x - 1)^2 - 9
+$$
+
+Bestem nullpunktene til $f$.
+
+
+:::::{answer}
+
+$$
+x = -2 \qog x = 4
+$$
+
+::::{solution}
+Vi har at 
+
+$$
+\begin{align*}
+f(x) &= (x - 1)^2 - 9 \\
+\\
+&= (x - 1)^2 - 3^2 \\
+\\
+&= (x - 1 + 3)(x - 1 - 3) \\
+\\
+&= (x + 2)(x - 4)
+\end{align*}
+$$
+
+som betyr at nullpunktene til $f$ er 
+
+$$
+x = -2 \qog x = 4
+$$
+::::
+:::::
+
+:::::::::::::
+
+
+:::::::::::::{part} b
+Funksjonen $g$ er gitt ved 
+
+$$
+g(x) = -(x + 2)^2 + 4
+$$
+
+Bestem nullpunktene til $g$.
+
+
+:::::{answer}
+$$
+x = 0 \qog x = -4
+$$
+
+::::{solution}
+Vi har at 
+
+$$
+\begin{align*}
+g(x) &= -(x + 2)^2 + 4 \\
+\\
+&= -\left((x + 2)^2 - 4\right) \\
+\\
+&= -\left((x + 2)^2 - 2^2\right) \\
+\\
+&= -\left((x + 2 + 2)(x + 2 - 2)\right) \\
+\\
+&= -(x + 4)x \\
+\\
+&= -x(x + 4)
+\end{align*}
+$$
+
+som betyr at nullpunktene til $g$ er 
+
+$$
+x = 0 \qog x = -4
+$$
+::::
+:::::
+
+:::::::::::::
+
+
+:::::::::::::{part} c
+Funksjonen $h$ er gitt ved 
+
+$$
+h(x) = (x + 3)^2 - 1
+$$
+
+Bestem nullpunktene til $h$.
+
+
+:::::{answer}
+$$
+x = -4 \qog x = -2
+$$
+
+::::{solution}
+Vi har at 
+
+$$
+\begin{align*}
+h(x) &= (x + 3)^2 - 1^2 \\
+\\
+&= (x + 3 + 1)(x + 3 - 1) \\
+\\
+&= (x + 4)(x + 2)
+\end{align*}
+$$
+
+som betyr at nullpunktene til $h$ er 
+
+$$
+x = -4 \qog x = -2
+$$
+::::
+:::::
+
+:::::::::::::
+
+:::::::::::::::
+
+
+
+---
+
+
+:::::::::::::::{exercise} Oppgave 5
+
+:::{hint} Hint
+Her er strategien som følger:
+1. Skriv om $f(x)$ til ekstremalpunktsform først.
+2. Bruk konjugatsetningen til å skrive om fra ekstremalpunktsform til nullpunktsform for å lese av nullpunktene.
+:::
+
+:::::::::::::{part} a
+Funksjonen $f$ er gitt ved 
+
+$$
+f(x) = x^2 - 4x - 5
+$$
+
+
+Bestem nullpunktene til $f$.
+
+
+:::::{answer}
+$$
+x = -1 \qog x = 5
+$$
+
+::::{solution}
+Symmetrilinja til $f$ er gitt ved 
+
+$$
+x_0 = -\dfrac{b}{2a} = -\dfrac{-4}{2 \cdot 1} = 2
+$$
+
+Da er $y$-koordinaten til ekstremalpunktet
+
+$$
+y_0 = f(2) = 2^2 - 4 \cdot 2 - 5 = 4 - 8 - 5 = -9
+$$
+
+Dermed er 
+
+$$
+f(x) = (x - 2)^2 - 9
+$$
+
+Så bruker vi konjugatsetningen til å skrive om til nullpunktsform:
+
+$$
+\begin{align*}
+f(x) &= (x - 2)^2 - 3^2 \\
+\\
+&= (x - 2 + 3)(x - 2 - 3) \\
+\\
+&= (x + 1)(x - 5)
+\end{align*}
+$$
+
+som betyr at nullpunktene til $f$ er 
+
+$$
+x = -1 \qog x = 5
+$$
+::::
+:::::
+
+:::::::::::::
+
+
+:::::::::::::{part} b
+Funksjonen $g$ er gitt ved 
+
+$$
+g(x) = x^2 + 6x + 8
+$$
+
+Bestem koordinatene til skjæringspunktene mellom grafen til $g$ og $x$-aksen.
+
+
+:::::{answer}
+$$
+(-4, 0) \qog (-2, 0)
+$$
+
+::::{solution}
+Symmetrilinja til $g$ er gitt ved 
+
+$$
+x_0 = -\dfrac{b}{2a} = -\dfrac{6}{2 \cdot 1} = -3
+$$
+
+Da er $y$-koordinaten til ekstremalpunktet gitt ved 
+
+$$
+y_0 = g(-3) = (-3)^2 + 6 \cdot (-3) + 8 = 9 - 18 + 8 = -1
+$$
+
+Altså kan vi skrive om $g(x)$ til ekstremalpunktsform:
+
+$$
+g(x) = (x + 3)^2 - 1
+$$
+
+Deretter bruker vi konjugatsetningen til å skrive om til nullpunktsform:
+
+$$
+\begin{align*}
+g(x) &= (x + 3)^2 - 1^2 \\
+\\
+&= (x + 3 + 1)(x + 3 - 1) \\
+\\
+&= (x + 4)(x + 2)
+\end{align*}
+$$
+
+som betyr at nullpunktene til $g$ er
+
+$$
+x = -4 \qog x = -2
+$$
+
+Det betyr at grafen til $g$ skjærer $x$-aksen i punktene $(-4, 0)$ og $(-2, 0)$.
+::::
+:::::
+
+:::::::::::::
+
+
+:::::::::::::{part} c
+Funksjonen $h$ er gitt ved 
+
+$$
+h(x) = -x^2 + 4x - 3
+$$
+
+Bestem nullpunktene til $h$.
+
+
+
+:::::{answer}
+$$
+x = 1 \qog x = 3
+$$
+
+::::{solution}
+Symmetrilinja til $h$ er gitt ved 
+
+$$
+x_0 = -\dfrac{b}{2a} = -\dfrac{4}{2\cdot (-1)} = 2
+$$
+
+Da er $y$-koordinaten til ekstremalpunktet
+
+$$
+y_0 = h(2) = -(2)^2 + 4 \cdot 2 - 3 = -4 + 8 - 3 = 1
+$$
+
+Altså kan vi skrive om $h(x)$ til ekstremalpunktsform:
+
+$$
+h(x) = -(x - 2)^2 + 1
+$$
+
+Deretter bruker vi konjugatsetningen til å skrive om til nullpunktsform:
+
+$$
+\begin{align*}
+h(x) &= -(x - 2)^2 + 1 \\
+\\
+&= -(x - 2)^2 + 1^2 \\
+\\
+&= -(x - 2 + 1)(x - 2 - 1) \\
+\\
+&= -(x - 1)(x - 3)
+\end{align*}
+$$
+
+som betyr at nullpunktene til $h$ er 
+
+$$
+x = 1 \qog x = 3
+$$
+::::
+:::::
+
+
+:::::::::::::
+
+
+:::::::::::::::
+
+
+---
+
+
+
+:::::::::::::::{exercise} Oppgave 6
+
+
+:::{hint} Hint
+Hvis en andregradsfunksjon $f$ har nullpunktene $x = x_1$ og $x = x_2$, så vil symmetrilinja være gjennomsnittet av de to nullpunktene:
+
+$$
+x_0 = \dfrac{x_1 + x_2}{2}
+$$
+
+For å finne $y$-koordinaten trenger vi da bare regne ut $f(x_0)$. 
 :::
 
 
-:::::::::::::::{exercise} Oppgave 11
-
-
 :::::::::::::{part} a
-Bestem $s$ og $r$ slik at likningen nedenfor er en identitet.
+Funksjonen $f$ er gitt ved 
 
 $$
-(x + 2)(x - 8) = (x - s)^2 + r
+f(x) = (x - 4)(x + 6)
 $$
+
+Bestem koordinatene til $f$ sitt ekstremalpunkt.
+
+Avgjør om det er et toppunkt eller bunnpunkt.
+
 
 
 :::::{answer}
-$$
-s = 3 \and r = -25
-$$
+Bunnpunkt i $(-1, -25)$
 
 ::::{solution}
-Vi kan kjenne $s$ som symmetrilinja til en andregradsfunksjon. Venstresiden er på nullpunktsform som gjør at vi kan finne symmetrilinja ved å bruke formelen
+Vi har at nullpunktene til $f$ er $x = -6$ og $x = 4$. Da er symmetrilinja gitt ved 
 
 $$
-s = \dfrac{x_1 + x_2}{2} = \dfrac{-2 + 8}{2} = \dfrac{6}{2} = 3.
+x_0 = \dfrac{-6 + 4}{2} = -1
 $$
 
-Deretter bestemmer vi $r$ ved å sette inn verdien for $s$ i uttrykket på venstresiden:
+Så trenger vi $y$-koordinaten som vi får ved regne ut $f(x_0)$:
 
 $$
-r = (3 + 2)(3 - 8) = 5 \cdot (-5) = -25.
+f(-1) = (-1 - 4)(-1 + 6) = -5^2 = -25
 $$
 
-Dermed er likningen en identitet hvis
-
-$$
-s = 3 \and r = -25
-$$
+Dermed er ekstremalpunktet $(-1, -25)$. Dette er et bunnpunkt siden $a > 0$ slik at grafen til $f$ er konveks.
 ::::
-
 :::::
 
 
 :::::::::::::
 
 
+
 :::::::::::::{part} b
-Bestem $s$ og $r$ slik at likningen nedenfor er en identitet.
+Funksjonen $g$ er gitt ved 
 
 $$
-(x - 1)(x + 3) = (x - s)^2 + r
+g(x) = -2(x + 1)(x - 3)
 $$
 
+Bestem koordinatene til $g$ sitt ekstremalpunkt.
+
+Avgjør om det er et toppunkt eller bunnpunkt.
 
 :::::{answer}
-$$
-s = -1 \and r = -4
-$$
+Toppunkt i $(1, 8)$
 
 ::::{solution}
-Vi kan kjenne $s$ som symmetrilinja til en andregradsfunksjon. Venstresiden er på nullpunktsform som gjør at vi kan finne symmetrilinja ved å bruke formelen
+Vi har at nullpunktene til $g$ er $x = -1$ og $x = 3$. Da er symmetrilinja gitt ved 
 
 $$
-s = \dfrac{x_1 + x_2}{2} = \dfrac{1 + (-3)}{2} = \dfrac{-2}{2} = -1
+x_0 = \dfrac{-1 + 3}{2} = 1
 $$
 
-Deretter bestemmer vi $r$ ved å sette inn verdien for $s$ i uttrykket på venstresiden:
+Så trenger vi $y$-koordinaten som vi får ved regne ut $g(x_0)$:
 
 $$
-r = (-1 - 1)(-1 + 3) = -2 \cdot 2 = -4.
+g(1) = -2(1 + 1)(1 - 3) = -2 \cdot 2 \cdot (-2) = 8
 $$
 
-Dermed er likningen en identitet hvis
-
-$$
-s = -1 \and r = -4
-$$
+Dermed er ekstremalpunktet $(1, 8)$. Dette er et toppunkt siden $a < 0$ slik at grafen til $g$ er konkav.
 ::::
-
 :::::
-
-
 :::::::::::::
 
 
 :::::::::::::{part} c
-Bestem $s$ og $r$ slik at likningen nedenfor er en identitet.
+Funksjonen $h$ er gitt ved 
 
 $$
-(x - s)(x - r) = (x - 2)^2 - 1
+h(x) = \dfrac{1}{2}(x + 4)(x - 8)
 $$
+
+Bestem koordinatene til $h$ sitt ekstremalpunkt.
+
+Avgjør om det er et toppunkt eller bunnpunkt.
 
 
 :::::{answer}
-$$
-r = 3 \and s = 1 \or r = 1 \and s = 3.
-$$
+Bunnpunkt i $(2, -18)$.
 
 ::::{solution}
-Vi gjenkjenner venstresiden som nullpunktsformen til en andregradsfunksjon der $s$ og $r$ er nullpunktene. På høyresiden er uttrykket gitt på ekstremalpunktsform som vi kan skrive om til nullpunktsform ved å bruke konjugatsetningen:
+Nullpunktene til $h$ er gitt ved $x = -4$ og $x = 8$. Da er symmetrilinja gitt ved 
 
 $$
-(x - 2)^2 - 1 = (x - 2 - 1)(x - 2 + 1) = (x - 3)(x - 1)
+x_0 = \dfrac{-4 + 8}{2} = 2
 $$
 
-Altså vil likningen bli en identitet hvis 
+Da er $y$-koordinaten til ekstremalpunktet gitt ved 
 
 $$
-r = 3 \and s = 1 \or r = 1 \and s = 3.
-$$
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::{part} d
-Bestem $s$ og $r$ slik at likningen nedenfor er en identitet
-
-$$
-x^2 - x - 2 = (x - s)(x - r)
+h(2) = \dfrac{1}{2}(2 + 4)(2 - 8) = \dfrac{1}{2} \cdot 6 \cdot (-6) = -18
 $$
 
-
-:::::{answer}
-$$
-s = 2 \and r = -1 \or s = -1 \and r = 2.
-$$
-
-::::{solution}
-Venstresiden er skrevet på standardform og høyresiden er skrevet på nullpunktsform. Vi kan skrive om venstresiden til nullpunktsform for å bestemme verdiene til $s$ og $r$. 
-
-Vi starter med å finne symmetrilinja. Vi har at $a = 1$ og $b = -1$, så
-
-$$
-x_0 = -\dfrac{b}{2a} = -\dfrac{-1}{2 \cdot 1} = \dfrac{1}{2}.
-$$
-
-Deretter finner vi $y$-koordinaten til ekstremalpunktet:
-
-$$
-y_0 = \left(\dfrac{1}{2}\right)^2 - \dfrac{1}{2} - 2 = \dfrac{1}{4} - \dfrac{2}{4} - \dfrac{8}{4} = -\dfrac{9}{4}.
-$$
-
-Det betyr at vi kan skrive om uttrykket til ekstremalpunktsform som:
-
-$$
-x^2 - x - 2 = \left(x - \dfrac{1}{2}\right)^2 - \dfrac{9}{4}.
-$$
-
-Deretter kan vi bruke konjugatsetningen for å skrive om til nullpunktsform:
-
-$$
-x^2 - x - 2 = \left(x - \dfrac{1}{2}\right)^2 - \dfrac{9}{4} = \left(x - \dfrac{1}{2} - \dfrac{3}{2}\right)\left(x - \dfrac{1}{2} + \dfrac{3}{2}\right) = (x - 2)(x + 1).
-$$
-
-Altså vil likningen være en identitet hvis 
-
-$$
-s = 2 \and r = -1 \or s = -1 \and r = 2.
-$$
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::{part} e
-Bestem $a$, $b$ og $c$ slik at likningen nedenfor er en identitet:
-
-$$
-2(x - 3)^2 + c = a(x - b)(x + 1)
-$$
-
-
-:::::{answer}
-
-$$
-a = 2 \and b = 7 \and c = -32
-$$
-
-::::{solution}
-Siden den ledende koeffisienten må være lik i alle representasjonsformene, så er $a = 2$.
-
-Vi har at symmetrilinja er $x = 3$ som vi kan se fra venstre side av likningen. Avstanden mellom symmetrilinja og hvert nullpunkt er alltid lik. 
-Fra høyre side kan vi se at $x = -1$ er et nullpunkt. Avstanden mellom symmetrilinja og nullpunkter er da $+4$. Det andre nullpunktet vil samsvare med verdien til $b$.
-Dette nullpunktet må ha samme avstand til symmetrilinja, men ligge på den andre siden av denne linja. Dermed er 
-
-$$
-b = 3 + 4 = 7
-$$
-
-Nå har vi et fullstendig uttrykk for andregradspolynomet på høyre side som er vi kan la være en funksjon $f$ gitt ved
-
-$$
-f(x) = a(x - b)(x + 1) = 2(x - 7)(x + 1)
-$$
-
-Verdien til $c$ er lik $f(3)$ siden dette gir oss $y$-koordinaten til ekstremalpunktet til $f$:
-
-$$
-c = f(3) = 2(3 - 7)(3 + 1) = 2(-4)(4) = -32.
-$$
-
-Ergo er
-
-$$
-a = 2 \and b = 7 \and c = -32
-$$
+Altså har grafen et ekstremalpunkt i $(2, -18)$. Dette er et bunnpunkt siden $a > 0$ slik at grafen til $h$ er konveks.
 ::::
 :::::
 
@@ -2049,17 +922,495 @@ $$
 ---
 
 
-:::::::::::::::{exercise} Oppgave 12
-En andregradsfunksjon $f$ har ett nullpunkt. Grafen til $f$ skjærer $y$-aksen i punktet $(0, 9)$.
 
-Bestem et mulig funksjonsuttrykk $f(x)$ for andregradsfunksjonen.
+:::::::::::::::{exercise} Oppgave 7
 
 
-::::{answer}
+:::{hint} Hint
+Her er det lurt å tolke uttrykkene på hver side som andregradsfunksjoner skrevet på enten standardform, ekstremalpunktsform eller nullpunktsform. Ved å bruke de grafiske egenskapene til disse formene kan du enklere bestemme de ukjente konstantene i likningene.
+
+Her vil ikke $a$, $b$ og $c$ typisk bety det du er vant til at de betyr for en andregradsfunksjon. Her må du selv tolke hva de betyr for noe konkret i hver oppgave.
+:::
+
+
+:::::::::::::{part} a
+Bestem $a$ og $b$ slik at likningen nedenfor er en identitet.
+
 $$
-f(x) = (x - 3)^2 = x^2 - 6x + 9
+(x - 2)(x + 8) = (x - a)^2 + b
+$$
+
+
+:::::{answer}
+$$
+a = -3 \and b = -25
+$$
+
+::::{solution}
+Vi tolker venstresiden som en andregradsfunksjon skrevet på nullpunktsform og høyresiden som skrevet på ekstremalpunktsform.
+
+Konstanten $a$ representerer $x$-koordinaten til symmetrilinja som vi kan finne som gjennomsnittet av nullpunktene 
+
+$$
+a = \dfrac{2 - 8}{2} = -3
+$$
+
+Deretter finner vi verdien til $b$ ved å regne ut $y$-koordinatene til ekstremalpunktet ved å bruke venstresiden:
+
+$$
+b = (-3 - 2)(-3 + 8) = -5^2 = -25
+$$
+
+Altså er likningen en identitet når
+
+$$
+a = -3 \and b = -25
 $$
 ::::
+:::::
+
+:::::::::::::
+
+
+:::::::::::::{part} b
+Bestem $a$, $b$ og $c$ slik at likningen nedenfor er en identitet.
+
+$$
+2(x + 3)(x - 5) = a(x - b)^2 + c
+$$
+
+
+:::::{answer}
+$$
+a = 2 \and b = 1 \and c = -32
+$$
+
+::::{solution}
+Konstanten $a$ representerer den ledende koeffisienten som på venstresiden er lik $2$. Dermed er $a = 2$.
+
+Venstresiden er skrevet på nullpunktsform med nullpunktene $x = -3$ og $x = 5$. På høyresiden er uttrykket på ekstremalpunktsform der $b$ er verdien til symmetrilinja. Dermed er 
+
+$$
+b = \dfrac{-3 + 5}{2} = 1
+$$
+
+Verdien til $c$ er det samme som $y$-koordinaten til ekstremalpunktet så
+
+$$
+c = 2(1 + 3)(1 - 5) = 2\cdot 4\cdot (-4) = -32
+$$
+
+Altså er likningen en identitet dersom
+
+$$
+a = 2 \and b = 1 \and c = -32
+$$
+::::
+:::::
+
+:::::::::::::
+
+:::::::::::::{part} c
+Bestem $a$ og $b$ slik at likningen nedenfor er en identitet.
+
+$$
+(x - 1)(x - a) = (x + 3)^2 + b
+$$
+
+
+:::::{answer}
+
+$$
+a = -7 \and b = -16
+$$
+
+::::{solution}
+Venstresiden kan tolkes som nullpunktsform og høyresiden som ekstremalpunktsform. På høyre side får vi at symmetrilinja er $x = -3$. Gjennomsnittet av nullpunktene vil være lik dette som betyr at 
+
+$$
+-3 = \dfrac{1 + a}{2} \liff 1 + a = -6 \liff a = -7
+$$
+
+Verdien til $b$ er $y$-koordinaten til ekstremalpunktet som vi kan finne ved å sette inn $x = -3$ i uttrykket på venstre side:
+
+$$
+b = (-3 - 1)(-3 + 7) = (-4) \cdot 4 = -16
+$$
+
+Altså er likningen en identitet dersom
+
+$$
+a = -7 \and b = -16
+$$
+
+::::
+:::::
+
+:::::::::::::
+
+
+
+:::::::::::::::
+
+
+---
+
+
+
+:::::::::::::::{exercise} Oppgave 8
+> Her kan du selv velge hvilken form du vil skrive funksjonsuttrykkene på. Velg den du mener er enklest for å løse oppgaven.
+
+
+
+:::::::::::::{part} a
+
+:::{plot}
+width: 350px
+align: right
+function: -(x + 2)^2 + 6, f
+fontsize: 24
+ymax: 8
+:::
+
+
+Grafen til en andregradsfunksjon $f$ er vist i figuren til høyre.
+
+Bestem $f(x)$.
+
+
+:::::{answer}
+$$
+f(x) = -(x + 2)^2 + 6
+$$
+
+::::{solution}
+Ekstremalpunktet til $f$ er gitt ved $(-2, 6)$. Øker vi $x$ med én enhet, så synker $f(x)$ med én enhet som betyr at $a = -1$. Dermed har vi at 
+
+$$
+f(x) = -(x + 2)^2 + 6
+$$
+::::
+:::::
+
+
+:::::::::::::
+
+
+:::::::::::::{part} b
+:::{plot}
+width: 350px
+align: right
+function: (x - 5) * (x + 2), g
+ymin: -16
+ystep: 2
+fontsize: 24
+:::
+
+Grafen til en andregradsfunksjon $g$ er vist i figuren til høyre.
+
+Bestem $g(x)$.
+
+
+:::::{answer}
+
+$$
+g(x) = (x + 2)(x - 5)
+$$
+
+::::{solution}
+Nullpunktene til $g$ er $x = -2$ og $x = 5$ som gir at 
+
+$$
+g(x) = a(x + 2)(x - 5)
+$$
+
+For å bestemme $a$ så kan vi bruke punktet $(0, -10)$ som gir
+
+$$
+g(0) = -10
+$$
+
+$$
+a(0 + 2)(0 - 5) = -10
+$$
+
+$$
+a \cdot 2 \cdot (-5) = -10
+$$
+
+$$
+-10a = -10 \liff a = 1
+$$
+
+Dermed er 
+
+$$
+g(x) = (x + 2)(x - 5)
+$$
+
+::::
+:::::
+
+
+
+:::::::::::::
+
+
+
+:::::::::::::{part} c
+:::{plot}
+width: 350px
+align: right
+function: -2 * (x - 3) * (x + 1), h
+fontsize: 24
+ymax: 10
+ymin: -4
+:::
+
+Grafen til en andregradsfunksjon $h$ er vist i figuren til høyre.
+
+Bestem $h(x)$.
+
+
+:::::{answer}
+$$
+h(x) = -2(x - 1)^2 + 8
+$$
+
+::::{solution}
+Ekstremalpunktet til $h$ er gitt ved $(1, 8)$. Øker vi $x$ med én enhet, så synker $h(x)$ med $2$. Dermed er $a = -2$. Da får vi at 
+
+$$
+h(x) = -2(x - 1)^2 + 8
+$$
+::::
+:::::
+
+:::::::::::::
+
+
+
+:::::::::::::{part} d
+
+:::{plot}
+width: 350px
+align: right
+function: -1/2 * (x + 1)**2, p
+fontsize: 24
+:::
+
+
+Grafen til en andregradsfunksjon $p$ er vist i figuren til høyre.
+
+Bestem $p(x)$.
+
+
+
+:::::{answer}
+
+$$
+p(x) = -\dfrac{1}{2}(x + 1)^2
+$$
+
+::::{solution}
+Ekstremalpunktet til $p$ er $(-1, 0)$. Øker vi $x$ med to enheter, så endres $p(x)$ med $-2$. Dermed er 
+
+$$
+2^2 a = -2 \liff 4a = -2 \liff a = -\dfrac{1}{2}
+$$
+
+Dermed kan vi skrive $p(x)$ på ekstremalpunktsform som:
+
+$$
+p(x) = -\dfrac{1}{2}(x + 1)^2 + 0 = -\dfrac{1}{2}(x + 1)^2
+$$
+
+> Denne skrivemåten samsvarer også med nullpunktsform siden $y_0 = 0$.
+::::
+:::::
+
+
+:::::::::::::
+
+
+
+:::::::::::::::
+
+
+
+
+---
+
+
+
+:::::::::::::::{exercise} Oppgave 9
+
+
+:::::::::::::{part} a
+:::{plot}
+width: 350px
+align: right
+function: (x - 3)**2 - 4, f
+ticks: off
+fontsize: 24
+point: (5, 0)
+text: 5, 0, "$(5, 0)$", bottom-right
+point: (3, -4)
+text: 3, -4, "$(3, -4)$", bottom-center
+xmin: -2
+xmax: 8
+:::
+
+
+Grafen til en andregradsfunksjon $f$ er vist i figuren til høyre.
+
+Bestem $f(x)$.
+
+
+:::::{answer}
+$$
+f(x) = (x - 3)^2 - 4
+$$
+
+::::{solution}
+Ekstremalpunktet er gitt ved $(3, -4)$. Grafen går også gjennom $(5, 0)$ som betyr at 
+
+$$
+2^2 a = 4 \limplies 4a = 4 \limplies a = 1
+$$
+
+Dermed er 
+
+$$
+f(x) = (x - 3)^2 - 4
+$$
+::::
+:::::
+
+:::::::::::::
+
+
+
+:::::::::::::{part} b
+:::{plot}
+fontsize: 24
+width: 350px
+align: right
+function: -1/2 * (x + 2) * (x - 4), g
+ticks: off
+point: (4, 0)
+text: 4, 0, "$(4, 0)$", top-right
+point: (-2, 0)
+text: -2, 0, "$(-2, 0)$", top-left
+point: (0, g(0))
+text: 0, g(0), "$(0, {g(0)})$", top-left
+:::
+
+Grafen til en andregradsfunksjon $g$ er vist i figuren til høyre.
+
+Bestem $g(x)$.
+
+
+:::::{answer}
+$$
+g(x) = -\dfrac{1}{2}(x + 2)(x - 4)
+$$
+
+::::{solution}
+Vi ser at nullpunktene til $g$ er $x = -2$ og $x = 4$. Dermed kan vi skrive $g$ på nullpunktsform som
+
+$$
+g(x) = a(x + 2)(x - 4)
+$$
+
+Siden grafen til $g$ går gjennom $(0, 4)$ så er 
+
+$$
+g(0) = 4
+$$
+
+$$
+a(0 + 2)(0 - 4) = 4
+$$
+
+$$
+a(2)(-4) = 4
+$$
+
+$$
+-8a = 4 \limplies a = -\dfrac{1}{2}
+$$
+
+Altså er 
+
+$$
+g(x) = -\dfrac{1}{2}(x + 2)(x - 4)
+$$
+::::
+:::::
+
+:::::::::::::
+
+
+
+:::::::::::::{part} c
+:::{plot}
+width: 350px
+align: right
+function: -3 * (x - 2)**2, h
+ticks: off
+ymin: -14
+ymax: 3
+xmax: 5
+xmin: -2
+point: (2, 0)
+text: 2, 0, "$(2, 0)$", top-center
+point: (0, h(0))
+text: 0, h(0), "$(0, {h(0)})$", top-left
+fontsize: 24
+:::
+
+Grafen til en andregradsfunksjon $h$ er vist i figuren til høyre.
+
+Bestem $h(x)$.
+
+
+:::::{answer}
+$$
+h(x) = -3(x - 2)^2
+$$
+
+::::{solution}
+Grafen til $h$ har et ekstremalpunkt i $(2, 0)$. Det betyr at vi kan skrive 
+
+$$
+h(x) = a(x - 2)^2 + 0 = a(x - 2)^2
+$$
+
+Samtidig skjærer grafen $y$-aksen i $(0, -12)$ som betyr at 
+
+$$
+h(0) = -12
+$$
+
+$$
+a(0 - 2)^2 = -12
+$$
+
+$$
+4a = -12 \liff a= -3
+$$
+
+Dermed er 
+
+$$
+h(x) = -3(x - 2)^2
+$$
+::::
+:::::
+
+:::::::::::::
+
 
 
 :::::::::::::::
@@ -2069,104 +1420,145 @@ $$
 ---
 
 
+:::::::::::::::{exercise} Oppgave 10
 
-:::::::::::::::{exercise} Oppgave 13
+
+:::{hint} Hint
+Dersom man skal kunne skrive om fra ekstremalpunktsform til nullpunktsform, så må det være mulig å bruke konjugatsetningen. Det forutsetter at fortegnet på leddene i funksjonsuttrykket er ulike.
+:::
+
 
 :::::::::::::{part} a
-Undersøk om det finnes tilfeller hvor nullpunktsformen og ekstremalpunktsformen til en andregradsfunksjon er like. 
+Funksjonen $f$ er gitt ved 
 
-Gi et eksempel hvis du finner et.
+$$
+f(x) = (x - 2)^2 + 3
+$$
+
+Bestem nullpunktene til $f$ dersom de finnes.
+
+
+:::::{answer}
+Nullpunktene finnes ikke.
 
 ::::{solution}
-Vi skriver opp $f(x)$ på begge former:
+Funksjonen $f$ er konveks {poly-icon}`smile` og har ekstremalpunkt i $(2, 3)$ som ligger på oversiden av $x$-aksen. Dermed vil funksjonen aldri skjære $x$-aksen og vil derfor ikke ha noen nullpunkter.
 
-$$
-f(x) = a(x - x_1)(x - x_2) = a(x - x_0)^2 + y_0
-$$
-
-Hvis $f$ har ett nullpunkt slik at $x_1 = x_2$ så vil også symmetrilinja ha samme $x$-verdi som betyr at 
-
-$$
-x_0 = x_1 = x_2
-$$
-
-Da må også $y_0 = 0$, så vi får at ekstremalpunktsformen og nullpunktsformen er lik:
-
-$$
-f(x) = a(x - x_0)^2
-$$
-
-Et eksempel på en slik funksjon er 
-
-$$
-f(x) = (x - 2)^2
-$$
-
-Her er nullpunktet og symmetrilinja gitt ved $x = 2$.
 ::::
+:::::
 
 :::::::::::::
+
 
 
 :::::::::::::{part} b
-Undersøk om det finnes tilfeller hvor standardformen og nullpunktsformen til en andregradsfunksjon er like.
+Funksjonen $g$ er gitt ved 
 
-Gi et eksempel hvis du finner et.
+$$
+g(x) = 2(x - 1)^2 - 8
+$$
+
+Bestem skjæringspunktene mellom grafen til $g$ og $x$-aksen dersom de finnes.
+
+
+:::::{answer}
+$(-1, 0)$ og $(3, 0)$
 
 ::::{solution}
-For at standardformen og nullpunktsformen skal være like, må både $b = 0$ og $c = 0$, slik at 
+Fortegnene til de to leddene i funksjonsuttrykket er forskjellig som lar oss faktorisere uttrykket med konjugatsetningen:
 
 $$
-f(x) = ax^2
+\begin{align*}
+g(x) &= 2(x - 1)^2 - 8 \\
+\\
+&= 2\left((x - 1)^2 - 4\right) \\
+\\
+&= 2(x - 1 + 2)(x - 1 - 2) \\
+\\
+&= 2(x + 1)(x - 3)
+\end{align*}
 $$
 
-Da er nullpunktet til $f$ gitt ved $x = 0$. Et eksempel vil da være $f(x) = -2x^2$.
+Altså skjærer grafen til $g$ gjennom $x$-aksen i $(-1, 0)$ og $(3, 0)$
+
 ::::
+:::::
 
 
 :::::::::::::
 
 
-:::::::::::::{part} c
-Undersøk om det finnes tilfeller hvor standardformen og ekstremalpunktsformen til en andregradsfunksjon er like.
+:::::::::::::{part} c 
+Funksjonen $h$ er gitt ved 
 
-Gi et eksempel hvis du finner et.
+$$
+h(x) = x^2 + 2x + 6
+$$
 
+Bestem nullpunktene til $h$ dersom de finnes.
+
+
+
+:::::{answer}
+Nullpunktene finnes ikke.
 
 ::::{solution}
-Standardformen og ekstremalpunktsformen er like dersom vi setter $b = c = 0$ i standardformen. Da får vi 
+Vi skriver om $h(x)$ til ekstremalpunktsform først. Symmetrilinja er gitt ved 
 
 $$
-f(x) = ax^2
+x_0 = -\dfrac{b}{2a} = -\dfrac{2}{2 \cdot 1} = -1
 $$
 
-som betyr at ekstremalpunktet er $(0, 0)$. Et eksempel på en slik funksjon er $f(x) = 3x^2$.
+Da er $y$-koordinaten til ekstremalpunktet gitt ved 
+
+$$
+y_0 = h(-1) = (-1)^2 + 2(-1) + 6 = 1 - 2 + 6 = 5
+$$
+
+Altså er 
+
+$$
+h(x) = (x + 1)^2 + 5
+$$
+
+Dette er en andregradsfunksjon med ekstremalpunkt i $(-1, 5)$ som er konveks {poly-icon}`smile` siden $a > 0$. Dermed har grafen et bunnpunkt i $(-1, 5)$ og vil derfor aldri skjære $x$-aksen. Da kan den ikke ha noen nullpunkter.
 ::::
+:::::
 
 :::::::::::::
+
 
 
 :::::::::::::{part} d
-Undersøk om det finnes tilfeller hvor alle tre representasjonsformer er like. 
+Funksjonen $p$ er gitt ved 
 
-Gi et eksempel om du finner et.
+$$
+p(x) = -x^2 + 8x - 16
+$$
+
+Bestem koordinatene til skjæringspunktene mellom grafen til $p$ og $x$-aksen dersom de finnes.
+
+
+:::::{answer}
+$$
+(4, 0)
+$$
 
 ::::{solution}
-De er alle like dersom $b = c = 0$ i standardformen. Da har vi 
+Vi kan skrive om $p(x)$ til
 
 $$
-f(x) = ax^2
+p(x) = -(x^2 - 8x + 16) = -(x - 4)^2
 $$
 
-som gir nullpunkt og ekstremalpunkt i $(0, 0)$. Et eksempel på en slik funksjon er $f(x) = x^2$.
+der vi har brukt 2. kvadratsetning for å faktorisere. Dermed ser vi at grafen til $p$ har et nullpunkt i $x = 4$. Dermed har grafen ett skjæringspunkt med $x$-aksen
 
+$$
+(4, 0)
+$$
 ::::
+:::::
 
 :::::::::::::
 
-
-::::::::::::::
 :::::::::::::::
-
-
-
