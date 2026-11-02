@@ -1,9 +1,6 @@
 # Dev
 
 :::{plot}
-nocache:
 width: 70%
-circle: (0, 0), 1, blue
-fontsize: 24
-axis: equal
+function: -1/3 * ((x + 1)**2 - 9), f
 :::
