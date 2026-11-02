@@ -564,12 +564,12 @@ $$
 h(x) = (x + 3)^2 - 1
 $$
 
-Bestem nullpunktene til $h$.
+Bestem koordinatene til skjæringspunktene mellom grafen til $h$ og $x$-aksen.
 
 
 :::::{answer}
 $$
-x = -4 \qog x = -2
+(-4, 0) \qog (-2, 0)
 $$
 
 ::::{solution}
@@ -589,6 +589,12 @@ som betyr at nullpunktene til $h$ er
 
 $$
 x = -4 \qog x = -2
+$$
+
+Derfor er skjæringspunktene mellom grafen til $h$ og $x$-aksen 
+
+$$
+(-4, 0) \qog (-2, 0)
 $$
 ::::
 :::::
