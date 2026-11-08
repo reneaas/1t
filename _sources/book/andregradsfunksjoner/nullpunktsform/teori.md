@@ -449,7 +449,7 @@ Bestem ekstremalformen til $f(x)$.
 
 :::::{answer}
 $$
-f(x) = -3(x + 1)^2 - 27
+f(x) = -3(x + 1)^2 + 27
 $$
 
 ::::{solution}
@@ -462,13 +462,13 @@ $$
 Så setter vi inn denne verdien i $f(x)$ for å bestemme $y$-koordinaten til ekstremalpunktet:
 
 $$
-y_0 = f(-1) = -3\cdot(-1 - 2)\cdot(-1 + 4) = -3\cdot(-3) \cdot 3 = -27.
+y_0 = f(-1) = -3\cdot(-1 - 2)\cdot(-1 + 4) = -3\cdot(-3) \cdot 3 = 27.
 $$
 
 Fra $f(x)$ ser vi at $a = -3$, så da kan vi skrive om $f(x)$ til ekstremalpunktsform:
 
 $$
-f(x) = a(x - x_0)^2 + y_0 = -3(x + 1)^2 - 27.
+f(x) = a(x - x_0)^2 + y_0 = -3(x + 1)^2 + 27.
 $$
 
 ::::
