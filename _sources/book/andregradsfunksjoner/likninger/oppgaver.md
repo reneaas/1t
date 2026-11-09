@@ -67,48 +67,20 @@ Grafen til en andregradsfunksjon $h$ er vist i figuren til høyre.
 Bruk figuren til å løse likningen
 
 $$
-h(x) = 0
+h(x) = 3
 $$
 
 
 
 ::::{answer}
 $$
-x = -2 \or x = 2
+x = -1 \or x = 1
 $$
 ::::
 
 
 :::::::::::::
 
-
-:::::::::::::{part} d
-:::{plot}
-width: 320px
-align: right
-fontsize: 26
-function: 0.5 * (x + 4) * (x - 3), p
-ymin: -7
-:::
-
-Grafen til en andregradsfunksjon $p$ er vist i figuren til høyre.
-
-Bruk figuren til å løse likningen:
-
-$$
-p(x) = 0
-$$
-
-
-
-::::{answer}
-
-$$
-x = -4 \or x = 3
-$$
-::::
-
-:::::::::::::
 ::::::::::::::
 
 :::::::::::::::
@@ -188,48 +160,6 @@ layout: sidebar
 ---
 :::
 
-
-$$
-2x^2 - 4x = -2
-$$
-
-
-:::::{answer}
-$$
-x = 1
-$$
-
-::::{solution}
-Vi skriver inn likningene for venstre og høyre side av likningen og bruker "skjæring mellom to objekt" {ggb-icon}`mode_intersect` for å finne skjæringspunktene. Se figuren nedenfor.
-
-:::{figure} ./figurer/oppgaver/oppgave_2/b.png
----
-class: no-click, adaptive-figure
-width: 100%
----
-:::
-
-Vi ser at det er ett skjæringspunkt mellom grafene gitt ved $(1, -2)$. Det er $x$-koordinaten som er løsningen av likningen, som betyr at løsningen er
-
-$$
-x = 1
-$$
-
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::{part} c
-
-:::{ggb-popup}
----
-layout: sidebar
----
-:::
-
 Løs likningen nedenfor grafisk.
 
 $$
@@ -260,51 +190,6 @@ $$
 
 ::::
 
-:::::
-
-:::::::::::::
-
-
-:::::::::::::{part} d
-
-:::{ggb-popup}
----
-layout: sidebar
----
-:::
-
-
-Løs likningen nedenfor grafisk.
-
-$$
-4x^2 - 12x + 6 = -2x^2 + 5x - 1
-$$
-
-
-:::::{answer}
-$$
-x \approx 0.5 \or x \approx 2.33.
-$$
-
-::::{solution}
-Vi skriver inn likningene for venstre og høyre side av likningen og bruker "skjæring mellom to objekt" {ggb-icon}`mode_intersect` for å finne skjæringspunktene. Se figuren nedenfor.
-
-:::{figure} ./figurer/oppgaver/oppgave_2/d.png
----
-class: no-click, adaptive-figure
-width: 100%
----
-:::
-
-Vi ser at skjæringspunktene er $(0.5, 1)$ og $(2.33, -0.22)$. Det er $x$-koordinatene som er løsningene av likningen, som betyr at løsningen er
-
-$$
-x \approx 0.5 \or x \approx 2.33.
-$$
-
-> Her bruker vi $\approx$ fordi vi bare finner en tilnærmet verdi for $x$-koordinatene og ikke nødvendigvis den eksakte verdien. 
-
-::::
 :::::
 
 :::::::::::::
@@ -415,29 +300,6 @@ $$
 :::::::::::::
 
 
-:::::::::::::{part} d
-Løs likningen
-
-$$
-x^2 - 2 = 0
-$$
-
-:::::{answer}
-$$
-x = \pm \sqrt{2}
-$$
-
-::::{solution}
-$$
-x^2 - 2 = 0 \liff x^2 = 2 \liff x = \pm \sqrt{2}
-$$
-::::
-
-:::::
-
-
-:::::::::::::
-
 
 :::::::::::::::
 
@@ -484,21 +346,6 @@ $$
 Løs likningen
 
 $$
-x^2 - 10x = 0.
-$$
-
-::::{answer}
-$$
-x = 0 \or x = 10
-$$
-::::
-
-:::::::::::::
-
-:::::::::::::{part} d
-Løs likningen
-
-$$
 -x^2 + x = 0. 
 $$
 
@@ -520,7 +367,7 @@ $$
 
 :::::::::::::::{exercise} Oppgave 5
 
-Løs likningene med {popup}`$abc$-formelen. <En likning på formen $ax^2 + bx + c = 0$ har løsningen $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$>`
+Løs likningene.
 
 
 
@@ -536,7 +383,7 @@ $$
 :::
 :::::::::::::
 
-:::::::::::::::{part} b
+:::::::::::::{part} b
 $$
 x^2 - 3x - 4 = 0
 $$
@@ -560,17 +407,6 @@ $$
 :::
 :::::::::::::
 
-:::::::::::::{part} d
-$$
-x^2 - 4x - 5 = 0
-$$
-
-:::{answer}
-$$
-x = -1 \or x = 5
-$$
-:::
-:::::::::::::
 
 :::::::::::::::
 
@@ -580,19 +416,18 @@ $$
 
 :::::::::::::::{exercise} Oppgave 6
 
-Løs likningene ved hjelp av {popup}`$abc$-formelen. <En likning på formen $ax^2 + bx + c = 0$ har løsningen $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$>`
-
-
 
 :::::::::::::{part} a
 
+Bestem $a$, $b$ og $c$ slik at likningen er en identitet.
+
 $$
-2x^2 - 5x + 2 = 0
+2x^2 - 5x + 2 = a(x - b)(x - c)
 $$
 
 :::::{answer}
 $$
-x = \dfrac{1}{2} \or x = 2
+a = 2 \and b = \dfrac{1}{2} \and c = 2
 $$
 :::::
 
@@ -600,48 +435,37 @@ $$
 
 
 :::::::::::::{part} b
+Bestem $a$, $b$ og $c$ slik at likningen er en identitet.
+
 
 $$
-3x^2 - 7x + 2 = 0
+3x^2 - 7x + 2 = a(x - b)(x - c)
 $$
 
 :::::{answer}
 
 $$
-x \in \left\{\dfrac{1}{3}, 2\right\}
+a = 3 \and b = \dfrac{1}{3} \and c = 2
 $$
 :::::
 
 :::::::::::::
 
 :::::::::::::{part} c
+Bestem $a$, $b$ og $c$ slik at likningen er en identitet.
 
 $$
--x^2 + 9x + 12 = 0
+-x^2 + 4x + 5 = a(x - b)(x - c)
 $$
 
 :::::{answer} 
 $$
-x = \dfrac{-\sqrt{129} + 9}{2} \or x = \dfrac{\sqrt{129} + 9}{2}
+a = -1 \and b = -1 \and c = 5
 $$
 :::::
 
 :::::::::::::
 
-
-:::::::::::::{part} d
-
-$$
-\dfrac{1}{2}x^2 - \dfrac{3}{4}x - \dfrac{1}{2} = 0
-$$
-
-:::::{answer}
-$$
-x = -\dfrac{1}{2} \or x = 2
-$$
-:::::
-
-:::::::::::::
 
 :::::::::::::::
 
@@ -653,9 +477,12 @@ $$
 
 :::::::::::::::{exercise} Oppgave 7
 
-> Noen ganger jobber vi med andregradslikninger som vi må skrive om til formen $ax^2 + bx + c = 0$ før vi kan bruke $abc$-formelen. 
+:::{hint} Hint
+Skriv om likningen til formen $ax^2 + bx + c = 0$ før du bruker $abc$-formelen.
+:::
 
-Løs likningene med $abc$-formelen.
+
+Løs likningene.
 
 
 
@@ -687,19 +514,6 @@ $$
 
 
 :::::::::::::{part} c
-$$
--x^2 + x + 3 = 3x - 1
-$$
-
-:::::{answer}
-$$
-x = -1 - \sqrt{5} \or x = -1 + \sqrt{5}
-$$
-:::::
-:::::::::::::
-
-
-:::::::::::::{part} d
 $$
 2x^2 + 5x - 1 = -2x + 3
 $$
@@ -765,19 +579,6 @@ $$
 
 :::::::::::::
 
-:::::::::::::{part} c
-:::{cas-popup}
----
-layout: sidebar
----
-:::
-
-$$
--3x^2 + 4x + 6 = -3x + 10
-$$
-
-
-:::::::::::::
 
 
 :::::::::::::::
@@ -792,18 +593,11 @@ $$
 
 
 :::::::::::::{part} a
-:::{cas-popup}
----
-layout: sidebar
----
-:::
 
-Nedenfor vises et program som løser en andregradslikning. 
 
-Bruk CAS til å bestemme verdiene programmet skriver ut og sjekk svaret ditt nedenfor.
+Nedenfor vises et program. 
 
-:::{clear}
-:::
+Bestem hvilke verdier programmer skriver ut og sjekk svaret ditt.
 
 :::{interactive-code}
 ---
@@ -820,18 +614,11 @@ for x in range(-10, 11):
 
 
 :::::::::::::{part} b
-:::{cas-popup}
----
-layout: sidebar
----
-:::
 
-Nedenfor vises et program som løser en andregradslikning. 
 
-Bruk CAS til å bestemme verdiene programmet skriver ut og sjekk svaret ditt nedenfor.
+Nedenfor vises et program. 
 
-:::{clear}
-:::
+Bestem hvilke verdier programmer skriver ut og sjekk svaret ditt.
 
 :::{interactive-code}
 ---
@@ -849,18 +636,11 @@ for x in range(-10, 11):
 
 
 :::::::::::::{part} c
-:::{cas-popup}
----
-layout: sidebar
----
-:::
 
-Nedenfor vises et program som løser en andregradslikning. 
 
-Bruk CAS til å bestemme verdiene programmet skriver ut og sjekk svaret ditt nedenfor.
+Nedenfor vises et program. 
 
-:::{clear}
-:::
+Bestem hvilke verdier programmer skriver ut og sjekk svaret ditt.
 
 :::{interactive-code}
 ---
@@ -868,34 +648,6 @@ predict:
 ---
 for x in range(-10, 11):
     if x**2 + 3*x + 11 == -3*x + 2:
-        print(x)
-
-
-:::
-
-:::::::::::::
-
-
-:::::::::::::{part} d
-:::{cas-popup}
----
-layout: sidebar
----
-:::
-
-Nedenfor vises et program som løser en andregradslikning. 
-
-Bruk CAS til å bestemme verdiene programmet skriver ut og sjekk svaret ditt nedenfor.
-
-:::{clear}
-:::
-
-:::{interactive-code}
----
-predict:
----
-for x in range(-10, 11):
-    if x**2 + x - 20 == -x**2 + 3*x + 40:
         print(x)
 
 
@@ -1016,41 +768,8 @@ for x in range(-10, 11):
 
 
 
-:::::::::::::{part} d
-Fyll ut programmet og bruk det til å løse likningen
-
-$$
--x^2 + 6x + 7 = x^2 - 4x - 5
-$$
-
-
-:::{interactive-code}
-for x in range(????):
-    if ????:
-        print(x)
-
-
-
-:::
-
-
-::::{answer}
-:::{code-block} python
----
-linenos:
----
-for x in range(-10, 11):
-    if -x**2 + 6*x + 7 == x**2 - 4*x - 5:
-        print(x)
-
-:::
-::::
-
-:::::::::::::
-
-
-
 :::::::::::::::
+
 
 
 ---
@@ -1060,119 +779,6 @@ for x in range(-10, 11):
 
 
 :::::::::::::{part} a
-
-
-
-
-Bestem $a$ og $b$ slik at likningen er en identitet.
-
-$$
-x^2 + 6x - 7 = (x - a)(x - b)
-$$
-
-:::::::::::::
-
-
-:::::::::::::{part} b
-
-
-
-Bestem $a$, $b$ og $c$ slik at likningen er en identitet.
-
-$$
--x^2 - 7x - 12 = a(x - b)(x - c)
-$$
-
-:::::::::::::
-
-
-:::::::::::::{part} c
-
-
-
-
-Bestem $a$, $b$ og $c$ slik at likningen er en identitet.
-
-$$
-2x^2 - 18 = a(x - b)(x - c)
-$$
-
-:::::::::::::
-
-
-:::::::::::::{part} d
-
-
-
-Bestem $a$, $b$ og $c$ slik at likningen er en identitet.
-
-$$
--3x^2 + 12x = a(x - b)(x - c)
-$$
-
-:::::::::::::
-
-:::::::::::::::
-
-
-
----
-
-
-:::::::::::::::{exercise} Oppgave 12
-
-:::::::::::::{part} a
-Bestem diskriminanten $D$ for likningen
-
-$$
-x^2 + 10x + 25 = 0
-$$
-
-og avgjør hvor mange løsninger likningen har.
-
-
-:::::::::::::
-
-
-:::::::::::::{part} b
-Bestem diskriminanten $D$ for likningen
-
-$$
--x^2 + 3x + 8 = 0
-$$
-
-og avgjør hvor mange løsninger likningen har.
-:::::::::::::
-
-
-:::::::::::::{part} c
-Bestem diskriminanten $D$ for likningen
-
-$$
-2x^2 - 3x + 5 = x + 7
-$$
-
-og avgjør hvor mange løsninger likningen har.
-:::::::::::::
-
-
-
-:::::::::::::::
-
-
----
-
-
-:::::::::::::::{exercise} Oppgave 13
-
-
-:::::::::::::{part} a
-
-:::{cas-popup}
----
-layout: sidebar
----
-:::
 
 En andregradslikning er gitt ved
 
@@ -1188,12 +794,6 @@ Bestem $k$ slik at likningen har én løsning.
 :::::::::::::{part} b
 
 
-:::{cas-popup}
----
-layout: sidebar
----
-:::
-
 
 En andregradsfunksjon er gitt ved 
 
@@ -1207,13 +807,6 @@ Bestem $k$ slik at grafen til $f$ skjærer $x$-aksen én gang.
 
 
 :::::::::::::{part} c
-
-
-:::{cas-popup}
----
-layout: sidebar
----
-:::
 
 
 En andregradsfunksjon $f$ er gitt ved 
@@ -1239,7 +832,7 @@ Bestem $k$ slik at $f$ har nøyaktig ett nullpunkt.
 
 
 
-:::::::::::::::{exercise} Oppgave 14
+:::::::::::::::{exercise} Oppgave 12
 
 Vi går ut ifra en helt generell andregradslikning 
 
