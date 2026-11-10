@@ -64,7 +64,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/notebook.css?v=00170ee0" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/popup_code.css?v=b88b7ace" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/quiz.css?v=bc8164d8" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=6a604523" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" />
     <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" />
@@ -180,7 +180,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="../../../_static/design-tabs.js?v=fcb327ea"></script>
     <script src="../../../_static/munchboka/js/popup.js?v=5db611f4"></script>
     <script src="../../../_static/munchboka/js/timedQuiz/utils.js?v=2c6f871c"></script>
     <script src="../../../_static/munchboka/js/timedQuiz/multipleChoiceQuestion.js?v=c6ce1ca2"></script>
@@ -1038,9 +1038,9 @@ x \in \langle -3, \to \rangle.
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-574f31fd" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-574f31fd" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-574f31fd" class="ggb-window"></div>
+<button id="button-ggb-cas-5eedcce1" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-5eedcce1" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-5eedcce1" class="ggb-window"></div>
 </div>
 
 <style>
@@ -1091,12 +1091,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-574f31fd';
+    const storageKey = 'ggb-cas-state-ggb-cas-5eedcce1';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-574f31fd").width(),
-            h = $("#ggb-cas-574f31fd").height();
+      const w = $("#ggb-cas-5eedcce1").width(),
+            h = $("#ggb-cas-5eedcce1").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -1167,7 +1167,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-574f31fd").dialog({
+    const $dlg = $("#dialog-ggb-cas-5eedcce1").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -1177,7 +1177,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-574f31fd",
+            appName: "classic", id: "ggb-cas-5eedcce1",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -1189,7 +1189,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-574f31fd");
+          }, true).inject("ggb-cas-5eedcce1");
         } else {
           applySize();
         }
@@ -1210,12 +1210,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-574f31fd").empty();
+            $("#ggb-cas-5eedcce1").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-574f31fd",
+              appName: "classic", id: "ggb-cas-5eedcce1",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -1225,7 +1225,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-574f31fd");
+            }, true).inject("ggb-cas-5eedcce1");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -1277,7 +1277,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-574f31fd')) {
+          if (!e.target.closest('#ggb-cas-5eedcce1')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -1305,7 +1305,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-574f31fd');
+      const ggbContainer = document.getElementById('ggb-cas-5eedcce1');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -1351,10 +1351,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-574f31fd").button()
+    $("#button-ggb-cas-5eedcce1").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-574f31fd").dialog("open");
+        $("#dialog-ggb-cas-5eedcce1").dialog("open");
       });
   });
 })();
