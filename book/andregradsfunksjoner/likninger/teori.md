@@ -499,58 +499,6 @@ class: no-click, adaptive-figure
 
 
 
-:::::{proof}
-Vi starter med andregradslikningen
-
-$$
-ax^2 + bx + c = 0
-$$
-
-Målet vårt er å skrive om andregradsuttrykket til nullpunktsform.
-
-Symmetrilinja til andregradsuttrykket er
-
-$$
-x_0 = -\dfrac{b}{2a}
-$$
-
-som betyr at vi kan om uttrykket til ekstremalpunktsform:
-
-$$
-ax^2 + bx + c = a\left(x - \left(-\dfrac{b}{2a}\right)\right) + y_0 = a\left(x + \dfrac{b}{2a}\right)^2 + y_0
-$$
-
-Setter vi dette lik null får vi:
-
-$$
-a\left(x + \dfrac{b}{2a}\right)^2 + y_0 = 0
-$$
-
-$$
-\left(x + \dfrac{b}{2a}\right)^2 =-\dfrac{y_0}{a}
-$$
-
-Så tar vi kvadratroten på hver side av likningen:
-
-$$
-x + \dfrac{b}{2a} = \pm \sqrt{-\dfrac{y_0}{a}}
-$$
-
-som gir
-
-$$
-x = -\dfrac{b}{2a} \pm \sqrt{-\dfrac{y_0}{a}} = \dfrac{-b \pm \sqrt{-4y_0}}{2a}
-$$
-
-Nå gjenstår det bare å finne et uttrykk for $y_0$ uttrykt ved $a$, $b$ og $c$. Vi vet at $y_0$ er funksjonsverdien til andregradslikningen når $x = x_0 = -\dfrac{b}{2a}$:
-
-$$
-y_0 = a\left(-\dfrac{b}{2a}\right)^2 + b\left(-\dfrac{b}{2a}\right) + c = \dfrac{b^2}{4a} - \dfrac{b^2}{2a} + c = -\dfrac{b^2}{4a} + c
-$$
-
-Setter vi inn dette i uttrykket for $x$ får vi
-:::::
-
 :::::::::::::::
 
 
