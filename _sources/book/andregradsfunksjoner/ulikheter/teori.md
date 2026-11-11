@@ -7,13 +7,7 @@
 :::
 
 
-Andregradsulikheter er ulikheter der vi lurer på når en andregradsfunksjon er større enn eller mindre enn null. Som når vi jobbet med lineære ulikheter, så hadde vi to strategier vi kunne bruke for å løse ulikhetene: 
-
-1. **Grafisk**
-2. **Algebraisk**
-    * Ved regning
-    * Med CAS
-
+Andregradsulikheter er ulikheter som involverer andregradsuttrykk. Ofte vil ulikheten være knyttet til en andregradsfunksjon. Vi skal se på hvordan vi løser slike ulikheter både grafisk og algebraisk.
 
 ## Grafisk løsning
 Å løse en andregradsulikhet grafisk er ganske likt det vi gjorde med lineære ulikheter. Vi tegner grafen til funksjonen og så leser vi av hvor grafen oppfyller ulikheten. 
@@ -22,10 +16,21 @@ La oss se på et eksempel:
 
 
 :::::::::::::::{example} Eksempel 1
+
+:::{plot}
+width: 350px
+align: right
+function: (x + 2) * (x - 1), f
+fontsize: 26
+:::
+
+
+Grafen til en andregradsfunksjon er vist til høyre.
+
 Løs ulikheten
 
 $$
-x^2 - 4x + 3 < 0
+f(x) \gt 0
 $$
 
 
@@ -33,22 +38,29 @@ $$
 ---
 open:
 ---
-Vi tegner grafen til $f(x) = x^2 - 4x + 3$ og ser hvor $y$-koordinaten til grafen er mindre enn null:
+Å løse ulikheten $f(x) \gt 0$ grafisk handler om å lese av når grafen til $f$ ligger på **oversiden** av $x$-aksen. Vi kan se at grafen ligger på oversiden av $x$-aksen så lenge $x \lt -2$ eller $x \gt 1$.
+
+Når vi ønsker å beskrive løsningen, bruker vi oftest intervaller. Vi har to måter å beskrive det på:
 
 
-:::{figure} ./figurer/eksempler/eksempel_1/figur.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
+**Beskrivelse 1:**
 
-Fra grafen til $f$ ser vi at $f(x) < 0$ når 
+Siden grafen ligger på oversiden av $x$-aksen når $x \lt -2$, så vil intervallbeskrivelsen være $x \in \langle \gets, -2\rangle$. Siden grafen også ligger på oversiden av $x$-aksen, så vil også $x \in \langle 1, \to \rangle$ løse ulikheten. Vi samler de to løsningene ved å "plusse sammen" de to intervallene med symbolet $\cup$. Da får vi at 
 
 $$
-x \in \langle 1, 3 \rangle
+f(x) \gt 0 \liff x \in \langle \gets, -2\rangle \cup \langle 1, \to \rangle
 $$
 
+
+**Beskrivelse 2:**
+
+Løsningen av ulikheten vil være alle reelle tall $x \in \real$ som **ikke** ligger i intervallet $[-2, 2]$. Da kan vi uttrykket løsningen som alle reelle tall **bortsett** fra de som ligger i intervallet $[-2, 2]$. Da skriver vi 
+
+$$
+x \in \real \setminus [-2, 2]
+$$
+
+som vi leser som: Alle reelle tall bortsett fra de som ligger i intervallet $[-2, 2]$.
 
 
 ::::
@@ -56,36 +68,36 @@ $$
 :::::::::::::::
 
 
-La oss se på et eksempel til der vi trenger en ny måte å beskrive løsningen på:
+Vi tar et eksempel til der vi skal løse en andregradsulikhet grafisk.
+
 
 
 :::::::::::::::{example} Eksempel 2
-Løs ulikheten
+:::{plot}
+width: 350px
+align: right
+function: (x + 3) * (x - 2) + 2, f
+fontsize: 26
+:::
 
-$$
-x^2 - x - 4 \geq 2
-$$
+
+
+Grafen til en andregradsfunksjon $f$ er vist i figuren til høyre.
+
+Bestem $f(x) \leq 2$. 
+
 
 ::::{solution}
 ---
 open:
 ---
-Vi tegner grafen til $f(x) = x^2 - x - 4$ og ser hvor $y$-koordinaten til grafen er større enn eller lik $y = 2$: 
-
-::::{figure} ./figurer/eksempler/eksempel_2/figur.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-::::
-
-Fra grafen til $f$ ser vi at $f(x) \geq 2$ når $x \leq -2$ eller når $x \geq 3$. Løsningen er derfor satt sammen av to intervaller. Det ene intervallet er $\langle \gets, -2]$ og det andre er $[3, \to \rangle$. For å sette sammen disse to plasserer vi symbolet $\cup$ mellom dem: 
+Grafen til $f$ ligger på **undersiden** av linja $y = 2$ så lengde $x$ ligger mellom $x = -3$ og $x = 2$. Dermed kan vi skrive av ulikheten som
 
 $$
-x \in \langle \gets, -2] \cup [3, \to \rangle
+f(x) \leq 2 \liff x \in [-3, 2]
 $$
 
-Vi leser det som at $x$ er enten i det første intervallet, eller i det andre. 
+Legg spesielt merke til at vi her inkluderer endepunktene $x = -3$ og $x = 2$ i løsningen fordi ulikheten lar $f(x) = 2$ være tillatt.
 
 ::::
 
@@ -94,54 +106,10 @@ Vi leser det som at $x$ er enten i det første intervallet, eller i det andre.
 
 ---
 
-:::::::::::::::{exercise} Underveisoppgave 1
-:::{plot}
-width: 320px
-align: right
-fontsize: 26
-function: x**2 - 2*x - 10, f
-ymin: -12
-ystep: 2
-:::
-
-Grafen til en andregradsfunksjon $f(x) = x^2 - 2x - 8$ er vist i figuren til høyre. 
-
-Bruk grafen til å løse ulikheten
-
-$$
-x^2 - 2x - 10 \geq -2
-$$
-
-
-
-
-:::::{answer}
-$$
-x \in \langle \gets, -2] \cup [4, \to \rangle
-$$
-
-::::{solution}
-Vi ser fra grafen at $f(x) \geq -2$ når $x \leq -2$ eller når $x \geq 4$. Løsningen er derfor
-
-$$
-x \in \langle \gets, -2] \cup [4, \to \rangle
-$$
-::::
-
-:::::
-
-:::::::::::::::
 
 
 ## Algebraisk løsning
-Å løse en andregradsulikhet algebraisk skiller seg en del fra hvordan vi løste lineære ulikheter. Her får vi ikke isolert $x$ på samme måte som vi kunne gjøre med lineære ulikheter. I stedet må vi bruke en annen strategi. Strategien kan oppsummeres som:
-
-1. Flytt alle ledd over på én side av ulikheten slik at høyre side blir null.
-2. Skriv uttrykket på venstre side på nullpunktsform.
-3. Tegn en **fortegnslinje** for andregradsfunksjonen på venstre side og les av løsningen som oppfyller ulikheten. 
-
-
-La oss først se på hvordan vi leser og tegner et fortegnsskjema.
+Når vi løser ulikheter algebraisk, så bruker vi **fortegnsskjemaer** for å bestemme når en funksjon er positiv og når den er negativ. Et fortegnsskjema kan bestå av én eller flere **fortegnslinjer** som holder styr på fortegnet til ulike faktorer i funksjonsuttrykket. La oss først forklare hvordan vi tegner en fortegnslinje:
 
 :::::::::::::::{summary} Fortegnslinjer
 
@@ -152,12 +120,12 @@ En **fortegnslinje** er en linje som viser fortegnet til en funksjon på et inte
 * Vi markerer med $0$ ved nullpunktene $x_1$ og $x_2$ til funksjonen. 
 
 
-:::{figure} ./figurer/teori/fortegnslinjer.svg
----
-class: no-click, adaptive-figure
-width: 100%
----
+:::{signchart-2}
+width: 0%
+function: (x - x_1) * (x - x_2), f(x)
+factors: false
 :::
+
 
 
 :::::::::::::::
@@ -186,7 +154,7 @@ $$
 ---
 open:
 ---
-Siden vi skal bestemme når $f(x) < 0$, så må vi se hvor fortegnslinja er **stiplet**. Fra fortegnslinja ser vi at $f(x) < 0$ når $x < -2$ eller når $x > 3$. Løsningen er derfor
+Siden vi skal bestemme når $f(x) \lt 0$, så må vi se hvor fortegnslinja er **stiplet** siden dette svarer til når $f(x)$ er negativ. Fra fortegnslinja ser vi at $f(x) \lt 0$ når $x < -2$ eller når $x > 3$. Løsningen er derfor
 
 $$
 x \in \langle \gets, -2 \rangle \cup \langle 3, \to \rangle
@@ -204,166 +172,87 @@ som sier at vi tar alle tallene på tallinja, *bortsett fra* tallene i intervall
 
 :::::::::::::::
 
----
-
-
-:::::::::::::::{exercise} Underveisoppgave 2
-Nedenfor vises fortegnslinja til en andregradsfunksjon $f$. 
-
-:::{signchart-2}
-width: 70%
-function: (x + 1) * (x - 2), f(x)
-factors: false
-:::
-
-
-
-Bruk fortegnslinja til å løse ulikheten $f(x) \geq 0$. 
-
-
-
-:::::{answer}
-$$
-x \in \langle \gets, -1] \cup [2, \to \rangle
-$$
-
-::::{solution}
-For å løse ulikheten $f(x) \geq 0$ må vi se hvor fortegnslinja er **heltrukket** eller **lik null**. Fra fortegnslinja ser vi at $f(x) \geq 0$ når $x \leq -1$ eller når $x \geq 2$. Løsningen er derfor
-
-$$
-x \in \langle \gets, -1] \cup [2, \to \rangle
-$$
-::::
-
-:::::
-
-
-:::::::::::::::
 
 
 ---
 
 
-Nå er vi klare for å se hvordan vi kan løse andregradsulikheter algebraisk. La oss se på et eksempel:
+Nå er vi klare for å se hvordan vi kan løse andregradsulikheter algebraisk. Neste eksempel viser en generell fremgangsmåte:
 
 
 :::::::::::::::{example} Eksempel 4
-Løs ulikheten 
+En andregradsfunksjon $f$ er gitt ved 
 
 $$
--x^2 - 2x + 1 > -2
+f(x) = x^2 - 4x - 5
+$$
+
+Løs ulikheten
+
+$$
+f(x) \geq 0
 $$
 
 
 ::::{solution}
 ---
-open:
+open: 
 ---
-Vi starter med å samle alle leddene på én side slik at vi får $0$ på høyre side:
+Vi må først finne nullpunktene til uttrykket så vi kan skrive uttrykket på nullpunktsform. Vi har at 
 
 $$
--x^2 -2x + 1 > - 2 \liff -x^2 -2x + 1 + 2 > 0 \liff -x^2 -2x + 3 > 0
+f(x) = 0 
 $$
 
-Deretter må vi bestemme nullpunktene til funksjonen $f(x) = -x^2 - 2x + 3$ som vi kan gjøre med $abc$-formelen: 
-
 $$
-x =\frac{-(-2) \pm \sqrt{(-2)^2 - 4\cdot(-1)\cdot3}}{2\cdot(-1)} = \frac{2 \pm \sqrt{4 + 12}}{-2} = \frac{2 \pm 4}{-2}
+x^2 - 4x - 5 = 0
 $$
 
-som gir 
-
 $$
-x = \frac{6}{-2} = -3 \or x = \frac{-2}{-2} = 1
+x^2 - 4x = 5
 $$
 
-Dermed kan vi skrive om ulikheten til 
-
 $$
--1 \cdot(x + 3)(x - 1) > 0
+x^2 - 4x + 2^2 = 5 + 2^2
 $$
 
-Så tegner vi en fortegnslinje for hver av faktorene i andregradsuttrykket. Får å få fortegnslinja til $f(x)$, ganger vi fortegnet til hver faktor sammen og ser hvilken fortegn vi får. Se figuren nedenfor:
+$$
+(x - 2)^2 = 9
+$$
 
+$$
+x - 2 = \pm 3 \liff x = 2 \pm 3 = \begin{cases} 5 \\ \\ -1 \end{cases}
+$$
+
+som gir at 
+
+$$
+x = -1 \or x = 5
+$$
+
+Dermed kan vi skrive 
+
+$$
+f(x) = (x + 1)(x - 5)
+$$
+
+Så tegner vi et fortegnsskjema der vi tegner én fortegnslinje for **hver** faktor i uttrykket. Fortegnet til $f(x)$ vil være produktet av fortegnene til linjene:
 
 :::{signchart-2}
-width: 60%
-function: -1 * (x + 3) * (x - 1), f(x) 
+width: 70%
+function: (x + 1) * (x - 5), f(x)
 :::
 
-
-
-Fra fortegnslinja til $f(x)$, kan vi se at $f(x) > 0$ når
+Fra fortegnslinja til $f(x)$ så ser vi at $f(x) \geq 0$ så lenge 
 
 $$
-x \in \langle -3, 1 \rangle
+x \in \real \setminus \langle -1, 5 \rangle
 $$
 
 
 ::::
 
-:::::::::::::::
-
-
----
-
-
-:::::::::::::::{exercise} Underveisoppgave 3
-Løs ulikheten 
-
-$$
-x^2 + x - 8 < 4
-$$
-
-
-:::::{answer}
-$$
-x \in \langle -4, 3 \rangle
-$$
-
-::::{solution}
-Vi starter med å samle alle leddene på én side slik at vi får $0$ på høyre side:
-
-$$
-x^2 + x - 8 < 4 \liff x^2 + x - 8 - 4 < 0 \liff x^2 + x - 12 < 0
-$$
-
-Deretter må vi bestemme nullpunktene til funksjonen $f(x) = x^2 + x - 12$ som vi kan gjøre med $abc$-formelen:
-
-$$
-x = \frac{-1 \pm \sqrt{1^2 - 4\cdot1\cdot(-12)}}{2\cdot1} = \frac{-1 \pm \sqrt{1 + 48}}{2} = \frac{-1 \pm 7}{2}
-$$
-
-som gir 
-
-$$
-x = \frac{6}{2} = 3 \or x = \frac{-8}{2} = -4
-$$
-
-Dermed kan vi skrive om ulikheten til
-
-$$
-(x + 4)(x - 3) < 0
-$$
-
-Nå tegner vi en fortegnslinje for hver av faktorene i andregradsuttrykket. Får å få fortegnslinja til $f(x) = (x + 4)(x - 3)$, ganger vi fortegnet til hver faktor sammen og ser hvilket fortegn vi får. Se figuren nedenfor:
-
-
-:::{signchart-2}
-width: 60%
-function: (x + 4) * (x - 3), f(x)
-:::
-
-
-Fra figuren kan vi se at $f(x) < 0$ når
-
-$$
-x \in \langle -4, 3 \rangle
-$$
-
 ::::
-
-:::::
 
 :::::::::::::::
 
