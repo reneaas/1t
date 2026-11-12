@@ -1,75 +1,67 @@
 # Oppgaver: Andregradsulikheter
 
-
-
 :::::::::::::::{exercise} Oppgave 1
-
 
 :::::::::::::{part} a
 :::{plot}
-width: 320px
+width: 100%
 align: right
-fontsize: 26
 function: (x + 3) * (x - 1), f
+fontsize: 26
 :::
 
 
 
-Til høyre vises grafen til en andregradsfunksjon $f$. 
+Til høyre vises grafen til en andregradsfunksjon $f$.
 
-Løs ulikheten 
-
-$$
-f(x) \leq 0.
-$$
+Løs ulikheten $f(x) \leq 0$.
 
 
 :::::{answer}
 $$
-x \in [-3, 1].
+x \in [-3, 1]
 $$
+
 
 ::::{solution}
-Grafen til $f$ skjærer $x$-aksen i $(-3, 0)$ og $(1, 0)$. Grafen ligger under $x$-aksen mellom disse to punktene som betyr at $f(x) \leq 0$ når 
+Grafen til $f$ ligger skjærer $x$-aksen i $x = -3$ og $x = 1$. Samtidig er grafen til $f$ under $x$-aksen når $x$ ligger mellom de to nullpunktene. Derfor er løsningen av ulikheten
 
 $$
-x \in [-3, 1].
+f(x) \leq 0 \liff x \in [-3, 1]
 $$
 ::::
 
-:::::
 
+:::::
 
 :::::::::::::
 
 
 :::::::::::::{part} b
 :::{plot}
-width: 320px
+width: 100%
 align: right
+function: -(x + 2) * (x - 4), g
 fontsize: 26
-function: -1/2 * (x + 1) * (x - 3), g
+ymax: 10
+ymin: -4
 :::
 
-Til høyre vises grafen til en andregradsfunksjon $g$. 
+Til høyre vises grafen til en andregradsfunksjon $g$.
 
-Løs ulikheten 
-
-$$
-g(x) < 0.
-$$
-
+Løs ulikheten $g(x) \gt 0$.
 
 :::::{answer}
 $$
-x \in \langle \gets, -1 \rangle \cup \langle 3, \to \rangle.
+x \in \langle -2, 4 \rangle
 $$
+
 
 ::::{solution}
-Grafen til $g$ skjærer $x$-aksen i $(-1, 0)$ og $(3, 0)$. På nedsiden av $(-1, 0)$ og på oversiden av $(3, 0)$ ligger grafen til $g$ under $x$-aksen som betyr at $g(x) < 0$ når
+Grafen til $g$ ligger *over* $x$-aksen når $x$ ligger mellom $x = -2$ og $x = 4$. Derfor er løsningen av ulikheten
 
 $$
-x \in \langle \gets, -1 \rangle \cup \langle 3, \to \rangle.
+g(x) \gt 0 \liff x \in \langle -2, 4 \rangle
 $$
 ::::
 
@@ -81,42 +73,66 @@ $$
 
 :::::::::::::{part} c
 :::{plot}
-width: 320px
+width: 100%
 align: right
+function: x**2 - 4, h
 fontsize: 26
-function: -1/3 * (x + 5) * (x - 1), h
-xmin: -7
-xmax: 5
 :::
 
-Til høyre vises grafen til en andregradsfunksjon $h$. 
+Til høyre vises grafen til en andregradsfunksjon $h$.
 
-Løs ulikheten 
-
-$$
-h(x) > 0.
-$$
+Løs ulikheten $h(x) \gt 0$.
 
 
 :::::{answer}
+
 $$
-x \in \langle -5, 1 \rangle.
+x \in \real \setminus [-2, 2]
 $$
+
+eller 
+
+$$
+x \in \langle \gets, -2\rangle \cup \langle 2, \to \rangle
+$$
+
 
 ::::{solution}
-Grafen til $h$ skjærer $x$-aksen i $(-5, 0)$ og $(1, 0)$. Mellom disse to punktene ligger grafen til $h$ over $x$-aksen som betyr at $h(x) > 0$ når
+Grafen til $h$ ligger over $x$-aksen før $x = -2$ og etter $x = 2$. Ulikheten $h(x) \gt 0$ kan da beskrives på to måter:
+
+**Skrivemåte 1**:
+
+Løsningen av ulikheten er alle $x$ **bortsett fra** de som ligger i intervallet $[-2, 2]$. Det kan vi skrive som følger:
 
 $$
-x \in \langle -5, 1 \rangle.
+x \in \real \setminus [-2, 2]
 $$
+
+som vi tolker som alle reelle tall, bortsett fra de som ligger i intervallet $[-2, 2]$. 
+
+**Skrivemåte 2**:
+
+Løsningen kan bygges opp av to intervaller:
+1. Intervallet som beskriver alle reelle tall $x$ som ligger på **nedsiden** av $x = -2$.
+2. Intervallet som beskrives alle reelle tall $x$ som ligger på **oversiden** av $x = 2$.
+
+Den første av de to er $x \in \langle \gets, -2\rangle$. Den andre er $x \in \langle 2, \to \rangle$. For å samle samle de to til én løsning, bruker vi $\cup$ for å legge de to intervallet sammen til én større tallmengde:
+
+$$
+x \in \langle \gets, -2 \rangle \cup \langle 2, \to \rangle
+$$
+
+
 ::::
 
 :::::
 
+
+
 :::::::::::::
 
-:::::::::::::::
 
+:::::::::::::::
 
 
 ---
@@ -124,138 +140,432 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 2
-
 Ta quizen!
 
 
-:::{quiz} 
-Q: Hvilken av fortegnslinjene hører til grafen? ![{width: 60%}](./figurer/oppgaver/oppgave_2/spm_1/graf.svg)
-+ ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_1/A.svg)
-- ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_1/B.svg)
-- ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_1/C.svg)
-- ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_1/D.svg)
+::::::::{quiz-2}
+:::::::{quiz-question}
+Hvilken av fortegnslinjene hører til grafen til $f$?
 
-
-Q: Hvilken av fortegnslinjene hører til grafen? ![{width: 60%}](./figurer/oppgaver/oppgave_2/spm_2/graf.svg)
-+ ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_2/A.svg)
-- ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_2/B.svg)
-- ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_2/C.svg)
-- ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_2/D.svg)
-
-
-Q: Hvilken av fortegnslinjene hører til grafen? ![{width: 60%}](./figurer/oppgaver/oppgave_2/spm_3/graf.svg)
-+ ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_3/A.svg)
-- ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_3/B.svg)
-- ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_3/C.svg)
-- ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_3/D.svg)
-
-
-Q: Hvilken av fortegnslinjene hører til grafen? ![{width: 60%}](./figurer/oppgaver/oppgave_2/spm_4/graf.svg)
-+ ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_4/A.svg)
-- ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_4/B.svg)
-- ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_4/C.svg)
-- ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_4/D.svg)
-
-
-Q: Hvilken av fortegnslinjene hører til grafen? ![{width: 60%}](./figurer/oppgaver/oppgave_2/spm_5/graf.svg)
-+ ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_5/A.svg)
-- ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_5/B.svg)
-- ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_5/C.svg)
-- ![{width: 100%}](./figurer/oppgaver/oppgave_2/spm_5/D.svg)
-
+:::{plot}
+width: 50%
+function: (x + 2) * (x - 1), f
+fontsize: 28
 :::
 
 
+::::::{quiz-answer}
+---
+correct:
+---
+:::{signchart-2}
+width: 80%
+function: (x + 2) * (x - 1), f(x)
+factors: false
+small_figsize:
+:::
+
+::::::
+
+
+
+::::::{quiz-answer}
+:::{signchart-2}
+width: 80%
+function: (x - 2) * (x - 1), f(x)
+small_figsize:
+factors: false
+:::
+::::::
+
+
+::::::{quiz-answer}
+:::{signchart-2}
+width: 80%
+function: -(x + 2) * (x - 1), f(x)
+factors: false
+small_figsize:
+:::
+::::::
+
+
+::::::{quiz-answer}
+:::{signchart-2}
+width: 80%
+function: -(x + 1) * (x - 2), f(x)
+factors: false
+small_figsize:
+:::
+
+::::::
+
+
+
+
+:::::::
+
+
+:::::::{quiz-question}
+Hvilken av fortegnslinjene hører til grafen til $g$?
+
+:::{plot}
+width: 50%
+function: -(x + 3) * (x - 2), g
+fontsize: 28
+ymax: 7
+ymin: -5
+:::
+
+
+::::::{quiz-answer}
+---
+correct:
+---
+:::{signchart-2}
+width: 80%
+function: -(x + 3) * (x - 2), g(x)
+factors: false
+small_figsize:
+:::
+
+::::::
+
+
+::::::{quiz-answer}
+:::{signchart-2}
+width: 80%
+function: (x + 3) * (x - 2), g(x)
+factors: false
+small_figsize:
+:::
+
+::::::
+
+::::::{quiz-answer}
+:::{signchart-2}
+width: 80%
+function: (x - 3) * (x + 2), g(x)
+factors: false
+small_figsize:
+:::
+::::::
+
+
+::::::{quiz-answer}
+:::{signchart-2}
+width: 80%
+function: -(x - 3) * (x + 2), g(x)
+factors: false
+small_figsize:
+:::
+::::::
+
+
+:::::::
+
+
+
+:::::::{quiz-question}
+Hvilken av fortegnslinjene hører til grafen til $h$?
+
+
+:::{plot}
+width: 50%
+function: (x + 4) * (x - 1), h
+fontsize: 28
+ymin: -7
+:::
+
+
+::::::{quiz-answer}
+---
+correct:
+---
+:::{signchart-2}
+width: 80%
+function: (x + 4) * (x - 1), h(x)
+factors: false
+small_figsize:
+:::
+
+::::::
+
+
+::::::{quiz-answer}
+:::{signchart-2}
+width: 80%
+function: -(x + 4) * (x - 1), h(x)
+factors: false
+small_figsize:
+:::
+::::::
+
+
+::::::{quiz-answer}
+:::{signchart-2}
+width: 80%
+function: (x - 4) * (x + 1), h(x)
+factors: false
+small_figsize:
+:::
+::::::
+
+
+::::::{quiz-answer}
+:::{signchart-2}
+width: 80%
+function: -(x - 4) * (x + 1), h(x)
+factors: false
+small_figsize:
+:::
+::::::
+
+:::::::
+
+
+
+:::::::{quiz-question}
+Hvilken fortegnslinje hører til grafen til $p$?
+
+
+:::{plot}
+width: 50%
+function: -(x - 1) * (x - 2), p
+fontsize: 28
+:::
+
+
+
+::::::{quiz-answer}
+---
+correct:
+---
+:::{signchart-2}
+width: 80%
+function: -(x - 1) * (x - 2), p(x)
+factors: false
+small_figsize:
+:::
+
+::::::
+
+
+::::::{quiz-answer}
+:::{signchart-2}
+width: 80%
+function: (x - 1) * (x - 2), p(x)
+factors: false
+small_figsize:
+:::
+::::::
+
+
+::::::{quiz-answer}
+:::{signchart-2}
+width: 80%
+function: -(x + 1) * (x + 2), p(x)
+factors: false
+small_figsize:
+:::
+::::::
+
+
+
+::::::{quiz-answer}
+:::{signchart-2}
+width: 80%
+function: (x + 1) * (x + 2), p(x)
+factors: false
+small_figsize:
+:::
+::::::
+
+
+
+:::::::
+
+::::::::
 
 :::::::::::::::
 
 
+
 ---
+
 
 :::::::::::::::{exercise} Oppgave 3
-
 :::::::::::::{part} a
-En andregradsfunksjon $f$ har fortegnslinja:
-
-:::{figure} ./figurer/oppgaver/oppgave_3/a/fortegnslinje.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
+:::{signchart-2}
+width: 350px
+align: right
+function: (x + 2) * (x - 3), f(x)
+fontsize: 32
+factors: false
 :::
 
-Avgjør hvilken av grafene nedenfor som viser grafen til $f$.
+Fortegnslinja til en funksjon $f$ er vist til høyre.
 
-:::{figure} ./figurer/oppgaver/oppgave_3/a/merged_figure.svg
+Bestem hvilken av figurene nedenfor som viser grafen til $f$.
+
+::::{multi-plot2}
 ---
-class: no-click, adaptive-figure
+rows: 2
+cols: 2
+ymax: 8
+ymin: -8
+fontsize: 24 
+---
+:::{plot}
 width: 100%
----
+function: (x - 3) * (x + 2)
+text: 5, 5, "A", bbox
+:::
+
+:::{plot}
+width: 100%
+function: -(x - 3) * (x + 2)
+text: 5, 5, "B", bbox
 :::
 
 
-::::{answer}
-Graf C.
+:::{plot}
+width: 100%
+function: (x + 3) * (x - 2)
+text: 5, 5, "C", bbox
+:::
+
+:::{plot}
+width: 100%
+function: -(x + 3) * (x - 2)
+text: 5, 5, "D", bbox
+:::
+
+
 ::::
 
+
+:::::{answer}
+Graf A
+:::::
 
 :::::::::::::
 
 
+
 :::::::::::::{part} b
-En andregradsfunksjon $g$ har fortegnslinja:
-
-:::{figure} ./figurer/oppgaver/oppgave_3/b/fortegnslinje.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
+:::{signchart-2}
+width: 350px
+align: right
+function: -(x + 3) * (x - 1), g(x)
+fontsize: 32
+factors: false
 :::
 
-Avgjør hvilken av grafene nedenfor som viser grafen til $g$.
+Fortegnslinja til $g(x)$ er vist i figuren til høyre. 
 
-:::{figure} ./figurer/oppgaver/oppgave_3/b/merged_figure.svg
+Hvilken figur nedenfor vises grafen til $g$? 
+
+
+::::{multi-plot2}
 ---
-class: no-click, adaptive-figure
+rows: 2
+cols: 2
+fontsize: 24
+---
+:::{plot}
 width: 100%
----
+function: (x + 1) * (x - 3)
+text: 5, 5, "A", bbox
+:::
+
+:::{plot}
+width: 100%
+function: (x + 3) * (x - 1)
+text: 5, 5, "B", bbox
+:::
+
+:::{plot}
+width: 100%
+function: -(x + 1) * (x - 3)
+text: 5, 5, "C", bbox
 :::
 
 
-::::{answer}
-Graf A. 
+:::{plot}
+width: 100%
+function: -(x + 3) * (x - 1)
+text: 5, 5, "D", bbox
+:::
+
 ::::
+
+
+:::::{answer}
+Graf D.
+:::::
 
 
 :::::::::::::
 
 
 :::::::::::::{part} c
-En andregradsfunksjon $h$ har fortegnslinja:
-
-:::{figure} ./figurer/oppgaver/oppgave_3/c/fortegnslinje.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
+:::{signchart-2}
+width: 350px
+align: right
+function: (x - 2)**2, h(x)
+fontsize: 32
+factors: false
 :::
 
-Avgjør hvilken av grafene nedenfor som viser grafen til $h$.
+Fortegnslinja til $h(x)$ er vist til høyre.
 
-:::{figure} ./figurer/oppgaver/oppgave_3/c/merged_figure.svg
+Hvilken av figurene nedenfor viser grafen til $h$?
+
+
+::::{multi-plot2}
 ---
-class: no-click, adaptive-figure
+rows: 2
+cols: 2
+fontsize: 24
+---
+:::{plot}
 width: 100%
----
+function: (x + 2)**2
+text: 5, 5, "A", bbox
 :::
 
 
-::::{answer}
-Graf D. 
+:::{plot}
+width: 100%
+function: (x - 2)**2
+text: 5, 5, "B", bbox
+:::
+
+
+:::{plot}
+width: 100%
+function: -(x - 2)**2
+text: 5, 5, "C", bbox
+:::
+
+
+:::{plot}
+width: 100%
+function: -(x + 2)**2
+text: 5, 5, "D", bbox
+:::
+
+
 ::::
 
 
+:::::{answer}
+Graf B.
+:::::
+
+
 :::::::::::::
+
 
 
 :::::::::::::::
@@ -263,114 +573,80 @@ Graf D.
 
 
 ---
+
 
 
 :::::::::::::::{exercise} Oppgave 4
-
 :::::::::::::{part} a
-Nedenfor vises fortegnslinja til en andregradsfunksjon $f$.
 
-Løs ulikheten 
-
-$$
-f(x) \geq 0.
-$$
-
-:::{figure} ./figurer/oppgaver/oppgave_4/a.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
+:::{plot}
+width: 350px
+align: right
+function: -(x + 3) * (x - 4), f
+ymax: 14
+ymin: -4
 :::
 
 
-::::{answer}
-$$
-x \in \langle \gets, -2] \cup [2, \to \rangle
-$$
-::::
+Grafen til en andregradsfunksjon $f$ er vist til høyre.
 
+Tegn fortegnslinja til $f(x)$.
+
+
+:::::{answer}
+:::{signchart-2}
+width: 70%
+function: -(x + 3) * (x - 4), f(x)
+factors: false
+:::
+
+:::::
 
 :::::::::::::
 
 
+
 :::::::::::::{part} b
-Nedenfor vises fortegnslinja til en andregradsfunksjon $g$.
-
-Løs ulikheten 
-
-$$
-g(x) > 0.
-$$
-
-:::{figure} ./figurer/oppgaver/oppgave_4/b.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
+:::{plot}
+width: 350px
+align: right
+function: (x + 2) * (x - 2), g
 :::
 
 
-::::{answer}
-$$
-x \in \langle -1, 2 \rangle
-$$
-::::
+Grafen til en andregradsfunksjon $g$ er vist til høyre.
+
+Tegn en fortegnslinje til $g(x)$.
+
+
+:::::{answer}
+:::{signchart-2}
+width: 70%
+function: (x + 2) * (x - 2), g(x)
+factors: false
+:::
+:::::
 
 
 :::::::::::::
 
 
 :::::::::::::{part} c
-Nedenfor vises fortegnslinja til en andregradsfunksjon $h$.
-
-Løs ulikheten 
-
-$$
-h(x) < 0.
-$$
-
-:::{figure} ./figurer/oppgaver/oppgave_4/c.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
+:::{plot}
+width: 350px
+align: right
+function: -1/2 * (x + 2)**2, h
 :::
 
+Grafen til en andregradsfunksjon $h$ er vist til høyre.
 
-::::{answer}
-$$
-x \in \langle \gets, -2 \rangle \cup \langle -2, \to \rangle
-$$
-::::
-
-
-:::::::::::::
-
-
-:::::::::::::{part} d
-Nedenfor vises fortegnslinja til en andregradsfunksjon $p$.
-
-Løs ulikheten 
-
-$$
-p(x) \leq 0.
-$$
-
-:::{figure} ./figurer/oppgaver/oppgave_4/d.svg
----
-class: no-click, adaptive-figure
-width: 90%
----
+:::::{answer}
+:::{signchart-2}
+width: 70%
+function: -1/2 * (x + 2)**2, h(x)
+factors: false
 :::
-
-
-::::{answer}
-$$
-x \in \langle \gets, -1] \cup [0,  \to \rangle
-$$
-::::
-
+:::::
 
 :::::::::::::
 
@@ -378,8 +654,8 @@ $$
 :::::::::::::::
 
 
-
 ---
+
 
 
 :::::::::::::::{exercise} Oppgave 5
@@ -402,13 +678,11 @@ $$
 Vi tegner fortegnslinja til $f(x) = (x + 2)(x - 4)$. Vi tegner først en fortegnslinje for hver faktor, deretter ganger vi fortegnene sammen for å få fortegnslinja til $f(x)$: 
 
 
-
-:::{figure} ./figurer/oppgaver/oppgave_5/a.svg
----
-class: no-click, adaptive-figure
-width: 100%
----
+:::{signchart-2}
+width: 70%
+function: (x + 2)*(x - 4), f(x)
 :::
+
 
 Fra fortegnslinja til $f(x)$ ser vi at $f(x) \leq 0$ når 
 
@@ -437,21 +711,32 @@ $$
 x \in \langle \gets, -4] \cup [1, \to \rangle
 $$
 
+eller
+
+$$
+x \in \real \setminus \langle -4, 1\rangle
+$$
+
 ::::{solution}
 Vi starter med å tegne fortegnslinja til $f(x) = (x - 1)(x + 4)$. Vi tegner først en fortegnslinje for hver faktor, deretter ganger vi fortegnene sammen for å få fortegnslinja til $f(x)$:
 
 
-:::{figure} ./figurer/oppgaver/oppgave_5/b.svg
----
-class: no-click, adaptive-figure
-width: 100%
----
+:::{signchart-2}
+width: 70%
+function: (x - 1) * (x + 4), f(x)
 :::
+
 
 Fra fortegnslinja til $f(x)$ ser vi at $f(x) \geq 0$ når
 
 $$
 x \in \langle \gets, -4] \cup [1, \to \rangle
+$$
+
+som vi også kan skrive som
+
+$$
+x \in \real \setminus \langle -4, 1\rangle
 $$
 
 
@@ -468,7 +753,7 @@ $$
 Løs ulikheten ved hjelp av å tegne fortegnslinje.
 
 $$
--2x(x - 3) < 0
+-2x(x - 3) \lt 0
 $$
 
 
@@ -477,20 +762,31 @@ $$
 x \in \langle \gets, 0 \rangle \cup \langle 3, \to \rangle
 $$
 
+eller
+
+$$
+x \in \real \setminus [0, 3]
+$$
+
 ::::{solution}
 Vi starter med å tegne fortegnslinja til $f(x) = -2x(x - 3)$. Vi tegner først en fortegnslinje for hver faktor, deretter ganger vi fortegnene sammen for å få fortegnslinja til $f(x)$:
 
-:::{figure} ./figurer/oppgaver/oppgave_5/c.svg
----
-class: no-click, adaptive-figure
-width: 100%
----
+:::{signchart-2}
+width: 70%
+function: -2*x*(x - 3), f(x)
 :::
+
 
 Fra fortegnslinja til $f(x)$ ser vi at $f(x) < 0$ når
 
 $$
 x \in \langle \gets, 0 \rangle \cup \langle 3, \to \rangle
+$$
+
+eller
+
+$$
+x \in \real \setminus [0, 3]
 $$
 
 ::::
@@ -517,12 +813,11 @@ $$
 ::::{solution}
 Vi starter med å tegne fortegnslinja til $f(x) = -3(x + 1)(x - 1)$. Vi tegner først en fortegnslinje for hver faktor, deretter ganger vi fortegnene sammen for å få fortegnslinja til $f(x)$:
 
-:::{figure} ./figurer/oppgaver/oppgave_5/d.svg
----
-class: no-click, adaptive-figure
-width: 100%
----
+:::{signchart-2}
+width: 70%
+function: - 3 * (x + 1) * (x - 1), f(x) 
 :::
+
 
 Fra fortegnslinja til $f(x)$ ser vi at $f(x) > 0$ når
 
@@ -546,6 +841,152 @@ $$
 
 
 :::::::::::::::{exercise} Oppgave 6
+:::::::::::::{part} a
+Funksjonen $f$ er gitt ved 
+
+$$
+f(x) = x^2 - 2x - 3
+$$
+
+
+Løs ulikheten $f(x) \gt 0$.
+
+
+:::::{answer}
+
+$$
+x \in \real \setminus [-1, 3]
+$$
+
+
+::::{solution}
+Vi nullpunktsfaktoriserer $f(x)$ først. Vi bruker $abc$-formelen til å finne nullpunktene til $f$:
+
+$$
+x = \dfrac{-(-2) \pm \sqrt{(-2)^2 - 4\cdot 1 \cdot (-3)}}{2 \cdot 1} = \dfrac{2 \pm \sqrt{16}}{2} = \begin{cases} 3 \\ \\ -1 \end{cases}
+$$
+
+Dermed kan vi faktorisere $f(x)$ som 
+
+$$
+f(x) = (x + 1)(x - 3)
+$$
+
+Så tegner vi en fortegnslinje for $f(x)$:
+
+:::{signchart-2}
+width: 70%
+function: (x + 1)*(x - 3), f(x)
+:::
+
+Fra fortegnslinja til $f(x)$ kan vi lese av at $f(x) \gt 0$ når 
+
+$$
+x \in \real \setminus [-1, 3]
+$$
+
+
+::::
+:::::
+
+
+
+:::::::::::::
+
+
+:::::::::::::{part} b
+Funksjonen $g$ er gitt ved 
+
+$$
+g(x) = -x^2 + 4x
+$$
+
+Løs ulikheten $g(x) \geq 0$.
+
+
+:::::{answer}
+$$
+x \in [0, 4]
+$$
+
+::::{solution}
+Vi nullpunktsfaktorisere $g(x)$ som gir 
+
+$$
+g(x) = -x(x - 4)
+$$
+
+Så tegner vi et fortegnsskjema:
+
+
+:::{signchart-2}
+width: 70%
+function: -x*(x - 4), g(x)
+:::
+
+Fra fortegnslinja til $g(x)$ ser vi at $g(x) \geq 0$ når
+
+$$
+x \in [0, 4]
+$$
+
+::::
+:::::
+
+:::::::::::::
+
+
+:::::::::::::{part} c
+Funksjonen $h$ er gitt ved 
+
+$$
+h(x) = x^2 - 1
+$$
+
+Løs ulikheten $h(x) \lt 0$.
+
+
+:::::{answer}
+
+$$
+x \in \langle -1, 1 \rangle
+$$
+
+::::{solution}
+Vi nullpunktsfaktoriserer $h(x)$:
+
+$$
+h(x) = x^2 - 1 = (x + 1)(x - 1)
+$$
+
+Så tegner vi et fortegnsskjema:
+
+:::{signchart-2}
+width: 70%
+function: (x + 1)*(x - 1), h(x)
+:::
+
+Fra fortegnslinja til $h(x)$ ser vi at $h(x) \lt 0$ når 
+
+$$
+x \in \langle -1, 1 \rangle
+$$
+
+::::
+:::::
+
+
+:::::::::::::
+
+:::::::::::::::
+
+
+---
+
+
+
+
+:::::::::::::::{exercise} Oppgave 7
 
 
 :::::::::::::{part} a
@@ -582,12 +1023,11 @@ $$
 
 Så tegner vi en fortegnslinje for $f(x) = -(x - 1)(x - 3)$:
 
-:::{figure} ./figurer/oppgaver/oppgave_6/a.svg
----
-class: no-click, adaptive-figure
-width: 100%
----
+:::{signchart-2}
+width: 70%
+function: -x**2 + 4*x - 3, f(x)
 :::
+
 
 Fra fortegnslinja ser vi at $f(x) \leq 0$ når 
 
@@ -639,12 +1079,11 @@ $$
 
 Så tegner vi en fortegnslinje for $f(x) = (x - 1)(x + 5)$:
 
-:::{figure} ./figurer/oppgaver/oppgave_6/b.svg
----
-class: no-click, adaptive-figure
-width: 100%
----
+:::{signchart-2}
+width: 70%
+function: (x - 1)*(x + 5), f(x)
 :::
+
 
 Fra fortegnslinja til $f(x)$ ser vi at $f(x) \geq 0$ når
 
@@ -693,12 +1132,11 @@ $$
 
 Vi tegner en fortegnslinje for $f(x) = (x + 3)^2$:
 
-:::{figure} ./figurer/oppgaver/oppgave_6/c.svg
----
-class: no-click, adaptive-figure
-width: 100%
----
+:::{signchart-2}
+width: 70%
+function: (x + 3)**2, f(x)
 :::
+
 
 Fra fortegnslinja til $f(x)$ ser vi at $f(x) > 0$ når 
 
@@ -751,10 +1189,414 @@ $$
 ---
 
 
-:::::::::::::::{exercise} Oppgave 7
+
+:::::::::::::::{exercise} Oppgave 8
+
+:::{plot}
+width: 350px
+align: right
+function: -2*(x + 3)*(x - 4), f
+ticks: off
+point: (-3, 0)
+text: -3, 0, "$(-3, 0)$", top-left
+point: (4, 0)
+text: 4, 0, "$(4, 0)$", top-right
+point: (0, 24)
+text: 0, 24, "$(0, 24)$", top-left
+ymax: 30
+xmin: -5
+xmax: 6
+fontsize: 26
+:::
+
+Til høyre vises grafen til en andregradsfunksjon $f$.
+
+
+:::::::::::::{part} a
+Bestem $f(x)$.
+
+
+:::::{answer}
+$$
+f(x) = -2(x + 3)(x - 4).
+$$
+
+::::{solution}
+Vi ser at grafen skjærer $x$-aksen i $(-3, 0)$ og $(4, 0)$ som vi kan bruke til å bestemme $f(x)$ på nullpunktsform: 
+
+$$
+f(x) = a(x + 3)(x - 4).
+$$
+
+Grafen skjærer $y$-aksen i $(0, 24)$ som vi kan bruke til å finne verdien til $a$: 
+
+$$
+f(0) = a(0 + 3)(0 - 4) = -12a = 24 \liff a = -2.
+$$
+
+Dermed er 
+
+$$
+f(x) = -2(x + 3)(x - 4).
+$$
+
+::::
+
+:::::
+
+
+:::::::::::::
+
+
+:::::::::::::{part} b
+Løs ulikheten 
+
+$$
+f(x) \leq 0
+$$
+
+
+:::::{answer}
+$$
+x \in \langle \gets, -3] \cup [4, \to \rangle.
+$$
+
+::::{solution}
+Vi ser at grafen ligger under $x$-aksen på nedsiden av $(-3, 0)$ og på oversiden av $(4, 0)$. Dermed er løsningen
+
+$$
+x \in \langle \gets, -3] \cup [4, \to \rangle.
+$$
+
+::::
+
+:::::
+
+:::::::::::::
+
+
+:::::::::::::{part} c
+Løs ulikheten
+
+$$
+f(x) > 12.
+$$
+
+
+:::::{answer}
+$$
+x \in \langle -2, 3 \rangle.
+$$
+
+
+::::{solution}
+Her får vi ikke lest av fra grafen, så vi tyr til algebraisk løsning. Vi skal løse ulikheten 
+
+$$
+f(x) > 12 \liff -2(x + 3)(x - 4) > 12.
+$$
+
+Vi ganger ut venstre side:
+
+$$
+-2(x^2 - x - 12) > 12 \liff -2x^2 + 2x + 24 > 12.
+$$
+
+Så sørger vi for at vi for $0$ på høyre side:
+
+$$
+-2x^2 + 2x + 24 - 12 > 0 \liff -2x^2 + 2x + 12 > 0.
+$$
+
+Vi kan også dele uttrykket med $-2$ (og huske på å snu ulikhetstegnet):
+
+$$
+x^2 - x - 6 < 0.
+$$
+
+Så bestemmer vi nullpunktene til andregradsuttrykket med $abc$-formelen:
+
+$$
+x = \dfrac{-(-1) \pm \sqrt{(-1)^2 - 4 \cdot 1 \cdot (-6)}}{2 \cdot 1} = \dfrac{1 \pm \sqrt{1 + 24}}{2} = \dfrac{1 \pm 5}{2}.
+$$
+
+Dermed er nullpunktene gitt ved
+
+$$
+x = \dfrac{6}{2} = 3 \or x = \dfrac{-4}{2} = -2.
+$$
+
+Da kan vi skrive om ulikheten til
+
+$$
+(x + 2)(x - 3) < 0.
+$$
+
+Så tegner vi en fortegnslinje for $(x + 2)(x - 3)$:
+
+:::{signchart-2}
+width: 70%
+function: (x + 2)*(x - 3), (x + 2)(x - 3)
+:::
+
+
+Fra fortegnslinja ser vi at 
+
+$$
+(x + 2)(x - 3) < 0 \liff x \in \langle -2, 3 \rangle.
+$$
+
+
+::::
+
+
+:::::
+
+
+
+:::::::::::::
+
+
+:::::::::::::::
+
+
+
 ---
-level: 2
+
+
+
+
+:::::::::::::::{exercise} Oppgave 9
+:::{plot}
+width: 350px
+align: right
+function: x*(x - 4), f
+ticks: off
+point: (0, 0)
+text: 0, 0, "$(0, 0)$", bottom-left
+point: (2, -4)
+text: 2, -4, "$(2, -4)$", bottom-center
+fontsize: 26
+:::
+
+
+Til høyre vises grafen til en andregradsfunksjon $f$.
+
+
+
+:::::::::::::{part} a
+Bestem $f(x)$.
+
+
+:::::{answer}
+$$
+f(x) = x(x - 4) = x^2 - 4x.
+$$
+
+::::{solution}
+Grafen til $f$ har et bunnpunkt i $(2, -4)$ og et nullpunkt $(0, 0)$ Fordi symmetrilinja er i $x = 2$, så vil det andre nullpunktet ligge samme avstand fra symmetrilinja langs $x$-aksen som betyr at det andre nullpunktet er i $(4, 0)$. Da kan vi skrive $f(x)$ på nullpunktsform:
+
+$$
+f(x) = a(x - 0)(x - 4) = ax(x - 4).
+$$
+
+For å finne verdien til $a$, så bruker vi bunnpunktet:
+
+$$
+f(2) = -4 \liff a\cdot 2 \cdot (2 - 4) = -4 \liff -4a = -4 \liff a = 1.
+$$
+
+Dermed er 
+
+$$
+f(x) = x(x - 4) = x^2 - 4x.
+$$
+::::
+
+:::::
+
+:::::::::::::
+
+
+:::::::::::::{part} b
+
+Løs ulikheten 
+
+$$
+f(x) \leq 0
+$$
+
+
+:::::{answer}
+$$
+x \in [0, 4].
+$$
+
+::::{solution}
+Fra grafen til $f$ kan vi se at grafen ligger under $x$-aksen mellom nullpunktene. Dermed er $f(x) \leq 0$ når 
+
+$$
+x \in [0, 4].
+$$
+::::
+
+:::::
+
+:::::::::::::
+
+
+:::::::::::::{part} c
+
+Løs ulikheten 
+
+$$
+f(x) > 5
+$$
+
+
+:::::{answer}
+$$
+x \in \langle \gets, -1 \rangle \cup \langle 5, \to \rangle.
+$$
+
+::::{solution}
+Vi skal løse ulikheten 
+
+$$
+f(x) > 5 \liff x^2 - 4x > 5.
+$$
+
+Vi skriver om ulikheten slik at vi får $0$ på høyre side:
+
+$$
+x^2 - 4x - 5 > 0.
+$$
+
+Så finner vi nullpunktene til andregradsuttrykket med $abc$-formelen:
+
+$$
+x = \dfrac{-(-4) \pm \sqrt{(-4)^2 - 4 \cdot 1 \cdot (-5)}}{2 \cdot 1} = \dfrac{4 \pm \sqrt{16 + 20}}{2} = \dfrac{4 \pm \sqrt{36}}{2} = \dfrac{4 \pm 6}{2}.
+$$
+
+Dermed er nullpunktene gitt ved
+
+$$
+x = \dfrac{10}{2} = 5 \or x = \dfrac{-2}{2} = -1.
+$$
+
+Det betyr at vi kan skrive om ulikheten til
+
+$$
+(x + 1)(x - 5) > 0.
+$$
+
+Grafen til dette uttrykket er konveks (den smiler {poly-icon}`smile`) som betyr at den må ligger under $x$-aksen mellom nullpunktene. Dermed vil løsningen av ulikheten være $x$-verdiene som ligger på nedsiden og oversiden av nullpunktene. Altså er 
+
+$$
+(x + 1)(x - 5) > 0 \liff x \in \langle \gets, -1 \rangle \cup \langle 5, \to \rangle.
+$$
+::::
+
+:::::
+
+:::::::::::::
+
+
+
+:::::::::::::::
+
+
 ---
+
+
+
+
+:::::::::::::::{exercise} Oppgave 10
+
+En andregradsfunksjon $f$ er gitt ved 
+
+$$
+f(x) = rx^2 - 2x + r \qder r \in \real
+$$
+
+
+:::::::::::::{part} a
+Bestem $r$ slik at $f$ bare har ett nullpunkt.
+
+
+:::::{answer}
+$$
+r = -1 \or r = 1.
+$$
+
+::::{solution}
+Vi bruker $abc$-formelen for å avgjøre hvilke verdier for $r$ som gir ett nullpunkts:
+
+$$
+x = \dfrac{-(-2) \pm \sqrt{(-2)^2 - 4 \cdot r \cdot r}}{2 \cdot r} = \dfrac{2 \pm \sqrt{4 - 4r^2}}{2r}
+$$
+
+Vi får $0$ i kvadratroten dersom 
+
+$$
+4 - 4r^2 = 0 \liff 4r^2 = 4 \liff r^2 = 1 \liff r = \pm 1.
+$$
+
+Altså har grafen til $f$ ett nullpunkt hvis 
+
+$$
+r = -1 \or r = 1.
+$$
+
+
+::::
+
+:::::
+
+
+:::::::::::::
+
+
+:::::::::::::{part} b
+Bestem $r$ slik at $f$ ikke har noen nullpunkter.
+
+
+:::::{answer}
+$$
+r \in \langle -1, 1 \rangle.
+$$
+
+::::{solution}
+
+Vi vet at $f$ ikke har noen nullpunkter dersom vi får et negativt tall i kvadratroten, som betyr at $f$ ikke har noen nullpunkter dersom 
+
+$$
+4 - 4r^2 < 0 \liff 4r^2 - 4 > 0 \liff r^2 - 1 > 0 \liff (r - 1)(r + 1) > 0.
+$$
+
+Dette er et andregradsuttrykk som er konveks – den smiler {polyicon}`smile` – og som har nullpunkter i $r = -1$ og $r = 1$. Grafen vil være negativt mellom nullpunktene, så derfor vil ikke $f$ ha noen nullpunkter dersom 
+
+$$
+r \in \langle -1, 1 \rangle.
+$$
+
+::::
+
+:::::
+
+:::::::::::::
+
+
+:::::::::::::::
+
+
+
+---
+
+
+
+:::::::::::::::{exercise} Oppgave 11
+
 
 ::::{hints} Hvordan løser jeg andregradsulikheter med CAS?
 I gif-en nedenfor vises et eksempel på hvordan man løser en andregradsulikhet med CAS:
@@ -945,644 +1787,3 @@ $$
 :::::::::::::
 
 :::::::::::::::
-
-
-
----
-
-
-:::::::::::::::{exercise} Oppgave 8
-
-Nedenfor vises grafen til en andregradsfunksjon $f$ og en lineær funksjon $g$.
-
-:::{figure} ./figurer/oppgaver/oppgave_8/figur.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-
-
-
-:::::::::::::{part} a
-Løs ulikheten 
-
-$$
-f(x) < 0
-$$
-
-
-:::::{answer}
-$$
-x \in \langle \gets, -3\rangle \cup \langle 1, \to \rangle
-$$
-
-::::{solution}
-Vi ser at grafen til $f$ skjærer $x$-aksen i $(-3, 0)$ og $(1, 0)$. Grafen ligger under $x$-aksen på nedsiden av $(-2, 0)$ og på oversiden av $(3, 0)$. Dermed er løsningen
-
-$$
-x \in \langle \gets, -3\rangle \cup \langle 1, \to \rangle
-$$
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::{part} b
-Løs ulikheten 
-
-$$
-f(x) > 3
-$$
-
-
-:::::{answer}
-$$
-x \in \langle -2, 0 \rangle.
-$$
-
-::::{solution}
-Grafen til $f$ skjærer linja $y = 3$ i $(-2, 3)$ og $(0, 3)$. Mellom disse to punktene, så ligger grafen til $f$ over linja $y = 3$. Dermed er løsningen 
-
-$$
-x \in \langle -2, 0 \rangle.
-$$
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::{part} c
-Løs ulikheten 
-
-$$
-f(x) \geq g(x)
-$$
-
-
-:::::{answer}
-$$
-x \in [-4, 0]
-$$
-
-::::{solution}
-Grafene til $f$ og $g$ skjærer hverandre i punktene $(-4, -5)$ og $(0, 3)$. Mellom disse to punktene, så ligger grafen til $f$ på oversiden av grafen til $g$. Dermed er løsningen av ulikheten 
-
-$$
-x \in [-4, 0]
-$$
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::::
-
-
-
----
-
-
-:::::::::::::::{exercise} Oppgave 9
-
-Nedenfor vises grafen til en andregradsfunksjon $f$.
-
-:::{figure} ./figurer/oppgaver/oppgave_9/figur.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-
-
-:::::::::::::{part} a
-Bestem $f(x)$.
-
-
-:::::{answer}
-$$
-f(x) = -2(x + 3)(x - 4).
-$$
-
-::::{solution}
-Vi ser at grafen skjærer $x$-aksen i $(-3, 0)$ og $(4, 0)$ som vi kan bruke til å bestemme $f(x)$ på nullpunktsform: 
-
-$$
-f(x) = a(x + 3)(x - 4).
-$$
-
-Grafen skjærer $y$-aksen i $(0, 24)$ som vi kan bruke til å finne verdien til $a$: 
-
-$$
-f(0) = a(0 + 3)(0 - 4) = -12a = 24 \liff a = -2.
-$$
-
-Dermed er 
-
-$$
-f(x) = -2(x + 3)(x - 4).
-$$
-
-::::
-
-:::::
-
-
-:::::::::::::
-
-
-:::::::::::::{part} b
-Løs ulikheten 
-
-$$
-f(x) \leq 0
-$$
-
-
-:::::{answer}
-$$
-x \in \langle \gets, -3] \cup [4, \to \rangle.
-$$
-
-::::{solution}
-Vi ser at grafen ligger under $x$-aksen på nedsiden av $(-3, 0)$ og på oversiden av $(4, 0)$. Dermed er løsningen
-
-$$
-x \in \langle \gets, -3] \cup [4, \to \rangle.
-$$
-
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::{part} c
-Løs ulikheten
-
-$$
-f(x) > 12.
-$$
-
-
-:::::{answer}
-$$
-(x + 2)(x - 3) < 0 \liff x \in \langle -2, 3 \rangle.
-$$
-
-
-::::{solution}
-Her får vi ikke lest av fra grafen, så vi tyr til algebraisk løsning. Vi skal løse ulikheten 
-
-$$
-f(x) > 12 \liff -2(x + 3)(x - 4) > 12.
-$$
-
-Vi ganger ut venstre side:
-
-$$
--2(x^2 - x - 12) > 12 \liff -2x^2 + 2x + 24 > 12.
-$$
-
-Så sørger vi for at vi for $0$ på høyre side:
-
-$$
--2x^2 + 2x + 24 - 12 > 0 \liff -2x^2 + 2x + 12 > 0.
-$$
-
-Vi kan også dele uttrykket med $-2$ (og huske på å snu ulikhetstegnet):
-
-$$
-x^2 - x - 6 < 0.
-$$
-
-Så bestemmer vi nullpunktene til andregradsuttrykket med $abc$-formelen:
-
-$$
-x = \dfrac{-(-1) \pm \sqrt{(-1)^2 - 4 \cdot 1 \cdot (-6)}}{2 \cdot 1} = \dfrac{1 \pm \sqrt{1 + 24}}{2} = \dfrac{1 \pm 5}{2}.
-$$
-
-Dermed er nullpunktene gitt ved
-
-$$
-x = \dfrac{6}{2} = 3 \or x = \dfrac{-4}{2} = -2.
-$$
-
-Da kan vi skrive om ulikheten til
-
-$$
-(x + 2)(x - 3) < 0.
-$$
-
-Så tegner vi en fortegnslinje for $(x + 2)(x - 3)$:
-
-:::{figure} ./figurer/oppgaver/oppgave_9/fortegnslinje.svg
----
-class: no-click, adaptive-figure
-width: 100%
----
-:::
-
-Fra fortegnslinja ser vi at 
-
-$$
-(x + 2)(x - 3) < 0 \liff x \in \langle -2, 3 \rangle.
-$$
-
-
-::::
-
-
-:::::
-
-
-
-:::::::::::::
-
-
-:::::::::::::::
-
-
----
-
-
-:::::::::::::::{exercise} Oppgave 10
-
-I figuren nedenfor vises grafen til en andregradsfunksjon $f$.
-
-
-:::{figure} ./figurer/oppgaver/oppgave_10/figur.svg
----
-class: no-click, adaptive-figure
-width: 80%
----
-:::
-
-
-
-:::::::::::::{part} a
-Bestem $f(x)$.
-
-
-:::::{answer}
-$$
-f(x) = x(x - 4) = x^2 - 4x.
-$$
-
-::::{solution}
-Grafen til $f$ har et bunnpunkt i $(2, -4)$ og et nullpunkt $(0, 0)$ Fordi symmetrilinja er i $x = 2$, så vil det andre nullpunktet ligge samme avstand fra symmetrilinja langs $x$-aksen som betyr at det andre nullpunktet er i $(4, 0)$. Da kan vi skrive $f(x)$ på nullpunktsform:
-
-$$
-f(x) = a(x - 0)(x - 4) = ax(x - 4).
-$$
-
-For å finne verdien til $a$, så bruker vi bunnpunktet:
-
-$$
-f(2) = -4 \liff a\cdot 2 \cdot (2 - 4) = -4 \liff -4a = -4 \liff a = 1.
-$$
-
-Dermed er 
-
-$$
-f(x) = x(x - 4) = x^2 - 4x.
-$$
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::{part} b
-
-Løs ulikheten 
-
-$$
-f(x) \leq 0
-$$
-
-
-:::::{answer}
-$$
-x \in [0, 4].
-$$
-
-::::{solution}
-Fra grafen til $f$ kan vi se at grafen ligger under $x$-aksen mellom nullpunktene. Dermed er $f(x) \leq 0$ når 
-
-$$
-x \in [0, 4].
-$$
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::{part} c
-
-Løs ulikheten 
-
-$$
-f(x) > 5
-$$
-
-
-:::::{answer}
-$$
-x \in \langle \gets, -1 \rangle \cup \langle 5, \to \rangle.
-$$
-
-::::{solution}
-Vi skal løse ulikheten 
-
-$$
-f(x) > 5 \liff x^2 - 4x > 5.
-$$
-
-Vi skriver om ulikheten slik at vi får $0$ på høyre side:
-
-$$
-x^2 - 4x - 5 > 0.
-$$
-
-Så finner vi nullpunktene til andregradsuttrykket med $abc$-formelen:
-
-$$
-x = \dfrac{-(-4) \pm \sqrt{(-4)^2 - 4 \cdot 1 \cdot (-5)}}{2 \cdot 1} = \dfrac{4 \pm \sqrt{16 + 20}}{2} = \dfrac{4 \pm \sqrt{36}}{2} = \dfrac{4 \pm 6}{2}.
-$$
-
-Dermed er nullpunktene gitt ved
-
-$$
-x = \dfrac{10}{2} = 5 \or x = \dfrac{-2}{2} = -1.
-$$
-
-Det betyr at vi kan skrive om ulikheten til
-
-$$
-(x + 1)(x - 5) > 0.
-$$
-
-Grafen til dette uttrykket er konveks (den smiler $\smile$) som betyr at den må ligger under $x$-aksen mellom nullpunktene. Dermed vil løsningen av ulikheten være $x$-verdiene som ligger på nedsiden og oversiden av nullpunktene. Altså er 
-
-$$
-(x + 1)(x - 5) > 0 \liff x \in \langle \gets, -1 \rangle \cup \langle 5, \to \rangle.
-$$
-::::
-
-:::::
-
-:::::::::::::
-
-
-
-:::::::::::::::
-
-
----
-
-
-:::::::::::::::{exercise} Oppgave 11
-
-:::::::::::::{part} a
-En ulikhet har løsningen 
-
-$$
-x \in \langle -2, 1 \rangle.
-$$
-
-Lag en ulikhet som har denne løsningen.
-
-
-:::::{answer}
-$$
-(x + 2)(x - 1) < 0
-$$
-
-::::{solution}
-Vi kan velge en andregradsfunksjon $f$ som har nullpunkter i $x = -2$ og $x = 1$, og som er konveks (slik at den smiler $\smile$). Da vet vi at grafen ligger under $x$-aksen mellom nullpunktene. Derfor er en mulig ulikhet denne:
-
-$$
-(x + 2)(x - 1) < 0
-$$
-::::
-
-:::::
-
-:::::::::::::
-
-
-
-:::::::::::::{part} b
-En ulikhet har løsningen 
-
-$$
-x \in \langle \gets, -2 \rangle \cup \langle -2, \to \rangle.
-$$
-
-Lag en ulikhet som har denne løsningen.
-
-:::::{answer}
-$$
-(x + 2)^2 > 0.
-$$
-
-::::{solution}
-Vi kan velge en andregradsfunksjon $f$ som har ett nullpunkt i $x = -2$, og som er konveks (slik at den smiler $\smile$). Da vet vi at grafen alltid ligger over $x$-aksen bortsett fra i $x = -2$. Da er en mulig ulikhet denne:
-
-$$
-(x + 2)^2 > 0.
-$$
-
-::::
-
-:::::
-
-
-:::::::::::::
-
-
-:::::::::::::{part} c
-En ulikhet har løsningen 
-
-$$
-x \in [-4, 4].
-$$
-
-Lag en ulikhet som har denne løsningen.
-
-
-:::::{answer}
-$$
-(x + 4)(x - 4) \leq 0.
-$$
-
-::::{solution}
-Vi kan velge en andregradsfunksjon $f$ som har nullpunkter i $x = -4$ og $x = 4$, og som er konveks (slik at den smiler $\smile$). Da vet vi at grafen ligger under $x$-aksen mellom nullpunktene slik at følgende ulikhet vil ha den oppgitte løsningen:
-
-$$
-(x + 4)(x - 4) \leq 0.
-$$
-::::
-
-:::::
-
-:::::::::::::
-
-
-
-:::::::::::::{part} d
-En ulikhet har løsningen 
-
-$$
-x \in \left\langle \gets, -\dfrac{1}{2} \right \rangle \cup \langle 4, \to \rangle.
-$$
-
-Lag en ulikhet som har denne løsningen.
-
-
-:::::{answer}
-$$
--\left(x + \dfrac{1}{2}\right)(x - 4) < 0.
-$$
-
-::::{solution}
-Vi kan velge en andregradsfunksjon $f$ som har nullpunkter i $x = -\dfrac{1}{2}$ og $x = 4$, og som er konkav (surt fjes $\frown$). Da vet vi at grafen til $f$ ligger under $x$-aksen på nedsiden og oversiden av nullpunktene. Dermed vil følgende ulikhet ha den oppgitte løsningen:
-
-$$
--\left(x + \dfrac{1}{2}\right)(x - 4) < 0.
-$$
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::::
-
-
----
-
-
-:::::::::::::::{exercise} Oppgave 12
-
-Anna jobber med funksjonen 
-
-$$
-f(x) = (x - 2)^2 + 3
-$$
-
-Hun forsøkte å løse en ulikhet i CAS og fikk følgende utskrift: 
-
-:::{figure} ./figurer/oppgaver/oppgave_12/cas.png
----
-class: no-click, adaptive-figure
-width: 60%
----
-:::
-
-
-Forklar hva utskriften forteller oss om grafen til $f$.
-
-
-::::{solution}
-Ulikheten har ingen løsning, som er grunnen til at utskriften gir $\{\}$. Siden Anna har prøvd å løse ulikheten $f(x) < 0$, forteller det oss at grafen aldri ligger under $x$-aksen.
-::::
-
-
-:::::::::::::::
-
-
----
-
-
-:::::::::::::::{exercise} Oppgave 13
-
-En andregradsfunksjon $f$ er gitt ved 
-
-$$
-f(x) = rx^2 - 2x + r \qder r \in \real
-$$
-
-
-:::::::::::::{part} a
-Bestem $r$ slik at $f$ bare har ett nullpunkt.
-
-
-:::::{answer}
-$$
-r = -1 \or r = 1.
-$$
-
-::::{solution}
-Vi bruker $abc$-formelen for å avgjøre hvilke verdier for $r$ som gir ett nullpunkts:
-
-$$
-x = \dfrac{-(-2) \pm \sqrt{(-2)^2 - 4 \cdot r \cdot r}}{2 \cdot r} = \dfrac{2 \pm \sqrt{4 - 4r^2}}{2r}
-$$
-
-Vi får $0$ i kvadratroten dersom 
-
-$$
-4 - 4r^2 = 0 \liff 4r^2 = 4 \liff r^2 = 1 \liff r = \pm 1.
-$$
-
-Altså har grafen til $f$ ett nullpunkt hvis 
-
-$$
-r = -1 \or r = 1.
-$$
-
-
-::::
-
-:::::
-
-
-:::::::::::::
-
-
-:::::::::::::{part} b
-Bestem $r$ slik at $f$ ikke har noen nullpunkter.
-
-
-:::::{answer}
-$$
-r \in \langle -1, 1 \rangle.
-$$
-
-::::{solution}
-
-Vi vet at $f$ ikke har noen nullpunkter dersom vi får et negativt tall i kvadratroten, som betyr at $f$ ikke har noen nullpunkter dersom 
-
-$$
-4 - 4r^2 < 0 \liff 4r^2 - 4 > 0 \liff r^2 - 1 > 0 \liff (r - 1)(r + 1) > 0.
-$$
-
-Dette er et andregradsuttrykk som er konveks – den smiler {polyicon}`smile` – og som har nullpunkter i $r = -1$ og $r = 1$. Grafen vil være negativt mellom nullpunktene, så derfor vil ikke $f$ ha noen nullpunkter dersom 
-
-$$
-r \in \langle -1, 1 \rangle.
-$$
-
-::::
-
-:::::
-
-:::::::::::::
-
-
-:::::::::::::::
-
-
