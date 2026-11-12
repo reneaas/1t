@@ -1419,7 +1419,7 @@ Bestem $k$ slik at grafen til $f$ skjærer $x$-aksen én gang.
 
 :::::{answer}
 $$
-k = -4
+k = 0 \or k = -8
 $$
 :::::
 
