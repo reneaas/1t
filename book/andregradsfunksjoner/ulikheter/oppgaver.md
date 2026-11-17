@@ -1565,7 +1565,7 @@ Bestem $r$ slik at $f$ ikke har noen nullpunkter.
 
 :::::{answer}
 $$
-r \in \langle -1, 1 \rangle.
+r \in \langle \gets, -1 \rangle \cup \langle 1, \to \rangle.
 $$
 
 ::::{solution}
@@ -1573,13 +1573,24 @@ $$
 Vi vet at $f$ ikke har noen nullpunkter dersom vi får et negativt tall i kvadratroten, som betyr at $f$ ikke har noen nullpunkter dersom 
 
 $$
-4 - 4r^2 < 0 \liff 4r^2 - 4 > 0 \liff r^2 - 1 > 0 \liff (r - 1)(r + 1) > 0.
+4 - 4r^2 < 0 \liff 4r^2 - 4 > 0 
 $$
 
-Dette er et andregradsuttrykk som er konveks – den smiler {polyicon}`smile` – og som har nullpunkter i $r = -1$ og $r = 1$. Grafen vil være negativt mellom nullpunktene, så derfor vil ikke $f$ ha noen nullpunkter dersom 
+$$
+r^2 - 1 > 0 \liff (r + 1)(r - 1) > 0.
+$$
+
+Dette er et andregradsuttrykk som er konvekst – den smiler {polyicon}`smile` og som har nullpunkter i $r = -1$ og $r = 1$. Vi tegner et fortegnsskjema:
+
+:::{signchart-2}
+width: 70%
+function: (r - 1)*(r + 1), (r + 1)(r - 1)
+:::
+
+Fra fortegnslinja til uttrykket får vi da at 
 
 $$
-r \in \langle -1, 1 \rangle.
+r \in \langle \gets, -1 \rangle \cup \langle 1, \to \rangle.
 $$
 
 ::::
