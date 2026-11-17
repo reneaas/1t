@@ -640,6 +640,8 @@ function: -1/2 * (x + 2)**2, h
 
 Grafen til en andregradsfunksjon $h$ er vist til høyre.
 
+Tegn en fortegnslinje til $h(x)$.
+
 :::::{answer}
 :::{signchart-2}
 width: 70%
