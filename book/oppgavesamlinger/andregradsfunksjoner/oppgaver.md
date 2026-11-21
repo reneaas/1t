@@ -24,6 +24,38 @@ Bestem $f(x)$.
 $$
 f(x) = 2(x + 3)(x - 2)
 $$
+
+
+::::{solution}
+Grafen til $f$ skjærer $x$-aksen i $(-3, 0)$ og $(2, 0)$ som betyr at vi kan skrive 
+
+$$
+f(x) = a(x + 3)(x - 2)
+$$
+
+Grafen til $f$ går gjennom punktet $(0, -12)$ som gir at 
+
+$$
+f(0) = -12
+$$
+
+$$
+a(0 + 3)(0 - 2) = -12
+$$
+
+$$
+-6a = -12 \liff a = 2
+$$
+
+Dermed er 
+
+$$
+f(x) = 2(x + 3)(x - 2)
+$$
+
+::::
+
+
 :::::
 
 
@@ -48,6 +80,42 @@ Bestem $g(x)$.
 $$
 g(x) = (x + 2)^2 - 3
 $$
+
+
+::::{solution}
+Grafen til $g$ har et bunnpunkt i $(-2, -3)$  som betyr at 
+
+$$
+g(x) = a(x + 2)^2 - 3
+$$
+
+Vi kan også merke oss at grafen til $g$ går gjennom punktet $(0, 1)$ som betyr at 
+
+$$
+g(0) = 1
+$$
+
+$$
+a(0 + 2)^2 - 3 = 1
+$$
+
+$$
+4a - 3 = 1
+$$
+
+$$
+4a = 4 \liff a = 1
+$$
+
+Dermed er 
+
+$$
+g(x) = (x + 2)^2 - 3
+$$
+
+::::
+
+
 :::::
 
 :::::::::::::
@@ -71,6 +139,38 @@ Bestem $h(x)$.
 $$
 h(x) = -\frac{1}{2} (x + 2) (x - 4)
 $$
+
+
+::::{solution}
+Grafen til $h$ er nullpunkter i $x = -2$ og $x = 4$ som betyr at 
+
+$$
+h(x) = a(x + 2)(x - 4)
+$$
+
+Grafen til $h$ går gjennom punktet $(0, 4)$ som gir at 
+
+$$
+h(0) = 4 
+$$
+
+$$
+a(0 + 2)(0 - 4) = 4
+$$
+
+$$
+-8a = 4 \liff a = -\dfrac{1}{2}
+$$
+
+Dermed er 
+
+$$
+h(x) = -\dfrac{1}{2}(x + 2)(x - 4)
+$$
+
+::::
+
+
 :::::
 
 :::::::::::::
@@ -96,6 +196,37 @@ Bestem $p(x)$.
 $$
 p(x) = 3(x - 1)^2 + 1
 $$
+
+
+::::{solution}
+Grafen til $p$ har et bunnpunkt i $(1, 1)$ som betyr at 
+
+$$
+p(x) = a(x - 1)^2 + 1
+$$
+
+Videre går grafen gjennom punktet $(0, 4)$ som gir at 
+
+$$
+p(0) = 4
+$$
+
+$$
+a(0 - 1)^2 + 1 = 4
+$$
+
+$$
+a + 1 = 4 \liff a = 3
+$$
+
+Dermed er 
+
+$$
+p(x) = 3(x - 1)^2 + 1
+$$
+::::
+
+
 :::::
 
 
@@ -124,6 +255,33 @@ Bestem nullpunktene til $f$.
 $$
 x = -8 \qog x = 4
 $$
+
+::::{solution}
+Vi løser likningen $f(x) = 0$:
+
+$$
+(x + 2)^2 - 36 = 0
+$$
+
+$$
+(x + 2)^2 = 36
+$$
+
+$$
+x + 2 \pm 6
+$$
+
+$$
+x = -2 \pm 6 = \begin{cases} 4 \\ \\ -8 \end{cases}
+$$
+
+Dermed er nullpunktene til $f$ gitt ved 
+
+$$
+x = -8 \qog x = 4
+$$
+::::
+
 :::::
 
 :::::::::::::
@@ -144,6 +302,22 @@ Avgjør om det er et toppunkt eller bunnpunkt.
 :::::{answer}
 Toppunkt i $(1, 32)$
 
+
+::::{solution}
+Vi har at $x$-koordinaten til grafen til $g$ er lik gjennomsnittet av nullpunktene $x = -3$ og $x = 5$:
+
+$$
+x_0 = \dfrac{-3 + 5}{2} = 1
+$$
+
+Vi regner så ut $y$-koordinaten:
+
+$$
+y_0 = f(1) = -2(1 + 3)(1 - 5) = -2 \cdot 4 \cdot (-4) = 32
+$$
+
+Grafen har et toppunkt siden $a$ er negativ som betyr at grafen har et toppunkt i $(1, 32)$
+::::
 :::::
 :::::::::::::
 
@@ -162,6 +336,34 @@ Bestem koordinatene til skjæringspunktene mellom grafen til $h$ og $x$-aksen.
 $$
 (-3, 0) \qog (7, 0)
 $$
+
+
+::::{solution}
+Vi løser $h(x) = 0$:
+
+$$
+x^2 - 4x = 21
+$$
+
+$$
+x^2 - 4x + 2^2 = 21 + 2^2
+$$
+
+$$
+(x - 2)^2 = 25
+$$
+
+$$
+x - 2 = \pm 5
+$$
+
+$$
+x = 2 \pm 5 = \begin{cases} 7 \\ \\ -3 \end{cases}
+$$
+
+Dermed skjærer grafen til $h$ gjennom $x$-aksen i punktene $(-3, 0)$ og $(7, 0)$.
+::::
+
 :::::
 :::::::::::::
 
@@ -188,8 +390,39 @@ Bestem nullpunktene til $f$.
 :::::{answer}
 
 $$
-x = -1 \or x = 7
+x = -1 \qog x = 7
 $$
+
+::::{solution}
+Vi løser likningen $f(x) = 0$ som gir 
+
+$$
+x^2 - 6x = 7
+$$
+
+$$
+x^2 - 6x + 3^2 = 7 + 3^2
+$$
+
+$$
+(x - 3)^2 = 16
+$$
+
+$$
+x - 3 = \pm 4 
+$$
+
+$$
+x = 3 \pm 4 = \begin{cases} 7 \\ \\ -1 \end{cases}
+$$
+
+som betyr at nullpunktene til $f$ er 
+
+$$
+x = -1 \qog x = 7
+$$
+::::
+
 :::::
 :::::::::::::
 
@@ -205,6 +438,29 @@ $$
 $$
 x \in \real \setminus \langle -1, 7\rangle
 $$
+
+
+::::{solution}
+Siden nullpunktene til $f$ er $x = -1$ og $x = 7$, så kan vi skrive 
+
+$$
+f(x) = (x + 1)(x - 7)
+$$
+
+Vi tegner et fortegnsskjema for funksjonen for å løse ulikheten:
+
+:::{signchart-2}
+width: 70%
+function: (x + 1) * (x - 7), f(x)
+:::
+
+Fra fortegnslinja til $f(x)$ kan vi lese av at $f(x) \geq 0$ når 
+
+$$
+x \in \real \setminus \langle -1, 7\rangle
+$$
+
+::::
 :::::
 
 :::::::::::::
@@ -218,6 +474,23 @@ Avgjør om det er et toppunkt eller bunnpunkt.
 
 :::::{answer}
 Bunnpunkt i $(3, -16)$
+
+::::{solution}
+Siden nullpunktene er $x = -1$ og $x = 7$, er $x$-koordinatene til ekstremalpunktet 
+
+$$
+x_0 = \dfrac{-1 + 7}{2} = 3
+$$
+
+Vi regner så ut $y$-koordinaten til punktet:
+
+$$
+y_0 = f(3) = (3 + 1)\cdot(3 - 7) = -4^2 = -16
+$$
+
+Dermed er ekstremalpunktet $(3, -16)$. Dette er et bunnpunkt siden $a \gt 0$. 
+::::
+
 :::::
 
 :::::::::::::
@@ -251,6 +524,24 @@ $$
 x \in \langle -6, 2 \rangle
 $$
 
+
+::::{solution}
+Vi tegner et fortegnsskjema for funksjonen:
+
+:::{signchart-2}
+width: 70%
+function: -2 * (x - 2) * (x + 6), g(x)
+:::
+
+Fra fortegnslinja til $g(x)$ kan vi lese av at $g(x) > 0$ når 
+
+$$
+x \in \langle -6, 2 \rangle
+$$
+
+::::
+
+
 :::::
 
 :::::::::::::
@@ -262,6 +553,23 @@ Avgjør om det er et toppunkt eller bunnpunkt.
 
 :::::{answer}
 Toppunkt i $(-2, 32)$
+
+
+::::{solution}
+Vi har at $x$-koordinaten til ekstremalpunktet er gjennomsnittet av nullpunktene:
+
+$$
+x_0 = \dfrac{-6 + 2}{2} = -2
+$$
+
+Så regner vi ut $y$-koordinaten:
+
+$$
+y_0 = f(-2) = -2 \cdot (-2 - 2) \cdot (-2 + 6) = -2 \cdot (-4) \cdot 4 = 32
+$$
+
+Grafen vil ha et toppunkt siden $a \lt 0$. Dermed har grafen et toppunkt i $(-2, 32)$.
+::::
 :::::
 
 :::::::::::::
@@ -290,6 +598,45 @@ $$
 $$
 a = 1 \and b = -6 \and c = 2
 $$
+
+
+::::{solution}
+Uttrykket på venstre side er skrevet på standardform og uttrykket på høyre side er skrevet på nullpunktsform. 
+
+Da vil $a$ være ledende koeffisient som er lik uansett hvilken form vi skriver uttrykket på. Så derfor er $a = 1$.
+
+Kontantene $b$ og $c$ representerer nullpunktene til uttrykket på venstre side. Vi løser derfor likningen
+
+$$
+x^2 + 4x - 12 = 0
+$$
+
+$$
+x^2 + 4x = 12
+$$
+
+$$
+x^2 + 4x + 2^2 = 12 + 2^2
+$$
+
+$$
+(x + 2)^2 = 16 
+$$
+
+$$
+x + 2 = \pm 4 \liff x = -2 \pm 4 = \begin{cases} 2 \\ \\ -6 \end{cases}
+$$
+
+Altså er nullpunktene $x = -6$ og $x = 2$. Da har vi at én mulighet for konstantene $a$, $b$ og $c$ som gjør at likningen er en identitet er 
+
+$$
+a = 1 \and b = -6 \and c = 2
+$$
+
+
+::::
+
+
 :::::
 
 :::::::::::::
@@ -308,6 +655,36 @@ $$
 $$
 r = -12 \and s = 3 \and t = 2
 $$
+
+
+::::{solution}
+Uttrykket på venstre side er skrevet på ekstremalpunktsform med ekstremalpunkt $(4, r)$. Uttrykket på høyre side er skrevet på nullpunktsform med nullpunktene $x = -6$ og $x = t$. Vi har at $s = 3$ siden den ledende koeffisienten må være den samme i begge uttrykk.
+
+Siden gjennomsnittet av nullpunktene er lik symmetrilinja, så får vi at 
+
+$$
+4 = \dfrac{t + 6}{2} \liff t + 6 = 8 \liff t = 2
+$$
+
+Vi kan så regne ut verdien til $r$ ved å sette inn $x = 4$ for symmetrilinja på hver side av likningen som gir:
+
+$$
+3(4 - 4)^2 + r = 3(4 - 6)(4 - 2)
+$$
+
+$$
+r = 3\cdot (-2) \cdot 2 = -12
+$$
+
+Dermed er likningen en identitet hvis
+
+$$
+r = -12 \and s = 3 \and t = 2
+$$
+
+::::
+
+
 :::::
 
 
@@ -327,6 +704,80 @@ $$
 $$
 a = -1 \and b = 4 \and c = -3 \or a = -9 \and b = 4 \and c = -7
 $$
+
+::::{solution}
+Uttrykket på venstre side er skrevet på nullpunktsform med nullpunkter $x = a$ og $x = -5$. Uttrykket på høyre side er skrevet på ekstremalpunktsform med ekstremalpunktet $(c, 16)$.
+
+Vi kan først merke oss at $b = 4$ siden $b$ representerer den ledende koeffisienten på høyre side. Da kan vi forenkle likningen ved å dele med $4$ på hver side av likningen: 
+
+$$
+4(x - a)(x + 5) = 4(x - c)^2 - 16
+$$
+
+$$
+(x - a)(x + 5) = (x - c)^2 - 4
+$$
+
+$$
+(x - a)(x + 5)= (x - c)^2 - 2^2
+$$
+
+Da får vi at 
+
+$$
+(x - a)(x + 5) = (x - c - 2)(x - c + 2) = (x - (c + 2))(x - (c - 2))
+$$
+
+Dermed er 
+
+$$
+c + 2 = -5 \or c - 2 = -5
+$$
+
+som gir at 
+
+$$
+c = -7 \or c = -3
+$$
+
+Når $c = -7$ får vi at 
+
+$$
+-7 = \dfrac{a - 5}{2} \liff a - 5 = -14 \liff a = -9
+$$
+
+som betyr at likningen er en identitet hvis
+
+$$
+a = -9 \and b = 4 \and c = -7
+$$
+
+Men vhsi $c = -3$ får vi at 
+
+$$
+-3 = \dfrac{a - 5}{2} \liff a - 5 = -6 \liff a = -1
+$$
+
+som betyr at likningen er en identitet hvis
+
+$$
+a = -1 \and b = 4 \and c = -3
+$$
+
+Altså er likningen en identitet hvis
+
+$$
+a = -1 \and b = 4 \and c = -3 \or a = -9 \and b = 4 \and c = -7
+$$
+
+
+
+
+
+
+
+::::
+
 :::::
 
 
@@ -364,6 +815,24 @@ for x in range(-10, 11):
 :::
 
 
+
+::::{solution}
+Programmet sjekker hvilke av heltallene $x \in \{-10, -9, \ldots, 9, 10\}$ som gjør at $f(x) = 0$. For å finne hva programmet skriver ut løser vi derfor $f(x) = 0$ med $abc$-formelen:
+
+$$
+x = -\dfrac{5 \pm \sqrt{5^2 + 4\cdot 14}}{2} = \dfrac{5 \pm \sqrt{81}}{2} = \dfrac{5 \pm 9}{2}
+$$
+
+som gir at 
+
+$$
+x = -2 \or x = 7
+$$
+
+Programmet skriver derfor ut $x = -2$ og $x = 7$.
+::::
+
+
 :::::::::::::
 
 
@@ -391,6 +860,23 @@ print((x, f(x)))
 
 
 :::
+
+
+::::{solution}
+Programmet kjører så lenge $f(x) \gt f(x + 1)$. Dette betyr at programmet kjører så lenge den forrige funksjonsverdien er høyere enn det neste. Så lenge bunnpunktet har en heltallig verdi, så vil programmet derfor finne koordinatene til bunnpunktet. Vi sjekker om symmetrilinja er et heltall:
+
+$$
+x_0 = -\dfrac{b}{2a} = -\dfrac{-6}{2} = 3
+$$
+
+Siden det ble et heltall, vil dette være $x$-koordinaten programmet skriver ut. Vi trenger også $y$-koordinaten:
+
+$$
+y_0 = f(3) = 3^2 - 6 \cdot 3 + 5 = 9 - 18 + 5 = -4
+$$
+
+Altså skriver programmet ut $(3, -4)$.
+::::
 
 :::::::::::::
 
