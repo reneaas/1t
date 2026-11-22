@@ -96,14 +96,14 @@ width: 80%
 
 :::::{answer}
 $$
-x = -1 \and y = 0 \or x = -3 \and y = 2
+x = -1 \and y = 0 \or x = 2 \and y = -3
 $$
 
 ::::{solution}
-Grafene skjærer hverandre i punktene $(-1, 0)$ og $(-3, 2)$. Løsningen av likningssystemet er derfor 
+Grafene skjærer hverandre i punktene $(-1, 0)$ og $(2, -3)$. Løsningen av likningssystemet er derfor 
 
 $$
-x = -1 \and y = 0 \or x = -3 \and y = 2
+x = -1 \and y = 0 \or x = 2 \and y = -3
 $$
 ::::
 
