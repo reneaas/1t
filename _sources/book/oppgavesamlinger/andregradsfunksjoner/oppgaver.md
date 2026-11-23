@@ -969,6 +969,31 @@ $$
 $$
 x \in \langle 0, 7\rangle
 $$
+
+
+::::{solution}
+Vi kan skrive om ulikheten
+
+$$
+x(x - 7) \lt 0
+$$
+
+så tegner vi et fortegnsskjema:
+
+:::{signchart-2}
+width: 70%
+function: x * (x - 7), x(x - 7)
+:::
+
+Det betyr at løsningen er 
+
+$$
+x \in \langle 0, 7\rangle.
+$$
+
+::::
+
+
 :::::
 
 :::::::::::::
@@ -985,6 +1010,46 @@ $$
 $$
 x \in \langle \gets, -4] \cup [4, \to \rangle
 $$
+
+
+::::{solution}
+Vi har at 
+
+$$
+2x^2 - 32 = 0
+$$
+
+$$
+2x^2 = 32
+$$
+
+$$
+x^2 = 16 \liff x = \pm 4
+$$
+
+Det betyr at ulikheten kan skrives som 
+
+$$
+2(x + 4)(x - 4) \geq 0
+$$
+
+Vi tegner et fortegnsskjema:
+
+:::{signchart-2}
+width: 70%
+function: 2 * (x + 4) * (x - 4), 2(x + 4)(x - 4)
+:::
+
+Fra fortegnslinja til uttrykket får vi at løsningen er 
+
+$$
+x \in \langle \gets, -4] \cup [4, \to \rangle
+$$
+
+
+::::
+
+
 :::::
 
 :::::::::::::
@@ -1001,6 +1066,44 @@ $$
 $$
 x \in \langle -2, 5\rangle
 $$
+
+
+::::{solution}
+Vi starter med å finne nullpunktene til uttrykket:
+
+$$
+-x^2 + 3x + 10 = 0
+$$
+
+$$
+x^2 - 3x - 10 = 0
+$$
+
+$$
+x = \dfrac{3 \pm \sqrt{9 + 4\cdot 10}}{2} = \dfrac{3 \pm 7}{2} = \begin{cases} 5 \\ \\ -2 \end{cases}
+$$
+
+Dermed er 
+
+$$
+-x^2 + 3x + 10 = -(x + 2)(x - 5) \gt 0
+$$
+
+Vi tegner et fortegnsskjema for uttrykket så vi kan finne løsningen.
+
+
+:::{signchart-2}
+width: 70%
+function: -(x + 2) * (x - 5), -(x + 2)(x - 5)
+:::
+
+Dermed er løsningen
+
+$$
+x \in \langle -2, 5\rangle
+$$
+
+::::
 :::::
 
 :::::::::::::
