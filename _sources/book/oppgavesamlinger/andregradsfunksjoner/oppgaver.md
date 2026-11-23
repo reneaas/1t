@@ -905,6 +905,36 @@ Bestem $f(x)$.
 $$
 f(x) = -\dfrac{1}{2}(x - 3)^2 + 2
 $$
+
+
+::::{solution}
+Vi har at 
+
+$$
+f(x) = a(x - 3)^2 + 2
+$$
+
+Videre har vi at punktet $(5, 0)$ ligger på grafen så 
+
+$$
+f(5) = 0
+$$
+
+$$
+a(5 - 3)^2 + 2 = 0
+$$
+
+$$
+4a + 2 = 0 \liff a = -\dfrac{1}{2}
+$$
+
+Dermed er 
+
+$$
+f(x) = -\dfrac{1}{2}(x - 3)^2 + 2
+$$
+::::
+
 :::::
 
 
@@ -925,6 +955,39 @@ Bestem $g(x)$.
 $$
 g(x) = 2(x + 5)(x - 1)
 $$
+
+
+::::{solution}
+Siden grafen til $g$ symmetrilinje $x = -2$ og et nullpunkt i $x = 1$, så vil grafen til $g$ ha sitt andre nullpunkt i $x = -5$. Dermed er 
+
+$$
+g(x) = a(x + 5)(x - 1)
+$$
+
+Vi bruker at grafen går gjennom $(0, -10)$ som gir
+
+$$
+g(0) = -10
+$$
+
+$$
+a(0 + 5) \cdot (0 - 1) = -10 \liff -5a = -10
+$$
+
+$$
+a = 2
+$$
+
+som betyr at 
+
+$$
+g(x) = 2(x + 5)(x - 1)
+$$
+
+
+::::
+
+
 :::::
 
 :::::::::::::
@@ -943,6 +1006,44 @@ Bestem $h(x)$.
 $$
 h(x) = (x - 1)^2 - 4
 $$
+
+
+::::{solution}
+Siden grafen går gjennom to punkter $(-2, 5)$ og $(4, 5)$ som har samme $y$-koordinat, må symmetrilinja ligge midt mellom de to. Da får vi at 
+
+$$
+x_0 = \dfrac{-2 + 4}{2} = 1
+$$
+
+og siden verdimengden er $V_h = [-4, \to\rangle$ må $y$-koordinaten til punktet være $y_0 = -4$. Dermed er 
+
+$$
+h(x) = a(x - 1)^2 - 4
+$$
+
+Vi bruker at grafen går gjennom $(4, 5)$ for å finne verdien til $a$:
+
+$$
+h(4) = 5
+$$
+
+$$
+a(4 - 1)^2 - 4 = 5
+$$
+
+$$
+9a = 9 \liff a = 1
+$$
+
+Dermed er 
+
+$$
+h(x) = (x - 1)^2 - 4
+$$
+
+::::
+
+
 :::::
 
 
