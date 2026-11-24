@@ -1176,7 +1176,7 @@ $$
 
 
 
-:::::::::::::::{exercise} Oppgave 9
+:::::::::::::::{exercise} Oppgave 10
 
 
 
@@ -1250,7 +1250,7 @@ for x in range(-10, 11):
 ---
 
 
-:::::::::::::::{exercise} Oppgave 10
+:::::::::::::::{exercise} Oppgave 11
 
 
 
@@ -1363,7 +1363,7 @@ for x in range(-10, 11):
 ---
 
 
-:::::::::::::::{exercise} Oppgave 11
+:::::::::::::::{exercise} Oppgave 12
 
 
 :::::::::::::{part} a
@@ -1379,7 +1379,7 @@ Bestem $k$ slik at likningen har én løsning.
 
 :::::{answer}
 $$
-k = 6
+k = 6 \or k = -6
 $$
 :::::
 :::::::::::::
