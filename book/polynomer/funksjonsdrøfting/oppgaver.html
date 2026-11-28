@@ -941,9 +941,9 @@ a</label><div class="sd-tab-content docutils" id="sd-tab-item-5-content">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-3fcc6e6f" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-3fcc6e6f" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-3fcc6e6f" class="ggb-window"></div>
+<button id="button-ggb-cas-a78c5d55" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-a78c5d55" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-a78c5d55" class="ggb-window"></div>
 </div>
 
 <style>
@@ -994,12 +994,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-3fcc6e6f';
+    const storageKey = 'ggb-cas-state-ggb-cas-a78c5d55';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-3fcc6e6f").width(),
-            h = $("#ggb-cas-3fcc6e6f").height();
+      const w = $("#ggb-cas-a78c5d55").width(),
+            h = $("#ggb-cas-a78c5d55").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -1070,7 +1070,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-3fcc6e6f").dialog({
+    const $dlg = $("#dialog-ggb-cas-a78c5d55").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -1080,7 +1080,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-3fcc6e6f",
+            appName: "classic", id: "ggb-cas-a78c5d55",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -1092,7 +1092,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-3fcc6e6f");
+          }, true).inject("ggb-cas-a78c5d55");
         } else {
           applySize();
         }
@@ -1113,12 +1113,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-3fcc6e6f").empty();
+            $("#ggb-cas-a78c5d55").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-3fcc6e6f",
+              appName: "classic", id: "ggb-cas-a78c5d55",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -1128,7 +1128,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-3fcc6e6f");
+            }, true).inject("ggb-cas-a78c5d55");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -1180,7 +1180,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-3fcc6e6f')) {
+          if (!e.target.closest('#ggb-cas-a78c5d55')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -1208,7 +1208,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-3fcc6e6f');
+      const ggbContainer = document.getElementById('ggb-cas-a78c5d55');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -1254,10 +1254,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-3fcc6e6f").button()
+    $("#button-ggb-cas-a78c5d55").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-3fcc6e6f").dialog("open");
+        $("#dialog-ggb-cas-a78c5d55").dialog("open");
       });
   });
 })();
@@ -1290,9 +1290,9 @@ b</label><div class="sd-tab-content docutils" id="sd-tab-item-6-content">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-dc5bfa15" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-dc5bfa15" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-dc5bfa15" class="ggb-window"></div>
+<button id="button-ggb-cas-b24ffbfc" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-b24ffbfc" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-b24ffbfc" class="ggb-window"></div>
 </div>
 
 <style>
@@ -1343,12 +1343,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-dc5bfa15';
+    const storageKey = 'ggb-cas-state-ggb-cas-b24ffbfc';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-dc5bfa15").width(),
-            h = $("#ggb-cas-dc5bfa15").height();
+      const w = $("#ggb-cas-b24ffbfc").width(),
+            h = $("#ggb-cas-b24ffbfc").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -1419,7 +1419,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-dc5bfa15").dialog({
+    const $dlg = $("#dialog-ggb-cas-b24ffbfc").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -1429,7 +1429,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-dc5bfa15",
+            appName: "classic", id: "ggb-cas-b24ffbfc",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -1441,7 +1441,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-dc5bfa15");
+          }, true).inject("ggb-cas-b24ffbfc");
         } else {
           applySize();
         }
@@ -1462,12 +1462,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-dc5bfa15").empty();
+            $("#ggb-cas-b24ffbfc").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-dc5bfa15",
+              appName: "classic", id: "ggb-cas-b24ffbfc",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -1477,7 +1477,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-dc5bfa15");
+            }, true).inject("ggb-cas-b24ffbfc");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -1529,7 +1529,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-dc5bfa15')) {
+          if (!e.target.closest('#ggb-cas-b24ffbfc')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -1557,7 +1557,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-dc5bfa15');
+      const ggbContainer = document.getElementById('ggb-cas-b24ffbfc');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -1603,10 +1603,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-dc5bfa15").button()
+    $("#button-ggb-cas-b24ffbfc").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-dc5bfa15").dialog("open");
+        $("#dialog-ggb-cas-b24ffbfc").dialog("open");
       });
   });
 })();
@@ -1639,9 +1639,9 @@ c</label><div class="sd-tab-content docutils" id="sd-tab-item-7-content">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-753ce2b4" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-753ce2b4" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-753ce2b4" class="ggb-window"></div>
+<button id="button-ggb-cas-52e18869" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-52e18869" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-52e18869" class="ggb-window"></div>
 </div>
 
 <style>
@@ -1692,12 +1692,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-753ce2b4';
+    const storageKey = 'ggb-cas-state-ggb-cas-52e18869';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-753ce2b4").width(),
-            h = $("#ggb-cas-753ce2b4").height();
+      const w = $("#ggb-cas-52e18869").width(),
+            h = $("#ggb-cas-52e18869").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -1768,7 +1768,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-753ce2b4").dialog({
+    const $dlg = $("#dialog-ggb-cas-52e18869").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -1778,7 +1778,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-753ce2b4",
+            appName: "classic", id: "ggb-cas-52e18869",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -1790,7 +1790,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-753ce2b4");
+          }, true).inject("ggb-cas-52e18869");
         } else {
           applySize();
         }
@@ -1811,12 +1811,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-753ce2b4").empty();
+            $("#ggb-cas-52e18869").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-753ce2b4",
+              appName: "classic", id: "ggb-cas-52e18869",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -1826,7 +1826,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-753ce2b4");
+            }, true).inject("ggb-cas-52e18869");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -1878,7 +1878,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-753ce2b4')) {
+          if (!e.target.closest('#ggb-cas-52e18869')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -1906,7 +1906,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-753ce2b4');
+      const ggbContainer = document.getElementById('ggb-cas-52e18869');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -1952,10 +1952,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-753ce2b4").button()
+    $("#button-ggb-cas-52e18869").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-753ce2b4").dialog("open");
+        $("#dialog-ggb-cas-52e18869").dialog("open");
       });
   });
 })();
@@ -1988,9 +1988,9 @@ d</label><div class="sd-tab-content docutils" id="sd-tab-item-8-content">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-2378eb56" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-2378eb56" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-2378eb56" class="ggb-window"></div>
+<button id="button-ggb-cas-f5caadd9" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-f5caadd9" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-f5caadd9" class="ggb-window"></div>
 </div>
 
 <style>
@@ -2041,12 +2041,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-2378eb56';
+    const storageKey = 'ggb-cas-state-ggb-cas-f5caadd9';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-2378eb56").width(),
-            h = $("#ggb-cas-2378eb56").height();
+      const w = $("#ggb-cas-f5caadd9").width(),
+            h = $("#ggb-cas-f5caadd9").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -2117,7 +2117,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-2378eb56").dialog({
+    const $dlg = $("#dialog-ggb-cas-f5caadd9").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -2127,7 +2127,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-2378eb56",
+            appName: "classic", id: "ggb-cas-f5caadd9",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -2139,7 +2139,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-2378eb56");
+          }, true).inject("ggb-cas-f5caadd9");
         } else {
           applySize();
         }
@@ -2160,12 +2160,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-2378eb56").empty();
+            $("#ggb-cas-f5caadd9").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-2378eb56",
+              appName: "classic", id: "ggb-cas-f5caadd9",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -2175,7 +2175,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-2378eb56");
+            }, true).inject("ggb-cas-f5caadd9");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -2227,7 +2227,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-2378eb56')) {
+          if (!e.target.closest('#ggb-cas-f5caadd9')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -2255,7 +2255,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-2378eb56');
+      const ggbContainer = document.getElementById('ggb-cas-f5caadd9');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -2301,10 +2301,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-2378eb56").button()
+    $("#button-ggb-cas-f5caadd9").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-2378eb56").dialog("open");
+        $("#dialog-ggb-cas-f5caadd9").dialog("open");
       });
   });
 })();
@@ -2404,8 +2404,8 @@ f(x) = x^3 + 4x^2 - 3x - 18
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_f446333880aa_451380_figure_1">
-  <g id="cpl_f446333880aa_451380_patch_1">
+ <g id="cpl_f446333880aa_82a27a_figure_1">
+  <g id="cpl_f446333880aa_82a27a_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -2414,8 +2414,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_f446333880aa_451380_axes_1">
-   <g id="cpl_f446333880aa_451380_patch_2">
+  <g id="cpl_f446333880aa_82a27a_axes_1">
+   <g id="cpl_f446333880aa_82a27a_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -2424,12 +2424,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_f446333880aa_451380_matplotlib.axis_1">
-    <g id="cpl_f446333880aa_451380_text_1">
+   <g id="cpl_f446333880aa_82a27a_matplotlib.axis_1">
+    <g id="cpl_f446333880aa_82a27a_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_f446333880aa_451380_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_f446333880aa_82a27a_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -2463,16 +2463,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_f446333880aa_451380_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_f446333880aa_82a27a_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_f446333880aa_451380_matplotlib.axis_2">
-    <g id="cpl_f446333880aa_451380_text_2">
+   <g id="cpl_f446333880aa_82a27a_matplotlib.axis_2">
+    <g id="cpl_f446333880aa_82a27a_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_f446333880aa_451380_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_f446333880aa_82a27a_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -2506,35 +2506,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_f446333880aa_451380_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_f446333880aa_82a27a_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_f446333880aa_451380_line2d_1">
+   <g id="cpl_f446333880aa_82a27a_line2d_1">
     <defs>
-     <path id="cpl_f446333880aa_451380_m0d88d128c3" d="M 3 0 
+     <path id="cpl_f446333880aa_82a27a_m0d88d128c3" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_f446333880aa_451380_m0d88d128c3" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_f446333880aa_82a27a_m0d88d128c3" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_f446333880aa_451380_line2d_2">
+   <g id="cpl_f446333880aa_82a27a_line2d_2">
     <defs>
-     <path id="cpl_f446333880aa_451380_mf471d326b5" d="M 0 -3 
+     <path id="cpl_f446333880aa_82a27a_mf471d326b5" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_f446333880aa_451380_mf471d326b5" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_f446333880aa_82a27a_mf471d326b5" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_f446333880aa_451380_line2d_3">
+   <g id="cpl_f446333880aa_82a27a_line2d_3">
     <path d="M 95.512813 346.6 
 L 99.168907 316.525619 
 L 102.789929 288.551321 
@@ -2630,30 +2630,30 @@ L 363.237246 30.249783
 L 366.45889 12.037676 
 L 368.638913 -1 
 L 368.638913 -1 
-" clip-path="url(#cpl_f446333880aa_451380_pafbbb35708)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_f446333880aa_82a27a_pafbbb35708)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_f446333880aa_451380_patch_3">
+   <g id="cpl_f446333880aa_82a27a_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_f446333880aa_451380_patch_4">
+   <g id="cpl_f446333880aa_82a27a_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_f446333880aa_451380_patch_5">
+   <g id="cpl_f446333880aa_82a27a_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_f446333880aa_451380_patch_6">
+   <g id="cpl_f446333880aa_82a27a_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_f446333880aa_451380_text_3">
-    <g id="cpl_f446333880aa_451380_patch_7">
+   <g id="cpl_f446333880aa_82a27a_text_3">
+    <g id="cpl_f446333880aa_82a27a_patch_7">
      <path d="M 401.317322 88.523386 
 L 419.982678 88.523386 
 Q 431.982678 88.523386 431.982678 76.523386 
@@ -2669,7 +2669,7 @@ z
     <!-- A -->
     <g transform="translate(401.317322 70.709936) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_f446333880aa_451380_CMSS17-41" d="M 2272 4416 
+      <path id="cpl_f446333880aa_82a27a_CMSS17-41" d="M 2272 4416 
 L 1722 4416 
 L 166 0 
 L 653 0 
@@ -2688,13 +2688,13 @@ L 2694 1637
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_f446333880aa_451380_CMSS17-41" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_f446333880aa_82a27a_CMSS17-41" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_f446333880aa_451380_pafbbb35708">
+  <clipPath id="cpl_f446333880aa_82a27a_pafbbb35708">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -2722,8 +2722,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_4c9563f8f6f9_aeed1a_figure_1">
-  <g id="cpl_4c9563f8f6f9_aeed1a_patch_1">
+ <g id="cpl_4c9563f8f6f9_5911cf_figure_1">
+  <g id="cpl_4c9563f8f6f9_5911cf_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -2732,8 +2732,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_4c9563f8f6f9_aeed1a_axes_1">
-   <g id="cpl_4c9563f8f6f9_aeed1a_patch_2">
+  <g id="cpl_4c9563f8f6f9_5911cf_axes_1">
+   <g id="cpl_4c9563f8f6f9_5911cf_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -2742,12 +2742,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_4c9563f8f6f9_aeed1a_matplotlib.axis_1">
-    <g id="cpl_4c9563f8f6f9_aeed1a_text_1">
+   <g id="cpl_4c9563f8f6f9_5911cf_matplotlib.axis_1">
+    <g id="cpl_4c9563f8f6f9_5911cf_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_4c9563f8f6f9_aeed1a_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_4c9563f8f6f9_5911cf_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -2781,16 +2781,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_4c9563f8f6f9_aeed1a_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_4c9563f8f6f9_5911cf_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_4c9563f8f6f9_aeed1a_matplotlib.axis_2">
-    <g id="cpl_4c9563f8f6f9_aeed1a_text_2">
+   <g id="cpl_4c9563f8f6f9_5911cf_matplotlib.axis_2">
+    <g id="cpl_4c9563f8f6f9_5911cf_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_4c9563f8f6f9_aeed1a_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_4c9563f8f6f9_5911cf_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -2824,35 +2824,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_4c9563f8f6f9_aeed1a_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_4c9563f8f6f9_5911cf_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_4c9563f8f6f9_aeed1a_line2d_1">
+   <g id="cpl_4c9563f8f6f9_5911cf_line2d_1">
     <defs>
-     <path id="cpl_4c9563f8f6f9_aeed1a_m13139223e2" d="M 3 0 
+     <path id="cpl_4c9563f8f6f9_5911cf_m13139223e2" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_4c9563f8f6f9_aeed1a_m13139223e2" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_4c9563f8f6f9_5911cf_m13139223e2" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_4c9563f8f6f9_aeed1a_line2d_2">
+   <g id="cpl_4c9563f8f6f9_5911cf_line2d_2">
     <defs>
-     <path id="cpl_4c9563f8f6f9_aeed1a_md16ef8d38b" d="M 0 -3 
+     <path id="cpl_4c9563f8f6f9_5911cf_md16ef8d38b" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_4c9563f8f6f9_aeed1a_md16ef8d38b" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_4c9563f8f6f9_5911cf_md16ef8d38b" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_4c9563f8f6f9_aeed1a_line2d_3">
+   <g id="cpl_4c9563f8f6f9_5911cf_line2d_3">
     <path d="M 55.094999 346.6 
 L 58.379161 328.087655 
 L 61.627431 311.032891 
@@ -2950,30 +2950,30 @@ L 323.885259 29.752348
 L 327.506281 -0.837975 
 L 327.524892 -1 
 L 327.524892 -1 
-" clip-path="url(#cpl_4c9563f8f6f9_aeed1a_peae84cc811)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_4c9563f8f6f9_5911cf_peae84cc811)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_4c9563f8f6f9_aeed1a_patch_3">
+   <g id="cpl_4c9563f8f6f9_5911cf_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_4c9563f8f6f9_aeed1a_patch_4">
+   <g id="cpl_4c9563f8f6f9_5911cf_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_4c9563f8f6f9_aeed1a_patch_5">
+   <g id="cpl_4c9563f8f6f9_5911cf_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_4c9563f8f6f9_aeed1a_patch_6">
+   <g id="cpl_4c9563f8f6f9_5911cf_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_4c9563f8f6f9_aeed1a_text_3">
-    <g id="cpl_4c9563f8f6f9_aeed1a_patch_7">
+   <g id="cpl_4c9563f8f6f9_5911cf_text_3">
+    <g id="cpl_4c9563f8f6f9_5911cf_patch_7">
      <path d="M 401.2993 88.523386 
 L 420.0007 88.523386 
 Q 432.0007 88.523386 432.0007 76.523386 
@@ -2989,7 +2989,7 @@ z
     <!-- B -->
     <g transform="translate(401.2993 70.709936) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_4c9563f8f6f9_aeed1a_CMSS17-42" d="M 570 4416 
+      <path id="cpl_4c9563f8f6f9_5911cf_CMSS17-42" d="M 570 4416 
 L 570 0 
 L 2163 0 
 C 3034 0 3667 574 3667 1200 
@@ -3014,13 +3014,13 @@ L 1088 357
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_4c9563f8f6f9_aeed1a_CMSS17-42" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_4c9563f8f6f9_5911cf_CMSS17-42" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_4c9563f8f6f9_aeed1a_peae84cc811">
+  <clipPath id="cpl_4c9563f8f6f9_5911cf_peae84cc811">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -3048,8 +3048,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_f286550181c3_b85eb4_figure_1">
-  <g id="cpl_f286550181c3_b85eb4_patch_1">
+ <g id="cpl_f286550181c3_0e393f_figure_1">
+  <g id="cpl_f286550181c3_0e393f_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -3058,8 +3058,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_f286550181c3_b85eb4_axes_1">
-   <g id="cpl_f286550181c3_b85eb4_patch_2">
+  <g id="cpl_f286550181c3_0e393f_axes_1">
+   <g id="cpl_f286550181c3_0e393f_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -3068,12 +3068,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_f286550181c3_b85eb4_matplotlib.axis_1">
-    <g id="cpl_f286550181c3_b85eb4_text_1">
+   <g id="cpl_f286550181c3_0e393f_matplotlib.axis_1">
+    <g id="cpl_f286550181c3_0e393f_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_f286550181c3_b85eb4_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_f286550181c3_0e393f_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -3107,16 +3107,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_f286550181c3_b85eb4_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_f286550181c3_0e393f_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_f286550181c3_b85eb4_matplotlib.axis_2">
-    <g id="cpl_f286550181c3_b85eb4_text_2">
+   <g id="cpl_f286550181c3_0e393f_matplotlib.axis_2">
+    <g id="cpl_f286550181c3_0e393f_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_f286550181c3_b85eb4_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_f286550181c3_0e393f_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -3150,35 +3150,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_f286550181c3_b85eb4_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_f286550181c3_0e393f_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_f286550181c3_b85eb4_line2d_1">
+   <g id="cpl_f286550181c3_0e393f_line2d_1">
     <defs>
-     <path id="cpl_f286550181c3_b85eb4_md15e2e7d7a" d="M 3 0 
+     <path id="cpl_f286550181c3_0e393f_md15e2e7d7a" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_f286550181c3_b85eb4_md15e2e7d7a" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_f286550181c3_0e393f_md15e2e7d7a" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_f286550181c3_b85eb4_line2d_2">
+   <g id="cpl_f286550181c3_0e393f_line2d_2">
     <defs>
-     <path id="cpl_f286550181c3_b85eb4_m7504965ba2" d="M 0 -3 
+     <path id="cpl_f286550181c3_0e393f_m7504965ba2" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_f286550181c3_b85eb4_m7504965ba2" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_f286550181c3_0e393f_m7504965ba2" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_f286550181c3_b85eb4_line2d_3">
+   <g id="cpl_f286550181c3_0e393f_line2d_3">
     <path d="M 93.925107 -1 
 L 97.624648 30.242981 
 L 101.272294 59.185118 
@@ -3275,30 +3275,30 @@ L 360.947482 316.799937
 L 364.115876 333.838328 
 L 366.355002 346.6 
 L 366.355002 346.6 
-" clip-path="url(#cpl_f286550181c3_b85eb4_p5afd23a708)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_f286550181c3_0e393f_p5afd23a708)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_f286550181c3_b85eb4_patch_3">
+   <g id="cpl_f286550181c3_0e393f_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_f286550181c3_b85eb4_patch_4">
+   <g id="cpl_f286550181c3_0e393f_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_f286550181c3_b85eb4_patch_5">
+   <g id="cpl_f286550181c3_0e393f_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_f286550181c3_b85eb4_patch_6">
+   <g id="cpl_f286550181c3_0e393f_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_f286550181c3_b85eb4_text_3">
-    <g id="cpl_f286550181c3_b85eb4_patch_7">
+   <g id="cpl_f286550181c3_0e393f_text_3">
+    <g id="cpl_f286550181c3_0e393f_patch_7">
      <path d="M 401.671637 88.523386 
 L 419.628363 88.523386 
 Q 431.628363 88.523386 431.628363 76.523386 
@@ -3314,7 +3314,7 @@ z
     <!-- C -->
     <g transform="translate(401.671637 70.709936) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_f286550181c3_b85eb4_CMSS17-43" d="M 3501 714 
+      <path id="cpl_f286550181c3_0e393f_CMSS17-43" d="M 3501 714 
 C 3072 427 2874 344 2355 344 
 C 1459 344 934 1303 934 2179 
 C 934 3112 1472 4032 2381 4032 
@@ -3328,13 +3328,13 @@ L 3501 714
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_f286550181c3_b85eb4_CMSS17-43" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_f286550181c3_0e393f_CMSS17-43" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_f286550181c3_b85eb4_p5afd23a708">
+  <clipPath id="cpl_f286550181c3_0e393f_p5afd23a708">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -3362,8 +3362,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_4533bcf0eb5d_e5b7c4_figure_1">
-  <g id="cpl_4533bcf0eb5d_e5b7c4_patch_1">
+ <g id="cpl_4533bcf0eb5d_06f737_figure_1">
+  <g id="cpl_4533bcf0eb5d_06f737_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -3372,8 +3372,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_4533bcf0eb5d_e5b7c4_axes_1">
-   <g id="cpl_4533bcf0eb5d_e5b7c4_patch_2">
+  <g id="cpl_4533bcf0eb5d_06f737_axes_1">
+   <g id="cpl_4533bcf0eb5d_06f737_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -3382,12 +3382,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_4533bcf0eb5d_e5b7c4_matplotlib.axis_1">
-    <g id="cpl_4533bcf0eb5d_e5b7c4_text_1">
+   <g id="cpl_4533bcf0eb5d_06f737_matplotlib.axis_1">
+    <g id="cpl_4533bcf0eb5d_06f737_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_4533bcf0eb5d_e5b7c4_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_4533bcf0eb5d_06f737_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -3421,16 +3421,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_4533bcf0eb5d_e5b7c4_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_4533bcf0eb5d_06f737_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_4533bcf0eb5d_e5b7c4_matplotlib.axis_2">
-    <g id="cpl_4533bcf0eb5d_e5b7c4_text_2">
+   <g id="cpl_4533bcf0eb5d_06f737_matplotlib.axis_2">
+    <g id="cpl_4533bcf0eb5d_06f737_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_4533bcf0eb5d_e5b7c4_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_4533bcf0eb5d_06f737_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -3464,35 +3464,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_4533bcf0eb5d_e5b7c4_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_4533bcf0eb5d_06f737_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_4533bcf0eb5d_e5b7c4_line2d_1">
+   <g id="cpl_4533bcf0eb5d_06f737_line2d_1">
     <defs>
-     <path id="cpl_4533bcf0eb5d_e5b7c4_m98738de323" d="M 3 0 
+     <path id="cpl_4533bcf0eb5d_06f737_m98738de323" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_4533bcf0eb5d_e5b7c4_m98738de323" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_4533bcf0eb5d_06f737_m98738de323" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_4533bcf0eb5d_e5b7c4_line2d_2">
+   <g id="cpl_4533bcf0eb5d_06f737_line2d_2">
     <defs>
-     <path id="cpl_4533bcf0eb5d_e5b7c4_m596f2b517f" d="M 0 -3 
+     <path id="cpl_4533bcf0eb5d_06f737_m596f2b517f" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_4533bcf0eb5d_e5b7c4_m596f2b517f" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_4533bcf0eb5d_06f737_m596f2b517f" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_4533bcf0eb5d_e5b7c4_line2d_3">
+   <g id="cpl_4533bcf0eb5d_06f737_line2d_3">
     <path d="M 10.8 319.282224 
 L 14.314521 293.139365 
 L 17.749167 269.232166 
@@ -3598,30 +3598,30 @@ L 305.380773 40.92969
 L 308.921919 10.893791 
 L 310.267082 -1 
 L 310.267082 -1 
-" clip-path="url(#cpl_4533bcf0eb5d_e5b7c4_p911a26ddbc)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_4533bcf0eb5d_06f737_p911a26ddbc)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_4533bcf0eb5d_e5b7c4_patch_3">
+   <g id="cpl_4533bcf0eb5d_06f737_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_4533bcf0eb5d_e5b7c4_patch_4">
+   <g id="cpl_4533bcf0eb5d_06f737_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_4533bcf0eb5d_e5b7c4_patch_5">
+   <g id="cpl_4533bcf0eb5d_06f737_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_4533bcf0eb5d_e5b7c4_patch_6">
+   <g id="cpl_4533bcf0eb5d_06f737_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_4533bcf0eb5d_e5b7c4_text_3">
-    <g id="cpl_4533bcf0eb5d_e5b7c4_patch_7">
+   <g id="cpl_4533bcf0eb5d_06f737_text_3">
+    <g id="cpl_4533bcf0eb5d_06f737_patch_7">
      <path d="M 400.518575 88.523386 
 L 420.781425 88.523386 
 Q 432.781425 88.523386 432.781425 76.523386 
@@ -3637,7 +3637,7 @@ z
     <!-- D -->
     <g transform="translate(400.518575 70.709936) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_4533bcf0eb5d_e5b7c4_CMSS17-44" d="M 570 4416 
+      <path id="cpl_4533bcf0eb5d_06f737_CMSS17-44" d="M 570 4416 
 L 570 0 
 L 2144 0 
 C 3194 0 4000 980 4000 2170 
@@ -3653,13 +3653,13 @@ L 1094 357
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_4533bcf0eb5d_e5b7c4_CMSS17-44" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_4533bcf0eb5d_06f737_CMSS17-44" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_4533bcf0eb5d_e5b7c4_p911a26ddbc">
+  <clipPath id="cpl_4533bcf0eb5d_06f737_p911a26ddbc">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -3711,8 +3711,8 @@ f(x) = x^3 - 3x^2 + 1.
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_fa4fc00911a4_9a4b1b_figure_1">
-  <g id="cpl_fa4fc00911a4_9a4b1b_patch_1">
+ <g id="cpl_fa4fc00911a4_f1e760_figure_1">
+  <g id="cpl_fa4fc00911a4_f1e760_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -3721,8 +3721,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_fa4fc00911a4_9a4b1b_axes_1">
-   <g id="cpl_fa4fc00911a4_9a4b1b_patch_2">
+  <g id="cpl_fa4fc00911a4_f1e760_axes_1">
+   <g id="cpl_fa4fc00911a4_f1e760_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -3731,12 +3731,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_fa4fc00911a4_9a4b1b_matplotlib.axis_1">
-    <g id="cpl_fa4fc00911a4_9a4b1b_text_1">
+   <g id="cpl_fa4fc00911a4_f1e760_matplotlib.axis_1">
+    <g id="cpl_fa4fc00911a4_f1e760_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_fa4fc00911a4_9a4b1b_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_fa4fc00911a4_f1e760_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -3770,16 +3770,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_fa4fc00911a4_9a4b1b_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_fa4fc00911a4_f1e760_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_fa4fc00911a4_9a4b1b_matplotlib.axis_2">
-    <g id="cpl_fa4fc00911a4_9a4b1b_text_2">
+   <g id="cpl_fa4fc00911a4_f1e760_matplotlib.axis_2">
+    <g id="cpl_fa4fc00911a4_f1e760_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_fa4fc00911a4_9a4b1b_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_fa4fc00911a4_f1e760_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -3813,35 +3813,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_fa4fc00911a4_9a4b1b_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_fa4fc00911a4_f1e760_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_fa4fc00911a4_9a4b1b_line2d_1">
+   <g id="cpl_fa4fc00911a4_f1e760_line2d_1">
     <defs>
-     <path id="cpl_fa4fc00911a4_9a4b1b_m092076ff6f" d="M 3 0 
+     <path id="cpl_fa4fc00911a4_f1e760_m092076ff6f" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_fa4fc00911a4_9a4b1b_m092076ff6f" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_fa4fc00911a4_f1e760_m092076ff6f" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_fa4fc00911a4_9a4b1b_line2d_2">
+   <g id="cpl_fa4fc00911a4_f1e760_line2d_2">
     <defs>
-     <path id="cpl_fa4fc00911a4_9a4b1b_m7e64965373" d="M 0 -3 
+     <path id="cpl_fa4fc00911a4_f1e760_m7e64965373" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_fa4fc00911a4_9a4b1b_m7e64965373" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_fa4fc00911a4_f1e760_m7e64965373" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_fa4fc00911a4_9a4b1b_line2d_3">
+   <g id="cpl_fa4fc00911a4_f1e760_line2d_3">
     <path d="M 168.962612 -1 
 L 172.015345 21.662338 
 L 174.997363 42.173045 
@@ -3923,30 +3923,30 @@ L 358.950595 309.895255
 L 361.932613 332.268911 
 L 363.735396 346.6 
 L 363.735396 346.6 
-" clip-path="url(#cpl_fa4fc00911a4_9a4b1b_p82c1579a8f)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_fa4fc00911a4_f1e760_p82c1579a8f)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_fa4fc00911a4_9a4b1b_patch_3">
+   <g id="cpl_fa4fc00911a4_f1e760_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_fa4fc00911a4_9a4b1b_patch_4">
+   <g id="cpl_fa4fc00911a4_f1e760_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_fa4fc00911a4_9a4b1b_patch_5">
+   <g id="cpl_fa4fc00911a4_f1e760_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_fa4fc00911a4_9a4b1b_patch_6">
+   <g id="cpl_fa4fc00911a4_f1e760_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_fa4fc00911a4_9a4b1b_text_3">
-    <g id="cpl_fa4fc00911a4_9a4b1b_patch_7">
+   <g id="cpl_fa4fc00911a4_f1e760_text_3">
+    <g id="cpl_fa4fc00911a4_f1e760_patch_7">
      <path d="M 401.317322 80.764498 
 L 419.982678 80.764498 
 Q 431.982678 80.764498 431.982678 68.764498 
@@ -3962,7 +3962,7 @@ z
     <!-- A -->
     <g transform="translate(401.317322 62.951048) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_fa4fc00911a4_9a4b1b_CMSS17-41" d="M 2272 4416 
+      <path id="cpl_fa4fc00911a4_f1e760_CMSS17-41" d="M 2272 4416 
 L 1722 4416 
 L 166 0 
 L 653 0 
@@ -3981,13 +3981,13 @@ L 2694 1637
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_fa4fc00911a4_9a4b1b_CMSS17-41" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_fa4fc00911a4_f1e760_CMSS17-41" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_fa4fc00911a4_9a4b1b_p82c1579a8f">
+  <clipPath id="cpl_fa4fc00911a4_f1e760_p82c1579a8f">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -4015,8 +4015,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_d397c249cea9_875bcf_figure_1">
-  <g id="cpl_d397c249cea9_875bcf_patch_1">
+ <g id="cpl_d397c249cea9_f86c8b_figure_1">
+  <g id="cpl_d397c249cea9_f86c8b_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -4025,8 +4025,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_d397c249cea9_875bcf_axes_1">
-   <g id="cpl_d397c249cea9_875bcf_patch_2">
+  <g id="cpl_d397c249cea9_f86c8b_axes_1">
+   <g id="cpl_d397c249cea9_f86c8b_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -4035,12 +4035,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_d397c249cea9_875bcf_matplotlib.axis_1">
-    <g id="cpl_d397c249cea9_875bcf_text_1">
+   <g id="cpl_d397c249cea9_f86c8b_matplotlib.axis_1">
+    <g id="cpl_d397c249cea9_f86c8b_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_d397c249cea9_875bcf_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_d397c249cea9_f86c8b_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -4074,16 +4074,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_d397c249cea9_875bcf_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_d397c249cea9_f86c8b_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_d397c249cea9_875bcf_matplotlib.axis_2">
-    <g id="cpl_d397c249cea9_875bcf_text_2">
+   <g id="cpl_d397c249cea9_f86c8b_matplotlib.axis_2">
+    <g id="cpl_d397c249cea9_f86c8b_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_d397c249cea9_875bcf_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_d397c249cea9_f86c8b_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -4117,35 +4117,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_d397c249cea9_875bcf_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_d397c249cea9_f86c8b_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_d397c249cea9_875bcf_line2d_1">
+   <g id="cpl_d397c249cea9_f86c8b_line2d_1">
     <defs>
-     <path id="cpl_d397c249cea9_875bcf_m05560bed91" d="M 3 0 
+     <path id="cpl_d397c249cea9_f86c8b_m05560bed91" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_d397c249cea9_875bcf_m05560bed91" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_d397c249cea9_f86c8b_m05560bed91" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_d397c249cea9_875bcf_line2d_2">
+   <g id="cpl_d397c249cea9_f86c8b_line2d_2">
     <defs>
-     <path id="cpl_d397c249cea9_875bcf_m8e8ba4a3f5" d="M 0 -3 
+     <path id="cpl_d397c249cea9_f86c8b_m8e8ba4a3f5" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_d397c249cea9_875bcf_m8e8ba4a3f5" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_d397c249cea9_f86c8b_m8e8ba4a3f5" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_d397c249cea9_875bcf_line2d_3">
+   <g id="cpl_d397c249cea9_f86c8b_line2d_3">
     <path d="M 100.235774 346.6 
 L 103.215931 326.586991 
 L 106.118074 308.576473 
@@ -4226,30 +4226,30 @@ L 290.949936 28.85554
 L 294.011829 3.138072 
 L 294.48508 -1 
 L 294.48508 -1 
-" clip-path="url(#cpl_d397c249cea9_875bcf_pac6fb4e8b9)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_d397c249cea9_f86c8b_pac6fb4e8b9)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_d397c249cea9_875bcf_patch_3">
+   <g id="cpl_d397c249cea9_f86c8b_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_d397c249cea9_875bcf_patch_4">
+   <g id="cpl_d397c249cea9_f86c8b_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_d397c249cea9_875bcf_patch_5">
+   <g id="cpl_d397c249cea9_f86c8b_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_d397c249cea9_875bcf_patch_6">
+   <g id="cpl_d397c249cea9_f86c8b_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_d397c249cea9_875bcf_text_3">
-    <g id="cpl_d397c249cea9_875bcf_patch_7">
+   <g id="cpl_d397c249cea9_f86c8b_text_3">
+    <g id="cpl_d397c249cea9_f86c8b_patch_7">
      <path d="M 401.2993 80.764498 
 L 420.0007 80.764498 
 Q 432.0007 80.764498 432.0007 68.764498 
@@ -4265,7 +4265,7 @@ z
     <!-- B -->
     <g transform="translate(401.2993 62.951048) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_d397c249cea9_875bcf_CMSS17-42" d="M 570 4416 
+      <path id="cpl_d397c249cea9_f86c8b_CMSS17-42" d="M 570 4416 
 L 570 0 
 L 2163 0 
 C 3034 0 3667 574 3667 1200 
@@ -4290,13 +4290,13 @@ L 1088 357
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_d397c249cea9_875bcf_CMSS17-42" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_d397c249cea9_f86c8b_CMSS17-42" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_d397c249cea9_875bcf_pac6fb4e8b9">
+  <clipPath id="cpl_d397c249cea9_f86c8b_pac6fb4e8b9">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -4324,8 +4324,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_15e6fd902f9a_299070_figure_1">
-  <g id="cpl_15e6fd902f9a_299070_patch_1">
+ <g id="cpl_15e6fd902f9a_b4d93d_figure_1">
+  <g id="cpl_15e6fd902f9a_b4d93d_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -4334,8 +4334,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_15e6fd902f9a_299070_axes_1">
-   <g id="cpl_15e6fd902f9a_299070_patch_2">
+  <g id="cpl_15e6fd902f9a_b4d93d_axes_1">
+   <g id="cpl_15e6fd902f9a_b4d93d_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -4344,12 +4344,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_15e6fd902f9a_299070_matplotlib.axis_1">
-    <g id="cpl_15e6fd902f9a_299070_text_1">
+   <g id="cpl_15e6fd902f9a_b4d93d_matplotlib.axis_1">
+    <g id="cpl_15e6fd902f9a_b4d93d_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_15e6fd902f9a_299070_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_15e6fd902f9a_b4d93d_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -4383,16 +4383,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_15e6fd902f9a_299070_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_15e6fd902f9a_b4d93d_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_15e6fd902f9a_299070_matplotlib.axis_2">
-    <g id="cpl_15e6fd902f9a_299070_text_2">
+   <g id="cpl_15e6fd902f9a_b4d93d_matplotlib.axis_2">
+    <g id="cpl_15e6fd902f9a_b4d93d_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_15e6fd902f9a_299070_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_15e6fd902f9a_b4d93d_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -4426,35 +4426,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_15e6fd902f9a_299070_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_15e6fd902f9a_b4d93d_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_15e6fd902f9a_299070_line2d_1">
+   <g id="cpl_15e6fd902f9a_b4d93d_line2d_1">
     <defs>
-     <path id="cpl_15e6fd902f9a_299070_m9a9547e1ba" d="M 3 0 
+     <path id="cpl_15e6fd902f9a_b4d93d_m9a9547e1ba" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_15e6fd902f9a_299070_m9a9547e1ba" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_15e6fd902f9a_b4d93d_m9a9547e1ba" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_15e6fd902f9a_299070_line2d_2">
+   <g id="cpl_15e6fd902f9a_b4d93d_line2d_2">
     <defs>
-     <path id="cpl_15e6fd902f9a_299070_md88309e3f4" d="M 0 -3 
+     <path id="cpl_15e6fd902f9a_b4d93d_md88309e3f4" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_15e6fd902f9a_299070_md88309e3f4" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_15e6fd902f9a_b4d93d_md88309e3f4" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_15e6fd902f9a_299070_line2d_3">
+   <g id="cpl_15e6fd902f9a_b4d93d_line2d_3">
     <path d="M 170.772793 346.6 
 L 173.772606 325.304272 
 L 176.727999 305.884648 
@@ -4535,30 +4535,30 @@ L 359.456473 45.668862
 L 362.438491 23.016096 
 L 365.383545 -1 
 L 365.383545 -1 
-" clip-path="url(#cpl_15e6fd902f9a_299070_p4407e6faf4)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_15e6fd902f9a_b4d93d_p4407e6faf4)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_15e6fd902f9a_299070_patch_3">
+   <g id="cpl_15e6fd902f9a_b4d93d_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_15e6fd902f9a_299070_patch_4">
+   <g id="cpl_15e6fd902f9a_b4d93d_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_15e6fd902f9a_299070_patch_5">
+   <g id="cpl_15e6fd902f9a_b4d93d_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_15e6fd902f9a_299070_patch_6">
+   <g id="cpl_15e6fd902f9a_b4d93d_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_15e6fd902f9a_299070_text_3">
-    <g id="cpl_15e6fd902f9a_299070_patch_7">
+   <g id="cpl_15e6fd902f9a_b4d93d_text_3">
+    <g id="cpl_15e6fd902f9a_b4d93d_patch_7">
      <path d="M 401.671637 80.764498 
 L 419.628363 80.764498 
 Q 431.628363 80.764498 431.628363 68.764498 
@@ -4574,7 +4574,7 @@ z
     <!-- C -->
     <g transform="translate(401.671637 62.951048) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_15e6fd902f9a_299070_CMSS17-43" d="M 3501 714 
+      <path id="cpl_15e6fd902f9a_b4d93d_CMSS17-43" d="M 3501 714 
 C 3072 427 2874 344 2355 344 
 C 1459 344 934 1303 934 2179 
 C 934 3112 1472 4032 2381 4032 
@@ -4588,13 +4588,13 @@ L 3501 714
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_15e6fd902f9a_299070_CMSS17-43" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_15e6fd902f9a_b4d93d_CMSS17-43" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_15e6fd902f9a_299070_p4407e6faf4">
+  <clipPath id="cpl_15e6fd902f9a_b4d93d_p4407e6faf4">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -4622,8 +4622,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_2ef6659b6798_e18f9d_figure_1">
-  <g id="cpl_2ef6659b6798_e18f9d_patch_1">
+ <g id="cpl_2ef6659b6798_3179a7_figure_1">
+  <g id="cpl_2ef6659b6798_3179a7_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -4632,8 +4632,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_2ef6659b6798_e18f9d_axes_1">
-   <g id="cpl_2ef6659b6798_e18f9d_patch_2">
+  <g id="cpl_2ef6659b6798_3179a7_axes_1">
+   <g id="cpl_2ef6659b6798_3179a7_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -4642,12 +4642,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_2ef6659b6798_e18f9d_matplotlib.axis_1">
-    <g id="cpl_2ef6659b6798_e18f9d_text_1">
+   <g id="cpl_2ef6659b6798_3179a7_matplotlib.axis_1">
+    <g id="cpl_2ef6659b6798_3179a7_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_2ef6659b6798_e18f9d_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_2ef6659b6798_3179a7_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -4681,16 +4681,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_2ef6659b6798_e18f9d_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_2ef6659b6798_3179a7_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_2ef6659b6798_e18f9d_matplotlib.axis_2">
-    <g id="cpl_2ef6659b6798_e18f9d_text_2">
+   <g id="cpl_2ef6659b6798_3179a7_matplotlib.axis_2">
+    <g id="cpl_2ef6659b6798_3179a7_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_2ef6659b6798_e18f9d_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_2ef6659b6798_3179a7_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -4724,35 +4724,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_2ef6659b6798_e18f9d_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_2ef6659b6798_3179a7_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_2ef6659b6798_e18f9d_line2d_1">
+   <g id="cpl_2ef6659b6798_3179a7_line2d_1">
     <defs>
-     <path id="cpl_2ef6659b6798_e18f9d_m3ccace724c" d="M 3 0 
+     <path id="cpl_2ef6659b6798_3179a7_m3ccace724c" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_2ef6659b6798_e18f9d_m3ccace724c" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_2ef6659b6798_3179a7_m3ccace724c" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_2ef6659b6798_e18f9d_line2d_2">
+   <g id="cpl_2ef6659b6798_3179a7_line2d_2">
     <defs>
-     <path id="cpl_2ef6659b6798_e18f9d_m8f738a36e3" d="M 0 -3 
+     <path id="cpl_2ef6659b6798_3179a7_m8f738a36e3" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_2ef6659b6798_e18f9d_m8f738a36e3" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_2ef6659b6798_3179a7_m8f738a36e3" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_2ef6659b6798_e18f9d_line2d_3">
+   <g id="cpl_2ef6659b6798_3179a7_line2d_3">
     <path d="M 113.782931 346.6 
 L 116.981139 314.843213 
 L 120.149533 285.570868 
@@ -4846,30 +4846,30 @@ L 334.561948 38.099444
 L 337.543966 12.549335 
 L 339.04315 -1 
 L 339.04315 -1 
-" clip-path="url(#cpl_2ef6659b6798_e18f9d_p7820721e82)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_2ef6659b6798_3179a7_p7820721e82)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_2ef6659b6798_e18f9d_patch_3">
+   <g id="cpl_2ef6659b6798_3179a7_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_2ef6659b6798_e18f9d_patch_4">
+   <g id="cpl_2ef6659b6798_3179a7_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_2ef6659b6798_e18f9d_patch_5">
+   <g id="cpl_2ef6659b6798_3179a7_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_2ef6659b6798_e18f9d_patch_6">
+   <g id="cpl_2ef6659b6798_3179a7_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_2ef6659b6798_e18f9d_text_3">
-    <g id="cpl_2ef6659b6798_e18f9d_patch_7">
+   <g id="cpl_2ef6659b6798_3179a7_text_3">
+    <g id="cpl_2ef6659b6798_3179a7_patch_7">
      <path d="M 400.518575 80.764498 
 L 420.781425 80.764498 
 Q 432.781425 80.764498 432.781425 68.764498 
@@ -4885,7 +4885,7 @@ z
     <!-- D -->
     <g transform="translate(400.518575 62.951048) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_2ef6659b6798_e18f9d_CMSS17-44" d="M 570 4416 
+      <path id="cpl_2ef6659b6798_3179a7_CMSS17-44" d="M 570 4416 
 L 570 0 
 L 2144 0 
 C 3194 0 4000 980 4000 2170 
@@ -4901,13 +4901,13 @@ L 1094 357
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_2ef6659b6798_e18f9d_CMSS17-44" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_2ef6659b6798_3179a7_CMSS17-44" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_2ef6659b6798_e18f9d_p7820721e82">
+  <clipPath id="cpl_2ef6659b6798_3179a7_p7820721e82">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -4959,8 +4959,8 @@ f'(x) = x^3 - 2x^2 - x + 2.
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_760ef9a914e4_404342_figure_1">
-  <g id="cpl_760ef9a914e4_404342_patch_1">
+ <g id="cpl_760ef9a914e4_fb61e3_figure_1">
+  <g id="cpl_760ef9a914e4_fb61e3_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -4969,8 +4969,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_760ef9a914e4_404342_axes_1">
-   <g id="cpl_760ef9a914e4_404342_patch_2">
+  <g id="cpl_760ef9a914e4_fb61e3_axes_1">
+   <g id="cpl_760ef9a914e4_fb61e3_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -4979,12 +4979,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_760ef9a914e4_404342_matplotlib.axis_1">
-    <g id="cpl_760ef9a914e4_404342_text_1">
+   <g id="cpl_760ef9a914e4_fb61e3_matplotlib.axis_1">
+    <g id="cpl_760ef9a914e4_fb61e3_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_760ef9a914e4_404342_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_760ef9a914e4_fb61e3_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -5018,16 +5018,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_760ef9a914e4_404342_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_760ef9a914e4_fb61e3_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_760ef9a914e4_404342_matplotlib.axis_2">
-    <g id="cpl_760ef9a914e4_404342_text_2">
+   <g id="cpl_760ef9a914e4_fb61e3_matplotlib.axis_2">
+    <g id="cpl_760ef9a914e4_fb61e3_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_760ef9a914e4_404342_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_760ef9a914e4_fb61e3_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -5061,35 +5061,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_760ef9a914e4_404342_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_760ef9a914e4_fb61e3_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_760ef9a914e4_404342_line2d_1">
+   <g id="cpl_760ef9a914e4_fb61e3_line2d_1">
     <defs>
-     <path id="cpl_760ef9a914e4_404342_m86409ca298" d="M 3 0 
+     <path id="cpl_760ef9a914e4_fb61e3_m86409ca298" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_760ef9a914e4_404342_m86409ca298" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_760ef9a914e4_fb61e3_m86409ca298" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_760ef9a914e4_404342_line2d_2">
+   <g id="cpl_760ef9a914e4_fb61e3_line2d_2">
     <defs>
-     <path id="cpl_760ef9a914e4_404342_ma769a9543c" d="M 0 -3 
+     <path id="cpl_760ef9a914e4_fb61e3_ma769a9543c" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_760ef9a914e4_404342_ma769a9543c" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_760ef9a914e4_fb61e3_ma769a9543c" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_760ef9a914e4_404342_line2d_3">
+   <g id="cpl_760ef9a914e4_fb61e3_line2d_3">
     <path d="M 93.293752 -1 
 L 95.947262 29.340907 
 L 98.583153 56.972152 
@@ -5183,30 +5183,30 @@ L 318.640103 56.777404
 L 321.222743 24.048088 
 L 323.065229 -1 
 L 323.065229 -1 
-" clip-path="url(#cpl_760ef9a914e4_404342_pb6cf98d836)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_760ef9a914e4_fb61e3_pb6cf98d836)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_760ef9a914e4_404342_patch_3">
+   <g id="cpl_760ef9a914e4_fb61e3_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_760ef9a914e4_404342_patch_4">
+   <g id="cpl_760ef9a914e4_fb61e3_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_760ef9a914e4_404342_patch_5">
+   <g id="cpl_760ef9a914e4_fb61e3_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_760ef9a914e4_404342_patch_6">
+   <g id="cpl_760ef9a914e4_fb61e3_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_760ef9a914e4_404342_text_3">
-    <g id="cpl_760ef9a914e4_404342_patch_7">
+   <g id="cpl_760ef9a914e4_fb61e3_text_3">
+    <g id="cpl_760ef9a914e4_fb61e3_patch_7">
      <path d="M 401.317322 88.523386 
 L 419.982678 88.523386 
 Q 431.982678 88.523386 431.982678 76.523386 
@@ -5222,7 +5222,7 @@ z
     <!-- A -->
     <g transform="translate(401.317322 70.709936) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_760ef9a914e4_404342_CMSS17-41" d="M 2272 4416 
+      <path id="cpl_760ef9a914e4_fb61e3_CMSS17-41" d="M 2272 4416 
 L 1722 4416 
 L 166 0 
 L 653 0 
@@ -5241,13 +5241,13 @@ L 2694 1637
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_760ef9a914e4_404342_CMSS17-41" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_760ef9a914e4_fb61e3_CMSS17-41" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_760ef9a914e4_404342_pb6cf98d836">
+  <clipPath id="cpl_760ef9a914e4_fb61e3_pb6cf98d836">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -5275,8 +5275,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_7439c2eba85f_4c5589_figure_1">
-  <g id="cpl_7439c2eba85f_4c5589_patch_1">
+ <g id="cpl_7439c2eba85f_1b5144_figure_1">
+  <g id="cpl_7439c2eba85f_1b5144_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -5285,8 +5285,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_7439c2eba85f_4c5589_axes_1">
-   <g id="cpl_7439c2eba85f_4c5589_patch_2">
+  <g id="cpl_7439c2eba85f_1b5144_axes_1">
+   <g id="cpl_7439c2eba85f_1b5144_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -5295,12 +5295,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_7439c2eba85f_4c5589_matplotlib.axis_1">
-    <g id="cpl_7439c2eba85f_4c5589_text_1">
+   <g id="cpl_7439c2eba85f_1b5144_matplotlib.axis_1">
+    <g id="cpl_7439c2eba85f_1b5144_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_7439c2eba85f_4c5589_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_7439c2eba85f_1b5144_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -5334,16 +5334,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_7439c2eba85f_4c5589_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_7439c2eba85f_1b5144_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_7439c2eba85f_4c5589_matplotlib.axis_2">
-    <g id="cpl_7439c2eba85f_4c5589_text_2">
+   <g id="cpl_7439c2eba85f_1b5144_matplotlib.axis_2">
+    <g id="cpl_7439c2eba85f_1b5144_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_7439c2eba85f_4c5589_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_7439c2eba85f_1b5144_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -5377,35 +5377,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_7439c2eba85f_4c5589_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_7439c2eba85f_1b5144_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_7439c2eba85f_4c5589_line2d_1">
+   <g id="cpl_7439c2eba85f_1b5144_line2d_1">
     <defs>
-     <path id="cpl_7439c2eba85f_4c5589_mb22a5a3520" d="M 3 0 
+     <path id="cpl_7439c2eba85f_1b5144_mb22a5a3520" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_7439c2eba85f_4c5589_mb22a5a3520" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_7439c2eba85f_1b5144_mb22a5a3520" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_7439c2eba85f_4c5589_line2d_2">
+   <g id="cpl_7439c2eba85f_1b5144_line2d_2">
     <defs>
-     <path id="cpl_7439c2eba85f_4c5589_m035ef58e37" d="M 0 -3 
+     <path id="cpl_7439c2eba85f_1b5144_m035ef58e37" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_7439c2eba85f_4c5589_m035ef58e37" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_7439c2eba85f_1b5144_m035ef58e37" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_7439c2eba85f_4c5589_line2d_3">
+   <g id="cpl_7439c2eba85f_1b5144_line2d_3">
     <path d="M 94.459007 346.6 
 L 97.118769 317.322299 
 L 99.728035 291.016208 
@@ -5499,30 +5499,30 @@ L 318.373851 299.246365
 L 320.956491 331.695422 
 L 322.074779 346.6 
 L 322.074779 346.6 
-" clip-path="url(#cpl_7439c2eba85f_4c5589_p10e07a3ef2)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_7439c2eba85f_1b5144_p10e07a3ef2)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_7439c2eba85f_4c5589_patch_3">
+   <g id="cpl_7439c2eba85f_1b5144_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_7439c2eba85f_4c5589_patch_4">
+   <g id="cpl_7439c2eba85f_1b5144_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_7439c2eba85f_4c5589_patch_5">
+   <g id="cpl_7439c2eba85f_1b5144_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_7439c2eba85f_4c5589_patch_6">
+   <g id="cpl_7439c2eba85f_1b5144_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_7439c2eba85f_4c5589_text_3">
-    <g id="cpl_7439c2eba85f_4c5589_patch_7">
+   <g id="cpl_7439c2eba85f_1b5144_text_3">
+    <g id="cpl_7439c2eba85f_1b5144_patch_7">
      <path d="M 401.2993 88.523386 
 L 420.0007 88.523386 
 Q 432.0007 88.523386 432.0007 76.523386 
@@ -5538,7 +5538,7 @@ z
     <!-- B -->
     <g transform="translate(401.2993 70.709936) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_7439c2eba85f_4c5589_CMSS17-42" d="M 570 4416 
+      <path id="cpl_7439c2eba85f_1b5144_CMSS17-42" d="M 570 4416 
 L 570 0 
 L 2163 0 
 C 3034 0 3667 574 3667 1200 
@@ -5563,13 +5563,13 @@ L 1088 357
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_7439c2eba85f_4c5589_CMSS17-42" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_7439c2eba85f_1b5144_CMSS17-42" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_7439c2eba85f_4c5589_p10e07a3ef2">
+  <clipPath id="cpl_7439c2eba85f_1b5144_p10e07a3ef2">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -5597,8 +5597,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_04e5c2fa20a4_ae8d07_figure_1">
-  <g id="cpl_04e5c2fa20a4_ae8d07_patch_1">
+ <g id="cpl_04e5c2fa20a4_fa88e0_figure_1">
+  <g id="cpl_04e5c2fa20a4_fa88e0_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -5607,8 +5607,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_04e5c2fa20a4_ae8d07_axes_1">
-   <g id="cpl_04e5c2fa20a4_ae8d07_patch_2">
+  <g id="cpl_04e5c2fa20a4_fa88e0_axes_1">
+   <g id="cpl_04e5c2fa20a4_fa88e0_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -5617,12 +5617,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_04e5c2fa20a4_ae8d07_matplotlib.axis_1">
-    <g id="cpl_04e5c2fa20a4_ae8d07_text_1">
+   <g id="cpl_04e5c2fa20a4_fa88e0_matplotlib.axis_1">
+    <g id="cpl_04e5c2fa20a4_fa88e0_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_04e5c2fa20a4_ae8d07_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_04e5c2fa20a4_fa88e0_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -5656,16 +5656,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_04e5c2fa20a4_ae8d07_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_04e5c2fa20a4_fa88e0_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_04e5c2fa20a4_ae8d07_matplotlib.axis_2">
-    <g id="cpl_04e5c2fa20a4_ae8d07_text_2">
+   <g id="cpl_04e5c2fa20a4_fa88e0_matplotlib.axis_2">
+    <g id="cpl_04e5c2fa20a4_fa88e0_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_04e5c2fa20a4_ae8d07_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_04e5c2fa20a4_fa88e0_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -5699,35 +5699,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_04e5c2fa20a4_ae8d07_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_04e5c2fa20a4_fa88e0_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_04e5c2fa20a4_ae8d07_line2d_1">
+   <g id="cpl_04e5c2fa20a4_fa88e0_line2d_1">
     <defs>
-     <path id="cpl_04e5c2fa20a4_ae8d07_m0bd0242f64" d="M 3 0 
+     <path id="cpl_04e5c2fa20a4_fa88e0_m0bd0242f64" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_04e5c2fa20a4_ae8d07_m0bd0242f64" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_04e5c2fa20a4_fa88e0_m0bd0242f64" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_04e5c2fa20a4_ae8d07_line2d_2">
+   <g id="cpl_04e5c2fa20a4_fa88e0_line2d_2">
     <defs>
-     <path id="cpl_04e5c2fa20a4_ae8d07_m20366bc0dd" d="M 0 -3 
+     <path id="cpl_04e5c2fa20a4_fa88e0_m20366bc0dd" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_04e5c2fa20a4_ae8d07_m20366bc0dd" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_04e5c2fa20a4_fa88e0_m20366bc0dd" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_04e5c2fa20a4_ae8d07_line2d_3">
+   <g id="cpl_04e5c2fa20a4_fa88e0_line2d_3">
     <path d="M 134.734771 -1 
 L 137.429262 35.147449 
 L 140.091778 67.92715 
@@ -5822,30 +5822,30 @@ L 361.506611 33.108959
 L 364.089251 3.941367 
 L 364.506248 -1 
 L 364.506248 -1 
-" clip-path="url(#cpl_04e5c2fa20a4_ae8d07_p306685940b)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_04e5c2fa20a4_fa88e0_p306685940b)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_04e5c2fa20a4_ae8d07_patch_3">
+   <g id="cpl_04e5c2fa20a4_fa88e0_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_04e5c2fa20a4_ae8d07_patch_4">
+   <g id="cpl_04e5c2fa20a4_fa88e0_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_04e5c2fa20a4_ae8d07_patch_5">
+   <g id="cpl_04e5c2fa20a4_fa88e0_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_04e5c2fa20a4_ae8d07_patch_6">
+   <g id="cpl_04e5c2fa20a4_fa88e0_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_04e5c2fa20a4_ae8d07_text_3">
-    <g id="cpl_04e5c2fa20a4_ae8d07_patch_7">
+   <g id="cpl_04e5c2fa20a4_fa88e0_text_3">
+    <g id="cpl_04e5c2fa20a4_fa88e0_patch_7">
      <path d="M 401.671637 88.523386 
 L 419.628363 88.523386 
 Q 431.628363 88.523386 431.628363 76.523386 
@@ -5861,7 +5861,7 @@ z
     <!-- C -->
     <g transform="translate(401.671637 70.709936) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_04e5c2fa20a4_ae8d07_CMSS17-43" d="M 3501 714 
+      <path id="cpl_04e5c2fa20a4_fa88e0_CMSS17-43" d="M 3501 714 
 C 3072 427 2874 344 2355 344 
 C 1459 344 934 1303 934 2179 
 C 934 3112 1472 4032 2381 4032 
@@ -5875,13 +5875,13 @@ L 3501 714
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_04e5c2fa20a4_ae8d07_CMSS17-43" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_04e5c2fa20a4_fa88e0_CMSS17-43" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_04e5c2fa20a4_ae8d07_p306685940b">
+  <clipPath id="cpl_04e5c2fa20a4_fa88e0_p306685940b">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -5909,8 +5909,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_2904379c093f_92a0f9_figure_1">
-  <g id="cpl_2904379c093f_92a0f9_patch_1">
+ <g id="cpl_2904379c093f_5807a9_figure_1">
+  <g id="cpl_2904379c093f_5807a9_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -5919,8 +5919,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_2904379c093f_92a0f9_axes_1">
-   <g id="cpl_2904379c093f_92a0f9_patch_2">
+  <g id="cpl_2904379c093f_5807a9_axes_1">
+   <g id="cpl_2904379c093f_5807a9_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -5929,12 +5929,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_2904379c093f_92a0f9_matplotlib.axis_1">
-    <g id="cpl_2904379c093f_92a0f9_text_1">
+   <g id="cpl_2904379c093f_5807a9_matplotlib.axis_1">
+    <g id="cpl_2904379c093f_5807a9_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_2904379c093f_92a0f9_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_2904379c093f_5807a9_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -5968,16 +5968,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_2904379c093f_92a0f9_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_2904379c093f_5807a9_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_2904379c093f_92a0f9_matplotlib.axis_2">
-    <g id="cpl_2904379c093f_92a0f9_text_2">
+   <g id="cpl_2904379c093f_5807a9_matplotlib.axis_2">
+    <g id="cpl_2904379c093f_5807a9_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_2904379c093f_92a0f9_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_2904379c093f_5807a9_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -6011,35 +6011,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_2904379c093f_92a0f9_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_2904379c093f_5807a9_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_2904379c093f_92a0f9_line2d_1">
+   <g id="cpl_2904379c093f_5807a9_line2d_1">
     <defs>
-     <path id="cpl_2904379c093f_92a0f9_m9e4813af57" d="M 3 0 
+     <path id="cpl_2904379c093f_5807a9_m9e4813af57" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_2904379c093f_92a0f9_m9e4813af57" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_2904379c093f_5807a9_m9e4813af57" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_2904379c093f_92a0f9_line2d_2">
+   <g id="cpl_2904379c093f_5807a9_line2d_2">
     <defs>
-     <path id="cpl_2904379c093f_92a0f9_m3f20455bf4" d="M 0 -3 
+     <path id="cpl_2904379c093f_5807a9_m3f20455bf4" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_2904379c093f_92a0f9_m3f20455bf4" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_2904379c093f_5807a9_m3f20455bf4" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_2904379c093f_92a0f9_line2d_3">
+   <g id="cpl_2904379c093f_5807a9_line2d_3">
     <path d="M 135.725221 346.6 
 L 138.387768 311.96746 
 L 141.023659 280.507698 
@@ -6131,30 +6131,30 @@ L 359.616224 306.303437
 L 362.17224 333.420011 
 L 363.340993 346.6 
 L 363.340993 346.6 
-" clip-path="url(#cpl_2904379c093f_92a0f9_p0e855afb6c)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_2904379c093f_5807a9_p0e855afb6c)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_2904379c093f_92a0f9_patch_3">
+   <g id="cpl_2904379c093f_5807a9_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_2904379c093f_92a0f9_patch_4">
+   <g id="cpl_2904379c093f_5807a9_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_2904379c093f_92a0f9_patch_5">
+   <g id="cpl_2904379c093f_5807a9_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_2904379c093f_92a0f9_patch_6">
+   <g id="cpl_2904379c093f_5807a9_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_2904379c093f_92a0f9_text_3">
-    <g id="cpl_2904379c093f_92a0f9_patch_7">
+   <g id="cpl_2904379c093f_5807a9_text_3">
+    <g id="cpl_2904379c093f_5807a9_patch_7">
      <path d="M 400.518575 88.523386 
 L 420.781425 88.523386 
 Q 432.781425 88.523386 432.781425 76.523386 
@@ -6170,7 +6170,7 @@ z
     <!-- D -->
     <g transform="translate(400.518575 70.709936) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_2904379c093f_92a0f9_CMSS17-44" d="M 570 4416 
+      <path id="cpl_2904379c093f_5807a9_CMSS17-44" d="M 570 4416 
 L 570 0 
 L 2144 0 
 C 3194 0 4000 980 4000 2170 
@@ -6186,13 +6186,13 @@ L 1094 357
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_2904379c093f_92a0f9_CMSS17-44" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_2904379c093f_5807a9_CMSS17-44" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_2904379c093f_92a0f9_p0e855afb6c">
+  <clipPath id="cpl_2904379c093f_5807a9_p0e855afb6c">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -6244,8 +6244,8 @@ f(x) = 2x^3 - 3x^2 - 12x + 6.
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_3e32b4afe44e_9cedb4_figure_1">
-  <g id="cpl_3e32b4afe44e_9cedb4_patch_1">
+ <g id="cpl_3e32b4afe44e_934ef1_figure_1">
+  <g id="cpl_3e32b4afe44e_934ef1_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -6254,8 +6254,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_3e32b4afe44e_9cedb4_axes_1">
-   <g id="cpl_3e32b4afe44e_9cedb4_patch_2">
+  <g id="cpl_3e32b4afe44e_934ef1_axes_1">
+   <g id="cpl_3e32b4afe44e_934ef1_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -6264,12 +6264,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_3e32b4afe44e_9cedb4_matplotlib.axis_1">
-    <g id="cpl_3e32b4afe44e_9cedb4_text_1">
+   <g id="cpl_3e32b4afe44e_934ef1_matplotlib.axis_1">
+    <g id="cpl_3e32b4afe44e_934ef1_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_3e32b4afe44e_9cedb4_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_3e32b4afe44e_934ef1_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -6303,16 +6303,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_3e32b4afe44e_9cedb4_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_3e32b4afe44e_934ef1_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_3e32b4afe44e_9cedb4_matplotlib.axis_2">
-    <g id="cpl_3e32b4afe44e_9cedb4_text_2">
+   <g id="cpl_3e32b4afe44e_934ef1_matplotlib.axis_2">
+    <g id="cpl_3e32b4afe44e_934ef1_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_3e32b4afe44e_9cedb4_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_3e32b4afe44e_934ef1_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -6346,35 +6346,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_3e32b4afe44e_9cedb4_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_3e32b4afe44e_934ef1_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_3e32b4afe44e_9cedb4_line2d_1">
+   <g id="cpl_3e32b4afe44e_934ef1_line2d_1">
     <defs>
-     <path id="cpl_3e32b4afe44e_9cedb4_m05f839a773" d="M 3 0 
+     <path id="cpl_3e32b4afe44e_934ef1_m05f839a773" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_3e32b4afe44e_9cedb4_m05f839a773" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_3e32b4afe44e_934ef1_m05f839a773" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_3e32b4afe44e_9cedb4_line2d_2">
+   <g id="cpl_3e32b4afe44e_934ef1_line2d_2">
     <defs>
-     <path id="cpl_3e32b4afe44e_9cedb4_mdb09d0f08d" d="M 0 -3 
+     <path id="cpl_3e32b4afe44e_934ef1_mdb09d0f08d" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_3e32b4afe44e_9cedb4_mdb09d0f08d" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_3e32b4afe44e_934ef1_mdb09d0f08d" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_3e32b4afe44e_9cedb4_line2d_3">
+   <g id="cpl_3e32b4afe44e_934ef1_line2d_3">
     <path d="M 164.828799 346.6 
 L 169.113203 316.370806 
 L 173.293353 288.43548 
@@ -6437,30 +6437,30 @@ L 321.196118 290.646693
 L 325.269767 317.97299 
 L 329.321201 346.6 
 L 329.321201 346.6 
-" clip-path="url(#cpl_3e32b4afe44e_9cedb4_p272cdb306e)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_3e32b4afe44e_934ef1_p272cdb306e)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_3e32b4afe44e_9cedb4_patch_3">
+   <g id="cpl_3e32b4afe44e_934ef1_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_3e32b4afe44e_9cedb4_patch_4">
+   <g id="cpl_3e32b4afe44e_934ef1_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_3e32b4afe44e_9cedb4_patch_5">
+   <g id="cpl_3e32b4afe44e_934ef1_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_3e32b4afe44e_9cedb4_patch_6">
+   <g id="cpl_3e32b4afe44e_934ef1_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_3e32b4afe44e_9cedb4_text_3">
-    <g id="cpl_3e32b4afe44e_9cedb4_patch_7">
+   <g id="cpl_3e32b4afe44e_934ef1_text_3">
+    <g id="cpl_3e32b4afe44e_934ef1_patch_7">
      <path d="M 401.317322 59.427556 
 L 419.982678 59.427556 
 Q 431.982678 59.427556 431.982678 47.427556 
@@ -6476,7 +6476,7 @@ z
     <!-- A -->
     <g transform="translate(401.317322 41.614105) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_3e32b4afe44e_9cedb4_CMSS17-41" d="M 2272 4416 
+      <path id="cpl_3e32b4afe44e_934ef1_CMSS17-41" d="M 2272 4416 
 L 1722 4416 
 L 166 0 
 L 653 0 
@@ -6495,13 +6495,13 @@ L 2694 1637
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_3e32b4afe44e_9cedb4_CMSS17-41" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_3e32b4afe44e_934ef1_CMSS17-41" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_3e32b4afe44e_9cedb4_p272cdb306e">
+  <clipPath id="cpl_3e32b4afe44e_934ef1_p272cdb306e">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -6529,8 +6529,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_d14ce4499868_7ffa60_figure_1">
-  <g id="cpl_d14ce4499868_7ffa60_patch_1">
+ <g id="cpl_d14ce4499868_349ae7_figure_1">
+  <g id="cpl_d14ce4499868_349ae7_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -6539,8 +6539,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_d14ce4499868_7ffa60_axes_1">
-   <g id="cpl_d14ce4499868_7ffa60_patch_2">
+  <g id="cpl_d14ce4499868_349ae7_axes_1">
+   <g id="cpl_d14ce4499868_349ae7_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -6549,12 +6549,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_d14ce4499868_7ffa60_matplotlib.axis_1">
-    <g id="cpl_d14ce4499868_7ffa60_text_1">
+   <g id="cpl_d14ce4499868_349ae7_matplotlib.axis_1">
+    <g id="cpl_d14ce4499868_349ae7_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_d14ce4499868_7ffa60_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_d14ce4499868_349ae7_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -6588,16 +6588,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_d14ce4499868_7ffa60_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_d14ce4499868_349ae7_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_d14ce4499868_7ffa60_matplotlib.axis_2">
-    <g id="cpl_d14ce4499868_7ffa60_text_2">
+   <g id="cpl_d14ce4499868_349ae7_matplotlib.axis_2">
+    <g id="cpl_d14ce4499868_349ae7_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_d14ce4499868_7ffa60_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_d14ce4499868_349ae7_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -6631,35 +6631,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_d14ce4499868_7ffa60_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_d14ce4499868_349ae7_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_d14ce4499868_7ffa60_line2d_1">
+   <g id="cpl_d14ce4499868_349ae7_line2d_1">
     <defs>
-     <path id="cpl_d14ce4499868_7ffa60_md22f46da7b" d="M 3 0 
+     <path id="cpl_d14ce4499868_349ae7_md22f46da7b" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_d14ce4499868_7ffa60_md22f46da7b" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_d14ce4499868_349ae7_md22f46da7b" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_d14ce4499868_7ffa60_line2d_2">
+   <g id="cpl_d14ce4499868_349ae7_line2d_2">
     <defs>
-     <path id="cpl_d14ce4499868_7ffa60_m5f6df0a555" d="M 0 -3 
+     <path id="cpl_d14ce4499868_349ae7_m5f6df0a555" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_d14ce4499868_7ffa60_m5f6df0a555" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_d14ce4499868_349ae7_m5f6df0a555" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_d14ce4499868_7ffa60_line2d_3">
+   <g id="cpl_d14ce4499868_349ae7_line2d_3">
     <path d="M 128.478799 346.6 
 L 132.743234 316.507948 
 L 136.923384 288.56527 
@@ -6722,30 +6722,30 @@ L 284.852774 290.690151
 L 288.926424 318.018837 
 L 292.971201 346.6 
 L 292.971201 346.6 
-" clip-path="url(#cpl_d14ce4499868_7ffa60_p0c0ab3f721)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_d14ce4499868_349ae7_p0c0ab3f721)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_d14ce4499868_7ffa60_patch_3">
+   <g id="cpl_d14ce4499868_349ae7_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_d14ce4499868_7ffa60_patch_4">
+   <g id="cpl_d14ce4499868_349ae7_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_d14ce4499868_7ffa60_patch_5">
+   <g id="cpl_d14ce4499868_349ae7_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_d14ce4499868_7ffa60_patch_6">
+   <g id="cpl_d14ce4499868_349ae7_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_d14ce4499868_7ffa60_text_3">
-    <g id="cpl_d14ce4499868_7ffa60_patch_7">
+   <g id="cpl_d14ce4499868_349ae7_text_3">
+    <g id="cpl_d14ce4499868_349ae7_patch_7">
      <path d="M 401.2993 59.427556 
 L 420.0007 59.427556 
 Q 432.0007 59.427556 432.0007 47.427556 
@@ -6761,7 +6761,7 @@ z
     <!-- B -->
     <g transform="translate(401.2993 41.614105) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_d14ce4499868_7ffa60_CMSS17-42" d="M 570 4416 
+      <path id="cpl_d14ce4499868_349ae7_CMSS17-42" d="M 570 4416 
 L 570 0 
 L 2163 0 
 C 3034 0 3667 574 3667 1200 
@@ -6786,13 +6786,13 @@ L 1088 357
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_d14ce4499868_7ffa60_CMSS17-42" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_d14ce4499868_349ae7_CMSS17-42" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_d14ce4499868_7ffa60_p0c0ab3f721">
+  <clipPath id="cpl_d14ce4499868_349ae7_p0c0ab3f721">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -6820,8 +6820,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_ae439810c0ec_bc64e9_figure_1">
-  <g id="cpl_ae439810c0ec_bc64e9_patch_1">
+ <g id="cpl_ae439810c0ec_6e5412_figure_1">
+  <g id="cpl_ae439810c0ec_6e5412_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -6830,8 +6830,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_ae439810c0ec_bc64e9_axes_1">
-   <g id="cpl_ae439810c0ec_bc64e9_patch_2">
+  <g id="cpl_ae439810c0ec_6e5412_axes_1">
+   <g id="cpl_ae439810c0ec_6e5412_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -6840,12 +6840,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_ae439810c0ec_bc64e9_matplotlib.axis_1">
-    <g id="cpl_ae439810c0ec_bc64e9_text_1">
+   <g id="cpl_ae439810c0ec_6e5412_matplotlib.axis_1">
+    <g id="cpl_ae439810c0ec_6e5412_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_ae439810c0ec_bc64e9_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_ae439810c0ec_6e5412_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -6879,16 +6879,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_ae439810c0ec_bc64e9_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_ae439810c0ec_6e5412_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_ae439810c0ec_bc64e9_matplotlib.axis_2">
-    <g id="cpl_ae439810c0ec_bc64e9_text_2">
+   <g id="cpl_ae439810c0ec_6e5412_matplotlib.axis_2">
+    <g id="cpl_ae439810c0ec_6e5412_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_ae439810c0ec_bc64e9_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_ae439810c0ec_6e5412_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -6922,35 +6922,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_ae439810c0ec_bc64e9_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_ae439810c0ec_6e5412_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_ae439810c0ec_bc64e9_line2d_1">
+   <g id="cpl_ae439810c0ec_6e5412_line2d_1">
     <defs>
-     <path id="cpl_ae439810c0ec_bc64e9_m215954687e" d="M 3 0 
+     <path id="cpl_ae439810c0ec_6e5412_m215954687e" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_ae439810c0ec_bc64e9_m215954687e" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_ae439810c0ec_6e5412_m215954687e" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_ae439810c0ec_bc64e9_line2d_2">
+   <g id="cpl_ae439810c0ec_6e5412_line2d_2">
     <defs>
-     <path id="cpl_ae439810c0ec_bc64e9_me175172c40" d="M 0 -3 
+     <path id="cpl_ae439810c0ec_6e5412_me175172c40" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_ae439810c0ec_bc64e9_me175172c40" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_ae439810c0ec_6e5412_me175172c40" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_ae439810c0ec_bc64e9_line2d_3">
+   <g id="cpl_ae439810c0ec_6e5412_line2d_3">
     <path d="M 126.616414 -1 
 L 130.932723 30.156293 
 L 135.166123 59.120108 
@@ -7014,30 +7014,30 @@ L 287.062663 53.910346
 L 291.216188 25.222713 
 L 294.833586 -1 
 L 294.833586 -1 
-" clip-path="url(#cpl_ae439810c0ec_bc64e9_p9740745675)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_ae439810c0ec_6e5412_p9740745675)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_ae439810c0ec_bc64e9_patch_3">
+   <g id="cpl_ae439810c0ec_6e5412_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_ae439810c0ec_bc64e9_patch_4">
+   <g id="cpl_ae439810c0ec_6e5412_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_ae439810c0ec_bc64e9_patch_5">
+   <g id="cpl_ae439810c0ec_6e5412_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_ae439810c0ec_bc64e9_patch_6">
+   <g id="cpl_ae439810c0ec_6e5412_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_ae439810c0ec_bc64e9_text_3">
-    <g id="cpl_ae439810c0ec_bc64e9_patch_7">
+   <g id="cpl_ae439810c0ec_6e5412_text_3">
+    <g id="cpl_ae439810c0ec_6e5412_patch_7">
      <path d="M 401.671637 59.427556 
 L 419.628363 59.427556 
 Q 431.628363 59.427556 431.628363 47.427556 
@@ -7053,7 +7053,7 @@ z
     <!-- C -->
     <g transform="translate(401.671637 41.614105) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_ae439810c0ec_bc64e9_CMSS17-43" d="M 3501 714 
+      <path id="cpl_ae439810c0ec_6e5412_CMSS17-43" d="M 3501 714 
 C 3072 427 2874 344 2355 344 
 C 1459 344 934 1303 934 2179 
 C 934 3112 1472 4032 2381 4032 
@@ -7067,13 +7067,13 @@ L 3501 714
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_ae439810c0ec_bc64e9_CMSS17-43" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_ae439810c0ec_6e5412_CMSS17-43" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_ae439810c0ec_bc64e9_p9740745675">
+  <clipPath id="cpl_ae439810c0ec_6e5412_p9740745675">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>
@@ -7101,8 +7101,8 @@ z
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="cpl_8612125e597a_5c3a4e_figure_1">
-  <g id="cpl_8612125e597a_5c3a4e_patch_1">
+ <g id="cpl_8612125e597a_6f580a_figure_1">
+  <g id="cpl_8612125e597a_6f580a_patch_1">
    <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -7111,8 +7111,8 @@ L 0 345.6
 z
 " style="fill: none"/>
   </g>
-  <g id="cpl_8612125e597a_5c3a4e_axes_1">
-   <g id="cpl_8612125e597a_5c3a4e_patch_2">
+  <g id="cpl_8612125e597a_6f580a_axes_1">
+   <g id="cpl_8612125e597a_6f580a_patch_2">
     <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 24.444473 
@@ -7121,12 +7121,12 @@ L 10.8 334.8
 z
 " style="fill: none"/>
    </g>
-   <g id="cpl_8612125e597a_5c3a4e_matplotlib.axis_1">
-    <g id="cpl_8612125e597a_5c3a4e_text_1">
+   <g id="cpl_8612125e597a_6f580a_matplotlib.axis_1">
+    <g id="cpl_8612125e597a_6f580a_text_1">
      <!-- $x$ -->
      <g transform="translate(430.369782 204.377732) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_8612125e597a_5c3a4e_CMMI12-78" d="M 3034 2606 
+       <path id="cpl_8612125e597a_6f580a_CMMI12-78" d="M 3034 2606 
 C 2829 2567 2752 2414 2752 2293 
 C 2752 2139 2874 2088 2963 2088 
 C 3155 2088 3290 2254 3290 2427 
@@ -7160,16 +7160,16 @@ C 2720 2689 2899 2689 3034 2606
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_8612125e597a_5c3a4e_CMMI12-78" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_8612125e597a_6f580a_CMMI12-78" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_8612125e597a_5c3a4e_matplotlib.axis_2">
-    <g id="cpl_8612125e597a_5c3a4e_text_2">
+   <g id="cpl_8612125e597a_6f580a_matplotlib.axis_2">
+    <g id="cpl_8612125e597a_6f580a_text_2">
      <!-- $y$ -->
      <g transform="translate(210.630756 18.631022) scale(0.3 -0.3)">
       <defs>
-       <path id="cpl_8612125e597a_5c3a4e_CMMI12-79" d="M 1683 -700 
+       <path id="cpl_8612125e597a_6f580a_CMMI12-79" d="M 1683 -700 
 C 1510 -939 1261 -1152 947 -1152 
 C 870 -1152 563 -1152 467 -889 
 C 486 -895 518 -895 531 -895 
@@ -7203,35 +7203,35 @@ C 1971 -147 1907 -392 1683 -700
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#cpl_8612125e597a_5c3a4e_CMMI12-79" transform="scale(0.996264)"/>
+      <use xlink:href="#cpl_8612125e597a_6f580a_CMMI12-79" transform="scale(0.996264)"/>
      </g>
     </g>
    </g>
-   <g id="cpl_8612125e597a_5c3a4e_line2d_1">
+   <g id="cpl_8612125e597a_6f580a_line2d_1">
     <defs>
-     <path id="cpl_8612125e597a_5c3a4e_m3517d84af8" d="M 3 0 
+     <path id="cpl_8612125e597a_6f580a_m3517d84af8" d="M 3 0 
 L -3 -3 
 L -3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_8612125e597a_5c3a4e_m3517d84af8" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_8612125e597a_6f580a_m3517d84af8" x="447" y="179.622236" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_8612125e597a_5c3a4e_line2d_2">
+   <g id="cpl_8612125e597a_6f580a_line2d_2">
     <defs>
-     <path id="cpl_8612125e597a_5c3a4e_m55a5e7cad9" d="M 0 -3 
+     <path id="cpl_8612125e597a_6f580a_m55a5e7cad9" d="M 0 -3 
 L -3 3 
 L 3 3 
 z
 " style="stroke: #000000; stroke-linejoin: miter"/>
     </defs>
     <g>
-     <use xlink:href="#cpl_8612125e597a_5c3a4e_m55a5e7cad9" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
+     <use xlink:href="#cpl_8612125e597a_6f580a_m55a5e7cad9" x="228.9" y="24.444473" style="stroke: #000000; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="cpl_8612125e597a_5c3a4e_line2d_3">
+   <g id="cpl_8612125e597a_6f580a_line2d_3">
     <path d="M 162.966414 -1 
 L 167.302692 30.29662 
 L 171.536092 59.252989 
@@ -7295,30 +7295,30 @@ L 323.539132 53.059274
 L 327.692657 24.325373 
 L 331.183586 -1 
 L 331.183586 -1 
-" clip-path="url(#cpl_8612125e597a_5c3a4e_p777f7d981d)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
+" clip-path="url(#cpl_8612125e597a_6f580a_p777f7d981d)" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"/>
    </g>
-   <g id="cpl_8612125e597a_5c3a4e_patch_3">
+   <g id="cpl_8612125e597a_6f580a_patch_3">
     <path d="M 228.9 334.8 
 L 228.9 24.444473 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_8612125e597a_5c3a4e_patch_4">
+   <g id="cpl_8612125e597a_6f580a_patch_4">
     <path d="M 447 334.8 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_8612125e597a_5c3a4e_patch_5">
+   <g id="cpl_8612125e597a_6f580a_patch_5">
     <path d="M 10.8 179.622236 
 L 447 179.622236 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="cpl_8612125e597a_5c3a4e_patch_6">
+   <g id="cpl_8612125e597a_6f580a_patch_6">
     <path d="M 10.8 24.444473 
 L 447 24.444473 
 " style="fill: none"/>
    </g>
-   <g id="cpl_8612125e597a_5c3a4e_text_3">
-    <g id="cpl_8612125e597a_5c3a4e_patch_7">
+   <g id="cpl_8612125e597a_6f580a_text_3">
+    <g id="cpl_8612125e597a_6f580a_patch_7">
      <path d="M 400.518575 59.427556 
 L 420.781425 59.427556 
 Q 432.781425 59.427556 432.781425 47.427556 
@@ -7334,7 +7334,7 @@ z
     <!-- D -->
     <g transform="translate(400.518575 41.614105) scale(0.3 -0.3)">
      <defs>
-      <path id="cpl_8612125e597a_5c3a4e_CMSS17-44" d="M 570 4416 
+      <path id="cpl_8612125e597a_6f580a_CMSS17-44" d="M 570 4416 
 L 570 0 
 L 2144 0 
 C 3194 0 4000 980 4000 2170 
@@ -7350,13 +7350,13 @@ L 1094 357
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#cpl_8612125e597a_5c3a4e_CMSS17-44" transform="scale(0.996264)"/>
+     <use xlink:href="#cpl_8612125e597a_6f580a_CMSS17-44" transform="scale(0.996264)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="cpl_8612125e597a_5c3a4e_p777f7d981d">
+  <clipPath id="cpl_8612125e597a_6f580a_p777f7d981d">
    <rect x="10.8" y="24.444473" width="436.2" height="310.355527"/>
   </clipPath>
  </defs>

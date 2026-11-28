@@ -1202,7 +1202,7 @@ Bestem $k$ slik at likningssystemet har nøyaktig én løsning.
 
 ::::{answer}
 $$
-k = -1 \or k = 3.
+k = 1 \pm 2\sqrt{2}
 $$
 ::::
 
@@ -1214,7 +1214,7 @@ For hvilke verdier av $k$ vil likningsystemet ikke ha noen løsning?
 
 ::::{answer}
 $$
-k \in \langle \gets, -1 \rangle \cup \langle 3, \to \rangle
+k \in \langle \gets, 1 - 2\sqrt{2} \rangle \cup \langle 1 + 2\sqrt{2}, \to \rangle
 $$
 ::::
 
